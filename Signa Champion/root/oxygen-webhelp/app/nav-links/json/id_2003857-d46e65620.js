@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Shutting Down the ICN from the Root Level","shortdesc":"<p class=\"shortdesc\">Shutting down the host computer shuts down the system safely and turns off the power to the host computer.<\/p>","href":"t_ShuttingDownTheSystemRootRio_2.html","attributes":{"data-id":"id_2002137"},"menu":{"hasChildren":false},"tocID":"id_2002137-d46e65719","topics":[]}]});

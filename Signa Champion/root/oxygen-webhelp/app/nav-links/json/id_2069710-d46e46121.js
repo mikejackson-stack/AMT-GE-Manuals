@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Replacing the gradient cables","shortdesc":"<p class=\"shortdesc\">Replace the gradient cables in the scan room and equipment room.<\/p>","href":"t_ReplacingTheGradientCables_Parent.html","attributes":{"data-id":"id_2067675"},"menu":{"hasChildren":true},"tocID":"id_2067675-d46e46223","next":"id_2067675-d46e46223"}]});
