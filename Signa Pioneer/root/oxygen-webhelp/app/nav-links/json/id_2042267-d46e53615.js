@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Magnet reference sheet","shortdesc":"<p class=\"shortdesc\">Quickly identify the magnet name, field strength, and series associated with each magnet.<\/p>","href":"r_MagnetReferenceSheet.html","attributes":{"data-id":"id_2008083"},"menu":{"hasChildren":false},"tocID":"id_2008083-d46e53718","topics":[]}]});

@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Pelvic coils","shortdesc":"<p class=\"shortdesc\"\/>","href":"r_PelvicCoils.html","attributes":{"data-id":"id_2015269"},"menu":{"hasChildren":false},"tocID":"id_2015269-d46e105937","topics":[]}]});
