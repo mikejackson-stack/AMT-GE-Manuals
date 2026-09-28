@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.8.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 790 630" style="enable-background:new 0 0 790 630;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D2D3CA;stroke:#231F20;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#231F20;stroke-miterlimit:10;}
+	.st2{fill:#D3C2C7;stroke:#231F20;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#231F20;stroke-miterlimit:10;}
+	.st4{fill:#231F20;}
+	.st5{font-family:'ArialMT';}
+	.st6{font-size:12px;}
+	.st7{font-size:10px;}
+	.st8{fill:none;stroke:#231F20;stroke-width:0.5;stroke-miterlimit:10;}
+	.st9{opacity:0.5;fill:#5B72B7;enable-background:new    ;}
+	.st10{font-size:14px;}
+</style>
+<g id="Layer_1_00000173879569814029615650000010730738556730671016_">
+	<rect x="9" y="108.5" class="st0" width="245" height="310"/>
+	<rect x="19" y="152.5" class="st1" width="92" height="76"/>
+	<rect x="152" y="255.5" class="st1" width="90" height="151"/>
+	<rect x="575" y="7.5" class="st2" width="193" height="609"/>
+	<line class="st3" x1="131" y1="108.5" x2="131" y2="418.5"/>
+	<rect x="603" y="61.5" class="st1" width="145" height="64"/>
+	<rect x="603" y="146.5" class="st1" width="145" height="53"/>
+	<rect x="603" y="227.5" class="st1" width="145" height="58"/>
+	<rect x="603" y="308.5" class="st1" width="145" height="57"/>
+	<rect x="603" y="388.5" class="st1" width="145" height="57"/>
+	<rect x="603" y="468.5" class="st1" width="145" height="58"/>
+	<rect x="603" y="549.5" class="st1" width="145" height="61"/>
+</g>
+<g id="Layer_2_00000062181749762917127130000007801114522715245967_">
+	<text transform="matrix(1 0 0 1 15.46 125.65)" class="st4 st5 st6">ISC</text>
+	<text transform="matrix(1 0 0 1 24.922 167.2159)" class="st4 st5 st6">ETH Switch</text>
+	<text transform="matrix(1 0 0 1 154.27 268.4)" class="st4 st5 st6">ICE</text>
+	<text transform="matrix(1 0 0 1 633.7 22.84)" class="st4 st5 st6">M</text>
+	<text transform="matrix(1 0 0 1 643.23 22.84)" class="st4 st5 st6">A</text>
+	<text transform="matrix(1 0 0 1 650.39 22.84)" class="st4 st5 st6">G Side Elec</text>
+	<text transform="matrix(1 0 0 1 662.27 75.69)" class="st4 st5 st6">SRI5</text>
+	<text transform="matrix(1 0 0 1 662.85 159.76)" class="st4 st5 st6">P</text>
+	<text transform="matrix(1 0 0 1 668.23 159.76)" class="st4 st5 st6">A</text>
+	<text transform="matrix(1 0 0 1 675.39 159.76)" class="st4 st5 st6">C</text>
+	<text transform="matrix(1 0 0 1 660.86 240.78)" class="st4 st5 st6">M</text>
+	<text transform="matrix(1 0 0 1 670.39 240.78)" class="st4 st5 st6">TD</text>
+	<text transform="matrix(1 0 0 1 663.35 322.83)" class="st4 st5 st6">T</text>
+	<text transform="matrix(1 0 0 1 668.99 322.83)" class="st4 st5 st6">CE</text>
+	<text transform="matrix(1 0 0 1 657.57 400.79)" class="st4 st5 st6">R</text>
+	<text transform="matrix(1 0 0 1 664.09 400.79)" class="st4 st5 st6">X Dist</text>
+	<text transform="matrix(1 0 0 1 662.14 481.99)" class="st4 st5 st6">DPP1</text>
+	<text transform="matrix(1 0 0 1 662.52 561.99)" class="st4 st5 st6">DPP2</text>
+	<text transform="matrix(1 0 0 1 79.62 197.76)" class="st4 st5 st7">FO 25</text>
+	<text transform="matrix(1 0 0 1 79.75 215)" class="st4 st5 st7">FO 27</text>
+	<text transform="matrix(1 0 0 1 186.69 284.02)" class="st4 st5 st7">J40/J41/J42</text>
+	<text transform="matrix(1 0 0 1 204.08 301.14)" class="st4 st5 st7">J38/J39</text>
+	<text transform="matrix(1 0 0 1 221.8 318.21)" class="st4 st5 st7">J31</text>
+	<text transform="matrix(1 0 0 1 221.84 334.28)" class="st4 st5 st7">J26</text>
+	<text transform="matrix(1 0 0 1 221.84 350.28)" class="st4 st5 st7">J22</text>
+	<text transform="matrix(1 0 0 1 221.84 363.28)" class="st4 st5 st7">J24</text>
+	<rect x="283.5" y="36" class="st4" width="6" height="483"/>
+	<text transform="matrix(1 0 0 1 607.04 189.07)" class="st4 st5 st7">J1</text>
+	<text transform="matrix(1 0 0 1 604.11 334.08)" class="st4 st5 st7">J10</text>
+	<text transform="matrix(1 0 0 1 608.11 273.08)" class="st4 st5 st7">J10</text>
+	<text transform="matrix(1 0 0 1 604.11 359.08)" class="st4 st5 st7">J11</text>
+	<text transform="matrix(1 0 0 1 603.96 424.14)" class="st4 st5 st7">J16</text>
+	<text transform="matrix(1 0 0 1 604.62 487.11)" class="st4 st5 st7">J6</text>
+	<text transform="matrix(1 0 0 1 604.62 574.11)" class="st4 st5 st7">J6</text>
+	<text transform="matrix(1 0 0 1 605.62 599.11)" class="st4 st5 st7">J9</text>
+	<text transform="matrix(1 0 0 1 605.62 519.1)" class="st4 st5 st7">J9</text>
+	<path class="st8" d="M112.9,194.2c-0.4-0.2,361.9,0,361.9,0v75.1h127.7"/>
+	<polyline class="st8" points="111,211.4 449.1,211.4 449.1,354.4 600,354.4 	"/>
+	<path class="st8" d="M244.1,280.5h194.4v-63.1c-0.5-12.9,0-17.9,0-17.9v-84.7H600"/>
+	<polyline class="st8" points="244.1,298 498.6,297.6 498.6,185.5 603,185.5 	"/>
+	<polyline class="st8" points="242.5,314.7 557.5,314.6 557.5,330.7 600,330.7 	"/>
+	<polyline class="st8" points="244.1,331.2 438.3,331.1 438.3,418.5 600,418.5 	"/>
+	<polyline class="st8" points="242,346.7 428,346.7 428,483.8 603,483.8 	"/>
+	<polyline class="st8" points="242,363.3 417.9,363.3 417.9,515.5 603,515.5 	"/>
+	<text transform="matrix(1 0 0 1 221.61 378.18)" class="st4 st5 st7">J30</text>
+	<text transform="matrix(1 0 0 1 221.61 390.18)" class="st4 st5 st7">J32</text>
+	<polyline class="st8" points="242,374.6 406.9,374.8 406.9,570.4 603,570.4 	"/>
+	<polyline class="st8" points="242,386.6 392.5,386.6 392.5,595.6 603.5,595.5 	"/>
+	<rect x="297.5" y="173" class="st9" width="91" height="232"/>
+	<text transform="matrix(1 0 0 1 309.4782 256.5002)" class="st4 st5 st10">5875275-2</text>
+	<text transform="matrix(1 0 0 1 402.71 189.11)" class="st4 st5 st7">2017</text>
+	<text transform="matrix(1 0 0 1 402.95 209.11)" class="st4 st5 st7">2018</text>
+	<text transform="matrix(1 0 0 1 402.95 277.11)" class="st4 st5 st7">2011</text>
+	<text transform="matrix(1 0 0 1 403.95 295.11)" class="st4 st5 st7">2012</text>
+	<text transform="matrix(1 0 0 1 403.95 313.11)" class="st4 st5 st7">2014</text>
+	<text transform="matrix(1 0 0 1 403.95 329.11)" class="st4 st5 st7">2016</text>
+	<text transform="matrix(1 0 0 1 403.95 345.11)" class="st4 st5 st7">2013</text>
+	<text transform="matrix(1 0 0 1 392.95 362.11)" class="st4 st5 st7">2015</text>
+	<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 403.76 460.9199)" class="st4 st5 st7">2019</text>
+	<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 386.76 460.9199)" class="st4 st5 st7">2020</text>
+	<text transform="matrix(1 0 0 1 605.9091 120.574)" class="st4 st5 st7">J11 - J13</text>
+</g>
+</svg>
