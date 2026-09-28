@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Gradient FRU compatibility guidance","href":"c_GradientControlsTechnologyRefresh.html","attributes":{"data-id":"id_2037960"},"menu":{"hasChildren":false},"tocID":"id_2037960-d46e64873","topics":[]}]});

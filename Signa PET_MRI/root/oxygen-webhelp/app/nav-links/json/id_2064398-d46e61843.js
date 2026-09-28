@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Observing system tray status icons","shortdesc":"<p class=\"shortdesc\">The system tray status icons provide information on the status of the Remote Software Download (RSD). <\/p>","href":"t_ObservingSystemTrayStatusIcons29_1_2.html","attributes":{"data-id":"id_2030248"},"menu":{"hasChildren":false},"tocID":"id_2030248-d46e61948","topics":[]}]});

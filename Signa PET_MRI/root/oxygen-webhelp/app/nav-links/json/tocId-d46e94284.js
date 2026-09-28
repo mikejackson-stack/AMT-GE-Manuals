@@ -1,0 +1,1 @@
+define({"topics":[{"title":"PARC GPU or Graphics Card Replacement (MP24)","href":"t_PARC-GPU-or-Graphics-Card-Replacement-MP24_15981725.html","attributes":{"data-id":"id_12374093"},"menu":{"hasChildren":false},"tocID":"id_12374093-d46e94288","topics":[]}]});

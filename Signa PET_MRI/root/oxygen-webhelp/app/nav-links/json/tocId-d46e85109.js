@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Draining coolant from the gradient coil","shortdesc":"<p class=\"shortdesc\"\/>","href":"t_DrainingCoolantFromTheGradientCoil.html","attributes":{"data-id":"id_2059426"},"menu":{"hasChildren":false},"tocID":"id_2059426-d46e85110","topics":[]}]});

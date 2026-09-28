@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Silenz Theory","href":"c_Silenz-Theory_5498854.html","attributes":{"data-id":"id_12374947"},"menu":{"hasChildren":false},"tocID":"id_12374947-d46e65494","topics":[]},{"title":"MAVRIC SL Theory","href":"c_MAVRIC-SL-Theory_11960971.html","attributes":{"data-id":"id_12373309"},"menu":{"hasChildren":false},"tocID":"id_12373309-d46e65596","topics":[]}]});

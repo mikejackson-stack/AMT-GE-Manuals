@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Flex coils","shortdesc":"<p class=\"shortdesc\"\/>","href":"r_FlexCoils.html","attributes":{"data-id":"id_2008296"},"menu":{"hasChildren":false},"tocID":"id_2008296-d46e126661","topics":[]}]});
