@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Removing LOTO - MDP","shortdesc":"<p class=\"shortdesc\">Remove LOTO from the MDP or the facility PDU before restoring power to these items. Facility-level LOTO must be done by an electrician.<\/p>","href":"t_Removing-LOTO-MDP-Premier.html","attributes":{"data-id":"id_2001935"},"menu":{"hasChildren":false},"tocID":"id_2001935-d46e641","topics":[]}]});

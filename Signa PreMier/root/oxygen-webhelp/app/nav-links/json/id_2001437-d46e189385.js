@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Alternate calibration procedure for 3T Dual Drive RF Amplifier with Bird wattmeter ","href":"t_3T_Dual_Drive_RF_Amplifier_Alternate_Calibration_with_Bird_Wattmeter_3.html","attributes":{"data-id":"id_2029679"},"menu":{"hasChildren":false},"tocID":"id_2029679-d46e189488","topics":[]}]});

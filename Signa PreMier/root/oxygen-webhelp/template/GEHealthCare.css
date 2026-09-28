@@ -1,0 +1,2048 @@
+/*
+ * ==============================================
+ * Skin for oXygen generated WebHelp.
+ * ==============================================
+
+ 
+ root, ::before, ::after {
+    --font-family-base: "GE Inspira Sans", "ge-inspira-sans", sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --eds-white: #FFFFFF;
+    --eds-black: #000000;
+    --eds-purple: #4c3494;
+    --eds-turquoise: #005EB8;
+    --eds-yellow: #f8d754;
+    --eds-green: #19bb7c;
+    --eds-coral: #f37f63;  
+    --eds-gray-100: #F2F1F8;
+    --eds-gray-200: #BBBBBB;
+    --eds-gray-300: #666666;} */
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Fight with bootstrap
+ *  
+ 
+*/
+
+.navbar-brand {
+    height: auto;
+}
+.navbar {
+    background-image: none;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
+}
+.wh_header {
+    /* background-color: #0b6a9c; 
+    background-color: #C7DDE8;*/
+    text-align: left;
+    padding: .5em;
+    width: 100%;
+}
+.wh_expand_btn:before {
+    margin-left: 15px;
+}
+a,
+a:visited {
+    /*color: #1ea7ef;  */
+    color: #005EB8;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Fonts.
+ *  
+ 
+*/
+
+
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(fonts/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Source Han Sans CN';
+    src: url(fonts/CN/SourceHanSansCN-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Source Han Sans KO';
+    src: url(fonts/KR/SourceHanSansKR-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Source Han Sans TW';
+    src: url(fonts/TW/SourceHanSansTW-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Source Han Sans JA';
+    src: url(fonts/JP/SourceHanSansJP-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Courier Prime Code';
+    src: url(fonts/CourierPrimeCode.ttf);
+}
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    background-color: transparent;
+
+}
+
+:lang(ko) {
+    font-family: 'Source Han Sans KO';
+}
+:lang(ja) {
+    font-family: 'Source Han Sans JA';
+}
+:lang(zh-tw) {
+    font-family: 'Source Han Sans TW';
+}
+:lang(zh-cn) {
+    font-family: 'Source Han Sans CN';
+}
+
+
+/* ------------------------------------------------------------------
+ *
+ * header layout.
+ * DE224: WHR: Link under the search field is missing
+ */
+
+
+.wh_header {
+    border: 6px;
+    border-radius: 6px;
+    background-color: transparent;
+    border-color: transparent;
+    text-align: left;
+    padding: .5em;
+    width: 100%;
+}
+
+.wh_header_flex_container {
+    width: 100%;
+    display: block;
+    justify-items: start;
+    align-content: center;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+
+/*Publication titles
+ * DE224: WHR: Link under the search field is missing
+ */
+
+
+.wh_logo_and_publication_title_container {
+    padding-top: 0;
+    margin-top: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.wh_logo_and_publication_title {
+    float: left;
+    width: 100%;
+    padding-top: 0;
+    margin-top: 0;
+    display: grid;
+    grid-template-areas: 
+    'logo search'
+    'title title';
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 30mm auto;
+    justify-items: stretch;
+    align-items: start;
+}
+
+.wh_logo {
+    margin-top: 1em;
+    flex-grow: 1;
+    margin: auto;
+    grid-area: logo;
+    display: block;
+    float: left;
+    /* text-align: left;
+    width: 100%; */
+}
+
+.wh_logo img {
+    height: 30mm !important;
+    float: left;
+    overflow: visible;
+    text-align: left;
+}
+
+
+.wh_publication_title {
+    flex-grow: 20;
+    text-align: left;
+    float: left;
+    grid-area: title;
+}
+
+.wh_publication_title > a {
+    color: #4c3494 !important;
+    /* color: #005EB8;
+     * US573 add Arial to webhelp 
+    font-family:  Arial, sans-serif;
+     *     font-size: 1.85em;*/
+    font-size: 2.25em;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.wh_publication_title > a:hover {
+    text-decoration: none;
+}
+
+.booktitle {
+    text-align: left;
+}
+/* This style was added to create a line break before specified phrases in the main title.  Stylesheet release 2.9.5 */
+.mainbooktitle > .break::before {
+    content: "\a";
+    white-space: pre;
+}
+
+
+/* US500 wh-r: add booktitlealt to webhelp title block */
+.booktitlealt {
+    display: block;
+    font-size: 90%;
+    font-weight: normal;
+}
+/* US613: Add CE mark to home page of WH-R 
+.booktitlealt:nth-of-type(2){
+    display: block;
+    font-size: 1.45em;
+    font-weight: normal;
+}*/
+.booktitlealt > img {
+    display: none;
+}
+
+.booktitlealt:nth-of-type(3) {
+    display: block;
+    font-size: 75%;
+    font-weight: normal;
+}
+
+.booktitlealt:nth-of-type(4) {
+    display: none;
+}
+.booktitlealt:nth-of-type(5) {
+    display: none;
+}
+
+/*
+ * - Search area
+ */
+
+
+/* ------------------------------------------------------------------ 
+ * Search area - US499 Change the search background to something non-cloudy
+ * 
+ DE234:  Spacing irregularities with flexible TOCS in Webhelp*/
+
+.search_container {
+    grid-area: search;
+    vertical-align: top;
+    height: 100%;
+}
+
+.wh_search_input {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    /*  color: #0b6a9c;
+  text-align: center;
+  background-color: #C7DDE8;*/
+    background-image: none;
+    background-position: center bottom;
+    background-size: cover;
+    vertical-align: top;
+    height: 50%;
+}
+/*
+ * US466 EDS styling - make search area smaller like on topic pages
+ */
+.wh_main_page_search {
+    height: inherit;
+    min-height: inherit;
+    padding: 1.25em 0 1.25em 0;
+    padding-top: 25vh;
+}
+
+
+.search_form_container {
+    flex-grow: 1;
+    right: 0;
+    vertical-align: top;
+    padding: .4em 0 .65em 0;
+    background: none;
+    place-items: center;
+}
+
+.wh_search_textfield {
+    height: 2em;
+    right: 0;
+    position: absolute;
+}
+
+.wh_search_button {
+    right: 0em;
+    position: absolute;
+    border-radius: 0 4px 4px 0 !important;
+}
+
+.wh_search_textfield,
+.wh_search_button {
+    /*  border: solid 1px #e3f0f7;
+    color: #0b6a9c;
+    border: solid 1px #005EB8;*/
+    color: black;
+    background-color: #ffffff;
+    padding: 0 1em;
+    height: 2em;
+    font-size: 1.2em;
+    line-height: 2em;
+    font-size: 1.2em;
+    padding: 0 1em;
+}
+
+.wh_search_textfield {
+    border-radius: 4px;
+}
+
+
+#searchForm > div {
+    width: 200px;
+    height: 2.6em;
+    right: 1em;
+    position: absolute;
+}
+
+#searchForm_A > div {
+    width: 200px;
+    height: 2.75em;
+    right: 1em;
+    border-style: outset;
+    position: absolute;
+}
+
+#searchForm_C > div {
+    width: 200px;
+    border-style: outset;
+    border-color: #FFC300;
+    height: 2.75em;
+    right: 1em;
+    position: absolute;
+}
+
+#searchForm_M > div {
+    width: 200px;
+    border-style: outset;
+    border-color: #C8211F;
+    height: 2.75em;
+    right: 1em;
+    position: absolute;
+}
+
+
+
+/* DE224: WHR: Link under the search field is missing*/
+.wh_main_page .search_link {
+    vertical-align: top;
+      right: 6em;
+    position: absolute;
+}
+.wh_topic_page .search_link {
+    display: none;
+}
+
+.wh_terms_page .search_link {
+    display: none;
+}
+
+.wh_search_page .search_link {
+    display: none;
+}
+
+
+/* DE239: Surpress duplicate heading in index page*/
+
+.wh_search_container:nth-of-type(2) {
+    display: none;
+}
+.SupressSearch {
+    display: none
+}
+
+
+
+/* Search autocomplete */
+.ui-menu-item {
+    font-size: 1.2em;
+    /* color: #0b6a9c; */
+    color: #666666;
+}
+/* Search relative path */
+.searchresult li .relativePath a {
+    color: #BBBBBB;
+}
+/* Search autocomplete icons */
+.search-autocomplete-proposal-type-history a,
+.search-autocomplete-proposal-type-history a:hover,
+.search-autocomplete-proposal-type-history a:visited,
+.search-autocomplete-proposal-type-history a:active {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.8em;
+}
+.ui-state-active .search-autocomplete-proposal-type-history a,
+.ui-state-active .search-autocomplete-proposal-type-history a:hover,
+.ui-state-active .search-autocomplete-proposal-type-history a:visited,
+.ui-state-active .search-autocomplete-proposal-type-history a:active {
+    color: white;
+}
+/* Active search page */
+#wh-search-pagination > ul > li.active > a {
+    /* color: #0b6a9c; */
+    color: #005EB8;
+}
+
+.wh_search_button:after {
+    /* color: #0b6a9c; */
+    color: #005EB8;
+}
+
+.wh_search_button:hover {
+    /* background-color: #e3f0f7 /rgba(255, 255, 255, 0.1);*/
+    background-color: #F2F1F8;
+}
+/* Search field placeholder */
+::-webkit-input-placeholder {
+    /* color: #0b6a9c; */
+    color: #005EB8;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    /* color: #0b6a9c; */
+    color: #005EB8;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    /* color: #0b6a9c; */
+    color: #005EB8;
+}
+
+:-ms-input-placeholder {
+    /* color: #0b6a9c; */
+    color: #005EB8;
+}
+
+/* Change Autocomplete styles in Chrome */
+:-webkit-autofill,
+:-webkit-autofill:hover,
+:-webkit-autofill:focus {
+    /*   border: 1px solid #e3f0f7;
+    -webkit-text-fill-color: #0b6a9c;*/
+    border: 1px solid #005EB8;
+    -webkit-text-fill-color: #005EB8;
+    -webkit-box-shadow: none;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/*
+ *Menu */
+
+.wh_top_menu_and_indexterms_link {
+    text-align: left;
+    vertical-align: text-bottom;
+    grid-area: toc;
+}
+.min_toc {
+    /*  color: #0b6a9c;
+    font-family: 'GE Inspira Sans';
+    background-color: #E3F0F7;*/
+    color: white;
+    background-color: #4c3494;
+    margin: 0 0px;
+    border-radius: 0px 0px 0 0;
+    border: black;
+
+}
+
+/* Menu bar */
+
+.wh_top_menu {
+    font-size: 1.15em;
+    margin: .4em 0;
+    text-align: left;
+}
+
+
+.wh_top_menu ul li:hover a {
+    /* background-color: #e3f0f7;
+     *     text-decoration: underline;
+ */
+    background-color: #F2F1F8;
+    border-radius: 6px 6px 6px 6px;
+}
+
+
+.wh_top_menu ul ul {
+    /* background-color: #e3f0f7; */
+    background-color: #F2F1F8;
+    color: #005EB8;
+    border-radius: 6px 6px 6px 6px;
+}
+
+.wh_top_menu > ul > li {
+    display: inline-block;
+}
+
+.wh_top_menu > ul > li > .topicref > a {
+    /* background-color: #3b87af; 
+     *     border-radius: 4px 4px 0 0;*/
+    background-color: #F2F1F8;
+    margin: 0 2px;
+
+}
+
+.wh_top_menu > ul > li > span a {
+    /*  color: #005EB8;
+     * font-family: 'GE Inspira Sans';*/
+    color: #005EB8;
+}
+
+.wh_top_menu ul li:hover ul a {
+    color: #005EB8;
+    background-color: #F2F1F8;
+    transition: background-color 0.25s ease-out 0s, color 0.3s ease-out 0s;
+}
+
+/*  .wh_top_menu ul ul {
+    border-width: 0px 20px 20px 20px;
+    border-color: black;
+    border-radius: 6px;
+    background-color: white;
+    margin: 0;
+}*/
+
+
+.wh_top_menu ul ul li:first-child a {
+    border-radius: 6px 6px 0 0;
+    background-color: #F2F1F8;
+    border-color: #F2F1F8;
+}
+
+.wh_top_menu ul ul li:last-child a {
+    border-radius: 0 0 6px 6px;
+    background-color: #F2F1F8;
+    border-color: #F2F1F8;
+}
+
+.wh_top_menu ul ul li a:hover {
+    color: #0b6a9c;
+    transition: background-color 0.25s ease-in 0s, color 0.3s ease-in 0s;
+}
+
+.wh_top_menu ul ul li.has-children:after {
+    color: #005EB8;
+}
+
+.wh_top_menu ul ul li a:hover {
+    text-decoration: underline;
+}
+
+/** Link to the index.*/
+
+
+.wh_indexterms_link a:before {
+    /* color: #ffffff; 
+    color: #0b6a9c;*/
+    color: #005EB8;
+    font-size: 1.5em;
+    text-align: left;
+
+}
+
+.wh_indexterms_link a span {
+    display: none;
+    text-align: left;
+}
+
+
+
+
+/*
+ * ------------------------------------------------------------------
+ *  
+ * Tools and navigation
+ * 
+ */
+.wh_tools {
+    margin: 1em;
+    padding: 2px 0 2px;
+    font-size: 1em;
+    border-radius: 6px;
+    background-color: #F2F1F8;
+    vertical-align: middle;
+}
+.wh_print_link button,
+.webhelp_expand_collapse_sections,
+.wh_hide_highlight,
+.oxy-icon-pdf-link,
+.wh_navigation_links a,
+.wh_navigation_links a:active,
+.wh_navigation_links a:visited,
+.wh_print_link a:before,
+.wh_navigation_links a:before,
+.wh_navigation_links a:active:before,
+.wh_navigation_links a:visited:before {
+    text-decoration: none;
+    color: #005EB8;
+    font-size: 14pt;
+}
+
+.wh_navigation_links a:hover:before,
+.wh_navigation_links a:hover,
+.wh_print_link button:hover,
+.webhelp_expand_collapse_sections:hover,
+.wh_hide_highlight:hover,
+.oxy-icon-pdf-link:hover,
+.wh_email_link button:hover {
+    text-decoration: underline;
+}
+
+.navnext:last-of-type {
+    margin-right: 1em;
+}
+.wh_email_link {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.wh_email_link button {
+    border: none;
+    /*  color: #9d9d9d;*/
+    color: #005EB8;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+.wh_breadcrumb ol,
+.wh_breadcrumb ol a {
+    /* color: #005EB8; */
+    color: #005EB8;
+
+}
+.wh_breadcrumb ol a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*
+ * ------------------------------------------------------------------
+ *
+ * Tree TOC for the main page.
+ *
+ */
+.wh_main_page_toc {
+    border: none;
+
+}
+.wh_main_page_toc .topicref a {
+    color: #005EB8;
+}
+.wh_main_page_toc .wh_main_page_toc_accordion_header:hover,
+.wh_main_page_toc > .wh_main_page_toc_entry:hover {
+    background-color: #F2F1F8;
+    border-radius: 6px;
+}
+.wh_main_page_toc_accordion_header:hover > .wh_toc_shortdesc,
+.wh_main_page_toc > .wh_main_page_toc_entry:hover > .wh_toc_shortdesc {
+    background-color: #F2F1F8;
+    border-radius: 6px;
+    color: #005EB8;
+}
+/*  .wh_main_page_toc .wh_main_page_toc_accordion_header:hover a,
+.wh_main_page_toc > .wh_main_page_toc_entry:hover a {
+    text-decoration: underline;
+}*/
+
+.wh_main_page_toc_accordion_header:hover:before {
+    background-color: #F2F1F8;
+}
+.wh_main_page_toc .wh_main_page_toc_accordion_header,
+.wh_main_page_toc > .wh_main_page_toc_entry,
+.wh_main_page_toc_accordion_entries {
+    text-align: left;
+}
+.wh_main_page_toc .wh_toc_shortdesc {
+    color: black;
+}
+.wh_main_page_toc_accordion_header:before {
+    color: #005EB8;
+}
+.wh_main_page_toc .expanded {
+    border: none;
+    background-color: #F2F1F8;
+}
+
+.wh_main_page_toc_accordion_header a {
+    color: #005EB8;
+}
+
+.wh_main_page_toc_accordion_entries {
+    background-color: #F2F1F8;
+
+}
+.wh_tile_shortdesc {
+    /*color: #1ea7ef;  */
+    font-weight: 400;
+    font-size: 1em;
+    margin-top: 0.5em;
+    text-align: justify;
+}
+.wh_tile_title {
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: none;
+}
+.wh_tile_title a {
+    color: #005EB8 !important;
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 2em;
+    margin: -2em;
+}
+
+.wh_tile_title span {
+    line-height: normal;
+}
+
+
+/*
+ * ------------------------------------------------------------------
+ *
+ * Topic Pages
+ *
+ */
+
+
+
+
+/*  ----------- Pub TOC -----------  */
+.wh_publication_toc {
+    padding: 5px 15px 5px;
+    border-right: 1px solid #F2F1F8 !important;
+    line-height: 2em;
+    width: 15em !important;
+}
+.wh_publication_toc > ul {
+    padding: 0 2pt 0;
+}
+.wh_publication_toc .active > span {
+    color: #005EB8;
+    text-decoration: underline;
+}
+.wh_publication_toc span,
+.wh_publication_toc a,
+.wh_publication_toc a:visited {
+    color: #005EB8;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+.wh_publication_toc a:hover,
+.wh_topic_toc a:hover {
+    text-decoration: underline;
+}
+
+#wh_publication_toc + #pub_toc_button {
+    vertical-align: top;
+    display: block;
+    height: 1em;
+    width: 1em;
+    margin: 0;
+    padding-left: 1em;
+    position: fixed;
+    order: 1;
+    z-index: 5;
+}
+
+#pub_toc_button {
+    display: none;
+}
+/*      */
+#wh_publication_toc {
+    z-index: 4;
+    height: 100%;
+    margin-left: 3em;
+    order: 2;
+    /* width: 20%; */
+    flex-basis: auto;
+    flex-shrink: 1;
+    width: 15em;
+}
+
+/* DE234:  Spacing irregularities with flexible TOCS in Webhelp */
+#wh_publication_toc > .show + #wh_topic_body {
+    width: 75%;
+}
+
+/*US628: Modify toggle pins in webhelp  */
+#wh_publication_toc.show {
+    display: none !important
+}
+
+#wh_publication_toc.collapse:not(.show) {
+    display: block !important;
+}
+
+
+/* -----------  Publication TOC short descripton (tooltip) ----------- */
+.wh_breadcrumb .topicref .wh-tooltip,
+.wh_publication_toc .topicref .wh-tooltip {
+
+
+    /* 
+     * color: #e3f0f7;
+     * background-color: #444444;
+     * DE234:  short description appares above other elements */
+    z-index: 100;
+}
+.wh_breadcrumb .topicref .wh-tooltip a,
+.wh_publication_toc .topicref .wh-tooltip a {
+    /*color: #e3f0f7;*/
+    color: #005EB8;
+    text-decoration: underline;
+}
+
+/* Tooltip arrow. */
+[data-tooltip-position = "left"] .topicref .wh-tooltip::before {
+    border-left-color: #005EB8;
+}
+[data-tooltip-position = "right"] .topicref .wh-tooltip::before {
+    border-right-color: #005EB8;
+}
+[data-tooltip-position = "bottom"] .topicref .wh-tooltip::before {
+    border-bottom-color: #005EB8;
+}
+[data-tooltip-position = "top"] .topicref .wh-tooltip::before {
+    border-top-color: #005EB8;
+}
+
+/* ----------- Content area  ----------- */
+
+/*  Custom lists - content moved from GE.css for US616  */
+
+div.topicMeta {
+    /* grid-area: meta; */
+    display: block;
+    text-align: right;
+    hyphens: none;
+    width: 100%;
+}
+
+.topicMeta ul {
+    list-style: none;
+    font-size: 8pt;
+    margin: 0 0 10px 10px;
+    padding: 0
+}
+
+.topicMeta ul > li {
+    padding-right: 6px;
+    line-height: 1.25;
+    margin-top: 3pt;
+}
+
+.metalabel {
+    color: #4c3494;
+    font-weight: bold;
+}
+
+
+/* US543 Show topic id for chunked content. */
+header.topic-id {
+    font-size: 9pt;
+    position: relative;
+    top: 25px;
+    margin: 0;
+    padding: 0px;
+}
+
+.valign-middle {
+    vertical-align: middle !important;
+}
+
+.valign-bottom {
+    vertical-align: bottom !important;
+}
+
+img.image:not(img[usemap]) {
+    border-radius: 0px;
+}
+
+
+
+#wh_tools {
+    grid-area: footer;
+    width: 100%;
+}
+
+#wh_topic_container .wh_content_area {
+
+    justify-content: left;
+    width: 100%;
+    padding-top: 1em;
+    vertical-align: top;
+    background-color: transparent;
+    display: table;
+    /*   grid-template-areas: 
+    'body'
+     'footer';*/
+}
+
+#topic_body {
+    grid-area: body;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+    width: auto;
+    gap: 1em;
+}
+
+#wh_topic_body {
+    float: left;
+    flex-direction: row;
+    flex-basis: auto;
+    flex-grow: 4;
+    flex-shrink: 3;
+    flex-flow: row nowrap;
+    order: 3;
+    margin-right: 2em;
+    margin-left: 2em;
+    display: inline-flex;
+    z-index: 1;
+    width: 100%;
+}
+
+#body_grid {
+    display: grid;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    grid-template-rows: min-content;
+    grid-template-areas: 
+    'T-Body '
+ 'C-links '
+ 'R-links ';
+}
+
+.wh_topic_content {
+    line-height: 1.7em;
+    position: relative;
+    left: 0;
+    top: 0;
+    flex-direction: row;
+    flex-basis: auto;
+    overflow: visible;
+    overflow-wrap: normal;
+    order: 1;
+    width: 100%;
+    min-width: 100%;
+    max-height: min-content;
+    grid-area: T-Body;
+}
+
+article > div {
+    display: block;
+    position: relative;
+    left: 2%;
+    width: 95%;
+}
+
+
+
+/*  US616 - remove padding: 1.5em; - changed background color*/
+/* ---------------------------------   */
+.wh_main_page .wh_content_area {
+    background-color: white;
+    padding: 0 1.5em 2em 0;
+    color: #0b6a9c;
+    /*     margin-bottom: 2em;
+*/
+    text-align: center;
+    align-items: center;
+    font-size: 1em;
+
+}
+/* US502 Improve the tile display when just two tiles are present 
+ *  Plus enhance tile usability */
+
+.wh_content_flex_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+/*----------- Title & subtitles ----------- */
+
+
+.wh_tiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+.wh_tile {
+    border: 1px solid #4c3494 !important;
+    border-radius: 16px;
+    /*  background-color: #F2F1F8;*/
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(154, 147, 113, 0.95);
+    /* US502 WH-R: Improve tile display  */
+    cursor: pointer;
+}
+
+.wh_tile:hover {
+    background-color: #F2F1F8;
+}
+
+
+.wh_tile_link {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.wh_tile_shortdesc {
+    text-align: center;
+    color: #666666;
+}
+
+.topictitle1 {
+    color: #4c3494;
+    font-weight: bold;
+    line-height: 1.0;
+    font-size: 2em;
+
+}
+
+.topictitle2,
+.topictitle3,
+.topictitle4,
+.topictitle5,
+.topictitle6 {
+    color: #4c3494;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.wh_expand_btn {
+    left: -1em;
+    margin-right: 3px;
+    width: 2em;
+    color: #666666;
+}
+
+
+/* -----------  Other content----------- */
+.wh_topic_content .shortdesc {
+    font-style: italic;
+}
+.wh_topic_content .related-links {
+    font-size: .91em;
+}
+
+
+/* US551 add draft banner to webhelp responsive home page added opacity   */
+.draft {
+    font-size: 26pt;
+    font-weight: bold;
+    background-color: #BBBBBB;
+}
+
+
+/* ---------------Tabels------------------ */
+
+table {
+    overflow: scroll;
+    overflow-wrap: normal;
+}
+
+/* US601: users to apply shading to table rows  */
+
+.thead > tr {
+    background-color: #D4D4D4;
+    color: #000000;
+    border: #000000;
+    z-index: 2;
+}
+
+table.frame-none > thead > tr > th {
+    border-right: none
+}
+
+table.frame-none > tbody > tr > td {
+    border-right: none
+}
+.frame-none td,
+.frame-none th {
+    border-top: none;
+}
+
+.table:not(.frame-none) {
+    border: solid 1px;
+}
+/*  DE235: Footnotes in Table Heads do not appear */
+.simpletable > .strow {
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+.simpletable > .tbl_footnotes > .entry {
+    border-right: none;
+    border-left: none;
+}
+.entry {
+    border-right: solid 1px;
+    overflow-wrap: normal;
+}
+
+.alt-row > tbody > tr:nth-child(even) {
+    background-color: #E4E4E4;
+}
+
+.shade {
+    background-color: #E4E4E4;
+}
+
+/* DE219: Inconsistency in table with links in WH-R */
+.entry > p {
+    margin-top: .5em;
+}
+
+/* DE228:  Footnote appears at the bottom of an HTML page, not at the bottom of the table  */
+.tbl_footnotes {
+    border-width: 0;
+}
+
+/* --------------- Inline text ------------------ */
+
+
+
+/* US512 userinput, codeph, and codeblock backgrounds 
+ * DE234:  Spacing irregularities with flexible TOCS in Webhelp*/
+pre {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    align-self: stretch;
+    width: 100%;
+}
+
+code {
+    font-family: "Courier Prime Code", mono;
+    background-color: #E4E4E4;
+    font-size: 9pt;
+    overflow: scroll;
+}
+
+/* added this section based on feedback from oXygen for the search header */
+.ui-autocomplete {
+    z-index: 10000;
+}
+
+.apiname {
+    font-family: "Courier Prime Code", mono;
+}
+
+.cmdname {
+    font-family: "Courier Prime Code", mono;
+    font-weight: bold;
+}
+
+.codeph {
+    font-family: "Courier Prime Code", mono;
+    color: black;
+}
+
+.filepath {
+    font-family: "Courier Prime Code", mono;
+}
+
+/* US501 Change userinput style to match PDF*/
+
+.userinput {
+    font-family: "Courier Prime Code", mono;
+    color: black;
+    background-color: #E4E4E4;
+    font-weight: bold;
+}
+
+.msgph {
+    /* US573 add Arial to webhelp */
+    font-family: "GE Inspira Sans", Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* 11111 - long URSs made the side TOCs unreadibly narrow*/
+
+#long-text {
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+/* ---------------Notes, tips, warning, etc------------------ */
+.note_warning {
+    text-transform: uppercase;
+}
+
+span.note__title {
+    text-transform: uppercase;
+}
+
+/* US490 NO SYMBOL note */
+div.note_note > span.note__title {
+    background-image: none !important;
+    padding: 4px 4px 4px 0px;
+}
+
+/* US559 notes with type "hazard" need the icon middle aligned with text */
+div.note {
+    background-position: 1% 19px !important;
+}
+
+/* US490 NO border padding all sides note */
+.note {
+    padding: 0em 1em 0em 1em;
+}
+
+div.caution {
+    background-image: none !important;
+}
+
+div.caution.symbol {
+    background-image: url("../app/img/caution.svg") !important;
+}
+
+div.warning {
+    background-image: none !important;
+}
+
+div.warning.symbol {
+    background-image: url("../app/img/warning.svg") !important;
+}
+
+div.danger {
+    background-image: none !important;
+}
+
+div.danger.symbol {
+    background-image: url("../app/img/danger.svg") !important;
+}
+
+*[class ~= "topic/note"].note_caution {
+    border-color: #ffd100;
+    background-color: #F2F1F8;
+}
+
+*[class ~= "topic/note"].note_warning {
+    border-color: #ff8200;
+    background-color: #F2F1F8;
+}
+
+*[class ~= "topic/note"].note_danger {
+    border-color: #c8102e;
+    background-color: #F2F1F8;
+}
+
+
+*[class ~= "topic/note"]:not([class ~= "hazard-d/hazardstatement"]) {
+    background-color: white;
+    border: none;
+}
+
+/* ----------------- hazard statements -------------------- */
+
+/* DE217 Webhelp: 23.1 upgrade broke hazard statements */
+.hazardstatement--logo-col {
+    width: 80px;
+}
+
+.hazardstatement--msg-col {
+    width: fit-content;
+}
+
+.hazardstatement table {
+    border: none !important;
+}
+
+/* US490 hazardstatement and note style improvements */
+.hazardstatement.note.hazardstatement {
+    border: none;
+}
+
+.hazardstatement thead th {
+    padding-left: 85px;
+    background-color: transparent;
+    text-align: left;
+    border: none;
+}
+
+.hazardstatement th {
+    padding-left: 85px;
+    background-color: transparent;
+    text-align: left;
+    border: none;
+}
+
+.hazardstatement td {
+    border: none;
+}
+
+.typeofhazard {
+    text-transform: uppercase;
+}
+
+table > thead > tr > th.hazardstatement--notice span {
+    color: #000;
+}
+
+table.ansi > thead > tr > th.hazardstatement--notice span {
+    background-color: #004C97;
+    color: white;
+    font-style: italic;
+    padding: 6px 18px 8px 16px;
+    border: 2px solid black !important;
+}
+
+table.ansi > thead > tr > th.hazardstatement--caution > span {
+    background-color: #ffd100;
+    padding: 6px 18px 8px 16px;
+    border: 2px solid !important;
+}
+
+table.ansi > thead > tr > th.hazardstatement--warning > span {
+    background-color: #ff8200;
+    padding: 6px 18px 8px 16px;
+    border: 2px solid !important;
+}
+
+table > thead > tr > th.hazardstatement--danger span {
+    color: black;
+}
+
+table > thead > tr > th > span > .hazardsymbol {
+    display: none;
+}
+
+table.ansi > thead > tr > th.hazardstatement--danger > span {
+    background-color: #c8102e;
+    color: white;
+    padding: 6px 18px 8px 16px;
+    border: 2px solid black !important;
+}
+
+/* Add hazard icon on notices. */
+*[class ~= "hazard-d/hazardstatement"].hazardstatement_notice .hazardstatement--logo-col {
+    display: table-column !important;
+}
+
+*[class ~= "hazard-d/hazardstatement"].hazardstatement_notice th {
+    table-column-span: 2 !important;
+}
+
+*[class ~= "hazard-d/hazardstatement"].hazardstatement_notice td:first-of-type {
+    display: table-cell !important;
+}
+
+/* generic hazardsymbol should NOT be displayed in Notice. */
+table.notice > tbody > tr > td > svg {
+    display: none !important;
+}
+
+
+
+
+/*---------------Figure/table titles-----------------
+ * Show the figure numbers, is is requried for GE webhelp
+ */
+
+.fig--title-label-number {
+    display: inline;
+}
+
+.fig--title-label:after {
+    content: "";
+}
+
+.figcap {
+    font-weight: bold;
+    padding-top: 12px;
+}
+
+.tablecap {
+    font-weight: bold;
+    padding-left: 0em;
+}
+
+.wintitle {
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+/*  ----------- Related links/Choice links ----------- */
+/*  US616/DE234 - Force related links to the bottom*/
+
+.wh_related_links {
+    width: 100%;
+    grid-area: R-links;
+}
+.wh_child_links {
+    width: 100%;
+    grid-area: C-links;
+    padding-right: 3em;
+}
+
+.wh_related_links .related-links,
+.wh_topic_content .related-links,
+.wh_child_links {
+    margin: 1em 0 0 0;
+    /*background-color: #F2F1F8; 
+      border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: #e3f0f7 solid 1px;*/
+    padding: 0 1em;
+}
+
+/* US553 Collection type equals choice 
+ * DE234:  Spacing irregularities with flexible TOCS in Webhelp*/
+div.topic-choices-label {
+    font-weight: bold;
+    left: -1em;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+div.desc {
+    display: none;
+}
+/* DE234:  Spacing irregularities with flexible TOCS in Webhelp
+ * .wh_child_links {
+    padding: 1em;
+}
+ */
+.wh_child_links {
+    padding: .5em;
+    padding-left: 3em;
+}
+
+.wh_child_links li {
+    list-style: disc;
+}
+
+/* -----------  Topic TOC  ----------- */
+#wh_topic_toc {
+    order: 2;
+    float: right;
+    top: 20px;
+    height: fit-content;
+    padding: 5px 15px 5px;
+    width: 280px;
+    z-index: 4;
+    position: sticky;
+    grid-area: T-TOC;
+    overflow-wrap: normal;
+    overflow: auto;
+}
+
+.wh_topic_toc {
+    float: right;
+    vertical-align: top;
+    display: inline-block;
+    float: right;
+    position: fixed;
+    height: auto;
+    width: 200px !important;
+    overflow-wrap: normal;
+    border-left: 1px solid #F2F1F8 !important;
+}
+
+.wh_topic_toc li {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+#wh_topic_toc + #topic_toc_button {
+    vertical-align: top;
+    display: inline-block;
+    position: fixed;
+    height: 1em;
+    width: 1em;
+    margin: 0;
+    padding-left: 2px;
+    z-index: 5;
+    right: 3em;
+    grid-area: T-Button;
+    order: 3;
+}
+
+#topic_toc_button {
+    display: none;
+}
+
+/*US628: Modify toggle pins in webhelp  */
+#wh_topic_toc.show {
+    display: none !important
+}
+
+#wh_topic_toc.collapse:not(.show) {
+    display: block !important;
+}
+
+
+/*  ----------- TOC thumbnails -----------   */
+#pub_toc_button button,
+#topic_toc_button button {
+    top: 1px;
+    padding: 0;
+    cursor: pointer;
+    margin: 0;
+    height: 12px;
+    width: 12px;
+    box-shadow: 2px 2px #005EB8;
+}
+
+#pub_toc_button button[aria-expanded = "false"] {
+    background: url('img/Pinned-ChapterTOC.png') 0em 0em no-repeat;
+    background-size: 11px 11px;
+}
+
+#topic_toc_button button[aria-expanded = "false"] {
+    background: url('img/Pinned-TopicTOC.png') 0em 0em no-repeat;
+    background-size: 11px 11px;
+}
+
+#pub_toc_button button[aria-expanded = "true"] {
+    background: url('img/Unpinned-ChapterTOC.png') 0em 0em no-repeat;
+    background-size: 11px 11px;
+
+}
+
+#topic_toc_button button[aria-expanded = "true"] {
+    background: url('img/Unpinned-TopicTOC.png') 0em 0em no-repeat;
+    background-size: 11px 11px;
+
+}
+
+/*
+ * ------------------------------------------------------------------
+ *
+ * Search results.
+ *
+ */
+.wh_search_results {
+    margin: 2em;
+}
+
+.searchresult {
+    list-style: none;
+    width: 90%;
+}
+.searchresult li {
+    padding: .5em;
+    list-style: none;
+}
+.searchresult li a {
+    color: #005EB8;
+}
+.wh_search_expression {
+    font-weight: bold;
+    font-style: italic;
+}
+.searchresult .shortdesclink {
+    margin: .3em .5em 0 0;
+}
+.wh_search_expression {
+    font-weight: bold;
+}
+/*--------- Search results breadcrumb ----------*/
+.search-breadcrumb li a {
+    background: white;
+}
+.search-breadcrumb li .title:before,
+.search-breadcrumb li .title:after {
+    border-color: white;
+}
+.search-breadcrumb li .title:before {
+    border-left-color: transparent;
+}
+.search-breadcrumb li .title:after {
+    border-color: transparent;
+    border-left-color: white;
+}
+/* --------------- Highlights  --------------- */
+.highlight {
+    /*  background-color: #0b6a9c;*/
+    background-color: #f8d754;
+    /* color: inherit !important;*/
+    border-radius: 4px;
+    padding: 0 1px;
+
+}
+.wh-h {
+    padding: 0 1px;
+}
+/*  --------------- Index terms  --------------- */
+
+.wh-letters {
+    border-radius: 6px;
+    background-color: #F2F1F8;
+}
+
+.wh_term_group {
+    /* border: 1px solid #e3f0f7;
+    background-color: #e3f0f7; */
+    border-radius: 6px;
+    border: 3px solid #F2F1F8;
+    margin: 1em 0;
+    padding: 1em;
+}
+.wh_term > span {
+    color: black;
+    font-style: italic;
+}
+.wh_index_terms span.wh_first_letter {
+    border: none;
+    font-size: 1.5em;
+    margin: 0;
+}
+.wh_index_terms #indexList {
+    padding: 0;
+}
+/*  --------------- Search pre-loader  --------------- */
+.fakeTitle {
+    background-color: #D4D4D4;
+}
+.fakeText {
+    background-color: #A9A9A9;
+}
+.fakeText:before {
+    background-color: #8D8D8D;
+}
+
+/*
+ * ------------------------------------------------------------------
+ *
+ * Footer
+ *
+ */
+.wh_footer {
+    background-color: white;
+    background-size: cover;
+    /* padding: 4em 0em;
+    color: #ffffff; */
+    text-align: center;
+    align-items: center;
+    display: grid;
+    /*  background-color: #E3F0F7; */
+    color: #4c3494;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: none;
+    margin-top: 2em;
+    flex-direction: column;
+}
+
+.wh_main_page > .wh_footer {
+    grid-template-columns: 15% 85%;
+    grid-template-areas: 
+    'cemark custom'
+ 'cemark copyright'
+ 'cemark GUID'
+}
+
+.wh_topic_page .wh_terms_page .wh_search_page > .wh_footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'custom custom'
+ 'copyright copyright'
+ 'GUID GUID'
+}
+.wh_terms_page > .wh_footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'custom custom'
+ 'copyright copyright'
+ 'GUID GUID'
+}
+.wh_topic_page > .wh_footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'custom custom'
+ 'copyright copyright'
+ 'GUID GUID'
+}
+.wh_search_page > .wh_footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'custom custom'
+ 'copyright copyright'
+ 'GUID GUID'
+}
+
+.after-body {
+    background-color: white;
+    color: #4c3494;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.glyphicon-envelope:before {
+    content: "\2709";
+}
+
+
+.wh_footer a {
+    color: #005EB8;
+}
+.ftrcustom {
+    grid-area: custom;
+    text-align: center;
+    align-items: center;
+
+}
+.copyright_info {
+    grid-area: copyright;
+    text-align: center;
+    align-items: center;
+}
+.HomepageGUID {
+    grid-area: GUID;
+    text-align: center;
+    align-items: center;
+}
+/* US613: Add CE mark to home page of WH-R	 */
+.CEmark {
+    grid-area: cemark;
+    position: relative;
+    height: 33px;
+    vertical-align: top;
+    text-align: right;
+}
+
+.CEmark > span {
+    font-size: 75%;
+    font-weight: bold;
+    color: black;
+    vertical-align: -1em;
+    padding: 2px;
+}
+.wh_topic_page > .wh_footer > .CEmark {
+    display: none;
+}
+.wh_search_page > .wh_footer > .CEmark {
+    display: none;
+}
+.wh_terms_page > .wh_footer > .CEmark {
+    display: none;
+}
+
+.GETradmark {
+    width: 100%;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/* DE234:  Spacing irregularities with flexible TOCS in Webhelp */
+
+
+@media only screen and (max-width : 850px) {
+
+    #topic_body {
+        min-width: fit-content;
+    }
+
+    #wh_topic_body {
+        display: grid;
+        grid-template: 
+        'T-TOC'
+ 'T-Body'
+    }
+
+    /* DE234:  Added Body grid to fix issue with related links
+    */
+
+    #body_grid {
+        grid-area: T-Body;
+        width: 100%;
+        overflow: auto;
+        overflow-wrap: normal;
+    }
+
+
+    #wh_topic_toc {
+        grid-area: T-TOC;
+        height: fit-content;
+        position: relative;
+        width: 80%;
+        height: fit-content;
+        overflow: visible;
+        left: 1em;
+    }
+
+    .wh_topic_toc {
+        position: relative !important;
+        display: block;
+        top: 20px;
+        padding-bottom: 2em;
+        float: left;
+    }
+
+    #wh_topic_toc + #topic_toc_button {
+        display: block;
+        height: 1em;
+        margin: 0;
+        padding: 1em;
+        position: fixed;
+        right: 3em;
+        z-index: 5;
+    }
+
+    article > div {
+        display: block;
+        position: relative;
+        left: 2%;
+        padding-right: 2em;
+    }
+
+    #wh_publication_toc {
+        display: none;
+    }
+    #wh_publication_toc + #pub_toc_button {
+        display: none;
+    }
+    #pub_toc_button {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width : 767px) {
+/* Header 
+    .wh_main_page > header > .container-fluid > .wh_header_flex_container,
+    .wh_search_page > header > .container-fluid > .wh_header_flex_container,
+    .wh_terms_page > header > .container-fluid > .wh_header_flex_container,
+    .wh_topic_page > header > .container-fluid > .wh_header_flex_container {
+        d
+    }*/
+
+
+    .wh_logo_and_publication_title {
+        order: 1;
+        display: grid;
+        width: 100%;
+        padding-top: 1em;
+    margin-top: 1em;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        'logo search'
+ 'title title';
+    }
+
+    .wh_logo {
+        grid-area: logo;
+        display: block !important;
+    }
+    .wh_publication_title {
+        grid-area: title;
+        padding-top: 5px;
+    }
+    .search_container {
+        grid-area: search;
+    }
+
+    .wh_toggle_button {
+        position: relative;
+        bottom: 0;
+        order: 2;
+    }
+
+    .wh_top_menu li a {
+        color: white;
+    }
+    .wh_top_menu li.active a {
+        color: #005EB8;
+    }
+    .wh_top_menu li.active {
+        background-color: #005EB8;
+    }
+    .wh_top_menu li.active > span a {
+        background-color: #005EB8;
+    }
+    .wh_toggle_button.navbar-toggle,
+    .wh_toggle_button.navbar-toggle:focus {
+        border: none;
+        /* border-color: #0b6a9c; */
+        border-radius: 6px;
+        background-color: #005EB8;
+    }
+    .wh_toggle_button.navbar-toggle .icon-bar {
+        background-color: #005EB8;
+    }
+    /*  .wh_top_menu ul ul li {
+        border: none;
+    }*/
+
+    /* US612: WHR: search bar overlaps the title when the webhelp is displayed on a very small screen */
+    .search_link {
+        display: none;
+    }
+    .ProdVersion {
+        color: #0b6a9c;
+        padding: .75em;
+    }
+
+    .wh_search_input {
+        left: 0;
+        grid-area: search;
+        top: -1em;
+    }
+
+    /* Topic head */
+    .wh_tile > div {
+        height: auto;
+    }
+
+    .wh_top_menu > ul > li > .topicref > a {
+        background-color: #0b6a9c;
+        margin: 0 0px;
+        border-radius: 0px 0px 0 0;
+    }
+    .wh_top_menu > ul > li > ul {
+        margin: 0 0px;
+    }
+    /* Do not allow the text to go beneath the search button  */
+    .wh_search_textfield {
+        padding-right: 3em;
+    }
+
+
+.wh_search_button {
+   display:block !important;
+}
+
+}
+    /* Topic body */
+
+    /* Pub TOC */
+
+    .wh_publication_toc {
+        padding: 1em;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+
+    .wh_main_page > .wh_footer {
+        grid-template-columns: 30% 70%;
+        grid-template-areas: 
+        'cemark custom'
+ 'cemark copyright'
+ 'cemark GUID'
+    }
+    .wh_topic_page > .wh_footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'custom custom'
+ 'copyright copyright'
+ 'GUID GUID'
+    }
+
+    .wh_terms_page > .wh_footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'custom custom'
+ 'copyright copyright'
+ 'GUID GUID'
+    }
+
+    .wh_search_page > .wh_footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'custom custom'
+ 'copyright copyright'
+ 'GUID GUID'
+    }
+
+
+@media only screen and (max-width : 440px) {
+
+    .wh_logo_and_publication_title {
+        order: 1;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        'logo logo'
+ '. search'
+ 'title title';
+    }
+    
+
+.search_container {
+    padding-bottom: 1em;
+}
+
+}
