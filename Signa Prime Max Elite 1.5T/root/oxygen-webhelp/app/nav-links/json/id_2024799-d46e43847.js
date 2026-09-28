@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Draining the Coolant","shortdesc":"<p class=\"shortdesc\">Use this procedure to drain coolant from the SBGD, ISR , 18KW Chiller, ICC.<\/p>","href":"t_DrainingTheCoolant.html","attributes":{"data-id":"id_2015061"},"menu":{"hasChildren":false},"tocID":"id_2015061-d46e43948","topics":[]}]});

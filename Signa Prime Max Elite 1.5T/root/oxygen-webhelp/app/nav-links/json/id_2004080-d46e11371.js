@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Checking the ECG leads for wired gating","shortdesc":"<p class=\"shortdesc\">Test the electrical connections on the ECG cables for a wired gating system.<\/p>","href":"t_CheckingTheECGLeads_WiredGating.html","attributes":{"data-id":"id_2072920"},"menu":{"hasChildren":false},"tocID":"id_2072920-d46e11473","topics":[]}]});
