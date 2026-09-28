@@ -1,0 +1,601 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en" whc:version="22.0">
+
+    <head><link rel="shortcut icon" href="oxygen-webhelp\template\img\favicon-32x32.webp"><!----></link><link rel="icon" href="oxygen-webhelp\template\img\favicon-32x32.webp"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="These UPMs are identical and boards can be swapped to help with troubleshooting. See UPM board swap procedure for details. Note: On the RF detector board(s), each unused RF port must be loaded with a ..."/><meta charset="UTF-8"/><meta name="copyright" content="(C) Copyright 2023"/><meta name="DC.rights.owner" content="(C) Copyright 2023"/><meta name="DC.type" content="reference"/><meta name="DC.coverage" content=""/><meta name="prodname" content=""/><meta name="version" content="0"/><meta name="brand" content=""/><meta name="component" content=""/><meta name="featnum" content="Service Operations"/><meta name="featnum" content=""/><meta name="prognum" content=""/><meta name="platform" content=""/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="id_13106127"/><title>Universal Power Monitor (UPM) troubleshooting</title><!--  Generated with Oxygen version 23.1, build number 2021121412.  --><meta name="wh-path2root" content=""/><meta name="wh-source-relpath" content="r_ts_Universal-Power-Monitor-UPM-Troubleshooting_14445958.dita"/><meta name="wh-out-relpath" content="r_ts_Universal-Power-Monitor-UPM-Troubleshooting_14445958.html"/>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/>
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2021121412"/>
+    
+    
+    <script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script>
+    
+    <script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/notes.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/GEHealthCare.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/print.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/footer-fix.css?buildId=2021121412"/><script src="./oxygen-webhelp/lib/scripts/Remove_LSEP.js"></script></head>
+    <body id="id_13106127" class="wh_topic_page frmBody">
+        <!--US578: WHR - Move search to line up with manual title-->
+        <div class="SupressSearch">
+            <!--Search form 
+                Removed class for DE238: Double search fields when webhelp is viewed on
+            <whc:webhelp_search_input class="navbar-form wh_topic_page_search search" role="form">-->
+            <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_search_input " role="form">
+                
+                
+                <div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div>
+                
+                
+            </div>
+        </div>
+        <a href="#topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="23.1">
+    <div class="container-fluid">
+        <!-- GEDev US509 Webhelp: expandable navbar icon invisible changed to navbar-light -->
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-light">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <!-- GE Dev US464 change logo link to blank target -->
+                    <a href="https://www.gehealthcare.com/" class=" wh_logo d-none d-sm-block " target="_blank"><img src="oxygen-webhelp\template\img\GE-HLTHCR_Webhelp_CMYK-CompPrpl.svg" alt="SIGNA™ Premier 3.0T Service Manual"/></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle"><span class="ph mainbooktitle">SIGNA™ Premier 3.0T Service Manual</span></span></a></div>
+                    <!--* DE224: WHR: Link under the search field is missing -->
+                    <div class="search_container">
+                        <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_search_input "><div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div></div><whc:search_field></whc:search_field>
+                        <div class="search_link">
+                             
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+            </div>
+            
+            
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033906-d46e224-mi" data-tocid="id_2033906-d46e224" data-state="not-ready" class=" topicref " data-id="id_2033906"><span class="title"><a href="c_Safety_WebhelpLandingPage.html">Safety and General Information</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033907-d46e1778-mi" data-tocid="id_2033907-d46e1778" data-state="not-ready" class=" topicref " data-id="id_2033907"><span class="title"><a href="c_PreInstallation_WebhelpLandingPage.html">Pre-Installation</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033909-d46e1984-mi" data-tocid="id_2033909-d46e1984" data-state="not-ready" class=" topicref " data-id="id_2033909"><span class="title"><a href="c_Installation_WebhelpLandingPage.html">Installation</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033902-d46e47631-mi" data-tocid="id_2033902-d46e47631" data-state="not-ready" class=" topicref " data-id="id_2033902"><span class="title"><a href="c_AdjustmentsAndCalibrations_WebhelpLandingPage.html">Adjustments/Calibrations</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033910-d46e84750-mi" data-tocid="id_2033910-d46e84750" data-state="not-ready" class=" topicref " data-id="id_2033910"><span class="title"><a href="c_FunctionalChecks_WebhelpLandingPage.html">Functional Checks</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033911-d46e101428-mi" data-tocid="id_2033911-d46e101428" data-state="not-ready" class=" topicref " data-id="id_2033911"><span class="title"><a href="c_Software_WebhelpLandingPage.html">Software</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033912-d46e123345-mi" data-tocid="id_2033912-d46e123345" data-state="not-ready" class=" topicref " data-id="id_2033912"><span class="title"><a href="c_Theory_WebhelpLandingPage.html">Theory</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033914-d46e126730-mi" data-tocid="id_2033914-d46e126730" data-state="not-ready" class=" topicref " data-id="id_2033914"><span class="title"><a href="c_PlannedMaintenance_WebhelpLandingPage.html">Planned Maintenance</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033915-d46e136133-mi" data-tocid="id_2033915-d46e136133" data-state="not-ready" class=" topicref " data-id="id_2033915"><span class="title"><a href="c_Troubleshooting_WebhelpLandingPage.html">Troubleshooting</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033916-d46e142542-mi" data-tocid="id_2033916-d46e142542" data-state="not-ready" class=" topicref " data-id="id_2033916"><span class="title"><a href="c_Parts_WebhelpLandingPage.html">Parts</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033917-d46e144514-mi" data-tocid="id_2033917-d46e144514" data-state="not-ready" class=" topicref " data-id="id_2033917"><span class="title"><a href="c_Replacements_WebhelpLandingPage.html">Replacements</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033903-d46e452121-mi" data-tocid="id_2033903-d46e452121" data-state="not-ready" class=" topicref " data-id="id_2033903"><span class="title"><a href="c_OEMAndOtherManuals_WebhelpLandingPage.html">OEM and Other Manuals</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033904-d46e452533-mi" data-tocid="id_2033904-d46e452533" data-state="not-ready" class=" topicref " data-id="id_2033904"><span class="title"><a href="c_Coils_WebhelpLandingPage.html">Coils</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033918-d46e459216-mi" data-tocid="id_2033918-d46e459216" data-state="not-ready" class=" topicref " data-id="id_2033918"><span class="title"><a href="c_OptionalFeatures_WebhelpLandingPage.html">Optional Features</a></span></span></li></ul></nav>
+                
+                <!--whc:include_html href="${webhelp.fragment.after.top_menu}"/-->
+                
+            </div>
+            
+        </div>
+    </div>
+</header>
+        
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+
+                        <!-- External resource link -->
+                        
+
+                        <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page" class="oxy-icon oxy-icon-print"></button></div>
+
+                        <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                        
+                    </div>
+                    
+                </nav>
+            </div>
+
+            <!--whc:include_html href="${webhelp.fragment.before.main.content.area}"/>
+           
+            <whc:include_html href="${webhelp.fragment.before.main.content.area.topic.page}"/-->
+
+
+            <div class="wh_content_area">
+                <!-- US616 - TOC toggle buttons -->
+                <div class="row" id="topic_body">
+                    
+                    <div id="pub_toc_button">
+                        <button type="button" data-target="#wh_publication_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc"></button>
+                    </div>
+                    
+                    <!--  DE234:  Spacing irregularities with flexible TOCS in Webhelp 
+                    Moved related links out 2 divs, moved topic tocs into topic body-->
+                    <div id="wh_topic_body">
+                        
+                        <div id="body_grid"><!-- DE234:  Added Body grid to fix issue with related links-->
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1"><header class="contentHead">
+        <div class="topicMeta"><ul class="- topic/title title"><li> </li><li></li><li></li><li><span class="metalabel">Object ID: </span>00000018WIA30431E20GYZ</li><li><span class="metalabel">Topic ID: </span>id_13106127<span class="metalabel"> Version: </span>5.1</li><li><span class="metalabel">Date: </span>Nov 2, 2022 4:13:01 AM</li></ul></div><h1 class="- topic/title title topictitle1" id="ariaid-title1">Universal Power Monitor (UPM) troubleshooting</h1></header>
+        <div class="- topic/body reference/refbody body refbody"><section class="- topic/section section">
+    </section></div><article class="- topic/topic reference/reference topic reference nested1 yes id_SL5412623-1058080" aria-labelledby="ariaid-title2" id="id_SL5412623-1058080"><header class="topic-id"><span class="metalabel">Topic ID: </span>id_SL5412623-1058080</header><h2 class="- topic/title title topictitle2" id="ariaid-title2">Overview</h2><div class="- topic/body reference/refbody body refbody"><section class="- topic/section section" id="id_SL5412623-1058080__SL5412623-1058080" data-ofbid="id_SL5412623-1058080__SL5412623-1058080">
+        
+        
+        
+        <p class="- topic/p p" id="id_SL5412623-1058080__id_14919927" data-ofbid="id_SL5412623-1058080__id_14919927">These UPMs are identical and boards can be swapped to help with
+troubleshooting. See <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> for details. </p>
+        
+        
+        
+        
+        
+        
+        <div class="- topic/note note note note_note" id="id_SL5412623-1058080__id_14919935" data-ofbid="id_SL5412623-1058080__id_14919935"><span class="note__title">Note:</span> 
+          <p class="- topic/p p" id="id_SL5412623-1058080__id_14919936" data-ofbid="id_SL5412623-1058080__id_14919936">On the RF detector board(s), each unused RF port must
+be loaded with a 50 ohm SMB terminator. If the MNS Option is not installed,
+the MNS RF ports will instead be terminated with a 50 ohm SMB terminator.</p>
+        </div>
+        
+        
+        
+        
+        
+        <table class="- topic/table table" id="id_SL5412623-1058080__SL1909494-1058080" data-ofbid="id_SL5412623-1058080__SL1909494-1058080"><caption class="- topic/title title tablecap" caption-side="top" is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 1</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">RF Processor and detector board LEDs</span></caption><colgroup><col style="width:18%"/><col style="width:82%"/></colgroup><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL5412623-1058080__id_14919954">
+                  <span class="+ topic/ph ui-d/uicontrol ph uicontrol">LED Name</span>
+                </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL5412623-1058080__id_14919955">
+                  <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Description</span>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL5412623-1058080__id_14919956">Sense</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL5412623-1058080__id_14919957">If ON, the RF detector board is detecting RF input signal into one of the three ports on that channel. <p class="- topic/p p" id="id_SL5412623-1058080__id_14919959" data-ofbid="id_SL5412623-1058080__id_14919959">If OFF, no signal is detected on that channel.</p></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL5412623-1058080__id_14919960">1.5 V </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL5412623-1058080__id_14919961">If ON, the processor board indicates it is receiving 3.3 V
+from the CAM/KASC power supply and generating 1.5 V. Check for voltage
+at 3.3 V test points on front of CAM/KASC.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL5412623-1058080__id_14919962">CAN Power</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL5412623-1058080__id_14919963">If ON, 24 V from the driver module CAN power supply is detected.
+This voltage is provided through the CAN backplane connection. This
+LED can be ON even if the UPM is powered down.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL5412623-1058080__id_14919964">CAN Status</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL5412623-1058080__id_14919965">If the CAN status blinks once, then the processor board is
+attempting to communicate with the MGD host. If the LED blinks twice,
+then the processor board is communicating with the MGD host. If LED
+remains OFF, then the processor board is not attempting communication
+with the host.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL5412623-1058080__id_14919966">Inhibit</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL5412623-1058080__id_14919967">If ON, the UPM has detected a disconnected FWD, REF 1, or REF
+2 cable or system unblank signal interrupted, as result of a hardware
+failure or other unsafe condition, and scanning is inhibited. The
+LED will remain ON until the fault is cleared. Check the error log
+for fault details. For excessive power faults, the LED will clear
+once the power level is less than 99% of the trip limit.</td></tr></tbody>
+        </table>
+        
+        
+        
+        
+        
+        
+        
+        <p class="- topic/p p" id="id_SL5412623-1058080__id_14920043" data-ofbid="id_SL5412623-1058080__id_14920043">On the front panel of the CAM/KASC chassis, the power supply
+provides 3.3 V, 5.0 V, +12 V and -12 V to the processor and detector
+boards. The ASC reset button resets both UPMs; however, any measured
+RF power from the scanner is NOT reset. The voltage banana jacks are
+for checks of the power supply for the entire CAM/KASC.</p>
+        <p class="- topic/p p" id="id_SL5412623-1058080__id_14920044" data-ofbid="id_SL5412623-1058080__id_14920044">The following reference documents can assist with troubleshooting
+the UPM:</p>
+        <ul class="- topic/ul ul" id="id_SL5412623-1058080__id_14920045" data-ofbid="id_SL5412623-1058080__id_14920045"><li class="- topic/li li" id="id_SL5412623-1058080__SL5408175-1058080" data-ofbid="id_SL5412623-1058080__SL5408175-1058080"> FRU manual</li><li class="- topic/li li" id="id_SL5412623-1058080__SL5408176-1058080" data-ofbid="id_SL5412623-1058080__SL5408176-1058080">
+            <span class="- topic/ph ph">Signa Premier System Wiring Diagrams (5690024-8EN)</span></li><li class="- topic/li li" id="id_SL5412623-1058080__SL5408182-1058080" data-ofbid="id_SL5412623-1058080__SL5408182-1058080"><a class="- topic/xref xref" href="t_DoingTheUPMFunctionalCheckHeadAndBody.html" title="Do the UPM head and body functional check to make sure the measured RF power is within the expected range.">UPM Calibration and UPM Functional Check–Body Mode</a></li><li class="- topic/li li" id="id_SL5412623-1058080__SL5408183-1058080" data-ofbid="id_SL5412623-1058080__SL5408183-1058080"><a class="- topic/xref xref" href="t_DoingTheUPMFunctionalCheckHeadAndBody.html" title="Do the UPM head and body functional check to make sure the measured RF power is within the expected range.">UPM Calibration and UPM Functional Check–Head Mode</a></li></ul>
+      </section></div></article><article class="- topic/topic reference/reference topic reference nested1 yes id_SL1909472-1058080" aria-labelledby="ariaid-title3" id="id_SL1909472-1058080"><header class="topic-id"><span class="metalabel">Topic ID: </span>id_SL1909472-1058080</header><h2 class="- topic/title title topictitle2" id="ariaid-title3">Diagnostics for UPM</h2><div class="- topic/body reference/refbody body refbody"><section class="- topic/section section" id="id_SL1909472-1058080__SL1909472-1058080" data-ofbid="id_SL1909472-1058080__SL1909472-1058080">
+        <p class="- topic/p p" id="id_SL1909472-1058080__id_14920055" data-ofbid="id_SL1909472-1058080__id_14920055">UPM diagnostics are accessed from the Common Service Desktop (CSD) <span class="- topic/ph ph">UPM Diagnostics</span>.</p>
+      </section></div></article><article class="- topic/topic reference/reference topic reference nested1 yes id_SL219641-1058080" aria-labelledby="ariaid-title4" id="id_SL219641-1058080"><header class="topic-id"><span class="metalabel">Topic ID: </span>id_SL219641-1058080</header><h2 class="- topic/title title topictitle2" id="ariaid-title4">UPM calibration</h2><div class="- topic/body reference/refbody body refbody"><section class="- topic/section section" id="id_SL219641-1058080__SL219641-1058080" data-ofbid="id_SL219641-1058080__SL219641-1058080">
+        <p class="- topic/p p" id="id_SL219641-1058080__id_14920056" data-ofbid="id_SL219641-1058080__id_14920056">The UPM calibration runs an APB cal scan and adjusts digital attenuators internal to the UPM to match the expected RF signal level (see <a class="- topic/xref xref" href="t_DoingTheUPMFunctionalCheckHeadAndBody.html" title="Do the UPM head and body functional check to make sure the measured RF power is within the expected range.">UPM Calibration and UPM Functional Check–Body Mode</a> and <a class="- topic/xref xref" href="t_DoingTheUPMFunctionalCheckHeadAndBody.html" title="Do the UPM head and body functional check to make sure the measured RF power is within the expected range.">UPM Calibration and UPM Functional Check–Head Mode</a>).</p>
+        <p class="- topic/p p" id="id_SL219641-1058080__id_14920057" data-ofbid="id_SL219641-1058080__id_14920057">The UPM calibration parameters found in the UPM configuration
+file (<kbd class="+ topic/ph sw-d/userinput ph userinput">/export/home/signa/tools/upm/upm.config</kbd>) are used in the calibration/functional check tasks. This configuration
+file is accessible from the UPM Calibration tool, by selecting <span class="+ topic/ph ui-d/uicontrol ph uicontrol">File &gt; View Config</span>. These values can be used during troubleshooting
+to help determine where the power monitor is tripping (if at all). </p>
+        <p class="- topic/p p" id="id_SL219641-1058080__id_14920058" data-ofbid="id_SL219641-1058080__id_14920058">The UPM configuration file contains the default configuration
+values for all of the UPM parameters. The values displayed below are
+for reference only, because the content and values differ depending
+on system type. </p>
+        <p class="- topic/p p" id="id_SL219641-1058080__id_14920059" data-ofbid="id_SL219641-1058080__id_14920059">Although this screen is called <span class="+ topic/ph ui-d/uicontrol ph uicontrol">UPM Config Editor</span>, the displayed values cannot be changed; they can only be viewed.</p>
+        <figure class="- topic/fig fig fignone" id="id_SL219641-1058080__SL5408759-1058080" data-ofbid="id_SL219641-1058080__SL5408759-1058080"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">1. </span></span><span class="fig--title">UPM configuration editor (example)</span></figcaption></figure>
+        <p class="- topic/p p" id="id_SL219641-1058080__id_14920063" data-ofbid="id_SL219641-1058080__id_14920063">The final UPM digital attenuator values are written to the UPM calibration configuration files (Upm1Cal.cfg, Upm2Cal.cfg) located in directory <span class="+ topic/ph sw-d/filepath ph filepath">/w/config</span>. The contents of Upm1Cal.cfg and Upm2Cal.cfg are 12 hexadecimal attenuation values listed in single column order and identified as follows:</p>
+        <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <span class="- topic/ph ph" id="id_SL219641-1058080__d43e388">The <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Shell</span> window can only be launched when the EA3 user is included in the authorized EA3 group. Users not in this EA3 group will not have access to launch the <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Shell</span> window. If you are not logged on as the proper logon user, log out and then log back on as the correct EA3 user with the authorized permissions.</span></div>
+        
+        
+        
+      </section></div></article><article class="- topic/topic reference/reference topic reference nested1 yes id_SL1909509-1058080" aria-labelledby="ariaid-title5" id="id_SL1909509-1058080"><header class="topic-id"><span class="metalabel">Topic ID: </span>id_SL1909509-1058080</header><h2 class="- topic/title title topictitle2" id="ariaid-title5">UPM functional check</h2><div class="- topic/body reference/refbody body refbody"><section class="- topic/section section" id="id_SL1909509-1058080__SL1909509-1058080" data-ofbid="id_SL1909509-1058080__SL1909509-1058080">
+        <p class="- topic/p p" id="id_SL1909509-1058080__id_14920103" data-ofbid="id_SL1909509-1058080__id_14920103">The UPM functional check runs a prescribed scan in the selected RF chain. It compares the measured RF power from the UPM to the expected value in a config file. If the values do not fall within 12%, the functional check fails. In addition, the functional check confirms that the UPM will stop scanning if the RF measured exceeds the trip limit. (See <a class="- topic/xref xref" href="t_DoingTheUPMFunctionalCheckHeadAndBody.html" title="Do the UPM head and body functional check to make sure the measured RF power is within the expected range.">UPM Calibration and UPM Functional Check–Body Mode</a> and <a class="- topic/xref xref" href="t_DoingTheUPMFunctionalCheckHeadAndBody.html" title="Do the UPM head and body functional check to make sure the measured RF power is within the expected range.">UPM Calibration and UPM Functional Check–Head Mode</a>.)</p>
+        <p class="- topic/p p" id="id_SL1909509-1058080__id_14920104" data-ofbid="id_SL1909509-1058080__id_14920104">If the functional check fails to run, first check the system
+error log. See <a class="- topic/xref xref" href="#id_SL219592-1058080">UPM fault messages</a> to troubleshoot UPM system errors.</p>
+        <p class="- topic/p p" id="id_SL1909509-1058080__id_14920105" data-ofbid="id_SL1909509-1058080__id_14920105">If the functional check fails due to inaccurate power measurement,
+first re-calibrate the UPM, and then attempt the functional check
+again.</p>
+      </section></div></article><article class="- topic/topic reference/reference topic reference nested1 yes id_SL4692487-1058080" aria-labelledby="ariaid-title6" id="id_SL4692487-1058080"><header class="topic-id"><span class="metalabel">Topic ID: </span>id_SL4692487-1058080</header><h2 class="- topic/title title topictitle2" id="ariaid-title6">Troubleshooting potential UPM problems</h2><div class="- topic/body reference/refbody body refbody"><section class="- topic/section section" id="id_SL4692487-1058080__SL4692487-1058080" data-ofbid="id_SL4692487-1058080__SL4692487-1058080">
+        <p class="- topic/p p" id="id_SL4692487-1058080__id_14920106" data-ofbid="id_SL4692487-1058080__id_14920106">The following is a list of potential UPM problems.</p>
+        <ol class="- topic/ol ol" id="id_SL4692487-1058080__id_14920107" data-ofbid="id_SL4692487-1058080__id_14920107"><li class="- topic/li li" id="id_SL4692487-1058080__SL5415281-1058080" data-ofbid="id_SL4692487-1058080__SL5415281-1058080"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Problem:</span> UPM calibration fails.<p class="- topic/p p" id="id_SL4692487-1058080__id_14920109" data-ofbid="id_SL4692487-1058080__id_14920109">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Issue:</span> Head and body RF power are not correct; or bad UPM detector board or bad UPM processor board; or cabling not correct.</p><p class="- topic/p p" id="id_SL4692487-1058080__id_14920110" data-ofbid="id_SL4692487-1058080__id_14920110">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Solution:</span> If the UPM calibration fails, check the system error log. Use the Problem/Solution list in <a class="- topic/xref xref" href="#id_SL219592-1058080">UPM fault messages</a> to troubleshoot the errors in the error log. If <a class="- topic/xref xref" href="#id_SL219592-1058080">UPM fault messages</a> does not solve the calibration errors, attempt the following steps: </p><ol class="- topic/ol ol" type="a" id="id_SL4692487-1058080__id_14920115" data-ofbid="id_SL4692487-1058080__id_14920115"><li class="- topic/li li" id="id_SL4692487-1058080__SL1909497-1058080" data-ofbid="id_SL4692487-1058080__SL1909497-1058080">Quit the UPM Calibration tool, end any open exams, and perform a TPS reset.</li><li class="- topic/li li" id="id_SL4692487-1058080__SL1909498-1058080" data-ofbid="id_SL4692487-1058080__SL1909498-1058080">Open a new exam with Patient ID: <kbd class="+ topic/ph sw-d/userinput ph userinput">geservice</kbd> and weight: <kbd class="+ topic/ph sw-d/userinput ph userinput">111</kbd>.</li><li class="- topic/li li" id="id_SL4692487-1058080__SL1909499-1058080" data-ofbid="id_SL4692487-1058080__SL1909499-1058080">Select Service, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Other</span>.</li><li class="- topic/li li" id="id_SL4692487-1058080__SL1909500-1058080" data-ofbid="id_SL4692487-1058080__SL1909500-1058080">Select <kbd class="+ topic/ph sw-d/userinput ph userinput">apb cal</kbd> (series 1 if troubleshooting body and series 2 if troubleshooting head).</li><li class="- topic/li li" id="id_SL4692487-1058080__SL1909501-1058080" data-ofbid="id_SL4692487-1058080__SL1909501-1058080">Select <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Save Series</span>.</li><li class="- topic/li li" id="id_SL4692487-1058080__SL1909502-1058080" data-ofbid="id_SL4692487-1058080__SL1909502-1058080">Confirm that the correct hardware setup exists (cables connections and dummy load connections match the setup shown in the documentation).</li><li class="- topic/li li" id="id_SL4692487-1058080__SL1909503-1058080" data-ofbid="id_SL4692487-1058080__SL1909503-1058080">Click <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Manual Prescan</span>.</li><li class="- topic/li li" id="id_SL4692487-1058080__SL1909504-1058080" data-ofbid="id_SL4692487-1058080__SL1909504-1058080">If you are troubleshooting UPM reflected power calibration, change TG to <kbd class="+ topic/ph sw-d/userinput ph userinput">63</kbd>. If you are troubleshooting UPM forward power calibration, set TG above <kbd class="+ topic/ph sw-d/userinput ph userinput">149</kbd>.</li><li class="- topic/li li" id="id_SL4692487-1058080__SL1909505-1058080" data-ofbid="id_SL4692487-1058080__SL1909505-1058080">Click <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Scan TR</span>.</li><li class="- topic/li li" id="id_SL4692487-1058080__SL1909506-1058080" data-ofbid="id_SL4692487-1058080__SL1909506-1058080">Check for <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Inhibit</span> light on CAM/KASC chassis, driver module.</li><li class="- topic/li li" id="id_SL4692487-1058080__SL1909507-1058080" data-ofbid="id_SL4692487-1058080__SL1909507-1058080">Check for <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Sense</span> LEDs flashing on the correct channel (both RF detector boards should have one of the channel’s <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Sense</span> LEDs flashing, matching the channel you are troubleshooting).</li><li class="- topic/li li" id="id_SL4692487-1058080__SL1909508-1058080" data-ofbid="id_SL4692487-1058080__SL1909508-1058080">Exit manual prescan.</li></ol><p class="- topic/p p" id="id_SL4692487-1058080__id_14920128" data-ofbid="id_SL4692487-1058080__id_14920128">The system must be able to scan with the correct UPM <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Sense</span> LEDs flashing before running the calibration. If the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Sense</span> LEDs are not flashing, check the error log to determine if the scan was stopped. Also check that the hardware setup is correct.</p><p class="- topic/p p" id="id_SL4692487-1058080__id_14920129" data-ofbid="id_SL4692487-1058080__id_14920129">If the setup and system are good but the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Sense</span> lights are not flashing, make sure RF is getting to the UPM by placing a 50 ohm terminator in the port you are troubleshooting and the UPM RF cable into a 50 ohm terminated scope. Make sure you see a RF signal. If no signal exists, attempt reading at various points along the cable path to determine where the signal is lost. If a signal exists, attempt swapping/replacing RF detector boards. See <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a>.</p><div class="- topic/note note note note_note" id="id_SL4692487-1058080__id_14920130" data-ofbid="id_SL4692487-1058080__id_14920130"><span class="note__title">Note:</span> Sometimes calibration fails due to an RF amplifier excessive peak power fault. Check the setup and condition of the test equipment and RF cable connections at every component. Also confirm that the RF amplifier power calibration was done according to the documented service procedure.</div><div class="- topic/note note note note_note" id="id_SL4692487-1058080__id_14920132" data-ofbid="id_SL4692487-1058080__id_14920132"><span class="note__title">Note:</span> If the UPM reports a short or long term average power fault (ERROR 2254783), launch the RF amp calibration procedure through the UPM Tool, adjust TG to suggested values above, and observe Inhibit and Sense LEDs as indicated above.</div></li><li class="- topic/li li" id="id_SL4692487-1058080__SL4692489-1058080" data-ofbid="id_SL4692487-1058080__SL4692489-1058080"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Problem:</span> Config file CRC mismatch.<p class="- topic/p p" id="id_SL4692487-1058080__id_14920145" data-ofbid="id_SL4692487-1058080__id_14920145">The following error message appears when starting a UPM Tool task or viewing the UPM Tool configuration file.</p><div class="- topic/p p" id="id_SL4692487-1058080__id_14920146" data-ofbid="id_SL4692487-1058080__id_14920146">
+              <figure class="- topic/fig fig fignone" id="id_SL4692487-1058080__SL4692490-1058080" data-ofbid="id_SL4692487-1058080__SL4692490-1058080"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">2. </span></span><span class="fig--title">UPM error message</span></figcaption><img class="- topic/image image" id="id_SL4692487-1058080__id_14920147" src="4049676.jpg"/></figure>
+            </div><p class="- topic/p p" id="id_SL4692487-1058080__id_14920148" data-ofbid="id_SL4692487-1058080__id_14920148">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Issue:</span> The calculated checksum value for upm.config configuration file does not match the checksum at end of file. upm.config file contents were edited or corrupted. </p></li><li class="- topic/li li" id="id_SL4692487-1058080__SL4692491-1058080" data-ofbid="id_SL4692487-1058080__SL4692491-1058080"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Problem:</span> RF amplifier does not output power during RF amplifier or UPM calibration.<p class="- topic/p p" id="id_SL4692487-1058080__id_14920152" data-ofbid="id_SL4692487-1058080__id_14920152">Power meter does not read any power during RF amplifier or UPM calibration. </p><p class="- topic/p p" id="id_SL4692487-1058080__id_14920153" data-ofbid="id_SL4692487-1058080__id_14920153">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Potential Issue:</span> RF amplifier has tripped. Check the GE system log for an error regarding a RF amplifier or UPM fault.</p><p class="- topic/p p" id="id_SL4692487-1058080__id_14920154" data-ofbid="id_SL4692487-1058080__id_14920154">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Solution 1:</span> If the RF amplifier has tripped due to an excessive power fault, launch the RF amp calibration procedure through the UPM Tool, increase TG to a level that does not cause a fault, and follow instructions to recalibrate the amplifier in the “RF Amplifier Setup and Calibration” section for the appropriate RF chain.</p><p class="- topic/p p" id="id_SL4692487-1058080__id_14920155" data-ofbid="id_SL4692487-1058080__id_14920155">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Solution 2:</span> If UPM has indicated that measured power has exceeded SAR limits, re-launch the RF amplifier or UPM calibration procedure through UPM Tool. This will reset measured power and allow calibration to continue. </p></li><li class="- topic/li li" id="id_SL4692487-1058080__SL4692492-1058080" data-ofbid="id_SL4692487-1058080__SL4692492-1058080">
+            <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Problem:</span> UPM Tool procedure fails to launch, returns “ERROR” status.<p class="- topic/p p" id="id_SL4692487-1058080__id_14920157" data-ofbid="id_SL4692487-1058080__id_14920157">UPM Tool procedure fails to launch with message “Incorrect Rx, please check coil and landmark” in Status window. </p><p class="- topic/p p" id="id_SL4692487-1058080__id_14920158" data-ofbid="id_SL4692487-1058080__id_14920158">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Potential Issue 1:</span> Incorrect coil attached. </p><p class="- topic/p p" id="id_SL4692487-1058080__id_14920159" data-ofbid="id_SL4692487-1058080__id_14920159">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Solution 1:</span> Attach correct coil (no coil plugged in for body procedure, head coil plugged in for head procedure, 31P MNS TR switch plugged in for MNS procedure).</p><p class="- topic/p p" id="id_SL4692487-1058080__id_14920160" data-ofbid="id_SL4692487-1058080__id_14920160">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Potential Issue 2:</span> No landmark established. </p><p class="- topic/p p" id="id_SL4692487-1058080__id_14920161" data-ofbid="id_SL4692487-1058080__id_14920161">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Solution 2:</span> Perform a landmark with the correct coil. Press <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Advance to Scan</span>. </p></li><li class="- topic/li li" id="id_SL4692487-1058080__SL4692493-1058080" data-ofbid="id_SL4692487-1058080__SL4692493-1058080"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Problem:</span> RF power output during UPM calibration procedure is not within specified limits.<p class="- topic/p p" id="id_SL4692487-1058080__id_14920163" data-ofbid="id_SL4692487-1058080__id_14920163">Power meter measured power does not read within the specified limits during UPM calibration procedure </p><p class="- topic/p p" id="id_SL4692487-1058080__id_14920164" data-ofbid="id_SL4692487-1058080__id_14920164">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Potential Issue:</span> RF amplifier calibration is out of specification.</p><p class="- topic/p p" id="id_SL4692487-1058080__id_14920165" data-ofbid="id_SL4692487-1058080__id_14920165">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Solution:</span> Follow instructions to recalibrate amplifier in “RF Amplifier Setup and Calibration section” for the appropriate RF chain.</p></li></ol>
+      </section></div></article><article class="- topic/topic reference/reference topic reference nested1 yes id_SL219592-1058080" aria-labelledby="ariaid-title7" id="id_SL219592-1058080"><header class="topic-id"><span class="metalabel">Topic ID: </span>id_SL219592-1058080</header><h2 class="- topic/title title topictitle2" id="ariaid-title7">UPM fault messages</h2><div class="- topic/body reference/refbody body refbody"><section class="- topic/section section" id="id_SL219592-1058080__SL219592-1058080" data-ofbid="id_SL219592-1058080__SL219592-1058080">
+        <table class="- topic/table table" id="id_SL219592-1058080__SL1909510-1058080" data-ofbid="id_SL219592-1058080__SL1909510-1058080"><caption class="- topic/title title tablecap" caption-side="top" is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 2</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">UPM fault messages with descriptions and dctions</span></caption><colgroup><col style="width:28.187919463087248%"/><col style="width:23.48993288590604%"/><col style="width:48.32214765100671%"/></colgroup><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920166">
+                  <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Fault description</span>
+                </td><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920167">
+                  <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Problem description</span>
+                </td><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920168">
+                  <span class="+ topic/ph ui-d/uicontrol ph uicontrol">GE field action</span>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920169">EM_SCP_STOP_ACTION_UPM_ERROR<p class="- topic/p p" id="id_SL219592-1058080__id_14920170" data-ofbid="id_SL219592-1058080__id_14920170">Universal Power Monitor error
+occurred.</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920171">General fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920172">This is a general UPM fault; view other errors in error log
+for more details.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920173">EM_POWER_FAULT_WARNING <p class="- topic/p p" id="id_SL219592-1058080__id_14920174" data-ofbid="id_SL219592-1058080__id_14920174">Power Monitor Warning: % percent
+of limit reached for the XX Average.</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920175">General high power warning</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920176">This is a general warning that the scan approached the maximum
+allowable SAR. No action required.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920177">EM_LARGE_DIFFERENCE_DETECTED.<p class="- topic/p p" id="id_SL219592-1058080__id_14920178" data-ofbid="id_SL219592-1058080__id_14920178">Large difference was detected
+between the two power monitors. Difference is in the (long/short term)
+average.</p><ol class="- topic/ol ol" id="id_SL219592-1058080__id_14920179" data-ofbid="id_SL219592-1058080__id_14920179"><li class="- topic/li li" id="id_SL219592-1058080__SL1909511-1058080" data-ofbid="id_SL219592-1058080__SL1909511-1058080">Monitor 1 reads XX W/kg</li><li class="- topic/li li" id="id_SL219592-1058080__SL1909512-1058080" data-ofbid="id_SL219592-1058080__SL1909512-1058080">Monitor 2 reads YY W/kg</li></ol></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920182">The power levels detected by the UPMs differ greatly.<ul class="- topic/ul ul" id="id_SL219592-1058080__id_14920183" data-ofbid="id_SL219592-1058080__id_14920183"><li class="- topic/li li" id="id_SL219592-1058080__SL1909513-1058080" data-ofbid="id_SL219592-1058080__SL1909513-1058080">Error can occur during the calibration process. If this error occurs during UPM calibrations, ignore.</li><li class="- topic/li li" id="id_SL219592-1058080__SL1909514-1058080" data-ofbid="id_SL219592-1058080__SL1909514-1058080">Error can also occur during troubleshooting if UPM boards have been swapped. Return boards to original spot or run UPM calibrations.</li></ul></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920186">
+                  <ol class="- topic/ol ol" id="id_SL219592-1058080__id_14920187" data-ofbid="id_SL219592-1058080__id_14920187"><li class="- topic/li li" id="id_SL219592-1058080__SL1909515-1058080" data-ofbid="id_SL219592-1058080__SL1909515-1058080">Calibrate and run the UPM functional check.</li><li class="- topic/li li" id="id_SL219592-1058080__SL1909516-1058080" data-ofbid="id_SL219592-1058080__SL1909516-1058080">If error continues, go to <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap the RF detector boards. Recalibrate and run the UPM functional check. If lower value follows board, order new board. Try replacing one board, recalibrate and run the functional check. If error continues, replace the other board, then recalibrate and run the functional check.</li><li class="- topic/li li" id="id_SL219592-1058080__SL1909517-1058080" data-ofbid="id_SL219592-1058080__SL1909517-1058080">If lower RF value does NOT follow RF detector board, swap the cables running into the RF detector boards. Recalibrate and run the UPM functional check. If lower value moves to other UPM, then check resistance of both cable runs. If the resistance of the cables are equal, then replace the RF couplers internal to the affected RF amplifier (couplers may not be the FRU; the actual FRU depends on amplifier type).</li><li class="- topic/li li" id="id_SL219592-1058080__SL1909518-1058080" data-ofbid="id_SL219592-1058080__SL1909518-1058080">If the lower value moves to the other UPM, then check resistance of both cable runs. If the resistance of the cables are equal, then replace the RF couplers internal to the affected RF amplifier (couplers may not be the FRU; the actual FRU depends on amplifier type).</li><li class="- topic/li li" id="id_SL219592-1058080__SL1909519-1058080" data-ofbid="id_SL219592-1058080__SL1909519-1058080">If the resolution presented here does not fix the issue, replace the UPM processor board within the UPM chain experiencing faults.</li></ol>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920193">EM_TOO_MUCH_REFLECTED_POWER<p class="- topic/p p" id="id_SL219592-1058080__id_14920194" data-ofbid="id_SL219592-1058080__id_14920194">UPM1/2 detected more reflected
+power than forward power on the (head/body/MNS) amplifier. Possible
+cause is swapped forward and reflected power cables.</p><p class="- topic/p p" id="id_SL219592-1058080__id_14920195" data-ofbid="id_SL219592-1058080__id_14920195">Forward
+Power = XX W</p><p class="- topic/p p" id="id_SL219592-1058080__id_14920196" data-ofbid="id_SL219592-1058080__id_14920196">Reflected Power = YY W</p><p class="- topic/p p" id="id_SL219592-1058080__id_14920197" data-ofbid="id_SL219592-1058080__id_14920197">Coil Reflected
+Power = ZZ W</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920198">UPM detected that there was more reflected power than forward
+power.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920199">
+                  <ol class="- topic/ol ol" id="id_SL219592-1058080__id_14920200" data-ofbid="id_SL219592-1058080__id_14920200"><li class="- topic/li li" id="id_SL219592-1058080__SL1909520-1058080" data-ofbid="id_SL219592-1058080__SL1909520-1058080">If this error occurs during reflected UPM calibrations, ignore.</li><li class="- topic/li li" id="id_SL219592-1058080__SL1909521-1058080" data-ofbid="id_SL219592-1058080__SL1909521-1058080">Make sure UPM cabling matches block diagrams.</li><li class="- topic/li li" id="id_SL219592-1058080__SL1909522-1058080" data-ofbid="id_SL219592-1058080__SL1909522-1058080">Make sure that there are no opens in the transmit chain. Opens could cause equal power for forward/reflected that could trigger this fault.</li><li class="- topic/li li" id="id_SL219592-1058080__SL1909523-1058080" data-ofbid="id_SL219592-1058080__SL1909523-1058080">If the steps above are not applicable, see <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap detector boards to determine if the error moves as well.</li></ol>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920205">EM_UPM_FPGA_SN_FLT<p class="- topic/p p" id="id_SL219592-1058080__id_14920206" data-ofbid="id_SL219592-1058080__id_14920206">The (UPM1/2) has detected that the
+FPGA was unable to read serial number information.</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920207">The FPGA was unable to read serial number information from
+(RF detector/RF processor) UPM board. This could be caused by an old
+revision of FPGA code or a hardware problem.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920208">
+                  <ol class="- topic/ol ol" id="id_SL219592-1058080__id_14920209" data-ofbid="id_SL219592-1058080__id_14920209"><li class="- topic/li li" id="id_SL219592-1058080__SL1909524-1058080" data-ofbid="id_SL219592-1058080__SL1909524-1058080">See <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap detector boards to see if fault moves. If so, replace the faulty detector board.</li><li class="- topic/li li" id="id_SL219592-1058080__SL1909525-1058080" data-ofbid="id_SL219592-1058080__SL1909525-1058080">If root cause not determined, see <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap processor boards to see if the fault moves. If so, replace the faulty processor board.</li><li class="- topic/li li" id="id_SL219592-1058080__SL1909526-1058080" data-ofbid="id_SL219592-1058080__SL1909526-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920212" data-ofbid="id_SL219592-1058080__id_14920212">If root cause not determined, replace
+the CAM/KASC chassis.</p>
+                    </li></ol>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920213">EM_UPM_PWR_FLT_DETECT <p class="- topic/p p" id="id_SL219592-1058080__id_14920214" data-ofbid="id_SL219592-1058080__id_14920214">The (UPM1/2) has detected an Invalid
+Power Fault on the (Head/Body/MNS/CW) Amplifier. </p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920215">The UPM detected RF power out of an amplifier port that should
+not have been producing RF at that time.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920216">
+                  <p class="- topic/p p" id="id_SL219592-1058080__id_14920217" data-ofbid="id_SL219592-1058080__id_14920217">Capture the protocol/sequence that produces this error
+repeatedly, then follow the following steps.</p>
+                  <ol class="- topic/ol ol" id="id_SL219592-1058080__id_14920218" data-ofbid="id_SL219592-1058080__id_14920218"><li class="- topic/li li" id="id_SL219592-1058080__SL1909528-1058080" data-ofbid="id_SL219592-1058080__SL1909528-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920219" data-ofbid="id_SL219592-1058080__id_14920219">If only one UPM detects this error,
+see <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap the affected RF detector boards.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909529-1058080" data-ofbid="id_SL219592-1058080__SL1909529-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920220" data-ofbid="id_SL219592-1058080__id_14920220">If only one UPM detects this error and swapping the affected RF detector boards was attempted with no success, see <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap the processor boards.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909530-1058080" data-ofbid="id_SL219592-1058080__SL1909530-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920221" data-ofbid="id_SL219592-1058080__id_14920221">If both UPMs indicate this failure,
+or prior procedures were attempted with no success, then proceed with
+troubleshooting the unblank signal and affected RF amplifier, because
+this indicates a system fault. It is also possible that external RF
+noise or some event has brought the RF hub out of standby state during
+RF transmit, thereby interrupting the unblank signal to UPMs. Look
+in the error log for other messages that occurred within 5 seconds
+before or even after this one that may help confirm this.</p>
+                    </li></ol>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920222">EM_UPM_PWR_LIMIT_EXCEED<p class="- topic/p p" id="id_SL219592-1058080__id_14920223" data-ofbid="id_SL219592-1058080__id_14920223">The (UPM1/2) detected a Power
+Fault on the (Short/Long Term) Average. Calculated Average = XX Limit
+= XX.</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920224">This indicates that the UPM detected power that exceeded the
+trip limit for the area scanned.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920225">
+                  <ol class="- topic/ol ol" id="id_SL219592-1058080__id_14920226" data-ofbid="id_SL219592-1058080__id_14920226"><li class="- topic/li li" id="id_SL219592-1058080__SL1909531-1058080" data-ofbid="id_SL219592-1058080__SL1909531-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920227" data-ofbid="id_SL219592-1058080__id_14920227">Customer should check the protocol
+to determine if it produces excessive SAR. Protocol should be approved
+by GE Apps specialist, if applicable.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909532-1058080" data-ofbid="id_SL219592-1058080__SL1909532-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920228" data-ofbid="id_SL219592-1058080__id_14920228">If the protocol is acceptable, calibrate
+UPM and run the UPM functional check.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909533-1058080" data-ofbid="id_SL219592-1058080__SL1909533-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920229" data-ofbid="id_SL219592-1058080__id_14920229">If the trip is consistently on one
+UPM, see <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap the RF detector boards, then recalibrate the UPM after
+the swap. If the faults follow the RF detector board, replace it.
+If the fault does not follow the RF detector board, replace the CAM/KASC
+chassis.</p>
+                    </li></ol>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920230">EM_RF_NB_BOARD_MISSING<p class="- topic/p p" id="id_SL219592-1058080__id_14920231" data-ofbid="id_SL219592-1058080__id_14920231">NB Detector Board Missing</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920232">UPM detects that a NB RF detector board is missing.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920233">
+                  <ol class="- topic/ol ol" id="id_SL219592-1058080__id_14920234" data-ofbid="id_SL219592-1058080__id_14920234"><li class="- topic/li li" id="id_SL219592-1058080__SL1909534-1058080" data-ofbid="id_SL219592-1058080__SL1909534-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920235" data-ofbid="id_SL219592-1058080__id_14920235">Reseat both RF detector boards. Check
+for bent/broken pins on backplane and board.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909535-1058080" data-ofbid="id_SL219592-1058080__SL1909535-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920236" data-ofbid="id_SL219592-1058080__id_14920236">See <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap detector
+boards.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909536-1058080" data-ofbid="id_SL219592-1058080__SL1909536-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920237" data-ofbid="id_SL219592-1058080__id_14920237">If the error does not follow the detector
+board, see <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap processor boards to see if the fault moves. If so, replace
+the faulty processor board.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909537-1058080" data-ofbid="id_SL219592-1058080__SL1909537-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920238" data-ofbid="id_SL219592-1058080__id_14920238">If the cause cannot be determined through
+this procedure, replace the CAM/KASC chassis.</p>
+                    </li></ol>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920239">EM_RF_BB_BOARD_MISSING<p class="- topic/p p" id="id_SL219592-1058080__id_14920240" data-ofbid="id_SL219592-1058080__id_14920240">MNS Detector Board Missing</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920241">UPM detects that a MNS RF detector board is missing.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920242">
+                  <ol class="- topic/ol ol" id="id_SL219592-1058080__id_14920243" data-ofbid="id_SL219592-1058080__id_14920243"><li class="- topic/li li" id="id_SL219592-1058080__SL1909538-1058080" data-ofbid="id_SL219592-1058080__SL1909538-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920244" data-ofbid="id_SL219592-1058080__id_14920244">If the detector boards are indicating
+a cable-missing fault, place a 50 ohm terminator in the affected port.
+If the error continues, replace the detector board. </p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909539-1058080" data-ofbid="id_SL219592-1058080__SL1909539-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920245" data-ofbid="id_SL219592-1058080__id_14920245">If the error goes away, determine where
+in the cable chain the connection is lost by using a DMM and checking
+for 50 ohm resistance between the shield and center pin. You can also
+test by swapping cables along the chain to see where the failure occurs.
+If the error remains, replace the RF detector board.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909540-1058080" data-ofbid="id_SL219592-1058080__SL1909540-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920246" data-ofbid="id_SL219592-1058080__id_14920246">If the processor board unblank error
+occurs, check the voltage between pins 1 and 6 of the cable into the
+processor boards. The voltage should be between 2 and 3.3 volts. If
+it falls out of this range, troubleshoot the cable chain back to the
+driver module. If the voltage appears okay, see <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap processor
+boards to see if fault moves. If so, replace the faulty processor
+board.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909541-1058080" data-ofbid="id_SL219592-1058080__SL1909541-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920247" data-ofbid="id_SL219592-1058080__id_14920247">If this procedure does not determine
+the cause, use a DMM to check the continuity of the cable connected
+to it. If it is bad, replace the cable. </p>
+                    </li></ol>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920248">EM_BUS_SELFTEST_FAIL<p class="- topic/p p" id="id_SL219592-1058080__id_14920249" data-ofbid="id_SL219592-1058080__id_14920249">The UPM1/2 failed its BUS Self Test
+on the XXChannel.</p><p class="- topic/p p" id="id_SL219592-1058080__id_14920250" data-ofbid="id_SL219592-1058080__id_14920250">Expected Data : X%</p><p class="- topic/p p" id="id_SL219592-1058080__id_14920251" data-ofbid="id_SL219592-1058080__id_14920251">Detected
+Data : Y%</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920252">This is a failure of the data bus from the RF detector board,
+through the backplane, to the processor board.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920253">
+                  <ol class="- topic/ol ol" id="id_SL219592-1058080__id_14920254" data-ofbid="id_SL219592-1058080__id_14920254"><li class="- topic/li li" id="id_SL219592-1058080__SL1909542-1058080" data-ofbid="id_SL219592-1058080__SL1909542-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920255" data-ofbid="id_SL219592-1058080__id_14920255">See <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap RF
+detector boards to see if the fault moves. If so, replace the faulty
+detector board. </p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909543-1058080" data-ofbid="id_SL219592-1058080__SL1909543-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920256" data-ofbid="id_SL219592-1058080__id_14920256">If the RF detector board is not the
+failure, see <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap the processor boards to see if fault moves. If so, replace
+the faulty processor board. </p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909544-1058080" data-ofbid="id_SL219592-1058080__SL1909544-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920257" data-ofbid="id_SL219592-1058080__id_14920257">If both RF detector and processor boards
+are okay, replace the CAM/KASC chassis.</p>
+                    </li></ol>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920258">EM_DAC_SELFTEST_FAIL<p class="- topic/p p" id="id_SL219592-1058080__id_14920259" data-ofbid="id_SL219592-1058080__id_14920259">The (UPM1/2) failed its DAC Self
+Test on the XX Channel.</p><p class="- topic/p p" id="id_SL219592-1058080__id_14920260" data-ofbid="id_SL219592-1058080__id_14920260">Expected Data : X</p><p class="- topic/p p" id="id_SL219592-1058080__id_14920261" data-ofbid="id_SL219592-1058080__id_14920261">Detected Data : Y</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920262">This is a failure of the digital to analog converter on the
+RF detector board.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920263">
+                  <ol class="- topic/ol ol" id="id_SL219592-1058080__id_14920264" data-ofbid="id_SL219592-1058080__id_14920264"><li class="- topic/li li" id="id_SL219592-1058080__SL1909545-1058080" data-ofbid="id_SL219592-1058080__SL1909545-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920265" data-ofbid="id_SL219592-1058080__id_14920265">See <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap RF
+detector boards to see if fault moves. If so, replace the faulty detector
+board.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909546-1058080" data-ofbid="id_SL219592-1058080__SL1909546-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920266" data-ofbid="id_SL219592-1058080__id_14920266">If the RF detector board is not the
+failure, see <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap the processor boards to see if fault moves. If so, replace
+the faulty processor board.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909547-1058080" data-ofbid="id_SL219592-1058080__SL1909547-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920267" data-ofbid="id_SL219592-1058080__id_14920267">If both RF detector and processor boards
+are okay, replace the CAM/KASC chassis.</p>
+                    </li></ol>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920268">EM_LUT_SELFTEST_FAIL<p class="- topic/p p" id="id_SL219592-1058080__id_14920269" data-ofbid="id_SL219592-1058080__id_14920269">The (UPM1/2) failed its LUT Self
+Test on the XX Channel.</p><p class="- topic/p p" id="id_SL219592-1058080__id_14920270" data-ofbid="id_SL219592-1058080__id_14920270">Expected Data : 0x%x.</p><p class="- topic/p p" id="id_SL219592-1058080__id_14920271" data-ofbid="id_SL219592-1058080__id_14920271">Detected Data : 0x%x.</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920272">LUT = Look Up Table. This is a failure of the processor board.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920273">
+                  <ol class="- topic/ol ol" id="id_SL219592-1058080__id_14920274" data-ofbid="id_SL219592-1058080__id_14920274"><li class="- topic/li li" id="id_SL219592-1058080__SL1909548-1058080" data-ofbid="id_SL219592-1058080__SL1909548-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920275" data-ofbid="id_SL219592-1058080__id_14920275">See <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap the
+processor boards to see if the fault moves. If so, replace the faulty
+processor board.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909549-1058080" data-ofbid="id_SL219592-1058080__SL1909549-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920276" data-ofbid="id_SL219592-1058080__id_14920276">If the processor board is not the cause,
+replace the CAM/KASC chassis.</p>
+                    </li></ol>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920277">EM_NB_LUT_TABLE_LOAD_FAIL<p class="- topic/p p" id="id_SL219592-1058080__id_14920278" data-ofbid="id_SL219592-1058080__id_14920278">The UPM1/2 Look Up Table Failed
+on the Narrow Band RF Detector board.</p><p class="- topic/p p" id="id_SL219592-1058080__id_14920279" data-ofbid="id_SL219592-1058080__id_14920279">Number of Write
+Failures: ##</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920280">LUT = Look Up Table. This is a failure of the processor board.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920281">
+                  <ol class="- topic/ol ol" id="id_SL219592-1058080__id_14920282" data-ofbid="id_SL219592-1058080__id_14920282"><li class="- topic/li li" id="id_SL219592-1058080__SL1909550-1058080" data-ofbid="id_SL219592-1058080__SL1909550-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920283" data-ofbid="id_SL219592-1058080__id_14920283">See <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap the
+processor boards to see if fault moves. If so, replace the faulty
+processor board.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909551-1058080" data-ofbid="id_SL219592-1058080__SL1909551-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920284" data-ofbid="id_SL219592-1058080__id_14920284">If the processor board is not the cause,
+replace the CAM/KASC chassis.</p>
+                    </li></ol>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920285">
+                  <p class="- topic/p p" id="id_SL219592-1058080__id_14920286" data-ofbid="id_SL219592-1058080__id_14920286">EM_MNS_LUT_TABLE_LOAD_FAIL</p>
+                  <p class="- topic/p p" id="id_SL219592-1058080__id_14920287" data-ofbid="id_SL219592-1058080__id_14920287">The UPM1/2 Look
+Up Table Failed on the MNS RF Detector board.</p>
+                  <p class="- topic/p p" id="id_SL219592-1058080__id_14920288" data-ofbid="id_SL219592-1058080__id_14920288">Number of
+Write Failures: ##</p>
+                </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920289">LUT = Look Up Table. This is a failure of the processor board.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920290">
+                  <ol class="- topic/ol ol" id="id_SL219592-1058080__id_14920291" data-ofbid="id_SL219592-1058080__id_14920291"><li class="- topic/li li" id="id_SL219592-1058080__SL1909552-1058080" data-ofbid="id_SL219592-1058080__SL1909552-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920292" data-ofbid="id_SL219592-1058080__id_14920292">See <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap the
+MNS processor boards to see if the fault moves. If so, replace the
+faulty processor board.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909553-1058080" data-ofbid="id_SL219592-1058080__SL1909553-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920293" data-ofbid="id_SL219592-1058080__id_14920293">If the processor board is not the cause,
+replace the CAM/KASC chassis.</p>
+                    </li></ol>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920294">
+                  <p class="- topic/p p" id="id_SL219592-1058080__id_14920295" data-ofbid="id_SL219592-1058080__id_14920295">EM_SCP_UPM_SHORT_TERM_REG_FAIL</p>
+                  <p class="- topic/p p" id="id_SL219592-1058080__id_14920296" data-ofbid="id_SL219592-1058080__id_14920296">(Head/Body/Extremity/Other)
+Short Term Limit Write Fail.</p>
+                  <p class="- topic/p p" id="id_SL219592-1058080__id_14920297" data-ofbid="id_SL219592-1058080__id_14920297">Head Present Limit: XX</p>
+                  <p class="- topic/p p" id="id_SL219592-1058080__id_14920298" data-ofbid="id_SL219592-1058080__id_14920298">Body Present Limit: XX</p>
+                  <p class="- topic/p p" id="id_SL219592-1058080__id_14920299" data-ofbid="id_SL219592-1058080__id_14920299">Extremity Present Limit:
+XX</p>
+                  <p class="- topic/p p" id="id_SL219592-1058080__id_14920300" data-ofbid="id_SL219592-1058080__id_14920300">Other Present Limit: XX</p>
+                </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920301">A value written to the register was read back as a different
+value. </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920302">Do not change any hardware, because this could normally appear
+during resets or when software is not in sync with the UPM. If the
+failure continues, replace the processor board.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920303">
+                  <p class="- topic/p p" id="id_SL219592-1058080__id_14920304" data-ofbid="id_SL219592-1058080__id_14920304">EM_SCP_UPM_LONG_TERM_REG_FAIL</p>
+                  <p class="- topic/p p" id="id_SL219592-1058080__id_14920305" data-ofbid="id_SL219592-1058080__id_14920305">(Head/Body/Extremity/Other)
+Long Term Limit Write Fail.</p>
+                  <p class="- topic/p p" id="id_SL219592-1058080__id_14920306" data-ofbid="id_SL219592-1058080__id_14920306">Head Present Limit: XX</p>
+                  <p class="- topic/p p" id="id_SL219592-1058080__id_14920307" data-ofbid="id_SL219592-1058080__id_14920307">Body Present Limit: XX</p>
+                  <p class="- topic/p p" id="id_SL219592-1058080__id_14920308" data-ofbid="id_SL219592-1058080__id_14920308">Extremity Present Limit:
+XX</p>
+                  <p class="- topic/p p" id="id_SL219592-1058080__id_14920309" data-ofbid="id_SL219592-1058080__id_14920309">Other Present Limit: XX</p>
+                </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920310">A value written to the register was read back as a different
+value.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920311">Do not change any hardware, because this could normally appear
+during resets or when software is not in sync with the UPM. If the
+failure continues, replace the processor board.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920312">EM_UPM_CALIBRATION_FAIL<p class="- topic/p p" id="id_SL219592-1058080__id_14920313" data-ofbid="id_SL219592-1058080__id_14920313">The (UPM1/2) detected a Calibration
+failure on the ADC. Calibration Pass BitMap = XX</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920314">The analog-to-digital converter on the RF detector board failed
+to autocal properly.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920315">
+                  <ol class="- topic/ol ol" id="id_SL219592-1058080__id_14920316" data-ofbid="id_SL219592-1058080__id_14920316"><li class="- topic/li li" id="id_SL219592-1058080__SL1909554-1058080" data-ofbid="id_SL219592-1058080__SL1909554-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920317" data-ofbid="id_SL219592-1058080__id_14920317">Reseat the RF detector board, checking
+for bent bins on both the boards and backplane.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909555-1058080" data-ofbid="id_SL219592-1058080__SL1909555-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920318" data-ofbid="id_SL219592-1058080__id_14920318">If failure occurs on only one board,
+see <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> to swap RF detector boards to see if fault moves. If so, replace
+the faulty detector board.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909556-1058080" data-ofbid="id_SL219592-1058080__SL1909556-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920319" data-ofbid="id_SL219592-1058080__id_14920319">If the steps above do not find the
+cause, see <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap the processor boards to see if fault moves. If so, replace
+the faulty processor board.</p>
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920320" data-ofbid="id_SL219592-1058080__id_14920320">If these actions do not find the cause, replace the CAM/KASC
+chassis.</p>
+                    </li></ol>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920321">EM_UPM_CAN_SELFTEST<p class="- topic/p p" id="id_SL219592-1058080__id_14920322" data-ofbid="id_SL219592-1058080__id_14920322">The (UPM1/2) failed its CAN selftest.
+The CAN module on the DSP failed its self test procedure.</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920323">The fault indicates a failure in the CAN DSP, located on the
+UPM processor board.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920324">
+                  <ol class="- topic/ol ol" id="id_SL219592-1058080__id_14920325" data-ofbid="id_SL219592-1058080__id_14920325"><li class="- topic/li li" id="id_SL219592-1058080__SL1909557-1058080" data-ofbid="id_SL219592-1058080__SL1909557-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920326" data-ofbid="id_SL219592-1058080__id_14920326">Pull out and reseat both processor
+boards. Run the UPM I/O diagnostics to see if the error has cleared.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909558-1058080" data-ofbid="id_SL219592-1058080__SL1909558-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920327" data-ofbid="id_SL219592-1058080__id_14920327">If error continues, replace the affected
+UPM processor board.</p>
+                    </li></ol>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920328">EM_UPM_FPGA<p class="- topic/p p" id="id_SL219592-1058080__id_14920329" data-ofbid="id_SL219592-1058080__id_14920329">The (UPM1/2) has detected a FPGA error. Source
+of Fault is (one of the following):</p><ul class="- topic/ul ul" id="id_SL219592-1058080__id_14920330" data-ofbid="id_SL219592-1058080__id_14920330"><li class="- topic/li li" id="id_SL219592-1058080__SL4181986-1058080" data-ofbid="id_SL219592-1058080__SL4181986-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920331" data-ofbid="id_SL219592-1058080__id_14920331">FPGA Read/Write failure</p></li><li class="- topic/li li" id="id_SL219592-1058080__SL4181987-1058080" data-ofbid="id_SL219592-1058080__SL4181987-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920332" data-ofbid="id_SL219592-1058080__id_14920332">FPGA INIT not ready</p></li></ul></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920333">The fault indicates a failure in the FPGA, located on the UPM
+processor board.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920334">
+                  <ol class="- topic/ol ol" id="id_SL219592-1058080__id_14920335" data-ofbid="id_SL219592-1058080__id_14920335"><li class="- topic/li li" id="id_SL219592-1058080__SL1909559-1058080" data-ofbid="id_SL219592-1058080__SL1909559-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920336" data-ofbid="id_SL219592-1058080__id_14920336">Pull out and reseat both processor
+boards and the power supply. Run the UPM I/O diagnostics to see if
+the error has cleared.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909560-1058080" data-ofbid="id_SL219592-1058080__SL1909560-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920337" data-ofbid="id_SL219592-1058080__id_14920337">If error continues, replace the affected
+UPM processor board.</p>
+                    </li></ol>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920338">EM_UPM_NOT_CALIBRATED<p class="- topic/p p" id="id_SL219592-1058080__id_14920339" data-ofbid="id_SL219592-1058080__id_14920339">The UPM1/2 has not been Calibrated.
+No Scanning will be Allowed until Calibrated.</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920340">This fault occurs when the UPM has not been calibrated.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920341">Calibrate the UPM and perform the UPM functional check.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920342">EM_UPM_PS_FAULT<p class="- topic/p p" id="id_SL219592-1058080__id_14920343" data-ofbid="id_SL219592-1058080__id_14920343">The (UPM1/2) Has Detected a Power Supply
+Fault. Source of Fault is (one of the following):</p><ul class="- topic/ul ul" id="id_SL219592-1058080__id_14920344" data-ofbid="id_SL219592-1058080__id_14920344"><li class="- topic/li li" id="id_SL219592-1058080__SL1909561-1058080" data-ofbid="id_SL219592-1058080__SL1909561-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920345" data-ofbid="id_SL219592-1058080__id_14920345">UPB +12 Volts</p></li><li class="- topic/li li" id="id_SL219592-1058080__SL1909562-1058080" data-ofbid="id_SL219592-1058080__SL1909562-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920346" data-ofbid="id_SL219592-1058080__id_14920346">UPB -12 Volts</p></li><li class="- topic/li li" id="id_SL219592-1058080__SL1909563-1058080" data-ofbid="id_SL219592-1058080__SL1909563-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920347" data-ofbid="id_SL219592-1058080__id_14920347">UPB +5 Volts</p></li><li class="- topic/li li" id="id_SL219592-1058080__SL1909564-1058080" data-ofbid="id_SL219592-1058080__SL1909564-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920348" data-ofbid="id_SL219592-1058080__id_14920348">UPB +3.3 Volts</p></li><li class="- topic/li li" id="id_SL219592-1058080__SL1909565-1058080" data-ofbid="id_SL219592-1058080__SL1909565-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920349" data-ofbid="id_SL219592-1058080__id_14920349">UPB +1.5 Volts</p></li><li class="- topic/li li" id="id_SL219592-1058080__SL1909566-1058080" data-ofbid="id_SL219592-1058080__SL1909566-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920350" data-ofbid="id_SL219592-1058080__id_14920350">UPB +1.65 Volts</p><p class="- topic/p p" id="id_SL219592-1058080__id_14920351" data-ofbid="id_SL219592-1058080__id_14920351">Actual Voltage = ##</p></li><li class="- topic/li li" id="id_SL219592-1058080__SL1909567-1058080" data-ofbid="id_SL219592-1058080__SL1909567-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920352" data-ofbid="id_SL219592-1058080__id_14920352">Limit Voltage = ##</p></li></ul></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920353">This fault occurs when the UPM processor board detects incorrect
+power from the power supply. This is due to a failed power supply,
+backplane, processor board or a processor board or power supply that
+is not seated correctly in its slot.<p class="- topic/p p" id="id_SL219592-1058080__id_14920354" data-ofbid="id_SL219592-1058080__id_14920354">The UPM detected a problem
+with one of its power supplies. </p><div class="- topic/note note note note_note" id="id_SL219592-1058080__id_14920355" data-ofbid="id_SL219592-1058080__id_14920355"><span class="note__title">Note:</span> <p class="- topic/p p" id="id_SL219592-1058080__id_14920356" data-ofbid="id_SL219592-1058080__id_14920356">If the fault indicates
+RF, then proceed to next row in this table.</p></div></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920357">
+                  <ol class="- topic/ol ol" id="id_SL219592-1058080__id_14920358" data-ofbid="id_SL219592-1058080__id_14920358"><li class="- topic/li li" id="id_SL219592-1058080__SL1909568-1058080" data-ofbid="id_SL219592-1058080__SL1909568-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920359" data-ofbid="id_SL219592-1058080__id_14920359">Pull out and reseat both processor
+boards and the power supply. Run the UPM analog diagnostics to see
+if the error has cleared.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909569-1058080" data-ofbid="id_SL219592-1058080__SL1909569-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920360" data-ofbid="id_SL219592-1058080__id_14920360">Check the voltages using a DMM at the
+input panel of the UPM. If these voltage levels confirm the fault
+description, then replace the UPM power supply.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909570-1058080" data-ofbid="id_SL219592-1058080__SL1909570-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920361" data-ofbid="id_SL219592-1058080__id_14920361">If the error is consistently coming
+from only one UPM, see <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap the UPM processor boards to see if
+the fault moves. If so, replace the faulty processor board. </p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909571-1058080" data-ofbid="id_SL219592-1058080__SL1909571-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920362" data-ofbid="id_SL219592-1058080__id_14920362">Check that the incoming power to the
+CAM/KASC is 110 to 130 VAC 50/60 Hz.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909572-1058080" data-ofbid="id_SL219592-1058080__SL1909572-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920363" data-ofbid="id_SL219592-1058080__id_14920363">If the error continues after attempting
+the above steps, replace the CAM/KASC chassis.</p>
+                    </li></ol>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920364">EM_UPM_PS_FAULT<p class="- topic/p p" id="id_SL219592-1058080__id_14920365" data-ofbid="id_SL219592-1058080__id_14920365">The (UPM1/2) has detected a Power Supply
+Fault. Source of Fault is (one of the following):</p><ul class="- topic/ul ul" id="id_SL219592-1058080__id_14920366" data-ofbid="id_SL219592-1058080__id_14920366"><li class="- topic/li li" id="id_SL219592-1058080__SL1909573-1058080" data-ofbid="id_SL219592-1058080__SL1909573-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920367" data-ofbid="id_SL219592-1058080__id_14920367">RF NB +12 Volts</p></li><li class="- topic/li li" id="id_SL219592-1058080__SL1909574-1058080" data-ofbid="id_SL219592-1058080__SL1909574-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920368" data-ofbid="id_SL219592-1058080__id_14920368">RF MNS +12 Volts</p></li><li class="- topic/li li" id="id_SL219592-1058080__SL1909575-1058080" data-ofbid="id_SL219592-1058080__SL1909575-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920369" data-ofbid="id_SL219592-1058080__id_14920369">RF NB +5 Volts</p></li><li class="- topic/li li" id="id_SL219592-1058080__SL1909576-1058080" data-ofbid="id_SL219592-1058080__SL1909576-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920370" data-ofbid="id_SL219592-1058080__id_14920370">RF MNS +5 Volts</p></li><li class="- topic/li li" id="id_SL219592-1058080__SL1909577-1058080" data-ofbid="id_SL219592-1058080__SL1909577-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920371" data-ofbid="id_SL219592-1058080__id_14920371">RF NB +3.3 Volts</p></li><li class="- topic/li li" id="id_SL219592-1058080__SL1909578-1058080" data-ofbid="id_SL219592-1058080__SL1909578-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920372" data-ofbid="id_SL219592-1058080__id_14920372">RF MNS +3.3 Volts</p></li><li class="- topic/li li" id="id_SL219592-1058080__SL1909579-1058080" data-ofbid="id_SL219592-1058080__SL1909579-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920373" data-ofbid="id_SL219592-1058080__id_14920373">RF NB Ref Voltage</p></li><li class="- topic/li li" id="id_SL219592-1058080__SL1909580-1058080" data-ofbid="id_SL219592-1058080__SL1909580-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920374" data-ofbid="id_SL219592-1058080__id_14920374">RF MNS Ref Voltage</p></li><li class="- topic/li li" id="id_SL219592-1058080__SL1909581-1058080" data-ofbid="id_SL219592-1058080__SL1909581-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920375" data-ofbid="id_SL219592-1058080__id_14920375">Actual Voltage = ##</p></li><li class="- topic/li li" id="id_SL219592-1058080__SL1909582-1058080" data-ofbid="id_SL219592-1058080__SL1909582-1058080"><p class="- topic/p p" id="id_SL219592-1058080__id_14920376" data-ofbid="id_SL219592-1058080__id_14920376">Limit Voltage = ##</p></li></ul></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920377">The UPM detected a problem with power on a RF detector board.
+The issue is either with a supply voltage on one of the detector boards
+or with the monitoring of that supply voltage on the associated UPM
+processor board.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920378">
+                  <ol class="- topic/ol ol" id="id_SL219592-1058080__id_14920379" data-ofbid="id_SL219592-1058080__id_14920379"><li class="- topic/li li" id="id_SL219592-1058080__SL1909583-1058080" data-ofbid="id_SL219592-1058080__SL1909583-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920380" data-ofbid="id_SL219592-1058080__id_14920380">Pull out and reseat the affected processor
+board and RF detector board.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909584-1058080" data-ofbid="id_SL219592-1058080__SL1909584-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920381" data-ofbid="id_SL219592-1058080__id_14920381">If the error is consistently coming
+from only one UPM, see <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap the UPM RF detector boards to see if
+fault moves. If so, replace the faulty detector board. </p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909585-1058080" data-ofbid="id_SL219592-1058080__SL1909585-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920382" data-ofbid="id_SL219592-1058080__id_14920382">If the error does not follow the RF
+detector boards, see <a class="- topic/xref xref" href="#id_SL219588-1058080">UPM board swap procedure</a> and swap the UPM processor boards to see if
+fault moves. If so, replace the faulty processor board.</p>
+                    </li><li class="- topic/li li" id="id_SL219592-1058080__SL1909586-1058080" data-ofbid="id_SL219592-1058080__SL1909586-1058080">
+                      <p class="- topic/p p" id="id_SL219592-1058080__id_14920383" data-ofbid="id_SL219592-1058080__id_14920383">If the error is still on the same UPM,
+replace the CAM/KASC chassis.</p>
+                    </li></ol>
+                </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920384">EM_UPM_FILE_OPEN_FAIL <p class="- topic/p p" id="id_SL219592-1058080__id_14920385" data-ofbid="id_SL219592-1058080__id_14920385">Unable to open the YY file. Please
+fix and TPS Reset.</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920386">Caused by missing software config file.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920387">Error should state the file name and location. Attempt RestoreInfo.
+Otherwise a software load may be required.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920388">EM_UPM_CAL_FAIL_EMULATED<p class="- topic/p p" id="id_SL219592-1058080__id_14920389" data-ofbid="id_SL219592-1058080__id_14920389">Unable to Calibrate the UPM because
+it is emulated out. Please remove emulation and TPS Reset.</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920390">UPM is emulated out.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920391">Remove UPM emulation from mgd_stage file. Perform TPS reset
+and recalibrate.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920392">EM_UPM_CAL_FAIL_FILE_OPEN<p class="- topic/p p" id="id_SL219592-1058080__id_14920393" data-ofbid="id_SL219592-1058080__id_14920393">UPM Calibration failed due to
+failure to open XX file.</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920394">Caused by missing software config file.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920395">Error should state the file name and location. Attempt RestoreInfo.
+Otherwise a software load may be required.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920396">
+                  EM_UPM_CAL_FAIL_POWER <p class="- topic/p p" id="id_SL219592-1058080__id_14920397" data-ofbid="id_SL219592-1058080__id_14920397">UPM Calibration failed due to failure to converge on a calibration
+point. Verify that power is applied on the proper channel on the UPM.</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920398">UPM calibration failure. The UPM tried to calibrate to applied
+power but could not match the value required.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920399">This usually means that some event interrupted test execution,
+but the tool cannot identify the event. Review the error log for events
+logged during test execution that interrupted test. See <a class="- topic/xref xref" href="#id_SL4692487-1058080">Troubleshooting potential UPM problems</a>.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920400">EM_UPM_CAL_TIMEOUT<p class="- topic/p p" id="id_SL219592-1058080__id_14920401" data-ofbid="id_SL219592-1058080__id_14920401">UPM Calibration failed due to a timeout
+on the Calibration process. Verify that the UPM is powered up and
+all cables are connected properly.</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920402">UPM calibration failure. The UPM tried to calibrate to applied
+power but could not match the value required.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920403">See <a class="- topic/xref xref" href="#id_SL4692487-1058080">Troubleshooting potential UPM problems</a>.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920404">EM_UPM_RECALIBRATION_ERROR<p class="- topic/p p" id="id_SL219592-1058080__id_14920405" data-ofbid="id_SL219592-1058080__id_14920405">The UPM detector board was changed but not calibrated. Patient scanning will be inhibited until the UPM calibration has been done. Location: CAM/KASC chassis.</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_SL219592-1058080__id_14920406">The system detected installation of different UPM detector board in the ASC/UPM chassis slot.<p class="- topic/p p" id="id_SL219592-1058080__id_14920407" data-ofbid="id_SL219592-1058080__id_14920407">Due to normal differences between UPM detector boards, UPM calibration must now be done. This message may also appear during initial system installation or until contents of SaveInfo media are restored. Go to <span class="+ topic/ph ui-d/uicontrol ph uicontrol">UPM Calibration and UPM Functional Check - Body Mode</span> using the link in the next cell.</p><p class="- topic/p p" id="id_SL219592-1058080__id_14920408" data-ofbid="id_SL219592-1058080__id_14920408">The system read the Hart ID file and noted the serial number of the board that was changed.</p></td><td class="- topic/entry entry colsep-0 rowsep-0">Do <a class="- topic/xref xref" href="t_DoingTheUPMFunctionalCheckHeadAndBody.html" title="Do the UPM head and body functional check to make sure the measured RF power is within the expected range.">Doing the UPM functional check (head and body)</a> and <a class="- topic/xref xref" href="t_DoingTheUPMFunctionalCheckHeadAndBody.html" title="Do the UPM head and body functional check to make sure the measured RF power is within the expected range.">UPM Calibration and UPM Functional Check-Head Mode</a>. These modules describe the calibration procedure. Patient scanning is inhibited until this is completed.</td></tr></tbody>
+        </table>
+        
+      </section></div></article><article class="- topic/topic reference/reference topic reference nested1 yes id_SL219588-1058080" aria-labelledby="ariaid-title8" id="id_SL219588-1058080"><header class="topic-id"><span class="metalabel">Topic ID: </span>id_SL219588-1058080</header><h2 class="- topic/title title topictitle2" id="ariaid-title8">UPM board swap procedure</h2><div class="- topic/body reference/refbody body refbody"><section class="- topic/section section" id="id_SL219588-1058080__SL219588-1058080" data-ofbid="id_SL219588-1058080__SL219588-1058080">
+        <div class="- topic/note note note note_note" id="id_SL219588-1058080__id_14920448" data-ofbid="id_SL219588-1058080__id_14920448"><span class="note__title">Note:</span> If either the processor board or RF detector boards are swapped, the UPM calibration and functional check must be run before patient scanning.</div>
+        <figure class="- topic/fig fig fignone" id="id_SL219588-1058080__SL1909587-1058080" data-ofbid="id_SL219588-1058080__SL1909587-1058080"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">3. </span></span><span class="fig--title">UPM board swap procedure</span></figcaption><img class="- topic/image image" id="id_SL219588-1058080__id_14920450" src="14472055.jpg"/></figure>
+      </section></div></article><article class="- topic/topic reference/reference topic reference nested1 yes id_SL5512965-1058080" aria-labelledby="ariaid-title9" id="id_SL5512965-1058080"><header class="topic-id"><span class="metalabel">Topic ID: </span>id_SL5512965-1058080</header><h2 class="- topic/title title topictitle2" id="ariaid-title9">Finalization</h2><div class="- topic/body reference/refbody body refbody"><section class="- topic/section section" id="id_SL5512965-1058080__SL5512965-1058080" data-ofbid="id_SL5512965-1058080__SL5512965-1058080">
+        <ol class="- topic/ol ol" id="id_SL5512965-1058080__id_14920451" data-ofbid="id_SL5512965-1058080__id_14920451"><li class="- topic/li li" id="id_SL5512965-1058080__SL5512970-1058080" data-ofbid="id_SL5512965-1058080__SL5512970-1058080">Return the system to normal configuration and operation.</li><li class="- topic/li li" id="id_SL5512965-1058080__SL5512971-1058080" data-ofbid="id_SL5512965-1058080__SL5512971-1058080">If a UPM detector board or UPM processor board was replaced, run calibration. (See <a class="- topic/xref xref" href="t_DoingTheUPMFunctionalCheckHeadAndBody.html" title="Do the UPM head and body functional check to make sure the measured RF power is within the expected range.">UPM Calibration and UPM Functional Check–Body Mode</a> and <a class="- topic/xref xref" href="t_DoingTheUPMFunctionalCheckHeadAndBody.html" title="Do the UPM head and body functional check to make sure the measured RF power is within the expected range.">UPM Calibration and UPM Functional Check–Head Mode</a>.)</li><li class="- topic/li li" id="id_SL5512965-1058080__SL5534644-1058080" data-ofbid="id_SL5512965-1058080__SL5534644-1058080">Do <span class="+ topic/ph ui-d/uicontrol ph uicontrol">SaveInfo</span>.</li></ol>
+      </section></div></article></article></main></div>
+                        
+                        
+                        
+                        </div>
+                        
+                        
+                        <!--<whc:webhelp_related_links class="d-print-none"/> -->
+                        
+                        
+                        
+                        
+                        <!-- GEDev US503: next/previous buttons on bottom -->
+                        
+                            
+                            <nav id="wh_topic_toc" class="d-print-none collapsible" aria-label="On this page">
+                                <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="topic-item"><a href="#id_SL5412623-1058080" data-tocid="id_SL5412623-1058080">Overview</a></li><li class="topic-item"><a href="#id_SL1909472-1058080" data-tocid="id_SL1909472-1058080">Diagnostics for UPM</a></li><li class="topic-item"><a href="#id_SL219641-1058080" data-tocid="id_SL219641-1058080">UPM calibration</a></li><li class="topic-item"><a href="#id_SL1909509-1058080" data-tocid="id_SL1909509-1058080">UPM functional check</a></li><li class="topic-item"><a href="#id_SL4692487-1058080" data-tocid="id_SL4692487-1058080">Troubleshooting potential UPM problems</a></li><li class="topic-item"><a href="#id_SL219592-1058080" data-tocid="id_SL219592-1058080">UPM fault messages</a></li><li class="topic-item"><a href="#id_SL219588-1058080" data-tocid="id_SL219588-1058080">UPM board swap procedure</a></li><li class="topic-item"><a href="#id_SL5512965-1058080" data-tocid="id_SL5512965-1058080">Finalization</a></li></ul></div>
+                            </nav>
+                            <!--whc:include_html href="${webhelp.fragment.after.topic.toc}"/-->
+                        
+                        <div id="topic_toc_button">
+                            <button type="button" data-target="#wh_topic_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle topic table of content" aria-controls="contain-topic_toc"></button>
+                        </div>
+                        <!--whc:include_html href="${webhelp.fragment.toggle.toc}"/-->
+                        
+                    </div>
+
+                </div>
+
+                
+            </div>
+            <div class="row">
+            <div id="wh_tools">
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+                    <div class="wh_right_tools">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                    </div>
+                </nav>
+            </div>
+            </div>
+            </div>
+        <!-- webhelp.fragment.after.main.content.area and webhelp.fragment.after.main.content.area.topic.page moved out of div to try and fix scrolling issue -->
+        
+        
+        <footer class="navbar navbar-default wh_footer" whc:version="23.1">
+  <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class="ftrcustom"><span>5777451-3</span> | <span>Revision 
+					7</span> | <span>en | </span><span><a target="_blank" href="https://www.gehealthcare.com/">gehealthcare.com</a></span></div><div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class="copyright_info"><span class="copyright_years"> ©2023</span> GE HealthCare Proprietary<div class="GETradmark"><span>GE is a trademark of General Electric Company used under trademark license.</span></div></div>
+</footer>
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" alt=""/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

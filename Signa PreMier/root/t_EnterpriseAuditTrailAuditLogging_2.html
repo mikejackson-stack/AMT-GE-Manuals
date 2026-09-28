@@ -1,0 +1,247 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us" whc:version="22.0">
+
+    <head><link rel="shortcut icon" href="oxygen-webhelp\template\img\favicon-32x32.webp"><!----></link><link rel="icon" href="oxygen-webhelp\template\img\favicon-32x32.webp"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta charset="UTF-8"/><meta name="copyright" content="(C) Copyright 2023"/><meta name="DC.rights.owner" content="(C) Copyright 2023"/><meta name="DC.type" content="task"/><meta name="description" content="EAT allows for remote logging of system events."/><meta name="DC.coverage" content=""/><meta name="DC.relation" scheme="URI" content="t_MRSecurityandPrivacyOverview.html"/><meta name="DC.relation" scheme="URI" content="t_SendingLinuxLogsToRemoteServer_2.html"/><meta name="DC.relation" scheme="URI" content="t_EnablingRemoteLoggingOfAuditMessages_2.html"/><meta name="prodname" content=""/><meta name="version" content="0"/><meta name="component" content=""/><meta name="DC.creator" content=""/><meta name="DC.publisher" content="712023"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="id_2021766"/><meta name="DC.language" content="en-US"/>        
+      <title>Enterprise Audit Trail (EAT)-audit logging</title><!--  Generated with Oxygen version 23.1, build number 2021121412.  --><meta name="wh-path2root" content=""/><meta name="wh-source-relpath" content="t_EnterpriseAuditTrailAuditLogging.dita"/><meta name="wh-out-relpath" content="t_EnterpriseAuditTrailAuditLogging_2.html"/>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/>
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2021121412"/>
+    
+    
+    <script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script>
+    
+    <script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/notes.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/GEHealthCare.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/print.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/footer-fix.css?buildId=2021121412"/><script src="./oxygen-webhelp/lib/scripts/Remove_LSEP.js"></script></head>
+    <body id="id_2021766" class="wh_topic_page frmBody">
+        <!--US578: WHR - Move search to line up with manual title-->
+        <div class="SupressSearch">
+            <!--Search form 
+                Removed class for DE238: Double search fields when webhelp is viewed on
+            <whc:webhelp_search_input class="navbar-form wh_topic_page_search search" role="form">-->
+            <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_search_input " role="form">
+                
+                
+                <div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div>
+                
+                
+            </div>
+        </div>
+        <a href="#topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="23.1">
+    <div class="container-fluid">
+        <!-- GEDev US509 Webhelp: expandable navbar icon invisible changed to navbar-light -->
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-light">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <!-- GE Dev US464 change logo link to blank target -->
+                    <a href="https://www.gehealthcare.com/" class=" wh_logo d-none d-sm-block " target="_blank"><img src="oxygen-webhelp\template\img\GE-HLTHCR_Webhelp_CMYK-CompPrpl.svg" alt="SIGNA™ Premier 3.0T Service Manual"/></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle"><span class="ph mainbooktitle">SIGNA™ Premier 3.0T Service Manual</span></span></a></div>
+                    <!--* DE224: WHR: Link under the search field is missing -->
+                    <div class="search_container">
+                        <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_search_input "><div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div></div><whc:search_field></whc:search_field>
+                        <div class="search_link">
+                             
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+            </div>
+            
+            
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033906-d46e224-mi" data-tocid="id_2033906-d46e224" data-state="not-ready" class=" topicref " data-id="id_2033906"><span class="title"><a href="c_Safety_WebhelpLandingPage.html">Safety and General Information</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033907-d46e1778-mi" data-tocid="id_2033907-d46e1778" data-state="not-ready" class=" topicref " data-id="id_2033907"><span class="title"><a href="c_PreInstallation_WebhelpLandingPage.html">Pre-Installation</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033909-d46e1984-mi" data-tocid="id_2033909-d46e1984" data-state="not-ready" class=" topicref " data-id="id_2033909"><span class="title"><a href="c_Installation_WebhelpLandingPage.html">Installation</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033902-d46e47631-mi" data-tocid="id_2033902-d46e47631" data-state="not-ready" class=" topicref " data-id="id_2033902"><span class="title"><a href="c_AdjustmentsAndCalibrations_WebhelpLandingPage.html">Adjustments/Calibrations</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033910-d46e84750-mi" data-tocid="id_2033910-d46e84750" data-state="not-ready" class=" topicref " data-id="id_2033910"><span class="title"><a href="c_FunctionalChecks_WebhelpLandingPage.html">Functional Checks</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033911-d46e101428-mi" data-tocid="id_2033911-d46e101428" data-state="not-ready" class=" topicref " data-id="id_2033911"><span class="title"><a href="c_Software_WebhelpLandingPage.html">Software</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033912-d46e123345-mi" data-tocid="id_2033912-d46e123345" data-state="not-ready" class=" topicref " data-id="id_2033912"><span class="title"><a href="c_Theory_WebhelpLandingPage.html">Theory</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033914-d46e126730-mi" data-tocid="id_2033914-d46e126730" data-state="not-ready" class=" topicref " data-id="id_2033914"><span class="title"><a href="c_PlannedMaintenance_WebhelpLandingPage.html">Planned Maintenance</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033915-d46e136133-mi" data-tocid="id_2033915-d46e136133" data-state="not-ready" class=" topicref " data-id="id_2033915"><span class="title"><a href="c_Troubleshooting_WebhelpLandingPage.html">Troubleshooting</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033916-d46e142542-mi" data-tocid="id_2033916-d46e142542" data-state="not-ready" class=" topicref " data-id="id_2033916"><span class="title"><a href="c_Parts_WebhelpLandingPage.html">Parts</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033917-d46e144514-mi" data-tocid="id_2033917-d46e144514" data-state="not-ready" class=" topicref " data-id="id_2033917"><span class="title"><a href="c_Replacements_WebhelpLandingPage.html">Replacements</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033903-d46e452121-mi" data-tocid="id_2033903-d46e452121" data-state="not-ready" class=" topicref " data-id="id_2033903"><span class="title"><a href="c_OEMAndOtherManuals_WebhelpLandingPage.html">OEM and Other Manuals</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033904-d46e452533-mi" data-tocid="id_2033904-d46e452533" data-state="not-ready" class=" topicref " data-id="id_2033904"><span class="title"><a href="c_Coils_WebhelpLandingPage.html">Coils</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033918-d46e459216-mi" data-tocid="id_2033918-d46e459216" data-state="not-ready" class=" topicref " data-id="id_2033918"><span class="title"><a href="c_OptionalFeatures_WebhelpLandingPage.html">Optional Features</a></span></span></li></ul></nav>
+                
+                <!--whc:include_html href="${webhelp.fragment.after.top_menu}"/-->
+                
+            </div>
+            
+        </div>
+    </div>
+</header>
+        
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+
+                        <!-- External resource link -->
+                        
+
+                        <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page" class="oxy-icon oxy-icon-print"></button></div>
+
+                        <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                        
+                    </div>
+                    
+                </nav>
+            </div>
+
+            <!--whc:include_html href="${webhelp.fragment.before.main.content.area}"/>
+           
+            <whc:include_html href="${webhelp.fragment.before.main.content.area.topic.page}"/-->
+
+
+            <div class="wh_content_area">
+                <!-- US616 - TOC toggle buttons -->
+                <div class="row" id="topic_body">
+                    
+                    <div id="pub_toc_button">
+                        <button type="button" data-target="#wh_publication_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc"></button>
+                    </div>
+                    
+                    <!--  DE234:  Spacing irregularities with flexible TOCS in Webhelp 
+                    Moved related links out 2 divs, moved topic tocs into topic body-->
+                    <div id="wh_topic_body">
+                        
+                        <div id="body_grid"><!-- DE234:  Added Body grid to fix issue with related links-->
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1"><header class="contentHead">
+        <div class="topicMeta"><ul class="- topic/title title"><li> </li><li></li><li></li><li><span class="metalabel">Object ID: </span>00000018WIA30B73450GYZ</li><li><span class="metalabel">Topic ID: </span>id_2021766<span class="metalabel"> Version: </span>4.1</li><li><span class="metalabel">Date: </span>Oct 11, 2021 5:45:11 PM</li></ul></div><h1 class="- topic/title title topictitle1" id="ariaid-title1">Enterprise Audit Trail (EAT)-audit logging</h1></header>
+        <div class="- topic/body task/taskbody body taskbody"><div class="hide"><p class="- topic/shortdesc shortdesc">EAT allows for remote logging of system events.</p></div>
+        <section class="- topic/section task/context section context"><div class="tasklabel"><h2 class="sectiontitle tasklabel">About this task</h2></div>Remote logging of system events is achieved using RFC 5424 or RFC 6587 Syslog protocol. The following sources direct log messages to syslog, which are sent out using the rsyslog service:<ul class="- topic/ul ul"><li class="- topic/li li">User login, logout, and patient data transfer (EA3/EAT)</li><li class="- topic/li li">Linux Auditing System (auditd)</li><li class="- topic/li li">Linux operating system messages</li><li class="- topic/li li">Antivirus start and end status</li><li class="- topic/li li">Others (as configured)</li></ul><div class="- topic/note note note note_note"><span class="note__title">Note:</span> This instruction does not configure the remote (collector) system.</div></section></div><article class="- topic/topic task/task topic task nested1 yes task_wqs_m5p_nlb" aria-labelledby="ariaid-title2" id="task_wqs_m5p_nlb"><header class="topic-id"><span class="metalabel">Topic ID: </span>task_wqs_m5p_nlb</header><h2 class="- topic/title title topictitle2" id="ariaid-title2">Background</h2><div class="- topic/body task/taskbody body taskbody"><section class="- topic/section task/context section context"><div class="tasklabel"><h3 class="sectiontitle tasklabel">About this task</h3></div>
+                <p class="- topic/p p">From DICOM part 15, <a class="- topic/xref xref" href="http://dicom.nema.org/medical/dicom/current/output/html/part15.html#biblio_RFC_5426">[RFC 5426]</a> provides the mechanisms for rapid transport of audit messages. It is the standardized successor to the informative standard <a class="- topic/xref xref" href="http://dicom.nema.org/medical/dicom/current/output/html/part15.html#biblio_RFC_3164">[RFC 3164]</a>, which is widely used in a variety of settings.</p>
+                <ul class="- topic/ul ul"><li class="- topic/li li">RFC <span class="+ topic/ph ui-d/uicontrol ph uicontrol">3164</span> – BSD syslog protocol - <u class="+ topic/ph hi-d/u ph u">This was the original protocol supported in EAT, and was Obsoleted by: <a class="- topic/xref xref" href="https://tools.ietf.org/html/rfc5424">5424</a></u>. This protocol has been used for the transmission of event notification messages across networks for many years.</li><li class="- topic/li li">While this protocol was originally developed on the University of California Berkeley Software Distribution (BSD) TCP/IP system implementations, its value to operations and management has led it to be ported to many other operating systems as well as being embedded into many other networked devices.</li><li class="- topic/li li">RFC <span class="+ topic/ph ui-d/uicontrol ph uicontrol">5424</span> – <u class="+ topic/ph hi-d/u ph u">The newer Syslog Protocol defined which obsoletes 3164 (BSD). This is referred as IETF Syslog (or just IETF) in EAT.</u></li><li class="- topic/li li">Both BSD and IETF protocols are supported in EAT (BSD is still supported in many systems, and IETF-Syslog was new/not available on some systems).</li></ul>
+                <p class="- topic/p p">From EAT perspective, audit messages remains same (XML message as defined by the DICOM schema). </p>
+                <p class="- topic/p p">Only during transmission, additional headers are to be added according to the protocol selected (BSD or IETF syslog). If headers are invalid, the server will reject the messages.</p>
+            </section></div></article><article class="- topic/topic task/task topic task nested1 yes task_lpl_n5p_nlb" aria-labelledby="ariaid-title3" id="task_lpl_n5p_nlb"><header class="topic-id"><span class="metalabel">Topic ID: </span>task_lpl_n5p_nlb</header><h2 class="- topic/title title topictitle2" id="ariaid-title3">Examples</h2><div class="- topic/body task/taskbody body taskbody"><section class="- topic/section task/context section context"><div class="tasklabel"><h3 class="sectiontitle tasklabel">About this task</h3></div>
+                <p class="- topic/p p">The only difference is in the header of the code block.</p>
+                <p class="- topic/p p">BSD based Syslog transport request:</p>
+                <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;85&gt;Apr 08 11:23:58 INBLREVRASWP515 GE:
+ &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;AuditMessage&gt;&lt;EventIdentification EventActionCode="E" EventDateTime="2021-04-08T05:53:58" EventOutcomeIndicator="0"&gt;
+&lt;EventID csd-code="110113" codeSystemName="DCM" originalText="Security Alert" /&gt;
+&lt;EventTypeCode csd-code="110131" codeSystemName="DCM" originalText="Software Configuration"/&gt;
+&lt;/EventIdentification&gt;&lt;ActiveParticipant UserID="EAT Configuration" UserIsRequestor="true"&gt;
+&lt;/ActiveParticipant&gt;
+&lt;AuditSourceIdentification AuditSourceID=""&gt;
+&lt;AuditSourceTypeCode csd-code="2" codeSystemName="DCM" originalText="Data acquisition device" /&gt;
+&lt;/AuditSourceIdentification&gt;
+&lt;ParticipantObjectIdentification ParticipantObjectID="10.177.200.54" ParticipantObjectTypeCode="2" ParticipantObjectTypeCodeRole="13"&gt;
+&lt;ParticipantObjectIDTypeCode csd-code="12" codeSystemName="RFC-3881" originalText=""/&gt;
+&lt;ParticipantObjectName/&gt;
+&lt;ParticipantObjectDetail type="Alert Description" value="U2VuZGluZyB0ZXN0IG1lc3NhZ2U=" /&gt;
+&lt;/ParticipantObjectIdentification&gt;
+&lt;/AuditMessage&gt;</code></pre>
+                <p class="- topic/p p">IETF Syslog transport request:</p>
+                <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;85&gt;1 2021-04-08T11:25:04.469Z INBLREVRASWP515 GE - DICOM+RFC3881 - 
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;AuditMessage&gt;
+&lt;EventIdentification EventActionCode="E" EventDateTime="2021-04-08T05:55:04" EventOutcomeIndicator="0"&gt;
+&lt;EventID csd-code="110113" codeSystemName="DCM" originalText="Security Alert" /&gt;
+&lt;EventTypeCode csd-code="110131" codeSystemName="DCM" originalText="Software Configuration"/&gt;
+&lt;/EventIdentification&gt;
+&lt;ActiveParticipant UserID="EAT Configuration" UserIsRequestor="true"&gt;
+&lt;/ActiveParticipant&gt;
+&lt;AuditSourceIdentification AuditSourceID=""&gt;
+&lt;AuditSourceTypeCode csd-code="2" codeSystemName="DCM" originalText="Data acquisition device" /&gt;
+&lt;/AuditSourceIdentification&gt;
+&lt;ParticipantObjectIdentification ParticipantObjectID="10.177.200.54" ParticipantObjectTypeCode="2" ParticipantObjectTypeCodeRole="13"&gt;
+&lt;ParticipantObjectIDTypeCode csd-code="12" codeSystemName="RFC-3881" originalText=""/&gt;
+&lt;ParticipantObjectName/&gt;
+&lt;ParticipantObjectDetail type="Alert Description" value="U2VuZGluZyB0ZXN0IG1lc3NhZ2U=" /&gt;
+&lt;/ParticipantObjectIdentification&gt;
+&lt;/AuditMessage&gt;</code></pre>
+                <p class="- topic/p p">The MR system supports TCP, UDP and TLS (only on software revision 29 and later) communications to the enterprise servers, and following combinations are considered valid protocol selections: </p>
+                <ul class="- topic/ul ul"><li class="- topic/li li">TCP-BSD, TCP-IETF</li><li class="- topic/li li">UDP-BSD, UDP-IETF</li><li class="- topic/li li">TLS-BSD, TLS-IETF (only available on software versions 29 and later)</li></ul>
+                <p class="- topic/p p">For example, UDP-IETF is defined as using an UDP connection and IETF-Syslog protocol to send data to enterprise server.</p>
+                <div class="- topic/note note note note_note"><span class="note__title">Note:</span> Selecting TLS requires that the third party trust certificate from the facility EAT collector server has been imported into the MR system and has been configured for EAT application using the Certificate Management interface, see <a class="- topic/xref xref" href="t_ImportingThirdPartyCertificates-PublicKeys.html" title="Import the third-party certificate using a public key from a USB flash drive.">Importing third-party certificates - public keys</a>.</div>
+                <p class="- topic/p p">DICOM part 15 references:</p>
+                <ul class="- topic/ul ul"><li class="- topic/li li">[RFC 3164] IETF. August 2001. <em class="+ topic/ph hi-d/i ph i">The BSD syslog Protocol</em>. <a class="- topic/xref xref" href="http://tools.ietf.org/html/rfc3164">http://tools.ietf.org/html/rfc3164</a>.</li><li class="- topic/li li">[RFC 5424] IETF. <em class="+ topic/ph hi-d/i ph i">The Syslog Protocol</em>. <a class="- topic/xref xref" href="http://tools.ietf.org/html/rfc5424">http://tools.ietf.org/html/rfc5424</a>.</li><li class="- topic/li li">[RFC 5425] IETF. <em class="+ topic/ph hi-d/i ph i">Transport Layer Security (TLS) Transport Mapping for Syslog</em>. <a class="- topic/xref xref" href="http://tools.ietf.org/html/rfc5425">http://tools.ietf.org/html/rfc5425</a>.</li><li class="- topic/li li">[RFC 5426] IETF. <em class="+ topic/ph hi-d/i ph i">Transmission of Syslog Messages over UDP</em>. <a class="- topic/xref xref" href="http://tools.ietf.org/html/rfc5426">http://tools.ietf.org/html/rfc5426</a>.</li></ul>
+            </section></div></article></article></main></div>
+                        
+                        <div class=" wh_child_links d-print-none "><nav aria-label="Child Links" role="navigation" class="- topic/related-links related-links"><ul class="ullinks"><li class="- topic/link link ulchildlink"><strong><a href="t_SendingLinuxLogsToRemoteServer_2.html">Sending Linux system logs to a remote server</a></strong><div class="- topic/desc desc">Sending Linux system log (syslogd) events to a remote server.</div></li><li class="- topic/link link ulchildlink"><strong><a href="t_EnablingRemoteLoggingOfAuditMessages_2.html">Enabling remote logging of the audit messages</a></strong><div class="- topic/desc desc">Enable remote logging of the audit messages.</div></li></ul></nav></div>
+                        
+                        </div>
+                        
+                        
+                        <!--<whc:webhelp_related_links class="d-print-none"/> -->
+                        
+                        
+                        
+                        
+                        <!-- GEDev US503: next/previous buttons on bottom -->
+                        
+                            
+                            <nav id="wh_topic_toc" class="d-print-none collapsible" aria-label="On this page">
+                                <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="topic-item"><a href="#task_wqs_m5p_nlb" data-tocid="task_wqs_m5p_nlb">Background</a></li><li class="topic-item"><a href="#task_lpl_n5p_nlb" data-tocid="task_lpl_n5p_nlb">Examples</a></li></ul></div>
+                            </nav>
+                            <!--whc:include_html href="${webhelp.fragment.after.topic.toc}"/-->
+                        
+                        <div id="topic_toc_button">
+                            <button type="button" data-target="#wh_topic_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle topic table of content" aria-controls="contain-topic_toc"></button>
+                        </div>
+                        <!--whc:include_html href="${webhelp.fragment.toggle.toc}"/-->
+                        
+                    </div>
+
+                </div>
+
+                
+            </div>
+            <div class="row">
+            <div id="wh_tools">
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+                    <div class="wh_right_tools">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                    </div>
+                </nav>
+            </div>
+            </div>
+            </div>
+        <!-- webhelp.fragment.after.main.content.area and webhelp.fragment.after.main.content.area.topic.page moved out of div to try and fix scrolling issue -->
+        
+        
+        <footer class="navbar navbar-default wh_footer" whc:version="23.1">
+  <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class="ftrcustom"><span>5777451-3</span> | <span>Revision 
+					7</span> | <span>en-US | </span><span><a target="_blank" href="https://www.gehealthcare.com/">gehealthcare.com</a></span></div><div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class="copyright_info"><span class="copyright_years"> ©2023</span> GE HealthCare Proprietary<div class="GETradmark"><span>GE is a trademark of General Electric Company used under trademark license.</span></div></div>
+</footer>
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" alt=""/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

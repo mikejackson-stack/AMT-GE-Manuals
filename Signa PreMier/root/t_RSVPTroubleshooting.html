@@ -1,0 +1,208 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us" whc:version="22.0">
+
+    <head><link rel="shortcut icon" href="oxygen-webhelp\template\img\favicon-32x32.webp"><!----></link><link rel="icon" href="oxygen-webhelp\template\img\favicon-32x32.webp"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta charset="UTF-8"/><meta name="copyright" content="(C) Copyright 2023"/><meta name="DC.rights.owner" content="(C) Copyright 2023"/><meta name="DC.type" content="task"/><meta name="description" content="Provides steps to check the status of the Remote Service Platform (RSvP) and steps to attempt to resolve errors."/><meta name="DC.coverage" content=""/><meta name="prodname" content=""/><meta name="version" content="0"/><meta name="component" content=""/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="id_2014048"/><meta name="DC.language" content="en-US"/>        
+      <title>Troubleshooting the InSite Remote Service Platform (RSvP)</title><!--  Generated with Oxygen version 23.1, build number 2021121412.  --><meta name="wh-path2root" content=""/><meta name="wh-source-relpath" content="t_RSVPTroubleshooting.dita"/><meta name="wh-out-relpath" content="t_RSVPTroubleshooting.html"/>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/>
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2021121412"/>
+    
+    
+    <script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script>
+    
+    <script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/notes.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/GEHealthCare.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/print.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/footer-fix.css?buildId=2021121412"/><script src="./oxygen-webhelp/lib/scripts/Remove_LSEP.js"></script></head>
+    <body id="id_2014048" class="wh_topic_page frmBody">
+        <!--US578: WHR - Move search to line up with manual title-->
+        <div class="SupressSearch">
+            <!--Search form 
+                Removed class for DE238: Double search fields when webhelp is viewed on
+            <whc:webhelp_search_input class="navbar-form wh_topic_page_search search" role="form">-->
+            <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_search_input " role="form">
+                
+                
+                <div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div>
+                
+                
+            </div>
+        </div>
+        <a href="#topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="23.1">
+    <div class="container-fluid">
+        <!-- GEDev US509 Webhelp: expandable navbar icon invisible changed to navbar-light -->
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-light">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <!-- GE Dev US464 change logo link to blank target -->
+                    <a href="https://www.gehealthcare.com/" class=" wh_logo d-none d-sm-block " target="_blank"><img src="oxygen-webhelp\template\img\GE-HLTHCR_Webhelp_CMYK-CompPrpl.svg" alt="SIGNA™ Premier 3.0T Service Manual"/></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle"><span class="ph mainbooktitle">SIGNA™ Premier 3.0T Service Manual</span></span></a></div>
+                    <!--* DE224: WHR: Link under the search field is missing -->
+                    <div class="search_container">
+                        <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_search_input "><div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div></div><whc:search_field></whc:search_field>
+                        <div class="search_link">
+                             
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+            </div>
+            
+            
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033906-d46e224-mi" data-tocid="id_2033906-d46e224" data-state="not-ready" class=" topicref " data-id="id_2033906"><span class="title"><a href="c_Safety_WebhelpLandingPage.html">Safety and General Information</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033907-d46e1778-mi" data-tocid="id_2033907-d46e1778" data-state="not-ready" class=" topicref " data-id="id_2033907"><span class="title"><a href="c_PreInstallation_WebhelpLandingPage.html">Pre-Installation</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033909-d46e1984-mi" data-tocid="id_2033909-d46e1984" data-state="not-ready" class=" topicref " data-id="id_2033909"><span class="title"><a href="c_Installation_WebhelpLandingPage.html">Installation</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033902-d46e47631-mi" data-tocid="id_2033902-d46e47631" data-state="not-ready" class=" topicref " data-id="id_2033902"><span class="title"><a href="c_AdjustmentsAndCalibrations_WebhelpLandingPage.html">Adjustments/Calibrations</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033910-d46e84750-mi" data-tocid="id_2033910-d46e84750" data-state="not-ready" class=" topicref " data-id="id_2033910"><span class="title"><a href="c_FunctionalChecks_WebhelpLandingPage.html">Functional Checks</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033911-d46e101428-mi" data-tocid="id_2033911-d46e101428" data-state="not-ready" class=" topicref " data-id="id_2033911"><span class="title"><a href="c_Software_WebhelpLandingPage.html">Software</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033912-d46e123345-mi" data-tocid="id_2033912-d46e123345" data-state="not-ready" class=" topicref " data-id="id_2033912"><span class="title"><a href="c_Theory_WebhelpLandingPage.html">Theory</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033914-d46e126730-mi" data-tocid="id_2033914-d46e126730" data-state="not-ready" class=" topicref " data-id="id_2033914"><span class="title"><a href="c_PlannedMaintenance_WebhelpLandingPage.html">Planned Maintenance</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033915-d46e136133-mi" data-tocid="id_2033915-d46e136133" data-state="not-ready" class=" topicref " data-id="id_2033915"><span class="title"><a href="c_Troubleshooting_WebhelpLandingPage.html">Troubleshooting</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033916-d46e142542-mi" data-tocid="id_2033916-d46e142542" data-state="not-ready" class=" topicref " data-id="id_2033916"><span class="title"><a href="c_Parts_WebhelpLandingPage.html">Parts</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033917-d46e144514-mi" data-tocid="id_2033917-d46e144514" data-state="not-ready" class=" topicref " data-id="id_2033917"><span class="title"><a href="c_Replacements_WebhelpLandingPage.html">Replacements</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033903-d46e452121-mi" data-tocid="id_2033903-d46e452121" data-state="not-ready" class=" topicref " data-id="id_2033903"><span class="title"><a href="c_OEMAndOtherManuals_WebhelpLandingPage.html">OEM and Other Manuals</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033904-d46e452533-mi" data-tocid="id_2033904-d46e452533" data-state="not-ready" class=" topicref " data-id="id_2033904"><span class="title"><a href="c_Coils_WebhelpLandingPage.html">Coils</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033918-d46e459216-mi" data-tocid="id_2033918-d46e459216" data-state="not-ready" class=" topicref " data-id="id_2033918"><span class="title"><a href="c_OptionalFeatures_WebhelpLandingPage.html">Optional Features</a></span></span></li></ul></nav>
+                
+                <!--whc:include_html href="${webhelp.fragment.after.top_menu}"/-->
+                
+            </div>
+            
+        </div>
+    </div>
+</header>
+        
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+
+                        <!-- External resource link -->
+                        
+
+                        <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page" class="oxy-icon oxy-icon-print"></button></div>
+
+                        <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                        
+                    </div>
+                    
+                </nav>
+            </div>
+
+            <!--whc:include_html href="${webhelp.fragment.before.main.content.area}"/>
+           
+            <whc:include_html href="${webhelp.fragment.before.main.content.area.topic.page}"/-->
+
+
+            <div class="wh_content_area">
+                <!-- US616 - TOC toggle buttons -->
+                <div class="row" id="topic_body">
+                    
+                    <div id="pub_toc_button">
+                        <button type="button" data-target="#wh_publication_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc"></button>
+                    </div>
+                    
+                    <!--  DE234:  Spacing irregularities with flexible TOCS in Webhelp 
+                    Moved related links out 2 divs, moved topic tocs into topic body-->
+                    <div id="wh_topic_body">
+                        
+                        <div id="body_grid"><!-- DE234:  Added Body grid to fix issue with related links-->
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1"><header class="contentHead">
+        <div class="topicMeta"><ul class="- topic/title title"><li> </li><li></li><li></li><li><span class="metalabel">Object ID: </span>00000018WIA30191640GYZ</li><li><span class="metalabel">Topic ID: </span>id_2014048<span class="metalabel"> Version: </span>4.2</li><li><span class="metalabel">Date: </span>Mar 22, 2023 12:18:02 PM</li></ul></div><h1 class="- topic/title title topictitle1" id="ariaid-title1">Troubleshooting the InSite Remote Service Platform (RSvP)</h1></header>
+        <div class="hide"><p class="- topic/shortdesc shortdesc">Provides steps to check the status of the Remote Service Platform (RSvP) and steps to attempt to resolve errors.</p></div>
+        <article class="- topic/topic task/task topic task nested1 yes task_vcx_js1_13b" aria-labelledby="ariaid-title2" id="task_vcx_js1_13b"><header class="topic-id"><span class="metalabel">Topic ID: </span>task_vcx_js1_13b</header><h2 class="- topic/title title topictitle2" id="ariaid-title2">Connectivity disabled due to quarantine</h2><div class="- topic/body task/taskbody body taskbody"><section><div class="tasklabel"><h3 class="sectiontitle tasklabel">Procedure</h3></div><div class="- topic/li task/step li step p"><span class="- topic/ph task/cmd ph cmd">Identify the quarantine status:</span><div class="- topic/itemgroup task/info itemgroup info">
+                        <ul class="- topic/ul ul"><li class="- topic/li li">On the system: Quarantine parameter is set to Yes in the <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Agent Config</span> user interface.<figure class="- topic/fig fig fignone"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">1. </span></span><span class="fig--title">System quarantine status</span></figcaption><img class="- topic/image image" src="RSvP_Quarantine_Status_System_s.png"/></figure></li></ul>
+                        <p class="- topic/p p">Possible reason for quarantine: There is more than one system with the same CRM number (system ID).</p>
+                    </div></div></section></div></article><article class="- topic/topic task/task topic task nested1 yes task_yhq_1t1_13b" aria-labelledby="ariaid-title3" id="task_yhq_1t1_13b"><header class="topic-id"><span class="metalabel">Topic ID: </span>task_yhq_1t1_13b</header><h2 class="- topic/title title topictitle2" id="ariaid-title3">Reset token state</h2><div class="- topic/body task/taskbody body taskbody"><section class="- topic/section task/context section context"><div class="tasklabel"><h3 class="sectiontitle tasklabel">About this task</h3></div>This state is possible when there is a change in critical system parameters that are used to authenticate the asset.</section><section><div class="tasklabel"><h3 class="sectiontitle tasklabel">Procedure</h3></div><div class="- topic/li task/step li step p"><span class="- topic/ph task/cmd ph cmd">Identify a reset token state status:</span><div class="- topic/itemgroup task/info itemgroup info">
+                        <ul class="- topic/ul ul"><li class="- topic/li li">On the system:<figure class="- topic/fig fig fignone"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">2. </span></span><span class="fig--title">Token reset status</span></figcaption><img class="- topic/image image" src="RSvP_Token_Reset_Status_s.png"/></figure></li></ul>
+                        <p class="- topic/p p">Possible reasons for a token reset state:</p>
+                        <ul class="- topic/ul ul"><li class="- topic/li li">Change in operating system version (due to software upgrade).</li><li class="- topic/li li">Change in RSvP model type (due to software upgrade).</li><li class="- topic/li li">Other unknown reasons.</li></ul>
+                    </div></div></section></div></article><article class="- topic/topic task/task topic task nested1 yes task_drx_pt1_13b" aria-labelledby="ariaid-title4" id="task_drx_pt1_13b"><header class="topic-id"><span class="metalabel">Topic ID: </span>task_drx_pt1_13b</header><h2 class="- topic/title title topictitle2" id="ariaid-title4">Other connectivity issues</h2><div class="- topic/body task/taskbody body taskbody"><section class="- topic/section task/context section context"><div class="tasklabel"><h3 class="sectiontitle tasklabel">About this task</h3></div>Depending on connectivity methods at the site, there could be many possible causes for connectivity failure. <a class="- topic/xref xref" href="#task_jpd_5t1_13b">Determining the connectivity method</a> provides an overview of the possible connectivity methods. </section></div></article><article class="- topic/topic task/task topic task nested1 yes task_jpd_5t1_13b" aria-labelledby="ariaid-title5" id="task_jpd_5t1_13b"><header class="topic-id"><span class="metalabel">Topic ID: </span>task_jpd_5t1_13b</header><h2 class="- topic/title title topictitle2" id="ariaid-title5">Determining the connectivity method</h2><div class="- topic/body task/taskbody body taskbody"><section class="- topic/section task/context section context" id="task_jpd_5t1_13b__context_wrt_kj5_phb" data-ofbid="task_jpd_5t1_13b__context_wrt_kj5_phb"><div class="tasklabel"><h3 class="sectiontitle tasklabel">About this task</h3></div>There are 3 main methods for establishing connectivity from the RSvP agent on the modality to the GE web server.</section><section id="task_jpd_5t1_13b__steps_xrt_kj5_phb" data-ofbid="task_jpd_5t1_13b__steps_xrt_kj5_phb"><div class="tasklabel"><h3 class="sectiontitle tasklabel">Procedure</h3></div><ol class="- topic/ol task/steps ol steps" id="task_jpd_5t1_13b__steps_xrt_kj5_phb" data-ofbid="task_jpd_5t1_13b__steps_xrt_kj5_phb"><li class="- topic/li task/step li step"><span class="- topic/ph task/cmd ph cmd">Customer provided DNS (domain name server). The domain name server returns the IP address associated with a provided URL. For the RSvP, agent the URL is <kbd class="+ topic/ph sw-d/userinput ph userinput">https://insite.gehealthcare.com</kbd> and the associated IP address may change in the future. Using DNS allows the modality to stay connected by configuring a single URL that doesn’t need to be changed. This is considered typical Internet access. DNS server IP addresses are configured on the modality. Failure to configure DNS will result in a lack of connectivity. </span></li><li class="- topic/li task/step li step"><span class="- topic/ph task/cmd ph cmd">Customer provided proxy server. Some customers may choose to have the modality configured to send traffic to a proxy server on their network. This server will handle the connection from the modality destined for the GE web server. Instead of standard Internet access, the customer provided proxy IP address and port are configured on the modality. Authentication (user name and password) may also be required. This method does not require DNS configuration.</span></li><li class="- topic/li task/step li step"><span class="- topic/ph task/cmd ph cmd">IPSec VPN (typically associated with InSite1 systems). Use of the existing IPSec VPN is discouraged for latency and functionality concerns. Connection speed will be affected. At some customer sites, VPN may be the only possible method of connectivity, these should be handled on a case-by-case basis with your GE connectivity support team. </span></li></ol></section></div></article><article class="- topic/topic task/task topic task nested1 yes task_ekx_f51_13b" aria-labelledby="ariaid-title6" id="task_ekx_f51_13b"><header class="topic-id"><span class="metalabel">Topic ID: </span>task_ekx_f51_13b</header><h2 class="- topic/title title topictitle2" id="ariaid-title6">RSvP agent status</h2><div class="- topic/body task/taskbody body taskbody"><section class="- topic/section task/context section context"><div class="tasklabel"><h3 class="sectiontitle tasklabel">About this task</h3></div>There are four main status indications on the RSvP agent. It is recommended that each modality implement this, however not all products have this feature.</section><section><div class="tasklabel"><h3 class="sectiontitle tasklabel">Procedure</h3></div><ol class="- topic/ol task/steps ol steps"><li class="- topic/li task/step li step"><span class="- topic/ph task/cmd ph cmd"><strong class="+ topic/ph hi-d/b ph b">Agent Running</strong>: RSvP agent software has been enabled and the process is running on the modality. The agent should be attempting to establish a connection with the GE web server. </span></li><li class="- topic/li task/step li step"><span class="- topic/ph task/cmd ph cmd"><strong class="+ topic/ph hi-d/b ph b">Agent Registered</strong>: The agent has successfully established an HTTPS connection to the GE web server. Associated modality specific information has been communicated to the server. </span></li><li class="- topic/li task/step li step"><span class="- topic/ph task/cmd ph cmd"><strong class="+ topic/ph hi-d/b ph b">CRM Verified</strong>: The system ID that is configured on the modality has matched successfully with the asset record associated with the CRM platform. The CRM system ID configured on the modality must match exactly. </span></li><li class="- topic/li task/step li step"><span class="- topic/ph task/cmd ph cmd"><strong class="+ topic/ph hi-d/b ph b">Quarantine</strong>: In the event that two or more systems are actively establishing HTTPS connections with the GE web server using the same CRM number (system ID), they are placed in quarantine condition. This requires a case to be submitted with the FFA support team to resolve. </span></li></ol></section></div></article><article class="- topic/topic task/task topic task nested1 yes task_u5q_yt1_13b" aria-labelledby="ariaid-title7" id="task_u5q_yt1_13b"><header class="topic-id"><span class="metalabel">Topic ID: </span>task_u5q_yt1_13b</header><h2 class="- topic/title title topictitle2" id="ariaid-title7">Agent fails to register</h2><div class="- topic/body task/taskbody body taskbody"><section class="- topic/section task/context section context"><div class="tasklabel"><h3 class="sectiontitle tasklabel">About this task</h3></div>In the event that the device agent is configured but does not show a registered status, there are three main reasons:</section><section><div class="tasklabel"><h3 class="sectiontitle tasklabel">Procedure</h3></div><ol class="- topic/ol task/steps ol steps"><li class="- topic/li task/step li step stepexpand"><span class="- topic/ph task/cmd ph cmd">The modality simply does not have Internet access. There is no path for the modality to reach public Internet space. This may be by design as some customer network segments are meant to restrict access to the Internet, or there may be a network configuration issue that the customer will need to resolve. </span></li><li class="- topic/li task/step li step stepexpand"><span class="- topic/ph task/cmd ph cmd">The modality technically has Internet access but does not have DNS configured. Since the modality will have a URL configured, DNS server IP addresses need to be configured to resolve to IP address associated with the GE web server URL. </span></li><li class="- topic/li task/step li step stepexpand"><span class="- topic/ph task/cmd ph cmd">Customer security policy does not allow access until an internal review process has been completed and access is granted. Many customer sites have advanced security layers to deal with Internet related traffic on their network. This can include IPS/IDS (intrusion prevention/detection) sensors that must be explicitly configured to allow RSvP agent traffic to the GE web server. </span><div class="- topic/itemgroup task/info itemgroup info">
+                        <div class="- topic/note note note note_note"><span class="note__title">Note:</span> Your GE connectivity support team can help identify the above cases and work with the customer to resolve.</div>
+                    </div></li></ol></section></div></article><article class="- topic/topic task/task topic task nested1 yes task_nrt_3zf_h4b" aria-labelledby="ariaid-title8" id="task_nrt_3zf_h4b"><header class="topic-id"><span class="metalabel">Topic ID: </span>task_nrt_3zf_h4b</header><h2 class="- topic/title title topictitle2" id="ariaid-title8">RSVP Agent fails to start</h2><div class="- topic/body task/taskbody body taskbody"><section class="- topic/section task/context section context"><div class="tasklabel"><h3 class="sectiontitle tasklabel">About this task</h3></div>
+                <p class="- topic/p p">This is known to happen when the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Configure</span> button was not clicked on every tab of Guided Install especially in the System Configure tab, as part of the software load process.</p>
+                <p class="- topic/p p">The symptom can be seen in the RSVP Configuration UI, when the Agent Running displays <span class="+ topic/ph ui-d/uicontrol ph uicontrol">No</span>.</p>
+            </section><section><div class="tasklabel"><h3 class="sectiontitle tasklabel">Procedure</h3></div><ol class="- topic/ol task/steps ol steps"><li class="- topic/li task/step li step"><span class="- topic/ph task/cmd ph cmd">Execute the command (<kbd class="+ topic/ph sw-d/userinput ph userinput">/usr/local/bin/reinstall_agent.pl</kbd>).</span></li><li class="- topic/li task/step li step"><span class="- topic/ph task/cmd ph cmd">Restart the agent by relaunching the RSVP Configuration UI.</span></li></ol></section></div></article><article class="- topic/topic task/task topic task nested1 yes task_mph_151_13b" aria-labelledby="ariaid-title9" id="task_mph_151_13b"><header class="topic-id"><span class="metalabel">Topic ID: </span>task_mph_151_13b</header><h2 class="- topic/title title topictitle2" id="ariaid-title9">Determining Internet access and DNS failures</h2><div class="- topic/body task/taskbody body taskbody"><section class="- topic/section task/context section context"><div class="tasklabel"><h3 class="sectiontitle tasklabel">About this task</h3></div>The associated troubleshooting flowchart has some simple tests to help determine if the agent does not register due to an Internet access or DNS issue.</section><section><div class="tasklabel"><h3 class="sectiontitle tasklabel">Procedure</h3></div><div class="- topic/li task/step li step p"><span class="- topic/ph task/cmd ph cmd">For Linux based systems, leverage the built-in command line: </span><ol type="a" class="- topic/ol task/substeps ol substeps"><li class="- topic/li task/substep li substep"><span class="- topic/ph task/cmd ph cmd">If the modality has DNS configured, use the curl command to attempt a connection  the web server URL (<kbd class="+ topic/ph sw-d/userinput ph userinput">curl -k https://insite.gehealthcare.com</kbd>).</span></li><li class="- topic/li task/substep li substep"><span class="- topic/ph task/cmd ph cmd">If the test fails the previous step, modify the curl command to specify the web server IP, this can help determine if the issue is DNS resolution related (<kbd class="+ topic/ph sw-d/userinput ph userinput">curl -k https://198.169.189.25</kbd>).</span></li><li class="- topic/li task/substep li substep"><span class="- topic/ph task/cmd ph cmd">If the modality RSvP agent is configured with a customer provided proxy, modify the curl command to specify the proxy IP and port (<kbd class="+ topic/ph sw-d/userinput ph userinput">curl https://insite.gehealthcare.com -x &lt;proxy IP&gt; : &lt;port&gt;</kbd>). For example: <kbd class="+ topic/ph sw-d/userinput ph userinput">curl https://insite.gehealthcare.com -x 10.150.2.2:8002</kbd>.</span></li><li class="- topic/li task/substep li substep"><span class="- topic/ph task/cmd ph cmd">Attempt to pass the IP of the GE web server to the customer proxy, the result may be useful in fault isolation (<kbd class="+ topic/ph sw-d/userinput ph userinput">curl https://198.169.189.25 -x &lt;proxy IP&gt; : &lt;port&gt;</kbd>). For example: <kbd class="+ topic/ph sw-d/userinput ph userinput">curl https://198.169.189.25 -x 10.150.2.2:8002</kbd>. For proxy servers with login requirements: <kbd class="+ topic/ph sw-d/userinput ph userinput">https_proxy=http://&lt;user&gt;:&lt;password&gt;@&lt;proxy IP&gt;:&lt;port #&gt; curl -k https://198.169.189.25:443</kbd>.</span></li></ol><div class="- topic/itemgroup task/info itemgroup info">In summary, always reference your product specific service manual for configuration and troubleshooting information. Also leverage your connectivity support team to make sure this important connectivity can be established and maintained for remote support and product analytics. </div></div></section></div></article></article></main></div>
+                        
+                        
+                        
+                        </div>
+                        
+                        
+                        <!--<whc:webhelp_related_links class="d-print-none"/> -->
+                        
+                        
+                        
+                        
+                        <!-- GEDev US503: next/previous buttons on bottom -->
+                        
+                            
+                            <nav id="wh_topic_toc" class="d-print-none collapsible" aria-label="On this page">
+                                <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="topic-item"><a href="#task_vcx_js1_13b" data-tocid="task_vcx_js1_13b">Connectivity disabled due to quarantine</a></li><li class="topic-item"><a href="#task_yhq_1t1_13b" data-tocid="task_yhq_1t1_13b">Reset token state</a></li><li class="topic-item"><a href="#task_drx_pt1_13b" data-tocid="task_drx_pt1_13b">Other connectivity issues</a></li><li class="topic-item"><a href="#task_jpd_5t1_13b" data-tocid="task_jpd_5t1_13b">Determining the connectivity method</a></li><li class="topic-item"><a href="#task_ekx_f51_13b" data-tocid="task_ekx_f51_13b">RSvP agent status</a></li><li class="topic-item"><a href="#task_u5q_yt1_13b" data-tocid="task_u5q_yt1_13b">Agent fails to register</a></li><li class="topic-item"><a href="#task_nrt_3zf_h4b" data-tocid="task_nrt_3zf_h4b">RSVP Agent fails to start</a></li><li class="topic-item"><a href="#task_mph_151_13b" data-tocid="task_mph_151_13b">Determining Internet access and DNS failures</a></li></ul></div>
+                            </nav>
+                            <!--whc:include_html href="${webhelp.fragment.after.topic.toc}"/-->
+                        
+                        <div id="topic_toc_button">
+                            <button type="button" data-target="#wh_topic_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle topic table of content" aria-controls="contain-topic_toc"></button>
+                        </div>
+                        <!--whc:include_html href="${webhelp.fragment.toggle.toc}"/-->
+                        
+                    </div>
+
+                </div>
+
+                
+            </div>
+            <div class="row">
+            <div id="wh_tools">
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+                    <div class="wh_right_tools">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                    </div>
+                </nav>
+            </div>
+            </div>
+            </div>
+        <!-- webhelp.fragment.after.main.content.area and webhelp.fragment.after.main.content.area.topic.page moved out of div to try and fix scrolling issue -->
+        
+        
+        <footer class="navbar navbar-default wh_footer" whc:version="23.1">
+  <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class="ftrcustom"><span>5777451-3</span> | <span>Revision 
+					7</span> | <span>en-US | </span><span><a target="_blank" href="https://www.gehealthcare.com/">gehealthcare.com</a></span></div><div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class="copyright_info"><span class="copyright_years"> ©2023</span> GE HealthCare Proprietary<div class="GETradmark"><span>GE is a trademark of General Electric Company used under trademark license.</span></div></div>
+</footer>
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" alt=""/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

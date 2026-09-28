@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Field Replaceable Units","shortdesc":"<p class=\"shortdesc\">Field Replaceable Unit (FRU) part numbers are listed by category.<\/p>","href":"c_FieldReplaceableUnits_Premier.html","attributes":{"data-id":"id_2005226"},"menu":{"hasChildren":true},"tocID":"id_2005226-d46e142648","next":"id_2005226-d46e142648"}]});

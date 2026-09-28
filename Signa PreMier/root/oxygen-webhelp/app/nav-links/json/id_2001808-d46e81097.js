@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Doing a check scan","shortdesc":"<p class=\"shortdesc\"> A check scan is done at the conclusion of many procedures. This functional check assures the unit is in good clinical working order.<\/p>","href":"t_DoingACheckScan_17.html","attributes":{"data-id":"id_2001754"},"menu":{"hasChildren":false},"tocID":"id_2001754-d46e81201","topics":[]}]});
