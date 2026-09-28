@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Checking and aligning the laser light","shortdesc":"<p class=\"shortdesc\">Check and adjust the alignment of the laser light.<\/p>","href":"t_CheckingAndAligningTheLaserLight.html","attributes":{"data-id":"id_2004318"},"menu":{"hasChildren":true},"tocID":"id_2004318-d46e18337","next":"id_2004318-d46e18337"}]});

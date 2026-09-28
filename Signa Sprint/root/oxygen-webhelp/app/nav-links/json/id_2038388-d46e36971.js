@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Reloading or upgrading USB host system software","shortdesc":"<p class=\"shortdesc\">Follow this procedure to reload or upgrade the USB host system software.<\/p>","href":"t_ReloadingUSBHostSystemSoftware_Task.html","attributes":{"data-id":"id_2013118"},"menu":{"hasChildren":false},"tocID":"id_2013118-d46e37075","topics":[]}]});
