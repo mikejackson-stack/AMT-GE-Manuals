@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Product Global Trade Item Number (GTIN) information","shortdesc":"<p class=\"shortdesc\">The product GTIN is a combination of the Global Trade Item Number (GTIN), product name, and region.<\/p>","href":"r_ProductGTINInformation_3.html","attributes":{"data-id":"id_2042886"},"menu":{"hasChildren":false},"tocID":"id_2042886-d46e46416","topics":[]}]});

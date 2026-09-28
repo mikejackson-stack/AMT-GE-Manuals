@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Wrist coils","shortdesc":"<p class=\"shortdesc\"\/>","href":"r_WristCoils.html","attributes":{"data-id":"id_2008295"},"menu":{"hasChildren":false},"tocID":"id_2008295-d46e235054","topics":[]}]});

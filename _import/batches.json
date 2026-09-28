@@ -1,0 +1,780 @@
+[
+ {
+  "batch": 1,
+  "archives": [
+   "ge-001-champion.tar.gz",
+   "ge-002-champion.tar.gz"
+  ],
+  "bytes": 42819404,
+  "member_count": 539,
+  "sets": [
+   "Signa Champion"
+  ]
+ },
+ {
+  "batch": 2,
+  "archives": [
+   "ge-003-champion.tar.gz",
+   "ge-004-champion.tar.gz"
+  ],
+  "bytes": 43292514,
+  "member_count": 325,
+  "sets": [
+   "Signa Champion"
+  ]
+ },
+ {
+  "batch": 3,
+  "archives": [
+   "ge-005-champion.tar.gz",
+   "ge-006-champion.tar.gz"
+  ],
+  "bytes": 42998103,
+  "member_count": 282,
+  "sets": [
+   "Signa Champion"
+  ]
+ },
+ {
+  "batch": 4,
+  "archives": [
+   "ge-007-champion.tar.gz",
+   "ge-008-champion.tar.gz"
+  ],
+  "bytes": 43290227,
+  "member_count": 269,
+  "sets": [
+   "Signa Champion"
+  ]
+ },
+ {
+  "batch": 5,
+  "archives": [
+   "ge-009-champion.tar.gz",
+   "ge-010-champion.tar.gz"
+  ],
+  "bytes": 43300478,
+  "member_count": 346,
+  "sets": [
+   "Signa Champion"
+  ]
+ },
+ {
+  "batch": 6,
+  "archives": [
+   "ge-011-champion.tar.gz",
+   "ge-012-champion.tar.gz"
+  ],
+  "bytes": 41379592,
+  "member_count": 1254,
+  "sets": [
+   "Signa Champion"
+  ]
+ },
+ {
+  "batch": 7,
+  "archives": [
+   "ge-013-champion.tar.gz"
+  ],
+  "bytes": 5749578,
+  "member_count": 631,
+  "sets": [
+   "Signa Champion"
+  ]
+ },
+ {
+  "batch": 8,
+  "archives": [
+   "ge-014-hero.tar.gz",
+   "ge-015-hero.tar.gz"
+  ],
+  "bytes": 43040912,
+  "member_count": 600,
+  "sets": [
+   "Signa Hero"
+  ]
+ },
+ {
+  "batch": 9,
+  "archives": [
+   "ge-016-hero.tar.gz",
+   "ge-017-hero.tar.gz"
+  ],
+  "bytes": 42647420,
+  "member_count": 513,
+  "sets": [
+   "Signa Hero"
+  ]
+ },
+ {
+  "batch": 10,
+  "archives": [
+   "ge-018-hero.tar.gz",
+   "ge-019-hero.tar.gz"
+  ],
+  "bytes": 42593362,
+  "member_count": 393,
+  "sets": [
+   "Signa Hero"
+  ]
+ },
+ {
+  "batch": 11,
+  "archives": [
+   "ge-020-hero.tar.gz",
+   "ge-021-hero.tar.gz"
+  ],
+  "bytes": 43342178,
+  "member_count": 304,
+  "sets": [
+   "Signa Hero"
+  ]
+ },
+ {
+  "batch": 12,
+  "archives": [
+   "ge-022-hero.tar.gz",
+   "ge-023-hero.tar.gz"
+  ],
+  "bytes": 43109020,
+  "member_count": 402,
+  "sets": [
+   "Signa Hero"
+  ]
+ },
+ {
+  "batch": 13,
+  "archives": [
+   "ge-024-hero.tar.gz",
+   "ge-025-hero.tar.gz"
+  ],
+  "bytes": 42894719,
+  "member_count": 260,
+  "sets": [
+   "Signa Hero"
+  ]
+ },
+ {
+  "batch": 14,
+  "archives": [
+   "ge-026-hero.tar.gz",
+   "ge-027-hero.tar.gz"
+  ],
+  "bytes": 43329596,
+  "member_count": 284,
+  "sets": [
+   "Signa Hero"
+  ]
+ },
+ {
+  "batch": 15,
+  "archives": [
+   "ge-028-hero.tar.gz",
+   "ge-029-hero.tar.gz"
+  ],
+  "bytes": 42279411,
+  "member_count": 348,
+  "sets": [
+   "Signa Hero"
+  ]
+ },
+ {
+  "batch": 16,
+  "archives": [
+   "ge-030-hero.tar.gz",
+   "ge-031-hero.tar.gz"
+  ],
+  "bytes": 41983614,
+  "member_count": 2,
+  "sets": [
+   "Signa Hero"
+  ]
+ },
+ {
+  "batch": 17,
+  "archives": [
+   "ge-032-hero.tar.gz",
+   "ge-033-hero.tar.gz"
+  ],
+  "bytes": 42156637,
+  "member_count": 2,
+  "sets": [
+   "Signa Hero"
+  ]
+ },
+ {
+  "batch": 18,
+  "archives": [
+   "ge-034-hero.tar.gz",
+   "ge-035-hero.tar.gz"
+  ],
+  "bytes": 42270924,
+  "member_count": 2,
+  "sets": [
+   "Signa Hero"
+  ]
+ },
+ {
+  "batch": 19,
+  "archives": [
+   "ge-036-hero.tar.gz",
+   "ge-037-hero.tar.gz"
+  ],
+  "bytes": 43134857,
+  "member_count": 138,
+  "sets": [
+   "Signa Hero"
+  ]
+ },
+ {
+  "batch": 20,
+  "archives": [
+   "ge-038-hero.tar.gz",
+   "ge-039-hero.tar.gz"
+  ],
+  "bytes": 42574843,
+  "member_count": 524,
+  "sets": [
+   "Signa Hero"
+  ]
+ },
+ {
+  "batch": 21,
+  "archives": [
+   "ge-040-hero.tar.gz",
+   "ge-041-hero.tar.gz"
+  ],
+  "bytes": 35386429,
+  "member_count": 3805,
+  "sets": [
+   "Signa Hero"
+  ]
+ },
+ {
+  "batch": 22,
+  "archives": [
+   "ge-042-hero.tar.gz",
+   "ge-043-hero.tar.gz"
+  ],
+  "bytes": 38402880,
+  "member_count": 2,
+  "sets": [
+   "Signa Hero"
+  ],
+  "transport_reassembly": [
+   {
+    "path": "Signa Hero/root/ExtractAirBubbles.mp4",
+    "chunks": [
+     "Signa Hero/root/ExtractAirBubbles.mp4.xfer-00",
+     "Signa Hero/root/ExtractAirBubbles.mp4.xfer-01"
+    ],
+    "chunk_batches": [
+     22
+    ],
+    "command": "cat \"Signa Hero/root/ExtractAirBubbles.mp4.xfer-00\" \"Signa Hero/root/ExtractAirBubbles.mp4.xfer-01\" > \"Signa Hero/root/ExtractAirBubbles.mp4\" && rm -f \"Signa Hero/root/ExtractAirBubbles.mp4.xfer-00\" \"Signa Hero/root/ExtractAirBubbles.mp4.xfer-01\""
+   }
+  ]
+ },
+ {
+  "batch": 23,
+  "archives": [
+   "ge-044-petmri.tar.gz",
+   "ge-045-petmri.tar.gz"
+  ],
+  "bytes": 43204420,
+  "member_count": 454,
+  "sets": [
+   "Signa PET_MRI"
+  ]
+ },
+ {
+  "batch": 24,
+  "archives": [
+   "ge-046-petmri.tar.gz",
+   "ge-047-petmri.tar.gz"
+  ],
+  "bytes": 42925769,
+  "member_count": 371,
+  "sets": [
+   "Signa PET_MRI"
+  ]
+ },
+ {
+  "batch": 25,
+  "archives": [
+   "ge-048-petmri.tar.gz",
+   "ge-049-petmri.tar.gz"
+  ],
+  "bytes": 43167644,
+  "member_count": 404,
+  "sets": [
+   "Signa PET_MRI"
+  ]
+ },
+ {
+  "batch": 26,
+  "archives": [
+   "ge-050-petmri.tar.gz",
+   "ge-051-petmri.tar.gz"
+  ],
+  "bytes": 43102326,
+  "member_count": 535,
+  "sets": [
+   "Signa PET_MRI"
+  ]
+ },
+ {
+  "batch": 27,
+  "archives": [
+   "ge-052-petmri.tar.gz",
+   "ge-053-petmri.tar.gz"
+  ],
+  "bytes": 43007422,
+  "member_count": 434,
+  "sets": [
+   "Signa PET_MRI"
+  ]
+ },
+ {
+  "batch": 28,
+  "archives": [
+   "ge-054-petmri.tar.gz",
+   "ge-055-petmri.tar.gz"
+  ],
+  "bytes": 43156099,
+  "member_count": 263,
+  "sets": [
+   "Signa PET_MRI"
+  ]
+ },
+ {
+  "batch": 29,
+  "archives": [
+   "ge-056-petmri.tar.gz",
+   "ge-057-petmri.tar.gz"
+  ],
+  "bytes": 42824906,
+  "member_count": 210,
+  "sets": [
+   "Signa PET_MRI"
+  ]
+ },
+ {
+  "batch": 30,
+  "archives": [
+   "ge-058-petmri.tar.gz",
+   "ge-059-petmri.tar.gz"
+  ],
+  "bytes": 42557060,
+  "member_count": 249,
+  "sets": [
+   "Signa PET_MRI"
+  ]
+ },
+ {
+  "batch": 31,
+  "archives": [
+   "ge-060-petmri.tar.gz",
+   "ge-061-petmri.tar.gz"
+  ],
+  "bytes": 42900380,
+  "member_count": 196,
+  "sets": [
+   "Signa PET_MRI"
+  ]
+ },
+ {
+  "batch": 32,
+  "archives": [
+   "ge-062-petmri.tar.gz",
+   "ge-063-petmri.tar.gz"
+  ],
+  "bytes": 39192786,
+  "member_count": 146,
+  "sets": [
+   "Signa PET_MRI"
+  ]
+ },
+ {
+  "batch": 33,
+  "archives": [
+   "ge-064-petmri.tar.gz",
+   "ge-065-petmri.tar.gz"
+  ],
+  "bytes": 42065569,
+  "member_count": 2,
+  "sets": [
+   "Signa PET_MRI"
+  ]
+ },
+ {
+  "batch": 34,
+  "archives": [
+   "ge-066-petmri.tar.gz",
+   "ge-067-petmri.tar.gz"
+  ],
+  "bytes": 42111585,
+  "member_count": 2,
+  "sets": [
+   "Signa PET_MRI"
+  ]
+ },
+ {
+  "batch": 35,
+  "archives": [
+   "ge-068-petmri.tar.gz",
+   "ge-069-petmri.tar.gz"
+  ],
+  "bytes": 42843348,
+  "member_count": 14,
+  "sets": [
+   "Signa PET_MRI"
+  ]
+ },
+ {
+  "batch": 36,
+  "archives": [
+   "ge-070-petmri.tar.gz",
+   "ge-071-petmri.tar.gz"
+  ],
+  "bytes": 42957072,
+  "member_count": 221,
+  "sets": [
+   "Signa PET_MRI"
+  ]
+ },
+ {
+  "batch": 37,
+  "archives": [
+   "ge-072-petmri.tar.gz",
+   "ge-073-petmri.tar.gz",
+   "ge-074-petmri.tar.gz"
+  ],
+  "bytes": 40259185,
+  "member_count": 2044,
+  "sets": [
+   "Signa PET_MRI"
+  ]
+ },
+ {
+  "batch": 38,
+  "archives": [
+   "ge-075-petmri.tar.gz",
+   "ge-076-petmri.tar.gz"
+  ],
+  "bytes": 38402891,
+  "member_count": 2,
+  "sets": [
+   "Signa PET_MRI"
+  ],
+  "transport_reassembly": [
+   {
+    "path": "Signa PET_MRI/root/ExtractAirBubbles.mp4",
+    "chunks": [
+     "Signa PET_MRI/root/ExtractAirBubbles.mp4.xfer-00",
+     "Signa PET_MRI/root/ExtractAirBubbles.mp4.xfer-01"
+    ],
+    "chunk_batches": [
+     38
+    ],
+    "command": "cat \"Signa PET_MRI/root/ExtractAirBubbles.mp4.xfer-00\" \"Signa PET_MRI/root/ExtractAirBubbles.mp4.xfer-01\" > \"Signa PET_MRI/root/ExtractAirBubbles.mp4\" && rm -f \"Signa PET_MRI/root/ExtractAirBubbles.mp4.xfer-00\" \"Signa PET_MRI/root/ExtractAirBubbles.mp4.xfer-01\""
+   }
+  ]
+ },
+ {
+  "batch": 39,
+  "archives": [
+   "ge-077-petmri.tar.gz",
+   "ge-078-petmri.tar.gz"
+  ],
+  "bytes": 42193094,
+  "member_count": 2,
+  "sets": [
+   "Signa PET_MRI"
+  ],
+  "carries_chunks_for_later_batch": [
+   {
+    "path": "Signa PET_MRI/root/ReplaceRotaryPump.mp4",
+    "completed_in_batch": 40,
+    "note": "Do NOT commit these .xfer-NN chunks; keep them until batch 40 arrives in the same working copy, then concatenate."
+   }
+  ]
+ },
+ {
+  "batch": 40,
+  "archives": [
+   "ge-079-petmri.tar.gz"
+  ],
+  "bytes": 20542701,
+  "member_count": 1,
+  "sets": [
+   "Signa PET_MRI"
+  ],
+  "transport_reassembly": [
+   {
+    "path": "Signa PET_MRI/root/ReplaceRotaryPump.mp4",
+    "chunks": [
+     "Signa PET_MRI/root/ReplaceRotaryPump.mp4.xfer-00",
+     "Signa PET_MRI/root/ReplaceRotaryPump.mp4.xfer-01",
+     "Signa PET_MRI/root/ReplaceRotaryPump.mp4.xfer-02"
+    ],
+    "chunk_batches": [
+     39,
+     40
+    ],
+    "command": "cat \"Signa PET_MRI/root/ReplaceRotaryPump.mp4.xfer-00\" \"Signa PET_MRI/root/ReplaceRotaryPump.mp4.xfer-01\" \"Signa PET_MRI/root/ReplaceRotaryPump.mp4.xfer-02\" > \"Signa PET_MRI/root/ReplaceRotaryPump.mp4\" && rm -f \"Signa PET_MRI/root/ReplaceRotaryPump.mp4.xfer-00\" \"Signa PET_MRI/root/ReplaceRotaryPump.mp4.xfer-01\" \"Signa PET_MRI/root/ReplaceRotaryPump.mp4.xfer-02\""
+   }
+  ]
+ },
+ {
+  "batch": 41,
+  "archives": [
+   "ge-080-pioneer.tar.gz",
+   "ge-081-pioneer.tar.gz"
+  ],
+  "bytes": 43110459,
+  "member_count": 608,
+  "sets": [
+   "Signa Pioneer"
+  ]
+ },
+ {
+  "batch": 42,
+  "archives": [
+   "ge-082-pioneer.tar.gz",
+   "ge-083-pioneer.tar.gz"
+  ],
+  "bytes": 42851254,
+  "member_count": 582,
+  "sets": [
+   "Signa Pioneer"
+  ]
+ },
+ {
+  "batch": 43,
+  "archives": [
+   "ge-084-pioneer.tar.gz",
+   "ge-085-pioneer.tar.gz"
+  ],
+  "bytes": 42837370,
+  "member_count": 346,
+  "sets": [
+   "Signa Pioneer"
+  ]
+ },
+ {
+  "batch": 44,
+  "archives": [
+   "ge-086-pioneer.tar.gz",
+   "ge-087-pioneer.tar.gz"
+  ],
+  "bytes": 43274198,
+  "member_count": 289,
+  "sets": [
+   "Signa Pioneer"
+  ]
+ },
+ {
+  "batch": 45,
+  "archives": [
+   "ge-088-pioneer.tar.gz",
+   "ge-089-pioneer.tar.gz"
+  ],
+  "bytes": 42715240,
+  "member_count": 235,
+  "sets": [
+   "Signa Pioneer"
+  ]
+ },
+ {
+  "batch": 46,
+  "archives": [
+   "ge-090-pioneer.tar.gz",
+   "ge-091-pioneer.tar.gz"
+  ],
+  "bytes": 42764763,
+  "member_count": 299,
+  "sets": [
+   "Signa Pioneer"
+  ]
+ },
+ {
+  "batch": 47,
+  "archives": [
+   "ge-092-pioneer.tar.gz",
+   "ge-093-pioneer.tar.gz"
+  ],
+  "bytes": 43035281,
+  "member_count": 342,
+  "sets": [
+   "Signa Pioneer"
+  ]
+ },
+ {
+  "batch": 48,
+  "archives": [
+   "ge-094-pioneer.tar.gz",
+   "ge-095-pioneer.tar.gz"
+  ],
+  "bytes": 32261773,
+  "member_count": 1830,
+  "sets": [
+   "Signa Pioneer"
+  ]
+ },
+ {
+  "batch": 49,
+  "archives": [
+   "ge-096-primemax.tar.gz",
+   "ge-097-primemax.tar.gz"
+  ],
+  "bytes": 42971377,
+  "member_count": 575,
+  "sets": [
+   "Signa Prime Max Elite 1.5T"
+  ]
+ },
+ {
+  "batch": 50,
+  "archives": [
+   "ge-098-primemax.tar.gz",
+   "ge-099-primemax.tar.gz"
+  ],
+  "bytes": 43217862,
+  "member_count": 232,
+  "sets": [
+   "Signa Prime Max Elite 1.5T"
+  ]
+ },
+ {
+  "batch": 51,
+  "archives": [
+   "ge-100-primemax.tar.gz",
+   "ge-101-primemax.tar.gz"
+  ],
+  "bytes": 43109821,
+  "member_count": 273,
+  "sets": [
+   "Signa Prime Max Elite 1.5T"
+  ]
+ },
+ {
+  "batch": 52,
+  "archives": [
+   "ge-102-primemax.tar.gz",
+   "ge-103-primemax.tar.gz"
+  ],
+  "bytes": 43127199,
+  "member_count": 330,
+  "sets": [
+   "Signa Prime Max Elite 1.5T"
+  ]
+ },
+ {
+  "batch": 53,
+  "archives": [
+   "ge-104-primemax.tar.gz",
+   "ge-105-primemax.tar.gz"
+  ],
+  "bytes": 43032973,
+  "member_count": 327,
+  "sets": [
+   "Signa Prime Max Elite 1.5T"
+  ]
+ },
+ {
+  "batch": 54,
+  "archives": [
+   "ge-106-primemax.tar.gz",
+   "ge-107-primemax.tar.gz"
+  ],
+  "bytes": 26547500,
+  "member_count": 1955,
+  "sets": [
+   "Signa Prime Max Elite 1.5T"
+  ]
+ },
+ {
+  "batch": 55,
+  "archives": [
+   "ge-108-victor.tar.gz",
+   "ge-109-victor.tar.gz"
+  ],
+  "bytes": 42686726,
+  "member_count": 586,
+  "sets": [
+   "signa Vctor"
+  ]
+ },
+ {
+  "batch": 56,
+  "archives": [
+   "ge-110-victor.tar.gz",
+   "ge-111-victor.tar.gz"
+  ],
+  "bytes": 39002608,
+  "member_count": 267,
+  "sets": [
+   "signa Vctor"
+  ]
+ },
+ {
+  "batch": 57,
+  "archives": [
+   "ge-112-victor.tar.gz",
+   "ge-113-victor.tar.gz"
+  ],
+  "bytes": 43043340,
+  "member_count": 240,
+  "sets": [
+   "signa Vctor"
+  ]
+ },
+ {
+  "batch": 58,
+  "archives": [
+   "ge-114-victor.tar.gz",
+   "ge-115-victor.tar.gz"
+  ],
+  "bytes": 43209019,
+  "member_count": 313,
+  "sets": [
+   "signa Vctor"
+  ]
+ },
+ {
+  "batch": 59,
+  "archives": [
+   "ge-116-victor.tar.gz",
+   "ge-117-victor.tar.gz"
+  ],
+  "bytes": 43224059,
+  "member_count": 322,
+  "sets": [
+   "signa Vctor"
+  ]
+ },
+ {
+  "batch": 60,
+  "archives": [
+   "ge-118-victor.tar.gz",
+   "ge-119-victor.tar.gz"
+  ],
+  "bytes": 39477915,
+  "member_count": 1271,
+  "sets": [
+   "signa Vctor"
+  ]
+ },
+ {
+  "batch": 61,
+  "archives": [
+   "ge-120-victor.tar.gz"
+  ],
+  "bytes": 8371637,
+  "member_count": 961,
+  "sets": [
+   "signa Vctor"
+  ]
+ }
+]

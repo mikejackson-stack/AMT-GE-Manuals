@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Coil information","shortdesc":"<p class=\"shortdesc\">An index for coil part numbers and related documentation.<\/p>","href":"r_CoilVendorManuals_Index.html","attributes":{"data-id":"id_2008280"},"menu":{"hasChildren":true},"tocID":"id_2008280-d46e135562","next":"id_2008280-d46e135562"}]});

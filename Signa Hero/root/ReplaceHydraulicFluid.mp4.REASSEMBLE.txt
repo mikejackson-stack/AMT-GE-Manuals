@@ -1,0 +1,23 @@
+REASSEMBLY NOTE
+
+The original file `ReplaceHydraulicFluid.mp4` (150188143 bytes) exceeds GitHub's 100 MB per-file limit,
+so it is stored here losslessly split into 7 parts of 21500000 bytes (last part smaller):
+
+  ReplaceHydraulicFluid.mp4.part-00
+  ReplaceHydraulicFluid.mp4.part-01
+  ReplaceHydraulicFluid.mp4.part-02
+  ReplaceHydraulicFluid.mp4.part-03
+  ReplaceHydraulicFluid.mp4.part-04
+  ReplaceHydraulicFluid.mp4.part-05
+  ReplaceHydraulicFluid.mp4.part-06
+
+Reassemble (Linux/macOS):
+  cat "ReplaceHydraulicFluid.mp4".part-* > "ReplaceHydraulicFluid.mp4"
+Reassemble (Windows cmd):
+  copy /b "ReplaceHydraulicFluid.mp4.part-00"+"ReplaceHydraulicFluid.mp4.part-01"+"ReplaceHydraulicFluid.mp4.part-02"+"ReplaceHydraulicFluid.mp4.part-03"+"ReplaceHydraulicFluid.mp4.part-04"+"ReplaceHydraulicFluid.mp4.part-05"+"ReplaceHydraulicFluid.mp4.part-06" "ReplaceHydraulicFluid.mp4"
+
+Expected sha256 of the reassembled file:
+  e0ece89ea3920c08a666d2a6aaf2144458b110a5ac24599c940c1c6acbe36893
+Verify:  sha256sum "ReplaceHydraulicFluid.mp4"
+
+HTML pages that link directly to `ReplaceHydraulicFluid.mp4` will not play it from this repo until it is reassembled.

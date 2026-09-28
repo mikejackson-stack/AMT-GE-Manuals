@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Installation and Upgrade Manuals","href":"c_SIGNAPrimeSystemInstallation.html","menu":{"hasChildren":true},"tocID":"tocId-d46e2160","next":"tocId-d46e2160"},{"title":"Magnet Monitor 3 or Magnet Monitor 4","href":"c_Magmon3-Installation-and-Service-Manual_13762539.html","menu":{"hasChildren":true},"tocID":"tocId-d46e2267","next":"tocId-d46e2267"}]});

@@ -1,0 +1,396 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en" whc:version="22.0">
+
+    <head><link rel="shortcut icon" href="oxygen-webhelp\template\img/favicon-32x32.png"><!----></link><link rel="icon" href="oxygen-webhelp\template\img/favicon-32x32.png"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="The PHPS2 consists of two (2) multiple output power supply modules, a Motion Control Power Distribution Board (MCPDB), and a pulse width modulated servo amplifier. One of the power supplies, Magnet ..."/><meta charset="UTF-8"/><meta name="copyright" content="(C) Copyright 2025"/><meta name="DC.rights.owner" content="(C) Copyright 2025"/><meta name="DC.type" content="reference"/><meta name="DC.coverage" content=""/><meta name="DC.relation" scheme="URI" content="c_Troubleshooting_PatientHandlingSubsystem_Parent.html"/><meta name="DC.relation" scheme="URI" content="t_DoingACheckScan_Parent_7.html"/><meta name="DC.relation" scheme="URI" content="c_PhysiologicalAquisitionControllerPACDiagnosticProceduresFrontPage.html"/><meta name="prodname" content=""/><meta name="version" content="0"/><meta name="brand" content=""/><meta name="component" content=""/><meta name="featnum" content="Service Operations"/><meta name="featnum" content=""/><meta name="prognum" content=""/><meta name="platform" content=""/><meta name="DC.creator" content=""/><meta name="DC.publisher" content="14012025"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="id_15668202"/><title>Patient Handling Power Supply Troubleshooting</title><!--  Generated with Oxygen version 23.1, build number 2021121412.  --><meta name="wh-path2root" content=""/><meta name="wh-toc-id" content="id_15668202-d46e60513"/><meta name="wh-source-relpath" content="r_ts_Patient-Handling-Power-Supply-Troubleshooting_5273516.dita"/><meta name="wh-out-relpath" content="r_ts_Patient-Handling-Power-Supply-Troubleshooting_5273516.html"/>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/>
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2021121412"/>
+    
+    
+    <script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script>
+    
+    <script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/notes.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/GEHealthCare.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/print.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/footer-fix.css?buildId=2021121412"/><script type="text/javascript" src="./oxygen-webhelp/template/js/Remove_LSEP.js"></script><script type="text/javascript" src="./oxygen-webhelp/template/js/TopicTOCScroll.js"></script></head>
+    <body id="id_15668202" class="wh_topic_page frmBody">
+        <!--US578: WHR - Move search to line up with manual title-->
+        <div class="SupressSearch">
+            <!--Search form 
+                Removed class for DE238: Double search fields when webhelp is viewed on
+            <whc:webhelp_search_input class="navbar-form wh_topic_page_search search" role="form">-->
+            <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="" class=" wh_search_input " role="form">
+                
+                
+                <div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div>
+                
+                
+            </div>
+        </div>
+        <a href="#topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="23.1">
+    <div class="container-fluid">
+        <!-- GEDev US509 Webhelp: expandable navbar icon invisible changed to navbar-light -->
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-light">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--     This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html. -->
+                    <!-- US650: Update Webhelp look and feel -->
+                    <div id="banner">
+                        <!-- GE Dev US464 change logo link to blank target -->
+                        <a href="https://www.gehealthcare.com/" class="Num wh_logo d-none d-sm-block " target="_blank"><img src="oxygen-webhelp\template\img/GE-HLTHCR_Webhelp_CMYK-CompPrpl.svg" alt=" SIGNA™ Pioneer 3.0TGeneral Service Manual"/></a>
+                        <!--* DE224: WHR: Link under the search field is missing -->
+                        <div class="search_container">
+                            <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="" class=" wh_search_input "><div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div></div><whc:search_field></whc:search_field>
+                            <div class="search_link">
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle"><span class="ph mainbooktitle"> SIGNA™ <span class="ph">Pioneer 3.0T</span></span><span class="ph booktitlealt"><span class="ph">General Service Manual</span></span></span></a></div>
+                    
+                </div>
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033906-d46e232-mi" data-tocid="id_2033906-d46e232" data-state="not-ready" class=" topicref " data-id="id_2033906"><span class="title"><a href="c_Safety_WebhelpLandingPage.html">Safety and General Information</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033907-d46e2087-mi" data-tocid="id_2033907-d46e2087" data-state="not-ready" class=" topicref " data-id="id_2033907"><span class="title"><a href="c_PreInstallation_WebhelpLandingPage.html">Pre-Installation</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033909-d46e2293-mi" data-tocid="id_2033909-d46e2293" data-state="not-ready" class=" topicref " data-id="id_2033909"><span class="title"><a href="c_Installation_WebhelpLandingPage.html">Installation and Upgrade</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033902-d46e3228-mi" data-tocid="id_2033902-d46e3228" data-state="not-ready" class=" topicref " data-id="id_2033902"><span class="title"><a href="c_AdjustmentsAndCalibrations_WebhelpLandingPage.html">Adjustments/Calibrations</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033910-d46e14618-mi" data-tocid="id_2033910-d46e14618" data-state="not-ready" class=" topicref " data-id="id_2033910"><span class="title"><a href="c_FunctionalChecks_WebhelpLandingPage.html">Functional Checks</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033911-d46e27465-mi" data-tocid="id_2033911-d46e27465" data-state="not-ready" class=" topicref " data-id="id_2033911"><span class="title"><a href="c_Software_WebhelpLandingPage.html">Software</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033912-d46e53509-mi" data-tocid="id_2033912-d46e53509" data-state="not-ready" class=" topicref " data-id="id_2033912"><span class="title"><a href="c_Theory_WebhelpLandingPage.html">Theory</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033914-d46e53927-mi" data-tocid="id_2033914-d46e53927" data-state="not-ready" class=" topicref " data-id="id_2033914"><span class="title"><a href="c_PlannedMaintenance_WebhelpLandingPage.html">Planned Maintenance</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033915-d46e56761-mi" data-tocid="id_2033915-d46e56761" data-state="not-ready" class=" topicref " data-id="id_2033915"><span class="title"><a href="c_Troubleshooting_WebhelpLandingPage.html">Troubleshooting</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033916-d46e62203-mi" data-tocid="id_2033916-d46e62203" data-state="not-ready" class=" topicref " data-id="id_2033916"><span class="title"><a href="c_Parts_WebhelpLandingPage.html">Parts</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033917-d46e63634-mi" data-tocid="id_2033917-d46e63634" data-state="not-ready" class=" topicref " data-id="id_2033917"><span class="title"><a href="c_Replacements_WebhelpLandingPage.html">Replacements</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033903-d46e102112-mi" data-tocid="id_2033903-d46e102112" data-state="not-ready" class=" topicref " data-id="id_2033903"><span class="title"><a href="c_OEMAndOtherManuals_WebhelpLandingPage.html">OEM and Other Manuals</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033904-d46e102733-mi" data-tocid="id_2033904-d46e102733" data-state="not-ready" class=" topicref " data-id="id_2033904"><span class="title"><a href="c_Coils_WebhelpLandingPage.html">Coils</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033918-d46e109541-mi" data-tocid="id_2033918-d46e109541" data-state="not-ready" class=" topicref " data-id="id_2033918"><span class="title"><a href="c_OptionalFeatures_WebhelpLandingPage.html">Optional Features</a></span></span></li></ul></nav>
+                
+                <!--whc:include_html href="${webhelp.fragment.after.top_menu}"/-->
+
+            </div>
+
+        </div>
+    </div>
+</header>
+        
+        
+        
+        <!-- US675: Modify the breadcrumbs heading on webpages so that it is always visible when users scroll down in webhelp -->
+        
+        <div class="row wh_tools " id="wh_tools_top">
+            <nav class="d-print-none navbar-expand-md" aria-label="Tools">
+                
+                <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li><span class="topicref" data-id="id_2033915"><span class="title"><a href="c_Troubleshooting_WebhelpLandingPage.html">Troubleshooting</a></span></span></li><li><span class="topicref" data-id="id_2069712"><span class="title"><a href="c_Troubleshooting_PatientHandlingSubsystem_Parent.html">Patient Handling</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li><li class="active"><span class="topicref" data-id="id_15668202"><span class="title"><a href="r_ts_Patient-Handling-Power-Supply-Troubleshooting_5273516.html">Patient Handling Power Supply Troubleshooting</a></span></span></li></ol></div>
+                
+                
+                <div class="wh_right_tools">
+                    <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                    <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                    <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="- topic/link link" href="t_DoingACheckScan_Parent_7.html" title="Doing a check scan" aria-label="Previous topic: Doing a check scan" rel="prev"></a></span>  
+<span class="navnext"><a class="- topic/link link" href="c_PhysiologicalAquisitionControllerPACDiagnosticProceduresFrontPage.html" title="Physiological Acquisition Controller (PAC) diagnostics (ICE, SPU, FPGA)" aria-label="Next topic: Physiological Acquisition Controller (PAC) diagnostics (ICE, SPU, FPGA)" rel="next"></a></span>  </span></div>
+                    <!-- External resource link -->
+                    
+                   <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="" class="Num wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page" class="oxy-icon oxy-icon-print"></button></div>
+                    
+                   <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                    <button type="button" data-target="#wh_publication_toc" id="wh_toc_button" data-toggle="collapse" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>  
+                </div>
+            </nav>
+            
+        </div>
+        <div class="container-fluid" id="wh_topic_container">
+            
+
+            <!--whc:include_html href="${webhelp.fragment.before.main.content.area}"/>
+           
+            <whc:include_html href="${webhelp.fragment.before.main.content.area.topic.page}"/-->
+
+
+            <div class="wh_content_area">
+                <!-- US616 - TOC toggle buttons -->
+                <div class="row" id="topic_body">
+                    <!-- US647: Add scrollbar to chapter level TOC in webhelp topics - changed paramater to hard-coded value.-->
+                    
+                        
+                        <!-- US655: Create a parameter to remove the short description from chapter-levee/left TOCs in Webhelp -->
+                        <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="" class="SurpressSD"></div>
+                        <!--  US647: Add scrollbar to chapter level TOC in webhelp topics - Added  TOC_Nav to class-->
+                        <nav id="wh_publication_toc" class="d-print-none collapsible TOC_Nav" aria-label="Table of Contents Container">
+                            <div class=" wh_publication_toc " data-tooltip-position="bottom"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="id_2033915-d46e56761" class="topicref" data-id="id_2033915" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action id_2033915-d46e56761-link" class="wh-expand-btn"></span><span class="title"><a href="c_Troubleshooting_WebhelpLandingPage.html" id="id_2033915-d46e56761-link">Troubleshooting</a></span></span><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="false"><span data-tocid="id_2042725-d46e56867" class="topicref" data-id="id_2042725" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action id_2042725-d46e56867-link" class="wh-expand-btn"></span><span class="title"><a href="c_Troubleshooting_Diagnostics.html" id="id_2042725-d46e56867-link">Diagnostics</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="id_2069714-d46e57507" class="topicref" data-id="id_2069714" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action id_2069714-d46e57507-link" class="wh-expand-btn"></span><span class="title"><a href="c_TroubleshootingAndReplacements_SystemSubsection_Parent.html" id="id_2069714-d46e57507-link">System</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="id_2069711-d46e58231" class="topicref" data-id="id_2069711" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action id_2069711-d46e58231-link" class="wh-expand-btn"></span><span class="title"><a href="c_Troubleshooting_ImageQualitySubsystem_Parent.html" id="id_2069711-d46e58231-link">Image Quality</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="id_2069718-d46e59478" class="topicref" data-id="id_2069718" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action id_2069718-d46e59478-link" class="wh-expand-btn"></span><span class="title"><a href="c_TroubleshootingAndReplacements_MagnetEnclosureSubsection_Parent.html" id="id_2069718-d46e59478-link">Magnet Enclosure<span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="ph"> and Outer Electronics</span></a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="true"><span data-tocid="id_2069712-d46e59684" class="topicref" data-id="id_2069712" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action id_2069712-d46e59684-link" class="wh-expand-btn"></span><span class="title"><a href="c_Troubleshooting_PatientHandlingSubsystem_Parent.html" id="id_2069712-d46e59684-link">Patient Handling</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="false"><span data-tocid="id_2015639-d46e59788" class="topicref" data-id="id_2015639" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action id_2015639-d46e59788-link" class="wh-expand-btn"></span><span class="title"><a href="r_TroubleshootingTheIn-RoomDisplayIRD_Parent.html" id="id_2015639-d46e59788-link">Troubleshooting the In-Room Display (IRD)</a></span></span></li><li role="treeitem" class="active"><span data-tocid="id_15668202-d46e60513" class="topicref" data-id="id_15668202" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="r_ts_Patient-Handling-Power-Supply-Troubleshooting_5273516.html" id="id_15668202-d46e60513-link">Patient Handling Power Supply Troubleshooting</a></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="id_2013536-d46e60614" class="topicref" data-id="id_2013536" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action id_2013536-d46e60614-link" class="wh-expand-btn"></span><span class="title"><a href="c_PhysiologicalAquisitionControllerPACDiagnosticProceduresFrontPage.html" id="id_2013536-d46e60614-link">Physiological Acquisition Controller (PAC) diagnostics (ICE, <span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="ph">SPU, </span>FPGA)</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Diagnostic procedures related to the Physiological Acquisition Controller (PAC), which include: a PAC manual test, a PAC respiratory test, a PAC power-up test<span class="ph">, the Signal Processing Unit (SPU) to PAC IF loopback test, the SPU to PAC loopback diagnostic, the SPU to Field Programmable Gate Array (FPGA) loopback test, the SPU respiratory test, and the SPU cardiac diagnostic</span>.</p></span></span></span></li><li role="treeitem"><span data-tocid="id_2062894-d46e61786" class="topicref" data-id="id_2062894" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="r_ts_TroubleshootingTheFixedTable.html" id="id_2062894-d46e61786-link">Troubleshooting the patient table</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This topic contains causes and solutions for common table failures.</p></span></span></span></li><li role="treeitem"><span data-tocid="id_2038844-d46e61995" class="topicref" data-id="id_2038844" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="t_PhysiologicalDataViewerTool.html" id="id_2038844-d46e61995-link">Physiological Data Viewer tool</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The Physiological Data Viewer tool allows you to examine physiological data for the purpose of investigating the patient monitoring subsystem and gating.</p></span></span></span></li><li role="treeitem"><span data-tocid="id_2038264-d46e62099" class="topicref" data-id="id_2038264" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="r_ts_TroubleshootingGatingWaveform.html" id="id_2038264-d46e62099-link">Troubleshooting the patient monitoring subsystem</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Contains instructions for recording physiological data, and examples of common issues.</p></span></span></span></li></ul></li></ul></li></ul></div>
+                        </nav>
+                    
+                    <div id="pub_toc_button">
+                        <button type="button" data-target="#wh_publication_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc"></button>
+                    </div>
+                    
+                    <!--  DE234:  Spacing irregularities with flexible TOCS in Webhelp 
+                    Moved related links out 2 divs, moved topic tocs into topic body-->
+                    <div id="wh_topic_body">
+                        
+                       
+                        <div id="body_grid"><!-- DE234:  Added Body grid to fix issue with related links-->
+                        <div class="Num InMap wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1"><header class="contentHead">
+        <div class="topicMeta"><ul class="- topic/title title"><li> </li><li></li><li></li><li><span class="metalabel">Object ID: </span>00000018WIA30D8A230GYZ</li><li><span class="metalabel">Topic ID: </span>id_15668202<span class="metalabel"> Version: </span>1.1</li><li><span class="metalabel">Date: </span>Jul 5, 2019 9:47:15 PM</li></ul></div><h1 class="- topic/title title topictitle1" id="ariaid-title1">Patient Handling Power Supply Troubleshooting</h1></header>
+        <div class="- topic/body reference/refbody body refbody"><section class="- topic/section section">
+    </section></div><article class="- topic/topic reference/reference topic reference nested1 yes id_SL2108317-1178782" aria-labelledby="ariaid-title2" id="id_SL2108317-1178782"><header class="topic-id"><span class="metalabel">Topic ID: </span>id_SL2108317-1178782</header><h2 class="- topic/title title topictitle2" id="ariaid-title2">Overview</h2><div class="- topic/body reference/refbody body refbody"><section class="- topic/section section" id="id_SL2108317-1178782__SL2108317-1178782" data-ofbid="id_SL2108317-1178782__SL2108317-1178782">
+        <p class="- topic/p p" id="id_SL2108317-1178782__id_15752109" data-ofbid="id_SL2108317-1178782__id_15752109">The PHPS2 consists of two (2) multiple output power supply modules,
+a Motion Control Power Distribution Board (MCPDB), and a pulse width
+modulated servo amplifier. One of the power supplies, Magnet supply,
+provides DC power to the following modules:</p>
+        <ul class="- topic/ul ul" id="id_SL2108317-1178782__id_15752110" data-ofbid="id_SL2108317-1178782__id_15752110"><li class="- topic/li li" id="id_SL2108317-1178782__SL2136991-1178782" data-ofbid="id_SL2108317-1178782__SL2136991-1178782">
+            <p class="- topic/p p" id="id_SL2108317-1178782__id_15752111" data-ofbid="id_SL2108317-1178782__id_15752111">SRI-4 (Scan Room Interface)</p>
+          </li><li class="- topic/li li" id="id_SL2108317-1178782__SL2136992-1178782" data-ofbid="id_SL2108317-1178782__SL2136992-1178782">
+            <p class="- topic/p p" id="id_SL2108317-1178782__id_15752112" data-ofbid="id_SL2108317-1178782__id_15752112">In-Room Monitor</p>
+          </li><li class="- topic/li li" id="id_SL2108317-1178782__SL2136993-1178782" data-ofbid="id_SL2108317-1178782__SL2136993-1178782">
+            <p class="- topic/p p" id="id_SL2108317-1178782__id_15752113" data-ofbid="id_SL2108317-1178782__id_15752113">1-Wire Secondary Diagnostic Network</p>
+          </li><li class="- topic/li li" id="id_SL2108317-1178782__SL2136994-1178782" data-ofbid="id_SL2108317-1178782__SL2136994-1178782">
+            <p class="- topic/p p" id="id_SL2108317-1178782__id_15752114" data-ofbid="id_SL2108317-1178782__id_15752114">PAC (Physiological Acquisition Controller)</p>
+          </li></ul>
+        <p class="- topic/p p" id="id_SL2108317-1178782__id_15752115" data-ofbid="id_SL2108317-1178782__id_15752115">The second power supply, Table Supply, provides DC power to:</p>
+        <ul class="- topic/ul ul" id="id_SL2108317-1178782__id_15752116" data-ofbid="id_SL2108317-1178782__id_15752116"><li class="- topic/li li" id="id_SL2108317-1178782__SL2136996-1178782" data-ofbid="id_SL2108317-1178782__SL2136996-1178782">
+            <p class="- topic/p p" id="id_SL2108317-1178782__id_15752117" data-ofbid="id_SL2108317-1178782__id_15752117">MCPDB</p>
+          </li><li class="- topic/li li" id="id_SL2108317-1178782__SL2136997-1178782" data-ofbid="id_SL2108317-1178782__SL2136997-1178782">
+            <p class="- topic/p p" id="id_SL2108317-1178782__id_15752118" data-ofbid="id_SL2108317-1178782__id_15752118">Actuator for vertical movement of the
+Patient Table</p>
+          </li><li class="- topic/li li" id="id_SL2108317-1178782__SL2136998-1178782" data-ofbid="id_SL2108317-1178782__SL2136998-1178782">
+            <p class="- topic/p p" id="id_SL2108317-1178782__id_15752119" data-ofbid="id_SL2108317-1178782__id_15752119">Servo Amplifier</p>
+          </li></ul>
+        <p class="- topic/p p" id="id_SL2108317-1178782__id_15752120" data-ofbid="id_SL2108317-1178782__id_15752120">The servo amplifier switches 60VDC to a brushless DC motor to
+control longitudinal table motion. Switching is based on CAN control
+commands sent over fiber from the SRI4. An enable signal, sent by
+the SRI4, switches a solid-state relay onboard the MCPDB. This allows
+power switched by the servo amplifier to pass through to the motor
+output connector.</p>
+        <p class="- topic/p p" id="id_SL2108317-1178782__id_15752121" data-ofbid="id_SL2108317-1178782__id_15752121">The power provided to the MCPDB by the Table Power Supply is
+regulated to 5V for use on the board. The primary functions of this
+board are:</p>
+        <ul class="- topic/ul ul" id="id_SL2108317-1178782__id_15752122" data-ofbid="id_SL2108317-1178782__id_15752122"><li class="- topic/li li" id="id_SL2108317-1178782__SL2136999-1178782" data-ofbid="id_SL2108317-1178782__SL2136999-1178782">
+            <p class="- topic/p p" id="id_SL2108317-1178782__id_15752123" data-ofbid="id_SL2108317-1178782__id_15752123">Patient Comfort Fan control</p>
+          </li><li class="- topic/li li" id="id_SL2108317-1178782__SL2137000-1178782" data-ofbid="id_SL2108317-1178782__SL2137000-1178782">
+            <p class="- topic/p p" id="id_SL2108317-1178782__id_15752124" data-ofbid="id_SL2108317-1178782__id_15752124">Longitudinal motor drive control</p>
+          </li><li class="- topic/li li" id="id_SL2108317-1178782__SL2137001-1178782" data-ofbid="id_SL2108317-1178782__SL2137001-1178782">
+            <p class="- topic/p p" id="id_SL2108317-1178782__id_15752125" data-ofbid="id_SL2108317-1178782__id_15752125">Communication of status of power supplies
+to the Cabinet Monitor</p>
+          </li><li class="- topic/li li" id="id_SL2108317-1178782__SL2137002-1178782" data-ofbid="id_SL2108317-1178782__SL2137002-1178782">
+            <p class="- topic/p p" id="id_SL2108317-1178782__id_15752126" data-ofbid="id_SL2108317-1178782__id_15752126">PHPS2 ambient temperature monitoring</p>
+          </li></ul>
+      </section></div></article><article class="- topic/topic reference/reference topic reference nested1 yes id_SL2138245-1178782" aria-labelledby="ariaid-title3" id="id_SL2138245-1178782"><header class="topic-id"><span class="metalabel">Topic ID: </span>id_SL2138245-1178782</header><h2 class="- topic/title title topictitle2" id="ariaid-title3">Specifications</h2><div class="- topic/body reference/refbody body refbody"><section class="- topic/section section" id="id_SL2138245-1178782__SL2138245-1178782" data-ofbid="id_SL2138245-1178782__SL2138245-1178782">
+        <p class="- topic/p p" id="id_SL2138245-1178782__id_15752127" data-ofbid="id_SL2138245-1178782__id_15752127">This section describes assorted Patient Handling specifications:</p>
+        <ul class="- topic/ul ul" id="id_SL2138245-1178782__id_15752128" data-ofbid="id_SL2138245-1178782__id_15752128"><li class="- topic/li li" id="id_SL2138245-1178782__SL2138246-1178782" data-ofbid="id_SL2138245-1178782__SL2138246-1178782">
+            <p class="- topic/p p" id="id_SL2138245-1178782__id_15752129" data-ofbid="id_SL2138245-1178782__id_15752129">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Precautions</span>—<span class="+ topic/ph ui-d/uicontrol ph uicontrol">208VAC</span>, connector J1 will have 208VAC on it when power
+is supplied to the PHPS2.  The Bore Vent Fan connector (J44) may have
+208VAC on it depending on the status of the Bore Vent Fan Control
+signal from the SRI. <span class="+ topic/ph ui-d/uicontrol ph uicontrol">60VDC</span>, beware of 60VDC on
+both J35 and J36.</p>
+          </li><li class="- topic/li li" id="id_SL2138245-1178782__SL2138247-1178782" data-ofbid="id_SL2138245-1178782__SL2138247-1178782">
+            <p class="- topic/p p" id="id_SL2138245-1178782__id_15752130" data-ofbid="id_SL2138245-1178782__id_15752130">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Power Supply Requirements</span>—The AC power applied to the module shall be dual-phase, 208VAC +/-
+10%.  The PHPS2 pulls less than 9 Amps (circuit breaker = 10A) when
+utilized at its full capacity.</p>
+          </li></ul>
+      </section></div></article><article class="- topic/topic reference/reference topic reference nested1 yes id_SL2108318-1178782" aria-labelledby="ariaid-title4" id="id_SL2108318-1178782"><header class="topic-id"><span class="metalabel">Topic ID: </span>id_SL2108318-1178782</header><h2 class="- topic/title title topictitle2" id="ariaid-title4">Test Points</h2><div class="- topic/body reference/refbody body refbody"><section class="- topic/section section" id="id_SL2108318-1178782__SL2108318-1178782" data-ofbid="id_SL2108318-1178782__SL2108318-1178782">
+        <p class="- topic/p p" id="id_SL2108318-1178782__id_15752131" data-ofbid="id_SL2108318-1178782__id_15752131">There are 18 test points on the equipment room side of the PHPS2.
+ All test points are clearly marked with their voltages and description.
+ See <a class="- topic/xref xref" href="#id_SL2108318-1178782__SL2137003-1178782"><span>Front Panel</span></a></p>
+        <figure class="- topic/fig fig fignone" id="id_SL2108318-1178782__SL2137003-1178782" data-ofbid="id_SL2108318-1178782__SL2137003-1178782"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">1. </span></span><span class="fig--title">Front Panel</span></figcaption><img class="- topic/image image" id="id_SL2108318-1178782__id_15752132" src="2136876.jpg"/></figure>
+        <p class="- topic/p p" id="id_SL2108318-1178782__id_15752133" data-ofbid="id_SL2108318-1178782__id_15752133">A 10-Amp circuit breaker designated “PHPS2 Power”
+with indicator light is located on the front panel of the PHPS2. 
+Additionally, a small push-to-reset fuse resides on the equipment
+room side of the PHPS2.  This small fuse interrupts the Patient Comfort
+Fan circuit and is normally in the on position.  It will open up under
+fault conditions and can be manually reset provided the fault is removed.
+ During all testing, the circuit breaker “PHPS2 Power”
+must be in the “ON” position unless otherwise specified.</p>
+        <figure class="- topic/fig fig fignone" id="id_SL2108318-1178782__SL2137004-1178782" data-ofbid="id_SL2108318-1178782__SL2137004-1178782"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">2. </span></span><span class="fig--title">Rear Panel</span></figcaption><img class="- topic/image image" id="id_SL2108318-1178782__id_15752134" src="2136877.jpg"/></figure>
+      </section></div></article><article class="- topic/topic reference/reference topic reference nested1 yes id_SL2108320-1178782" aria-labelledby="ariaid-title5" id="id_SL2108320-1178782"><header class="topic-id"><span class="metalabel">Topic ID: </span>id_SL2108320-1178782</header><h2 class="- topic/title title topictitle2" id="ariaid-title5">Connector Definitions</h2><div class="- topic/body reference/refbody body refbody"><section class="- topic/section section" id="id_SL2108320-1178782__SL2108320-1178782" data-ofbid="id_SL2108320-1178782__SL2108320-1178782">
+        <p class="- topic/p p" id="id_SL2108320-1178782__id_15752135" data-ofbid="id_SL2108320-1178782__id_15752135">
+          <span class="+ topic/ph ui-d/uicontrol ph uicontrol">I/O Connectors: Front Panel</span>
+        </p>
+        <ul class="- topic/ul ul" id="id_SL2108320-1178782__id_15752136" data-ofbid="id_SL2108320-1178782__id_15752136"><li class="- topic/li li" id="id_SL2108320-1178782__SL2138250-1178782" data-ofbid="id_SL2108320-1178782__SL2138250-1178782">
+            <p class="- topic/p p" id="id_SL2108320-1178782__id_15752137" data-ofbid="id_SL2108320-1178782__id_15752137">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">J1 - AC Input Power</span>—Derives power from the PDU.</p>
+          </li><li class="- topic/li li" id="id_SL2108320-1178782__SL2138251-1178782" data-ofbid="id_SL2108320-1178782__SL2138251-1178782">
+            <p class="- topic/p p" id="id_SL2108320-1178782__id_15752138" data-ofbid="id_SL2108320-1178782__id_15752138">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">J8 - SRPS Connector</span>—The SRPS Connector shall deliver the following signals from iButton
+in ISC to the PHPS2. It shall be a 9-pin socket Panel-Mount Sub-D
+Connector.</p>
+          </li><li class="- topic/li li" id="id_SL2108320-1178782__SL2138252-1178782" data-ofbid="id_SL2108320-1178782__SL2138252-1178782">
+            <p class="- topic/p p" id="id_SL2108320-1178782__id_15752139" data-ofbid="id_SL2108320-1178782__id_15752139">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">J9 - Host E-Stop Connector</span>—The Host E-stop Connector shall deliver the following signals into
+the PHPS2. It shall be a 9-pin socket Panel-Mount Sub-D Connector.</p>
+          </li><li class="- topic/li li" id="id_SL2108320-1178782__SL2138253-1178782" data-ofbid="id_SL2108320-1178782__SL2138253-1178782">
+            <p class="- topic/p p" id="id_SL2108320-1178782__id_15752140" data-ofbid="id_SL2108320-1178782__id_15752140">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">J10 - CAN Fiber Optic Board
+Connector</span>—This connector deliver the following control
+signals to the Cabinet Monitor. The interface shall be a 25-pin Plug
+Panel-Mount Sub-D Connector.</p>
+          </li><li class="- topic/li li" id="id_SL2108320-1178782__SL2138254-1178782" data-ofbid="id_SL2108320-1178782__SL2138254-1178782">
+            <p class="- topic/p p" id="id_SL2108320-1178782__id_15752141" data-ofbid="id_SL2108320-1178782__id_15752141">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">J11 - PDU E-Stop Connector</span>—The PDU ESTOP connector shall distribute the following signals into
+the PHPS2. The interface shall be a 15-pin Panel-Mount Socket Sub-D
+Connector.</p>
+          </li><li class="- topic/li li" id="id_SL2108320-1178782__SL2138255-1178782" data-ofbid="id_SL2108320-1178782__SL2138255-1178782">
+            <p class="- topic/p p" id="id_SL2108320-1178782__id_15752142" data-ofbid="id_SL2108320-1178782__id_15752142">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">J12 - Host Connector</span>—The Host Input connector shall distribute the following signals
+into the PHPS2.  The interface shall be a 15-pin Plug Panel-Mount
+Sub-D Connector.</p>
+          </li></ul>
+        <p class="- topic/p p" id="id_SL2108320-1178782__id_15752143" data-ofbid="id_SL2108320-1178782__id_15752143">
+          <span class="+ topic/ph ui-d/uicontrol ph uicontrol">I/O Connectors: Rear Panel</span>
+        </p>
+        <ul class="- topic/ul ul" id="id_SL2108320-1178782__id_15752144" data-ofbid="id_SL2108320-1178782__id_15752144"><li class="- topic/li li" id="id_SL2108320-1178782__SL2138256-1178782" data-ofbid="id_SL2108320-1178782__SL2138256-1178782">
+            <p class="- topic/p p" id="id_SL2108320-1178782__id_15752145" data-ofbid="id_SL2108320-1178782__id_15752145">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">J35 - Dock Power Connector</span>—The Dock Power Connector shall be a 37-pin Sub-D Right-Angle Socket
+Connector.</p>
+          </li><li class="- topic/li li" id="id_SL2108320-1178782__SL2138257-1178782" data-ofbid="id_SL2108320-1178782__SL2138257-1178782">
+            <p class="- topic/p p" id="id_SL2108320-1178782__id_15752146" data-ofbid="id_SL2108320-1178782__id_15752146">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">J36 - Motor Power Connector</span>—The Motor Output Connector shall be a 25-pin Plug Right-Angle Sub-D
+Connector.</p>
+          </li><li class="- topic/li li" id="id_SL2108320-1178782__SL2138258-1178782" data-ofbid="id_SL2108320-1178782__SL2138258-1178782">
+            <p class="- topic/p p" id="id_SL2108320-1178782__id_15752147" data-ofbid="id_SL2108320-1178782__id_15752147">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">J37 - CAN TX Fiber Optic
+Connector</span>—The CAN TX fiber optic connector sends CAN signals
+to the SRI4.</p>
+          </li><li class="- topic/li li" id="id_SL2108320-1178782__SL2138259-1178782" data-ofbid="id_SL2108320-1178782__SL2138259-1178782">
+            <p class="- topic/p p" id="id_SL2108320-1178782__id_15752148" data-ofbid="id_SL2108320-1178782__id_15752148">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">J38 - CAN RX Fiber Optic
+Connector</span>—The CAN RX fiber optic connector receives CAN
+signals from the SRI4.</p>
+          </li><li class="- topic/li li" id="id_SL2108320-1178782__SL2138260-1178782" data-ofbid="id_SL2108320-1178782__SL2138260-1178782">
+            <p class="- topic/p p" id="id_SL2108320-1178782__id_15752149" data-ofbid="id_SL2108320-1178782__id_15752149">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">J39 - SRI4 Interface Connector</span>—The SRI4 Interface connector shall be a 37 Pin Plug Right-Angle
+Sub-D Connector and shall supply interface signals between the Copley
+controller and SRI4. The interface connector shall be the top connector
+on a stacked sub-D.</p>
+          </li><li class="- topic/li li" id="id_SL2108320-1178782__SL2138261-1178782" data-ofbid="id_SL2108320-1178782__SL2138261-1178782">
+            <p class="- topic/p p" id="id_SL2108320-1178782__id_15752150" data-ofbid="id_SL2108320-1178782__id_15752150">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">J40 - SRI4 Power Connector</span>—The SRI4 Output connector shall be a stacked 37-Pin Right-Angle
+Socket Sub-D Connector and shall supply power and signals to the SRI4.
+The power connector shall be the lower connector on the stacked connector.</p>
+          </li><li class="- topic/li li" id="id_SL2108320-1178782__SL2138262-1178782" data-ofbid="id_SL2108320-1178782__SL2138262-1178782">
+            <p class="- topic/p p" id="id_SL2108320-1178782__id_15752151" data-ofbid="id_SL2108320-1178782__id_15752151">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">J41 - PAC Power Connector</span>—The PAC Output Connector shall be a 25-pin Socket Right-Angle Sub-D
+Connector.</p>
+          </li><li class="- topic/li li" id="id_SL2108320-1178782__SL2138263-1178782" data-ofbid="id_SL2108320-1178782__SL2138263-1178782">
+            <p class="- topic/p p" id="id_SL2108320-1178782__id_15752152" data-ofbid="id_SL2108320-1178782__id_15752152">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">J42 - Display Power Connector</span>—The Display Power Connector shall be a 15-Pin Socket Sub-D Right-Angle
+Connector.</p>
+          </li><li class="- topic/li li" id="id_SL2108320-1178782__SL2138264-1178782" data-ofbid="id_SL2108320-1178782__SL2138264-1178782">
+            <p class="- topic/p p" id="id_SL2108320-1178782__id_15752153" data-ofbid="id_SL2108320-1178782__id_15752153">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">J43 - 1-Wire Spare Connector</span>—The Spare Output Connector shall provide 1-Wire connectivity to
+the Scan Room through a stacked 9-Pin Plug Right-Angle Sub-D connector.
+This shall be the lower connector on the stacked connector.</p>
+          </li><li class="- topic/li li" id="id_SL2108320-1178782__SL2138265-1178782" data-ofbid="id_SL2108320-1178782__SL2138265-1178782">
+            <p class="- topic/p p" id="id_SL2108320-1178782__id_15752154" data-ofbid="id_SL2108320-1178782__id_15752154">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">J44 - Bore Vent Fan Connector</span>—The Bore Vent Fan connector supplies AC Power to the Bore Fan for
+Multi-Speed Bore Fan Control. This connector is an external connector
+on the PHPS2 enclosure. This shall be a 1x5 Panel-Mount Mate-N-Lock
+Socket Connector. Note: Line Voltage from FAN_HIGH, FAN_MED, or FAN_LOW
+with respect to FAN_120_NEUTRAL will provide 208VAC to the Bore Vent
+Fan.</p>
+          </li><li class="- topic/li li" id="id_SL2108320-1178782__SL2138266-1178782" data-ofbid="id_SL2108320-1178782__SL2138266-1178782">
+            <p class="- topic/p p" id="id_SL2108320-1178782__id_15752155" data-ofbid="id_SL2108320-1178782__id_15752155">
+              <span class="+ topic/ph ui-d/uicontrol ph uicontrol">J54 - Commutation Signals
+Connector</span>—The commutation encoder signal shall be the
+upper connector of a 9-pin stacked sub-D. It sends Digital Hall signals
+to the servo amplifier for motor phasing.</p>
+          </li></ul>
+      </section></div></article><article class="- topic/topic reference/reference topic reference nested1 yes id_SL2138267-1178782" aria-labelledby="ariaid-title6" id="id_SL2138267-1178782"><header class="topic-id"><span class="metalabel">Topic ID: </span>id_SL2138267-1178782</header><h2 class="- topic/title title topictitle2" id="ariaid-title6">E-Stop Circuit</h2><div class="- topic/body reference/refbody body refbody"><section class="- topic/section section" id="id_SL2138267-1178782__SL2138267-1178782" data-ofbid="id_SL2138267-1178782__SL2138267-1178782">
+        <figure class="- topic/fig fig fignone" id="id_SL2138267-1178782__SL2138268-1178782" data-ofbid="id_SL2138267-1178782__SL2138268-1178782"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">3. </span></span><span class="fig--title">E-Stop Circuit</span></figcaption><img class="- topic/image image" id="id_SL2138267-1178782__id_15752156" src="2138073.jpg"/></figure>
+      </section></div></article></article></main></div>
+                        
+                        
+                        
+                        </div>
+                        
+                        
+                        <!--<whc:webhelp_related_links class="d-print-none"/> -->
+                        
+                        
+                        
+                        
+                        <!-- GEDev US503: next/previous buttons on bottom -->
+                        
+                            
+                            
+                            <!--  US647: Add scrollbar to chapter level TOC in webhelp topics - Added  TOC_Nav to class-->
+                            <nav id="wh_topic_toc" class="d-print-none collapsible TOC_Nav" aria-label="On this page">
+                                <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="topic-item"><a href="#id_SL2108317-1178782" data-tocid="id_SL2108317-1178782">Overview</a></li><li class="topic-item"><a href="#id_SL2138245-1178782" data-tocid="id_SL2138245-1178782">Specifications</a></li><li class="topic-item"><a href="#id_SL2108318-1178782" data-tocid="id_SL2108318-1178782">Test Points</a></li><li class="topic-item"><a href="#id_SL2108320-1178782" data-tocid="id_SL2108320-1178782">Connector Definitions</a></li><li class="topic-item"><a href="#id_SL2138267-1178782" data-tocid="id_SL2138267-1178782">E-Stop Circuit</a></li></ul></div>
+                            </nav>
+                            <!--whc:include_html href="${webhelp.fragment.after.topic.toc}"/-->
+                           
+                        
+                        <div id="topic_toc_button">
+                            <button type="button" data-target="#wh_topic_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle topic table of content" aria-controls="contain-topic_toc"></button>
+                        </div>
+                        <!--whc:include_html href="${webhelp.fragment.toggle.toc}"/-->
+                        
+                    </div>
+
+                </div>
+
+                
+            </div>
+            
+                
+            
+            </div>
+        <!-- US675: Modify the breadcrumbs heading on webpages so that it is always visible when users scroll down in webhelp -->
+        <div id="wh_tools_bottom" class="row wh_tools">
+            <nav class="d-print-none navbar-expand-md" aria-label="Tools">
+                
+                <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li><span class="topicref" data-id="id_2033915"><span class="title"><a href="c_Troubleshooting_WebhelpLandingPage.html">Troubleshooting</a></span></span></li><li><span class="topicref" data-id="id_2069712"><span class="title"><a href="c_Troubleshooting_PatientHandlingSubsystem_Parent.html">Patient Handling</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li><li class="active"><span class="topicref" data-id="id_15668202"><span class="title"><a href="r_ts_Patient-Handling-Power-Supply-Troubleshooting_5273516.html">Patient Handling Power Supply Troubleshooting</a></span></span></li></ol></div>
+                
+                
+                <div class="wh_right_tools">
+                    <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="- topic/link link" href="t_DoingACheckScan_Parent_7.html" title="Doing a check scan" aria-label="Previous topic: Doing a check scan" rel="prev"></a></span>  
+<span class="navnext"><a class="- topic/link link" href="c_PhysiologicalAquisitionControllerPACDiagnosticProceduresFrontPage.html" title="Physiological Acquisition Controller (PAC) diagnostics (ICE, SPU, FPGA)" aria-label="Next topic: Physiological Acquisition Controller (PAC) diagnostics (ICE, SPU, FPGA)" rel="next"></a></span>  </span></div>
+                </div>
+            </nav>
+            
+        </div>
+        <!-- webhelp.fragment.after.main.content.area and webhelp.fragment.after.main.content.area.topic.page moved out of div to try and fix scrolling issue -->
+        
+        
+        <footer class="navbar navbar-default wh_footer" whc:version="23.1">
+  <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="" class="ftrcustom"><span>
+			
+				
+				
+				5680002-2EN
+			
+			
+			
+				
+		</span> | <span>Revision 
+					
+					14</span> | <span>en | </span><span><a target="_blank" href="https://www.gehealthcare.com/">gehealthcare.com</a></span></div><div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="" class="copyright_info"><span class="copyright_years"> ©2016-2025</span> GE HealthCare Proprietary<div class="GETradmark"><span>GE is a trademark of General Electric Company used under trademark license.</span></div></div>
+</footer>
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" alt=""/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

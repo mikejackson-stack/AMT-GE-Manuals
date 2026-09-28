@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Transmit chain LED and toggle UI substitute","shortdesc":"<p class=\"shortdesc\">This is a substitute action before the LEDs and toggle UI is ready to use. <\/p>","href":"c_TransmitChainLEDsAndToggleUISubstitute.html","attributes":{"data-id":"id_2029251"},"menu":{"hasChildren":false},"tocID":"id_2029251-d46e7035","topics":[]}]});

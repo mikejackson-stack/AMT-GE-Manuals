@@ -1,0 +1,227 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us" whc:version="22.0">
+
+    <head><link rel="shortcut icon" href="oxygen-webhelp\template\img/favicon-32x32.png"><!----></link><link rel="icon" href="oxygen-webhelp\template\img/favicon-32x32.png"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta charset="UTF-8"/><meta name="copyright" content="(C) Copyright 2025"/><meta name="DC.rights.owner" content="(C) Copyright 2025"/><meta name="DC.type" content="concept"/><meta name="description" content="Workflow overview For a more detailed workflow, refer to the operator manual. Figure 1. ACRx workflow flowchart During prescan, auto coil calibration acquires data from all of the selected coils; this ..."/><meta name="DC.coverage" content=""/><meta name="DC.relation" scheme="URI" content="c_AutoCoilPrescriptionTheoryOfOperationAndFieldTroubleshooting.html"/><meta name="DC.relation" scheme="URI" content="c_AutoCoilPrescriptionOverview.html"/><meta name="DC.relation" scheme="URI" content="c_AutoCoilPrescriptionCoilConfiguration.html"/><meta name="prodname" content=""/><meta name="version" content="0"/><meta name="component" content=""/><meta name="DC.creator" content=""/><meta name="DC.publisher" content="392025"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="id_2012998"/><meta name="DC.language" content="en-US"/>        
+      <title>Auto coil prescription high level workflow</title><!--  Generated with Oxygen version 23.1, build number 2021121412.  --><meta name="wh-path2root" content=""/><meta name="wh-toc-id" content="id_2012998-d46e41953"/><meta name="wh-source-relpath" content="c_AutoCoilPrescriptionHighLevelWorkflow.dita"/><meta name="wh-out-relpath" content="c_AutoCoilPrescriptionHighLevelWorkflow.html"/>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/>
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2021121412"/>
+    
+    
+    <script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script>
+    
+    <script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/notes.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/GEHealthCare.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/print.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/footer-fix.css?buildId=2021121412"/><script type="text/javascript" src="./oxygen-webhelp/template/js/Remove_LSEP.js"></script><script type="text/javascript" src="./oxygen-webhelp/template/js/TopicTOCScroll.js"></script></head>
+    <body id="id_2012998" class="wh_topic_page frmBody">
+        <!--US578: WHR - Move search to line up with manual title-->
+        <div class="SupressSearch">
+            <!--Search form 
+                Removed class for DE238: Double search fields when webhelp is viewed on
+            <whc:webhelp_search_input class="navbar-form wh_topic_page_search search" role="form">-->
+            <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="" class=" wh_search_input " role="form">
+                
+                
+                <div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div>
+                
+                
+            </div>
+        </div>
+        <a href="#topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="23.1">
+    <div class="container-fluid">
+        <!-- GEDev US509 Webhelp: expandable navbar icon invisible changed to navbar-light -->
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-light">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--     This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html. -->
+                    <!-- US650: Update Webhelp look and feel -->
+                    <div id="banner">
+                        <!-- GE Dev US464 change logo link to blank target -->
+                        <a href="https://www.gehealthcare.com/" class="Num wh_logo d-none d-sm-block " target="_blank"><img src="oxygen-webhelp\template\img/GE-HLTHCR_Webhelp_CMYK-CompPrpl.svg" alt="SIGNA™ Champion / SIGNA™ Winner 1.5TGeneral Service Manual"/></a>
+                        <!--* DE224: WHR: Link under the search field is missing -->
+                        <div class="search_container">
+                            <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="" class=" wh_search_input "><div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div></div><whc:search_field></whc:search_field>
+                            <div class="search_link">
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle"><span class="ph mainbooktitle">SIGNA™ Champion / SIGNA™ Winner 1.5T</span><span class="ph booktitlealt"><span class="ph">General Service Manual</span></span></span></a></div>
+                    
+                </div>
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033906-d46e221-mi" data-tocid="id_2033906-d46e221" data-state="not-ready" class=" topicref " data-id="id_2033906"><span class="title"><a href="c_Safety_WebhelpLandingPage.html">Safety and General Information</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033907-d46e1945-mi" data-tocid="id_2033907-d46e1945" data-state="not-ready" class=" topicref " data-id="id_2033907"><span class="title"><a href="c_PreInstallation_WebhelpLandingPage.html">Pre-Installation</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033908-d46e2147-mi" data-tocid="id_2033908-d46e2147" data-state="not-ready" class=" topicref " data-id="id_2033908"><span class="title"><a href="c_InstallationAndUpgrade_WebhelpLandingPage.html">Installation and Upgrade</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033902-d46e3058-mi" data-tocid="id_2033902-d46e3058" data-state="not-ready" class=" topicref " data-id="id_2033902"><span class="title"><a href="c_AdjustmentsAndCalibrations_WebhelpLandingPage.html">Adjustments/Calibrations</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033910-d46e10307-mi" data-tocid="id_2033910-d46e10307" data-state="not-ready" class=" topicref " data-id="id_2033910"><span class="title"><a href="c_FunctionalChecks_WebhelpLandingPage.html">Functional Checks</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033911-d46e20884-mi" data-tocid="id_2033911-d46e20884" data-state="not-ready" class=" topicref " data-id="id_2033911"><span class="title"><a href="c_Software_WebhelpLandingPage.html">Software</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033912-d46e41543-mi" data-tocid="id_2033912-d46e41543" data-state="not-ready" class=" topicref " data-id="id_2033912"><span class="title"><a href="c_Theory_WebhelpLandingPage.html">Theory</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033914-d46e42257-mi" data-tocid="id_2033914-d46e42257" data-state="not-ready" class=" topicref " data-id="id_2033914"><span class="title"><a href="c_PlannedMaintenance_WebhelpLandingPage.html">Planned Maintenance</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033915-d46e43181-mi" data-tocid="id_2033915-d46e43181" data-state="not-ready" class=" topicref " data-id="id_2033915"><span class="title"><a href="c_Troubleshooting_WebhelpLandingPage.html">Troubleshooting</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033916-d46e44092-mi" data-tocid="id_2033916-d46e44092" data-state="not-ready" class=" topicref " data-id="id_2033916"><span class="title"><a href="c_Parts_WebhelpLandingPage.html">Parts</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033917-d46e45916-mi" data-tocid="id_2033917-d46e45916" data-state="not-ready" class=" topicref " data-id="id_2033917"><span class="title"><a href="c_Replacements_WebhelpLandingPage.html">Replacements</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033904-d46e90129-mi" data-tocid="id_2033904-d46e90129" data-state="not-ready" class=" topicref " data-id="id_2033904"><span class="title"><a href="c_Coils_WebhelpLandingPage.html">Coils</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033903-d46e105433-mi" data-tocid="id_2033903-d46e105433" data-state="not-ready" class=" topicref " data-id="id_2033903"><span class="title"><a href="c_OEMAndOtherManuals_WebhelpLandingPage.html">OEM and Other Manuals</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033918-d46e105938-mi" data-tocid="id_2033918-d46e105938" data-state="not-ready" class=" topicref " data-id="id_2033918"><span class="title"><a href="c_OptionalFeatures_WebhelpLandingPage.html">Optional Features</a></span></span></li></ul></nav>
+                
+                <!--whc:include_html href="${webhelp.fragment.after.top_menu}"/-->
+
+            </div>
+
+        </div>
+    </div>
+</header>
+        
+        
+        
+        <!-- US675: Modify the breadcrumbs heading on webpages so that it is always visible when users scroll down in webhelp -->
+        
+        <div class="row wh_tools " id="wh_tools_top">
+            <nav class="d-print-none navbar-expand-md" aria-label="Tools">
+                
+                <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li><span class="topicref" data-id="id_2033912"><span class="title"><a href="c_Theory_WebhelpLandingPage.html">Theory</a></span></span></li><li><span class="topicref"><span class="title"><a href="c_AutoCoilPrescriptionTheoryOfOperationAndFieldTroubleshooting.html">Tests, Tools, Scan</a></span></span></li><li><span class="topicref" data-id="id_2012947"><span class="title"><a href="c_AutoCoilPrescriptionTheoryOfOperationAndFieldTroubleshooting.html">Auto Coil Prescription (ACRx) with dynamic coil configurations theory of operation and field troubleshooting</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This document provides a basic overview of the Auto Coil Prescription (ACRx) feature. Topics covered by this document include a basic overview, a high-level description of the workflow, coil configuration, and reading DICOM header tags to duplicate ACRx scans.</p></span></span></span></li><li class="active"><span class="topicref" data-id="id_2012998"><span class="title"><a href="c_AutoCoilPrescriptionHighLevelWorkflow.html">Auto coil prescription high level workflow</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li></ol></div>
+                
+                
+                <div class="wh_right_tools">
+                    <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                    <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                    <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="- topic/link link" href="c_AutoCoilPrescriptionOverview.html" title="Coil prescription overview" aria-label="Previous topic: Coil prescription overview" rel="prev"></a></span>  
+<span class="navnext"><a class="- topic/link link" href="c_AutoCoilPrescriptionCoilConfiguration.html" title="Auto coil prescription coil configurations" aria-label="Next topic: Auto coil prescription coil configurations" rel="next"></a></span>  </span></div>
+                    <!-- External resource link -->
+                    
+                   <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="" class="Num wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page" class="oxy-icon oxy-icon-print"></button></div>
+                    
+                   <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                    <button type="button" data-target="#wh_publication_toc" id="wh_toc_button" data-toggle="collapse" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>  
+                </div>
+            </nav>
+            
+        </div>
+        <div class="container-fluid" id="wh_topic_container">
+            
+
+            <!--whc:include_html href="${webhelp.fragment.before.main.content.area}"/>
+           
+            <whc:include_html href="${webhelp.fragment.before.main.content.area.topic.page}"/-->
+
+
+            <div class="wh_content_area">
+                <!-- US616 - TOC toggle buttons -->
+                <div class="row" id="topic_body">
+                    <!-- US647: Add scrollbar to chapter level TOC in webhelp topics - changed paramater to hard-coded value.-->
+                    
+                        
+                        <!-- US655: Create a parameter to remove the short description from chapter-levee/left TOCs in Webhelp -->
+                        <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="" class="SurpressSD"></div>
+                        <!--  US647: Add scrollbar to chapter level TOC in webhelp topics - Added  TOC_Nav to class-->
+                        <nav id="wh_publication_toc" class="d-print-none collapsible TOC_Nav" aria-label="Table of Contents Container">
+                            <div class=" wh_publication_toc " data-tooltip-position="bottom"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="id_2033912-d46e41543" class="topicref" data-id="id_2033912" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action id_2033912-d46e41543-link" class="wh-expand-btn"></span><span class="title"><a href="c_Theory_WebhelpLandingPage.html" id="id_2033912-d46e41543-link">Theory</a></span></span><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="false"><span data-tocid="tocId-d46e41646" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d46e41646-link" class="wh-expand-btn"></span><span class="title"><a href="c_EmergencyOffAndEmergencyStopTheory.html" id="tocId-d46e41646-link">System Components</a></span></span></li><li role="treeitem" aria-expanded="true"><span data-tocid="tocId-d46e41748" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d46e41748-link" class="wh-expand-btn"></span><span class="title"><a href="c_AutoCoilPrescriptionTheoryOfOperationAndFieldTroubleshooting.html" id="tocId-d46e41748-link">Tests, Tools, Scan</a></span></span><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="true"><span data-tocid="id_2012947-d46e41750" class="topicref" data-id="id_2012947" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action id_2012947-d46e41750-link" class="wh-expand-btn"></span><span class="title"><a href="c_AutoCoilPrescriptionTheoryOfOperationAndFieldTroubleshooting.html" id="id_2012947-d46e41750-link">Auto Coil Prescription (ACRx) with dynamic coil configurations theory of operation and field troubleshooting</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This document provides a basic overview of the Auto Coil Prescription (ACRx) feature. Topics covered by this document include a basic overview, a high-level description of the workflow, coil configuration, and reading DICOM header tags to duplicate ACRx scans.</p></span></span></span><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><span data-tocid="id_2012973-d46e41852" class="topicref" data-id="id_2012973" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="c_AutoCoilPrescriptionOverview.html" id="id_2012973-d46e41852-link">Coil prescription overview</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li><li role="treeitem" class="active"><span data-tocid="id_2012998-d46e41953" class="topicref" data-id="id_2012998" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="c_AutoCoilPrescriptionHighLevelWorkflow.html" id="id_2012998-d46e41953-link">Auto coil prescription high level workflow</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li><li role="treeitem"><span data-tocid="id_2013010-d46e42054" class="topicref" data-id="id_2013010" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="c_AutoCoilPrescriptionCoilConfiguration.html" id="id_2013010-d46e42054-link">Auto coil prescription coil configurations</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li><li role="treeitem"><span data-tocid="id_2013015-d46e42155" class="topicref" data-id="id_2013015" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="c_QuickViewOfAutoCoilPrescription.html" id="id_2013015-d46e42155-link">Quick view of auto coil prescription</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li></ul></li></ul></li></ul></li></ul></div>
+                        </nav>
+                    
+                    <div id="pub_toc_button">
+                        <button type="button" data-target="#wh_publication_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc"></button>
+                    </div>
+                    
+                    <!--  DE234:  Spacing irregularities with flexible TOCS in Webhelp 
+                    Moved related links out 2 divs, moved topic tocs into topic body-->
+                    <div id="wh_topic_body">
+                        
+                       
+                        <div id="body_grid"><!-- DE234:  Added Body grid to fix issue with related links-->
+                        <div class="Num InMap wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1"><header class="contentHead">
+        <div class="topicMeta"><ul class="- topic/title title"><li> </li><li></li><li></li><li><span class="metalabel">Object ID: </span>00000018WIA30D62040GYZ</li><li><span class="metalabel">Topic ID: </span>id_2012998<span class="metalabel"> Version: </span>2.3</li><li><span class="metalabel">Date: </span>Apr 24, 2020 12:36:12 AM</li></ul></div><h1 class="- topic/title title topictitle1" id="ariaid-title1">Auto coil prescription high level workflow</h1></header>
+        <div class="- topic/body concept/conbody body conbody"><div class="hide"><p class="- topic/shortdesc shortdesc"></p></div>
+        <section class="- topic/section section"><h2 class="- topic/title title sectiontitle">Workflow overview</h2>
+                                    
+                                    <p class="- topic/p p">For a more detailed workflow, refer to the operator manual. </p>
+                                    <figure class="- topic/fig fig fignone"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">1. </span></span><span class="fig--title">ACRx workflow flowchart</span></figcaption><img class="- topic/image image" src="ACRx_Workflow_Flowchart.jpg"/></figure>
+                                    <p class="- topic/p p">During prescan, auto coil calibration acquires data from all of the selected coils; this is known as the full coil mode. This data is automatically reacquired as needed due to changes such as connected or selected coils, patient table location, or an auto prescan being initiated from the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Scan</span> submenu. The auto coil algorithm will then automatically select the optimal group of Receive Element Groups (REG)s based on several factors such as: prescribed ROI, calibration data, parallel imaging, and annefact sensitivity. The REGs are used to construct a local coil mode that includes all of the elements from those REGs.</p>
+                                    <figure class="- topic/fig fig fignone"></figure>
+                                    <figure class="- topic/fig fig fignone"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">2. </span></span><span class="fig--title">Coils used during prescan</span></figcaption><img class="- topic/image image" src="ACRx_Coil_Mode_Flow.jpg"/></figure>
+                        </section><section class="- topic/section section"><h2 class="- topic/title title sectiontitle">Workflow changes</h2>
+                                    
+                                    <p class="- topic/p p">With ACRx dynamic coil modes, coil landmarking is no longer required. The site can set up protocols to allow the use of any connected coil. This means that users can use different coils more easily, reducing pop-ups/changes. ACRx selects the best coil elements automatically so there are no coil modes for the users to select. The calibration is hidden from users as it runs during prescan. The location of the coil is detected and shown on the <span class="+ topic/keyword ui-d/wintitle keyword wintitle">graphic rx</span> user interface as coil extents. The users can see the location of the entire coil as well as the portion of the coil that is active for the scan.</p>
+                        </section><section class="- topic/section section"><h2 class="- topic/title title sectiontitle">User interface changes</h2>
+                                    
+                                    <p class="- topic/p p">With ACRx, the user selects physical coils from a simple interface with large icon buttons for each coil. The coil extents are shown gray for the entire coil and blue for active elements. Physical coil names, rather than coil modes, are shown on the interface.</p>
+                                    <figure class="- topic/fig fig fignone"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">3. </span></span><span class="fig--title">Coil user interface</span></figcaption><img class="- topic/image image" src="ACRX_User_Interface.jpg"/><table><colgroup><col style="width:50%"/><col style="width:50%"/></colgroup><tbody class="- topic/simpletable simpletable"><tr class="- topic/strow strow"><td class="- topic/stentry stentry">1</td><td class="- topic/stentry stentry">Active elements (blue)</td></tr><tr class="- topic/strow strow"><td class="- topic/stentry stentry">2</td><td class="- topic/stentry stentry">Entire coil (gray)</td></tr><tr class="- topic/strow strow"><td class="- topic/stentry stentry">3</td><td class="- topic/stentry stentry">Coil icon buttons</td></tr><tr class="- topic/strow strow"><td class="- topic/stentry stentry">4</td><td class="- topic/stentry stentry">Physical coil names selected</td></tr></tbody></table></figure>
+                        </section></div></article></main></div>
+                        
+                        
+                        
+                        </div>
+                        
+                        
+                        <!--<whc:webhelp_related_links class="d-print-none"/> -->
+                        
+                        
+                        
+                        
+                        <!-- GEDev US503: next/previous buttons on bottom -->
+                        
+                        <div id="topic_toc_button">
+                            <button type="button" data-target="#wh_topic_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle topic table of content" aria-controls="contain-topic_toc"></button>
+                        </div>
+                        <!--whc:include_html href="${webhelp.fragment.toggle.toc}"/-->
+                        
+                    </div>
+
+                </div>
+
+                
+            </div>
+            
+                
+            
+            </div>
+        <!-- US675: Modify the breadcrumbs heading on webpages so that it is always visible when users scroll down in webhelp -->
+        <div id="wh_tools_bottom" class="row wh_tools">
+            <nav class="d-print-none navbar-expand-md" aria-label="Tools">
+                
+                <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li><span class="topicref" data-id="id_2033912"><span class="title"><a href="c_Theory_WebhelpLandingPage.html">Theory</a></span></span></li><li><span class="topicref"><span class="title"><a href="c_AutoCoilPrescriptionTheoryOfOperationAndFieldTroubleshooting.html">Tests, Tools, Scan</a></span></span></li><li><span class="topicref" data-id="id_2012947"><span class="title"><a href="c_AutoCoilPrescriptionTheoryOfOperationAndFieldTroubleshooting.html">Auto Coil Prescription (ACRx) with dynamic coil configurations theory of operation and field troubleshooting</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This document provides a basic overview of the Auto Coil Prescription (ACRx) feature. Topics covered by this document include a basic overview, a high-level description of the workflow, coil configuration, and reading DICOM header tags to duplicate ACRx scans.</p></span></span></span></li><li class="active"><span class="topicref" data-id="id_2012998"><span class="title"><a href="c_AutoCoilPrescriptionHighLevelWorkflow.html">Auto coil prescription high level workflow</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li></ol></div>
+                
+                
+                <div class="wh_right_tools">
+                    <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="- topic/link link" href="c_AutoCoilPrescriptionOverview.html" title="Coil prescription overview" aria-label="Previous topic: Coil prescription overview" rel="prev"></a></span>  
+<span class="navnext"><a class="- topic/link link" href="c_AutoCoilPrescriptionCoilConfiguration.html" title="Auto coil prescription coil configurations" aria-label="Next topic: Auto coil prescription coil configurations" rel="next"></a></span>  </span></div>
+                </div>
+            </nav>
+            
+        </div>
+        <!-- webhelp.fragment.after.main.content.area and webhelp.fragment.after.main.content.area.topic.page moved out of div to try and fix scrolling issue -->
+        
+        
+        <footer class="navbar navbar-default wh_footer" whc:version="23.1">
+  <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="" class="ftrcustom"><span>
+				5941077-8EN 
+			</span> | <span>Revision  3</span> | <span>en-US | </span><span><a target="_blank" href="https://www.gehealthcare.com/">gehealthcare.com</a></span></div><div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="" class="copyright_info"><span class="copyright_years"> ©2024 - 2025</span> GE HealthCare Proprietary<div class="GETradmark"><span>GE is a trademark of General Electric Company used under trademark license.</span></div></div>
+</footer>
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" alt=""/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

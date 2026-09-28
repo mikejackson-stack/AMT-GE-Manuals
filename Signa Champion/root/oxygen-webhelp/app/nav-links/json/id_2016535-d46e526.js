@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Removing LOTO - Global Operator Cabinet (GOC) and Operator Workspace","shortdesc":"<p class=\"shortdesc\">Remove LOTO from the GOC and operator workspace before restoring power to these items.<\/p>","href":"t_Removing-LOTO-GOC-Pioneer.html","attributes":{"data-id":"id_2016538"},"menu":{"hasChildren":false},"tocID":"id_2016538-d46e628","topics":[]}]});

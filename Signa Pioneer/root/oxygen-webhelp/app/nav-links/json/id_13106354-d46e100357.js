@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Installing the telescopic cover","shortdesc":"<p class=\"shortdesc\">Procedure on how to install the telescopic covers for the fixed table.<\/p>","href":"t_InstallingTelescopicCover.html","attributes":{"data-id":"id_2059760"},"menu":{"hasChildren":false},"tocID":"id_2059760-d46e100461","topics":[]}]});

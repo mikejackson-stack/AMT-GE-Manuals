@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Doing a TPS reset","shortdesc":"<p class=\"shortdesc\">This document provides instructions for doing a TPS reset and examples of the results output.<\/p>","href":"t_DoingTPSReset_Parent.html","attributes":{"data-id":"id_2001664"},"menu":{"hasChildren":false},"tocID":"id_2001664-d46e6628","topics":[]}]});

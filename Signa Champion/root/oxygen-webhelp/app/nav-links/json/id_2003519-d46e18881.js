@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Removing LOTO - Main Disconnect Panel (MDP)","shortdesc":"<p class=\"shortdesc\">Remove LOTO from the Main Disconnect Panel (MDP) or facility Power Distribution Unit (PDU).<\/p>","href":"t_Removing-LOTO-MDP-PioneerHero_3.html","attributes":{"data-id":"id_2016539"},"menu":{"hasChildren":false},"tocID":"id_2016539-d46e18983","topics":[]}]});

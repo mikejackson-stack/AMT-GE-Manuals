@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Setting custom security settings","shortdesc":"<p class=\"shortdesc\">These procedures apply to .<\/p>","href":"r_SettingCustomSecuritySettings.html","attributes":{"data-id":"id_2011685"},"menu":{"hasChildren":true},"tocID":"id_2011685-d46e22730","next":"id_2011685-d46e22730"}]});

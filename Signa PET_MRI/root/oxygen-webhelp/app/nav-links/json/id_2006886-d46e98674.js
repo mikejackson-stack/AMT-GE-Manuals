@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Choose the FRU to replace","shortdesc":"<p class=\"shortdesc\">Choose which replacement procedure to continue with (Scan Control and Intercom Module (SCIM), keyboard, or mouse).<\/p>","href":"t_ChooseTheFRUToReplace.html","attributes":{"data-id":"id_2014134"},"menu":{"hasChildren":true},"tocID":"id_2014134-d46e98779","next":"id_2014134-d46e98779"}]});

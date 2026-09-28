@@ -1,0 +1,1 @@
+define({"topics":[{"title":"B0 B1 Map Troubleshooting Guide","shortdesc":"<p class=\"shortdesc\">When you find shadings in the image, please follow the procedure below and setup B0 map and B1 map protocols.<\/p>","href":"t_B0B1MapTroubleshootingGuide.html","attributes":{"data-id":"id_2039880"},"menu":{"hasChildren":false},"tocID":"id_2039880-d46e43990","topics":[]}]});

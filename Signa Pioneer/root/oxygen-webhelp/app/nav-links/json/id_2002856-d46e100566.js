@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Removing the telescopic cover","shortdesc":"<p class=\"shortdesc\">Procedure on how to remove the telescopic cover for the fixed table.<\/p>","href":"t_RemovingTheTelescopicCover_14991514_2.html","attributes":{"data-id":"id_13106354"},"menu":{"hasChildren":true},"tocID":"id_13106354-d46e100670","next":"id_13106354-d46e100670"}]});

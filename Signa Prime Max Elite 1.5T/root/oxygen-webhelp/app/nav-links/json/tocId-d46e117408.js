@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Replacing operator workspace FRUs","shortdesc":"<p class=\"shortdesc\">An index for operator workspace FRU replacement procedures.<\/p>","href":"c_ReplacingGOCFRUs.html","attributes":{"data-id":"id_2009060"},"menu":{"hasChildren":true},"tocID":"id_2009060-d46e117412","next":"id_2009060-d46e117412"}]});

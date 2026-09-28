@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Tightening connections","shortdesc":"<p class=\"shortdesc\">Tighten PDU connections.<\/p>","href":"t_TighteningConnectionsForSIGNAPremier_2.html","attributes":{"data-id":"id_2004634"},"menu":{"hasChildren":false},"tocID":"id_2004634-d46e72608","topics":[]}]});

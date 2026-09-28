@@ -1,0 +1,1 @@
+define({"topics":[{"title":"GOC and Operator Workspace","shortdesc":"<p class=\"shortdesc\"\/>","href":"c_LOTO_GOCAndOperatorWorkspace_Parent_HTMLOnly.html","attributes":{"data-id":"id_2059566"},"menu":{"hasChildren":true},"tocID":"id_2059566-d46e1251","next":"id_2059566-d46e1251"}]});

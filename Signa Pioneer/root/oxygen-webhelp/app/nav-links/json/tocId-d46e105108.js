@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Cardiac coils","shortdesc":"<p class=\"shortdesc\"\/>","href":"r_CardiacCoils.html","attributes":{"data-id":"id_2008293"},"menu":{"hasChildren":false},"tocID":"id_2008293-d46e105109","topics":[]}]});

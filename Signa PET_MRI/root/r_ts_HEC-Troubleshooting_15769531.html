@@ -1,0 +1,1016 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en" whc:version="22.0">
+
+    <head><link rel="shortcut icon" href="oxygen-webhelp\template\img/favicon-32x32.png"><!----></link><link rel="icon" href="oxygen-webhelp\template\img/favicon-32x32.png"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="This document describes the various problems and conditions for the heat exchanger cabinet (HEC) and the possible solutions for those problems and conditions. Note For internal wiring and plumbing ..."/><meta charset="UTF-8"/><meta name="copyright" content="(C) Copyright 2025"/><meta name="DC.rights.owner" content="(C) Copyright 2025"/><meta name="DC.type" content="reference"/><meta name="DC.coverage" content=""/><meta name="prodname" content=""/><meta name="version" content="0"/><meta name="brand" content=""/><meta name="component" content=""/><meta name="featnum" content="Service Operations"/><meta name="featnum" content=""/><meta name="prognum" content=""/><meta name="platform" content=""/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="id_13106501"/><title>Troubleshooting the Heat Exchanger Cabinet (HEC)</title><!--  Generated with Oxygen version 23.1, build number 2021121412.  --><meta name="wh-path2root" content=""/><meta name="wh-source-relpath" content="r_ts_HEC-Troubleshooting_15769531.dita"/><meta name="wh-out-relpath" content="r_ts_HEC-Troubleshooting_15769531.html"/>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/>
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2021121412"/>
+    
+    
+    <script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script>
+    
+    <script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/notes.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/GEHealthCare.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/print.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/footer-fix.css?buildId=2021121412"/><script type="text/javascript" src="./oxygen-webhelp/template/js/Remove_LSEP.js"></script><script type="text/javascript" src="./oxygen-webhelp/template/js/TopicTOCScroll.js"></script></head>
+    <body id="id_13106501" class="wh_topic_page frmBody">
+        <!--US578: WHR - Move search to line up with manual title-->
+        <div class="SupressSearch">
+            <!--Search form 
+                Removed class for DE238: Double search fields when webhelp is viewed on
+            <whc:webhelp_search_input class="navbar-form wh_topic_page_search search" role="form">-->
+            <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="" class=" wh_search_input " role="form">
+                
+                
+                <div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div>
+                
+                
+            </div>
+        </div>
+        <a href="#topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="23.1">
+    <div class="container-fluid">
+        <!-- GEDev US509 Webhelp: expandable navbar icon invisible changed to navbar-light -->
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-light">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--     This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html. -->
+                    <!-- US650: Update Webhelp look and feel -->
+                    <div id="banner">
+                        <!-- GE Dev US464 change logo link to blank target -->
+                        <a href="https://www.gehealthcare.com/" class="Num wh_logo d-none d-sm-block " target="_blank"><img src="oxygen-webhelp\template\img/GE-HLTHCR_Webhelp_CMYK-CompPrpl.svg" alt="  SIGNA™ PETMR  General Service Manual"/></a>
+                        <!--* DE224: WHR: Link under the search field is missing -->
+                        <div class="search_container">
+                            <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="" class=" wh_search_input "><div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div></div><whc:search_field></whc:search_field>
+                            <div class="search_link">
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle"><span class="ph mainbooktitle">  <span class="ph">SIGNA™ PETMR</span>  </span><span class="ph booktitlealt"><span class="ph">General Service Manual</span></span></span></a></div>
+                    
+                </div>
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033906-d46e235-mi" data-tocid="id_2033906-d46e235" data-state="not-ready" class=" topicref " data-id="id_2033906"><span class="title"><a href="c_Safety_WebhelpLandingPage.html">Safety and General Information</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033907-d46e3138-mi" data-tocid="id_2033907-d46e3138" data-state="not-ready" class=" topicref " data-id="id_2033907"><span class="title"><a href="c_PreInstallation_WebhelpLandingPage.html">Pre-Installation</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033908-d46e3346-mi" data-tocid="id_2033908-d46e3346" data-state="not-ready" class=" topicref " data-id="id_2033908"><span class="title"><a href="c_InstallationAndUpgrade_WebhelpLandingPage.html">Installation and Upgrade</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033902-d46e4596-mi" data-tocid="id_2033902-d46e4596" data-state="not-ready" class=" topicref " data-id="id_2033902"><span class="title"><a href="c_AdjustmentsAndCalibrations_WebhelpLandingPage.html">Adjustments/Calibrations</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033910-d46e21308-mi" data-tocid="id_2033910-d46e21308" data-state="not-ready" class=" topicref " data-id="id_2033910"><span class="title"><a href="c_FunctionalChecks_WebhelpLandingPage.html">Functional Checks</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033911-d46e32241-mi" data-tocid="id_2033911-d46e32241" data-state="not-ready" class=" topicref " data-id="id_2033911"><span class="title"><a href="c_Software_WebhelpLandingPage.html">Software</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033912-d46e63840-mi" data-tocid="id_2033912-d46e63840" data-state="not-ready" class=" topicref " data-id="id_2033912"><span class="title"><a href="c_Theory_WebhelpLandingPage.html">Theory</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033914-d46e65805-mi" data-tocid="id_2033914-d46e65805" data-state="not-ready" class=" topicref " data-id="id_2033914"><span class="title"><a href="c_PlannedMaintenance_WebhelpLandingPage.html">Planned Maintenance</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033915-d46e78146-mi" data-tocid="id_2033915-d46e78146" data-state="not-ready" class=" topicref " data-id="id_2033915"><span class="title"><a href="c_Troubleshooting_WebhelpLandingPage.html">Troubleshooting</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033916-d46e81598-mi" data-tocid="id_2033916-d46e81598" data-state="not-ready" class=" topicref " data-id="id_2033916"><span class="title"><a href="c_Parts_WebhelpLandingPage.html">Parts</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033917-d46e84167-mi" data-tocid="id_2033917-d46e84167" data-state="not-ready" class=" topicref " data-id="id_2033917"><span class="title"><a href="c_Replacements_WebhelpLandingPage.html">Replacements</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033903-d46e121584-mi" data-tocid="id_2033903-d46e121584" data-state="not-ready" class=" topicref " data-id="id_2033903"><span class="title"><a href="c_OEMAndOtherManuals_WebhelpLandingPage.html">OEM and Other Manuals</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033904-d46e122724-mi" data-tocid="id_2033904-d46e122724" data-state="not-ready" class=" topicref " data-id="id_2033904"><span class="title"><a href="c_Coils_WebhelpLandingPage.html">Coils</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033918-d46e130720-mi" data-tocid="id_2033918-d46e130720" data-state="not-ready" class=" topicref " data-id="id_2033918"><span class="title"><a href="c_OptionalFeatures_WebhelpLandingPage.html">Optional Features</a></span></span></li></ul></nav>
+                
+                <!--whc:include_html href="${webhelp.fragment.after.top_menu}"/-->
+
+            </div>
+
+        </div>
+    </div>
+</header>
+        
+        
+        
+        <!-- US675: Modify the breadcrumbs heading on webpages so that it is always visible when users scroll down in webhelp -->
+        
+        <div class="row wh_tools " id="wh_tools_top">
+            <nav class="d-print-none navbar-expand-md" aria-label="Tools">
+                
+                <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+                
+                
+                <div class="wh_right_tools">
+                    <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                    <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                    <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                    <!-- External resource link -->
+                    
+                   <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="" class="Num wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page" class="oxy-icon oxy-icon-print"></button></div>
+                    
+                   <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                    <button type="button" data-target="#wh_publication_toc" id="wh_toc_button" data-toggle="collapse" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>  
+                </div>
+            </nav>
+            
+        </div>
+        <div class="container-fluid" id="wh_topic_container">
+            
+
+            <!--whc:include_html href="${webhelp.fragment.before.main.content.area}"/>
+           
+            <whc:include_html href="${webhelp.fragment.before.main.content.area.topic.page}"/-->
+
+
+            <div class="wh_content_area">
+                <!-- US616 - TOC toggle buttons -->
+                <div class="row" id="topic_body">
+                    <!-- US647: Add scrollbar to chapter level TOC in webhelp topics - changed paramater to hard-coded value.-->
+                    
+                    <div id="pub_toc_button">
+                        <button type="button" data-target="#wh_publication_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc"></button>
+                    </div>
+                    
+                    <!--  DE234:  Spacing irregularities with flexible TOCS in Webhelp 
+                    Moved related links out 2 divs, moved topic tocs into topic body-->
+                    <div id="wh_topic_body">
+                        
+                       
+                        <div id="body_grid"><!-- DE234:  Added Body grid to fix issue with related links-->
+                        <div class="Num wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1"><header class="contentHead">
+        <div class="topicMeta"><ul class="- topic/title title"><li> </li><li></li><li></li><li><span class="metalabel">Object ID: </span>00000018WIA30A1AE20GYZ</li><li><span class="metalabel">Topic ID: </span>id_13106501<span class="metalabel"> Version: </span>2.10</li><li><span class="metalabel">Date: </span>May 7, 2025, 11:47:22 AM</li></ul></div><h1 class="- topic/title title topictitle1" id="ariaid-title1">Troubleshooting the Heat Exchanger Cabinet (HEC)</h1></header>
+        <div class="- topic/body reference/refbody body refbody"><section class="- topic/section section">
+      <p class="- topic/p p" id="id_13106501__id_14914919" data-ofbid="id_13106501__id_14914919">This document describes the various problems and conditions
+for the heat exchanger cabinet (HEC) and the possible solutions for
+those problems and conditions.</p>
+      <div class="- topic/note note note note_note" id="id_13106501__id_14914920" data-ofbid="id_13106501__id_14914920"><span class="note__title">Note</span> 
+        <p class="- topic/p p" id="id_13106501__id_14914921" data-ofbid="id_13106501__id_14914921">For internal wiring and plumbing schematics, refer to <span class="- topic/ph ph">DOC1806874</span>, the <cite class="- topic/cite cite"><span class="- topic/ph ph">GE HealthCare DVMR Heat Exchanger Cabinet (HEC) and Liquid Cooling System (LCS) Manual (5161931)</span></cite>, which is available from the online documentation library.</p>
+      </div>
+      <figure class="- topic/fig fig fignone" id="id_13106501__SL15769572-1106599" data-ofbid="id_13106501__SL15769572-1106599"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">1. </span></span><span class="fig--title">HEC Type G6000EN</span></figcaption><img class="- topic/image image" id="id_13106501__id_14914923" src="15769564.jpg"/><div class="- topic/p p" id="id_13106501__id_14914924" data-ofbid="id_13106501__id_14914924">
+          <table class="- topic/table table" id="id_13106501__id_14914925" data-ofbid="id_13106501__id_14914925"><caption></caption><colgroup><col style="width:7.5%"/><col style="width:42.25%"/><col style="width:7.5%"/><col style="width:42.75%"/></colgroup><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914926">1</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914927">HEC catalog number G6000EN</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914928">3</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914929">Chilled air mixing valve</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914930">2</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914931">GC/PE mixing valve</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914932">4</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914933">No G-catalog label</td></tr></tbody>
+        </table>
+        </div></figure>
+      <figure class="- topic/fig fig fignone" id="id_13106501__SL15769577-1106599" data-ofbid="id_13106501__SL15769577-1106599"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">2. </span></span><span class="fig--title">HEC Type G6001EN</span></figcaption><img class="- topic/image image" id="id_13106501__id_14914934" src="15769563.jpg"/><div class="- topic/p p" id="id_13106501__id_14914935" data-ofbid="id_13106501__id_14914935">
+          <table class="- topic/table table" id="id_13106501__id_14914936" data-ofbid="id_13106501__id_14914936"><caption></caption><colgroup><col style="width:7.5%"/><col style="width:42.25%"/><col style="width:7.5%"/><col style="width:42.75%"/></colgroup><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914937">1</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914938">HEC catalog number G6001EN</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914939">3</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914940">Chilled air mixing valve</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914941">2</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914942">GC/PE mixing valve</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914943">4</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914944">Catalog label G6001EN</td></tr></tbody>
+        </table>
+        </div></figure>
+      <table role="presentation" border="1" class="+ topic/note hazard-d/hazardstatement note hazardstatement notice hazardstatement_notice ansi"><colgroup><col class="hazardstatement--logo-col"/><col class="hazardstatement--msg-col"/></colgroup><thead><tr><th colspan="2" class="hazardstatement--notice"><span>Notice</span></th></tr></thead><tbody><tr><td><svg xmlns="http://www.w3.org/2000/svg" class="hazardsymbol" version="1.1" height="4em" viewBox="0 0 600 525">
+   <metadata>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+         <cc:Work xmlns:cc="http://creativecommons.org/ns#" rdf:about="">
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"></dc:title>
+         </cc:Work>
+      </rdf:RDF>
+   </metadata>
+   <defs>
+      <path d="M 2.8117,-1.046 A 3,3 0 0 1 0.5,2.958 V 4.5119 A 10.5,10.5 0 0 1 2,25.3078 v 0.5583 A 15,15 0 0 0 14.7975,8.5433 15,15 0 0 0 23.4007,-11.201 l -0.4835,0.2792 A 10.5,10.5 0 0 1 4.1574,-1.8229 z m 3.4148,8.871 a 10,10 0 0 1 -12.453,0 9.5,9.5 0 0 0 -2.1756,2.7417 13.5,13.5 0 0 0 16.8042,0 A 10,10 0 0 0 6.2265,7.825 z" transform="matrix(10,0,0,-10,260,260)"></path>
+   </defs>
+   <path d="M 597.6,499.6 313.8,8 C 310.9,3 305.6,0 299.9,0 294.2,0 288.9,3.1 286,8 L 2.2,499.6 c -2.9,5 -2.9,11.1 0,16 2.9,5 8.2,8 13.9,8 h 567.6 c 5.7,0 11,-3.1 13.9,-8 2.9,-5 2.9,-11.1 0,-16 z"></path>
+   <polygon points="43.875,491.5 299.875,48.2 555.875,491.5 " transform="matrix(1,0,0,0.99591458,0.125,2.0332437)" style="fill:#f6bd16;fill-opacity:1;stroke:none;overflow:visible"></polygon>
+   <path d="m -384.00937,417.52725 a 38.151581,36.156727 0 1 1 -76.30316,0 38.151581,36.156727 0 1 1 76.30316,0 z" transform="matrix(0.99319888,0,0,1.0479962,719.28979,-2.9357862)" style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.62514842;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:0.4;stroke-dasharray:none;stroke-dashoffset:0"></path>
+   <path d="m 300,168.60074 c -20.64745,0 -37.26716,16.97292 -37.26716,38.05658 l 11.01897,133.31318 c 2.10449,17.24457 3.90184,27.0149 11.01898,31.60966 4.64712,2.1172 9.79468,3.32214 15.22921,3.32214 5.40832,0 10.53383,-1.1913 15.16343,-3.28925 7.15697,-4.58178 8.97556,-14.35941 11.08476,-31.64255 l 11.01898,-133.31318 c 0,-21.08366 -16.61973,-38.05658 -37.26717,-38.05658 z" style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.88582677;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"></path>
+</svg></td><td><div class="+ topic/ul hazard-d/messagepanel ul messagepanel"><div class="+ topic/li hazard-d/typeofhazard li typeofhazard">
+          </div><div class="+ topic/li hazard-d/consequence li consequence">
+          </div><div class="+ topic/li hazard-d/howtoavoid li howtoavoid">Avoid leaks by checking that the bleeder valves on the front of each pump in the bottom of the HEC are fully closed before powering on the pumps for the first time.</div></div></td></tr></tbody></table>
+      <table class="- topic/table table" id="id_13106501__SL3287539-1106599" data-ofbid="id_13106501__SL3287539-1106599"><caption class="- topic/title title tablecap" caption-side="top" is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 1</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">HEC Troubleshooting</span></caption><colgroup><col style="width:1.99in"/><col style="width:2.40in"/><col style="width:25%"/><col style="width:25%"/><col style="width:25%"/><col style="width:25%"/></colgroup><thead class="- topic/thead thead"><tr class="- topic/row"><th class="- topic/entry entry colsep-0 rowsep-0 valign-top" id="id_13106501__id_14914951">
+                For this condition:</th><th class="- topic/entry entry colsep-0 rowsep-0 valign-top" id="id_13106501__id_14914952" colspan="5">
+                Follow these steps:</th></tr></thead><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914953" headers="id_13106501__id_14914951">Difficulty navigating or interpreting HEC screens.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914954" headers="id_13106501__id_14914952" colspan="5">Section 5.3 of <a class="- topic/xref xref" href="c_Heat-Exchanger-Theory_5394739.html">Heat Exchanger Theory</a> describes how to navigate
+the screens. Procedures for setting parameters for the HEC are described
+in subsequent sections of that document.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914955" headers="id_13106501__id_14914951">The HEC display shows zero cryogen compressor coolant flow,
+despite customer coolant flowing through the HEC and the cryocompressor
+receiving adequate flow.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914956" headers="id_13106501__id_14914952" colspan="5">Perform a TPS reset. If the
+cryogen compressor flow continues to show zero, the flowmeter in the
+HEC may be clogged or defective. It can be visually inspected by swinging
+the power box out of the way (see applicable steps in Power Box replacement
+procedure).</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914957" headers="id_13106501__id_14914951">The HEC display shows dashes instead of values for gradient
+or power electronics coolant flow.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914958" headers="id_13106501__id_14914952" colspan="5">Check the red VFD display
+of the pump on the circuit in question. Make sure the display is not
+dark and that the circuit breaker it is not turned off. <p class="- topic/p p" id="id_13106501__id_14914959" data-ofbid="id_13106501__id_14914959">If the
+VFD display is turned on, the issue is probably with the PE or GC
+pressure sensors.</p><ul class="- topic/ul ul" id="id_13106501__id_14914960" data-ofbid="id_13106501__id_14914960"><li class="- topic/li li" id="id_13106501__SL3287540-1106599" data-ofbid="id_13106501__SL3287540-1106599"><p class="- topic/p p" id="id_13106501__id_14914961" data-ofbid="id_13106501__id_14914961">If the HEC display shows either the
+gradient or power electronics coolant flow value, the sensor for the
+value shown is functioning. Swap the PE (J4) and GC (J3) pressure
+sensors at the signal box, and see if the values change.</p></li><li class="- topic/li li" id="id_13106501__SL3287541-1106599" data-ofbid="id_13106501__SL3287541-1106599"><p class="- topic/p p" id="id_13106501__id_14914962" data-ofbid="id_13106501__id_14914962">The pressure sensors are FRUs, and
+are listed in the FRU manual.</p></li><li class="- topic/li li" id="id_13106501__SL3287542-1106599" data-ofbid="id_13106501__SL3287542-1106599"><p class="- topic/p p" id="id_13106501__id_14914963" data-ofbid="id_13106501__id_14914963">Check the wire crimps at the connectors
+of any suspected faulty sensors.</p></li></ul></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" headers="id_13106501__id_14914951">The pump stops running with the error message <samp class="+ topic/ph sw-d/systemoutput ph systemoutput sysout">HEC detected the coolant in the (power electronics or gradient coil) reservoir is at the alarm level.</samp></td><td class="- topic/entry entry colsep-0 rowsep-0" headers="id_13106501__id_14914952" colspan="5">
+                <div class="- topic/p p" id="id_13106501__p_phx_1jk_1fc" data-ofbid="id_13106501__p_phx_1jk_1fc">The condition may be caused by any of the following issues: <ul class="- topic/ul ul" id="id_13106501__ul_qhx_1jk_1fc" data-ofbid="id_13106501__ul_qhx_1jk_1fc"><li class="- topic/li li">The coolant in the corresponding tank reservoir is too low and it is at the alarm level.</li><li class="- topic/li li">The tank reservoir level alarm switch is faulty only when the corresponding tank reservoir level warning is on (the tank reservoir level warning switch is open).</li><li class="- topic/li li">The temperature of the pump exceeded 70°C.</li><li class="- topic/li li">The signal box is faulty.</li></ul></div>
+                <div class="- topic/p p">To troubleshoot the issue, follow these steps in the order shown in <a class="- topic/xref xref" href="#id_13106501__fig_rhx_1jk_1fc"><span>Troubleshooting steps</span></a> until the condition is resolved:<figure class="- topic/fig fig fignone" id="id_13106501__fig_rhx_1jk_1fc" data-ofbid="id_13106501__fig_rhx_1jk_1fc"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">3. </span></span><span class="fig--title">Troubleshooting steps</span></figcaption><img class="- topic/image image" src="PumpTroubleshooting_Flowchart_s.png"/></figure><ol class="- topic/ol ol"><li class="- topic/li li" id="id_13106501__li_lcs_53k_1fc" data-ofbid="id_13106501__li_lcs_53k_1fc">Check the coolant level in the corresponding tank reservoir. See <a class="- topic/xref xref" href="#id_13106501__fig_mcs_53k_1fc"><span>Checking the coolant level</span></a>.<figure class="- topic/fig fig fignone" id="id_13106501__fig_mcs_53k_1fc" data-ofbid="id_13106501__fig_mcs_53k_1fc"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">4. </span></span><span class="fig--title">Checking the coolant level</span></figcaption><img class="- topic/image image" src="CoolantLevelCheck_TankReservoir_s.png"/><table><colgroup><col style="width:50%"/><col style="width:50%"/></colgroup><tbody class="- topic/simpletable simpletable"><tr class="- topic/strow strow"><td class="- topic/stentry stentry">1</td><td class="- topic/stentry stentry">Coolant level</td></tr><tr class="- topic/strow strow"><td class="- topic/stentry stentry">2</td><td class="- topic/stentry stentry">Warning switch</td></tr><tr class="- topic/strow strow"><td class="- topic/stentry stentry">3</td><td class="- topic/stentry stentry">4 inches</td></tr><tr class="- topic/strow strow"><td class="- topic/stentry stentry">4</td><td class="- topic/stentry stentry">Alarm switch</td></tr></tbody></table></figure><ul class="- topic/ul ul" id="id_13106501__ul_ncs_53k_1fc" data-ofbid="id_13106501__ul_ncs_53k_1fc"><li class="- topic/li li">If the coolant level is at least 4 inches above the alarm switch, move to the next check (step <a class="- topic/xref xref" href="#id_13106501__li_hnh_53k_1fc">2</a>).</li><li class="- topic/li li">If the coolant level is low, add coolant to the reservoir until it is more than 6 inches above the alarm switch. See <a class="- topic/xref xref" href="https://mrse-web-prd-1.apps.ge-healthcare.net/mrArchitect_5690003-8ENr10_DRAFT/root/t_HEC-Hose-Inspection-Coolant-Fill-and-Coolant-Leak-Check_15699263.html" target="_blank">HEC Coolant Fill and Coolant Leak Check</a>. </li><li class="- topic/li li">Do a TPS reset. See <a class="- topic/xref xref" href="t_DoingTPSReset_Parent.html" title="This document provides instructions for doing a TPS reset and examples of the results output.">Doing a TPS reset</a>. The system should stop reporting the warning when the increase in coolant pressure causes the switches to engage.</li></ul></li><li class="- topic/li li" id="id_13106501__li_hnh_53k_1fc" data-ofbid="id_13106501__li_hnh_53k_1fc">Check the continuity of the corresponding tank reservoir level switch. See <a class="- topic/xref xref" href="#id_13106501__fig_inh_53k_1fc"><span>Checking the continuity of the tank reservoir level switch</span></a>.<figure class="- topic/fig fig fignone" id="id_13106501__fig_inh_53k_1fc" data-ofbid="id_13106501__fig_inh_53k_1fc"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">5. </span></span><span class="fig--title">Checking the continuity of the tank reservoir level switch</span></figcaption><img class="- topic/image image" src="CheckingContinuity_TankReservoirLevelSwitch_s.png"/></figure><ul class="- topic/ul ul" id="id_13106501__ul_jnh_53k_1fc" data-ofbid="id_13106501__ul_jnh_53k_1fc"><li class="- topic/li li">If it is closed (approximately 0 ohm), move on to the next check (step <a class="- topic/xref xref" href="#id_13106501__li_sdb_t3k_1fc">3</a>).</li><li class="- topic/li li">If it is open, replace the tank reservoir level alarm switch. If a new switch is installed, the switch calibration is needed. After the switch calibration, do a TPS reset. If the reservoir warning switch is closed (no warning), no TPS reset is required.</li></ul></li><li class="- topic/li li" id="id_13106501__li_sdb_t3k_1fc" data-ofbid="id_13106501__li_sdb_t3k_1fc">Check the pump.<div class="- topic/note note note note_note" id="id_13106501__note_tdb_t3k_1fc" data-ofbid="id_13106501__note_tdb_t3k_1fc"><span class="note__title">Note</span> This step is required only for pumps that have an external thermal switch. See <a class="- topic/xref xref" href="#id_13106501__fig_udb_t3k_1fc"><span>HEC pump with external thermal switch</span></a>.</div><figure class="- topic/fig fig fignone" id="id_13106501__fig_udb_t3k_1fc" data-ofbid="id_13106501__fig_udb_t3k_1fc"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">6. </span></span><span class="fig--title">HEC pump with external thermal switch</span></figcaption><img class="- topic/image image" src="HEC_PumpWithExternalThermalSwitch_s.png"/></figure><ul class="- topic/ul ul" id="id_13106501__ul_vdb_t3k_1fc" data-ofbid="id_13106501__ul_vdb_t3k_1fc"><li class="- topic/li li">If steps <a class="- topic/xref xref" href="#id_13106501__li_lcs_53k_1fc">1</a> and <a class="- topic/xref xref" href="#id_13106501__li_hnh_53k_1fc">2</a> do not resolve the condition, the issue may be a thermal switch cutoff due to a high pump temperature. Do a TPS reset, then monitor the pump to see if it starts to run.<div class="- topic/note note note note_note" id="id_13106501__note_wdb_t3k_1fc" data-ofbid="id_13106501__note_wdb_t3k_1fc"><span class="note__title">Note</span> It may take up to 2 hours for the pump temperature to cool down and reach the reset temperature (approximately 65°C). The TPS reset will not work until the pump reaches the reset temperature.</div></li><li class="- topic/li li">If TPS reset does not start the pump even after the pump has cooled down, move to the next check (step <a class="- topic/xref xref" href="#id_13106501__li_xr2_v3k_1fc">4</a>).</li><li class="- topic/li li">If there is a second thermal switch cutoff due to the same reason, replace the pump with a new FRU. After the pump replacement, do a TPS reset.</li></ul></li><li class="- topic/li li" id="id_13106501__li_xr2_v3k_1fc" data-ofbid="id_13106501__li_xr2_v3k_1fc">Replace the signal box.<div class="- topic/note note note note_note" id="id_13106501__note_yr2_v3k_1fc" data-ofbid="id_13106501__note_yr2_v3k_1fc"><span class="note__title">Note</span> It is recommended to swap the PE and GC tank level sensor input cables at the signal box to confirm whether the signal box is causing the issue.</div><ul class="- topic/ul ul" id="id_13106501__ul_zr2_v3k_1fc" data-ofbid="id_13106501__ul_zr2_v3k_1fc"><li class="- topic/li li">Replace the signal box. Do a TPS reset.</li></ul></li></ol></div>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914969" headers="id_13106501__id_14914951">The system displays messages saying coolant resistivity is
+too low.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914970" headers="id_13106501__id_14914952" colspan="5">The system reports a warning
+when resistivity falls below 3.5 kOhm-cm and inhibits scanning if
+below 2.5 kOhm-cm. <p class="- topic/p p" id="id_13106501__id_14914971" data-ofbid="id_13106501__id_14914971">Deionize the coolant to restore the proper
+resistivity. See <a class="- topic/xref xref" href="c_Heat-Exchange-Cabinet-Coolant-Deionization_14626324.html">Heat Exchange Cabinet Coolant Deionization</a>. </p><div class="- topic/note note note note_note" id="id_13106501__id_14914972" data-ofbid="id_13106501__id_14914972"><span class="note__title">Note</span> <p class="- topic/p p" id="id_13106501__id_14914973" data-ofbid="id_13106501__id_14914973">Generally, new systems will register
+around 5-15 kOhm-cm. However, it is possible for a system to have
+and display a coolant resistivity between 0.01 kOhm-cm and 1000 kOhm-cm,
+so it is possible that a new system will have a resistivity lower
+than 2.5 kOhm-cm and will not be able to scan. The solution is to
+deionize the coolant.</p></div></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914974" headers="id_13106501__id_14914951">Performing deionization process, but resistivity value reported
+from HEC LCD is slowly going down or not changing. </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914975" headers="id_13106501__id_14914952" colspan="5">
+                <table role="presentation" border="1" class="+ topic/note hazard-d/hazardstatement note hazardstatement notice hazardstatement_notice ansi"><colgroup><col class="hazardstatement--logo-col"/><col class="hazardstatement--msg-col"/></colgroup><thead><tr><th colspan="2" class="hazardstatement--notice"><span>Notice</span></th></tr></thead><tbody><tr><td><svg xmlns="http://www.w3.org/2000/svg" xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" class="hazardsymbol" version="1.1" height="4em" viewBox="0 0 600 525">
+   <metadata>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+         <cc:Work xmlns:cc="http://creativecommons.org/ns#" rdf:about="">
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"></dc:title>
+         </cc:Work>
+      </rdf:RDF>
+   </metadata>
+   <defs>
+      <path d="M 2.8117,-1.046 A 3,3 0 0 1 0.5,2.958 V 4.5119 A 10.5,10.5 0 0 1 2,25.3078 v 0.5583 A 15,15 0 0 0 14.7975,8.5433 15,15 0 0 0 23.4007,-11.201 l -0.4835,0.2792 A 10.5,10.5 0 0 1 4.1574,-1.8229 z m 3.4148,8.871 a 10,10 0 0 1 -12.453,0 9.5,9.5 0 0 0 -2.1756,2.7417 13.5,13.5 0 0 0 16.8042,0 A 10,10 0 0 0 6.2265,7.825 z" transform="matrix(10,0,0,-10,260,260)"></path>
+   </defs>
+   <path d="M 597.6,499.6 313.8,8 C 310.9,3 305.6,0 299.9,0 294.2,0 288.9,3.1 286,8 L 2.2,499.6 c -2.9,5 -2.9,11.1 0,16 2.9,5 8.2,8 13.9,8 h 567.6 c 5.7,0 11,-3.1 13.9,-8 2.9,-5 2.9,-11.1 0,-16 z"></path>
+   <polygon points="43.875,491.5 299.875,48.2 555.875,491.5 " transform="matrix(1,0,0,0.99591458,0.125,2.0332437)" style="fill:#f6bd16;fill-opacity:1;stroke:none;overflow:visible"></polygon>
+   <path d="m -384.00937,417.52725 a 38.151581,36.156727 0 1 1 -76.30316,0 38.151581,36.156727 0 1 1 76.30316,0 z" transform="matrix(0.99319888,0,0,1.0479962,719.28979,-2.9357862)" style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.62514842;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:0.4;stroke-dasharray:none;stroke-dashoffset:0"></path>
+   <path d="m 300,168.60074 c -20.64745,0 -37.26716,16.97292 -37.26716,38.05658 l 11.01897,133.31318 c 2.10449,17.24457 3.90184,27.0149 11.01898,31.60966 4.64712,2.1172 9.79468,3.32214 15.22921,3.32214 5.40832,0 10.53383,-1.1913 15.16343,-3.28925 7.15697,-4.58178 8.97556,-14.35941 11.08476,-31.64255 l 11.01898,-133.31318 c 0,-21.08366 -16.61973,-38.05658 -37.26717,-38.05658 z" style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.88582677;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"></path>
+</svg></td><td><div class="+ topic/ul hazard-d/messagepanel ul messagepanel"><div class="+ topic/li hazard-d/typeofhazard li typeofhazard">
+                    </div><div class="+ topic/li hazard-d/consequence li consequence">
+                    </div><div class="+ topic/li hazard-d/howtoavoid li howtoavoid">Stop the process! Disconnect the inlet line before the tank overflows.</div></div></td></tr></tbody></table>
+                <p class="- topic/p p" id="id_13106501__id_14914982" data-ofbid="id_13106501__id_14914982">There are two possibilities:</p>
+                <ol class="- topic/ol ol" id="id_13106501__id_14914983" data-ofbid="id_13106501__id_14914983"><li class="- topic/li li" id="id_13106501__SL15295003-1106599" data-ofbid="id_13106501__SL15295003-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14914984" data-ofbid="id_13106501__id_14914984">The inlet line has been incorrectly
+connected to the facility coolant discharge and facility coolant is
+backflushing into the GC coolant tank. </p>
+                    <p class="- topic/p p" id="id_13106501__id_14914985" data-ofbid="id_13106501__id_14914985">Review <a class="- topic/xref xref" href="c_Heat-Exchange-Cabinet-Coolant-Deionization_14626324.html">Heat Exchange Cabinet Coolant Deionization</a>, and after the configuration has been corrected, continue
+with the deionization process and confirm during the process that
+the GC coolant resistivity increases.</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL15295004-1106599" data-ofbid="id_13106501__SL15295004-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14914986" data-ofbid="id_13106501__id_14914986">Coolant may not be flowing properly
+through the deionization kit.</p>
+                    <ul class="- topic/ul ul" id="id_13106501__id_14914987" data-ofbid="id_13106501__id_14914987"><li class="- topic/li li" id="id_13106501__SL15295005-1106599" data-ofbid="id_13106501__SL15295005-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14914988" data-ofbid="id_13106501__id_14914988">Check that the pump is primed and
+that coolant is flowing through the kit.</p>
+                      </li><li class="- topic/li li" id="id_13106501__SL15295006-1106599" data-ofbid="id_13106501__SL15295006-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14914989" data-ofbid="id_13106501__id_14914989">Check that the kit connection at the
+reservoir quick disconnect is not constricting flow. Return any kits
+with poor flow for repair.</p>
+                      </li><li class="- topic/li li" id="id_13106501__SL15295007-1106599" data-ofbid="id_13106501__SL15295007-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14914990" data-ofbid="id_13106501__id_14914990">Confirm that new filters are used
+in the DI kit. </p>
+                      </li></ul>
+                  </li></ol>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914991" headers="id_13106501__id_14914951">The system displays pressure or RF air temperature warning
+errors.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14914992" headers="id_13106501__id_14914952" colspan="5">Any deviations from specifications for pressure or cooling are stored in the system error log. <p class="- topic/p p" id="id_13106501__id_14914996" data-ofbid="id_13106501__id_14914996">See the Facility Coolant Requirements section of Direction 5670003 <cite class="- topic/cite cite">Discovery MR750w 3.0T Preinstallation Manual</cite> for the HEC pressure and cooling requirements. </p><p class="- topic/p p" id="id_13106501__id_14914997" data-ofbid="id_13106501__id_14914997">If the system returns error 2268904 or 2268905:</p><ul class="- topic/ul ul" id="id_13106501__id_14914998" data-ofbid="id_13106501__id_14914998"><li class="- topic/li li" id="id_13106501__SL4201348-1106599" data-ofbid="id_13106501__SL4201348-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915000" data-ofbid="id_13106501__id_14915000">This error is displayed if the temperature exceeds the upper temperature limit or falls below the lower temperature limit. These are ±2 °C from a set point of 18 °C.</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL3287544-1106599" data-ofbid="id_13106501__SL3287544-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915001" data-ofbid="id_13106501__id_14915001">See the HEC block diagram. The temperature sensor that is detecting this error is located in the top manifold of the chilled air HEC blower assembly. This sensor rarely fails.</p>
+                    
+                  </li><li class="- topic/li li" id="id_13106501__SL3287545-1106599" data-ofbid="id_13106501__SL3287545-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915002" data-ofbid="id_13106501__id_14915002">This error occurs commonly if the facility coolant cooling capacity is inadequate. Check the facility parameters on the HEC to make sure they are within specification. Facility coolant that is too cold is almost as problematic as coolant that is too warm. The coolant temperature MUST remain within the required upper and lower window requirements as stated in the Preinstallation Manual for the system.</p>
+                    <div class="- topic/note note note note_note" id="id_13106501__id_14915003" data-ofbid="id_13106501__id_14915003"><span class="note__title">Note</span> 
+                      <p class="- topic/p p" id="id_13106501__id_14915004" data-ofbid="id_13106501__id_14915004">See <a class="- topic/xref xref" href="c_Heat-Exchanger-Theory_5394739.html">Heat Exchanger Theory</a> for more information about navigating the HEC screens.</p>
+                    </div>
+                    <ol class="- topic/ol ol" id="id_13106501__id_14915005" data-ofbid="id_13106501__id_14915005"><li class="- topic/li li" id="id_13106501__SL3287546-1106599" data-ofbid="id_13106501__SL3287546-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915006" data-ofbid="id_13106501__id_14915006">From the main menu of the HEC LCD screen, select <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Monitor &gt; Facility</span>.</p>
+                      </li><li class="- topic/li li" id="id_13106501__SL3287547-1106599" data-ofbid="id_13106501__SL3287547-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915007" data-ofbid="id_13106501__id_14915007">Record the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Facility Temperature</span>, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Inlet Pressure</span>, and <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Differential Pressure</span> values.</p>
+                      </li><li class="- topic/li li" id="id_13106501__SL3287548-1106599" data-ofbid="id_13106501__SL3287548-1106599">
+                        
+                        
+                        
+                        <p class="- topic/p p" id="id_13106501__id_14915011" data-ofbid="id_13106501__id_14915011">See the Facility Coolant Requirements section of Direction 5670003 <cite class="- topic/cite cite">Discovery MR750w 3.0T Preinstallation Manual</cite> for the HEC pressure and cooling requirements. </p>
+                      </li><li class="- topic/li li" id="id_13106501__SL3287549-1106599" data-ofbid="id_13106501__SL3287549-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915012" data-ofbid="id_13106501__id_14915012">If the facility parameters do not meet specifications, have the customer fix the coolant flow or temperature issue. (The inline filter may require replacement.)</p>
+                      </li><li class="- topic/li li" id="id_13106501__SL3287585-1106599" data-ofbid="id_13106501__SL3287585-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915013" data-ofbid="id_13106501__id_14915013">If the facility parameters meet specifications, check the mixing valve values:</p>
+                        <ol class="- topic/ol ol" type="a" id="id_13106501__id_14915014" data-ofbid="id_13106501__id_14915014"><li class="- topic/li li" id="id_13106501__SL3287586-1106599" data-ofbid="id_13106501__SL3287586-1106599">
+                            <p class="- topic/p p" id="id_13106501__id_14915015" data-ofbid="id_13106501__id_14915015">From the main screen of the HEC LCD display, select <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Diags &gt; PID Monitor</span>.</p>
+                          </li><li class="- topic/li li" id="id_13106501__SL3287587-1106599" data-ofbid="id_13106501__SL3287587-1106599">
+                            <p class="- topic/p p" id="id_13106501__id_14915016" data-ofbid="id_13106501__id_14915016">Record the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Blower Mixing Valve Percent Open</span> value.</p>
+                          </li><li class="- topic/li li" id="id_13106501__SL3287588-1106599" data-ofbid="id_13106501__SL3287588-1106599">
+                            <p class="- topic/p p" id="id_13106501__id_14915017" data-ofbid="id_13106501__id_14915017">Typically, this valve is at around 50% open. If the value is significantly below 50%, confirm that facility coolant temperature is not too low. If the value is significantly above 50%, check that facility coolant temperature is not too high and also check for adequate blower air flow. It is often necessary to seek assistance from the HVAC team that maintains the chiller to get facility coolant temperature under control. Call the OLC before ordering any parts for this problem.</p>
+                          </li></ol>
+                      </li><li class="- topic/li li" id="id_13106501__SL3287589-1106599" data-ofbid="id_13106501__SL3287589-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915018" data-ofbid="id_13106501__id_14915018">If the facility parameters are within specification and the mixing valve is operating normally:</p>
+                        <ol class="- topic/ol ol" type="a" id="id_13106501__id_14915019" data-ofbid="id_13106501__id_14915019"><li class="- topic/li li" id="id_13106501__SL3287590-1106599" data-ofbid="id_13106501__SL3287590-1106599">
+                            <p class="- topic/p p" id="id_13106501__id_14915020" data-ofbid="id_13106501__id_14915020">Check to see whether the error condition always corrects within 1 to 3 seconds, or whether a TPS reset is always needed to correct the error condition.</p>
+                            <p class="- topic/p p" id="id_13106501__id_14915021" data-ofbid="id_13106501__id_14915021">If either of these conditions is true, contact the OLC and request that the <samp class="+ topic/ph sw-d/systemoutput ph systemoutput sysout">cooling.xml</samp> file be examined for spiking.</p>
+                          </li><li class="- topic/li li" id="id_13106501__SL3287591-1106599" data-ofbid="id_13106501__SL3287591-1106599">
+                            <p class="- topic/p p" id="id_13106501__id_14915022" data-ofbid="id_13106501__id_14915022">Check Guided Install and make sure the correct HEC type is selected. (See the Guided Install screen for help in identifying the HEC type, or refer to <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Customer-Supplied Coolant</span>, the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Temperature</span> section, in <a class="- topic/xref xref" href="c_Heat-Exchanger-Theory_5394739.html">Heat Exchanger Theory</a>. If the wrong HEC type was selected, make the proper selection and perform a TPS reset.</p>
+                            
+                          </li></ol>
+                      </li></ol>
+                  </li></ul><p class="- topic/p p" id="id_13106501__id_14915024" data-ofbid="id_13106501__id_14915024">Refer to the Lytron vendor manual (GE PN 5161931) for vendor specifications.</p></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-1" id="id_13106501__id_14915025" headers="id_13106501__id_14914951" rowspan="4">Suspected bad pressure sensor.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915026" headers="id_13106501__id_14914952" colspan="5">It is important to determine
+whether the sensor or the signal box (PLC) is actually faulty. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915027" headers="id_13106501__id_14914952" colspan="5">If you are testing an HEC
+facility coolant inlet or outlet sensor:<ol class="- topic/ol ol" id="id_13106501__id_14915028" data-ofbid="id_13106501__id_14915028"><li class="- topic/li li" id="id_13106501__SL3287592-1106599" data-ofbid="id_13106501__SL3287592-1106599"><p class="- topic/p p" id="id_13106501__id_14915029" data-ofbid="id_13106501__id_14915029">Note the facility inlet and outlet
+pressure readings on the HEC LCD screen.</p></li><li class="- topic/li li" id="id_13106501__SL3287593-1106599" data-ofbid="id_13106501__SL3287593-1106599"><p class="- topic/p p" id="id_13106501__id_14915030" data-ofbid="id_13106501__id_14915030">Swap J5 and J6 on the signal box and
+confirm that the facility inlet and outlet pressure readings are swapped
+on the HEC LCD screen. If they are swapped, the sensor is faulty.</p></li></ol></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915031" headers="id_13106501__id_14914952" colspan="5">If you are testing a GC pressure
+sensor:<ol class="- topic/ol ol" id="id_13106501__id_14915032" data-ofbid="id_13106501__id_14915032"><li class="- topic/li li" id="id_13106501__SL3287594-1106599" data-ofbid="id_13106501__SL3287594-1106599"><p class="- topic/p p" id="id_13106501__id_14915033" data-ofbid="id_13106501__id_14915033">Note the GC inlet pressure reading
+on the HEC LCD screen.</p></li><li class="- topic/li li" id="id_13106501__SL3287595-1106599" data-ofbid="id_13106501__SL3287595-1106599"><p class="- topic/p p" id="id_13106501__id_14915034" data-ofbid="id_13106501__id_14915034">Swap J3 and J6 on the signal box and
+confirm that the same pressure reading for <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Facility Inlet
+Pressure</span> on the HEC LCD screen.</p></li></ol></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915035" headers="id_13106501__id_14914952" colspan="5">If you are testing a PE pressure
+sensor:<ol class="- topic/ol ol" id="id_13106501__id_14915036" data-ofbid="id_13106501__id_14915036"><li class="- topic/li li" id="id_13106501__SL3287596-1106599" data-ofbid="id_13106501__SL3287596-1106599"><p class="- topic/p p" id="id_13106501__id_14915037" data-ofbid="id_13106501__id_14915037">Note the PE inlet pressure reading
+on the HEC LCD screen.</p></li><li class="- topic/li li" id="id_13106501__SL3287597-1106599" data-ofbid="id_13106501__SL3287597-1106599"><p class="- topic/p p" id="id_13106501__id_14915038" data-ofbid="id_13106501__id_14915038">Swap J4 and J6 and confirm the same
+pressure reading for <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Facility Inlet Pressure</span> on
+the HEC LCD screen.</p><div class="- topic/note note note note_note" id="id_13106501__id_14915039" data-ofbid="id_13106501__id_14915039"><span class="note__title">Note</span> <p class="- topic/p p" id="id_13106501__id_14915040" data-ofbid="id_13106501__id_14915040">Alternatively, you can test GC and PE pressure sensors
+by swapping J4 with J5 (<span class="+ topic/ph ui-d/uicontrol ph uicontrol">Facility Outlet Pressure</span>) instead of swapping J4 and J6.</p></div></li></ol></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915041" headers="id_13106501__id_14914951" rowspan="6">One or both of these errors appear repeatedly
+in the error log, but scanning is not inhibited:<p class="- topic/p p" id="id_13106501__id_14915042" data-ofbid="id_13106501__id_14915042">Heat Exchanger
+Cabinet (HEC) detected the gradient coil coolant flow is too low.
+Verify that the pump is turned on, and all inline valves are open. </p><p class="- topic/p p" id="id_13106501__id_14915043" data-ofbid="id_13106501__id_14915043">Heat Exchanger Cabinet (HEC) detected the power electronics
+coolant flow is too low. Verify that the power electronics pump is
+turned on, and all inline valves are open.</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915044" headers="id_13106501__id_14914952" colspan="5">
+                <ul class="- topic/ul ul" id="id_13106501__id_14915045" data-ofbid="id_13106501__id_14915045"><li class="- topic/li li" id="id_13106501__SL4492453-1106599" data-ofbid="id_13106501__SL4492453-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915046" data-ofbid="id_13106501__id_14915046">The HEC may have pumps from different
+manufacturers (Price or Ebara). Confirm the pump type is exactly matched
+with the correct VFD chip. </p>
+                    <p class="- topic/p p" id="id_13106501__id_14915047" data-ofbid="id_13106501__id_14915047">An incorrectly matched pump and VFD chip results in either high
+pressure or low flows, risking equipment damage and/or system errors.</p>
+                    <p class="- topic/p p" id="id_13106501__id_14915048" data-ofbid="id_13106501__id_14915048">
+                      <img class="- topic/image image" id="id_13106501__id_14915049" src="4492501.jpg"/>
+                    </p>
+                    <p class="- topic/p p" id="id_13106501__id_14915050" data-ofbid="id_13106501__id_14915050">Ebara pumps have a round face; Price pumps have an irregular
+face. Do <span class="+ topic/ph ui-d/uicontrol ph uicontrol">not</span> rely on the color of the suction
+hose for identification. (Ebara pumps may have blue or white suction
+hoses.)</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL4463318-1106599" data-ofbid="id_13106501__SL4463318-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915051" data-ofbid="id_13106501__id_14915051">Confirm the pump speeds. For the speeds
+for each combination of GC/PE pump and RF amplifier, please see below.</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL15283008-1106599" data-ofbid="id_13106501__SL15283008-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915052" data-ofbid="id_13106501__id_14915052">The Eaton VFD requires a jumper wire
+between terminal 8 and 16 to set the correct speed for the Ebara pump.</p>
+                  </li></ul>
+                <div class="- topic/note note note note_note" id="id_13106501__id_14915053" data-ofbid="id_13106501__id_14915053"><span class="note__title">Note</span> 
+                  <p class="- topic/p p" id="id_13106501__id_14915054" data-ofbid="id_13106501__id_14915054"> A jumper wire is not used with the Price
+pump. </p>
+                </div>
+                <div class="- topic/note note note note_note" id="id_13106501__id_14915055" data-ofbid="id_13106501__id_14915055"><span class="note__title">Note</span> 
+                  <p class="- topic/p p" id="id_13106501__id_14915056" data-ofbid="id_13106501__id_14915056">These speeds must be verified with the HEC in full-power
+mode (scan-ready). If you are unsure if the HEC is in full-power mode,
+prescribe an exam on the MR system to ensure the pumps are ramped
+to full speed.</p>
+                </div>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_13106501__id_14915057" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915058" data-ofbid="id_13106501__id_14915058">
+                  <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Pump type (identify as described above)</span>
+                </p>
+              </td><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_13106501__id_14915059" headers="id_13106501__id_14914952" colspan="2">
+                <p class="- topic/p p" id="id_13106501__id_14915060" data-ofbid="id_13106501__id_14915060">
+                  <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Ebara</span>
+                </p>
+              </td><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_13106501__id_14915061" headers="id_13106501__id_14914952" colspan="2">
+                <p class="- topic/p p" id="id_13106501__id_14915062" data-ofbid="id_13106501__id_14915062">
+                  <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Price</span>
+                </p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915063" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915064" data-ofbid="id_13106501__id_14915064">RF amplifier type in PGR cabinet. Identify by presence
+of red and blue cooling hoses hooked to front of RF amplifier. Hoses
+are not present on air cooled RF amplifiers.</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915065" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915066" data-ofbid="id_13106501__id_14915066">Liquid</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915067" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915068" data-ofbid="id_13106501__id_14915068">Air</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915069" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915070" data-ofbid="id_13106501__id_14915070">Liquid</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915071" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915072" data-ofbid="id_13106501__id_14915072">Air</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915073" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915074" data-ofbid="id_13106501__id_14915074">Displayed value on middle VFD (VFD PPMP)</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915075" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915076" data-ofbid="id_13106501__id_14915076">50 ±1</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915077" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915078" data-ofbid="id_13106501__id_14915078">43 ±1</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915079" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915080" data-ofbid="id_13106501__id_14915080">61 ±1</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915081" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915082" data-ofbid="id_13106501__id_14915082">53 ±1</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915083" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915084" data-ofbid="id_13106501__id_14915084">Displayed value on left VFD (VFD GPMP)</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915085" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915086" data-ofbid="id_13106501__id_14915086">50 ±1</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915087" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915088" data-ofbid="id_13106501__id_14915088">50 ±1</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915089" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915090" data-ofbid="id_13106501__id_14915090">61 ±1</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915091" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915092" data-ofbid="id_13106501__id_14915092">61 ±1</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915093" headers="id_13106501__id_14914952" colspan="5">
+                
+                <p class="- topic/p p" id="id_13106501__id_14915095" data-ofbid="id_13106501__id_14915095">Verify that PE pressure is 4.2 to 4.8
+bar. Verify that GC pressure is 5.2 to 5.3 bar.</p>
+                <p class="- topic/p p" id="id_13106501__id_14915096" data-ofbid="id_13106501__id_14915096">If the
+pressure is outside the stated limits, replace the pressure sensor.</p>
+                <p class="- topic/p p" id="id_13106501__id_14915097" data-ofbid="id_13106501__id_14915097">Do not change any adjustable valve positions for less than
+maximum flow.</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915098" headers="id_13106501__id_14914951" rowspan="6">One or both of these errors appear repeatedly
+in the error log, but scanning is not inhibited.<p class="- topic/p p" id="id_13106501__id_14915099" data-ofbid="id_13106501__id_14915099">Heat Exchanger
+Cabinet (HEC) detected the gradient coil coolant flow is too high.</p><p class="- topic/p p" id="id_13106501__id_14915100" data-ofbid="id_13106501__id_14915100">Heat Exchanger Cabinet (HEC) detected the power electronics
+coolant flow is too high. Verify that the power electronics pump is
+turned on, and all inline valves are open.</p></td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915101" headers="id_13106501__id_14914952" colspan="5">
+                <ul class="- topic/ul ul" id="id_13106501__id_14915102" data-ofbid="id_13106501__id_14915102"><li class="- topic/li li" id="id_13106501__SL4492454-1106599" data-ofbid="id_13106501__SL4492454-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915103" data-ofbid="id_13106501__id_14915103">The HEC may have pumps from different
+manufacturers (Price or Ebara). Confirm that the pump type is exactly
+matched with the correct VFD chip.</p>
+                    <p class="- topic/p p" id="id_13106501__id_14915104" data-ofbid="id_13106501__id_14915104">An incorrectly matched pump and VFD chip results in either high
+pressure or low flows, risking equipment damage and/or system errors.</p>
+                    <p class="- topic/p p" id="id_13106501__id_14915105" data-ofbid="id_13106501__id_14915105">
+                      <img class="- topic/image image" id="id_13106501__id_14915106" src="4492501.jpg"/>
+                    </p>
+                    <p class="- topic/p p" id="id_13106501__id_14915107" data-ofbid="id_13106501__id_14915107">Ebara pumps have a round face; Price pumps have an irregular
+face. Do <span class="+ topic/ph ui-d/uicontrol ph uicontrol">not</span> rely on the color of the suction
+hose for identification. (Ebara pumps may have blue or white suction
+hoses.)</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL4492455-1106599" data-ofbid="id_13106501__SL4492455-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915108" data-ofbid="id_13106501__id_14915108">Confirm the pump speeds. For the speeds
+for each combination of GC/PE pump and RF amplifier, please see below.</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL15283009-1106599" data-ofbid="id_13106501__SL15283009-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915109" data-ofbid="id_13106501__id_14915109">The Eaton VFD requires a jumper wire
+between terminal 8 and 16 to set the correct speed for the Ebara pump.</p>
+                  </li></ul>
+                <div class="- topic/note note note note_note" id="id_13106501__id_14915110" data-ofbid="id_13106501__id_14915110"><span class="note__title">Note</span> 
+                  <p class="- topic/p p" id="id_13106501__id_14915111" data-ofbid="id_13106501__id_14915111"> A jumper wire is not used with the Price
+pump. </p>
+                </div>
+                <div class="- topic/note note note note_note" id="id_13106501__id_14915112" data-ofbid="id_13106501__id_14915112"><span class="note__title">Note</span> 
+                  <p class="- topic/p p" id="id_13106501__id_14915113" data-ofbid="id_13106501__id_14915113">These speeds must be verified with the HEC in full-power
+mode (scan-ready). If you are unsure if the HEC is in full-power mode,
+prescribe an exam on the MR system to ensure the pumps are ramped
+to full speed.</p>
+                </div>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_13106501__id_14915114" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915115" data-ofbid="id_13106501__id_14915115">
+                  <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Pump type (identify as described above)</span>
+                </p>
+              </td><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_13106501__id_14915116" headers="id_13106501__id_14914952" colspan="2">
+                <p class="- topic/p p" id="id_13106501__id_14915117" data-ofbid="id_13106501__id_14915117">
+                  <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Ebara</span>
+                </p>
+              </td><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_13106501__id_14915118" headers="id_13106501__id_14914952" colspan="2">
+                <p class="- topic/p p" id="id_13106501__id_14915119" data-ofbid="id_13106501__id_14915119">
+                  <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Price</span>
+                </p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915120" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915121" data-ofbid="id_13106501__id_14915121">RF amplifier type in PGR cabinet. Identify by presence
+of red and blue cooling hoses hooked to front of RF amplifier. Hoses
+are not present on air cooled RF amplifiers.</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915122" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915123" data-ofbid="id_13106501__id_14915123">Liquid</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915124" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915125" data-ofbid="id_13106501__id_14915125">Air</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915126" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915127" data-ofbid="id_13106501__id_14915127">Liquid</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915128" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915129" data-ofbid="id_13106501__id_14915129">Air</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915130" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915131" data-ofbid="id_13106501__id_14915131">Displayed value on middle VFD (VFD PPMP)</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915132" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915133" data-ofbid="id_13106501__id_14915133">50 ±1</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915134" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915135" data-ofbid="id_13106501__id_14915135">43 ±1</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915136" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915137" data-ofbid="id_13106501__id_14915137">61 ±1</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915138" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915139" data-ofbid="id_13106501__id_14915139">53 ±1</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915140" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915141" data-ofbid="id_13106501__id_14915141">Displayed value on left VFD (VFD GPMP)</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915142" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915143" data-ofbid="id_13106501__id_14915143">50 ±1</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915144" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915145" data-ofbid="id_13106501__id_14915145">50 ±1</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915146" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915147" data-ofbid="id_13106501__id_14915147">61 ±1</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915148" headers="id_13106501__id_14914952">
+                <p class="- topic/p p" id="id_13106501__id_14915149" data-ofbid="id_13106501__id_14915149">61 ±1</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915150" headers="id_13106501__id_14914952" colspan="5">
+                
+                <p class="- topic/p p" id="id_13106501__id_14915152" data-ofbid="id_13106501__id_14915152">Verify that PE pressure is 4.2 to 4.8
+bar. Verify that the GC pressure is 5.2 to 5.3 bar.</p>
+                <p class="- topic/p p" id="id_13106501__id_14915153" data-ofbid="id_13106501__id_14915153">If
+the pressure is outside the stated limits, replace the pressure sensor.</p>
+                <p class="- topic/p p" id="id_13106501__id_14915154" data-ofbid="id_13106501__id_14915154">Do not change any adjustable valve positions for less than
+maximum flow.</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-1" id="id_13106501__id_14915155" headers="id_13106501__id_14914951" rowspan="5">Suspected bad temperature sensor.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915156" headers="id_13106501__id_14914952" colspan="5">It is important to determine
+whether the sensor or the signal box (PLC) is actually faulty. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915157" headers="id_13106501__id_14914952" colspan="5">If you are testing the HEC
+facility coolant inlet sensor:<ol class="- topic/ol ol" id="id_13106501__id_14915158" data-ofbid="id_13106501__id_14915158"><li class="- topic/li li" id="id_13106501__SL3287598-1106599" data-ofbid="id_13106501__SL3287598-1106599"><p class="- topic/p p" id="id_13106501__id_14915159" data-ofbid="id_13106501__id_14915159">Note the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Facility</span> inlet temperature reading on the HEC LCD screen.</p></li><li class="- topic/li li" id="id_13106501__SL3287599-1106599" data-ofbid="id_13106501__SL3287599-1106599"><p class="- topic/p p" id="id_13106501__id_14915160" data-ofbid="id_13106501__id_14915160">Note the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">GC</span> inlet
+temperature reading on the HEC LCD screen.</p><div class="- topic/note note note note_note" id="id_13106501__id_14915161" data-ofbid="id_13106501__id_14915161"><span class="note__title">Note</span> <p class="- topic/p p" id="id_13106501__id_14915162" data-ofbid="id_13106501__id_14915162">The HEC stops pumping when the GC sensor is disconnected.
+Pumps will restart when the sensor is reconnected.</p></div></li><li class="- topic/li li" id="id_13106501__SL3287600-1106599" data-ofbid="id_13106501__SL3287600-1106599"><p class="- topic/p p" id="id_13106501__id_14915163" data-ofbid="id_13106501__id_14915163">Swap J18 (Facility) and J17 (GC) on
+the signal box, and confirm that the facility temperature is now visible
+for <span class="+ topic/ph ui-d/uicontrol ph uicontrol">GC</span> on the HEC LCD screen, and that the GC
+temperature is now visible for <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Facility</span> on the
+HEC LCD screen.</p></li></ol></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915164" headers="id_13106501__id_14914952" colspan="5">If you are testing the GC
+temperature sensor:<ol class="- topic/ol ol" id="id_13106501__id_14915165" data-ofbid="id_13106501__id_14915165"><li class="- topic/li li" id="id_13106501__SL3287601-1106599" data-ofbid="id_13106501__SL3287601-1106599"><p class="- topic/p p" id="id_13106501__id_14915166" data-ofbid="id_13106501__id_14915166">Note the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Facility</span> inlet temperature reading on the HEC LCD screen.</p></li><li class="- topic/li li" id="id_13106501__SL3287602-1106599" data-ofbid="id_13106501__SL3287602-1106599"><p class="- topic/p p" id="id_13106501__id_14915167" data-ofbid="id_13106501__id_14915167">Note the GC inlet temperature reading
+on the HEC LCD screen.</p><div class="- topic/note note note note_note" id="id_13106501__id_14915168" data-ofbid="id_13106501__id_14915168"><span class="note__title">Note</span> <p class="- topic/p p" id="id_13106501__id_14915169" data-ofbid="id_13106501__id_14915169">The HEC stops pumping when the GC sensor is disconnected.
+Pumps will restart when the sensor is reconnected.</p></div></li><li class="- topic/li li" id="id_13106501__SL3287603-1106599" data-ofbid="id_13106501__SL3287603-1106599"><p class="- topic/p p" id="id_13106501__id_14915170" data-ofbid="id_13106501__id_14915170">Swap J18 (Facility) and J17 (GC) on
+the signal box, and confirm that the facility temperature is now visible
+for <span class="+ topic/ph ui-d/uicontrol ph uicontrol">GC</span> on the HEC LCD screen, and that the GC
+temperature is now visible for <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Facility</span> on the
+HEC LCD screen.</p></li></ol></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915171" headers="id_13106501__id_14914952" colspan="5">
+                <p class="- topic/p p" id="id_13106501__id_14915172" data-ofbid="id_13106501__id_14915172">If you are testing the
+PE temperature sensor:</p>
+                <ol class="- topic/ol ol" id="id_13106501__id_14915173" data-ofbid="id_13106501__id_14915173"><li class="- topic/li li" id="id_13106501__SL3287604-1106599" data-ofbid="id_13106501__SL3287604-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915174" data-ofbid="id_13106501__id_14915174">Note the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Facility</span> inlet temperature reading on the HEC LCD screen.</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL3287605-1106599" data-ofbid="id_13106501__SL3287605-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915175" data-ofbid="id_13106501__id_14915175">Note the PE inlet temperature reading
+on the HEC LCD screen.</p>
+                    <div class="- topic/note note note note_note" id="id_13106501__id_14915176" data-ofbid="id_13106501__id_14915176"><span class="note__title">Note</span> 
+                      <p class="- topic/p p" id="id_13106501__id_14915177" data-ofbid="id_13106501__id_14915177">The HEC stops pumping when the PE sensor is disconnected.
+Pumps will restart when the sensor is reconnected.</p>
+                    </div>
+                  </li><li class="- topic/li li" id="id_13106501__SL3287606-1106599" data-ofbid="id_13106501__SL3287606-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915178" data-ofbid="id_13106501__id_14915178">Swap J18 (Facility) and J16 (PE) on
+the signal box, and confirm that the facility temperature is now visible
+for <span class="+ topic/ph ui-d/uicontrol ph uicontrol">PE</span> on the HEC LCD screen, and that the PE
+temperature is now visible for <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Facility</span> on the
+HEC LCD screen.</p>
+                  </li></ol>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915179" headers="id_13106501__id_14914952" colspan="5">If you are testing the Blower
+temperature sensor:<ol class="- topic/ol ol" id="id_13106501__id_14915180" data-ofbid="id_13106501__id_14915180"><li class="- topic/li li" id="id_13106501__SL3287607-1106599" data-ofbid="id_13106501__SL3287607-1106599"><p class="- topic/p p" id="id_13106501__id_14915181" data-ofbid="id_13106501__id_14915181">Note the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Facility</span> inlet temperature reading on the HEC LCD screen.</p></li><li class="- topic/li li" id="id_13106501__SL3287608-1106599" data-ofbid="id_13106501__SL3287608-1106599"><p class="- topic/p p" id="id_13106501__id_14915182" data-ofbid="id_13106501__id_14915182">Note the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Blower</span> inlet temperature reading on the HEC LCD screen.</p></li><li class="- topic/li li" id="id_13106501__SL3287609-1106599" data-ofbid="id_13106501__SL3287609-1106599"><p class="- topic/p p" id="id_13106501__id_14915183" data-ofbid="id_13106501__id_14915183">Move the connector at J18 (Facility)
+to J28 (Blower) on the signal box, and confirm that the blower temperature
+is now visible for <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Facility</span> temperature on the
+HEC LCD screen.</p><div class="- topic/note note note note_note" id="id_13106501__id_14915184" data-ofbid="id_13106501__id_14915184"><span class="note__title">Note</span> <p class="- topic/p p" id="id_13106501__id_14915185" data-ofbid="id_13106501__id_14915185">You can move the connector at J28 to J18 to make the temperature
+check the other way. However, this may require cutting the tie wraps
+for the J28 cable to reach the J18 connector.</p></div></li></ol></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915186" headers="id_13106501__id_14914951">Circuit breaker trips when power is applied to the HEC. Circuit
+breaker or fuses in MDP may trip at same time.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915187" headers="id_13106501__id_14914952" colspan="5">Examine the HEC for short
+circuits: <ol class="- topic/ol ol" id="id_13106501__id_14915188" data-ofbid="id_13106501__id_14915188"><li class="- topic/li li" id="id_13106501__SL3287610-1106599" data-ofbid="id_13106501__SL3287610-1106599"><p class="- topic/p p" id="id_13106501__id_14915189" data-ofbid="id_13106501__id_14915189">Perform LOTO on the HEC. <span class="- topic/ph ph">See <a class="- topic/xref xref" href="t_LOTO-for-Heat-Exchanger-Cabinet_5464141.html">Applying LOTO - Heat Exchanger Cabinet (HEC)</a>.</span></p></li><li class="- topic/li li" id="id_13106501__SL3287611-1106599" data-ofbid="id_13106501__SL3287611-1106599"><p class="- topic/p p" id="id_13106501__id_14915190" data-ofbid="id_13106501__id_14915190">Open the HEC power box, and disconnect
+pump or blower wiring from the VFD.</p></li><li class="- topic/li li" id="id_13106501__SL3287612-1106599" data-ofbid="id_13106501__SL3287612-1106599"><p class="- topic/p p" id="id_13106501__id_14915191" data-ofbid="id_13106501__id_14915191">Use a DVM to measure resistance between
+the pump or blower lines (phase-to-phase) and from each line to ground
+(phase-to-ground) for short circuits.</p></li><li class="- topic/li li" id="id_13106501__SL3287613-1106599" data-ofbid="id_13106501__SL3287613-1106599"><p class="- topic/p p" id="id_13106501__id_14915192" data-ofbid="id_13106501__id_14915192">Use a DVM to measure resistance between
+the VFD input and output connections (phase-to-phase) and from each
+line to ground (phase-to-ground) for short circuits.</p></li><li class="- topic/li li" id="id_13106501__SL3287614-1106599" data-ofbid="id_13106501__SL3287614-1106599"><p class="- topic/p p" id="id_13106501__id_14915193" data-ofbid="id_13106501__id_14915193">Use a DVM to measure resistance between
+the BLW CB circuit breaker input and output connections (phase-to-phase)
+and each connection to ground (phase-to-ground) for short circuits.</p></li></ol><p class="- topic/p p" id="id_13106501__id_14915194" data-ofbid="id_13106501__id_14915194">If there are no short circuits observed, order and
+replace the HEC power box.</p></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915195" headers="id_13106501__id_14914951">There is insufficient water flow to or from components in the
+PGR cabinet.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915196" headers="id_13106501__id_14914952" colspan="5">
+                <ol class="- topic/ol ol" id="id_13106501__id_14915197" data-ofbid="id_13106501__id_14915197"><li class="- topic/li li" id="id_13106501__SL3287615-1106599" data-ofbid="id_13106501__SL3287615-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915198" data-ofbid="id_13106501__id_14915198">Check for kinks in the supply and return
+hoses, especially where hoses are behind units. You can often quickly
+clear a kink by twisting a pressurized hose a full rotation in one
+direction and then twisting it in the opposite direction.</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL3287616-1106599" data-ofbid="id_13106501__SL3287616-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915199" data-ofbid="id_13106501__id_14915199">Use a discharge hose and a flask or
+bucket as troubleshooting tools to check for coolant flow on the supply
+and return hoses and through components.</p>
+                    <table role="presentation" border="1" class="+ topic/note hazard-d/hazardstatement note hazardstatement notice hazardstatement_notice ansi"><colgroup><col class="hazardstatement--logo-col"/><col class="hazardstatement--msg-col"/></colgroup><thead><tr><th colspan="2" class="hazardstatement--notice"><span>Notice</span></th></tr></thead><tbody><tr><td><svg xmlns="http://www.w3.org/2000/svg" xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" class="hazardsymbol" version="1.1" height="4em" viewBox="0 0 600 525">
+   <metadata>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+         <cc:Work xmlns:cc="http://creativecommons.org/ns#" rdf:about="">
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"></dc:title>
+         </cc:Work>
+      </rdf:RDF>
+   </metadata>
+   <defs>
+      <path d="M 2.8117,-1.046 A 3,3 0 0 1 0.5,2.958 V 4.5119 A 10.5,10.5 0 0 1 2,25.3078 v 0.5583 A 15,15 0 0 0 14.7975,8.5433 15,15 0 0 0 23.4007,-11.201 l -0.4835,0.2792 A 10.5,10.5 0 0 1 4.1574,-1.8229 z m 3.4148,8.871 a 10,10 0 0 1 -12.453,0 9.5,9.5 0 0 0 -2.1756,2.7417 13.5,13.5 0 0 0 16.8042,0 A 10,10 0 0 0 6.2265,7.825 z" transform="matrix(10,0,0,-10,260,260)"></path>
+   </defs>
+   <path d="M 597.6,499.6 313.8,8 C 310.9,3 305.6,0 299.9,0 294.2,0 288.9,3.1 286,8 L 2.2,499.6 c -2.9,5 -2.9,11.1 0,16 2.9,5 8.2,8 13.9,8 h 567.6 c 5.7,0 11,-3.1 13.9,-8 2.9,-5 2.9,-11.1 0,-16 z"></path>
+   <polygon points="43.875,491.5 299.875,48.2 555.875,491.5 " transform="matrix(1,0,0,0.99591458,0.125,2.0332437)" style="fill:#f6bd16;fill-opacity:1;stroke:none;overflow:visible"></polygon>
+   <path d="m -384.00937,417.52725 a 38.151581,36.156727 0 1 1 -76.30316,0 38.151581,36.156727 0 1 1 76.30316,0 z" transform="matrix(0.99319888,0,0,1.0479962,719.28979,-2.9357862)" style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.62514842;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:0.4;stroke-dasharray:none;stroke-dashoffset:0"></path>
+   <path d="m 300,168.60074 c -20.64745,0 -37.26716,16.97292 -37.26716,38.05658 l 11.01897,133.31318 c 2.10449,17.24457 3.90184,27.0149 11.01898,31.60966 4.64712,2.1172 9.79468,3.32214 15.22921,3.32214 5.40832,0 10.53383,-1.1913 15.16343,-3.28925 7.15697,-4.58178 8.97556,-14.35941 11.08476,-31.64255 l 11.01898,-133.31318 c 0,-21.08366 -16.61973,-38.05658 -37.26717,-38.05658 z" style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.88582677;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"></path>
+</svg></td><td><div class="+ topic/ul hazard-d/messagepanel ul messagepanel"><div class="+ topic/li hazard-d/typeofhazard li typeofhazard">
+                        </div><div class="+ topic/li hazard-d/consequence li consequence">
+                        </div><div class="+ topic/li hazard-d/howtoavoid li howtoavoid">Use the Coolant Draining Kit that is shipped with the HEC (and available as a FRU) to drain PGR modules. Do not use any pump other than the supplied hand pump.</div></div></td></tr></tbody></table>
+                    <table role="presentation" border="1" class="+ topic/note hazard-d/hazardstatement note hazardstatement notice hazardstatement_notice ansi"><colgroup><col class="hazardstatement--logo-col"/><col class="hazardstatement--msg-col"/></colgroup><thead><tr><th colspan="2" class="hazardstatement--notice"><span>Notice</span></th></tr></thead><tbody><tr><td><svg xmlns="http://www.w3.org/2000/svg" xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" class="hazardsymbol" version="1.1" height="4em" viewBox="0 0 600 525">
+   <metadata>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+         <cc:Work xmlns:cc="http://creativecommons.org/ns#" rdf:about="">
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"></dc:title>
+         </cc:Work>
+      </rdf:RDF>
+   </metadata>
+   <defs>
+      <path d="M 2.8117,-1.046 A 3,3 0 0 1 0.5,2.958 V 4.5119 A 10.5,10.5 0 0 1 2,25.3078 v 0.5583 A 15,15 0 0 0 14.7975,8.5433 15,15 0 0 0 23.4007,-11.201 l -0.4835,0.2792 A 10.5,10.5 0 0 1 4.1574,-1.8229 z m 3.4148,8.871 a 10,10 0 0 1 -12.453,0 9.5,9.5 0 0 0 -2.1756,2.7417 13.5,13.5 0 0 0 16.8042,0 A 10,10 0 0 0 6.2265,7.825 z" transform="matrix(10,0,0,-10,260,260)"></path>
+   </defs>
+   <path d="M 597.6,499.6 313.8,8 C 310.9,3 305.6,0 299.9,0 294.2,0 288.9,3.1 286,8 L 2.2,499.6 c -2.9,5 -2.9,11.1 0,16 2.9,5 8.2,8 13.9,8 h 567.6 c 5.7,0 11,-3.1 13.9,-8 2.9,-5 2.9,-11.1 0,-16 z"></path>
+   <polygon points="43.875,491.5 299.875,48.2 555.875,491.5 " transform="matrix(1,0,0,0.99591458,0.125,2.0332437)" style="fill:#f6bd16;fill-opacity:1;stroke:none;overflow:visible"></polygon>
+   <path d="m -384.00937,417.52725 a 38.151581,36.156727 0 1 1 -76.30316,0 38.151581,36.156727 0 1 1 76.30316,0 z" transform="matrix(0.99319888,0,0,1.0479962,719.28979,-2.9357862)" style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.62514842;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:0.4;stroke-dasharray:none;stroke-dashoffset:0"></path>
+   <path d="m 300,168.60074 c -20.64745,0 -37.26716,16.97292 -37.26716,38.05658 l 11.01897,133.31318 c 2.10449,17.24457 3.90184,27.0149 11.01898,31.60966 4.64712,2.1172 9.79468,3.32214 15.22921,3.32214 5.40832,0 10.53383,-1.1913 15.16343,-3.28925 7.15697,-4.58178 8.97556,-14.35941 11.08476,-31.64255 l 11.01898,-133.31318 c 0,-21.08366 -16.61973,-38.05658 -37.26717,-38.05658 z" style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.88582677;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"></path>
+</svg></td><td><div class="+ topic/ul hazard-d/messagepanel ul messagepanel"><div class="+ topic/li hazard-d/typeofhazard li typeofhazard">
+                        </div><div class="+ topic/li hazard-d/consequence li consequence">
+                        </div><div class="+ topic/li hazard-d/howtoavoid li howtoavoid">The water cooling system for the PGR cabinet is rated to 65 psi.</div></div></td></tr></tbody></table>
+                  </li><li class="- topic/li li" id="id_13106501__SL3287617-1106599" data-ofbid="id_13106501__SL3287617-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915212" data-ofbid="id_13106501__id_14915212">Use a high volume pump to try to clear
+blockages in components. Try the return side first, then the supply
+side. You may need to repeat this a few times to clear the blockage.</p>
+                    <table role="presentation" border="1" class="+ topic/note hazard-d/hazardstatement note hazardstatement notice hazardstatement_notice ansi"><colgroup><col class="hazardstatement--logo-col"/><col class="hazardstatement--msg-col"/></colgroup><thead><tr><th colspan="2" class="hazardstatement--notice"><span>Notice</span></th></tr></thead><tbody><tr><td><svg xmlns="http://www.w3.org/2000/svg" xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" class="hazardsymbol" version="1.1" height="4em" viewBox="0 0 600 525">
+   <metadata>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+         <cc:Work xmlns:cc="http://creativecommons.org/ns#" rdf:about="">
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"></dc:title>
+         </cc:Work>
+      </rdf:RDF>
+   </metadata>
+   <defs>
+      <path d="M 2.8117,-1.046 A 3,3 0 0 1 0.5,2.958 V 4.5119 A 10.5,10.5 0 0 1 2,25.3078 v 0.5583 A 15,15 0 0 0 14.7975,8.5433 15,15 0 0 0 23.4007,-11.201 l -0.4835,0.2792 A 10.5,10.5 0 0 1 4.1574,-1.8229 z m 3.4148,8.871 a 10,10 0 0 1 -12.453,0 9.5,9.5 0 0 0 -2.1756,2.7417 13.5,13.5 0 0 0 16.8042,0 A 10,10 0 0 0 6.2265,7.825 z" transform="matrix(10,0,0,-10,260,260)"></path>
+   </defs>
+   <path d="M 597.6,499.6 313.8,8 C 310.9,3 305.6,0 299.9,0 294.2,0 288.9,3.1 286,8 L 2.2,499.6 c -2.9,5 -2.9,11.1 0,16 2.9,5 8.2,8 13.9,8 h 567.6 c 5.7,0 11,-3.1 13.9,-8 2.9,-5 2.9,-11.1 0,-16 z"></path>
+   <polygon points="43.875,491.5 299.875,48.2 555.875,491.5 " transform="matrix(1,0,0,0.99591458,0.125,2.0332437)" style="fill:#f6bd16;fill-opacity:1;stroke:none;overflow:visible"></polygon>
+   <path d="m -384.00937,417.52725 a 38.151581,36.156727 0 1 1 -76.30316,0 38.151581,36.156727 0 1 1 76.30316,0 z" transform="matrix(0.99319888,0,0,1.0479962,719.28979,-2.9357862)" style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.62514842;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:0.4;stroke-dasharray:none;stroke-dashoffset:0"></path>
+   <path d="m 300,168.60074 c -20.64745,0 -37.26716,16.97292 -37.26716,38.05658 l 11.01897,133.31318 c 2.10449,17.24457 3.90184,27.0149 11.01898,31.60966 4.64712,2.1172 9.79468,3.32214 15.22921,3.32214 5.40832,0 10.53383,-1.1913 15.16343,-3.28925 7.15697,-4.58178 8.97556,-14.35941 11.08476,-31.64255 l 11.01898,-133.31318 c 0,-21.08366 -16.61973,-38.05658 -37.26717,-38.05658 z" style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.88582677;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"></path>
+</svg></td><td><div class="+ topic/ul hazard-d/messagepanel ul messagepanel"><div class="+ topic/li hazard-d/typeofhazard li typeofhazard">
+                        </div><div class="+ topic/li hazard-d/consequence li consequence">
+                        </div><div class="+ topic/li hazard-d/howtoavoid li howtoavoid">Use the Coolant Draining Kit that is shipped with the HEC (and available as a FRU) to drain PGR modules. Do not use any pump other than the supplied hand pump.</div></div></td></tr></tbody></table>
+                  </li><li class="- topic/li li" id="id_13106501__SL4211093-1106599" data-ofbid="id_13106501__SL4211093-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915219" data-ofbid="id_13106501__id_14915219">Check that ball valves and check valves
+in the cooling lines from the HEC are open and installed in the correct
+orientation. Make sure fittings are fully engaged on each component
+in the PGR cabinet</p>
+                  </li></ol>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915220" headers="id_13106501__id_14914951">HEC pumps are constantly cycling on and off.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915221" headers="id_13106501__id_14914952" colspan="5">The HEC stops pump operation
+if GC or PE coolant temperature sensors report measurements that are
+over the limits. This can be due to the heating of the pipe while
+the pump is dry or the flow of coolant is stalled. Check for any obstructions
+(kinks, twists, etc.) in the coolant line or improper installations
+(backwards check valve) or closed ball valves (tank valve, external
+valves, etc.).</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915222" headers="id_13106501__id_14914951">Need to view HEC parameters in real-time.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915223" headers="id_13106501__id_14914952" colspan="5">The system uses event-based polling to monitor the HEC, storing the data it receives to the <samp class="+ topic/ph sw-d/systemoutput ph systemoutput sysout">cooling.xml</samp> log file. <p class="- topic/p p" id="id_13106501__id_14915224" data-ofbid="id_13106501__id_14915224">Open a C-shell and type: </p><p class="- topic/p p" id="id_13106501__id_14915225" data-ofbid="id_13106501__id_14915225"><kbd class="+ topic/ph sw-d/userinput ph userinput">more /usr/g/service/log/paramdata/cooling.xml</kbd></p><p class="- topic/p p" id="id_13106501__id_14915226" data-ofbid="id_13106501__id_14915226">Each output describes units in which the value is expressed. You must pay attention to the units and scaling.</p></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915228" headers="id_13106501__id_14914951">At power up, the GC/PE coolant pump or blower is not operating.
+The Lenze AC Tech VFD for the component displays <span class="+ topic/ph ui-d/uicontrol ph uicontrol">UF</span>.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915229" headers="id_13106501__id_14914952" colspan="5">
+                <ul class="- topic/ul ul" id="id_13106501__id_14915230" data-ofbid="id_13106501__id_14915230"><li class="- topic/li li" id="id_13106501__SL4494107-1106599" data-ofbid="id_13106501__SL4494107-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915231" data-ofbid="id_13106501__id_14915231">At initial start or after replacing
+the GC/PE coolant pump, air needs to be purged from the system. This
+is done automatically by running the pump, but the pump may need to
+be cycled on several times before this process completes successfully.</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL4494108-1106599" data-ofbid="id_13106501__SL4494108-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915232" data-ofbid="id_13106501__id_14915232">The run command is not being sent from
+the signal box. </p>
+                    <p class="- topic/p p" id="id_13106501__id_14915233" data-ofbid="id_13106501__id_14915233"> Both of these conditions are corrected by sending run commands
+from the signal box using the following steps:</p>
+                    <table role="presentation" border="1" class="+ topic/note hazard-d/hazardstatement note hazardstatement notice hazardstatement_notice ansi"><colgroup><col class="hazardstatement--logo-col"/><col class="hazardstatement--msg-col"/></colgroup><thead><tr><th colspan="2" class="hazardstatement--notice"><span>Notice</span></th></tr></thead><tbody><tr><td><svg xmlns="http://www.w3.org/2000/svg" xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" class="hazardsymbol" version="1.1" height="4em" viewBox="0 0 600 525">
+   <metadata>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+         <cc:Work xmlns:cc="http://creativecommons.org/ns#" rdf:about="">
+            <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">image/svg+xml</dc:format>
+            <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/" rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+            <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/"></dc:title>
+         </cc:Work>
+      </rdf:RDF>
+   </metadata>
+   <defs>
+      <path d="M 2.8117,-1.046 A 3,3 0 0 1 0.5,2.958 V 4.5119 A 10.5,10.5 0 0 1 2,25.3078 v 0.5583 A 15,15 0 0 0 14.7975,8.5433 15,15 0 0 0 23.4007,-11.201 l -0.4835,0.2792 A 10.5,10.5 0 0 1 4.1574,-1.8229 z m 3.4148,8.871 a 10,10 0 0 1 -12.453,0 9.5,9.5 0 0 0 -2.1756,2.7417 13.5,13.5 0 0 0 16.8042,0 A 10,10 0 0 0 6.2265,7.825 z" transform="matrix(10,0,0,-10,260,260)"></path>
+   </defs>
+   <path d="M 597.6,499.6 313.8,8 C 310.9,3 305.6,0 299.9,0 294.2,0 288.9,3.1 286,8 L 2.2,499.6 c -2.9,5 -2.9,11.1 0,16 2.9,5 8.2,8 13.9,8 h 567.6 c 5.7,0 11,-3.1 13.9,-8 2.9,-5 2.9,-11.1 0,-16 z"></path>
+   <polygon points="43.875,491.5 299.875,48.2 555.875,491.5 " transform="matrix(1,0,0,0.99591458,0.125,2.0332437)" style="fill:#f6bd16;fill-opacity:1;stroke:none;overflow:visible"></polygon>
+   <path d="m -384.00937,417.52725 a 38.151581,36.156727 0 1 1 -76.30316,0 38.151581,36.156727 0 1 1 76.30316,0 z" transform="matrix(0.99319888,0,0,1.0479962,719.28979,-2.9357862)" style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.62514842;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:0.4;stroke-dasharray:none;stroke-dashoffset:0"></path>
+   <path d="m 300,168.60074 c -20.64745,0 -37.26716,16.97292 -37.26716,38.05658 l 11.01897,133.31318 c 2.10449,17.24457 3.90184,27.0149 11.01898,31.60966 4.64712,2.1172 9.79468,3.32214 15.22921,3.32214 5.40832,0 10.53383,-1.1913 15.16343,-3.28925 7.15697,-4.58178 8.97556,-14.35941 11.08476,-31.64255 l 11.01898,-133.31318 c 0,-21.08366 -16.61973,-38.05658 -37.26717,-38.05658 z" style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.88582677;stroke-linecap:square;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0"></path>
+</svg></td><td><div class="+ topic/ul hazard-d/messagepanel ul messagepanel"><div class="+ topic/li hazard-d/typeofhazard li typeofhazard">
+                        </div><div class="+ topic/li hazard-d/consequence li consequence">
+                        </div><div class="+ topic/li hazard-d/howtoavoid li howtoavoid">Do not cycle pumps rapidly on and off using the circuit breaker, because VFD damage may result. Use the shortcut keys from the signal box controller as described below.</div></div></td></tr></tbody></table>
+                    <ol class="- topic/ol ol" id="id_13106501__id_14915240" data-ofbid="id_13106501__id_14915240"><li class="- topic/li li" id="id_13106501__SL4494109-1106599" data-ofbid="id_13106501__SL4494109-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915241" data-ofbid="id_13106501__id_14915241">On the signal box controller, hold
+the up arrow button while you press <span class="+ topic/ph ui-d/uicontrol ph uicontrol">F1</span> to toggle
+the blower on, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">F2</span> to toggle the GC pump on,
+and <span class="+ topic/ph ui-d/uicontrol ph uicontrol">F3</span> to toggle the PE pump on.</p>
+                      </li><li class="- topic/li li" id="id_13106501__SL4494110-1106599" data-ofbid="id_13106501__SL4494110-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915242" data-ofbid="id_13106501__id_14915242">If the VFDs do not ramp up to the proper
+speed, check the connections at the side of the signal box and check
+for a bad VFD.</p>
+                      </li><li class="- topic/li li" id="id_13106501__SL4494111-1106599" data-ofbid="id_13106501__SL4494111-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915243" data-ofbid="id_13106501__id_14915243">If all appears okay, replace the signal
+box.</p>
+                      </li></ol>
+                  </li></ul>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915244" headers="id_13106501__id_14914951">After initial power up, the system reports the GC coolant resistivity
+is out of range (too low or too high).</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915245" headers="id_13106501__id_14914952" colspan="5">If the GC resistivity value
+is less than 2.5 kOhm-cm and greater than 1 kOhm-cm, deionize the
+coolant. See <a class="- topic/xref xref" href="c_Heat-Exchange-Cabinet-Coolant-Deionization_14626324.html">Heat Exchange Cabinet Coolant Deionization</a>. <p class="- topic/p p" id="id_13106501__id_14915246" data-ofbid="id_13106501__id_14915246">A GC resistivity value greater than 20.0 kOhm-cm
+may mean that an FE forgot to add rust inhibitor and biocide chemicals
+after performing the last deionization procedure. Perform deionization
+again and ensure these are added according to the procedure. If values
+are unchanged after adding additives, then proceed to “If the
+fuse is OK” section below.</p><p class="- topic/p p" id="id_13106501__id_14915247" data-ofbid="id_13106501__id_14915247">A GC resistivity value
+less than 1 kOhm-cm may indicate faulty hardware.</p><ul class="- topic/ul ul" id="id_13106501__id_14915248" data-ofbid="id_13106501__id_14915248"><li class="- topic/li li" id="id_13106501__SL4492506-1106599" data-ofbid="id_13106501__SL4492506-1106599"><p class="- topic/p p" id="id_13106501__id_14915249" data-ofbid="id_13106501__id_14915249">Make sure a successful TPS reset has
+been done since initial system power up.</p></li><li class="- topic/li li" id="id_13106501__SL4492507-1106599" data-ofbid="id_13106501__SL4492507-1106599"><p class="- topic/p p" id="id_13106501__id_14915250" data-ofbid="id_13106501__id_14915250">Remove the HEC signal box cover and
+check the condition of the fuse located in the upper left corner of
+the DI circuit board. A spare fuse is usually provided in the plastic
+bag inside the signal box. If a fuse is not available, order 5266827
+Fuse FRU kit. </p></li><li class="- topic/li li" id="id_13106501__SL4492508-1106599" data-ofbid="id_13106501__SL4492508-1106599"><p class="- topic/p p" id="id_13106501__id_14915251" data-ofbid="id_13106501__id_14915251"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">If the fuse is open:</span></p><ol class="- topic/ol ol" id="id_13106501__id_14915252" data-ofbid="id_13106501__id_14915252"><li class="- topic/li li" id="id_13106501__SL4492509-1106599" data-ofbid="id_13106501__SL4492509-1106599"><p class="- topic/p p" id="id_13106501__id_14915253" data-ofbid="id_13106501__id_14915253">View the voltage selector toggle switch
+setting through the view holes on the front of the HEC power box.
+You may need a flashlight.</p></li><li class="- topic/li li" id="id_13106501__SL4492510-1106599" data-ofbid="id_13106501__SL4492510-1106599"><p class="- topic/p p" id="id_13106501__id_14915254" data-ofbid="id_13106501__id_14915254">Confirm that the switch is in the correct
+position for incoming voltage to the HEC. See Section 4.3 of <a class="- topic/xref xref" href="t_Power-On-Sequencing_4788421.html">Power-On Sequencing</a>.</p></li></ol></li><li class="- topic/li li" id="id_13106501__SL4492511-1106599" data-ofbid="id_13106501__SL4492511-1106599"><p class="- topic/p p" id="id_13106501__id_14915255" data-ofbid="id_13106501__id_14915255"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">If the fuse is OK:</span></p><p class="- topic/p p" id="id_13106501__id_14915256" data-ofbid="id_13106501__id_14915256">It is likely that the signal box has malfunctioned. Order both
+a signal box and a DI sensor. Try replacing the sensor first.</p></li><li class="- topic/li li" id="id_13106501__SL5427077-1106599" data-ofbid="id_13106501__SL5427077-1106599"><p class="- topic/p p" id="id_13106501__id_14915257" data-ofbid="id_13106501__id_14915257">Multiple instances of an open fuse
+indicate variations in one or more incoming AC line phases. If the
+toggle switch is in the correct position, and the AC line phase voltage
+variation is within the product’s published limits, replace
+the power box.</p></li></ul></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915258" headers="id_13106501__id_14914951">The cable dressing for the HEC signal box appears different.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915259" headers="id_13106501__id_14914952" colspan="5">There are two versions of
+the cable dressing for the HEC signal box. The newer version is used
+in HEC version 11 and higher and signal box version 2 and higher. <p class="- topic/p p" id="id_13106501__id_14915260" data-ofbid="id_13106501__id_14915260">To determine the version of the HEC, locate the rating label for
+the HEC behind the left front door on the floor of the cabinet. </p><p class="- topic/p p" id="id_13106501__id_14915261" data-ofbid="id_13106501__id_14915261">To determine the version of the signal box, locate the label
+on the side of the signal box. If there is no label, the signal box
+is an early model.</p></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915262" headers="id_13106501__id_14914951">The mixing valve reading on the signal box LCD screen is at
+100% or 0%.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915263" headers="id_13106501__id_14914952" colspan="5">A reading of 100% means:<ul class="- topic/ul ul" id="id_13106501__id_14915264" data-ofbid="id_13106501__id_14915264"><li class="- topic/li li" id="id_13106501__SL3287636-1106599" data-ofbid="id_13106501__SL3287636-1106599"><p class="- topic/p p" id="id_13106501__id_14915265" data-ofbid="id_13106501__id_14915265">The maximum amount of coolant is being
+passed through the heat exchanger.</p></li><li class="- topic/li li" id="id_13106501__SL3287637-1106599" data-ofbid="id_13106501__SL3287637-1106599"><p class="- topic/p p" id="id_13106501__id_14915266" data-ofbid="id_13106501__id_14915266">The mixing valve is completely open
+(down):</p><ul class="- topic/ul ul" id="id_13106501__id_14915267" data-ofbid="id_13106501__id_14915267"><li class="- topic/li li" id="id_13106501__SL5407262-1106599" data-ofbid="id_13106501__SL5407262-1106599"><p class="- topic/p p" id="id_13106501__id_14915268" data-ofbid="id_13106501__id_14915268"><samp class="+ topic/ph sw-d/msgph ph msgph">(For HEC G6000EN) </samp>The
+stem on the mixing valve is completely down so that the stem is almost
+flush with the mixing valve case.</p></li><li class="- topic/li li" id="id_13106501__SL5407263-1106599" data-ofbid="id_13106501__SL5407263-1106599"><p class="- topic/p p" id="id_13106501__id_14915269" data-ofbid="id_13106501__id_14915269"><samp class="+ topic/ph sw-d/msgph ph msgph">(For HEC G6001EN) </samp>The
+actuator is completely down.</p></li></ul><div class="- topic/p p" id="id_13106501__id_14915270" data-ofbid="id_13106501__id_14915270"><img class="- topic/image image" id="id_13106501__id_14915271" src="5406063.jpg"/><table class="- topic/table table" id="id_13106501__id_14915272" data-ofbid="id_13106501__id_14915272"><caption></caption><colgroup><col style="width:7.3170731707317085%"/><col style="width:42.6829268292683%"/><col style="width:7.3170731707317085%"/><col style="width:42.6829268292683%"/></colgroup><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915273">1</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915274">Mixing valve for HEC G6000EN</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915275">3</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915276">Valve stem</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915277">2</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915278">Mixing valve for HEC G6001EN</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915279">4</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915280">Actuator</td></tr></tbody>
+        </table></div></li></ul><p class="- topic/p p" id="id_13106501__id_14915281" data-ofbid="id_13106501__id_14915281">A reading of 0% means:</p><ul class="- topic/ul ul" id="id_13106501__id_14915282" data-ofbid="id_13106501__id_14915282"><li class="- topic/li li" id="id_13106501__SL3287639-1106599" data-ofbid="id_13106501__SL3287639-1106599"><p class="- topic/p p" id="id_13106501__id_14915283" data-ofbid="id_13106501__id_14915283">The minimum amount of coolant is being
+passed through the heat exchanger (the maximum amount of coolant is
+being passed <span class="+ topic/ph ui-d/uicontrol ph uicontrol">around</span> the heat exchanger).</p></li><li class="- topic/li li" id="id_13106501__SL5406069-1106599" data-ofbid="id_13106501__SL5406069-1106599"><p class="- topic/p p" id="id_13106501__id_14915284" data-ofbid="id_13106501__id_14915284">The mixing valve is completely closed:</p><ul class="- topic/ul ul" id="id_13106501__id_14915285" data-ofbid="id_13106501__id_14915285"><li class="- topic/li li" id="id_13106501__SL5407264-1106599" data-ofbid="id_13106501__SL5407264-1106599"><p class="- topic/p p" id="id_13106501__id_14915286" data-ofbid="id_13106501__id_14915286"><samp class="+ topic/ph sw-d/msgph ph msgph">(For HEC G6000EN) </samp>The
+stem of the mixing valve is at the maximum height above the mixing
+valve case.</p></li><li class="- topic/li li" id="id_13106501__SL5407265-1106599" data-ofbid="id_13106501__SL5407265-1106599"><p class="- topic/p p" id="id_13106501__id_14915287" data-ofbid="id_13106501__id_14915287"><samp class="+ topic/ph sw-d/msgph ph msgph">(For HEC G6001EN) </samp>The
+actuator is completely up.</p></li></ul></li></ul><p class="- topic/p p" id="id_13106501__id_14915288" data-ofbid="id_13106501__id_14915288">Mixing valve positions (0% to 100%) does not have
+any significant effect on total facility coolant flow through HEC,
+because these are three-way valves so the same amount of coolant passes
+through the cabinet regardless of valve position. </p></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915289" headers="id_13106501__id_14914951">HEC blower circuit breaker trips and needs to be manually reset.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915290" headers="id_13106501__id_14914952" colspan="5">The blower may be drawing
+excess current because of a blockage. <ul class="- topic/ul ul" id="id_13106501__id_14915291" data-ofbid="id_13106501__id_14915291"><li class="- topic/li li" id="id_13106501__SL4211094-1106599" data-ofbid="id_13106501__SL4211094-1106599"><p class="- topic/p p" id="id_13106501__id_14915292" data-ofbid="id_13106501__id_14915292">Check the condition of the air filter
+on the PEN wall in the scan room. Clean or replace if it is dirty. </p></li><li class="- topic/li li" id="id_13106501__SL4211095-1106599" data-ofbid="id_13106501__SL4211095-1106599"><p class="- topic/p p" id="id_13106501__id_14915293" data-ofbid="id_13106501__id_14915293">Inspect the area where the filter is
+located and make certain that it is not too restricted so that air
+flow into the filter is poor. </p></li><li class="- topic/li li" id="id_13106501__SL4211096-1106599" data-ofbid="id_13106501__SL4211096-1106599"><p class="- topic/p p" id="id_13106501__id_14915294" data-ofbid="id_13106501__id_14915294">Inspect the blower motor or hosing
+inside the HEC for evidence of excessive amounts of dust or lint.</p></li></ul><p class="- topic/p p" id="id_13106501__id_14915295" data-ofbid="id_13106501__id_14915295">Additionally, there are hoses internal to the HEC
+that connect to the blower. It may be necessary to remove the suction
+hose (the one not connected to the liquid-to-air heat exchanger) and
+check if the internal wall of the hose is still intact and not delaminated
+or clogging airflow.</p></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915296" headers="id_13106501__id_14914951">Coolant to PE or GC components is too cold or warm (HEC does
+not appear to be regulating temperature of coolant).</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915297" headers="id_13106501__id_14914952" colspan="5">
+                <ul class="- topic/ul ul" id="id_13106501__id_14915298" data-ofbid="id_13106501__id_14915298"><li class="- topic/li li" id="id_13106501__SL4201374-1106599" data-ofbid="id_13106501__SL4201374-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915299" data-ofbid="id_13106501__id_14915299">
+                      <samp class="+ topic/ph sw-d/msgph ph msgph">(For HEC 6000EN only) </samp>Inspect the top of the mixing valves and make sure that nothing like
+a hose, cable, etc. is depressing the white plastic manual override
+button on top of the mixing valve.</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL4201375-1106599" data-ofbid="id_13106501__SL4201375-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915300" data-ofbid="id_13106501__id_14915300">Check the mixing valve percentages
+on the HEC LCD screen. Contact OLC if necessary for support.</p>
+                  </li></ul>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915301" headers="id_13106501__id_14914951">On power up, Lenze AC Tech VFD displays two-letter code such
+as <span class="+ topic/ph ui-d/uicontrol ph uicontrol">UF</span>.</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915302" headers="id_13106501__id_14914952" colspan="5">
+                <ol class="- topic/ol ol" id="id_13106501__id_14915303" data-ofbid="id_13106501__id_14915303"><li class="- topic/li li" id="id_13106501__SL4211085-1106599" data-ofbid="id_13106501__SL4211085-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915304" data-ofbid="id_13106501__id_14915304">On the signal box controller, hold
+the up arrow while you press <span class="+ topic/ph ui-d/uicontrol ph uicontrol">F1</span> to toggle the
+blower on, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">F2</span> to toggle the GC pump on, and <span class="+ topic/ph ui-d/uicontrol ph uicontrol">F3</span> to toggle the PE pump on.</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL4211108-1106599" data-ofbid="id_13106501__SL4211108-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915305" data-ofbid="id_13106501__id_14915305">If there is no response, cycle HEC
+power and try again to start the pumps manually (hold the up arrow
+while you press <span class="+ topic/ph ui-d/uicontrol ph uicontrol">F1</span> to toggle the blower on, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">F2</span> to toggle the GC pump on, and <span class="+ topic/ph ui-d/uicontrol ph uicontrol">F3</span> to toggle the PE pump on).</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL4211109-1106599" data-ofbid="id_13106501__SL4211109-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915306" data-ofbid="id_13106501__id_14915306">If you cannot clear the code, try these
+solutions:</p>
+                    <ul class="- topic/ul ul" id="id_13106501__id_14915307" data-ofbid="id_13106501__id_14915307"><li class="- topic/li li" id="id_13106501__SL4211110-1106599" data-ofbid="id_13106501__SL4211110-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915308" data-ofbid="id_13106501__id_14915308">Check for proper incoming AC mains
+power.</p>
+                      </li><li class="- topic/li li" id="id_13106501__SL4211111-1106599" data-ofbid="id_13106501__SL4211111-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915309" data-ofbid="id_13106501__id_14915309">If the code is visible only on a single
+VFD, swap its control wiring with that of neighboring unit and see
+if the problem moves.</p>
+                      </li><li class="- topic/li li" id="id_13106501__SL4211112-1106599" data-ofbid="id_13106501__SL4211112-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915310" data-ofbid="id_13106501__id_14915310">If the same code is visible on all
+VFDs, and incoming AC mains power is okay, check operation of the
+signal box.</p>
+                      </li></ul>
+                  </li></ol>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915311" headers="id_13106501__id_14914951">Eaton VFD displays power fault two-letter code <span class="+ topic/ph ui-d/uicontrol ph uicontrol">F1
+09</span> – Reset/clear power fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915312" headers="id_13106501__id_14914952" colspan="5">
+                <p class="- topic/p p" id="id_13106501__id_14915313" data-ofbid="id_13106501__id_14915313">DETAILS: After mains
+power interruption, the VFD will lock out in an error condition, displaying <span class="+ topic/ph ui-d/uicontrol ph uicontrol">F1 09</span>. The reset/clear power feature allows the VFD to
+ramp to a safe powered down condition to protect the load device (motor).
+A TPS Reset will not recover the VFD from this condition. Follow this
+process to manually clear the error message and reset the pump or
+blower.</p>
+                <ol class="- topic/ol ol" id="id_13106501__id_14915314" data-ofbid="id_13106501__id_14915314"><li class="- topic/li li" id="id_13106501__SL14984590-1106599" data-ofbid="id_13106501__SL14984590-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915315" data-ofbid="id_13106501__id_14915315">Turn off the circuit breaker (group
+of 3) in the HEC power box supplying power to the drive showing the
+fault. For instance, if the VFD GPMP has the fault, turn off the GPMP
+circuit breaker only, the remaining circuit breakers are left on:
+PWR CB, PPMP CB, BLW CB, and CRY CB</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL14984591-1106599" data-ofbid="id_13106501__SL14984591-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915316" data-ofbid="id_13106501__id_14915316">Allow time for the VFD display to
+turn off.</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL14984592-1106599" data-ofbid="id_13106501__SL14984592-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915317" data-ofbid="id_13106501__id_14915317">Turn the circuit breaker back on.</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL14984593-1106599" data-ofbid="id_13106501__SL14984593-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915318" data-ofbid="id_13106501__id_14915318">Cycle the drive command for the pump
+or blower by simultaneously pressing: </p>
+                    <ul class="- topic/ul ul" id="id_13106501__id_14915319" data-ofbid="id_13106501__id_14915319"><li class="- topic/li li" id="id_13106501__SL14984594-1106599" data-ofbid="id_13106501__SL14984594-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915320" data-ofbid="id_13106501__id_14915320">
+                          <samp class="+ topic/ph sw-d/msgph ph msgph">(For the GPMP (gradient pump)) </samp> Up arrow + F2 (see Illustration 1)</p>
+                      </li><li class="- topic/li li" id="id_13106501__SL14984595-1106599" data-ofbid="id_13106501__SL14984595-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915321" data-ofbid="id_13106501__id_14915321">
+                          <samp class="+ topic/ph sw-d/msgph ph msgph">(For PPMP (power electronics
+pump)) </samp> Up arrow + F3 (see Illustration 1)</p>
+                      </li><li class="- topic/li li" id="id_13106501__SL14984596-1106599" data-ofbid="id_13106501__SL14984596-1106599">
+                        <div class="- topic/p p" id="id_13106501__id_14915322" data-ofbid="id_13106501__id_14915322">
+                          <samp class="+ topic/ph sw-d/msgph ph msgph">(For BLW (blower)) </samp> Up arrow + F1 (see Illustration 1)
+<figure class="- topic/fig fig fignone" id="id_13106501__SL15222533-1106599" data-ofbid="id_13106501__SL15222533-1106599"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">7. </span></span><span class="fig--title">HEC Drive Command</span></figcaption><img class="- topic/image image" id="id_13106501__id_14915323" src="15222515.jpg"/></figure></div>
+                      </li></ul>
+                    <p class="- topic/p p" id="id_13106501__id_14915324" data-ofbid="id_13106501__id_14915324">This will restart the “Run” command
+from the drive. </p>
+                  </li><li class="- topic/li li" id="id_13106501__SL14984597-1106599" data-ofbid="id_13106501__SL14984597-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915325" data-ofbid="id_13106501__id_14915325">The drive will reset and the pump
+or blower in question should function normally.</p>
+                  </li></ol>
+                <div class="- topic/note note note note_note" id="id_13106501__id_14915326" data-ofbid="id_13106501__id_14915326"><span class="note__title">Note</span> 
+                  <p class="- topic/p p" id="id_13106501__id_14915327" data-ofbid="id_13106501__id_14915327"> To avoid future power faults, make sure to
+perform the following steps for “Restart Programming”
+as well.</p>
+                </div>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915328" headers="id_13106501__id_14914951">Eaton VFD displays power fault two-letter code <span class="+ topic/ph ui-d/uicontrol ph uicontrol">F1
+09</span> – Restart Programming for the HEC Power Box</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915329" headers="id_13106501__id_14914952" colspan="5">
+                <p class="- topic/p p" id="id_13106501__id_14915330" data-ofbid="id_13106501__id_14915330">DETAILS: After mains
+power interruption, the VFD will lock out in an error condition, displaying <span class="+ topic/ph ui-d/uicontrol ph uicontrol">F1 09</span>. The restart programming feature allows the VFD
+to ramp to a safe powered down condition to protect the load device
+(motor). A TPS Reset will not recover the VFD from this condition.
+Follow this process to change the Auto-Restart setting, parameter
+P6.13, allowing TPS reset to start the pump and blower. </p>
+                <ol class="- topic/ol ol" id="id_13106501__id_14915331" data-ofbid="id_13106501__id_14915331"><li class="- topic/li li" id="id_13106501__SL15173918-1106599" data-ofbid="id_13106501__SL15173918-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915332" data-ofbid="id_13106501__id_14915332">If the drive shows a fault, follow
+the steps listed in the row above.</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL15173919-1106599" data-ofbid="id_13106501__SL15173919-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915333" data-ofbid="id_13106501__id_14915333">Disable the drive command at the signal
+box for the pump or blower by simultaneously pressing:</p>
+                    <ul class="- topic/ul ul" id="id_13106501__id_14915334" data-ofbid="id_13106501__id_14915334"><li class="- topic/li li" id="id_13106501__SL15173978-1106599" data-ofbid="id_13106501__SL15173978-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915335" data-ofbid="id_13106501__id_14915335">
+                          <samp class="+ topic/ph sw-d/msgph ph msgph">(For the GPMP (gradient pump)) </samp> Up arrow + F2 (see Illustration 2)</p>
+                      </li><li class="- topic/li li" id="id_13106501__SL15173979-1106599" data-ofbid="id_13106501__SL15173979-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915336" data-ofbid="id_13106501__id_14915336">
+                          <samp class="+ topic/ph sw-d/msgph ph msgph">(For PPMP (power electronics
+pump)) </samp> Up arrow + F3 (see Illustration 2)</p>
+                      </li><li class="- topic/li li" id="id_13106501__SL15173980-1106599" data-ofbid="id_13106501__SL15173980-1106599">
+                        <div class="- topic/p p" id="id_13106501__id_14915337" data-ofbid="id_13106501__id_14915337">
+                          <samp class="+ topic/ph sw-d/msgph ph msgph">(For BLW (blower)) </samp> Up arrow + F1 (see Illustration 2) 
+<figure class="- topic/fig fig fignone" id="id_13106501__SL15224083-1106599" data-ofbid="id_13106501__SL15224083-1106599"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">8. </span></span><span class="fig--title">HEC Drive Command</span></figcaption><img class="- topic/image image" id="id_13106501__id_14915338" src="15222515.jpg"/></figure></div>
+                      </li></ul>
+                    <p class="- topic/p p" id="id_13106501__id_14915339" data-ofbid="id_13106501__id_14915339">This will remove the ‘Run’ command
+from the drive, displaying 0.0 Hz on that drive.</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL15173981-1106599" data-ofbid="id_13106501__SL15173981-1106599">
+                    <div class="- topic/p p" id="id_13106501__id_14915340" data-ofbid="id_13106501__id_14915340">Press the button on the VFD labeled
+“BACK RESET” (1). This will activate the menu level (arrow
+flashes). 
+<figure class="- topic/fig fig fignone" id="id_13106501__SL15224084-1106599" data-ofbid="id_13106501__SL15224084-1106599"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">9. </span></span><span class="fig--title">Eaton display</span></figcaption><img class="- topic/image image" id="id_13106501__id_14915341" src="15222536.jpg"/><div class="- topic/p p" id="id_13106501__id_14915342" data-ofbid="id_13106501__id_14915342"><table class="- topic/table table" id="id_13106501__id_14915343" data-ofbid="id_13106501__id_14915343"><caption></caption><colgroup><col/><col/></colgroup><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915344">1. Back/Reset button</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915345">2. Up arrow button</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915346">3. Ok button</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915347">4. Down arrow button</td></tr></tbody>
+        </table></div></figure></div>
+                  </li><li class="- topic/li li" id="id_13106501__SL15173982-1106599" data-ofbid="id_13106501__SL15173982-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915348" data-ofbid="id_13106501__id_14915348">Using the ‘down arrow’
+button (4), press until the arrow on the left of the display moves
+from ‘MON’ to ‘PAR’. Press the ‘OK’
+button (3). When the PAR menu is activated, the first parameter will
+flash between ‘P1.1’ and ‘0’ on the display.</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL15173983-1106599" data-ofbid="id_13106501__SL15173983-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915349" data-ofbid="id_13106501__id_14915349">Press and hold the ‘up arrow’
+button (2) until parameter P6.13 is shown. This is the setting for
+Automatic Restart. The display will alternately flash between ‘6.13’
+and ‘0’.</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL15173984-1106599" data-ofbid="id_13106501__SL15173984-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915350" data-ofbid="id_13106501__id_14915350">Press the ‘OK’ button
+(3). The display will show current setting ‘0’. Press
+the ‘up arrow’ button (2) to change the value to 1. Press
+the ‘OK’ button (3). This enables auto-restart.</p>
+                    <div class="- topic/note note note note_note" id="id_13106501__id_14915351" data-ofbid="id_13106501__id_14915351"><span class="note__title">Note</span> 
+                      <p class="- topic/p p" id="id_13106501__id_14915352" data-ofbid="id_13106501__id_14915352">
+                        <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Complete this step quickly, otherwise the system
+will timeout.</span>
+                      </p>
+                    </div>
+                  </li><li class="- topic/li li" id="id_13106501__SL15173985-1106599" data-ofbid="id_13106501__SL15173985-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915353" data-ofbid="id_13106501__id_14915353">Press the ‘BACK RESET’
+button (1), and then press the ‘up arrow’ button (2) until
+the arrow on left of display is next to MON. Press the ‘OK’
+button (3). This completes the parameter change actions.</p>
+                  </li><li class="- topic/li li" id="id_13106501__SL15173986-1106599" data-ofbid="id_13106501__SL15173986-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915354" data-ofbid="id_13106501__id_14915354">In order to restart the drive at the
+signal box, manually cycle the drive command for the pump or blower
+by simultaneously pressing:</p>
+                    <ul class="- topic/ul ul" id="id_13106501__id_14915355" data-ofbid="id_13106501__id_14915355"><li class="- topic/li li" id="id_13106501__SL15173987-1106599" data-ofbid="id_13106501__SL15173987-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915356" data-ofbid="id_13106501__id_14915356">
+                          <samp class="+ topic/ph sw-d/msgph ph msgph">(For the GPMP (gradient pump)) </samp> Up arrow + F2 (see Illustration 4) </p>
+                      </li><li class="- topic/li li" id="id_13106501__SL15173988-1106599" data-ofbid="id_13106501__SL15173988-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915357" data-ofbid="id_13106501__id_14915357">
+                          <samp class="+ topic/ph sw-d/msgph ph msgph">(For PPMP (power electronics
+pump)) </samp> Up arrow + F3 (see Illustration 4)</p>
+                      </li><li class="- topic/li li" id="id_13106501__SL15173989-1106599" data-ofbid="id_13106501__SL15173989-1106599">
+                        <div class="- topic/p p" id="id_13106501__id_14915358" data-ofbid="id_13106501__id_14915358">
+                          <samp class="+ topic/ph sw-d/msgph ph msgph">(For BLW (blower)) </samp> Up arrow + F1 (see Illustration 4) 
+<figure class="- topic/fig fig fignone" id="id_13106501__SL15224145-1106599" data-ofbid="id_13106501__SL15224145-1106599"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">10. </span></span><span class="fig--title">HEC Drive Command</span></figcaption><img class="- topic/image image" id="id_13106501__id_14915359" src="15222515.jpg"/></figure></div>
+                      </li></ul>
+                    <p class="- topic/p p" id="id_13106501__id_14915360" data-ofbid="id_13106501__id_14915360">This will enable the “Run” command
+from the drive. </p>
+                  </li><li class="- topic/li li" id="id_13106501__SL15173990-1106599" data-ofbid="id_13106501__SL15173990-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915361" data-ofbid="id_13106501__id_14915361">The drive will restart and the pump
+or blower will function normally:</p>
+                    <ul class="- topic/ul ul" id="id_13106501__id_14915362" data-ofbid="id_13106501__id_14915362"><li class="- topic/li li" id="id_13106501__SL15173991-1106599" data-ofbid="id_13106501__SL15173991-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915363" data-ofbid="id_13106501__id_14915363">
+                          <samp class="+ topic/ph sw-d/msgph ph msgph">(For the GPMP (gradient pump)) </samp> 61 Hz ± 5 Hz. (active mode), 43 Hz. ± 5 Hz. (idle
+mode)</p>
+                      </li><li class="- topic/li li" id="id_13106501__SL15173992-1106599" data-ofbid="id_13106501__SL15173992-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915364" data-ofbid="id_13106501__id_14915364">
+                          <samp class="+ topic/ph sw-d/msgph ph msgph">(For PPMP (power electronics
+pump)) </samp> 61 Hz ± 5 Hz. (active mode), 43 Hz. ±
+5 Hz. (idle mode)</p>
+                      </li><li class="- topic/li li" id="id_13106501__SL15173993-1106599" data-ofbid="id_13106501__SL15173993-1106599">
+                        <p class="- topic/p p" id="id_13106501__id_14915365" data-ofbid="id_13106501__id_14915365">
+                          <samp class="+ topic/ph sw-d/msgph ph msgph">(For BLW (blower)) </samp> 60 Hz ± 5 Hz. (active mode only)</p>
+                      </li></ul>
+                  </li><li class="- topic/li li" id="id_13106501__SL15224646-1106599" data-ofbid="id_13106501__SL15224646-1106599">
+                    <p class="- topic/p p" id="id_13106501__id_14915366" data-ofbid="id_13106501__id_14915366">Repeat Step 2 – Step 8 until all 3 VFD’s have been updated.</p>
+                  </li></ol>
+              </td></tr></tbody>
+        </table>
+      <table class="- topic/table table" id="id_13106501__SL15218634-1106599" data-ofbid="id_13106501__SL15218634-1106599"><caption class="- topic/title title tablecap" caption-side="top" is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 2</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">AC Tech VFD Fault Messages</span></caption><colgroup><col style="width:1.0in"/><col style="width:1.80in"/><col style="width:5.5in"/></colgroup><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915367">
+                <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Fault</span>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915368">
+                <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Description</span>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915369">
+                <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Possible Cause</span>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915370">AF</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915371">High Temperature</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915372">Ambient temperature is too high; the cooling fan has failed
+(if equipped).</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915373">CF</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915374">Control Fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915375">A blank EPM or an EPM with corrupted data has been installed. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915376">cF</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915377">Incompatibility Fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915378">An EPM with an incompatible parameter version has been installed. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915379">dF</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915380">Dynamic Braking Fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915381">The drive has sensed that the dynamic braking resistors are
+overheating and has shut down to protect the resistors. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915382">EF</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915383">External Fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915384">One of the TB-13 terminals is set as an external fault input
+and that terminal is open with respect to TB-11. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915385">GF</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915386">Data Fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915387">User data and OEM defaults in the EPM are corrupted.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915388">HF</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915389">High DC Bus Voltage Fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915390">Line voltage is too high; deceleration rate is too fast (overhauling
+load). For fast deceleration or overhauling loads, dynamic braking
+may be required. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915391">JF</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915392">Remote Keypad Fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915393">The communication link between the drive and the optional remote
+keypad has been lost. Check for proper wiring and/or noise. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915394">LF</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915395">Low DC Bus Voltage Fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915396">Line voltage is too low. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915397">OF</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915398">Output Transistor Fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915399">Phase to phase or phase to ground short circuit on the output.
+Boost settings are too high. Acceleration rate is too fast. Failed
+output transistor. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915400">PF</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915401">Current Overload Fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915402">VFD is undersized for the application. Mechanical problem with
+the driven equipment. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915403">UF</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915404">Start Fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915405">Start command was present when the drive was powered up. Must
+wait 2 seconds after powered up to apply start command if start method
+is set to normal. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915406">F1</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915407">EPM Fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915408">The EPM is missing or damaged. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915409">FC</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915410">Internal Fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915411">The control board has sensed a problem. Replace VFD. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915412">F2–F9</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915413">Internal Fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915414">The control board has sensed a problem. Replace VFD.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915415">Fo</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915416">Internal Fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915417">The control board has sensed a problem. Replace VFD.</td></tr></tbody>
+        </table>
+      <table class="- topic/table table" id="id_13106501__SL15222535-1106599" data-ofbid="id_13106501__SL15222535-1106599"><caption class="- topic/title title tablecap" caption-side="top" is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 3</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">Eaton VFD Fault Messages</span></caption><colgroup><col style="width:1.0in"/><col style="width:1.80in"/><col style="width:5.5in"/></colgroup><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915418">
+                <span class="+ topic/ph ui-d/uicontrol ph uicontrol">
+                  Fault</span>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915419">
+                <span class="+ topic/ph ui-d/uicontrol ph uicontrol">
+                  Description</span>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915420">
+                <span class="+ topic/ph ui-d/uicontrol ph uicontrol">
+                  Possible Cause</span>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915421">01</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915422">Over Current</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915423">The frequency inverter has detected an excessive current in
+the motor cable, or there was a sudden load increase, or there was
+a short circuit in the motor cable, or the motor is Inadequate. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915424">02 </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915425">Over Voltage</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915426">The DC intermediate circuit voltage has exceeded the internal
+safety limit, or the delay time is too short, or the high over voltage
+peaks in line power. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915427">03</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915428">Ground Fault </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915429">An additional leakage current was detected when starting by
+means of a current measurement, or there is a fault with the cable
+insulation or motor insulation. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915430">08</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915431">System Fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915432">CPU error message or internal communication fault. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915433">09</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915434">Under Voltage</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915435">The DC intermediate circuit voltage has exceeded the internal
+safety limit. Probable cause: The supply voltage is too low, or internal
+device fault, or site power failure. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915436">13</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915437">Under Temperature</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915438">The IGBT switch temperature is below 14°F (-10°C)</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915439">14</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915440">Over Temperature</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915441">The IGBT switch temperature is above 248°F (120°C).
+An excessive temperature warning is issued if the IGBT switch temperature
+goes above 230°F (110°C).</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915442">15</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915443">Motor Stalled</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915444">The motor blocking protection mechanism has been triggered. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915445">16</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915446">Motor Over Temperature</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915447">The frequency inverter’s motor temperature model has
+detected motor over heating. The motor is overloaded. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915448">17</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915449">Motor Under Load</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915450">Motor idle, connection to load machine interrupted (Example:
+torn drive belt).</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915451">22</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915452">EEPROM Checksum Error</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915453">Error when storing parameters, or malfunction, or component
+fault, or error in micro-processing monitoring. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915454">25</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915455">Watchdog (API) </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915456">Error in micro-processor monitoring, or malfunction, or component
+fault. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915457">27</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915458">Back EMF</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915459">Electromotive force. The voltage induced in the motor with
+the rotation is greater than the output voltage of the frequency inverter. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915460">35</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915461">Application Error</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915462">The application is not working. </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915463">41</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915464">IGBT Over Temperature</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915465">The IGBT switch temperature is above 248°F (120°C).
+An excessive temperature warning is issued if the IGBT switch temperature
+goes above 230°F (110°C).</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915466">50</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915467">Live Zero Error</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915468">Current less than 4 mA, or the voltage is less than 2V, or
+the signal cable was interrupted. The signal source is faulty.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915469">51</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915470">External Fault</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915471">Error message at a digital input (DI1–DI6).</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915472">53</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915473">Fieldbus Error</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915474">The communication link between the master device and the drive's
+fieldbus has been interrupted.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915475">54</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915476">Fieldbus interface error</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106501__id_14915477">MMX-NET-XA mounting frame for fieldbus interface cards is not
+connected to the frequency inverter, or the optional fieldbus interface
+is not fitted.</td></tr></tbody>
+        </table>
+    </section></div></article></main></div>
+                        
+                        
+                        
+                        </div>
+                        
+                        
+                        <!--<whc:webhelp_related_links class="d-print-none"/> -->
+                        
+                        
+                        
+                        
+                        <!-- GEDev US503: next/previous buttons on bottom -->
+                        
+                        <div id="topic_toc_button">
+                            <button type="button" data-target="#wh_topic_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle topic table of content" aria-controls="contain-topic_toc"></button>
+                        </div>
+                        <!--whc:include_html href="${webhelp.fragment.toggle.toc}"/-->
+                        
+                    </div>
+
+                </div>
+
+                
+            </div>
+            
+                
+            
+            </div>
+        <!-- US675: Modify the breadcrumbs heading on webpages so that it is always visible when users scroll down in webhelp -->
+        <div id="wh_tools_bottom" class="row wh_tools">
+            <nav class="d-print-none navbar-expand-md" aria-label="Tools">
+                
+                <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+                
+                
+                <div class="wh_right_tools">
+                    <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                </div>
+            </nav>
+            
+        </div>
+        <!-- webhelp.fragment.after.main.content.area and webhelp.fragment.after.main.content.area.topic.page moved out of div to try and fix scrolling issue -->
+        
+        
+        <footer class="navbar navbar-default wh_footer" whc:version="23.1">
+  <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="" class="ftrcustom"><span>
+				
+				
+				
+				
+				
+				
+				
+				
+				5490579-3
+			</span> | <span>Revision 
+					12
+				</span> | <span>en | </span><span><a target="_blank" href="https://www.gehealthcare.com/">gehealthcare.com</a></span></div><div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:str="http://exslt.org/strings" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="" class="copyright_info"><span class="copyright_years"> ©2025</span> GE HealthCare Proprietary<div class="GETradmark"><span>GE is a trademark of General Electric Company used under trademark license.</span></div></div>
+</footer>
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" alt=""/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>
