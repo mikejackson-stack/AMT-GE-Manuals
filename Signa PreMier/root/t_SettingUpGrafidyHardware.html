@@ -1,0 +1,208 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en" whc:version="22.0">
+
+    <head><link rel="shortcut icon" href="oxygen-webhelp\template\img\favicon-32x32.webp"><!----></link><link rel="icon" href="oxygen-webhelp\template\img\favicon-32x32.webp"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta charset="UTF-8"/><meta name="copyright" content="(C) Copyright 2023"/><meta name="DC.rights.owner" content="(C) Copyright 2023"/><meta name="DC.type" content="task"/><meta name="description" content="Set up the grafidy hardware, including the six-channel fixture and Grafidy kit cable."/><meta name="DC.coverage" content=""/><meta name="DC.subject" content="Grafidy"/><meta name="keywords" content="Grafidy"/><meta name="DC.relation" scheme="URI" content="t_CalibratingGrafidy.html"/><meta name="DC.relation" scheme="URI" content="t_CalibratingGrafidy.html"/><meta name="DC.relation" scheme="URI" content="t_RunningGrafidy.html"/><meta name="prodname" content=""/><meta name="version" content="0"/><meta name="brand" content=""/><meta name="component" content="Host Tools and Diagnostics"/><meta name="featnum" content=""/><meta name="prognum" content=""/><meta name="series" content=""/><meta name="DC.creator" content=""/><meta name="DC.publisher" content="712023"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="id_2002113"/>        
+      <title>Setting up grafidy hardware</title><!--  Generated with Oxygen version 23.1, build number 2021121412.  --><meta name="wh-path2root" content=""/><meta name="wh-toc-id" content="id_2002113-d46e59729"/><meta name="wh-source-relpath" content="t_SettingUpGrafidyHardware.dita"/><meta name="wh-out-relpath" content="t_SettingUpGrafidyHardware.html"/>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/>
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2021121412"/>
+    
+    
+    <script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script>
+    
+    <script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/notes.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/GEHealthCare.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/print.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/footer-fix.css?buildId=2021121412"/><script src="./oxygen-webhelp/lib/scripts/Remove_LSEP.js"></script></head>
+    <body id="id_2002113" class="wh_topic_page frmBody">
+        <!--US578: WHR - Move search to line up with manual title-->
+        <div class="SupressSearch">
+            <!--Search form 
+                Removed class for DE238: Double search fields when webhelp is viewed on
+            <whc:webhelp_search_input class="navbar-form wh_topic_page_search search" role="form">-->
+            <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_search_input " role="form">
+                
+                
+                <div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div>
+                
+                
+            </div>
+        </div>
+        <a href="#topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="23.1">
+    <div class="container-fluid">
+        <!-- GEDev US509 Webhelp: expandable navbar icon invisible changed to navbar-light -->
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-light">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <!-- GE Dev US464 change logo link to blank target -->
+                    <a href="https://www.gehealthcare.com/" class=" wh_logo d-none d-sm-block " target="_blank"><img src="oxygen-webhelp\template\img\GE-HLTHCR_Webhelp_CMYK-CompPrpl.svg" alt="SIGNA™ Premier 3.0T Service Manual"/></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle"><span class="ph mainbooktitle">SIGNA™ Premier 3.0T Service Manual</span></span></a></div>
+                    <!--* DE224: WHR: Link under the search field is missing -->
+                    <div class="search_container">
+                        <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_search_input "><div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div></div><whc:search_field></whc:search_field>
+                        <div class="search_link">
+                             
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+            </div>
+            
+            
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033906-d46e224-mi" data-tocid="id_2033906-d46e224" data-state="not-ready" class=" topicref " data-id="id_2033906"><span class="title"><a href="c_Safety_WebhelpLandingPage.html">Safety and General Information</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033907-d46e1778-mi" data-tocid="id_2033907-d46e1778" data-state="not-ready" class=" topicref " data-id="id_2033907"><span class="title"><a href="c_PreInstallation_WebhelpLandingPage.html">Pre-Installation</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033909-d46e1984-mi" data-tocid="id_2033909-d46e1984" data-state="not-ready" class=" topicref " data-id="id_2033909"><span class="title"><a href="c_Installation_WebhelpLandingPage.html">Installation</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033902-d46e47631-mi" data-tocid="id_2033902-d46e47631" data-state="not-ready" class=" topicref " data-id="id_2033902"><span class="title"><a href="c_AdjustmentsAndCalibrations_WebhelpLandingPage.html">Adjustments/Calibrations</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033910-d46e84750-mi" data-tocid="id_2033910-d46e84750" data-state="not-ready" class=" topicref " data-id="id_2033910"><span class="title"><a href="c_FunctionalChecks_WebhelpLandingPage.html">Functional Checks</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033911-d46e101428-mi" data-tocid="id_2033911-d46e101428" data-state="not-ready" class=" topicref " data-id="id_2033911"><span class="title"><a href="c_Software_WebhelpLandingPage.html">Software</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033912-d46e123345-mi" data-tocid="id_2033912-d46e123345" data-state="not-ready" class=" topicref " data-id="id_2033912"><span class="title"><a href="c_Theory_WebhelpLandingPage.html">Theory</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033914-d46e126730-mi" data-tocid="id_2033914-d46e126730" data-state="not-ready" class=" topicref " data-id="id_2033914"><span class="title"><a href="c_PlannedMaintenance_WebhelpLandingPage.html">Planned Maintenance</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033915-d46e136133-mi" data-tocid="id_2033915-d46e136133" data-state="not-ready" class=" topicref " data-id="id_2033915"><span class="title"><a href="c_Troubleshooting_WebhelpLandingPage.html">Troubleshooting</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033916-d46e142542-mi" data-tocid="id_2033916-d46e142542" data-state="not-ready" class=" topicref " data-id="id_2033916"><span class="title"><a href="c_Parts_WebhelpLandingPage.html">Parts</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033917-d46e144514-mi" data-tocid="id_2033917-d46e144514" data-state="not-ready" class=" topicref " data-id="id_2033917"><span class="title"><a href="c_Replacements_WebhelpLandingPage.html">Replacements</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033903-d46e452121-mi" data-tocid="id_2033903-d46e452121" data-state="not-ready" class=" topicref " data-id="id_2033903"><span class="title"><a href="c_OEMAndOtherManuals_WebhelpLandingPage.html">OEM and Other Manuals</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033904-d46e452533-mi" data-tocid="id_2033904-d46e452533" data-state="not-ready" class=" topicref " data-id="id_2033904"><span class="title"><a href="c_Coils_WebhelpLandingPage.html">Coils</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033918-d46e459216-mi" data-tocid="id_2033918-d46e459216" data-state="not-ready" class=" topicref " data-id="id_2033918"><span class="title"><a href="c_OptionalFeatures_WebhelpLandingPage.html">Optional Features</a></span></span></li></ul></nav>
+                
+                <!--whc:include_html href="${webhelp.fragment.after.top_menu}"/-->
+                
+            </div>
+            
+        </div>
+    </div>
+</header>
+        
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li><span class="topicref" data-id="id_2033902"><span class="title"><a href="c_AdjustmentsAndCalibrations_WebhelpLandingPage.html">Adjustments/Calibrations</a></span></span></li><li><span class="topicref"><span class="title"><a href="t_WorkingWithEddyCurrentCompTools.html">Gradient</a></span></span></li><li><span class="topicref" data-id="id_2001480"><span class="title"><a href="t_WorkingWithEddyCurrentCompTools.html">Working with eddy current compensation tools</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Use the appropriate eddy current compensation tool for your software version.</p></span></span></span></li><li><span class="topicref" data-id="id_2039505"><span class="title"><a href="t_CalibratingGrafidy.html">Calibrating grafidy</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Eddy current compensation tools adjust and compensate short, medium, long, and very long time constant eddy currents for both linear and B0 terms.</p></span></span></span></li><li class="active"><span class="topicref" data-id="id_2002113"><span class="title"><a href="t_SettingUpGrafidyHardware.html">Setting up grafidy hardware</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Set up the grafidy hardware, including the six-channel fixture and Grafidy kit cable.</p></span></span></span></li></ol></div>
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="- topic/link link" href="t_CalibratingGrafidy.html" title="Calibrating grafidy" aria-label="Previous topic: Calibrating grafidy" rel="prev"></a></span>  
+<span class="navnext"><a class="- topic/link link" href="t_RunningGrafidy.html" title="Running grafidy" aria-label="Next topic: Running grafidy" rel="next"></a></span>  </span></div>
+
+                        <!-- External resource link -->
+                        
+
+                        <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page" class="oxy-icon oxy-icon-print"></button></div>
+
+                        <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                        <button type="button" data-target="#wh_publication_toc" id="wh_toc_button" data-toggle="collapse" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+
+            <!--whc:include_html href="${webhelp.fragment.before.main.content.area}"/>
+           
+            <whc:include_html href="${webhelp.fragment.before.main.content.area.topic.page}"/-->
+
+
+            <div class="wh_content_area">
+                <!-- US616 - TOC toggle buttons -->
+                <div class="row" id="topic_body">
+                    
+                        
+                        <nav id="wh_publication_toc" class="d-print-none collapsible" aria-label="Table of Contents Container">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="id_2033902-d46e47631" class="topicref" data-id="id_2033902" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action id_2033902-d46e47631-link" class="wh-expand-btn"></span><span class="title"><a href="c_AdjustmentsAndCalibrations_WebhelpLandingPage.html" id="id_2033902-d46e47631-link">Adjustments/Calibrations</a></span></span><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="false"><span data-tocid="tocId-d46e47736" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d46e47736-link" class="wh-expand-btn"></span><span class="title"><a href="t_CalibratingB0Drift.html" id="tocId-d46e47736-link">System</a></span></span></li><li role="treeitem" aria-expanded="true"><span data-tocid="tocId-d46e59519" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d46e59519-link" class="wh-expand-btn"></span><span class="title"><a href="t_WorkingWithEddyCurrentCompTools.html" id="tocId-d46e59519-link">Gradient</a></span></span><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="true"><span data-tocid="id_2001480-d46e59521" class="topicref" data-id="id_2001480" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action id_2001480-d46e59521-link" class="wh-expand-btn"></span><span class="title"><a href="t_WorkingWithEddyCurrentCompTools.html" id="id_2001480-d46e59521-link">Working with eddy current compensation tools</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Use the appropriate eddy current compensation tool for your software version.</p></span></span></span><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="true"><span data-tocid="id_2039505-d46e59625" class="topicref" data-id="id_2039505" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action id_2039505-d46e59625-link" class="wh-expand-btn"></span><span class="title"><a href="t_CalibratingGrafidy.html" id="id_2039505-d46e59625-link">Calibrating grafidy</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Eddy current compensation tools adjust and compensate short, medium, long, and very long time constant eddy currents for both linear and B0 terms.</p></span></span></span><ul role="group" class="navbar-nav nav-list"><li role="treeitem" class="active"><span data-tocid="id_2002113-d46e59729" class="topicref" data-id="id_2002113" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="t_SettingUpGrafidyHardware.html" id="id_2002113-d46e59729-link">Setting up grafidy hardware</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Set up the grafidy hardware, including the six-channel fixture and Grafidy kit cable.</p></span></span></span></li><li role="treeitem"><span data-tocid="id_2002114-d46e59833" class="topicref" data-id="id_2002114" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="t_RunningGrafidy.html" id="id_2002114-d46e59833-link">Running grafidy</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Running grafidy in auto mode includes all axes.</p></span></span></span></li><li role="treeitem"><span data-tocid="id_2002361-d46e59937" class="topicref" data-id="id_2002361" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="t_FinalizingGrafidyCalibration.html" id="id_2002361-d46e59937-link">Finalizing grafidy calibration</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Finish grafidy calibration and remove the Grafidy fixture.</p></span></span></span></li></ul></li><li role="treeitem" aria-expanded="false"><span data-tocid="id_2012251-d46e60042" class="topicref" data-id="id_2012251" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action id_2012251-d46e60042-link" class="wh-expand-btn"></span><span class="title"><a href="t_RunningEddyCurrentCompensation.html" id="id_2012251-d46e60042-link">  <span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="ph">Running eddy current compensation</span></a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Eddy current compensation adjusts and compensates medium, long, and very long time constant eddy currents for both linear and B0 terms<span class="ph">, and it adjusts oscillatory eddy currents for B0 terms (X- and Y-axis)</span>.</p></span></span></span></li></ul></li><li role="treeitem" aria-expanded="false"><span data-tocid="id_2030924-d46e60567" class="topicref" data-id="id_2030924" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action id_2030924-d46e60567-link" class="wh-expand-btn"></span><span class="title"><a href="t_CalibratingHighOrderShim.html" id="id_2030924-d46e60567-link">Calibrating High Order Shim (HOS)</a></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="id_2001481-d46e61813" class="topicref" data-id="id_2001481" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action id_2001481-d46e61813-link" class="wh-expand-btn"></span><span class="title"><a href="t_CalibratingHighOrderEddyCurrentHOEC.html" id="id_2001481-d46e61813-link">Calibrating High Order Eddy Current (HOEC)</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Use HOEC to characterize the time-dependent magnetic field errors in the bore up to at least the third order.</p></span></span></span></li></ul></li><li role="treeitem" aria-expanded="false"><span data-tocid="tocId-d46e62328" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d46e62328-link" class="wh-expand-btn"></span><span class="title"><a href="t_CalibratingRFAmplifierAndUPM.html" id="tocId-d46e62328-link">Radio Frequency (RF)</a></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="tocId-d46e68567" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d46e68567-link" class="wh-expand-btn"></span><span class="title"><a href="t_CheckingAndAligningTheLaserLight.html" id="tocId-d46e68567-link">Magnet Enclosure</a></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="tocId-d46e69923" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d46e69923-link" class="wh-expand-btn"></span><span class="title"><a href="t_AdjustingTheCradleHomeSensor_2.html" id="tocId-d46e69923-link">Patient Table</a></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="tocId-d46e81095" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d46e81095-link" class="wh-expand-btn"></span><span class="title"><a href="t_AdjustingTheIntercomForTheGOCAudioAssembly.html" id="tocId-d46e81095-link">Operator workspace</a></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="tocId-d46e83391" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d46e83391-link" class="wh-expand-btn"></span><span class="title"><a href="c_MNSTheory.html" id="tocId-d46e83391-link">Spectroscopy</a></span></span></li></ul></li></ul></div>
+                        </nav>
+                    
+                    <div id="pub_toc_button">
+                        <button type="button" data-target="#wh_publication_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc"></button>
+                    </div>
+                    
+                    <!--  DE234:  Spacing irregularities with flexible TOCS in Webhelp 
+                    Moved related links out 2 divs, moved topic tocs into topic body-->
+                    <div id="wh_topic_body">
+                        
+                        <div id="body_grid"><!-- DE234:  Added Body grid to fix issue with related links-->
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="id_2002113__title_fhb_zfj_fw"><header class="contentHead">
+        <div class="topicMeta"><ul class="- topic/title title"><li> </li><li></li><li></li><li><span class="metalabel">Object ID: </span>00000018WHA30999BGYZ</li><li><span class="metalabel">Topic ID: </span>id_2002113<span class="metalabel"> Version: </span>11.19</li><li><span class="metalabel">Date: </span>Jan 26, 2023 5:33:53 PM</li></ul></div><h1 class="- topic/title title topictitle1" id="id_2002113__title_fhb_zfj_fw">Setting up grafidy hardware</h1></header>
+        <div class="- topic/body task/taskbody body taskbody" id="id_2002113__taskbody_hmt_5fj_fw"><div class="hide"><p class="- topic/shortdesc shortdesc">Set up the grafidy hardware, including the six-channel fixture and Grafidy kit cable.</p></div>
+        <section id="id_2002113__steps_hzv_5fj_fw" data-ofbid="id_2002113__steps_hzv_5fj_fw"><div class="tasklabel"><h2 class="sectiontitle tasklabel">Procedure</h2></div><ol class="- topic/ol task/steps ol steps" id="id_2002113__steps_hzv_5fj_fw" data-ofbid="id_2002113__steps_hzv_5fj_fw"><li class="- topic/li task/step li step stepexpand" id="id_2002113__step_a31_vfj_fw" data-ofbid="id_2002113__step_a31_vfj_fw"><span class="- topic/ph task/cmd ph cmd">Unfold the six-channel grafidy fixture and lock the arms into place (90° from the center plate).</span><div class="- topic/itemgroup task/info itemgroup info" id="id_2002113__info_odm_vgk_p1b">
+                                                                                                    <div class="- topic/note note note note_note" id="id_2002113__note_fzj_wgk_p1b" data-ofbid="id_2002113__note_fzj_wgk_p1b"><span class="note__title">Note:</span> Make sure the six-channel Grafidy fixture is firmly pushed into the slit of foam support without any gap.</div>
+                                                                                </div></li><li class="- topic/li task/step li step stepexpand"><span class="- topic/ph task/cmd ph cmd">Connect the Grafidy kit cable to the Grafidy kit T/R board and secure with screws. Put the fixture at the front (head end) of the table with the connection box toward the bore.</span></li><li class="- topic/li task/step li step stepexpand"><span class="- topic/ph task/cmd ph cmd"><span class="- topic/ph ph">Connect the Grafidy kit cable connector to the corresponding Local Tx port.</span></span><div class="- topic/itemgroup task/info itemgroup info">
+                                                                                                    <figure class="- topic/fig fig fignone" id="id_2002113__fig_n2s_f3k_3z" data-ofbid="id_2002113__fig_n2s_f3k_3z"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">1. </span></span><span class="fig--title">Grafidy hardware setup for table</span></figcaption><img class="- topic/image image" id="id_2002113__image_wkq_jmb_4z" src="grafidy-hardware-setup-table.jpg"/></figure>
+                                                                                                    
+                                                                                </div></li><li class="- topic/li task/step li step stepexpand"><span class="- topic/ph task/cmd ph cmd">Center the laser crosshairs on top of the fixture.</span></li><li class="- topic/li task/step li step stepexpand"><span class="- topic/ph task/cmd ph cmd">Landmark the system and press <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Advance to Scan</span>.</span></li></ol></section></div></article></main></div>
+                        
+                        
+                        
+                        </div>
+                        
+                        
+                        <!--<whc:webhelp_related_links class="d-print-none"/> -->
+                        
+                        
+                        
+                        
+                        <!-- GEDev US503: next/previous buttons on bottom -->
+                        
+                        <div id="topic_toc_button">
+                            <button type="button" data-target="#wh_topic_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle topic table of content" aria-controls="contain-topic_toc"></button>
+                        </div>
+                        <!--whc:include_html href="${webhelp.fragment.toggle.toc}"/-->
+                        
+                    </div>
+
+                </div>
+
+                
+            </div>
+            <div class="row">
+            <div id="wh_tools">
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li><span class="topicref" data-id="id_2033902"><span class="title"><a href="c_AdjustmentsAndCalibrations_WebhelpLandingPage.html">Adjustments/Calibrations</a></span></span></li><li><span class="topicref"><span class="title"><a href="t_WorkingWithEddyCurrentCompTools.html">Gradient</a></span></span></li><li><span class="topicref" data-id="id_2001480"><span class="title"><a href="t_WorkingWithEddyCurrentCompTools.html">Working with eddy current compensation tools</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Use the appropriate eddy current compensation tool for your software version.</p></span></span></span></li><li><span class="topicref" data-id="id_2039505"><span class="title"><a href="t_CalibratingGrafidy.html">Calibrating grafidy</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Eddy current compensation tools adjust and compensate short, medium, long, and very long time constant eddy currents for both linear and B0 terms.</p></span></span></span></li><li class="active"><span class="topicref" data-id="id_2002113"><span class="title"><a href="t_SettingUpGrafidyHardware.html">Setting up grafidy hardware</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Set up the grafidy hardware, including the six-channel fixture and Grafidy kit cable.</p></span></span></span></li></ol></div>
+                    <div class="wh_right_tools">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="- topic/link link" href="t_CalibratingGrafidy.html" title="Calibrating grafidy" aria-label="Previous topic: Calibrating grafidy" rel="prev"></a></span>  
+<span class="navnext"><a class="- topic/link link" href="t_RunningGrafidy.html" title="Running grafidy" aria-label="Next topic: Running grafidy" rel="next"></a></span>  </span></div>
+                    </div>
+                </nav>
+            </div>
+            </div>
+            </div>
+        <!-- webhelp.fragment.after.main.content.area and webhelp.fragment.after.main.content.area.topic.page moved out of div to try and fix scrolling issue -->
+        
+        
+        <footer class="navbar navbar-default wh_footer" whc:version="23.1">
+  <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class="ftrcustom"><span>5777451-3</span> | <span>Revision 
+					7</span> | <span>en | </span><span><a target="_blank" href="https://www.gehealthcare.com/">gehealthcare.com</a></span></div><div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class="copyright_info"><span class="copyright_years"> ©2023</span> GE HealthCare Proprietary<div class="GETradmark"><span>GE is a trademark of General Electric Company used under trademark license.</span></div></div>
+</footer>
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" alt=""/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>
