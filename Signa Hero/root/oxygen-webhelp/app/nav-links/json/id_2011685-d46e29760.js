@@ -1,0 +1,1 @@
+define({"topics":[{"title":"MR Cyber Security Manual","shortdesc":"<p class=\"shortdesc\">These procedures outline the configuration of a secure environment for your MR system.<\/p>","href":"t_MRSecurityandPrivacyOverview.html","attributes":{"data-id":"id_2022711"},"menu":{"hasChildren":true},"tocID":"id_2022711-d46e29868","next":"id_2022711-d46e29868"}]});

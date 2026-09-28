@@ -1,0 +1,291 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en" whc:version="22.0">
+
+    <head><link rel="shortcut icon" href="oxygen-webhelp\template\img\favicon-32x32.webp"><!----></link><link rel="icon" href="oxygen-webhelp\template\img\favicon-32x32.webp"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="Prerequisites Table 1 . Personnel requirements Required persons Preliminary requirements Procedure Finalization 1 - 30 minutes - Table 2 . Required conditions Condition Reference Effectivity The ..."/><meta charset="UTF-8"/><meta name="copyright" content="(C) Copyright 2023"/><meta name="DC.rights.owner" content="(C) Copyright 2023"/><meta name="DC.type" content="task"/><meta name="DC.coverage" content=""/><meta name="DC.relation" scheme="URI" content="c_SystemSoftware.html"/><meta name="DC.relation" scheme="URI" content="r_SystemAndHardwareConfiguration_2.html"/><meta name="DC.relation" scheme="URI" content="t_Reconfiguring-the-System_14605693.html"/><meta name="prodname" content=""/><meta name="version" content="0"/><meta name="brand" content=""/><meta name="component" content=""/><meta name="featnum" content="none"/><meta name="featnum" content=""/><meta name="prognum" content=""/><meta name="platform" content=""/><meta name="DC.creator" content=""/><meta name="DC.publisher" content="3012023"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="id_13106166"/><title>NTP Server Time Synchronization</title><!--  Generated with Oxygen version 23.1, build number 2021121412.  --><meta name="wh-path2root" content=""/><meta name="wh-toc-id" content="id_13106166-d46e40151"/><meta name="wh-source-relpath" content="t_NTP-Server-Time-Synchronization_14608513.dita"/><meta name="wh-out-relpath" content="t_NTP-Server-Time-Synchronization_14608513.html"/>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/>
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2021121412"/>
+    
+    
+    <script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script>
+    
+    <script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/notes.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/GEHealthCare.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/print.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/footer-fix.css?buildId=2021121412"/><script src="./oxygen-webhelp/lib/scripts/Remove_LSEP.js"></script></head>
+    <body id="id_13106166" class="wh_topic_page frmBody">
+        <!--US578: WHR - Move search to line up with manual title-->
+        <div class="SupressSearch">
+            <!--Search form 
+                Removed class for DE238: Double search fields when webhelp is viewed on
+            <whc:webhelp_search_input class="navbar-form wh_topic_page_search search" role="form">-->
+            <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_search_input " role="form">
+                
+                
+                <div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div>
+                
+                
+            </div>
+        </div>
+        <a href="#topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="23.1">
+    <div class="container-fluid">
+        <!-- GEDev US509 Webhelp: expandable navbar icon invisible changed to navbar-light -->
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-light">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <!-- GE Dev US464 change logo link to blank target -->
+                    <a href="https://www.gehealthcare.com/" class=" wh_logo d-none d-sm-block " target="_blank"><img src="oxygen-webhelp\template\img\GE-HLTHCR_Webhelp_CMYK-CompPrpl.svg" alt=" SIGNA™ Hero 3.0T Service Methods "/></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle"><span class="ph mainbooktitle"> SIGNA™ <span class="ph">Hero</span> 3.0T Service Methods </span></span></a></div>
+                    <!--* DE224: WHR: Link under the search field is missing -->
+                    <div class="search_container">
+                        <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_search_input "><div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div></div><whc:search_field></whc:search_field>
+                        <div class="search_link">
+                             
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+            </div>
+            
+            
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033906-d46e230-mi" data-tocid="id_2033906-d46e230" data-state="not-ready" class=" topicref " data-id="id_2033906"><span class="title"><a href="c_Safety_WebhelpLandingPage.html">Safety and General Information</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033907-d46e1673-mi" data-tocid="id_2033907-d46e1673" data-state="not-ready" class=" topicref " data-id="id_2033907"><span class="title"><a href="c_PreInstallation_WebhelpLandingPage.html">Pre-Installation</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033909-d46e1879-mi" data-tocid="id_2033909-d46e1879" data-state="not-ready" class=" topicref " data-id="id_2033909"><span class="title"><a href="c_Installation_WebhelpLandingPage.html">Installation</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033902-d46e2506-mi" data-tocid="id_2033902-d46e2506" data-state="not-ready" class=" topicref " data-id="id_2033902"><span class="title"><a href="c_AdjustmentsAndCalibrations_WebhelpLandingPage.html">Adjustments/Calibrations</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033910-d46e14963-mi" data-tocid="id_2033910-d46e14963" data-state="not-ready" class=" topicref " data-id="id_2033910"><span class="title"><a href="c_FunctionalChecks_WebhelpLandingPage.html">Functional Checks</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033911-d46e26209-mi" data-tocid="id_2033911-d46e26209" data-state="not-ready" class=" topicref " data-id="id_2033911"><span class="title"><a href="c_Software_WebhelpLandingPage.html">Software</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033914-d46e42206-mi" data-tocid="id_2033914-d46e42206" data-state="not-ready" class=" topicref " data-id="id_2033914"><span class="title"><a href="c_PlannedMaintenance_WebhelpLandingPage.html">Planned Maintenance</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033915-d46e45441-mi" data-tocid="id_2033915-d46e45441" data-state="not-ready" class=" topicref " data-id="id_2033915"><span class="title"><a href="c_Troubleshooting_WebhelpLandingPage.html">Troubleshooting</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033916-d46e49038-mi" data-tocid="id_2033916-d46e49038" data-state="not-ready" class=" topicref " data-id="id_2033916"><span class="title"><a href="c_Parts_WebhelpLandingPage.html">Parts</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033917-d46e50785-mi" data-tocid="id_2033917-d46e50785" data-state="not-ready" class=" topicref " data-id="id_2033917"><span class="title"><a href="c_Replacements_WebhelpLandingPage.html">Replacements</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033903-d46e245862-mi" data-tocid="id_2033903-d46e245862" data-state="not-ready" class=" topicref " data-id="id_2033903"><span class="title"><a href="c_OEMAndOtherManuals_WebhelpLandingPage.html">OEM and Other Manuals</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033904-d46e246278-mi" data-tocid="id_2033904-d46e246278" data-state="not-ready" class=" topicref " data-id="id_2033904"><span class="title"><a href="c_Coils_WebhelpLandingPage.html">Coils</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033918-d46e247927-mi" data-tocid="id_2033918-d46e247927" data-state="not-ready" class=" topicref " data-id="id_2033918"><span class="title"><a href="c_OptionalFeatures_WebhelpLandingPage.html">Optional Features</a></span></span></li></ul></nav>
+                
+                <!--whc:include_html href="${webhelp.fragment.after.top_menu}"/-->
+                
+            </div>
+            
+        </div>
+    </div>
+</header>
+        
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li><span class="topicref" data-id="id_2033911"><span class="title"><a href="c_Software_WebhelpLandingPage.html">Software</a></span></span></li><li><span class="topicref" data-id="id_2032035"><span class="title"><a href="c_SystemSoftware.html">System Software</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li><li class="active"><span class="topicref" data-id="id_13106166"><span class="title"><a href="t_NTP-Server-Time-Synchronization_14608513.html">NTP Server Time Synchronization</a></span></span></li></ol></div>
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="- topic/link link" href="r_SystemAndHardwareConfiguration_2.html" title="System and hardware configuration" aria-label="Previous topic: System and hardware configuration" rel="prev"></a></span>  
+<span class="navnext"><a class="- topic/link link" href="t_Reconfiguring-the-System_14605693.html" title="Reconfiguring the System" aria-label="Next topic: Reconfiguring the System" rel="next"></a></span>  </span></div>
+
+                        <!-- External resource link -->
+                        
+
+                        <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page" class="oxy-icon oxy-icon-print"></button></div>
+
+                        <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                        <button type="button" data-target="#wh_publication_toc" id="wh_toc_button" data-toggle="collapse" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+
+            <!--whc:include_html href="${webhelp.fragment.before.main.content.area}"/>
+           
+            <whc:include_html href="${webhelp.fragment.before.main.content.area.topic.page}"/-->
+
+
+            <div class="wh_content_area">
+                <!-- US616 - TOC toggle buttons -->
+                <div class="row" id="topic_body">
+                    
+                        
+                        <nav id="wh_publication_toc" class="d-print-none collapsible" aria-label="Table of Contents Container">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="id_2033911-d46e26209" class="topicref" data-id="id_2033911" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action id_2033911-d46e26209-link" class="wh-expand-btn"></span><span class="title"><a href="c_Software_WebhelpLandingPage.html" id="id_2033911-d46e26209-link">Software</a></span></span><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="false"><span data-tocid="id_2032033-d46e26315" class="topicref" data-id="id_2032033" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action id_2032033-d46e26315-link" class="wh-expand-btn"></span><span class="title"><a href="c_SoftwareSecurity.html" id="id_2032033-d46e26315-link">Software Security</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="id_2032034-d46e35430" class="topicref" data-id="id_2032034" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action id_2032034-d46e35430-link" class="wh-expand-btn"></span><span class="title"><a href="c_SoftwareInstallation.html" id="id_2032034-d46e35430-link">Software Installation</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li><li role="treeitem" aria-expanded="true"><span data-tocid="id_2032035-d46e39943" class="topicref" data-id="id_2032035" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action id_2032035-d46e39943-link" class="wh-expand-btn"></span><span class="title"><a href="c_SystemSoftware.html" id="id_2032035-d46e39943-link">System Software</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><span data-tocid="id_2003307-d46e40047" class="topicref" data-id="id_2003307" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="r_SystemAndHardwareConfiguration_2.html" id="id_2003307-d46e40047-link">System and hardware configuration</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This topic describes the values and explanation of each parameter for system configuration and hardware configuration in Guided Install.</p></span></span></span></li><li role="treeitem" class="active"><span data-tocid="id_13106166-d46e40151" class="topicref" data-id="id_13106166" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="t_NTP-Server-Time-Synchronization_14608513.html" id="id_13106166-d46e40151-link">NTP Server Time Synchronization</a></span></span></li><li role="treeitem"><span data-tocid="id_12373695-d46e40252" class="topicref" data-id="id_12373695" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="t_Reconfiguring-the-System_14605693.html" id="id_12373695-d46e40252-link">Reconfiguring the System</a></span></span></li><li role="treeitem"><span data-tocid="id_15666983-d46e40353" class="topicref" data-id="id_15666983" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="t_Verifying-Save-Restore-Media_13787978.html" id="id_15666983-d46e40353-link">Verifying Save Restore Media</a></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="id_2001459-d46e40455" class="topicref" data-id="id_2001459" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action id_2001459-d46e40455-link" class="wh-expand-btn"></span><span class="title"><a href="t_InstallingSoftwareOptionsWiththeELicenseKey_2.html" id="id_2001459-d46e40455-link">Installing software options with eLicense generated keys</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This procedure describes how to use eLicenses to generate and install software options on MR scanners.</p></span></span></span></li><li role="treeitem"><span data-tocid="id_2004122-d46e40977" class="topicref" data-id="id_2004122" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="t_TransferringFilesToHostComputerFromAUSBFlashDrive.html" id="id_2004122-d46e40977-link">Transferring files between the host computer and a USB flash drive</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Use this procedure to transfer files between a USB flash drive and the host computer. Do not use this procedure to save or restore configuration files.</p></span></span></span></li><li role="treeitem"><span data-tocid="id_17623687-d46e41081" class="topicref" data-id="id_17623687" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="t_Common-Field-Service-Tasks_16563887.html" id="id_17623687-d46e41081-link">Common field service tasks</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">A list of common field service tasks associated with the MR host computer.</p></span></span></span></li><li role="treeitem"><span data-tocid="id_13106405-d46e41186" class="topicref" data-id="id_13106405" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="t_VRE-Reconfiguration_15380429.html" id="id_13106405-d46e41186-link">VRE Reconfiguration</a></span></span></li><li role="treeitem"><span data-tocid="id_2001477-d46e41288" class="topicref" data-id="id_2001477" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="t_SettingTheTimeAndDate.html" id="id_2001477-d46e41288-link">Setting the time, time zone, and date</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Set the time, time zone, and date in Guided Install.</p></span></span></span></li></ul></li><li role="treeitem" aria-expanded="false"><span data-tocid="id_2032036-d46e41393" class="topicref" data-id="id_2032036" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action id_2032036-d46e41393-link" class="wh-expand-btn"></span><span class="title"><a href="c_SoftwareUtilities.html" id="id_2032036-d46e41393-link">Software Utilities</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li></ul></li></ul></div>
+                        </nav>
+                    
+                    <div id="pub_toc_button">
+                        <button type="button" data-target="#wh_publication_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc"></button>
+                    </div>
+                    
+                    <!--  DE234:  Spacing irregularities with flexible TOCS in Webhelp 
+                    Moved related links out 2 divs, moved topic tocs into topic body-->
+                    <div id="wh_topic_body">
+                        
+                        <div id="body_grid"><!-- DE234:  Added Body grid to fix issue with related links-->
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1"><header class="contentHead">
+        <div class="topicMeta"><ul class="- topic/title title"><li> </li><li></li><li></li><li><span class="metalabel">Object ID: </span>00000018WIA304B5E20GYZ</li><li><span class="metalabel">Topic ID: </span>id_13106166<span class="metalabel"> Version: </span>4.1</li><li><span class="metalabel">Date: </span>Jul 13, 2021 7:04:33 PM</li></ul></div><h1 class="- topic/title title topictitle1" id="ariaid-title1">NTP Server Time Synchronization</h1></header>
+        <div class="- topic/body task/taskbody body taskbody" id="id_13106166__id_14985535"><section class="- topic/section task/prereq section prereq"><div class="tasklabel"><h2 class="sectiontitle tasklabel">Prerequisites</h2></div>
+      <table class="- topic/table table" id="id_13106166__id_14985536" data-ofbid="id_13106166__id_14985536"><caption class="- topic/title title tablecap" caption-side="top" is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 1</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">Personnel requirements</span></caption><colgroup><col style="width:25%"/><col style="width:25%"/><col style="width:25%"/><col style="width:25%"/></colgroup><thead class="- topic/thead thead"><tr class="- topic/row"><th class="- topic/entry entry colsep-0 rowsep-0" id="id_13106166__id_14985537">Required persons</th><th class="- topic/entry entry colsep-0 rowsep-0" id="id_13106166__id_14985538">Preliminary requirements</th><th class="- topic/entry entry colsep-0 rowsep-0" id="id_13106166__id_14985539">Procedure</th><th class="- topic/entry entry colsep-0 rowsep-0" id="id_13106166__id_14985540">Finalization</th></tr></thead><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106166__id_14985541" headers="id_13106166__id_14985537">1</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106166__id_14985542" headers="id_13106166__id_14985538">
+           -</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106166__id_14985543" headers="id_13106166__id_14985539">30 minutes</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106166__id_14985544" headers="id_13106166__id_14985540">
+           -</td></tr></tbody>
+        </table>
+      <table class="- topic/table table" id="id_13106166__table_d2x_2hx_bm" data-ofbid="id_13106166__table_d2x_2hx_bm"><caption class="- topic/title title tablecap" caption-side="top" is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 2</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">Required conditions</span></caption><colgroup><col style="width:33.33333333333333%"/><col style="width:33.33333333333333%"/><col style="width:33.33333333333333%"/></colgroup><thead class="- topic/thead thead"><tr class="- topic/row"><th class="- topic/entry entry colsep-0 rowsep-0" id="id_13106166__id_14985545">Condition</th><th class="- topic/entry entry colsep-0 rowsep-0" id="id_13106166__id_14985546">Reference</th><th class="- topic/entry entry colsep-0 rowsep-0" id="id_13106166__id_14985547">Effectivity</th></tr></thead><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106166__id_14985548" headers="id_13106166__id_14985545">
+                <p class="- topic/p p" id="id_13106166__id_14985549" data-ofbid="id_13106166__id_14985549">The procedure in this document requires that the site has
+a Network Time Protocol (NTP) based time server. During the procedure,
+you will need to enter the IP address of the NTP server. Before you
+begin, obtain this address from the site's network administrator or
+IT department personnel.</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106166__id_14985550" headers="id_13106166__id_14985546">-</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_13106166__id_14985551" headers="id_13106166__id_14985547">-</td></tr></tbody>
+        </table>
+    </section></div><article class="- topic/topic task/task topic task nested1 yes id_SL3785498-1123931" aria-labelledby="ariaid-title2" id="id_SL3785498-1123931"><header class="topic-id"><span class="metalabel">Topic ID: </span>id_SL3785498-1123931</header><h2 class="- topic/title title topictitle2" id="ariaid-title2">Configure MR Scanner's Host Computer as Network Time Server
+Client</h2><div class="- topic/body task/taskbody body taskbody" id="id_SL3785498-1123931__id_14985552"><section class="- topic/section task/context section context" id="id_SL3785498-1123931__id_14985553" data-ofbid="id_SL3785498-1123931__id_14985553"><div class="tasklabel"><h3 class="sectiontitle tasklabel">About this task</h3></div>
+        <p class="- topic/p p" id="id_SL3785498-1123931__id_14985554" data-ofbid="id_SL3785498-1123931__id_14985554">The Network Time Protocol (NTP) is a protocol for synchronizing
+the clocks of computer systems over packet-switched, variable-latency
+data networks. In order to use the NTP for synchronizing the system
+clock, a system within the hospital enterprise must be configured
+to provide the NTP service. This system will then provide time clock
+updates to systems configured to use the NTP time synchronization
+capability. Not all enterprises support this capability. In order
+to configure the MR scanner to use the NTP capability to keep its
+clock synchronized with the other systems within the hospital, you
+will need the IP address of the NTP server.</p>
+      </section><section id="id_SL3785498-1123931__id_14985555" data-ofbid="id_SL3785498-1123931__id_14985555"><div class="tasklabel"><h3 class="sectiontitle tasklabel">Procedure</h3></div><ol class="- topic/ol task/steps ol steps" id="id_SL3785498-1123931__id_14985555" data-ofbid="id_SL3785498-1123931__id_14985555"><li class="- topic/li task/step li step stepexpand" id="id_SL3785498-1123931__SL3785499-1123931" data-ofbid="id_SL3785498-1123931__SL3785499-1123931"><table role="presentation" border="1" class="+ topic/note hazard-d/hazardstatement note hazardstatement notice hazardstatement_notice ansi"><colgroup><col class="hazardstatement--logo-col"/><col class="hazardstatement--msg-col"/></colgroup><thead><tr><th colspan="2" class="hazardstatement--notice"><span>Notice</span></th></tr></thead><tbody><tr><td><img class="+ topic/image hazard-d/hazardsymbol image hazardsymbol" src="icon_generalnotice.png"/></td><td><div class="+ topic/ul hazard-d/messagepanel ul messagepanel"><div class="+ topic/li hazard-d/typeofhazard li typeofhazard">
+              </div><div class="+ topic/li hazard-d/consequence li consequence">
+              </div><div class="+ topic/li hazard-d/howtoavoid li howtoavoid">Verify that the MR system is not scanning before starting this procedure.</div></div></td></tr></tbody></table><span class="- topic/ph task/cmd ph cmd">Start the Common Service Desktop (CSD) browser.</span></li><li class="- topic/li task/step li step stepexpand" id="id_SL3785498-1123931__SL3785500-1123931" data-ofbid="id_SL3785498-1123931__SL3785500-1123931"><span class="- topic/ph task/cmd ph cmd">Select <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Configure</span> tab.</span></li><li class="- topic/li task/step li step stepexpand" id="id_SL3785498-1123931__SL3785501-1123931" data-ofbid="id_SL3785498-1123931__SL3785501-1123931"><span class="- topic/ph task/cmd ph cmd">Select Guided Install, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">FE mode</span>.</span></li><li class="- topic/li task/step li step stepexpand" id="id_SL3785498-1123931__SL3785502-1123931" data-ofbid="id_SL3785498-1123931__SL3785502-1123931"><span class="- topic/ph task/cmd ph cmd">Click <span class="+ topic/ph ui-d/uicontrol ph uicontrol">start this tool</span>. You will be prompted
+to enter a password.</span></li><li class="- topic/li task/step li step stepexpand" id="id_SL3785498-1123931__SL3785503-1123931" data-ofbid="id_SL3785498-1123931__SL3785503-1123931"><span class="- topic/ph task/cmd ph cmd">Enter the default password: <var class="+ topic/keyword sw-d/varname keyword varname">operator</var>.</span></li><li class="- topic/li task/step li step stepexpand" id="id_SL3785498-1123931__SL3785504-1123931" data-ofbid="id_SL3785498-1123931__SL3785504-1123931"><span class="- topic/ph task/cmd ph cmd">Select the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Network Info</span> tab on Guided
+Install user interface</span></li><li class="- topic/li task/step li step stepexpand" id="id_SL3785498-1123931__SL3785505-1123931" data-ofbid="id_SL3785498-1123931__SL3785505-1123931"><span class="- topic/ph task/cmd ph cmd">Enter the NTP server’s IP address in the NTP server IP
+Address field. See illustration below.</span><div class="- topic/itemgroup task/info itemgroup info" id="id_SL3785498-1123931__id_14985562">
+            <figure class="- topic/fig fig fignone" id="id_SL3785498-1123931__SL3785506-1123931" data-ofbid="id_SL3785498-1123931__SL3785506-1123931"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">1. </span></span><span class="fig--title">Network Info Window</span></figcaption><img class="- topic/image image" id="id_SL3785498-1123931__id_14985563" src="3785460.jpg"/></figure>
+          </div></li><li class="- topic/li task/step li step stepexpand" id="id_SL3785498-1123931__SL3785507-1123931" data-ofbid="id_SL3785498-1123931__SL3785507-1123931"><span class="- topic/ph task/cmd ph cmd">Click <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Configure</span> and exit from the Guided
+Install. The time on the scanner host will change to reflect the same
+time as the time server in Universal time.</span></li><li class="- topic/li task/step li step stepexpand" id="id_SL3785498-1123931__SL3785509-1123931" data-ofbid="id_SL3785498-1123931__SL3785509-1123931"><span class="- topic/ph task/cmd ph cmd">Reboot the system.</span></li></ol></section></div></article><article class="- topic/topic task/task topic task nested1 yes id_SL3785510-1123931" aria-labelledby="ariaid-title3" id="id_SL3785510-1123931"><header class="topic-id"><span class="metalabel">Topic ID: </span>id_SL3785510-1123931</header><h2 class="- topic/title title topictitle2" id="ariaid-title3">Verify that the NTP Client is Properly Synchronized</h2><div class="- topic/body task/taskbody body taskbody" id="id_SL3785510-1123931__id_14985564"><section class="- topic/section task/context section context" id="id_SL3785510-1123931__id_14985565" data-ofbid="id_SL3785510-1123931__id_14985565"><div class="tasklabel"><h3 class="sectiontitle tasklabel">About this task</h3></div>
+        <p class="- topic/p p" id="id_SL3785510-1123931__id_14985566" data-ofbid="id_SL3785510-1123931__id_14985566">To verify that the NTP client is properly synchronized, follow
+these steps from the host computer:</p>
+      </section><section id="id_SL3785510-1123931__id_14985567" data-ofbid="id_SL3785510-1123931__id_14985567"><div class="tasklabel"><h3 class="sectiontitle tasklabel">Procedure</h3></div><ol class="- topic/ol task/steps ol steps" id="id_SL3785510-1123931__id_14985567" data-ofbid="id_SL3785510-1123931__id_14985567"><li class="- topic/li task/step li step stepexpand" id="id_SL3785510-1123931__SL3785511-1123931" data-ofbid="id_SL3785510-1123931__SL3785511-1123931"><span class="- topic/ph task/cmd ph cmd">Open a command window.</span></li><li class="- topic/li task/step li step stepexpand" id="id_SL3785510-1123931__SL3785512-1123931" data-ofbid="id_SL3785510-1123931__SL3785512-1123931"><span class="- topic/ph task/cmd ph cmd">Enter: <var class="+ topic/keyword sw-d/varname keyword varname">ntpq -p</var>.</span><div class="- topic/itemgroup task/info itemgroup info" id="id_SL3785510-1123931__id_14985568">
+            <p class="- topic/p p" id="id_SL3785510-1123931__id_14985569" data-ofbid="id_SL3785510-1123931__id_14985569">The output displays a list of  time servers and the delay, offset
+and jitter that each server is experiencing. The delay and offset
+values of the NTP server you just synchronized should be non-zero
+and the jitter value should be under 100. </p>
+            <p class="- topic/p p" id="id_SL3785510-1123931__id_14985570" data-ofbid="id_SL3785510-1123931__id_14985570">The illustration below is an example showing correct synchronization.</p>
+            <figure class="- topic/fig fig fignone" id="id_SL3785510-1123931__SL3785513-1123931" data-ofbid="id_SL3785510-1123931__SL3785513-1123931"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">2. </span></span><span class="fig--title">Output With Correct Synchronization Values</span></figcaption><img class="- topic/image image" id="id_SL3785510-1123931__id_14985571" src="3785478.jpg"/></figure>
+            <p class="- topic/p p" id="id_SL3785510-1123931__id_14985572" data-ofbid="id_SL3785510-1123931__id_14985572">Once configured, NTP will synchronize the time between the server
+and the client in Universal Time initially, after system startup and
+at a default time intervals.</p>
+            <div class="- topic/note note note note_note" id="id_SL3785510-1123931__id_14985573" data-ofbid="id_SL3785510-1123931__id_14985573"><span class="note__title">Note:</span> 
+              <p class="- topic/p p" id="id_SL3785510-1123931__id_14985574" data-ofbid="id_SL3785510-1123931__id_14985574">If the Host Computer drifts more than 1,000 seconds (approx
+17 minutes) from the NTP server, the NTP service on the Host Computer
+will no longer synchronize automatically. The system will have to
+be restarted manually, or rebooted.</p>
+            </div>
+            <p class="- topic/p p" id="id_SL3785510-1123931__id_14985575" data-ofbid="id_SL3785510-1123931__id_14985575">Under circumstances, where the system cannot be rebooted, you
+can force synchronization manually. Verify that the system is idle
+and that no scans will start for the next 15 minutes. Verify that
+you have network connectivity to the NTP time server and the time
+server's IP address. To synchronize  the system without rebooting,
+follow these steps:</p>
+            <ol class="- topic/ol ol" type="a" id="id_SL3785510-1123931__id_14985576" data-ofbid="id_SL3785510-1123931__id_14985576"><li class="- topic/li li" id="id_SL3785510-1123931__SL3785722-1123931" data-ofbid="id_SL3785510-1123931__SL3785722-1123931">
+                <p class="- topic/p p" id="id_SL3785510-1123931__id_14985577" data-ofbid="id_SL3785510-1123931__id_14985577">Log onto the system as root user and
+from a command window.</p>
+                <div class="- topic/note note note note_note" id="id_SL3785510-1123931__id_14985578" data-ofbid="id_SL3785510-1123931__id_14985578"><span class="note__title">Note:</span> 
+                  <p class="- topic/p p" id="id_SL3785510-1123931__id_14985579" data-ofbid="id_SL3785510-1123931__id_14985579">It is possible that the customer changed the default password.
+If you cannot log in, contact the customer for the correct password.</p>
+                </div>
+              </li><li class="- topic/li li" id="id_SL3785510-1123931__SL3785723-1123931" data-ofbid="id_SL3785510-1123931__SL3785723-1123931">
+                <p class="- topic/p p" id="id_SL3785510-1123931__id_14985580" data-ofbid="id_SL3785510-1123931__id_14985580">Enter the following command: <var class="+ topic/keyword sw-d/varname keyword varname">/usr/sbin/ntpd -q -g</var>.</p>
+                <div class="- topic/note note note note_note" id="id_SL3785510-1123931__id_14985581" data-ofbid="id_SL3785510-1123931__id_14985581"><span class="note__title">Note:</span> 
+                  <p class="- topic/p p" id="id_SL3785510-1123931__id_14985582" data-ofbid="id_SL3785510-1123931__id_14985582">If Guided Install "saveinfo" was not done after configuring
+the NTP server's IP address, and if this information was not restored,
+then do a Load from Cold and repeat the Configuration of the NTP Server.</p>
+                </div>
+              </li></ol>
+          </div></li></ol></section></div></article><article class="- topic/topic task/task topic task nested1 yes id_14985583" aria-labelledby="ariaid-title4" id="id_14985583"><header class="topic-id"><span class="metalabel">Topic ID: </span>id_14985583</header><h2 class="- topic/title title topictitle2" id="ariaid-title4">Finalization</h2><div class="- topic/body task/taskbody body taskbody" id="id_14985583__id_14985584"><section class="- topic/section task/postreq section postreq" id="id_14985583__id_14985585" data-ofbid="id_14985583__id_14985585"><div class="tasklabel"><h3 class="sectiontitle tasklabel">Finalization</h3></div>
+        <p class="- topic/p p" id="id_14985583__id_14985586" data-ofbid="id_14985583__id_14985586">No finalization steps.</p>
+      </section></div></article></article></main></div>
+                        
+                        
+                        
+                        </div>
+                        
+                        
+                        <!--<whc:webhelp_related_links class="d-print-none"/> -->
+                        
+                        
+                        
+                        
+                        <!-- GEDev US503: next/previous buttons on bottom -->
+                        
+                            
+                            <nav id="wh_topic_toc" class="d-print-none collapsible" aria-label="On this page">
+                                <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="topic-item"><a href="#id_SL3785498-1123931" data-tocid="id_SL3785498-1123931">Configure MR Scanner's Host Computer as Network Time Server
+Client</a></li><li class="topic-item"><a href="#id_SL3785510-1123931" data-tocid="id_SL3785510-1123931">Verify that the NTP Client is Properly Synchronized</a></li><li class="topic-item"><a href="#id_14985583" data-tocid="id_14985583">Finalization</a></li></ul></div>
+                            </nav>
+                            <!--whc:include_html href="${webhelp.fragment.after.topic.toc}"/-->
+                        
+                        <div id="topic_toc_button">
+                            <button type="button" data-target="#wh_topic_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle topic table of content" aria-controls="contain-topic_toc"></button>
+                        </div>
+                        <!--whc:include_html href="${webhelp.fragment.toggle.toc}"/-->
+                        
+                    </div>
+
+                </div>
+
+                
+            </div>
+            <div class="row">
+            <div id="wh_tools">
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li><span class="topicref" data-id="id_2033911"><span class="title"><a href="c_Software_WebhelpLandingPage.html">Software</a></span></span></li><li><span class="topicref" data-id="id_2032035"><span class="title"><a href="c_SystemSoftware.html">System Software</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p></span></span></span></li><li class="active"><span class="topicref" data-id="id_13106166"><span class="title"><a href="t_NTP-Server-Time-Synchronization_14608513.html">NTP Server Time Synchronization</a></span></span></li></ol></div>
+                    <div class="wh_right_tools">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="- topic/link link" href="r_SystemAndHardwareConfiguration_2.html" title="System and hardware configuration" aria-label="Previous topic: System and hardware configuration" rel="prev"></a></span>  
+<span class="navnext"><a class="- topic/link link" href="t_Reconfiguring-the-System_14605693.html" title="Reconfiguring the System" aria-label="Next topic: Reconfiguring the System" rel="next"></a></span>  </span></div>
+                    </div>
+                </nav>
+            </div>
+            </div>
+            </div>
+        <!-- webhelp.fragment.after.main.content.area and webhelp.fragment.after.main.content.area.topic.page moved out of div to try and fix scrolling issue -->
+        
+        
+        <footer class="navbar navbar-default wh_footer" whc:version="23.1">
+  <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class="ftrcustom"><span>
+				
+				
+					
+					
+					5852800-8EN
+				
+			</span> | <span>Revision 
+					3</span> | <span>en | </span><span><a target="_blank" href="https://www.gehealthcare.com/">gehealthcare.com</a></span></div><div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class="copyright_info"><span class="copyright_years"> ©2023</span> GE HealthCare Proprietary<div class="GETradmark"><span>GE is a trademark of General Electric Company used under trademark license.</span></div></div>
+</footer>
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" alt=""/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

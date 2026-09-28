@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Checking the pneumatic patient alert system","shortdesc":"<p class=\"shortdesc\">Makes sure the stand-alone pneumatic patient alerts system is operating properly.<\/p>","href":"t_CheckingThePneumaticPatientAlertSystem.html","attributes":{"data-id":"id_2004443"},"menu":{"hasChildren":false},"tocID":"id_2004443-d46e23091","topics":[]}]});

@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Shutting down the host computer","shortdesc":"<p class=\"shortdesc\">Shutting down the host computer shuts down the system safely and turns off the power to the host computer.<\/p>","href":"t_ShuttingDownHostComputer_3.html","attributes":{"data-id":"id_2001469"},"menu":{"hasChildren":false},"tocID":"id_2001469-d46e18289","topics":[]}]});
