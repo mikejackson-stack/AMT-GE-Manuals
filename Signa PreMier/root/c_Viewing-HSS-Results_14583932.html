@@ -1,0 +1,436 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en" whc:version="22.0">
+
+    <head><link rel="shortcut icon" href="oxygen-webhelp\template\img\favicon-32x32.webp"><!----></link><link rel="icon" href="oxygen-webhelp\template\img\favicon-32x32.webp"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="View the High Speed Stability (HSS) plot and data results using the HSS Viewer. The viewer provides many ways to view the results. Example HSS Report Screens provides some examples of the HSS report ..."/><meta charset="UTF-8"/><meta name="copyright" content="(C) Copyright 2023"/><meta name="DC.rights.owner" content="(C) Copyright 2023"/><meta name="DC.type" content="concept"/><meta name="DC.coverage" content=""/><meta name="prodname" content=""/><meta name="version" content="0"/><meta name="brand" content=""/><meta name="component" content=""/><meta name="featnum" content="Service Operations"/><meta name="featnum" content=""/><meta name="prognum" content=""/><meta name="platform" content=""/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="id_12373677"/><title>Viewing HSS Results</title><!--  Generated with Oxygen version 23.1, build number 2021121412.  --><meta name="wh-path2root" content=""/><meta name="wh-source-relpath" content="c_Viewing-HSS-Results_14583932.dita"/><meta name="wh-out-relpath" content="c_Viewing-HSS-Results_14583932.html"/>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/>
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2021121412"/>
+    
+    
+    <script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script>
+    
+    <script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/notes.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/GEHealthCare.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/print.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/footer-fix.css?buildId=2021121412"/><script src="./oxygen-webhelp/lib/scripts/Remove_LSEP.js"></script></head>
+    <body id="id_12373677" class="wh_topic_page frmBody">
+        <!--US578: WHR - Move search to line up with manual title-->
+        <div class="SupressSearch">
+            <!--Search form 
+                Removed class for DE238: Double search fields when webhelp is viewed on
+            <whc:webhelp_search_input class="navbar-form wh_topic_page_search search" role="form">-->
+            <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_search_input " role="form">
+                
+                
+                <div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div>
+                
+                
+            </div>
+        </div>
+        <a href="#topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="23.1">
+    <div class="container-fluid">
+        <!-- GEDev US509 Webhelp: expandable navbar icon invisible changed to navbar-light -->
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-light">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <!-- GE Dev US464 change logo link to blank target -->
+                    <a href="https://www.gehealthcare.com/" class=" wh_logo d-none d-sm-block " target="_blank"><img src="oxygen-webhelp\template\img\GE-HLTHCR_Webhelp_CMYK-CompPrpl.svg" alt="SIGNA™ Premier 3.0T Service Manual"/></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle"><span class="ph mainbooktitle">SIGNA™ Premier 3.0T Service Manual</span></span></a></div>
+                    <!--* DE224: WHR: Link under the search field is missing -->
+                    <div class="search_container">
+                        <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_search_input "><div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div></div><whc:search_field></whc:search_field>
+                        <div class="search_link">
+                             
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+            </div>
+            
+            
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033906-d46e224-mi" data-tocid="id_2033906-d46e224" data-state="not-ready" class=" topicref " data-id="id_2033906"><span class="title"><a href="c_Safety_WebhelpLandingPage.html">Safety and General Information</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033907-d46e1778-mi" data-tocid="id_2033907-d46e1778" data-state="not-ready" class=" topicref " data-id="id_2033907"><span class="title"><a href="c_PreInstallation_WebhelpLandingPage.html">Pre-Installation</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033909-d46e1984-mi" data-tocid="id_2033909-d46e1984" data-state="not-ready" class=" topicref " data-id="id_2033909"><span class="title"><a href="c_Installation_WebhelpLandingPage.html">Installation</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033902-d46e47631-mi" data-tocid="id_2033902-d46e47631" data-state="not-ready" class=" topicref " data-id="id_2033902"><span class="title"><a href="c_AdjustmentsAndCalibrations_WebhelpLandingPage.html">Adjustments/Calibrations</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033910-d46e84750-mi" data-tocid="id_2033910-d46e84750" data-state="not-ready" class=" topicref " data-id="id_2033910"><span class="title"><a href="c_FunctionalChecks_WebhelpLandingPage.html">Functional Checks</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033911-d46e101428-mi" data-tocid="id_2033911-d46e101428" data-state="not-ready" class=" topicref " data-id="id_2033911"><span class="title"><a href="c_Software_WebhelpLandingPage.html">Software</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033912-d46e123345-mi" data-tocid="id_2033912-d46e123345" data-state="not-ready" class=" topicref " data-id="id_2033912"><span class="title"><a href="c_Theory_WebhelpLandingPage.html">Theory</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033914-d46e126730-mi" data-tocid="id_2033914-d46e126730" data-state="not-ready" class=" topicref " data-id="id_2033914"><span class="title"><a href="c_PlannedMaintenance_WebhelpLandingPage.html">Planned Maintenance</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033915-d46e136133-mi" data-tocid="id_2033915-d46e136133" data-state="not-ready" class=" topicref " data-id="id_2033915"><span class="title"><a href="c_Troubleshooting_WebhelpLandingPage.html">Troubleshooting</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033916-d46e142542-mi" data-tocid="id_2033916-d46e142542" data-state="not-ready" class=" topicref " data-id="id_2033916"><span class="title"><a href="c_Parts_WebhelpLandingPage.html">Parts</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033917-d46e144514-mi" data-tocid="id_2033917-d46e144514" data-state="not-ready" class=" topicref " data-id="id_2033917"><span class="title"><a href="c_Replacements_WebhelpLandingPage.html">Replacements</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033903-d46e452121-mi" data-tocid="id_2033903-d46e452121" data-state="not-ready" class=" topicref " data-id="id_2033903"><span class="title"><a href="c_OEMAndOtherManuals_WebhelpLandingPage.html">OEM and Other Manuals</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033904-d46e452533-mi" data-tocid="id_2033904-d46e452533" data-state="not-ready" class=" topicref " data-id="id_2033904"><span class="title"><a href="c_Coils_WebhelpLandingPage.html">Coils</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033918-d46e459216-mi" data-tocid="id_2033918-d46e459216" data-state="not-ready" class=" topicref " data-id="id_2033918"><span class="title"><a href="c_OptionalFeatures_WebhelpLandingPage.html">Optional Features</a></span></span></li></ul></nav>
+                
+                <!--whc:include_html href="${webhelp.fragment.after.top_menu}"/-->
+                
+            </div>
+            
+        </div>
+    </div>
+</header>
+        
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+
+                        <!-- External resource link -->
+                        
+
+                        <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page" class="oxy-icon oxy-icon-print"></button></div>
+
+                        <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                        
+                    </div>
+                    
+                </nav>
+            </div>
+
+            <!--whc:include_html href="${webhelp.fragment.before.main.content.area}"/>
+           
+            <whc:include_html href="${webhelp.fragment.before.main.content.area.topic.page}"/-->
+
+
+            <div class="wh_content_area">
+                <!-- US616 - TOC toggle buttons -->
+                <div class="row" id="topic_body">
+                    
+                    <div id="pub_toc_button">
+                        <button type="button" data-target="#wh_publication_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc"></button>
+                    </div>
+                    
+                    <!--  DE234:  Spacing irregularities with flexible TOCS in Webhelp 
+                    Moved related links out 2 divs, moved topic tocs into topic body-->
+                    <div id="wh_topic_body">
+                        
+                        <div id="body_grid"><!-- DE234:  Added Body grid to fix issue with related links-->
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1"><header class="contentHead">
+        <div class="topicMeta"><ul class="- topic/title title"><li> </li><li></li><li></li><li><span class="metalabel">Object ID: </span>00000018WIA30DA7030GYZ</li><li><span class="metalabel">Topic ID: </span>id_12373677<span class="metalabel"> Version: </span>2.2</li><li><span class="metalabel">Date: </span>Oct 11, 2021 3:47:43 PM</li></ul></div><h1 class="- topic/title title topictitle1" id="ariaid-title1">Viewing HSS Results</h1></header>
+        <div class="- topic/body concept/conbody body conbody"><p class="- topic/p p" id="id_12373677__id_15138107" data-ofbid="id_12373677__id_15138107">View the High Speed Stability (HSS) plot and data results using
+the HSS Viewer. The viewer provides many ways to view the results. </p><p class="- topic/p p" id="id_12373677__id_15138109" data-ofbid="id_12373677__id_15138109">
+      <a class="- topic/xref xref" href="#id_12373677__SL2711690-639115">Example HSS Report Screens</a> provides some examples of the HSS report screens.</p><p class="- topic/p p" id="id_12373677__id_15138110" data-ofbid="id_12373677__id_15138110">
+      <a class="- topic/xref xref" href="#id_12373677__SL3479426-639115">HSS Shortcuts (User Interface)</a> describes the menu selections and features of the user interface.</p><section class="- topic/section section" id="id_12373677__SL88114-639115" data-ofbid="id_12373677__SL88114-639115"><h2 class="- topic/title title sectiontitle">Viewing Results with HSS Viewer</h2>
+      
+      <p class="- topic/p p" id="id_12373677__id_15138111" data-ofbid="id_12373677__id_15138111">
+        <samp class="+ topic/ph sw-d/msgph ph msgph">(For viewing HSS Results with versions prior to DV26) </samp>The HSS Viewer starts automatically after the HSS Tool is finished.
+The HSS Viewer can also be started manually by choosing the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Image Quality</span> tab, then selecting <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Image Quality
+&gt; HSS Viewer &gt; Click here to start this tool</span>.</p>
+      <ol class="- topic/ol ol" id="id_12373677__id_15138112" data-ofbid="id_12373677__id_15138112"><li class="- topic/li li" id="id_12373677__SL2711688-639115" data-ofbid="id_12373677__SL2711688-639115">
+          <p class="- topic/p p" id="id_12373677__id_15138125" data-ofbid="id_12373677__id_15138125">The results can also be compared to
+other HSS data sets using the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Features &gt; Compare</span> option.</p>
+          <div class="- topic/p p" id="id_12373677__id_15138126" data-ofbid="id_12373677__id_15138126">
+            <figure class="- topic/fig fig fignone" id="id_12373677__SL639138-639115" data-ofbid="id_12373677__SL639138-639115"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">1. </span></span><span class="fig--title">Compare Screen</span></figcaption></figure>
+          </div>
+        </li><li class="- topic/li li" id="id_12373677__SL2711689-639115" data-ofbid="id_12373677__SL2711689-639115">
+          <p class="- topic/p p" id="id_12373677__id_15138129" data-ofbid="id_12373677__id_15138129">Explanations of the options can be
+found under the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Help</span> menu at the top of the HSS
+Viewer window.</p>
+        </li></ol>
+      <p class="- topic/p p" id="id_12373677__id_15138130" data-ofbid="id_12373677__id_15138130">
+        <samp class="+ topic/ph sw-d/msgph ph msgph">(For viewing HSS Results with versions DV26 and later) </samp>The HSS results display automatically after the HSS Tool is finished.
+The HSS Viewer can also be started manually by choosing the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Image Quality</span> tab, then selecting <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Image Quality
+&gt; HSS Tool &gt; Click here to start this tool</span>. </p>
+      <ol class="- topic/ol ol" id="id_12373677__id_15138131" data-ofbid="id_12373677__id_15138131"><li class="- topic/li li" id="id_12373677__SL14588437-639115" data-ofbid="id_12373677__SL14588437-639115">
+          <p class="- topic/p p" id="id_12373677__id_15138132" data-ofbid="id_12373677__id_15138132">Select <span class="+ topic/ph ui-d/uicontrol ph uicontrol">File &gt; Open &gt; HSS
+Files</span>.</p>
+        </li><li class="- topic/li li" id="id_12373677__SL14588438-639115" data-ofbid="id_12373677__SL14588438-639115">
+          <p class="- topic/p p" id="id_12373677__id_15138133" data-ofbid="id_12373677__id_15138133">Select the desired file from the list.</p>
+          <div class="- topic/note note note note_note" id="id_12373677__id_15138134" data-ofbid="id_12373677__id_15138134"><span class="note__title">Note:</span> 
+            <p class="- topic/p p" id="id_12373677__id_15138135" data-ofbid="id_12373677__id_15138135">View the three limit lines visible on the plot. Ensure
+that none of the peaks from the plot extend beyond the red 24 cms
+DSV limit line.</p>
+          </div>
+          <div class="- topic/p p" id="id_12373677__id_15138136" data-ofbid="id_12373677__id_15138136">
+            <figure class="- topic/fig fig fignone" id="id_12373677__SL14588439-639115" data-ofbid="id_12373677__SL14588439-639115"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">2. </span></span><span class="fig--title">Example Results from HSS Scan using Grafidy Kit</span></figcaption><img class="- topic/image image" id="id_12373677__id_15138137" src="14588423.jpg"/></figure>
+          </div>
+          <div class="- topic/p p" id="id_12373677__id_15138138" data-ofbid="id_12373677__id_15138138">
+            <figure class="- topic/fig fig fignone" id="id_12373677__SL14588440-639115" data-ofbid="id_12373677__SL14588440-639115"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">3. </span></span><span class="fig--title">Example Results from HSS Scan using Universal SST Kit</span></figcaption><img class="- topic/image image" id="id_12373677__id_15138139" src="14588424.jpg"/></figure>
+          </div>
+          <div class="- topic/note note note note_note" id="id_12373677__id_15138140" data-ofbid="id_12373677__id_15138140"><span class="note__title">Note:</span> 
+            <p class="- topic/p p" id="id_12373677__id_15138141" data-ofbid="id_12373677__id_15138141">The Compare files mode is currently not available for
+those data that have been acquired on systems running DV26.</p>
+          </div>
+        </li></ol>
+    </section><section class="- topic/section section" id="id_12373677__SL2711690-639115" data-ofbid="id_12373677__SL2711690-639115"><h2 class="- topic/title title sectiontitle">Example HSS Report Screens</h2>
+      
+      <p class="- topic/p p" id="id_12373677__id_15138153" data-ofbid="id_12373677__id_15138153">An example scan header report screen is shown below. </p>
+      <figure class="- topic/fig fig fignone" id="id_12373677__SL2711691-639115" data-ofbid="id_12373677__SL2711691-639115"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">4. </span></span><span class="fig--title">Scan Header </span></figcaption><img class="- topic/image image" id="id_12373677__id_15138154" src="2168629.jpg"/></figure>
+      <table class="- topic/table table" id="id_12373677__SL639153-639115" data-ofbid="id_12373677__SL639153-639115"><caption class="- topic/title title tablecap" caption-side="top" is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 1</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">Scan Header Parameters Description</span></caption><colgroup><col style="width:2.23in"/><col style="width:2.78in"/><col style="width:2.46in"/></colgroup><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_12373677__id_15138155">
+                  Parameter</td><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_12373677__id_15138156">
+                  Possible Values</td><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_12373677__id_15138157">
+                  Source</td></tr><tr class="- topic/row"><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_12373677__id_15138158">
+                  SITENAME</td><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_12373677__id_15138159">
+                  SITE NAME</td><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_12373677__id_15138160">
+                  RAW HEADER</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138161">
+                <p class="- topic/p p" id="id_12373677__id_15138162" data-ofbid="id_12373677__id_15138162">USN</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138163">
+                <p class="- topic/p p" id="id_12373677__id_15138164" data-ofbid="id_12373677__id_15138164">UNIQUE SYSTEM NUMBER
+(GECARES ISSUED)</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138165">
+                <p class="- topic/p p" id="id_12373677__id_15138166" data-ofbid="id_12373677__id_15138166">Host.cfg FILE</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138167">
+                <p class="- topic/p p" id="id_12373677__id_15138168" data-ofbid="id_12373677__id_15138168">MLN</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138169">
+                <p class="- topic/p p" id="id_12373677__id_15138170" data-ofbid="id_12373677__id_15138170">MOBILE LOCATION NUMBER
+(9999 = NON-MOBILE)</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138171">
+                <p class="- topic/p p" id="id_12373677__id_15138172" data-ofbid="id_12373677__id_15138172">Mrconfig.cfg FILE</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138173">
+                <p class="- topic/p p" id="id_12373677__id_15138174" data-ofbid="id_12373677__id_15138174">SRVCONFIG</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138175">
+                <p class="- topic/p p" id="id_12373677__id_15138176" data-ofbid="id_12373677__id_15138176">DATE/TIME MRCONFIG FILE
+LAST CHANGED</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138177">
+                <p class="- topic/p p" id="id_12373677__id_15138178" data-ofbid="id_12373677__id_15138178">Mrconfig.cfg FILE</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138179">
+                <p class="- topic/p p" id="id_12373677__id_15138180" data-ofbid="id_12373677__id_15138180">EXCITER</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138181">
+                <p class="- topic/p p" id="id_12373677__id_15138182" data-ofbid="id_12373677__id_15138182">(NOT USED)</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138183">
+                <p class="- topic/p p" id="id_12373677__id_15138184" data-ofbid="id_12373677__id_15138184">(NONE)</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138185">
+                <p class="- topic/p p" id="id_12373677__id_15138186" data-ofbid="id_12373677__id_15138186">RECEIVER</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138187">
+                <p class="- topic/p p" id="id_12373677__id_15138188" data-ofbid="id_12373677__id_15138188">STARTING RCVR #, ENDING
+RCVR #, PORT ENABLE #</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138189">
+                <p class="- topic/p p" id="id_12373677__id_15138190" data-ofbid="id_12373677__id_15138190">SCAN Rx; Mrconfig.cfg
+FILE</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138191">
+                <p class="- topic/p p" id="id_12373677__id_15138192" data-ofbid="id_12373677__id_15138192">XMTRFCOIL</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138193">
+                <p class="- topic/p p" id="id_12373677__id_15138194" data-ofbid="id_12373677__id_15138194">BODY, HEAD</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138195">
+                <p class="- topic/p p" id="id_12373677__id_15138196" data-ofbid="id_12373677__id_15138196">RAW HEADER</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138197">
+                <p class="- topic/p p" id="id_12373677__id_15138198" data-ofbid="id_12373677__id_15138198">RCVRFCOIL</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138199">
+                <p class="- topic/p p" id="id_12373677__id_15138200" data-ofbid="id_12373677__id_15138200">BODY, HEAD, &lt;SURFACE
+COIL NAME&gt;</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138201">
+                <p class="- topic/p p" id="id_12373677__id_15138202" data-ofbid="id_12373677__id_15138202">RAW HEADER</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138203">
+                <p class="- topic/p p" id="id_12373677__id_15138204" data-ofbid="id_12373677__id_15138204">FREQ</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138205">
+                <p class="- topic/p p" id="id_12373677__id_15138206" data-ofbid="id_12373677__id_15138206">MAGNET FREQUENCY</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138207">
+                <p class="- topic/p p" id="id_12373677__id_15138208" data-ofbid="id_12373677__id_15138208">RAW HEADER</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138209">
+                <p class="- topic/p p" id="id_12373677__id_15138210" data-ofbid="id_12373677__id_15138210">TIME</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138211">
+                <p class="- topic/p p" id="id_12373677__id_15138212" data-ofbid="id_12373677__id_15138212">YY/MM/DD HH:MM:SS</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138213">
+                <p class="- topic/p p" id="id_12373677__id_15138214" data-ofbid="id_12373677__id_15138214">RAW HEADER</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138215">
+                <p class="- topic/p p" id="id_12373677__id_15138216" data-ofbid="id_12373677__id_15138216">BASERUN</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138217">
+                <p class="- topic/p p" id="id_12373677__id_15138218" data-ofbid="id_12373677__id_15138218">BASE RUN NUMBER OF SCAN</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138219">
+                <p class="- topic/p p" id="id_12373677__id_15138220" data-ofbid="id_12373677__id_15138220">RAW HEADER</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138221">
+                <p class="- topic/p p" id="id_12373677__id_15138222" data-ofbid="id_12373677__id_15138222">CONFIGCODE</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138223">
+                <p class="- topic/p p" id="id_12373677__id_15138224" data-ofbid="id_12373677__id_15138224">(NOT USED)</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138225">
+                <p class="- topic/p p" id="id_12373677__id_15138226" data-ofbid="id_12373677__id_15138226">(NONE)</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138227">
+                <p class="- topic/p p" id="id_12373677__id_15138228" data-ofbid="id_12373677__id_15138228">SOFTREV</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138229">
+                <p class="- topic/p p" id="id_12373677__id_15138230" data-ofbid="id_12373677__id_15138230">SOFTWARE REVISION</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138231">
+                <p class="- topic/p p" id="id_12373677__id_15138232" data-ofbid="id_12373677__id_15138232">“mrswrev”
+SCRIPT</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138233">
+                <p class="- topic/p p" id="id_12373677__id_15138234" data-ofbid="id_12373677__id_15138234">NUCLIDE</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138235">
+                <p class="- topic/p p" id="id_12373677__id_15138236" data-ofbid="id_12373677__id_15138236">(NOT USED)</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138237">
+                <p class="- topic/p p" id="id_12373677__id_15138238" data-ofbid="id_12373677__id_15138238">(NONE)</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138239">
+                <p class="- topic/p p" id="id_12373677__id_15138240" data-ofbid="id_12373677__id_15138240">HEADERCODE</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138241">
+                <p class="- topic/p p" id="id_12373677__id_15138242" data-ofbid="id_12373677__id_15138242">ERROR # IF PROBLEM CREATING
+THIS TEST HEADER</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138243">
+                <p class="- topic/p p" id="id_12373677__id_15138244" data-ofbid="id_12373677__id_15138244">CREATED BY TEST ANALYSIS</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138245">
+                <p class="- topic/p p" id="id_12373677__id_15138246" data-ofbid="id_12373677__id_15138246">GRADMODE</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138247">
+                <p class="- topic/p p" id="id_12373677__id_15138248" data-ofbid="id_12373677__id_15138248">(NOT USED)</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138249">
+                <p class="- topic/p p" id="id_12373677__id_15138250" data-ofbid="id_12373677__id_15138250">(NONE)</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138251">
+                <p class="- topic/p p" id="id_12373677__id_15138252" data-ofbid="id_12373677__id_15138252">REVCOILGAIN</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138253">
+                <p class="- topic/p p" id="id_12373677__id_15138254" data-ofbid="id_12373677__id_15138254">CALIBRATION VALUE (TYP.
+1-10)</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138255">
+                <p class="- topic/p p" id="id_12373677__id_15138256" data-ofbid="id_12373677__id_15138256">CoilConfig.cfg FILE</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138257">
+                <p class="- topic/p p" id="id_12373677__id_15138258" data-ofbid="id_12373677__id_15138258">R1, R2, TG</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138259">
+                <p class="- topic/p p" id="id_12373677__id_15138260" data-ofbid="id_12373677__id_15138260">1-13, 1-15, 0-200</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138261">
+                <p class="- topic/p p" id="id_12373677__id_15138262" data-ofbid="id_12373677__id_15138262">RAW HEADER</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138263">
+                <p class="- topic/p p" id="id_12373677__id_15138264" data-ofbid="id_12373677__id_15138264">Exam “Comments”</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138265">
+                <p class="- topic/p p" id="id_12373677__id_15138266" data-ofbid="id_12373677__id_15138266">UP TO 32 CHARACTERS
+FROM EXAM DESCRIPTION</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138267">
+                <p class="- topic/p p" id="id_12373677__id_15138268" data-ofbid="id_12373677__id_15138268">IMAGE HEADER</p>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138269">
+                <p class="- topic/p p" id="id_12373677__id_15138270" data-ofbid="id_12373677__id_15138270">Series “Comments”</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138271">
+                <p class="- topic/p p" id="id_12373677__id_15138272" data-ofbid="id_12373677__id_15138272">UP TO 29 CHARACTERS
+FROM SERIES DESCRIPTION</p>
+              </td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138273">
+                <p class="- topic/p p" id="id_12373677__id_15138274" data-ofbid="id_12373677__id_15138274">IMAGE HEADER</p>
+              </td></tr></tbody>
+        </table>
+      
+      
+      
+    </section><section class="- topic/section section" id="id_12373677__SL3479426-639115" data-ofbid="id_12373677__SL3479426-639115"><h2 class="- topic/title title sectiontitle">HSS Shortcuts (User Interface)</h2>
+      
+      <p class="- topic/p p" id="id_12373677__id_15138278" data-ofbid="id_12373677__id_15138278">HSS menu selections and results are described below.</p>
+      <table class="- topic/table table" id="id_12373677__id_15138279" data-ofbid="id_12373677__id_15138279"><caption></caption><colgroup><col style="width:48%"/><col style="width:52%"/></colgroup><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_12373677__id_15138280">
+                <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Menu Selection</span>
+              </td><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_12373677__id_15138281">
+                <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Result</span>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0 valign-middle" id="id_12373677__id_15138282">File &gt; Open &gt; HSS Files</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138283">Open a file selection box so you can select an HSS file to
+ open from any directory in the system.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0 valign-middle" id="id_12373677__id_15138284">File &gt; Open &gt; Header Information</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138285">Open the header information associated with the current HSS
+file in a separate window.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0 valign-middle" id="id_12373677__id_15138286">File &gt; Open &gt; Service Config File</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138287">Open the service config file associated with the current HSS
+file in a separate window.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0 valign-middle" id="id_12373677__id_15138288">File &gt; Save &gt; Save Data in PL Format</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138289">Save HSS file data in PL format.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0 valign-middle" id="id_12373677__id_15138290">File &gt; Save &gt; Capture Window as JPG</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138291">Save the full window as a JPG to a desired location.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0 valign-middle" id="id_12373677__id_15138292">File &gt; Save &gt; Copy Time and Frequency Plots</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138293">Copy the time and frequency plots as separate JPGs to a desired
+location.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0 valign-middle" id="id_12373677__id_15138294">File &gt; Print</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138295">Select a printer and print the current window.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0 valign-middle" id="id_12373677__id_15138296">File &gt; Exit</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138297">Close HSS Viewer.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0 valign-middle" id="id_12373677__id_15138298">Features &gt; Compare Mode</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138299">Open Compare Mode (new window).</td></tr></tbody>
+        </table>
+      <p class="- topic/p p" id="id_12373677__id_15138300" data-ofbid="id_12373677__id_15138300">The following table describes elements of the HSS user interface.</p>
+      <table class="- topic/table table" id="id_12373677__id_15138301" data-ofbid="id_12373677__id_15138301"><caption></caption><colgroup><col style="width:24%"/><col style="width:76%"/></colgroup><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_12373677__id_15138302">
+                <span class="+ topic/ph ui-d/uicontrol ph uicontrol">User Interface</span>
+              </td><td class="- topic/entry entry align-center colsep-0 rowsep-0" id="id_12373677__id_15138303">
+                <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Description</span>
+              </td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138304">Pass Selection Menu</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138305">View data corresponding to any pass, average spectrum and concatenated
+data of all passes.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138306">Baseline Correction</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138307">Removes wandering baseline. Low frequency oscillations in the
+HSS time data are removed.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138308">Auto-Scaling</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138309">Scales the plot in the Time windows so that the maximum and
+minimum values of the data displayed are the limits of the Y-axis.
+Scales the plot in the Frequency window so that zero and the maximum
+value in the data displayed are the limits of the Y-axis.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138310">Hanning Window</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138311">The data displayed in the time window is multiplied with a
+Hanning window of equal size and the result is displayed as the time
+data. The Fourier transform of this time data is displayed as the
+frequency spectrum in the frequency window.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138312">Cursor Update</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138313">Click the cursor above the corresponding plot window to activate
+the cursor update mode for that particular window. The first click
+in the window creates a red * (asterisk) sign in the middle of the
+window. X-Y values denoting the location of the point in appropriate
+units are displayed next to the Cursor Update button. Further actions
+are:<ul class="- topic/ul ul" id="id_12373677__id_15138314" data-ofbid="id_12373677__id_15138314"><li class="- topic/li li" id="id_12373677__SL3480207-639115" data-ofbid="id_12373677__SL3480207-639115"><p class="- topic/p p" id="id_12373677__id_15138315" data-ofbid="id_12373677__id_15138315">Right click: Move the * to the right
+by one data point and update the location display.</p></li><li class="- topic/li li" id="id_12373677__SL3480208-639115" data-ofbid="id_12373677__SL3480208-639115"><p class="- topic/p p" id="id_12373677__id_15138316" data-ofbid="id_12373677__id_15138316">Left click: Move the * to the left
+by one data point and update the location display.</p></li><li class="- topic/li li" id="id_12373677__SL3480209-639115" data-ofbid="id_12373677__SL3480209-639115"><p class="- topic/p p" id="id_12373677__id_15138317" data-ofbid="id_12373677__id_15138317">Shift + left click: Move the * to any
+location in the axis. (The * jumps to the data point nearest to the
+location where the mouse was clicked). Location display is updated.</p></li><li class="- topic/li li" id="id_12373677__SL3480210-639115" data-ofbid="id_12373677__SL3480210-639115"><p class="- topic/p p" id="id_12373677__id_15138318" data-ofbid="id_12373677__id_15138318">Click outside the plot window: Exit
+Cursor Update mode and close location display.</p></li></ul></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138319">Zoom +</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138320">Draw a rectangle in the time axis. The time window then displays
+only the data inside the rectangle. Data is not chopped in the Y direction.
+The frequency spectrum of the data displayed in the time plot window
+is computed and displayed in the frequency plot window.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138321">Zoom -</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138322">Cause the plot in the time window to revert back to the original
+plot for the pass selected.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138323">Mark Peaks</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138324">Mark all the peaks displayed in the peaks table as red dots.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138325">Compare Mode</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138326">Only those options that are not discussed in the help for the
+HSS Viewer are discussed.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138327">Overlay Files</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138328">Overlay the data displayed in the window for the two files
+selected. If the data size is different, an error message displays.</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138329">Spectrum Operations (Spectrum-A +,-,/ Spectrum-B)</td><td class="- topic/entry entry colsep-0 rowsep-0" id="id_12373677__id_15138330">Perform the selected operation on a point-by-point basis on
+the selected spectrums and display the result. The time data is neither
+affected nor displayed.</td></tr></tbody>
+        </table>
+    </section><section class="- topic/section section" id="id_12373677__SL4416265-639115" data-ofbid="id_12373677__SL4416265-639115"><h2 class="- topic/title title sectiontitle">Additional Resources</h2>
+      
+      <ul class="- topic/ul ul" id="id_12373677__id_15138331" data-ofbid="id_12373677__id_15138331"><li class="- topic/li li" id="id_12373677__SL4416267-639115" data-ofbid="id_12373677__SL4416267-639115">
+          <p class="- topic/p p" id="id_12373677__id_15138334" data-ofbid="id_12373677__id_15138334">
+            <a class="- topic/xref xref" href="c_High-Speed-Stability-HSS-Theory_5369509.html">High Speed Stability (HSS) Theory</a>
+          </p>
+        </li><li class="- topic/li li" id="id_12373677__SL4416364-639115" data-ofbid="id_12373677__SL4416364-639115">
+          <p class="- topic/p p" id="id_12373677__id_15138335" data-ofbid="id_12373677__id_15138335">
+            <a class="- topic/xref xref" href="r_ts_High-Speed-Stability-HSS-Troubleshooting_5369536.html">High Speed Stability (HSS) Troubleshooting</a>
+          </p>
+        </li></ul>
+    </section></div></article></main></div>
+                        
+                        
+                        
+                        </div>
+                        
+                        
+                        <!--<whc:webhelp_related_links class="d-print-none"/> -->
+                        
+                        
+                        
+                        
+                        <!-- GEDev US503: next/previous buttons on bottom -->
+                        
+                            
+                            <nav id="wh_topic_toc" class="d-print-none collapsible" aria-label="On this page">
+                                <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="section-item"><div class="section-title"><a href="#id_12373677__SL88114-639115" data-tocid="id_12373677__SL88114-639115">Viewing Results with HSS Viewer</a></div></li><li class="section-item"><div class="section-title"><a href="#id_12373677__SL2711690-639115" data-tocid="id_12373677__SL2711690-639115">Example HSS Report Screens</a></div></li><li class="section-item"><div class="section-title"><a href="#id_12373677__SL3479426-639115" data-tocid="id_12373677__SL3479426-639115">HSS Shortcuts (User Interface)</a></div></li><li class="section-item"><div class="section-title"><a href="#id_12373677__SL4416265-639115" data-tocid="id_12373677__SL4416265-639115">Additional Resources</a></div></li></ul></div>
+                            </nav>
+                            <!--whc:include_html href="${webhelp.fragment.after.topic.toc}"/-->
+                        
+                        <div id="topic_toc_button">
+                            <button type="button" data-target="#wh_topic_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle topic table of content" aria-controls="contain-topic_toc"></button>
+                        </div>
+                        <!--whc:include_html href="${webhelp.fragment.toggle.toc}"/-->
+                        
+                    </div>
+
+                </div>
+
+                
+            </div>
+            <div class="row">
+            <div id="wh_tools">
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+                    <div class="wh_right_tools">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                    </div>
+                </nav>
+            </div>
+            </div>
+            </div>
+        <!-- webhelp.fragment.after.main.content.area and webhelp.fragment.after.main.content.area.topic.page moved out of div to try and fix scrolling issue -->
+        
+        
+        <footer class="navbar navbar-default wh_footer" whc:version="23.1">
+  <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class="ftrcustom"><span>5777451-3</span> | <span>Revision 
+					7</span> | <span>en | </span><span><a target="_blank" href="https://www.gehealthcare.com/">gehealthcare.com</a></span></div><div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class="copyright_info"><span class="copyright_years"> ©2023</span> GE HealthCare Proprietary<div class="GETradmark"><span>GE is a trademark of General Electric Company used under trademark license.</span></div></div>
+</footer>
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" alt=""/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>
