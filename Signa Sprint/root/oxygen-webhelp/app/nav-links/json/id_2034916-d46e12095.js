@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Setting up and calibrating the Global Operator Cabinet (GOC) monitor","shortdesc":"<p class=\"shortdesc\">Set up and calibrate the monitor for your system.<\/p>","href":"c_SettingUpAndCalibratingTheGOCMonitor.html","attributes":{"data-id":"id_13106480"},"menu":{"hasChildren":false},"tocID":"id_13106480-d46e12200","topics":[]}]});

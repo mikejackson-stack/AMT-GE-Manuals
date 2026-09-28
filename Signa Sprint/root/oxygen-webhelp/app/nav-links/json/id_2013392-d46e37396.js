@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Changing the MGD\/TPS subnet address","shortdesc":"<p class=\"shortdesc\">Change the default MGD\/TPS subnet address in case of a conflict with the local site network.<\/p>","href":"t_ChangingMGD_TPSSubnetAddress.html","attributes":{"data-id":"id_2030501"},"menu":{"hasChildren":false},"tocID":"id_2030501-d46e37500","topics":[]}]});

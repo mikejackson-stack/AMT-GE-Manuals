@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Installing an extender kit","shortdesc":"<p class=\"shortdesc\">Installs an extender box for the pneumatic alert system if the pneumatic tubing does not reach the control box location.<\/p>","href":"t_InstallingAnExtenderKit.html","attributes":{"data-id":"id_2003295"},"menu":{"hasChildren":false},"tocID":"id_2003295-d46e61797","topics":[]}]});
