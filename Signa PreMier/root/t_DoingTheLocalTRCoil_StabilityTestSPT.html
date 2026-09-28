@@ -1,0 +1,226 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en" whc:version="22.0">
+
+    <head><link rel="shortcut icon" href="oxygen-webhelp\template\img\favicon-32x32.webp"><!----></link><link rel="icon" href="oxygen-webhelp\template\img\favicon-32x32.webp"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta charset="UTF-8"/><meta name="copyright" content="(C) Copyright 2023"/><meta name="DC.rights.owner" content="(C) Copyright 2023"/><meta name="DC.type" content="task"/><meta name="description" content="This tool measures and shows the magnitude drift, phase offset, and echo shift using Fast Spin Echo and Gradient Resolved Echo sequences for either the body coil or local coils. Local TR coil scans are disabled until this task is completed."/><meta name="DC.coverage" content=""/><meta name="DC.relation" scheme="URI" content="c_Troubleshooting_WebhelpLandingPage.html"/><meta name="DC.relation" scheme="URI" content="c_Troubleshooting_WebhelpLandingPage.html"/><meta name="DC.relation" scheme="URI" content="r_ts_ACR-Accreditation-Scan-Troubleshooting_16016407.html"/><meta name="prodname" content="TBD"/><meta name="version" content="0"/><meta name="component" content="Host Tools and Diagnostics"/><meta name="featnum" content=""/><meta name="series" content=""/><meta name="DC.creator" content=""/><meta name="DC.publisher" content="712023"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="id_2001631"/>        
+      <title>Doing the local TR coil Stability test</title><!--  Generated with Oxygen version 23.1, build number 2021121412.  --><meta name="wh-path2root" content=""/><meta name="wh-toc-id" content="id_2001631-d46e136250"/><meta name="wh-source-relpath" content="t_DoingTheLocalTRCoil_StabilityTestSPT.dita"/><meta name="wh-out-relpath" content="t_DoingTheLocalTRCoil_StabilityTestSPT.html"/>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/>
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2021121412"/>
+    
+    
+    <script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script>
+    
+    <script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/notes.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/GEHealthCare.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/print.css?buildId=2021121412"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/footer-fix.css?buildId=2021121412"/><script src="./oxygen-webhelp/lib/scripts/Remove_LSEP.js"></script></head>
+    <body id="id_2001631" class="wh_topic_page frmBody">
+        <!--US578: WHR - Move search to line up with manual title-->
+        <div class="SupressSearch">
+            <!--Search form 
+                Removed class for DE238: Double search fields when webhelp is viewed on
+            <whc:webhelp_search_input class="navbar-form wh_topic_page_search search" role="form">-->
+            <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_search_input " role="form">
+                
+                
+                <div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div>
+                
+                
+            </div>
+        </div>
+        <a href="#topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="23.1">
+    <div class="container-fluid">
+        <!-- GEDev US509 Webhelp: expandable navbar icon invisible changed to navbar-light -->
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-light">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <!-- GE Dev US464 change logo link to blank target -->
+                    <a href="https://www.gehealthcare.com/" class=" wh_logo d-none d-sm-block " target="_blank"><img src="oxygen-webhelp\template\img\GE-HLTHCR_Webhelp_CMYK-CompPrpl.svg" alt="SIGNA™ Premier 3.0T Service Manual"/></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle"><span class="ph mainbooktitle">SIGNA™ Premier 3.0T Service Manual</span></span></a></div>
+                    <!--* DE224: WHR: Link under the search field is missing -->
+                    <div class="search_container">
+                        <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_search_input "><div class="search_form_container"><form id="searchForm_A" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form></div></div><whc:search_field></whc:search_field>
+                        <div class="search_link">
+                             
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+            </div>
+            
+            
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033906-d46e224-mi" data-tocid="id_2033906-d46e224" data-state="not-ready" class=" topicref " data-id="id_2033906"><span class="title"><a href="c_Safety_WebhelpLandingPage.html">Safety and General Information</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033907-d46e1778-mi" data-tocid="id_2033907-d46e1778" data-state="not-ready" class=" topicref " data-id="id_2033907"><span class="title"><a href="c_PreInstallation_WebhelpLandingPage.html">Pre-Installation</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033909-d46e1984-mi" data-tocid="id_2033909-d46e1984" data-state="not-ready" class=" topicref " data-id="id_2033909"><span class="title"><a href="c_Installation_WebhelpLandingPage.html">Installation</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033902-d46e47631-mi" data-tocid="id_2033902-d46e47631" data-state="not-ready" class=" topicref " data-id="id_2033902"><span class="title"><a href="c_AdjustmentsAndCalibrations_WebhelpLandingPage.html">Adjustments/Calibrations</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033910-d46e84750-mi" data-tocid="id_2033910-d46e84750" data-state="not-ready" class=" topicref " data-id="id_2033910"><span class="title"><a href="c_FunctionalChecks_WebhelpLandingPage.html">Functional Checks</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033911-d46e101428-mi" data-tocid="id_2033911-d46e101428" data-state="not-ready" class=" topicref " data-id="id_2033911"><span class="title"><a href="c_Software_WebhelpLandingPage.html">Software</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033912-d46e123345-mi" data-tocid="id_2033912-d46e123345" data-state="not-ready" class=" topicref " data-id="id_2033912"><span class="title"><a href="c_Theory_WebhelpLandingPage.html">Theory</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033914-d46e126730-mi" data-tocid="id_2033914-d46e126730" data-state="not-ready" class=" topicref " data-id="id_2033914"><span class="title"><a href="c_PlannedMaintenance_WebhelpLandingPage.html">Planned Maintenance</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033915-d46e136133-mi" data-tocid="id_2033915-d46e136133" data-state="not-ready" class=" topicref " data-id="id_2033915"><span class="title"><a href="c_Troubleshooting_WebhelpLandingPage.html">Troubleshooting</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033916-d46e142542-mi" data-tocid="id_2033916-d46e142542" data-state="not-ready" class=" topicref " data-id="id_2033916"><span class="title"><a href="c_Parts_WebhelpLandingPage.html">Parts</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033917-d46e144514-mi" data-tocid="id_2033917-d46e144514" data-state="not-ready" class=" topicref " data-id="id_2033917"><span class="title"><a href="c_Replacements_WebhelpLandingPage.html">Replacements</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033903-d46e452121-mi" data-tocid="id_2033903-d46e452121" data-state="not-ready" class=" topicref " data-id="id_2033903"><span class="title"><a href="c_OEMAndOtherManuals_WebhelpLandingPage.html">OEM and Other Manuals</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033904-d46e452533-mi" data-tocid="id_2033904-d46e452533" data-state="not-ready" class=" topicref " data-id="id_2033904"><span class="title"><a href="c_Coils_WebhelpLandingPage.html">Coils</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="id_2033918-d46e459216-mi" data-tocid="id_2033918-d46e459216" data-state="not-ready" class=" topicref " data-id="id_2033918"><span class="title"><a href="c_OptionalFeatures_WebhelpLandingPage.html">Optional Features</a></span></span></li></ul></nav>
+                
+                <!--whc:include_html href="${webhelp.fragment.after.top_menu}"/-->
+                
+            </div>
+            
+        </div>
+    </div>
+</header>
+        
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li><span class="topicref" data-id="id_2033915"><span class="title"><a href="c_Troubleshooting_WebhelpLandingPage.html">Troubleshooting</a></span></span></li><li><span class="topicref"><span class="title"><a href="t_DoingTheLocalTRCoil_StabilityTestSPT.html">Image Quality</a></span></span></li><li class="active"><span class="topicref" data-id="id_2001631"><span class="title"><a href="t_DoingTheLocalTRCoil_StabilityTestSPT.html">Doing the local TR coil Stability test</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"><span class="ph">This tool measures and shows the magnitude drift, phase offset, and echo shift using Fast Spin Echo and Gradient Resolved Echo sequences for either the body coil or local coils.</span> Local TR coil scans are disabled until this task is completed.</p></span></span></span></li></ol></div>
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="- topic/link link" href="c_Troubleshooting_WebhelpLandingPage.html" title="Troubleshooting" aria-label="Previous topic: Troubleshooting" rel="prev"></a></span>  
+<span class="navnext"><a class="- topic/link link" href="r_ts_ACR-Accreditation-Scan-Troubleshooting_16016407.html" title="ACR accreditation scan troubleshooting" aria-label="Next topic: ACR accreditation scan troubleshooting" rel="next"></a></span>  </span></div>
+
+                        <!-- External resource link -->
+                        
+
+                        <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page" class="oxy-icon oxy-icon-print"></button></div>
+
+                        <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                        <button type="button" data-target="#wh_publication_toc" id="wh_toc_button" data-toggle="collapse" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+
+            <!--whc:include_html href="${webhelp.fragment.before.main.content.area}"/>
+           
+            <whc:include_html href="${webhelp.fragment.before.main.content.area.topic.page}"/-->
+
+
+            <div class="wh_content_area">
+                <!-- US616 - TOC toggle buttons -->
+                <div class="row" id="topic_body">
+                    
+                        
+                        <nav id="wh_publication_toc" class="d-print-none collapsible" aria-label="Table of Contents Container">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="id_2033915-d46e136133" class="topicref" data-id="id_2033915" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action id_2033915-d46e136133-link" class="wh-expand-btn"></span><span class="title"><a href="c_Troubleshooting_WebhelpLandingPage.html" id="id_2033915-d46e136133-link">Troubleshooting</a></span></span><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="false"><span data-tocid="tocId-d46e136238" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d46e136238-link" class="wh-expand-btn"></span><span class="title"><a href="" id="tocId-d46e136238-link">Diagnostics</a></span></span></li><li role="treeitem"><span data-tocid="tocId-d46e136245" class="topicref" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="" id="tocId-d46e136245-link">Coils</a></span></span></li><li role="treeitem"><span data-tocid="tocId-d46e136246" class="topicref" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="" id="tocId-d46e136246-link">GOC</a></span></span></li><li role="treeitem"><span data-tocid="tocId-d46e136247" class="topicref" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="" id="tocId-d46e136247-link">Gradient</a></span></span></li><li role="treeitem" aria-expanded="true"><span data-tocid="tocId-d46e136248" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d46e136248-link" class="wh-expand-btn"></span><span class="title"><a href="t_DoingTheLocalTRCoil_StabilityTestSPT.html" id="tocId-d46e136248-link">Image Quality</a></span></span><ul role="group" class="navbar-nav nav-list"><li role="treeitem" class="active"><span data-tocid="id_2001631-d46e136250" class="topicref" data-id="id_2001631" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="t_DoingTheLocalTRCoil_StabilityTestSPT.html" id="id_2001631-d46e136250-link">Doing the local TR coil Stability test</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"><span class="ph">This tool measures and shows the magnitude drift, phase offset, and echo shift using Fast Spin Echo and Gradient Resolved Echo sequences for either the body coil or local coils.</span> Local TR coil scans are disabled until this task is completed.</p></span></span></span></li><li role="treeitem"><span data-tocid="id_12374102-d46e136356" class="topicref" data-id="id_12374102" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="r_ts_ACR-Accreditation-Scan-Troubleshooting_16016407.html" id="id_12374102-d46e136356-link">ACR accreditation scan troubleshooting</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">ACR accreditation scan troubleshooting.</p></span></span></span></li></ul></li><li role="treeitem" aria-expanded="false"><span data-tocid="tocId-d46e136460" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d46e136460-link" class="wh-expand-btn"></span><span class="title"><a href="r_TroubleshootingTheIn-RoomDisplayIRD_Parent.html" id="tocId-d46e136460-link">Patient Handling</a></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="tocId-d46e142124" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d46e142124-link" class="wh-expand-btn"></span><span class="title"><a href="r_ts_Dual-Drive-RF-Amplifier-Troubleshooting_12735748.html" id="tocId-d46e142124-link">Radio Frequency (RF)</a></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="tocId-d46e142229" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d46e142229-link" class="wh-expand-btn"></span><span class="title"><a href="r_TroubleshootingThePlatformIntegratedCoolingCabinetPICC.html" id="tocId-d46e142229-link">System</a></span></span></li><li role="treeitem"><span data-tocid="tocId-d46e142541" class="topicref" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="" id="tocId-d46e142541-link">Volume Recon Engine (VRE)</a></span></span></li></ul></li></ul></div>
+                        </nav>
+                    
+                    <div id="pub_toc_button">
+                        <button type="button" data-target="#wh_publication_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc"></button>
+                    </div>
+                    
+                    <!--  DE234:  Spacing irregularities with flexible TOCS in Webhelp 
+                    Moved related links out 2 divs, moved topic tocs into topic body-->
+                    <div id="wh_topic_body">
+                        
+                        <div id="body_grid"><!-- DE234:  Added Body grid to fix issue with related links-->
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="id_2001631__title_an5_4mj_fw"><header class="contentHead">
+        <div class="topicMeta"><ul class="- topic/title title"><li> </li><li></li><li></li><li><span class="metalabel">Object ID: </span>00000018WHA301872GYZ</li><li><span class="metalabel">Topic ID: </span>id_2001631<span class="metalabel"> Version: </span>4.17</li><li><span class="metalabel">Date: </span>Sep 26, 2022 2:11:57 AM</li></ul></div><h1 class="- topic/title title topictitle1" id="id_2001631__title_an5_4mj_fw">Doing the local TR coil Stability test</h1></header>
+        <div class="- topic/body task/taskbody body taskbody" id="id_2001631__taskbody_rz3_qmj_fw"><div class="hide"><p class="- topic/shortdesc shortdesc"><span class="- topic/ph ph">This tool measures and shows the magnitude drift, phase offset, and echo shift using Fast Spin Echo and Gradient Resolved Echo sequences for either the body coil or local coils.</span> Local TR coil scans are disabled until this task is completed.</p></div>
+        <section class="- topic/section task/prereq section prereq" id="id_2001631__prereq_d4m_qmj_fw" data-ofbid="id_2001631__prereq_d4m_qmj_fw"><div class="tasklabel"><h2 class="sectiontitle tasklabel">Prerequisites</h2></div>
+            <table class="- topic/table table" id="id_2001631__table_gg1_4gx_bm" data-ofbid="id_2001631__table_gg1_4gx_bm"><caption></caption><colgroup><col style="width:25%"/><col style="width:25%"/><col style="width:25%"/><col style="width:25%"/></colgroup><thead class="- topic/thead thead"><tr class="- topic/row"><th class="- topic/entry entry colsep-0 rowsep-0" id="id_2001631__table_gg1_4gx_bm__entry__1" colspan="4">Personnel Requirements</th></tr><tr class="- topic/row"><th class="- topic/entry entry colsep-0 rowsep-0" id="id_2001631__table_gg1_4gx_bm__entry__2">Required Persons</th><th class="- topic/entry entry colsep-0 rowsep-0" id="id_2001631__table_gg1_4gx_bm__entry__3">Preliminary requirements</th><th class="- topic/entry entry colsep-0 rowsep-0" id="id_2001631__table_gg1_4gx_bm__entry__4">Procedure</th><th class="- topic/entry entry colsep-0 rowsep-0" id="id_2001631__table_gg1_4gx_bm__entry__5">Finalization</th></tr></thead><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" headers="id_2001631__table_gg1_4gx_bm__entry__1 id_2001631__table_gg1_4gx_bm__entry__2">1</td><td class="- topic/entry entry colsep-0 rowsep-0" headers="id_2001631__table_gg1_4gx_bm__entry__1 id_2001631__table_gg1_4gx_bm__entry__3">-</td><td class="- topic/entry entry colsep-0 rowsep-0" headers="id_2001631__table_gg1_4gx_bm__entry__1 id_2001631__table_gg1_4gx_bm__entry__4">20 minutes</td><td class="- topic/entry entry colsep-0 rowsep-0" headers="id_2001631__table_gg1_4gx_bm__entry__1 id_2001631__table_gg1_4gx_bm__entry__5">-</td></tr></tbody>
+        </table>
+            <table class="- topic/table table" id="id_2001631__table_qq1_sry_kbb" data-ofbid="id_2001631__table_qq1_sry_kbb"><caption></caption><colgroup><col style="width:25%"/><col style="width:25%"/><col style="width:25%"/><col style="width:25%"/></colgroup><thead class="- topic/thead thead"><tr class="- topic/row"><th class="- topic/entry entry colsep-0 rowsep-0" id="id_2001631__table_qq1_sry_kbb__entry__1" colspan="4">Tools and test equipment</th></tr><tr class="- topic/row"><th class="- topic/entry entry colsep-0 rowsep-0" id="id_2001631__table_qq1_sry_kbb__entry__2">Item</th><th class="- topic/entry entry colsep-0 rowsep-0" id="id_2001631__table_qq1_sry_kbb__entry__3">Quantity</th><th class="- topic/entry entry colsep-0 rowsep-0" id="id_2001631__table_qq1_sry_kbb__entry__4">Part number</th><th class="- topic/entry entry colsep-0 rowsep-0" id="id_2001631__table_qq1_sry_kbb__entry__5">Manufacturer</th></tr></thead><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" headers="id_2001631__table_qq1_sry_kbb__entry__1 id_2001631__table_qq1_sry_kbb__entry__2"><span class="- topic/ph ph">Local TR Coil</span></td><td class="- topic/entry entry colsep-0 rowsep-0" headers="id_2001631__table_qq1_sry_kbb__entry__1 id_2001631__table_qq1_sry_kbb__entry__3">As required</td><td class="- topic/entry entry colsep-0 rowsep-0" headers="id_2001631__table_qq1_sry_kbb__entry__1 id_2001631__table_qq1_sry_kbb__entry__4"><span class="- topic/ph ph">-</span></td><td class="- topic/entry entry colsep-0 rowsep-0" headers="id_2001631__table_qq1_sry_kbb__entry__1 id_2001631__table_qq1_sry_kbb__entry__5">-</td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" headers="id_2001631__table_qq1_sry_kbb__entry__1 id_2001631__table_qq1_sry_kbb__entry__2"><span class="- topic/ph ph">Phantom used for MCQA</span></td><td class="- topic/entry entry colsep-0 rowsep-0" headers="id_2001631__table_qq1_sry_kbb__entry__1 id_2001631__table_qq1_sry_kbb__entry__3">As required</td><td class="- topic/entry entry colsep-0 rowsep-0" headers="id_2001631__table_qq1_sry_kbb__entry__1 id_2001631__table_qq1_sry_kbb__entry__4"><span class="- topic/ph ph">-</span></td><td class="- topic/entry entry colsep-0 rowsep-0" headers="id_2001631__table_qq1_sry_kbb__entry__1 id_2001631__table_qq1_sry_kbb__entry__5">-</td></tr></tbody>
+        </table>
+            <table class="- topic/table table" id="id_2001631__table_d2x_2hx_bm" data-ofbid="id_2001631__table_d2x_2hx_bm"><caption></caption><colgroup><col style="width:100%"/></colgroup><thead class="- topic/thead thead"><tr class="- topic/row"><th class="- topic/entry entry colsep-0 rowsep-0" id="id_2001631__table_d2x_2hx_bm__entry__1">Required conditions</th></tr></thead><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" headers="id_2001631__table_d2x_2hx_bm__entry__1"><span class="- topic/ph ph">Cancel all previous exams. Click <span class="+ topic/ph ui-d/uicontrol ph uicontrol">End Exam</span>.</span></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" headers="id_2001631__table_d2x_2hx_bm__entry__1"><span class="- topic/ph ph">Remove any patient positioning devices, such as patient restraints or other attached devices.</span></td></tr><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" headers="id_2001631__table_d2x_2hx_bm__entry__1"><span class="- topic/ph ph">Use the MCQA phantom setup procedure with respect to the local TR coil being tested.</span></td></tr></tbody>
+        </table>
+            <table class="- topic/table table" id="id_2001631__table_dtd_lsy_kbb" data-ofbid="id_2001631__table_dtd_lsy_kbb"><caption></caption><colgroup><col style="width:100%"/></colgroup><thead class="- topic/thead thead"><tr class="- topic/row"><th class="- topic/entry entry colsep-0 rowsep-0" id="id_2001631__table_dtd_lsy_kbb__entry__1">Safety</th></tr></thead><tbody class="- topic/tbody tbody"><tr class="- topic/row"><td class="- topic/entry entry colsep-0 rowsep-0" headers="id_2001631__table_dtd_lsy_kbb__entry__1">
+                                                                                    <p class="- topic/p p">Before working in any GE HealthCare MR suite or doing any GE HealthCare service procedure, you must:</p>
+                                                                                    <ul class="- topic/ul ul"><li class="- topic/li li">Have read and understood all hazard conditions and safety requirements in the latest revision of the GE HealthCare <cite class="- topic/cite cite"><span class="- topic/ph ph">MR Service Safety Manual</span></cite> (<span class="- topic/ph ph">5452735</span>).</li><li class="- topic/li li">Have successfully completed all relevant GE HealthCare Environmental Health and Safety (EHS) courses (or for non-GE employees, equivalent workplace training courses).</li><li class="- topic/li li">Comply with all site-specific training and workplace safety requirements.</li></ul>
+                                                                                    <p class="- topic/p p">If you have any safety concerns at any time, do not begin work or immediately stop work and move to a safe location. Immediately contact your supervisor or site safety officer for instructions on how to proceed.</p>
+                                                                        </td></tr></tbody>
+        </table>
+        </section><section class="- topic/section task/context section context"><div class="tasklabel"><h2 class="sectiontitle tasklabel">About this task</h2></div>
+            <p class="- topic/p p">The system will not permit scans with local TR coils until the local Tx stability test (FSE and GRE stability) passes for at least one local TR coil. If the customer has two or more local TR coils, it is only necessary to test one.</p>
+            <p class="- topic/p p">If you try to scan without passing this test, it will not be possible to use local TR coils to scan.</p>
+        </section><section id="id_2001631__steps_usr_tmj_fw" data-ofbid="id_2001631__steps_usr_tmj_fw"><div class="tasklabel"><h2 class="sectiontitle tasklabel">Procedure</h2></div><ol class="- topic/ol task/steps ol steps" id="id_2001631__steps_usr_tmj_fw" data-ofbid="id_2001631__steps_usr_tmj_fw"><li class="- topic/li task/step li step stepexpand" id="id_2001631__step_jw5_tmj_fw" data-ofbid="id_2001631__step_jw5_tmj_fw"><span class="- topic/ph task/cmd ph cmd">From the CSD, go to <span class="+ topic/ph ui-d/menucascade ph menucascade"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Image Quality tab</span><abbr title="and then"> &gt; </abbr><span class="+ topic/ph ui-d/uicontrol ph uicontrol">SPT Local TX Test Menu</span></span>, and click <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Click here to start this tool</span>.</span><div class="- topic/itemgroup task/info itemgroup info">
+                    <p class="- topic/p p">The <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Stability Tool</span> window shows.</p>
+                </div></li><li class="- topic/li task/step li step stepexpand"><span class="- topic/ph task/cmd ph cmd">Click <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Start</span>.</span><div class="- topic/itemgroup task/info itemgroup info">
+                    <figure class="- topic/fig fig fignone"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">1. </span></span><span class="fig--title">Stability tool interface</span></figcaption><img class="- topic/image image" src="StabilityTest3rdPartyMode_1.jpg"/></figure>
+                    <ul class="- topic/ul ul" id="id_2001631__ul_qnm_z4q_v1b" data-ofbid="id_2001631__ul_qnm_z4q_v1b"><li class="- topic/li li">The test results and plots will show automatically after the test is completed.</li><li class="- topic/li li">After you close the plots, they are no longer available.</li></ul>
+                    <figure class="- topic/fig fig fignone"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">2. </span></span><span class="fig--title">Stability tool output plot example</span></figcaption><img class="- topic/image image" src="Stability_Data_Viewer.jpeg"/></figure>
+                    
+                </div></li></ol></section></div></article></main></div>
+                        
+                        
+                        
+                        </div>
+                        
+                        
+                        <!--<whc:webhelp_related_links class="d-print-none"/> -->
+                        
+                        
+                        
+                        
+                        <!-- GEDev US503: next/previous buttons on bottom -->
+                        
+                        <div id="topic_toc_button">
+                            <button type="button" data-target="#wh_topic_toc" data-toggle="collapse" class=" custom-toggler navbar-toggler collapsed navbar-light" aria-expanded="false" aria-label="Toggle topic table of content" aria-controls="contain-topic_toc"></button>
+                        </div>
+                        <!--whc:include_html href="${webhelp.fragment.toggle.toc}"/-->
+                        
+                    </div>
+
+                </div>
+
+                
+            </div>
+            <div class="row">
+            <div id="wh_tools">
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li><span class="topicref" data-id="id_2033915"><span class="title"><a href="c_Troubleshooting_WebhelpLandingPage.html">Troubleshooting</a></span></span></li><li><span class="topicref"><span class="title"><a href="t_DoingTheLocalTRCoil_StabilityTestSPT.html">Image Quality</a></span></span></li><li class="active"><span class="topicref" data-id="id_2001631"><span class="title"><a href="t_DoingTheLocalTRCoil_StabilityTestSPT.html">Doing the local TR coil Stability test</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"><span class="ph">This tool measures and shows the magnitude drift, phase offset, and echo shift using Fast Spin Echo and Gradient Resolved Echo sequences for either the body coil or local coils.</span> Local TR coil scans are disabled until this task is completed.</p></span></span></span></li></ol></div>
+                    <div class="wh_right_tools">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="- topic/link link" href="c_Troubleshooting_WebhelpLandingPage.html" title="Troubleshooting" aria-label="Previous topic: Troubleshooting" rel="prev"></a></span>  
+<span class="navnext"><a class="- topic/link link" href="r_ts_ACR-Accreditation-Scan-Troubleshooting_16016407.html" title="ACR accreditation scan troubleshooting" aria-label="Next topic: ACR accreditation scan troubleshooting" rel="next"></a></span>  </span></div>
+                    </div>
+                </nav>
+            </div>
+            </div>
+            </div>
+        <!-- webhelp.fragment.after.main.content.area and webhelp.fragment.after.main.content.area.topic.page moved out of div to try and fix scrolling issue -->
+        
+        
+        <footer class="navbar navbar-default wh_footer" whc:version="23.1">
+  <div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class="ftrcustom"><span>5777451-3</span> | <span>Revision 
+					7</span> | <span>en | </span><span><a target="_blank" href="https://www.gehealthcare.com/">gehealthcare.com</a></span></div><div xmlns:oxy="http://www.oxygenxml.com/functions" xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns:dita2html="http://dita-ot.sourceforge.net/ns/200801/dita2html" xmlns:related-links="http://dita-ot.sourceforge.net/ns/200709/related-links" xmlns:oxygen="http://www.oxygenxml.com/functions" xmlns:astC="http://www.astoriasoftware.com/compose" xmlns="" class="copyright_info"><span class="copyright_years"> ©2023</span> GE HealthCare Proprietary<div class="GETradmark"><span>GE is a trademark of General Electric Company used under trademark license.</span></div></div>
+</footer>
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" alt=""/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>
