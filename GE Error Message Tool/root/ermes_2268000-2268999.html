@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2268000-2268999 (168)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2268000-2268999 (168)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2267000-2267999.html">&larr; 2267000-2267999</a><a href="ermes_2269000-2269999.html">2269000-2269999 &rarr;</a></nav></header>
+<section id="BM2268200"><a name="BM2268200"></a>
+<h2>2268200</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_HAMMER_MGD_ERROR</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Hammer Diagnostic failed. The SCP detected an error in the MGD chassis while running this diagnostic.
+Msg is: %s Check system setup. Run MGD diagnostics (SCP, AGP, SRF(or PSE), IRF3(or IXG)).</div>
+</section>
+<section id="BM2268201"><a name="BM2268201"></a>
+<h2>2268201</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_HAMMER_ETHERNET_ERROR</div>
+<div class="txt">COMMUNICATION ERROR - Gradient Hammer Diagnostic failed. The SCP detected an error on the Ethernet link to XGD while running this diagnostic.
+Msg is: %s Check MGD subnet connections. Check MGD subnet Ethernet switch. Reset TPS.</div>
+</section>
+<section id="BM2268202"><a name="BM2268202"></a>
+<h2>2268202</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_HAMMER_DVMR_LINK_ERROR</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Hammer Diagnostic failed. The XGD detected a DVMR Link error while running this diagnostic.
+DVMR Link status = %08xH
+Msg is: %s Check DVMR Link connections. Run IRF3(or IXG) diagnostics.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Try DVMR Link fiber from XGD in a different port on IRF3(or IXG). Replace DVMR Link fiber to XGD if XGD link is the only DVMR Link with an error.</div>
+</section>
+<section id="BM2268203"><a name="BM2268203"></a>
+<h2>2268203</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_HAMMER_GMC_ERROR</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Hammer Diagnostic failed. The XGD GMC board detected an error while running this diagnostic.
+DVMR Link status = %08xH
+Msg is: %s Check all connections to boards in XGD control chassis. Repeat Hammer Diagnostic.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Replace GMC board in XGD control chassis.</div>
+</section>
+<section id="BM2268204"><a name="BM2268204"></a>
+<h2>2268204</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_HAMMER_BAD_RAW_DATA</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Hammer Diagnostic failed. The XGD received bad raw data from the DVMR Link.
+Count of bad data = %d
+Data Exp = %08xH or %08xH
+Data Rd = %08xH Check system setup. Run MGD diagnostics (SCP, AGP, SRF(or PSE), IRF3(or IXG)).</div>
+<div class="lbl">Extended Error:</div><div class="txt">Replace GMC board in XGD control chassis.</div>
+</section>
+<section id="BM2268205"><a name="BM2268205"></a>
+<h2>2268205</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_HAMMER_BAD_CMD_DATA</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Hammer Diagnostic failed. The XGD detected data corruption on GMC board while running this diagnostic.
+Count of bad data = %d
+Data Exp = %08xH or %08xH
+Data Rd = %08xH</div>
+<div class="lbl">Extended Error:</div><div class="txt">Replace GMC board in XGD control chassis. Replace SRF(or PSE).</div>
+</section>
+<section id="BM2268206"><a name="BM2268206"></a>
+<h2>2268206</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_HAMMER_CLOCK_STOP</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Hammer Diagnostic failed. The XGD detected a stopped system clock while running this diagnostic.
+DVMR Link status = %08xH Check the 80 MHz system clock fiber to XGD. Run IRF3(or IXG) diagnostics.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Replace system clock generator if other peripherals report clock stop. Replace system clock fiber to XGD. Replace GMC board in XGD control chassis.</div>
+</section>
+<section id="BM2268207"><a name="BM2268207"></a>
+<h2>2268207</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_HAMMER_CLOCK_PHASE</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Hammer Diagnostic failed. The XGD cannot phase lock to system clock while running this diagnostic.
+DVMR Link status = %08xH Check the 80 MHz system clock fiber to XGD. Run IRF3(or IXG) diagnostics.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Replace system clock generator if other peripherals report phase lock errors. Replace system clock fiber to XGD. Replace GMC board in XGD control chassis.</div>
+</section>
+<section id="BM2268208"><a name="BM2268208"></a>
+<h2>2268208</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_HAMMER_GRAD_UPDATE_LOST</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Hammer Diagnostic failed. The XGD did not receive valid data every 4 uS while running this diagnostic.
+DVMR Link status = %08xH Ensure proper system setup and run diagnostics on MGD chassis hardware.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Replace SRF(or PSE).</div>
+</section>
+<section id="BM2268209"><a name="BM2268209"></a>
+<h2>2268209</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_HAMMER_SFP_SIGNAL_LOST</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Hammer Diagnostic failed. The XGD GMC DVMR Link receiver module lost signal while running diags.
+DVMR Link status = %08xH Check DVMR Link fiber between IRF3(or IXG) and XGD. Reseat connections. Run IRF3(or IXG) diagnostics.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Try DVMR Link fiber from XGD in a different port on IRF3(or IXG). Replace DVMR Link fiber to XGD if XGD link is the only DVMR Link with an error. Replace GMC board in XGD control chassis. Replace IRF3(or IXG) board.</div>
+</section>
+<section id="BM2268210"><a name="BM2268210"></a>
+<h2>2268210</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_FIDELITY_ETHERNET_ERROR</div>
+<div class="txt">COMMUNICATION ERROR - Gradient Fidelity Diagnostic failed. The SCP detected an error on the Ethernet link to XGD while running this diagnostic.
+Msg is: %s Check MGD subnet connections. Check MGD subnet Ethernet switch. Reset TPS.</div>
+</section>
+<section id="BM2268211"><a name="BM2268211"></a>
+<h2>2268211</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_FIDELITY_BYPASS_ERROR</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Fidelity Diagnostic failed. Gradient HWO failed to go to BYPASS state. Reset TPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that gradients are not emulated in the mgd_stage file.</div>
+</section>
+<section id="BM2268212"><a name="BM2268212"></a>
+<h2>2268212</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_FIDELITY_MAX_ERROR</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Fidelity Diagnostic failed on the %s Axis. Maximum Error measured %d uAs during Shot %d, Sample %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check tuning in xgd_tuning_x/y/z.dat file. Swap amplifier axis by swapping fibers at the XGA-CB and also swapping gradient output leads on the same two XGAs (between the failing axis and a passing axis). If the problem moves, replace the XGA. Check the gradient coil resistance to ground.</div>
+</section>
+<section id="BM2268213"><a name="BM2268213"></a>
+<h2>2268213</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_FIDELITY_SEQUENCE_STABILITY</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Fidelity Diagnostic failed on the %s Axis. Shot-to-shot instability measured %d uAs during Sample %d between Shots %d and %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check tuning in xgd_tuning_x/y/z.dat file. Swap amplifier axis by swapping fibers at the XGA-CB and also swapping gradient output leads on the same two XGAs (between the failing axis and a passing axis). If the problem moves, replace the XGA. Check the gradient coil resistance to ground.</div>
+</section>
+<section id="BM2268214"><a name="BM2268214"></a>
+<h2>2268214</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_FIDELITY_VIEW_STABILITY</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Fidelity Diagnostic failed on the %s Axis. View-to-view instability measured %d uAs during Sample %d between Shot %d View %d and Shot %d View %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check tuning in xgd_tuning_x/y/z.dat file. Swap amplifier axis by swapping fibers at the XGA-CB and also swapping gradient output leads on the same two XGAs (between the failing axis and a passing axis). If the problem moves, replace the XGA. Check the gradient coil resistance to ground.</div>
+</section>
+<section id="BM2268215"><a name="BM2268215"></a>
+<h2>2268215</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_FIDELITY_EPI_SYMMETRY</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Fidelity Diagnostic failed on the %s Axis. EPI Asymmetry measured %d uAs at Shot %d, View %d, Sample %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check tuning in xgd_tuning_x/y/z.dat file. Swap amplifier axis by swapping fibers at the XGA-CB and also swapping gradient output leads on the same two XGAs (between the failing axis and a passing axis). If the problem moves, replace the XGA. Check the gradient coil resistance to ground.</div>
+</section>
+<section id="BM2268216"><a name="BM2268216"></a>
+<h2>2268216</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_FIDELITY_FILE_OPEN_ERR</div>
+<div class="txt">FILE ACCESS ERROR - Fidelity Diagnostic could not open a file and record results. Error code: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">SCP could not open the Fidelity Diagnostic results file. Default name is /usr/g/service/log/grad_fidelity_xgd.csv Check for host disk full. Check for write access allowed. Check for correct system configuration between SCP and host computer. Reboot the host computer.</div>
+</section>
+<section id="BM2268217"><a name="BM2268217"></a>
+<h2>2268217</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_FIDELITY_FILE_WRITE_ERR</div>
+<div class="txt">FILE ACCESS ERROR - Fidelity Diagnostic could not write a file and record results. Error code: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">SCP could not write the Fidelity Diagnostic results file. Default name is /usr/g/service/log/grad_fidelity_xgd.csv Check for host disk full. Check for write access allowed. Check for correct system configuration between SCP and host computer. Reboot the host computer.</div>
+</section>
+<section id="BM2268218"><a name="BM2268218"></a>
+<h2>2268218</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_STATIC_ETHERNET_ERROR</div>
+<div class="txt">COMMUNICATION ERROR - Gradient Static Diagnostic failed. The SCP detected an error on the Ethernet link to XGD while running this diagnostic.
+Msg is: %s Check MGD subnet connections. Check MGD subnet Ethernet switch. Reset TPS.</div>
+</section>
+<section id="BM2268219"><a name="BM2268219"></a>
+<h2>2268219</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_STATIC_BYPASS_ERROR</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Static Diagnostic failed. Gradient HWO failed to go to BYPASS state. Reset TPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that gradients are not emulated in the mgd_stage file.</div>
+</section>
+<section id="BM2268220"><a name="BM2268220"></a>
+<h2>2268220</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_STATIC_LIMIT_ERROR</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Static Diagnostic failed limit test in register: %s/%s.%s.
+Value = %08xH. Limits = %08xH, %08xH. Refer to Service Level message for action.</div>
+</section>
+<section id="BM2268221"><a name="BM2268221"></a>
+<h2>2268221</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_HAMMER_BYPASS_ERROR</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Hammer Diagnostic failed. Gradient HWO failed to go to BYPASS state. Reset TPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that gradients are not emulated in the mgd_stage file.</div>
+</section>
+<section id="BM2268222"><a name="BM2268222"></a>
+<h2>2268222</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_FIDELITY_PS_DISABLED</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Fidelity Diagnostic failed. Gradient XPS not enabled. Verify XPS have 480V power.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that PDU is working and is supplying 480V to XPS</div>
+</section>
+<section id="BM2268223"><a name="BM2268223"></a>
+<h2>2268223</h2>
+<div class="sym">ERROR: EM_XGD_DIAG_STATIC_PS_DISABLED</div>
+<div class="txt">GRADIENT DIAGNOSTIC - Gradient Static Diagnostic failed. Gradient XPS not enabled. Verify XPS have 480V power.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that PDU is working and is supplying 480V to XPS</div>
+</section>
+<section id="BM2268224"><a name="BM2268224"></a>
+<h2>2268224</h2>
+<div class="sym">ERROR: EM_XGD_SINGLE_XPS_NO_420V</div>
+<div class="txt">The %b XPS module reports the loss of 420V power. Call for service.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This failure points to a single defective XPS module. Confirm the problem by checking the LEDs on the front of the system and by checking incoming power. If the problem is confirmed, the single XPS should be replaced</div>
+</section>
+<section id="BM2268225"><a name="BM2268225"></a>
+<h2>2268225</h2>
+<div class="sym">ERROR: EM_PDU_INT_FAIL</div>
+<div class="txt">The Aux Board is reporting a distortion of one or more of the incoming AC line phases to the PDU or a 48V undervoltage event.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check for messages reported at same time describing 48V undervoltage or overvoltage events. If undervoltage or overvoltage events reported confirm Cronus GMC Chassis boards and Auxiliary Module, which receive PS1 power, show active power LED indicators. If power LEDs inactive then cycle Gradient 48V Control circuit breaker on front of PDU. If cycling required or if LEDs are OK but undervoltage and overvoltage messages are seen then the 48V PDU PS1 power supply is exhibiting degraded performance. Replace at next earliest convenience. If LEDs are OK and no undervoltage or overvoltage messages seen then check quality of each incoming power line phase to PDU.</div>
+</section>
+<section id="BM2268226"><a name="BM2268226"></a>
+<h2>2268226</h2>
+<div class="sym">ERROR: EM_DIAG_XGD_MBOX_CREATE_FAILED</div>
+<div class="txt">ERROR: Gradient Diag Task mailbox creation failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please check that the scp image is correct and Perform TPS reset. If this error does not go away, Power Cycle the system</div>
+</section>
+<section id="BM2268800"><a name="BM2268800"></a>
+<h2>2268800</h2>
+<div class="sym">ERROR: EM_SRI_CAN</div>
+<div class="txt">SRI</div>
+</section>
+<section id="BM2268801"><a name="BM2268801"></a>
+<h2>2268801</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOVE_REQ_NOT_INIT</div>
+<div class="txt">Move requested but the motor controller hasn&#x27;t been initialized. Look earlier in the log for the root cause.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be a problem with CAN communication to the motor controller in the PHPS or the move request was made before boot up completed</div>
+</section>
+<section id="BM2268802"><a name="BM2268802"></a>
+<h2>2268802</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOVE_REQ_FAULT</div>
+<div class="txt">Move requested but currently recovering from a fault, please try again</div>
+</section>
+<section id="BM2268803"><a name="BM2268803"></a>
+<h2>2268803</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOVE_REQ_HOME</div>
+<div class="txt">Position based move requested with out having home position set</div>
+</section>
+<section id="BM2268804"><a name="BM2268804"></a>
+<h2>2268804</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOVE_REQ_POS</div>
+<div class="txt">Move requested to invalid position
+Position requested: %dum
+Max position: %dum</div>
+</section>
+<section id="BM2268805"><a name="BM2268805"></a>
+<h2>2268805</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOVE_REQ_ACCEL</div>
+<div class="txt">Move requested to invalid acceleration
+Accel requested: %dum/s/s
+Max accel: %dum/s/s
+Min accel: %dum/s/s</div>
+</section>
+<section id="BM2268806"><a name="BM2268806"></a>
+<h2>2268806</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOVE_REQ_VEL</div>
+<div class="txt">Move requested to invalid velocity
+Velocity requested: %dum/s
+Max velocity: %dum/s
+Min velocity: %dum/s</div>
+</section>
+<section id="BM2268807"><a name="BM2268807"></a>
+<h2>2268807</h2>
+<div class="sym">ERROR: EM_SRI_CAN_OBJECT_CONSTRUCTION</div>
+<div class="txt">Failed to construct object %s (%d)</div>
+</section>
+<section id="BM2268808"><a name="BM2268808"></a>
+<h2>2268808</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MUTEX_FAILURE</div>
+<div class="txt">ECL Mutex failure</div>
+</section>
+<section id="BM2268809"><a name="BM2268809"></a>
+<h2>2268809</h2>
+<div class="sym">ERROR: EM_SRI_CAN_UNEXPECTED_MSG</div>
+<div class="txt">%s on the SRI received an unexpected message %d</div>
+</section>
+<section id="BM2268810"><a name="BM2268810"></a>
+<h2>2268810</h2>
+<div class="sym">ERROR: EM_SRI_CAN_BAD_LANDMARK_CNTRL</div>
+<div class="txt">Invalid landmark control received (%d)</div>
+</section>
+<section id="BM2268811"><a name="BM2268811"></a>
+<h2>2268811</h2>
+<div class="sym">ERROR: EM_SRI_CAN_BUTTON_PDO_OVERRUN</div>
+<div class="txt">Communication buffer for push-button updates to the SCP was over-run.</div>
+</section>
+<section id="BM2268812"><a name="BM2268812"></a>
+<h2>2268812</h2>
+<div class="sym">ERROR: EM_SRI_CAN_STATUS_PDO_FAILURE</div>
+<div class="txt">Resend of status message failed
+Rcvd Sequence: %d
+Sent Sequence: %d</div>
+</section>
+<section id="BM2268813"><a name="BM2268813"></a>
+<h2>2268813</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MTR_CAN_STATUS_FAILURE</div>
+<div class="txt">Error uploading fault status from Copley Drive</div>
+</section>
+<section id="BM2268814"><a name="BM2268814"></a>
+<h2>2268814</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MTR_CAN_FAULT</div>
+<div class="txt">Motor controller reported a fault condition fault=0x%x</div>
+</section>
+<section id="BM2268815"><a name="BM2268815"></a>
+<h2>2268815</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MTR_CAN_SDO_ERROR</div>
+<div class="txt">Communication failure with motor controller Error: 0x%x</div>
+</section>
+<section id="BM2268816"><a name="BM2268816"></a>
+<h2>2268816</h2>
+<div class="sym">ERROR: EM_SRI_CAN_HOME_SW_POS_CHANGED</div>
+<div class="txt">Home switch position appears to have moved. Press the home button to re-set home position.
+Last position: %d counts
+New position : %d counts</div>
+</section>
+<section id="BM2268817"><a name="BM2268817"></a>
+<h2>2268817</h2>
+<div class="sym">ERROR: EM_SRI_CAN_EOT_SW_POS_CHANGED</div>
+<div class="txt">End of travel switch position appears to have moved. Press the home button to re-set home position.
+Last position: %d um
+New position : %d um</div>
+</section>
+<section id="BM2268818"><a name="BM2268818"></a>
+<h2>2268818</h2>
+<div class="sym">ERROR: EM_SRI_CAN_EOT_SW_MISSING</div>
+<div class="txt">Reached position past expected End of travel switch however no EOT switch received. Press the home button to re-set home position.
+position : %dum</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can be due to invalid scan range configuration in guided install or improper location of the end of travel switch on the bridge. If both of these are correct, the encoder may be malfunctioning and reporting incorrect position.</div>
+</section>
+<section id="BM2268819"><a name="BM2268819"></a>
+<h2>2268819</h2>
+<div class="sym">ERROR: EM_SRI_CAN_VELOCITY_TOLERANCE_ERR</div>
+<div class="txt">Velocity tolerance exceeded.
+Expected: %dum/s
+Actual: %dum/s</div>
+</section>
+<section id="BM2268820"><a name="BM2268820"></a>
+<h2>2268820</h2>
+<div class="sym">ERROR: EM_SRI_CAN_VELOCITY_TOLERANCE_ERR_HOME</div>
+<div class="txt">Velocity tolerance exceeded. Home switch problem may have caused this.
+Expected: %dum/s
+Actual: %dum/s</div>
+</section>
+<section id="BM2268821"><a name="BM2268821"></a>
+<h2>2268821</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOVE_DIDNT_START</div>
+<div class="txt">Cradle didn&#x27;t start moving when requested.
+Last stop position: %d um
+Current position: %d um
+Target position: %d um</div>
+<div class="lbl">Extended Error:</div><div class="txt">The move didn&#x27;t start when requested. This may be due to several factors. The cradle may be obstructed. Check the error log for errors indicating a cable is missing. If the motor encoder was changing or if the motor controller reported a fault a different error would have been logged.</div>
+</section>
+<section id="BM2268822"><a name="BM2268822"></a>
+<h2>2268822</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOVE_DIDNT_START_HOME</div>
+<div class="txt">Cradle didn&#x27;t start moving when requested. Home switch may not be functioning.
+Last stop position: %d um
+Current position: %d um</div>
+<div class="lbl">Extended Error:</div><div class="txt">The move didn&#x27;t start when requested. This may be due to several factors. The cradle may be obstructed. Check the error log for errors indicating a cable is missing. If the motor encoder was changing or if the motor controller reported a fault a different error would have been logged. If the cradle was already in the home position, this error may have also been caused by a faulty home switch in the LPCA.</div>
+</section>
+<section id="BM2268823"><a name="BM2268823"></a>
+<h2>2268823</h2>
+<div class="sym">ERROR: EM_SRI_CAN_DIDNT_STOP_WHEN_EXPECTED</div>
+<div class="txt">Cradle didn&#x27;t stop moving when expected.
+Current position: %d um
+Target position: %d um</div>
+</section>
+<section id="BM2268824"><a name="BM2268824"></a>
+<h2>2268824</h2>
+<div class="sym">ERROR: EM_SRI_CAN_LONG_MOT_MON_TASK_TOO_SLOW</div>
+<div class="txt">Cradle motion monitor task is not keeping up with position updates.
+interval: %d ticks
+latency: %d ticks</div>
+</section>
+<section id="BM2268825"><a name="BM2268825"></a>
+<h2>2268825</h2>
+<div class="sym">ERROR: EM_SRI_CAN_NODE_STOPPED_STATE</div>
+<div class="txt">SRI System CAN state changed to stopped</div>
+</section>
+<section id="BM2268826"><a name="BM2268826"></a>
+<h2>2268826</h2>
+<div class="sym">ERROR: EM_SRI_CAN_NODE_DISABLED</div>
+<div class="txt">SRI System CAN state changed to disabled</div>
+</section>
+<section id="BM2268827"><a name="BM2268827"></a>
+<h2>2268827</h2>
+<div class="sym">ERROR: EM_SRI_CAN_NODE_BUS_OFF</div>
+<div class="txt">SRI System CAN state changed to Bus Off</div>
+</section>
+<section id="BM2268828"><a name="BM2268828"></a>
+<h2>2268828</h2>
+<div class="sym">ERROR: EM_SRI_CAN_NODE_GUARD_LOST</div>
+<div class="txt">SRI System CAN state node guard lost</div>
+</section>
+<section id="BM2268829"><a name="BM2268829"></a>
+<h2>2268829</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MAX_BUTTON_RETRY</div>
+<div class="txt">SRI communication failure:
+Max button resend exceeded</div>
+</section>
+<section id="BM2268830"><a name="BM2268830"></a>
+<h2>2268830</h2>
+<div class="sym">ERROR: EM_SRI_CAN_STUCK_BUTTON</div>
+<div class="txt">Scan room control panel stuck button detected Button Mask: 0x%x Panel Mask: 0x%x</div>
+</section>
+<section id="BM2268831"><a name="BM2268831"></a>
+<h2>2268831</h2>
+<div class="sym">ERROR: EM_SRI_CAN_TABLE_MOVE_NOT_DOCKED</div>
+<div class="txt">Move request not allowed when table is not docked and fully up</div>
+</section>
+<section id="BM2268832"><a name="BM2268832"></a>
+<h2>2268832</h2>
+<div class="sym">ERROR: EM_SRI_CAN_EOT_SWITCH_CHANGE_WHILE_STOPPED</div>
+<div class="txt">End of travel switch changed state when cradle was stopped
+Position: %d um</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can be due to SRPS power loss, intermittent or noisy power to the switch or cable connection of the end of travel switch.</div>
+</section>
+<section id="BM2268833"><a name="BM2268833"></a>
+<h2>2268833</h2>
+<div class="sym">ERROR: EM_SRI_CAN_HOME_SWITCH_CHANGE_WHILE_STOPPED</div>
+<div class="txt">Home switch changed state when cradle was stopped
+Position: %d um</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can be due to SRPS power loss, intermittent or noisy power to the switch or cable connection of the home switch.</div>
+</section>
+<section id="BM2268834"><a name="BM2268834"></a>
+<h2>2268834</h2>
+<div class="sym">ERROR: EM_SRI_CAN_HOME_SW_ERROR</div>
+<div class="txt">Home switch didn&#x27;t become in-active in expected distance or the cradle didn&#x27;t stop in expected distance from home.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can be due to SRPS power loss or cable connection of the switch or a failure of the home switch. It is also possible that the belt tension isn&#x27;t correct. This would happen if the cradle was at home during the failure.</div>
+</section>
+<section id="BM2268835"><a name="BM2268835"></a>
+<h2>2268835</h2>
+<div class="sym">ERROR: EM_SRI_CAN_EOT_SW_WRONG</div>
+<div class="txt">End of travel switch detected at incorrect location, must reset home location.
+Expected Position=%d um
+Actual Position =%d um</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can be due to invalid scan range configuration in guided install or improper location of the end of travel switch on the bridge. If both of these are correct, the encoder may be malfunctioning and reporting incorrect position.</div>
+</section>
+<section id="BM2268836"><a name="BM2268836"></a>
+<h2>2268836</h2>
+<div class="sym">ERROR: EM_SRI_CAN_POSITION_OUT_OF_TOLERANCE</div>
+<div class="txt">Cradle move failed to reach target position within position tolerance
+Target: %d um
+Acutal: %d um
+Tolerance: %d um</div>
+</section>
+<section id="BM2268837"><a name="BM2268837"></a>
+<h2>2268837</h2>
+<div class="sym">ERROR: EM_SRI_CAN_BORE_TEMP_WARNING_LIMIT</div>
+<div class="txt">Bore temperature is above the warning limit. Future scanning will be inhibited until temperature returns to normal.
+Temperature: %d degrees C
+Warning Limit: %d degrees C</div>
+</section>
+<section id="BM2268838"><a name="BM2268838"></a>
+<h2>2268838</h2>
+<div class="sym">ERROR: EM_SRI_CAN_BORE_TEMP_FAULT_LIMIT</div>
+<div class="txt">Bore temperature is above the fault limit. Current and future scanning will be inhibited until temperature returns to normal.
+Temperature: %d
+Fault Limit: %d</div>
+</section>
+<section id="BM2268839"><a name="BM2268839"></a>
+<h2>2268839</h2>
+<div class="sym">ERROR: EM_SRI_CAN_BORE_TEMP_ALL_CLEAR</div>
+<div class="txt">Bore temperature has returned to normal range.</div>
+</section>
+<section id="BM2268840"><a name="BM2268840"></a>
+<h2>2268840</h2>
+<div class="sym">ERROR: EM_SRI_CAN_GRAD_TEMP_WARNING_LIMIT</div>
+<div class="txt">Gradient coil temperature is above the warning limit. Future scanning will be inhibited until temperature returns to normal.
+Temperature: %d [0.1 degrees C]
+Warning Limit: %d [0.1 degrees C]</div>
+</section>
+<section id="BM2268841"><a name="BM2268841"></a>
+<h2>2268841</h2>
+<div class="sym">ERROR: EM_SRI_CAN_GRAD_TEMP_FAULT_LIMIT</div>
+<div class="txt">Gradient coil temperature is above the fault limit. Current and future scanning will be inhibited until temperature returns to normal.
+Temperature: %d [0.1 degrees C]
+Fault Limit: %d [0.1 degrees C]</div>
+</section>
+<section id="BM2268842"><a name="BM2268842"></a>
+<h2>2268842</h2>
+<div class="sym">ERROR: EM_SRI_CAN_GRAD_TEMP_ALL_CLEAR</div>
+<div class="txt">Gradient coil temperature has returned to normal range.</div>
+</section>
+<section id="BM2268843"><a name="BM2268843"></a>
+<h2>2268843</h2>
+<div class="sym">ERROR: EM_SRI_CAN_IBCINLET_TEMP_WARNING_LIMIT</div>
+<div class="txt">Gradient coil IBC inlet temperature delta is above the warning limit. Future scanning will be inhibited, until temperatures are back in range.
+Temperature Delta: %d degrees C
+Warning Limit: %d degrees C</div>
+<div class="lbl">Extended Error:</div><div class="txt">The gradient coil has inner bore coolant (IBC) temperature sensors these sensors are on the outside of the gradient coil and are intended to measure the temperature of the coolant in the coil. A difference between these readings indicates that the coolant flow is likely blocked in the gradient coil or in the manifold.</div>
+</section>
+<section id="BM2268844"><a name="BM2268844"></a>
+<h2>2268844</h2>
+<div class="sym">ERROR: EM_SRI_CAN_IBCINLET_TEMP_FAULT_LIMIT</div>
+<div class="txt">Gradient coil IBC inlet temperature is above the fault limit. Current and future scanning will be inhibited, until temperatures are back in range.
+Temperature Delta: %d
+Fault Limit: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The gradient coil has inner bore coolant (IBC) temperature sensors these sensors are on the outside of the gradient coil and are intended to measure the temperature of the coolant in the coil. A difference between these readings indicates that the coolant flow is likely blocked in the gradient coil or in the manifold.</div>
+</section>
+<section id="BM2268845"><a name="BM2268845"></a>
+<h2>2268845</h2>
+<div class="sym">ERROR: EM_SRI_CAN_IBCINLET_TEMP_ALL_CLEAR</div>
+<div class="txt">IBC inlet temperature has returned to normal range.</div>
+</section>
+<section id="BM2268846"><a name="BM2268846"></a>
+<h2>2268846</h2>
+<div class="sym">ERROR: EM_SRI_CAN_UP_NOT_DOCKED</div>
+<div class="txt">The dock sensors indicate that the table is up but not docked. dock the table to use the system.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the dock sensors are working correctly. This situation creates the possibility of the trolley not parking when the table is lowered.</div>
+</section>
+<section id="BM2268847"><a name="BM2268847"></a>
+<h2>2268847</h2>
+<div class="sym">ERROR: EM_SRI_CAN_TABLE_MOVE_NOT_ALLOWED_UP</div>
+<div class="txt">Cradle motion not allowed because the dock motor is activated.</div>
+</section>
+<section id="BM2268848"><a name="BM2268848"></a>
+<h2>2268848</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOTION_REQUEST_NOT_ALLOWED</div>
+<div class="txt">Cradle motion not allowed: Table not up and docked or dock motor is engaged</div>
+</section>
+<section id="BM2268849"><a name="BM2268849"></a>
+<h2>2268849</h2>
+<div class="sym">ERROR: EM_SRI_CAN_BORE_TEMP_SENSOR_FAILURE</div>
+<div class="txt">Bore temperature sensor %d failed
+Failure: %d</div>
+</section>
+<section id="BM2268850"><a name="BM2268850"></a>
+<h2>2268850</h2>
+<div class="sym">ERROR: EM_SRI_CAN_GRAD_TEMP_SENSOR_FAILURE</div>
+<div class="txt">Gradient coil temperature sensor %d failed
+Failure: %d</div>
+</section>
+<section id="BM2268851"><a name="BM2268851"></a>
+<h2>2268851</h2>
+<div class="sym">ERROR: EM_SRI_CAN_IBCINLET_TEMP_SENSOR_FAILURE</div>
+<div class="txt">Gradient coil ibc inlet temperature sensor %d failed
+Failure: %d</div>
+</section>
+<section id="BM2268852"><a name="BM2268852"></a>
+<h2>2268852</h2>
+<div class="sym">ERROR: EM_SRI_CAN_ESTOP_BYPASSED</div>
+<div class="txt">The ESTOP loop is not detected at the SRI. The ESTOP loop may be jumpered at the PDU.</div>
+</section>
+<section id="BM2268853"><a name="BM2268853"></a>
+<h2>2268853</h2>
+<div class="sym">ERROR: EM_SRI_CAN_NOT_READY_GRAD_COIL_TEMP</div>
+<div class="txt">Gradient coil temperature sensor trip</div>
+</section>
+<section id="BM2268854"><a name="BM2268854"></a>
+<h2>2268854</h2>
+<div class="sym">ERROR: EM_SRI_CAN_NOT_READY_GRAD_COIL_IBC_TEMP</div>
+<div class="txt">Gradient coil IBC inlet temperature delta sensor trip</div>
+</section>
+<section id="BM2268855"><a name="BM2268855"></a>
+<h2>2268855</h2>
+<div class="sym">ERROR: EM_SRI_CAN_CONTROLLER_COMM_TIMEOUT</div>
+<div class="txt">Communication to the Motion Controller timed out</div>
+<div class="lbl">Extended Error:</div><div class="txt">The likely cause of this is a failed motion controller in the PHPS or fiber optic communication to the PHPS is broken. Loopback test of the fiber optic cables passed.</div>
+</section>
+<section id="BM2268856"><a name="BM2268856"></a>
+<h2>2268856</h2>
+<div class="sym">ERROR: EM_SRI_CAN_CONTROLLER_LIFE_TIME_TIMEOUT</div>
+<div class="txt">Watchdog communication to the Motion Controller Failed</div>
+<div class="lbl">Extended Error:</div><div class="txt">The likely cause of this is a failed motion controller in the PHPS or fiber optic communication to the PHPS is broken.</div>
+</section>
+<section id="BM2268857"><a name="BM2268857"></a>
+<h2>2268857</h2>
+<div class="sym">ERROR: EM_SRI_CAN_SHAFT_VELOCITY_NO_MOVEMENT</div>
+<div class="txt">No movement when requested and the motor shaft was spinning.
+Expected Velocity: %d um/s
+Position Velocity: %d um/s
+Motor Speed: %d um/s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could mean that the position encoder is malfunctioning or the clutch is slipping without any motion.</div>
+</section>
+<section id="BM2268858"><a name="BM2268858"></a>
+<h2>2268858</h2>
+<div class="sym">ERROR: EM_SRI_CAN_TABLE_MOVE_NOT_ALLOWED_CABLES</div>
+<div class="txt">Movement not allowed because of missing cables.</div>
+</section>
+<section id="BM2268859"><a name="BM2268859"></a>
+<h2>2268859</h2>
+<div class="sym">ERROR: EM_SRI_CAN_POS_ENC_HOME_CLRD</div>
+<div class="txt">Home position lost becuase position encoder cable is not present.</div>
+</section>
+<section id="BM2268860"><a name="BM2268860"></a>
+<h2>2268860</h2>
+<div class="sym">ERROR: EM_SRI_CAN_LONG_DRV_CABLE_MISSING</div>
+<div class="txt">The long drive cable is not detected at PHPS.</div>
+</section>
+<section id="BM2268861"><a name="BM2268861"></a>
+<h2>2268861</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOTOR_FEEDBACK_CABLE_MISSING</div>
+<div class="txt">The motor feedback cable is not detected at the PHPS.</div>
+</section>
+<section id="BM2268862"><a name="BM2268862"></a>
+<h2>2268862</h2>
+<div class="sym">ERROR: EM_SRI_CAN_POS_ENCODER_CABLE_MISSING</div>
+<div class="txt">The position encoder cable is not detected at the SRI.</div>
+</section>
+<section id="BM2268863"><a name="BM2268863"></a>
+<h2>2268863</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOTOR_ENCODER_CABLE_MISSING</div>
+<div class="txt">The motor encoder cable is not detected at the SRI.</div>
+</section>
+<section id="BM2268864"><a name="BM2268864"></a>
+<h2>2268864</h2>
+<div class="sym">ERROR: EM_SRI_CAN_TABLE_INTF_CABLE_MISSING</div>
+<div class="txt">The table interface cable is not detected at the SRI.</div>
+</section>
+<section id="BM2268865"><a name="BM2268865"></a>
+<h2>2268865</h2>
+<div class="sym">ERROR: EM_SRI_CAN_LONG_DRIVE_CABLE_MISSING_SRI</div>
+<div class="txt">The long drive cable is not detected at the SRI.</div>
+</section>
+<section id="BM2268866"><a name="BM2268866"></a>
+<h2>2268866</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MCPDB_CABLE_MISSING</div>
+<div class="txt">The MCPDB cable is not detected at the SRI.</div>
+</section>
+<section id="BM2268867"><a name="BM2268867"></a>
+<h2>2268867</h2>
+<div class="sym">ERROR: EM_SRI_CAN_GRAD_TEMP_CABLE_MISSING</div>
+<div class="txt">The gradient coil temperature cable is not detected at the SRI.</div>
+</section>
+<section id="BM2268868"><a name="BM2268868"></a>
+<h2>2268868</h2>
+<div class="sym">ERROR: EM_SRI_CAN_BORE_TEMP_CABLE_MISSING</div>
+<div class="txt">The bore temperature cable is not detected at the SRI.</div>
+</section>
+<section id="BM2268869"><a name="BM2268869"></a>
+<h2>2268869</h2>
+<div class="sym">ERROR: EM_SRI_CAN_BORE_LIGHT_CABLE_MISSING</div>
+<div class="txt">The bore light cable is not detected at the SRI.</div>
+</section>
+<section id="BM2268870"><a name="BM2268870"></a>
+<h2>2268870</h2>
+<div class="sym">ERROR: EM_SRI_CAN_ALIGN_LIGHT_CABLE_MISSING</div>
+<div class="txt">The alignment light cable is not detected at the SRI.</div>
+</section>
+<section id="BM2268871"><a name="BM2268871"></a>
+<h2>2268871</h2>
+<div class="sym">ERROR: EM_SRI_CAN_DOCK_POWER_CABLE_MISSING</div>
+<div class="txt">The dock power cable is not detected at the PHPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error will be logged if the MCPDB cable is missing. Check the log for missing MCPDB cable messages.</div>
+</section>
+<section id="BM2268872"><a name="BM2268872"></a>
+<h2>2268872</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOVE_REQ_MTR_FEEDBACK</div>
+<div class="txt">The motor feedback cable is not detected, move not allowed</div>
+</section>
+<section id="BM2268873"><a name="BM2268873"></a>
+<h2>2268873</h2>
+<div class="sym">ERROR: EM_SRI_CAN_HOME_EOT_SW_NOT_DETECTED</div>
+<div class="txt">The home and end of travel switches are not detected</div>
+<div class="lbl">Extended Error:</div><div class="txt">The home and end of travel switch cable does not have a specific cable detect, but if both switches are active at the same time it means that something is wrong. Either the SRPS power is turned off, or a cable is not connected.</div>
+</section>
+<section id="BM2268874"><a name="BM2268874"></a>
+<h2>2268874</h2>
+<div class="sym">ERROR: EM_SRI_CAN_BOT_HOME_DISTANCE</div>
+<div class="txt">All touch and go button presses may have been wrong clearing related landmark values. Distance between Beginning of travel and Home switch was wrong
+Distance: %d um
+Expected: %d um</div>
+<div class="lbl">Extended Error:</div><div class="txt">When the SRI is powered up in the home switch region and the operator moves the cradle to the beginning of travel (farthest position out of the bore), the SRI estimates the location of the home switch for the purpose of reporting touch and go strip button press positions. If that estimated position is wrong (determined when the home switch position is actually determined, then the touch and go related events need to be cleared.</div>
+</section>
+<section id="BM2268875"><a name="BM2268875"></a>
+<h2>2268875</h2>
+<div class="sym">ERROR: EM_SRI_CAN_LANDMARK_DISABLED_DV</div>
+<div class="txt">Landmark disabled; Turn alignment lights on and/or move off home.</div>
+</section>
+<section id="BM2268876"><a name="BM2268876"></a>
+<h2>2268876</h2>
+<div class="sym">ERROR: EM_SRI_CAN_LANDMARK_DISABLED</div>
+<div class="txt">Landmark disabled; Turn alignment lights on and/or move off home.</div>
+</section>
+<section id="BM2268877"><a name="BM2268877"></a>
+<h2>2268877</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOTOR_CONTROLLER_RESET_REQ</div>
+<div class="txt">The motor controller is being reset to attempt automatic fault recovery. Please try motion request again.</div>
+</section>
+<section id="BM2268878"><a name="BM2268878"></a>
+<h2>2268878</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOTOR_CONTROLLER_LOOPBACK</div>
+<div class="txt">The motor controller communication fiber optic loopback test failed. (SRI to MCPDB)</div>
+<div class="lbl">Extended Error:</div><div class="txt">The failure of the loopback test could be an indication of a disconnected fiber optic cable or lack of power at the MCPDB in the PHPS.</div>
+</section>
+<section id="BM2268879"><a name="BM2268879"></a>
+<h2>2268879</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOVE_DIDNT_START_VEL_MOVE</div>
+<div class="txt">Cradle didn&#x27;t start moving when requested.
+Last stop position: %d um
+Current position: %d um</div>
+<div class="lbl">Extended Error:</div><div class="txt">The move didn&#x27;t start when requested. This may be due to several factors. The cradle may be obstructed. Check the log for messages indicating a missing cable.</div>
+</section>
+<section id="BM2268880"><a name="BM2268880"></a>
+<h2>2268880</h2>
+<div class="sym">ERROR: EM_SRI_CAN_DIDNT_STOP_WHEN_EXPECTED_VEL_MOVE</div>
+<div class="txt">Cradle didn&#x27;t stop moving when expected.
+Current position: %d um</div>
+</section>
+<section id="BM2268881"><a name="BM2268881"></a>
+<h2>2268881</h2>
+<div class="sym">ERROR: EM_SRI_CAN_GRAD_AVE_TEMP_WARNING_LIMIT</div>
+<div class="txt">Average gradient coil temperature is above the warning limit. Future scanning will be inhibited until temperature returns to normal.
+Average Temperature: %d [0.1 degrees C]
+Warning Limit: %d [0.1 degrees C]</div>
+</section>
+<section id="BM2268882"><a name="BM2268882"></a>
+<h2>2268882</h2>
+<div class="sym">ERROR: EM_SRI_CAN_GRAD_AVE_TEMP_FAULT_LIMIT</div>
+<div class="txt">Average gradient coil average temperature is above the fault limit. Current and future scanning will be inhibited until temperature returns to normal.
+Average Temperature: %d [0.1 degrees C]
+Fault Limit: %d [0.1 degrees C]</div>
+</section>
+<section id="BM2268883"><a name="BM2268883"></a>
+<h2>2268883</h2>
+<div class="sym">ERROR: EM_SRI_CAN_GRAD_AVE_TEMP_ALL_CLEAR</div>
+<div class="txt">Average gradient coil temperature has returned to normal range.</div>
+</section>
+<section id="BM2268884"><a name="BM2268884"></a>
+<h2>2268884</h2>
+<div class="sym">ERROR: EM_SRI_CAN_AIR_FLOW_WARNING_LIMIT</div>
+<div class="txt">RF coil airflow sensors measurement warning detected.
+Measurement difference: %d
+Warning Tolerance: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">There are 2 airflow sensors in the magnet room that are monitored by the SRI. The SCP averages the sensors and sends the measured airflow to the Heat Exchanger (HEC) for control of the airflow. When the two airflow sensors measure differently it likely means that one of the airflow sensors is failing or is improperly mounted.</div>
+</section>
+<section id="BM2268885"><a name="BM2268885"></a>
+<h2>2268885</h2>
+<div class="sym">ERROR: EM_SRI_CAN_AIR_FLOW_FAULT_LIMIT</div>
+<div class="txt">RF coil airflow sensors measurement fault detected. Scanning will be inhibited until the airflow sensors report the same airflow
+Measurement difference: %d
+Fault Tolerance: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">There are 2 airflow sensors in the magnet room that are monitored by the SRI. The SCP averages the sensors and sends the measured airflow to the Heat Exchanger (HEC) for control of the airflow. When the two airflow sensors measure differently it likely means that one of the airflow sensors is failing or is improperly mounted.</div>
+</section>
+<section id="BM2268886"><a name="BM2268886"></a>
+<h2>2268886</h2>
+<div class="sym">ERROR: EM_SRI_CAN_AIR_FLOW_ALL_CLEAR</div>
+<div class="txt">RF coil airflow sensors are now measuring the same values within acceptable tolerances.</div>
+</section>
+<section id="BM2268887"><a name="BM2268887"></a>
+<h2>2268887</h2>
+<div class="sym">ERROR: EM_SRI_CAN_NOT_READY_AIR_FLOW</div>
+<div class="txt">RF coil airflow not as expected</div>
+</section>
+<section id="BM2268888"><a name="BM2268888"></a>
+<h2>2268888</h2>
+<div class="sym">ERROR: EM_SRI_CAN_NOT_READY_SCAN_RM_TEMP</div>
+<div class="txt">Scan Room Air Temperature Sensor Failure</div>
+</section>
+<section id="BM2268889"><a name="BM2268889"></a>
+<h2>2268889</h2>
+<div class="sym">ERROR: EM_SRI_CAN_AIR_FLOW_SENSOR_FAILURE</div>
+<div class="txt">RF coil airflow sensor %d failed
+Failure: %d</div>
+</section>
+<section id="BM2268890"><a name="BM2268890"></a>
+<h2>2268890</h2>
+<div class="sym">ERROR: EM_SRI_CAN_SCANRM_TEMP_SENSOR_FAILURE</div>
+<div class="txt">Scan room temperature sensor %d failed
+Failure: %d</div>
+</section>
+<section id="BM2268891"><a name="BM2268891"></a>
+<h2>2268891</h2>
+<div class="sym">ERROR: EM_SRI_CAN_NOT_READY_GRAD_COIL_AVE_TEMP</div>
+<div class="txt">Average gradient coil temperature sensor</div>
+</section>
+<section id="BM2268892"><a name="BM2268892"></a>
+<h2>2268892</h2>
+<div class="sym">ERROR: EM_SRI_CAN_NOT_READY_AIRFLOW_DELTA</div>
+<div class="txt">RF coil airflow</div>
+</section>
+<section id="BM2268893"><a name="BM2268893"></a>
+<h2>2268893</h2>
+<div class="sym">ERROR: EM_SRI_CAN_NOT_READY_SCANRM_AIR_TEMP</div>
+<div class="txt">Scan room air temperature is too high</div>
+</section>
+<section id="BM2268894"><a name="BM2268894"></a>
+<h2>2268894</h2>
+<div class="sym">ERROR: EM_SRI_CAN_NOT_READY_ELEC_DOCK</div>
+<div class="txt">electrical dock NOT engaged</div>
+</section>
+<section id="BM2268895"><a name="BM2268895"></a>
+<h2>2268895</h2>
+<div class="sym">ERROR: EM_SRI_CAN_NOT_READY_CRADLE_LPCA</div>
+<div class="txt">cradle detached from trolley</div>
+</section>
+<section id="BM2268896"><a name="BM2268896"></a>
+<h2>2268896</h2>
+<div class="sym">ERROR: EM_SRI_CAN_SENSOR_CALC_ERROR</div>
+<div class="txt">Software or communication error determining sensor value. Perform TPS reset to recover</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error indicates that a sensor value was out of range If the sensor itself was faulted a separate error would have been reported. The possible root causes:
+- SCP / SRI communication failures
+- SRI firmware got into a bad state
+- SCP firmware got into a bad state A TPS reset will likely be required to recover</div>
+</section>
+<section id="BM2268897"><a name="BM2268897"></a>
+<h2>2268897</h2>
+<div class="sym">ERROR: EM_SRI_CAN_NOT_READY_ELEC_DOCK_UNEXPECTED</div>
+<div class="txt">electrical dock engaged with incorrect table type</div>
+</section>
+<section id="BM2268898"><a name="BM2268898"></a>
+<h2>2268898</h2>
+<div class="sym">ERROR: EM_SRI_CAN_ELEC_DOCK_ENGAGE_OPR</div>
+<div class="txt">Please engage the electrical dock</div>
+</section>
+<section id="BM2268899"><a name="BM2268899"></a>
+<h2>2268899</h2>
+<div class="sym">ERROR: EM_SRI_CAN_ALIGNMENT_LIGHT_NO_HOME</div>
+<div class="txt">Alignment lights can&#x27;t be turned on without cradle position known. Please move the cradle to home.</div>
+</section>
+<section id="BM2268900"><a name="BM2268900"></a>
+<h2>2268900</h2>
+<div class="sym">ERROR: EM_SRI_CAN_AIRFLOW_HEC_WARNING_LIMIT</div>
+<div class="txt">RF coil airflow warning detected. Future scanning will be inhibited until airflow matches expected.
+Airflow difference: %d fpm
+Tolerance: %d fpm</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Heat Exchanger (HEC) produces airflow for RF coil this message indicates that the airflow monitored by the SRI was not as expected.</div>
+</section>
+<section id="BM2268901"><a name="BM2268901"></a>
+<h2>2268901</h2>
+<div class="sym">ERROR: EM_SRI_CAN_AIRFLOW_HEC_FAULT_LIMIT</div>
+<div class="txt">RF coil airflow fault detected. Scanning will be inhibited until the airflow is as requested
+Airflow difference: %d fpm
+Tolerance: %d fpm</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Heat Exchanger (HEC) produces airflow for RF coil this message indicates that the airflow monitored by the SRI was not as expected.</div>
+</section>
+<section id="BM2268902"><a name="BM2268902"></a>
+<h2>2268902</h2>
+<div class="sym">ERROR: EM_SRI_CAN_AIRFLOW_HEC_ALL_CLEAR</div>
+<div class="txt">RF coil airflow is now in specification</div>
+</section>
+<section id="BM2268903"><a name="BM2268903"></a>
+<h2>2268903</h2>
+<div class="sym">ERROR: EM_SRI_CAN_NOT_READY_AIRFLOW_HEC</div>
+<div class="txt">RF coil airflow out of specification</div>
+</section>
+<section id="BM2268904"><a name="BM2268904"></a>
+<h2>2268904</h2>
+<div class="sym">ERROR: EM_SRI_CAN_RFAIR_HEC_WARNING_LIMIT</div>
+<div class="txt">RF coil air temperature warning detected. Future scanning will be inhibited until RF coil air temperature matches expected.
+Temperature difference: %d [0.1 degrees C]
+Max allowable difference: %d [0.1 degrees C]</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Heat Exchanger (HEC) manages RF coil air temperature. This message indicates that the HEC was unable to achieve the requested RF coil air temperature. Verify the mixing valve in the HEC is performing correctly and check that the air filter is clean. Confirm air is being drawn into filter. This may be caused by facility water temperature or flow not as required.</div>
+</section>
+<section id="BM2268905"><a name="BM2268905"></a>
+<h2>2268905</h2>
+<div class="sym">ERROR: EM_SRI_CAN_RFAIR_HEC_FAULT_LIMIT</div>
+<div class="txt">RF coil air temperature fault detected. Scanning will be inhibited until the RF coil air temperature matches expected
+Temperature difference: %d [0.1 degrees C]
+Max allowable difference: %d [0.1 degrees C]</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Heat Exchanger (HEC) manages RF coil air temperature. This message indicates that the HEC was unable to achieve the requested RF coil air temperature. Verify the mixing valve in the HEC is performing correctly and check that the air filter is clean. Confirm air is being drawn into filter. This may be caused by facility water temperature or flow not as required.</div>
+</section>
+<section id="BM2268906"><a name="BM2268906"></a>
+<h2>2268906</h2>
+<div class="sym">ERROR: EM_SRI_CAN_RFAIR_HEC_ALL_CLEAR</div>
+<div class="txt">RF coil air temperature is now at the requested level.</div>
+</section>
+<section id="BM2268907"><a name="BM2268907"></a>
+<h2>2268907</h2>
+<div class="sym">ERROR: EM_SRI_CAN_NOT_READY_RFAIR_HEC</div>
+<div class="txt">RF coil air temperature out of specification</div>
+</section>
+<section id="BM2268908"><a name="BM2268908"></a>
+<h2>2268908</h2>
+<div class="sym">ERROR: EM_SRI_CAN_CRADLE_NOT_ATTACHED</div>
+<div class="txt">Please attach the cradle to the carriage assembly</div>
+</section>
+<section id="BM2268909"><a name="BM2268909"></a>
+<h2>2268909</h2>
+<div class="sym">ERROR: EM_SRI_CAN_CLUTCH_SLIP_MOVING_WARNING</div>
+<div class="txt">The system has detected more than expected clutch slip during cradle motion, motion may be impaired.
+Expected Velocity: %d um/s
+Position Velocity: %d um/s
+Motor Speed: %d um/s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could mean that the position encoder is malfunctioning or the clutch is slipping.</div>
+</section>
+<section id="BM2268910"><a name="BM2268910"></a>
+<h2>2268910</h2>
+<div class="sym">ERROR: EM_SRI_CAN_CLUTCH_SLIP_NOT_MOVING_WARNING</div>
+<div class="txt">The system has detected more than expected clutch slip while accelerating the cradle, motion may be impaired.
+Expected Velocity: %d um/s
+Position Velocity: %d um/s
+Motor Speed: %d um/s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could mean that the position encoder is malfunctioning or the clutch is slipping.</div>
+</section>
+<section id="BM2268911"><a name="BM2268911"></a>
+<h2>2268911</h2>
+<div class="sym">ERROR: EM_SRI_CAN_CLUTCH_SLIP_MOVING_FAULT</div>
+<div class="txt">Cradle clutch slip detected out of tolerance, motion was stopped
+Expected Velocity: %d um/s
+Position Velocity: %d um/s
+Motor Speed: %d um/s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could mean that the position encoder is malfunctioning or the clutch is slipping without any motion.</div>
+</section>
+<section id="BM2268912"><a name="BM2268912"></a>
+<h2>2268912</h2>
+<div class="sym">ERROR: EM_SRI_CAN_DOCK_UP_MOTOR_NOT_SENSED</div>
+<div class="txt">After pedal up pressed the dock motor sense was not detected</div>
+<div class="lbl">Extended Error:</div><div class="txt">The SRI hardware receives the dock up pedal press and a relay is engaged to start the dock up motor. This error indicates that the SRI software detected dock up pedal and the dock motor sense that was not detected by the SRI when expected.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PHPS</li></ol>
+</section>
+<section id="BM2268913"><a name="BM2268913"></a>
+<h2>2268913</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MCPDB_POWER_MON_NOT_DETECTED</div>
+<div class="txt">The MCPDB in the PHPS has detected a power failure</div>
+<div class="lbl">Extended Error:</div><div class="txt">One of the two power supplies in the PHPS is not producing the power required for the power good signal detection in the MCPDB to be satisfied.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PHPS</li></ol>
+</section>
+<section id="BM2268914"><a name="BM2268914"></a>
+<h2>2268914</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MCPDB_POWER_MON_NOT_DETECTED_DIAG</div>
+<div class="txt">During diagnostic testing: The MCPDB in the PHPS has detected a power failure</div>
+<div class="lbl">Extended Error:</div><div class="txt">One of the two power supplies in the PHPS is not producing the power required for the power good signal detection in the MCPDB to be satisfied.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PHPS</li></ol>
+</section>
+<section id="BM2268915"><a name="BM2268915"></a>
+<h2>2268915</h2>
+<div class="sym">ERROR: EM_RF_AIR_EMUL</div>
+<div class="txt">Monitoring of the airflow sensor at the SRI is disabled.\b\ The airflow sensor is emulated in the mgd_stage file. Remove emulation flag and perform a TPS Reset to enable.</div>
+</section>
+<section id="BM2268916"><a name="BM2268916"></a>
+<h2>2268916</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOTOR_TEMP_OVERHEATED</div>
+<div class="txt">Move inhibited: motor controller detected motor over temperature fault</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the motor and the PHPS</div>
+</section>
+<section id="BM2268917"><a name="BM2268917"></a>
+<h2>2268917</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOTOR_SHORT_CIRCUIT</div>
+<div class="txt">Motor controller detected motor short circuit</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the motor, cabling, and PHPS</div>
+</section>
+<section id="BM2268918"><a name="BM2268918"></a>
+<h2>2268918</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOTOR_AMP_OVER_TEMP</div>
+<div class="txt">Motor controller detected amplifier over temperature fault</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the PHPS</div>
+</section>
+<section id="BM2268919"><a name="BM2268919"></a>
+<h2>2268919</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOTOR_OVER_VOLTAGE</div>
+<div class="txt">Motor controller detected motor over voltage fault</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the motor and the PHPS</div>
+</section>
+<section id="BM2268920"><a name="BM2268920"></a>
+<h2>2268920</h2>
+<div class="sym">ERROR: EM_SRI_CAN_MOTOR_UNDER_VOLTAGE</div>
+<div class="txt">Motor controller detected amplifier under voltage fault</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the PHPS and motor</div>
+</section>
+<section id="BM2268921"><a name="BM2268921"></a>
+<h2>2268921</h2>
+<div class="sym">ERROR: EM_SRI_CAN_DOCK_POWER_DETECT</div>
+<div class="txt">Dock power cable not detected at PHPS.</div>
+</section>
+<section id="BM2268922"><a name="BM2268922"></a>
+<h2>2268922</h2>
+<div class="sym">ERROR: EM_SRI_CAN_DOCK_CABLE_MISSING</div>
+<div class="txt">The dock cable is not detected at the SRI.</div>
+</section>
+<section id="BM2268923"><a name="BM2268923"></a>
+<h2>2268923</h2>
+<div class="sym">ERROR: EM_SRI_CAN_GRAD_HART_FILE_READ_ERROR</div>
+<div class="txt">SRI encountered error reading HART file contents for gradient coil. This error can safely be ignored, as long as the gradient coil type is properly configured.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error suggests that the HART ID on the gradient coil may have been improperly programmed. It can safely be ignored, as long as the gradient coil type is properly configured. An incorrectly configured gradient coil type could lead to IBC inlet temperature sensor failure error messages and/or incorrect IBC inlet temperature readings.</div>
+</section>
+<section id="BM2268924"><a name="BM2268924"></a>
+<h2>2268924</h2>
+<div class="sym">ERROR: EM_SRI_CAN_IBC_SENSOR_COUNT_INCONSISTENT</div>
+<div class="txt">Number of IBC inlet sensors specified by configuration does not match value read from gradient coil. This error can safely be ignored, as long as the gradient coil type is properly configured.
+Num sensors (config): %d
+Num sensors (coil): %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error suggests that either the HART ID on the gradient coil was improperly programmed or the system was configured for the wrong gradient coil type. It can safely be ignored, as long as the gradient coil type is properly configured. An incorrectly configured gradient coil type could lead to IBC inlet temperature sensor failure error messages and/or incorrect IBC inlet temperature readings.</div>
+</section>
+<section id="BM2268925"><a name="BM2268925"></a>
+<h2>2268925</h2>
+<div class="sym">ERROR: EM_SRI_CAN_GRADCOIL_TYPE_NOT_RECOGNIZED</div>
+<div class="txt">Unable to determine number of gradient coil IBC sensors based on configured coil type. Coil type %d is not recognized. Assuming the following values:
+Number of IBC inlet temperature sensors: %d
+Number of temperature sensor inputs used: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error suggests that a new gradient coil type was developed and/or selected without adding support for it in the SRI firmware. Please confirm the proper gradient coil is selected. If correct, please submit an SPR or iTrak to add support for the desired gradient coil.</div>
+</section>
+<section id="BM2268926"><a name="BM2268926"></a>
+<h2>2268926</h2>
+<div class="sym">ERROR: EM_SRI_CAN_AIRFLOW_CABLE_MISSING</div>
+<div class="txt">The RF coil airflow cable is not detected at the SRI.</div>
+</section>
+<section id="BM2268927"><a name="BM2268927"></a>
+<h2>2268927</h2>
+<div class="sym">ERROR: EM_SRI_CAN_BORE_FAN_CONTROL_DISABLED</div>
+<div class="txt">The operator pressed the bore fan push-button during a scan. The scan requires the bore fan to be on to ensure patient cooling. Requests to change the bore fan speed will be ignored until the scan completes.</div>
+</section>
+<section id="BM2268928"><a name="BM2268928"></a>
+<h2>2268928</h2>
+<div class="sym">ERROR: EM_SRI_CAN_SCAN_ROOM_TEMP_WARNING_LIMIT</div>
+<div class="txt">Scan room temperature is above the warning limit for the current gradient performance setting. Gradient performance may be automatically degraded on the next scan.
+Temperature: %d [0.01 degrees C]
+Warning Limit: %d [0.01 degrees C]</div>
+<div class="lbl">Extended Error:</div><div class="txt">This message indicates that the scan room temperature is too high to start a new scan at the current gradient performance setting. Any scan in progress at this time will not be inhibited. The operator should take measures to lower the temperature in the scan room to prevent this from occurring again.</div>
+</section>
+<section id="BM2268929"><a name="BM2268929"></a>
+<h2>2268929</h2>
+<div class="sym">ERROR: EM_SRI_CAN_SCAN_ROOM_TEMP_FAULT_LIMIT</div>
+<div class="txt">Scan room temperature is above the fault limit for the current gradient performance setting. Gradient performance may be automatically degraded prior to the next scan.
+Temperature: %d [0.01 degrees C]
+Fault Limit: %d [0.01 degrees C]</div>
+<div class="lbl">Extended Error:</div><div class="txt">This message indicates that the scan room temperature is too high to continue scanning at the current gradient performance setting. Scanning will be stopped. The gradient performance setting will be changed to compensate for this temperature before scanning is resumed. The operator should take measures to lower the temperature in the scan room to prevent this from occurring again.</div>
+</section>
+<section id="BM2268930"><a name="BM2268930"></a>
+<h2>2268930</h2>
+<div class="sym">ERROR: EM_SRI_CAN_SCAN_ROOM_TEMP_ALL_CLEAR</div>
+<div class="txt">Scan room temperature has returned to normal range.</div>
+</section>
+<section id="BM2268931"><a name="BM2268931"></a>
+<h2>2268931</h2>
+<div class="sym">ERROR: EM_SRI_CAN_SCAN_ROOM_TEMP_LIMITS_RELAXED</div>
+<div class="txt">Scan room temperature limits were relaxed and the gradient performance was degraded to compensate for the scan room temperature.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This message indicates that in order to scan at the current scan room temperature, the gradient performance has been degraded. The operator should take measures to lower the temperature in the scan room to prevent this from occurring again.</div>
+</section>
+<section id="BM2268932"><a name="BM2268932"></a>
+<h2>2268932</h2>
+<div class="sym">ERROR: EM_SRI_CAN_NOT_READY_SCANRM_AIR_LIMITS</div>
+<div class="txt">software error. Scan room air temperature limits not set. TPS reset or system restart may be required to recover.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This message indicates that, after a TPS reset was performed, scanning was attempted without the host properly setting up scan room temperature limits on the SRI. If this error persists, it may be necessary to perform a TPS reset and/or system restart.</div>
+</section>
+<section id="BM2268933"><a name="BM2268933"></a>
+<h2>2268933</h2>
+<div class="sym">ERROR: EM_SRI_CAN_SCAN_ROOM_TEMP_PIM_WARNING_LIMIT</div>
+<div class="txt">Scan room temperature is above operating limits. Operating above the specified temperature limit may lead to reduced scanner performance.
+Temperature: %d [0.01 degrees C]
+Warning Limit: %d [0.01 degrees C]</div>
+<div class="lbl">Extended Error:</div><div class="txt">This message indicates that the scan room temperature is too high. The operator should take measures to lower the temperature in the scan room. If the temperature continues to rise, gradient performance may need to be degraded, SAR derating may occur, and/or other temperature limits may fall out of specification.</div>
+</section>
+<section id="BM2268934"><a name="BM2268934"></a>
+<h2>2268934</h2>
+<div class="sym">ERROR: EM_SRI_CAN_INV_AUTO_ADV_SETUP_REQ_VEL</div>
+<div class="txt">Auto-advance setup requested with invalid velocity
+Velocity requested: %dum/s
+Max velocity: %dum/s
+Min velocity: %dum/s</div>
+</section>
+<section id="BM2268935"><a name="BM2268935"></a>
+<h2>2268935</h2>
+<div class="sym">ERROR: EM_SRI_CAN_INV_AUTO_ADV_SETUP_REQ_ACC</div>
+<div class="txt">Auto-advance setup requested with invalid %s
+Accel requested: %dum/s/s
+Max accel: %dum/s/s
+Min accel: %dum/s/s</div>
+</section>
+<section id="BM2268936"><a name="BM2268936"></a>
+<h2>2268936</h2>
+<div class="sym">ERROR: EM_SRI_CAN_BAD_LANDMARK_FLAGS</div>
+<div class="txt">Invalid landmark flags received (0x%x)</div>
+</section>
+<section id="BM2268937"><a name="BM2268937"></a>
+<h2>2268937</h2>
+<div class="sym">ERROR: EM_SRI_CAN_ADV2SCAN_LOCKOUT</div>
+<div class="txt">Advance to scan attempted while locked out for workflow efficiency. See in-room display for next step to perform.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This message indicates that the operator attempted an advance to scan operation while locked out by the host. This typically happens when the host is waiting for the user to perform a different workflow operation, such as identifying the location of floating coils.</div>
+</section>
+<section id="BM2268938"><a name="BM2268938"></a>
+<h2>2268938</h2>
+<div class="sym">ERROR: EM_SRI_CAN_ALIGNMENT_LIGHT_LOCKOUT</div>
+<div class="txt">Alignment light landmarking attepted while locked out for workflow efficiency. See in-room display for next step to perform.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This message indicates that the operator attempted to turn on alignment lights while locked out by the host. This typically happens when the host is waiting for the user to perform a different workflow operation, such as identifying the location of floating coils.</div>
+</section>
+<section id="BM2268939"><a name="BM2268939"></a>
+<h2>2268939</h2>
+<div class="sym">ERROR: EM_SRI_CAN_TNG_CABLE_MISSING</div>
+<div class="txt">The SRI did not detect the touch-and-go landmark cable. Call for service.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The SRI did not detect the touch-and-go landmark cable between the SRI and the electrical dock. Confirm this cable is connected and the SRI is operating correctly. Execute the SRI Functional (Touch-N-Go) diagnostic to confirm the operation once the problem is corrected</div>
+</section>
+<section id="BM2268940"><a name="BM2268940"></a>
+<h2>2268940</h2>
+<div class="sym">ERROR: EM_SRI_CAN_SAR_LIMIT_GETSTATE</div>
+<div class="txt">Firmware error: The SRI was unable to read the expected SAR from the UPM. The bore fan will be set to high-speed during scanning until the problem is resolved.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is logged if the SRI firmware on the SCP is unable to read the expected SAR value from the UPM firmware on the SCP. When this occurs, the SRI will set the bore fan speed to high-speed for all scans regardless of the expected SAR. This problem can be caused by a failure of the UPM firmware on the SCP to initialize. Look earlier in the log for other errors that may have occurred first. Execute the CAN link diagnostic and the UPM diagnostic to help isolate the problem.</div>
+</section>
+</body></html>

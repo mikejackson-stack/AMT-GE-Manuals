@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2274000-2274999 (231)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2274000-2274999 (231)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2273000-2273999.html">&larr; 2273000-2273999</a><a href="ermes_2275000-2275999.html">2275000-2275999 &rarr;</a></nav></header>
+<section id="BM2274000"><a name="BM2274000"></a>
+<h2>2274000</h2>
+<div class="sym">ERROR: EM_RFHUB_BIAS_CHECK_BIAS_ON</div>
+<div class="txt">Multicoil bias failure. Coil bias is still enabled from a previous check. Check that the inhibit cable is connected and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can occur if the inhibit cable connection between the Driver Module and RF Hub is lost during a scan and quickly recovers. Check for other inhibit cable errors in the log.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>Driver Module</li></ol>
+</section>
+<section id="BM2274001"><a name="BM2274001"></a>
+<h2>2274001</h2>
+<div class="sym">ERROR: EM_RFHUB_BIAS_MASK_CONFIG</div>
+<div class="txt">Multicoil bias failure. The RF Hub received a bad coil bias configuration.
+Board: %b
+Module: %ld Voltage Mask: 0x%x Current Mask: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2274002"><a name="BM2274002"></a>
+<h2>2274002</h2>
+<div class="sym">ERROR: EM_RFHUB_BIAS_CONFIG_TOO_BIG</div>
+<div class="txt">Multicoil bias failure. The RF Hub received a bad coil bias configuration. Too many channels were requested for the connector.
+Connector: %b Config Mask: 0x%x Available: 0x%x</div>
+</section>
+<section id="BM2274003"><a name="BM2274003"></a>
+<h2>2274003</h2>
+<div class="sym">ERROR: EM_RFHUB_BIAS_DAC_TIMEOUT</div>
+<div class="txt">Multicoil bias failure. RF Hub FPGA failed to complete the bias config DAC write in time.
+Board: %b Module failure bitmap: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2274004"><a name="BM2274004"></a>
+<h2>2274004</h2>
+<div class="sym">ERROR: EM_RFHUB_BIAS_IMMEDIATE_FAULT</div>
+<div class="txt">Multicoil bias failure. The RF Hub detected a fault immediately after enabling bias. This could indicate a problem with the internal unblank signal.</div>
+</section>
+<section id="BM2274005"><a name="BM2274005"></a>
+<h2>2274005</h2>
+<div class="sym">ERROR: EM_RFHUB_BIAS_ADC_TIMEOUT</div>
+<div class="txt">Multicoil bias failure. RF Hub FPGA failed to complete the bias ADC read in time.
+Board: %b Module failure bitmap: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2274006"><a name="BM2274006"></a>
+<h2>2274006</h2>
+<div class="sym">ERROR: EM_RFHUB_BIAS_DELAYED_UNBLANK_MISSING</div>
+<div class="txt">Multicoil bias failure. RF Hub delayed unblank pulse was not detected.
+Board: %b Count: * %ld *
+Delay: %ld ns
+Width: %ld ns</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this issue persists, replace the RFCB or MCDB indicated.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2274007"><a name="BM2274007"></a>
+<h2>2274007</h2>
+<div class="sym">ERROR: EM_RFHUB_BIAS_DELAYED_UNBLANK_TOO_MANY</div>
+<div class="txt">Multicoil bias failure. RF Hub detected too many delayed unblank pulses.
+Board: %b Count: * %ld *
+Delay: %ld ns
+Width: %ld ns</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this issue persists, replace the RFCB or MCDB indicated.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2274008"><a name="BM2274008"></a>
+<h2>2274008</h2>
+<div class="sym">ERROR: EM_RFHUB_BIAS_DELAYED_UNBLANK_DELAY_RANGE</div>
+<div class="txt">Multicoil bias failure. RF Hub delayed unblank pulse delay out of range.
+Board: %b
+Count: %ld Delay: * %ld ns *
+Width: %ld ns</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this issue persists, replace the RFCB or MCDB indicated.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2274009"><a name="BM2274009"></a>
+<h2>2274009</h2>
+<div class="sym">ERROR: EM_RFHUB_BIAS_DELAYED_UNBLANK_WIDTH_RANGE</div>
+<div class="txt">Multicoil bias failure. RF Hub delayed unblank pulse delay out of range.
+Board: %b
+Count: %ld
+Delay: %ld ns Width: * %ld ns *</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this issue persists, replace the RFCB or MCDB indicated.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2274010"><a name="BM2274010"></a>
+<h2>2274010</h2>
+<div class="sym">ERROR: EM_RFHUB_SHUTDOWN_BIAS_ENABLED_NO_PREP</div>
+<div class="txt">RF Hub prep failure. The RF Hub detected that coil bias was enabled without a successful bias check. Disabling bias.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2274011"><a name="BM2274011"></a>
+<h2>2274011</h2>
+<div class="sym">ERROR: EM_RFHUB_SHUTDOWN_BIAS_ENABLED_NO_INHIBIT</div>
+<div class="txt">RF Hub prep failure. The RF Hub detected that coil bias was enabled without inhibit cable connection. Disabling bias.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can occur if there is an intermittant inhibit cable connection. Check for other errors about inhibit cable detect.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>Driver Module</li></ol>
+</section>
+<section id="BM2274012"><a name="BM2274012"></a>
+<h2>2274012</h2>
+<div class="sym">ERROR: EM_RFHUB_SHUTDOWN_BIAS_ENABLED_UNBLANK_SET</div>
+<div class="txt">RF Hub prep failure. The RF Hub detected that transmit unblank signals are in an unblank state while preparing for a scan. Disabling bias.
+Unblanks Set: %b %b %b %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the RF Hub RFCB unblank cable is connected through the PEN wall to the right connector on the NB Exciter.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>NB DTx Module</li></ol>
+</section>
+<section id="BM2274013"><a name="BM2274013"></a>
+<h2>2274013</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_SHORT_UNUSED_ADC</div>
+<div class="txt">Unused Channel Fault - Short Circuit A multicoil bias fault was detected. Reseat all coils and check coil connections.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1
+Fault value: %ld mV, Channel: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">A short circuit was detected by the RF Hub on a channel that is not known to be connected a coil. This could indicate a coil is plugged in that is not being read by coil ID.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector. Fault value - The voltage seen when the fault was detected, on the channel.</div>
+</section>
+<section id="BM2274014"><a name="BM2274014"></a>
+<h2>2274014</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_SHORT_UNUSED</div>
+<div class="txt">Unused Channel Fault - Short Circuit A multicoil bias fault was detected. Reseat all coils and check coil connections.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1</div>
+<div class="lbl">Extended Error:</div><div class="txt">A short circuit was detected by the RF Hub on a channel that is not known to be connected a coil. This could indicate a coil is plugged in that is not being read by coil ID.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector.</div>
+</section>
+<section id="BM2274015"><a name="BM2274015"></a>
+<h2>2274015</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_OPEN_UNUSED_ADC</div>
+<div class="txt">Unused Channel Fault - Open Circuit A multicoil bias fault was detected when not expected.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1
+Fault value: %ld mV, Channel: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">An open circuit was detected by the RF Hub on a channel that is not known to be connected a coil.
+This is an internal error and is not expected. If this persists, submit a complaint.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector. Fault value - The voltage seen when the fault was detected, on the channel.</div>
+</section>
+<section id="BM2274016"><a name="BM2274016"></a>
+<h2>2274016</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_OPEN_UNUSED</div>
+<div class="txt">Unused Channel Fault - Open Circuit A multicoil bias fault was detected when not expected.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1</div>
+<div class="lbl">Extended Error:</div><div class="txt">An open circuit was detected by the RF Hub on a channel that is not known to be connected a coil.
+This is an internal error and is not expected. If this persists, submit a complaint.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector.</div>
+</section>
+<section id="BM2274017"><a name="BM2274017"></a>
+<h2>2274017</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_SHORT_UNBLANK_USED_ADC</div>
+<div class="txt">Coil Fault - Short Circuit A multicoil bias fault was detected when not expected.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1
+Fault value: %ld mV, Channel: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">A short circuit was detected by the RF Hub on a coil channel during unblank.
+This is an internal error and is not expected. If this persists, submit a complaint.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector. Fault value - The voltage seen when the fault was detected, on the channel.</div>
+</section>
+<section id="BM2274018"><a name="BM2274018"></a>
+<h2>2274018</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_SHORT_UNBLANK_USED</div>
+<div class="txt">Coil Fault - Short Circuit A multicoil bias fault was detected when not expected.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1</div>
+<div class="lbl">Extended Error:</div><div class="txt">A short circuit was detected by the RF Hub on a coil channel during unblank.
+This is an internal error and is not expected. If this persists, submit a complaint.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector.</div>
+</section>
+<section id="BM2274019"><a name="BM2274019"></a>
+<h2>2274019</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_SHORT_BLANK_USED_NOTOGGLE_ADC</div>
+<div class="txt">Coil Fault - Short Circuit A multicoil bias fault was detected when not expected.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1
+Fault value: %ld mV, Channel: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">A short circuit was detected by the RF Hub on a coil channel during blank, on a channel that is not supposed to be toggling.
+This is an internal error and is not expected. If this persists, submit a complaint.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector. Fault value - The voltage seen when the fault was detected, on the channel.</div>
+</section>
+<section id="BM2274020"><a name="BM2274020"></a>
+<h2>2274020</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_SHORT_BLANK_USED_NOTOGGLE</div>
+<div class="txt">Coil Fault - Short Circuit A multicoil bias fault was detected when not expected.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1</div>
+<div class="lbl">Extended Error:</div><div class="txt">A short circuit was detected by the RF Hub on a coil channel during blank, on a channel that is not supposed to be toggling.
+This is an internal error and is not expected. If this persists, submit a complaint.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector.</div>
+</section>
+<section id="BM2274021"><a name="BM2274021"></a>
+<h2>2274021</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_SHORT_BLANK_USED_TOGGLE_ADC</div>
+<div class="txt">Coil Fault - Short Circuit A multicoil bias fault was detected.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1
+Fault value: %ld mV, Channel: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">A short circuit was detected by the RF Hub on a coil channel.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector. Fault value - The voltage seen when the fault was detected, on the channel.</div>
+</section>
+<section id="BM2274022"><a name="BM2274022"></a>
+<h2>2274022</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_SHORT_BLANK_USED_TOGGLE</div>
+<div class="txt">Coil Fault - Short Circuit A multicoil bias fault was detected.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1</div>
+<div class="lbl">Extended Error:</div><div class="txt">A short circuit was detected by the RF Hub on a coil channel.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector.</div>
+</section>
+<section id="BM2274023"><a name="BM2274023"></a>
+<h2>2274023</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_OPEN_UNBLANK_USED_ADC</div>
+<div class="txt">Coil Fault - Open Circuit A multicoil bias fault was detected. Reseat all coils and check coil connections.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1
+Fault value: %ld mV, Channel: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">An open circuit was detected by the RF Hub on a coil channel.
+Please reseat \Connector:\&quot; referenced in error message and located inside LPCA. P1 or P2 connectors are removable from front of LPCA for emergency release situations. P1 and P2 connectors are different from connector attached to coil, however, coil connector can be reseated at same time also.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector. Fault value - The voltage seen when the fault was detected, on the channel.&quot;</div>
+</section>
+<section id="BM2274024"><a name="BM2274024"></a>
+<h2>2274024</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_OPEN_UNBLANK_USED</div>
+<div class="txt">Coil Fault - Open Circuit A multicoil bias fault was detected. Reseat all coils and check coil connections.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1</div>
+<div class="lbl">Extended Error:</div><div class="txt">An open circuit was detected by the RF Hub on a coil channel.
+Please reseat \Connector:\&quot; referenced in error message and located inside LPCA. P1 or P2 connectors are removable from front of LPCA for emergency release situations. P1 and P2 connectors are different from connector attached to coil, however, coil connector can be reseated at same time also.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector.&quot;</div>
+</section>
+<section id="BM2274025"><a name="BM2274025"></a>
+<h2>2274025</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_OPEN_BLANK_USED_TOGGLE_ADC</div>
+<div class="txt">Coil Fault - Open Circuit A multicoil bias fault was detected when not expected.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1
+Fault value: %ld mV, Channel: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">An open circuit was detected by the RF Hub on a coil channel during blank on a channel that is supposed to be toggling.
+This is an internal error and is not expected. If this persists, submit a complaint.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector. Fault value - The voltage seen when the fault was detected, on the channel.</div>
+</section>
+<section id="BM2274026"><a name="BM2274026"></a>
+<h2>2274026</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_OPEN_BLANK_USED_TOGGLE</div>
+<div class="txt">Coil Fault - Open Circuit A multicoil bias fault was detected when not expected.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1</div>
+<div class="lbl">Extended Error:</div><div class="txt">An open circuit was detected by the RF Hub on a coil channel during blank on a channel that is supposed to be toggling.
+This is an internal error and is not expected. If this persists, submit a complaint.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector.</div>
+</section>
+<section id="BM2274027"><a name="BM2274027"></a>
+<h2>2274027</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_OPEN_BLANK_USED_NOTOGGLE_ADC</div>
+<div class="txt">Coil Fault - Open Circuit A multicoil bias fault was detected. Reseat all coils and check coil connections.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1
+Fault value: %ld mV, Channel: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">An open circuit was detected by the RF Hub on a coil channel.
+Please reseat \Connector:\&quot; referenced in error message and located inside LPCA. P1 or P2 connectors are removable from front of LPCA for emergency release situations. P1 and P2 connectors are different from connector attached to coil, however, coil connector can be reseated at same time also.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector. Fault value - The voltage seen when the fault was detected, on the channel.&quot;</div>
+</section>
+<section id="BM2274028"><a name="BM2274028"></a>
+<h2>2274028</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_OPEN_BLANK_USED_NOTOGGLE</div>
+<div class="txt">Coil Fault - Open Circuit A multicoil bias fault was detected. Reseat all coils and check coil connections.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1</div>
+<div class="lbl">Extended Error:</div><div class="txt">An open circuit was detected by the RF Hub on a coil channel.
+Please reseat \Connector:\&quot; referenced in error message and located inside LPCA. P1 or P2 connectors are removable from front of LPCA for emergency release situations. P1 and P2 connectors are different from connector attached to coil, however, coil connector can be reseated at same time also.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector.&quot;</div>
+</section>
+<section id="BM2274029"><a name="BM2274029"></a>
+<h2>2274029</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_SHORT_UNUSED_SHUTDOWN_ADC</div>
+<div class="txt">Unused Channel Fault - Short Circuit A multicoil bias fault was detected while scanning. Reseat all coils and check coil connections.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, from 1
+Fault value: %ld mV, Channel: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">A short circuit was detected by the RF Hub on a channel that is not known to be connected a coil. This could indicate a coil is plugged in that is not being read by coil ID.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector. Fault value - The voltage seen when the fault was detected, on the channel.</div>
+</section>
+<section id="BM2274030"><a name="BM2274030"></a>
+<h2>2274030</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_SHORT_UNUSED_SHUTDOWN</div>
+<div class="txt">Unused Channel Fault - Short Circuit A multicoil bias fault was detected while scanning. Reseat all coils and check coil connections.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1</div>
+<div class="lbl">Extended Error:</div><div class="txt">A short circuit was detected by the RF Hub on a channel that is not known to be connected a coil. This could indicate a coil is plugged in that is not being read by coil ID.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector.</div>
+</section>
+<section id="BM2274031"><a name="BM2274031"></a>
+<h2>2274031</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_OPEN_UNUSED_SHUTDOWN_ADC</div>
+<div class="txt">Unused Channel Fault - Open Circuit A multicoil bias fault was detected when not expected while scanning.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1
+Fault value: %ld mV, Channel: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">An open circuit was detected by the RF Hub on a channel that is not known to be connected a coil.
+This is an internal error and is not expected. If this persists, submit a complaint.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector. Fault value - The voltage seen when the fault was detected, on the channel.</div>
+</section>
+<section id="BM2274032"><a name="BM2274032"></a>
+<h2>2274032</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_OPEN_UNUSED_SHUTDOWN</div>
+<div class="txt">Unused Channel Fault - Open Circuit A multicoil bias fault was detected when not expected while scanning.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1</div>
+<div class="lbl">Extended Error:</div><div class="txt">An open circuit was detected by the RF Hub on a channel that is not known to be connected a coil.
+This is an internal error and is not expected. If this persists, submit a complaint.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector.</div>
+</section>
+<section id="BM2274033"><a name="BM2274033"></a>
+<h2>2274033</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_SHORT_USED_SHUTDOWN_ADC</div>
+<div class="txt">Coil Fault - Short Circuit A multicoil bias fault was detected while scanning.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1
+Fault value: %ld mV, Channel: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">A short circuit was detected by the RF Hub on a coil channel.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector. Fault value - The voltage seen when the fault was detected, on the channel.</div>
+</section>
+<section id="BM2274034"><a name="BM2274034"></a>
+<h2>2274034</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_SHORT_USED_SHUTDOWN</div>
+<div class="txt">Coil Fault - Short Circuit A multicoil bias fault was detected while scanning.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1</div>
+<div class="lbl">Extended Error:</div><div class="txt">A short circuit was detected by the RF Hub on a coil channel.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector.</div>
+</section>
+<section id="BM2274035"><a name="BM2274035"></a>
+<h2>2274035</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_OPEN_USED_SHUTDOWN_ADC</div>
+<div class="txt">Coil Fault - Open Circuit A multicoil bias fault was detected while scanning. Reseat all coils and check coil connections.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1
+Fault value: %ld mV, Channel: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">An open circuit was detected by the RF Hub on a coil channel.
+Please reseat \Connector:\&quot; referenced in error message and located inside LPCA. P1 or P2 connectors are removable from front of LPCA for emergency release situations. P1 and P2 connectors are different from connector attached to coil, however, coil connector can be reseated at same time also.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector. Fault value - The voltage seen when the fault was detected, on the channel.&quot;</div>
+</section>
+<section id="BM2274036"><a name="BM2274036"></a>
+<h2>2274036</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_OPEN_USED_SHUTDOWN</div>
+<div class="txt">Coil Fault - Open Circuit A multicoil bias fault was detected while scanning. Reseat all coils and check coil connections.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1</div>
+<div class="lbl">Extended Error:</div><div class="txt">An open circuit was detected by the RF Hub on a coil channel.
+Please reseat \Connector:\&quot; referenced in error message and located inside LPCA. P1 or P2 connectors are removable from front of LPCA for emergency release situations. P1 and P2 connectors are different from connector attached to coil, however, coil connector can be reseated at same time also.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. First channel - The first channel that faulted, and the number of channels on the connector.&quot;</div>
+</section>
+<section id="BM2274037"><a name="BM2274037"></a>
+<h2>2274037</h2>
+<div class="sym">ERROR: EM_RFHUB_BAD_BIAS_CONFIGURATION</div>
+<div class="txt">Multicoil bias failure. The RF Hub received a bad channel configuration.
+Configuration: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal software error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2274038"><a name="BM2274038"></a>
+<h2>2274038</h2>
+<div class="sym">ERROR: EM_RFHUB_BAD_CONNECTOR_BIAS_MAPPING</div>
+<div class="txt">Internal software error. Connector to bias mapping not found in system configuration.
+Configuration: %ld
+Connector: %b
+Pin Group: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal software error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2274039"><a name="BM2274039"></a>
+<h2>2274039</h2>
+<div class="sym">ERROR: EM_RFHUB_BAD_RX_ENABLE_MASK</div>
+<div class="txt">Multicoil bias failure. The RF Hub received a bad receive enable mask for the system configuration.
+Configuration: %ld
+Bank Index: %ld
+Connector: %b Mask: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal software error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2274040"><a name="BM2274040"></a>
+<h2>2274040</h2>
+<div class="sym">ERROR: EM_RFHUB_SINGLE_MCDB_OF_1_UNBLANK_FAILURE</div>
+<div class="txt">RF Hub Hardware Failure. RF Hub detected that the transmit unblank on the MCDB did not match the unblank commanded from the RFCB.
+Board: %b
+RFCB Unblank: %ld
+MCDB Unblank: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be a problem with either the RFCB, MCDB, or bad pins on the RF Hub backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2274041"><a name="BM2274041"></a>
+<h2>2274041</h2>
+<div class="sym">ERROR: EM_RFHUB_SINGLE_MCDB_OF_2_UNBLANK_FAILURE</div>
+<div class="txt">RF Hub Hardware Failure. RF Hub detected that the transmit unblank on one of the MCDBs did not match the unblank commanded from the RFCB.
+Board: %b
+RFCB Unblank: %ld
+MCDB Unblank: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be a problem with either the RFCB, MCDB, or bad pins on the RF Hub backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2274042"><a name="BM2274042"></a>
+<h2>2274042</h2>
+<div class="sym">ERROR: EM_RFHUB_ALL_MCDB_OF_2_UNBLANK_FAILURE</div>
+<div class="txt">RF Hub Hardware Failure. RF Hub detected that the transmit unblanks on both of the MCDBs did not match the unblank commanded from the RFCB.
+Boards: %b, %b
+RFCB Unblank: %ld
+MCDB Unblank: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">Both MCDBs are seeing the wrong transmit unblank from the RFCB. This is most likely a problem with the RFCB.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2274043"><a name="BM2274043"></a>
+<h2>2274043</h2>
+<div class="sym">ERROR: EM_RFHUB_BIAS_BANK_SETUP_FAILURE</div>
+<div class="txt">Scan setup check failed. RF Hub detected that the hardware failed scan setup. The receive enable toggle for the scan was not set correctly by the hardware.
+Board: %b
+Bank: %ld
+Bias Module: %ld RX Enable Read: 0x%x, Expected: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2274044"><a name="BM2274044"></a>
+<h2>2274044</h2>
+<div class="sym">ERROR: EM_RFHUB_BIAS_POWER_MODE_MISMATCH</div>
+<div class="txt">Multicoil bias failure. The RF Hub detected a mismatch in the power mode setup for a bias module.
+Connector: %b, Pin Group: %ld
+Board: %b
+Bias Module: %ld, Pin Group: %ld</div>
+</section>
+<section id="BM2274045"><a name="BM2274045"></a>
+<h2>2274045</h2>
+<div class="sym">ERROR: EM_RFHUB_BIAS_SCAN_SETUP_NOT_RECEIVED</div>
+<div class="txt">Firmware failure. The RF Hub detected a bias operation before the scan setup was received.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2274046"><a name="BM2274046"></a>
+<h2>2274046</h2>
+<div class="sym">ERROR: EM_RFHUB_BIAS_LATCHED_FAULT_NOT_DONE</div>
+<div class="txt">Multicoil bias failure. The RF Hub hardware latched a MC bias fault but no ADC fault was read.
+Board: %b
+Bias Module: %ld Module Faults: 0x%x Fault ADC: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2274047"><a name="BM2274047"></a>
+<h2>2274047</h2>
+<div class="sym">ERROR: EM_RFHUB_BAD_BIAS_MODULE_REQUEST</div>
+<div class="txt">Internal software error. Bias module requested not found.
+Bias Board: %ld
+Module: %ld
+Pass Index: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2274048"><a name="BM2274048"></a>
+<h2>2274048</h2>
+<div class="sym">ERROR: EM_RFHUB_BAD_BIAS_BOARD_MAPPING</div>
+<div class="txt">Internal software error. Bias board requested not found.
+Bias Board: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2274049"><a name="BM2274049"></a>
+<h2>2274049</h2>
+<div class="sym">ERROR: EM_RFHUB_BIAS_SETUP_MISSING_BOARD</div>
+<div class="txt">Multicoil bias failure. The RF Hub received a bad coil bias configuration. Bias was setup on a board that is not present.
+Board: %b
+Module: %ld Used Channels: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2274050"><a name="BM2274050"></a>
+<h2>2274050</h2>
+<div class="sym">ERROR: EM_RFHUB_BIAS_SETUP_MISSING_MODULE</div>
+<div class="txt">Multicoil bias failure. The RF Hub received a bad coil bias configuration. Bias was setup on a bias module that is not present.
+Board: %b
+Module: %ld Used Channels: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2274051"><a name="BM2274051"></a>
+<h2>2274051</h2>
+<div class="sym">ERROR: EM_RFHUB_SHUTDOWN_BIAS_ENABLED_NO_UNBLANK</div>
+<div class="txt">RF Hub prep failure. The RF Hub detected that coil bias was enabled without unblank cable connection. Disabling bias.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could indicate an intermittant unblank cable connection, or a bad unblank cable, RF Hub RFCB, or NB Exciter.
+This is a secondary error message. Look for other unblank cable errors in the error log.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>NB DTx Module</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2274052"><a name="BM2274052"></a>
+<h2>2274052</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_TOLERANCE</div>
+<div class="txt">Multicoil Bias Drive Fault The RF Hub detected that the multicoil bias voltage was not driven correctly.
+Connector: %b Fault bitmap: 0x%lx, Used bitmap: 0x%lx
+First channel: %ld of %ld
+Driven: %ld mV, Read: %ld mV</div>
+<div class="lbl">Extended Error:</div><div class="txt">A bias drive fault was detected by the RF Hub. This happens when the RF Hub tries to drive a multicoil bias voltage, but detects that the voltage driven is outside of the expected range.
+Ignore this error if there are also RF Hub power failures reported. If no power failures are reported, this is likely a faulty RF Hub RFCB or MCDB.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Connector - The coil connector the fault was detected on. Fault bitmap - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80000000 means channel 32. Used bitmap - This is a hexadecimal bit map of the channels on this connector that are known to be connected to a coil. First channel - The first channel that faulted, and the number of channels on the connector. Driven - The voltage programmed. Read - The voltage read back that is outside of the expected range.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2274053"><a name="BM2274053"></a>
+<h2>2274053</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_MOD_SHORT_ADC</div>
+<div class="txt">Unused Channel Fault - Short Circuit A multicoil bias fault was detected on a bias module not used by this system configuration.
+Board: %b, Module: %ld Channels faulted: 0x%lx
+First channel: %ld, Fault value: %ld mV</div>
+<div class="lbl">Extended Error:</div><div class="txt">A short circuit was detected by the RF Hub on a bias module that is not used by this system configuration.
+This is likely a problem with the board indicated, or a result of cables to the RF Hub RFSBs hooked up incorrectly.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Board - The board that detected the fault. Module - The bias module number on that board. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80 means channel 8. First channel - The first channel that faulted, and the number of channels on the connector. Fault value - The voltage seen when the fault was detected, on the channel.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2274054"><a name="BM2274054"></a>
+<h2>2274054</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_MOD_SHORT</div>
+<div class="txt">Unused Channel Fault - Short Circuit A multicoil bias fault was detected on a bias module not used by this system configuration.
+Board: %b, Module: %ld Channels faulted: 0x%lx
+First channel: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">A short circuit was detected by the RF Hub on a bias module that is not used by this system configuration.
+This is likely a problem with the board indicated, or a result of cables to the RF Hub RFSBs hooked up incorrectly.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Board - The board that detected the fault. Module - The bias module number on that board. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80 means channel 8. First channel - The first channel that faulted, and the number of channels on the connector.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2274055"><a name="BM2274055"></a>
+<h2>2274055</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_MOD_SHORT_SHUTDOWN_ADC</div>
+<div class="txt">Unused Channel Fault - Short Circuit A multicoil bias fault was detected while scanning on a bias module not used by this system configuration.
+Board: %b, Module: %ld Channels faulted: 0x%lx
+First channel: %ld, Fault value: %ld mV</div>
+<div class="lbl">Extended Error:</div><div class="txt">A short circuit was detected by the RF Hub on a bias module that is not used by this system configuration.
+This is likely a problem with the board indicated, or a result of cables to the RF Hub RFSBs hooked up incorrectly.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Board - The board that detected the fault. Module - The bias module number on that board. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80 means channel 8. First channel - The first channel that faulted, and the number of channels on the connector. Fault value - The voltage seen when the fault was detected, on the channel.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2274056"><a name="BM2274056"></a>
+<h2>2274056</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_MOD_SHORT_SHUTDOWN</div>
+<div class="txt">Unused Channel Fault - Short Circuit A multicoil bias fault was detected while scanning on a bias module not used by this system configuration.
+Board: %b, Module: %ld Channels faulted: 0x%lx
+First channel: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">A short circuit was detected by the RF Hub on a bias module that is not used by this system configuration.
+This is likely a problem with the board indicated, or a result of cables to the RF Hub RFSBs hooked up incorrectly.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Board - The board that detected the fault. Module - The bias module number on that board. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80 means channel 8. First channel - The first channel that faulted, and the number of channels on the connector.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2274057"><a name="BM2274057"></a>
+<h2>2274057</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_MOD_OPEN_ADC</div>
+<div class="txt">Unused Channel Fault - Open Circuit A multicoil bias fault was detected on a bias module not used by this system configuration.
+Board: %b, Module: %ld Channels faulted: 0x%lx
+First channel: %ld, Fault value: %ld mV</div>
+<div class="lbl">Extended Error:</div><div class="txt">An open circuit was detected by the RF Hub on a bias module that is not used by this system configuration.
+This is likely a problem with the board indicated.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Board - The board that detected the fault. Module - The bias module number on that board. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80 means channel 8. First channel - The first channel that faulted, and the number of channels on the connector. Fault value - The voltage seen when the fault was detected, on the channel.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2274058"><a name="BM2274058"></a>
+<h2>2274058</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_MOD_OPEN</div>
+<div class="txt">Unused Channel Fault - Open Circuit A multicoil bias fault was detected on a bias module not used by this system configuration.
+Board: %b, Module: %ld Channels faulted: 0x%lx
+First channel: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">An open circuit was detected by the RF Hub on a bias module that is not used by this system configuration.
+This is likely a problem with the board indicated.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Board - The board that detected the fault. Module - The bias module number on that board. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80 means channel 8. First channel - The first channel that faulted, and the number of channels on the connector.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2274059"><a name="BM2274059"></a>
+<h2>2274059</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_MOD_OPEN_SHUTDOWN_ADC</div>
+<div class="txt">Unused Channel Fault - Open Circuit A multicoil bias fault was detected while scanning on a bias module not used by this system configuration.
+Board: %b, Module: %ld Channels faulted: 0x%lx
+First channel: %ld, Fault value: %ld mV</div>
+<div class="lbl">Extended Error:</div><div class="txt">An open circuit was detected by the RF Hub on a bias module that is not used by this system configuration.
+This is likely a problem with the board indicated.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Board - The board that detected the fault. Module - The bias module number on that board. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80 means channel 8. First channel - The first channel that faulted, and the number of channels on the connector. Fault value - The voltage seen when the fault was detected, on the channel.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2274060"><a name="BM2274060"></a>
+<h2>2274060</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_MOD_OPEN_SHUTDOWN</div>
+<div class="txt">Unused Channel Fault - Open Circuit A multicoil bias fault was detected while scanning on a bias module not used by this system configuration.
+Board: %b, Module: %ld Channels faulted: 0x%lx
+First channel: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">An open circuit was detected by the RF Hub on a bias module that is not used by this system configuration.
+This is likely a problem with the board indicated.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Board - The board that detected the fault. Module - The bias module number on that board. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80 means channel 8. First channel - The first channel that faulted, and the number of channels on the connector.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2274061"><a name="BM2274061"></a>
+<h2>2274061</h2>
+<div class="sym">ERROR: EM_RFHUB_MC_MOD_TOLERANCE</div>
+<div class="txt">Multicoil Bias Drive Fault The RF Hub detected that the multicoil bias voltage was not driven correctly.
+Board: %b, Module: %ld Channels faulted: 0x%lx, Channels used: 0x%lx
+First channel: %ld
+Driven: %ld mV, Read: %ld mV</div>
+<div class="lbl">Extended Error:</div><div class="txt">A bias drive fault was detected by the RF Hub. This happens when the RF Hub tries to drive a multicoil bias voltage, but detects that the voltage driven is outside of the expected range.
+Ignore this error if there are also RF Hub power failures reported. If no power failures are reported, this is likely a faulty RF Hub RFCB or MCDB.
+Run the Multicoil Bias Diagnostic or Coil Datapath Diagnostic to troubleshoot.
+Explanation of fields:
+Board - The board that detected the fault. Module - The bias module number on that board. Channels faulted - This is a hexadecimal bit map of all the faulted channels. For example, 0x3 means faults on channels 1 and 2. 0x80 means channel 8. Channels used - This is a hexadecimal bit map of the channels on this connector that are known to be connected to a coil. First channel - The first channel that faulted, and the number of channels on the connector. Driven - The voltage programmed. Read - The voltage read back that is outside of the expected range.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2274062"><a name="BM2274062"></a>
+<h2>2274062</h2>
+<div class="sym">ERROR: EM_RFHUB_BIAS_CHECK_POWER_FAILURE</div>
+<div class="txt">Multicoil Bias Check Aborted The RF Hub aborted a multicoil bias check because a RF Hub power is bad. See previous errors for which power has failed.</div>
+</section>
+<section id="BM2274200"><a name="BM2274200"></a>
+<h2>2274200</h2>
+<div class="sym">ERROR: EM_RFHUB_PORT_DETECTION_FAULT</div>
+<div class="txt">Port detection check failed. The RF Hub hardware detected a port connector, but could not identify it. Check cabling and port connectors.
+Port: %b
+Connector Fault Voltage: %d mV
+Expected Voltage Range: %d mV - %d mV</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub detected a resistance on the P connector cable path that was out of the expected range for the connector, system field strength, and system channel count. It could not determine if the range belonged to another connector. Check the coil port cables at the RF Hub RFCB, the LPCA, and the electrical docking interface and the cabling in the table. Run the Coil Datapath Diagnostic which utilizes the MCRv tool to isolate the problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>Patient Table</li></ol>
+</section>
+<section id="BM2274201"><a name="BM2274201"></a>
+<h2>2274201</h2>
+<div class="sym">ERROR: EM_RFHUB_PORT_DETECTION_SWAP</div>
+<div class="txt">Port detection check failed. The RF Hub hardware detected an invalid or swapped port connector. Check cabling and port connectors.
+Port: %b
+Detected Connector: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub detected a swapped coil port connection. Verify that the cables are connected to the correct RF Hub control board ports and that they are routed properly to the LPCA and the table. Run the Coil Datapath Diagnostic which utilizes the MCRv tool to isolate the problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>Patient Table</li></ol>
+</section>
+<section id="BM2274202"><a name="BM2274202"></a>
+<h2>2274202</h2>
+<div class="sym">ERROR: EM_RFHUB_TABLE_DOCK_FAULT</div>
+<div class="txt">Electrical table docking failed. The RF Hub hardware did not detect one of the table connector ports. Undock the table and try to dock electrically again.
+Port 3 (P3): %s
+Port 4 (P4): %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub hardware detected a bad electrical table dock connection. Try redocking the table. Verify that the Port 3 and Port 4 cables are connected to the RF Hub control board. Try reseating the cables. Visually inspect the pins on the connector located on the front of the patient table for damage. Run the Coil Datapath Diagnostic which utilizes the MCRv tool to isolate the problem. If the problem persists, the RF Hub control board or cables may need replacement.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>Patient Table</li></ol>
+</section>
+<section id="BM2274203"><a name="BM2274203"></a>
+<h2>2274203</h2>
+<div class="sym">ERROR: EM_RFHUB_INVALID_PORT_DETECTED</div>
+<div class="txt">Port detection check failed. The RF Hub hardware detected a connector on: %b This port should not be connected for this system configuration. Please check system configuration or disconnect this port.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub detected a coil port connected to the RF Hub control board that is unused for this system configuration. Check that the system field strength and receive channel count are properly configured. Remove any extra coil port cables from the RF Hub control board that should not be included in this system configuration. If the problem persists, the RF Hub control board may need replacement.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2274204"><a name="BM2274204"></a>
+<h2>2274204</h2>
+<div class="sym">ERROR: EM_RFHUB_GEM_TABLE_DOCK_FAULT</div>
+<div class="txt">Electrical table docking failed. The RF Hub hardware did not detect one of the table connector ports. Undock the table and try to dock electrically again.
+Port 2 (P2): %s
+Port 3 (P3): %s
+Port 4 (P4): %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub hardware detected a bad electrical table dock connection. Try redocking the table. Verify that the cables for ports 2, 3, and 4 are connected to the RF Hub control board. Try reseating the cables. Visually inspect the pins on the connector located on the front of the patient table for damage. Run the Coil Datapath Diagnostic which utilizes the MCRv tool to isolate the problem. If the problem persists, the RF Hub control board or cables may need replacement.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>Patient Table</li></ol>
+</section>
+<section id="BM2274300"><a name="BM2274300"></a>
+<h2>2274300</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P1_1_5T_16</div>
+<div class="txt">Connector Port 1 (P1)/1.5T/16 Channels</div>
+</section>
+<section id="BM2274301"><a name="BM2274301"></a>
+<h2>2274301</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P2_1_5T_16</div>
+<div class="txt">Connector Port 2 (P2)/1.5T/16 Channels</div>
+</section>
+<section id="BM2274302"><a name="BM2274302"></a>
+<h2>2274302</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P1_1_5T_32</div>
+<div class="txt">Connector Port 1 (P1)/1.5T/32 Channels</div>
+</section>
+<section id="BM2274303"><a name="BM2274303"></a>
+<h2>2274303</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P2_1_5T_32</div>
+<div class="txt">Connector Port 2 (P2)/1.5T/32 Channels</div>
+</section>
+<section id="BM2274304"><a name="BM2274304"></a>
+<h2>2274304</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P3_1_5T</div>
+<div class="txt">Connector Port 3 (P3)/1.5T</div>
+</section>
+<section id="BM2274305"><a name="BM2274305"></a>
+<h2>2274305</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P4_1_5T</div>
+<div class="txt">Connector Port 4 (P4)/1.5T</div>
+</section>
+<section id="BM2274306"><a name="BM2274306"></a>
+<h2>2274306</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P5_1_5T</div>
+<div class="txt">Connector Port 5 (P5)/1.5T</div>
+</section>
+<section id="BM2274307"><a name="BM2274307"></a>
+<h2>2274307</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P1_3_0T_16</div>
+<div class="txt">Connector Port 1 (P1)/3.0T/16 Channels</div>
+</section>
+<section id="BM2274308"><a name="BM2274308"></a>
+<h2>2274308</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P2_3_0T_16</div>
+<div class="txt">Connector Port 2 (P2)/3.0T/16 Channels</div>
+</section>
+<section id="BM2274309"><a name="BM2274309"></a>
+<h2>2274309</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P1_3_0T_32</div>
+<div class="txt">Connector Port 1 (P1)/3.0T/32 Channels</div>
+</section>
+<section id="BM2274310"><a name="BM2274310"></a>
+<h2>2274310</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P2_3_0T_32</div>
+<div class="txt">Connector Port 2 (P2)/3.0T/32 Channels</div>
+</section>
+<section id="BM2274311"><a name="BM2274311"></a>
+<h2>2274311</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P3_3_0T</div>
+<div class="txt">Connector Port 3 (P3)/3.0T</div>
+</section>
+<section id="BM2274312"><a name="BM2274312"></a>
+<h2>2274312</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P4_3_0T</div>
+<div class="txt">Connector Port 4 (P4)/3.0T</div>
+</section>
+<section id="BM2274313"><a name="BM2274313"></a>
+<h2>2274313</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P5_3_0T</div>
+<div class="txt">Connector Port 5 (P5)/3.0T</div>
+</section>
+<section id="BM2274314"><a name="BM2274314"></a>
+<h2>2274314</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_MCRV_RFCB</div>
+<div class="txt">MCRv Tool at the RFCB</div>
+</section>
+<section id="BM2274315"><a name="BM2274315"></a>
+<h2>2274315</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_MCRV_P3</div>
+<div class="txt">MCRv Tool at the Table Internal Interface Panel J3</div>
+</section>
+<section id="BM2274316"><a name="BM2274316"></a>
+<h2>2274316</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_MCRV_P4</div>
+<div class="txt">MCRv Tool at the Table Internal Interface Panel J6</div>
+</section>
+<section id="BM2274317"><a name="BM2274317"></a>
+<h2>2274317</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P1_7_0T_32</div>
+<div class="txt">Connector Port 1 (P1)/7.0T/32 Channels</div>
+</section>
+<section id="BM2274318"><a name="BM2274318"></a>
+<h2>2274318</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P2_7_0T_32</div>
+<div class="txt">Connector Port 2 (P2)/7.0T/32 Channels</div>
+</section>
+<section id="BM2274319"><a name="BM2274319"></a>
+<h2>2274319</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P3_7_0T</div>
+<div class="txt">Connector Port 3 (P3)/7.0T</div>
+</section>
+<section id="BM2274320"><a name="BM2274320"></a>
+<h2>2274320</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P4_7_0T</div>
+<div class="txt">Connector Port 4 (P4)/7.0T</div>
+</section>
+<section id="BM2274321"><a name="BM2274321"></a>
+<h2>2274321</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONNECTOR_P5_7_0T</div>
+<div class="txt">Connector Port 5 (P5)/7.0T</div>
+</section>
+<section id="BM2274350"><a name="BM2274350"></a>
+<h2>2274350</h2>
+<div class="sym">ERROR: EM_RF_HUB_TABLE_LOCATION</div>
+<div class="txt">Patient Table</div>
+</section>
+<section id="BM2274351"><a name="BM2274351"></a>
+<h2>2274351</h2>
+<div class="sym">ERROR: EM_RF_HUB_PA_MUX_LOCATION</div>
+<div class="txt">Under Patient Table, PA MUX</div>
+</section>
+<section id="BM2274352"><a name="BM2274352"></a>
+<h2>2274352</h2>
+<div class="sym">ERROR: EM_RF_HUB_COMBINER</div>
+<div class="txt">Pre-Amp Combiner</div>
+</section>
+<section id="BM2274353"><a name="BM2274353"></a>
+<h2>2274353</h2>
+<div class="sym">ERROR: EM_RF_HUB_COMBINER_LOCATION</div>
+<div class="txt">Side of magnet, Pre-Amp Combiner</div>
+</section>
+<section id="BM2274354"><a name="BM2274354"></a>
+<h2>2274354</h2>
+<div class="sym">ERROR: EM_RF_HUB_DTRSW</div>
+<div class="txt">Dual TR Switch</div>
+</section>
+<section id="BM2274355"><a name="BM2274355"></a>
+<h2>2274355</h2>
+<div class="sym">ERROR: EM_RF_HUB_DTRSW_LOCATION</div>
+<div class="txt">Side of magnet, Dual TR Switch</div>
+</section>
+<section id="BM2274500"><a name="BM2274500"></a>
+<h2>2274500</h2>
+<div class="sym">ERROR: EM_CFB</div>
+<div class="txt">CFB</div>
+</section>
+<section id="BM2274501"><a name="BM2274501"></a>
+<h2>2274501</h2>
+<div class="sym">ERROR: EM_CFB_NOT_READY</div>
+<div class="txt">CFB node is not ready.</div>
+</section>
+<section id="BM2274502"><a name="BM2274502"></a>
+<h2>2274502</h2>
+<div class="sym">ERROR: EM_CFB_8_VOLT_LOW</div>
+<div class="txt">CFB incoming 8 Volt power supply low. Bad cable connection to PHPS or bad PHPS is likely cause. Bad CFB next likely cause.</div>
+</section>
+<section id="BM2274503"><a name="BM2274503"></a>
+<h2>2274503</h2>
+<div class="sym">ERROR: EM_CFB_5_VOLT_LOW</div>
+<div class="txt">CFB on board 5 volt power supply low. Bad CFB likely cause.</div>
+</section>
+<section id="BM2274504"><a name="BM2274504"></a>
+<h2>2274504</h2>
+<div class="sym">ERROR: EM_CFB_3V3_VOLT_LOW</div>
+<div class="txt">CFB on board 3.3 volt power supply low. Bad CFB likely cause.</div>
+</section>
+<section id="BM2274505"><a name="BM2274505"></a>
+<h2>2274505</h2>
+<div class="sym">ERROR: EM_CFB_1V2_VOLT_LOW</div>
+<div class="txt">CFB on board 1.2 volt power supply low. Bad CFB likely cause.</div>
+</section>
+<section id="BM2274506"><a name="BM2274506"></a>
+<h2>2274506</h2>
+<div class="sym">ERROR: EM_CFB_CAN_POWER_LOW</div>
+<div class="txt">CFB incoming Isolated CAN power low. Bad CAN power supply likely cause.</div>
+</section>
+<section id="BM2274507"><a name="BM2274507"></a>
+<h2>2274507</h2>
+<div class="sym">ERROR: EM_CFB_BOARD_POWER_LOW</div>
+<div class="txt">Power to CFB board is low. Bad cable connection to PHPS, bad PHPS, or Bad CFB likely cause. Look for voltage specific error messages for more information.</div>
+</section>
+<section id="BM2274508"><a name="BM2274508"></a>
+<h2>2274508</h2>
+<div class="sym">ERROR: EM_CFB_TABLE_POWER_LOW</div>
+<div class="txt">CFB detected that the table power from the PHPS is low. Bad cable connection to PHPS or bad PHPS is the likely cause.</div>
+</section>
+<section id="BM2274509"><a name="BM2274509"></a>
+<h2>2274509</h2>
+<div class="sym">ERROR: EM_CFB_MAGNET_POWER_LOW</div>
+<div class="txt">CFB detected that the magnet power from the PHPS is low. Bad cable connection to PHPS or bad PHPS is the likely cause.</div>
+</section>
+<section id="BM2274510"><a name="BM2274510"></a>
+<h2>2274510</h2>
+<div class="sym">ERROR: EM_CFB_PHPS_OVER_TEMP</div>
+<div class="txt">CFB detected that the PHPS is too hot. Bad cable connection to PHPS or bad PHPS is the likely cause.</div>
+</section>
+<section id="BM2274511"><a name="BM2274511"></a>
+<h2>2274511</h2>
+<div class="sym">ERROR: EM_CFB_PEN_WALL_CABINET_FAN</div>
+<div class="txt">CFB detected that the penetration wall cabinet fan is not operating properly Bad cable connection to cabinet fan or bad cabinet fan is the likely cause.</div>
+</section>
+<section id="BM2274512"><a name="BM2274512"></a>
+<h2>2274512</h2>
+<div class="sym">ERROR: EM_CFB_EMUL</div>
+<div class="txt">Control and monitoring of the CAN fiber board is disabled.\b\ The CAN fiber board is emulated in the mgd_stage file. Remove emulation flag and perform a TPS Reset to enable.</div>
+</section>
+<section id="BM2274513"><a name="BM2274513"></a>
+<h2>2274513</h2>
+<div class="sym">ERROR: EM_CFB_RF_HUB_DETECTION_FAILED</div>
+<div class="txt">The RF Hub node ID was not found on channel %d of the CFB.</div>
+</section>
+<section id="BM2274514"><a name="BM2274514"></a>
+<h2>2274514</h2>
+<div class="sym">ERROR: EM_CFB_SRI_DETECTION_FAILED</div>
+<div class="txt">The SRI node ID was not found on channel %d of the CFB.</div>
+</section>
+<section id="BM2274515"><a name="BM2274515"></a>
+<h2>2274515</h2>
+<div class="sym">ERROR: EM_CFB_UNEXPECTED_NODE_ID</div>
+<div class="txt">The CFB detected %d on channel %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The fiber optic connections on the CFB are likely connected to wrong channels. Channel 1 should be connected to the SRI fiber. Channel 2 should be connected to the RF Hub fiber. Channel 3 should be connected to the PAC fiber. Channel 4 should be connected to the STIF(or PSE) fiber. Channel 5 should be open. Channel 6 should be open.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Fiber Board</li><li>Dual Fiber Cable</li></ol>
+</section>
+<section id="BM2274516"><a name="BM2274516"></a>
+<h2>2274516</h2>
+<div class="sym">ERROR: EM_CFB_MCIB_SERIAL_COM_FAILED</div>
+<div class="txt">Serial Communication between CFB and MCPDB inside the PHPS is down. Check cable connection between CFB and PHPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN fiber optic board (CFB) in the penetration cabinet has a copper serial connection to the motor controller in the PHPS. The motor controller is on the MCPDB inside the PHPS and is used to control cradle motion.</div>
+</section>
+<section id="BM2274517"><a name="BM2274517"></a>
+<h2>2274517</h2>
+<div class="sym">ERROR: EM_CFB_MCIB_CAN_NODE_CFG_INCORRECT</div>
+<div class="txt">The CAN node configuration of MCPDB inside the PHPS is incorrect. The CFB is trying to set correct CAN node configuration.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN fiber optic board (CFB) in the penetration cabinet has a copper serial connection to the motor controller in the PHPS. The motor controller is on the MCPDB inside the PHPS and is used to control cradle motion.</div>
+</section>
+<section id="BM2274518"><a name="BM2274518"></a>
+<h2>2274518</h2>
+<div class="sym">ERROR: EM_CFB_MCIB_CAN_NODE_CFG_COMPLETE</div>
+<div class="txt">The CFB have set correct CAN node configuration to MCPDB inside the PHPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN fiber optic board (CFB) in the penetration cabinet has a copper serial connection to the motor controller in the PHPS. The motor controller is on the MCPDB inside the PHPS and is used to control cradle motion.</div>
+</section>
+<section id="BM2274519"><a name="BM2274519"></a>
+<h2>2274519</h2>
+<div class="sym">ERROR: EM_CFB_MCIB_CAN_NODE_CFG_FAILED</div>
+<div class="txt">The CFB could not set correct CAN node configuration to MCPDB inside the PHPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN fiber optic board (CFB) in the penetration cabinet has a copper serial connection to the motor controller in the PHPS. The motor controller is on the MCPDB inside the PHPS and is used to control cradle motion.</div>
+</section>
+<section id="BM2274520"><a name="BM2274520"></a>
+<h2>2274520</h2>
+<div class="sym">ERROR: EM_CFB_DIAG_NO_CAN_LINK</div>
+<div class="txt">CFB Diagnostic Error. CAN link object not available.</div>
+</section>
+<section id="BM2274521"><a name="BM2274521"></a>
+<h2>2274521</h2>
+<div class="sym">ERROR: EM_CFB_DIAG_CAN_DRVR_EMUL</div>
+<div class="txt">CFB Diagnostic Error. CAN driver is emulated.</div>
+</section>
+<section id="BM2274522"><a name="BM2274522"></a>
+<h2>2274522</h2>
+<div class="sym">ERROR: EM_CFB_DIAG_CAN_BRD_HDW_FAILURE</div>
+<div class="txt">CFB Diagnostic Error. PMC CAN hardware inside the SCP reported failure.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The PMC CAN card attached to the SCP in the CAM chassis has reported a hardware failure.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li></ol>
+</section>
+<section id="BM2274523"><a name="BM2274523"></a>
+<h2>2274523</h2>
+<div class="sym">ERROR: EM_CFB_DIAG_CAN_DRVR_ERROR</div>
+<div class="txt">CFB Diagnostic Error. PMC CAN driver inside the SCP reported unrecognized failure.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The driver firmware for the PMC CAN card attached to the SCP in the CAM chassis has reported an unrecognized failure.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li></ol>
+</section>
+<section id="BM2274524"><a name="BM2274524"></a>
+<h2>2274524</h2>
+<div class="sym">ERROR: EM_CFB_DIAG_CAN_CFB_EMUL</div>
+<div class="txt">CFB Diagnostic Error. CAN bus or CFB is emulated.</div>
+</section>
+<section id="BM2274525"><a name="BM2274525"></a>
+<h2>2274525</h2>
+<div class="sym">ERROR: EM_CFB_DIAG_CFB_FAILURE</div>
+<div class="txt">CFB Diagnostic Error. CFB not in correct state.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CFB is expected to be communicating and in CANopen operate state and it wasn&#x27;t. This could happen because the CFB isn&#x27;t powered or isn&#x27;t communicating on the CAN bus. Check the log for other related error messages.</div>
+</section>
+<section id="BM2274526"><a name="BM2274526"></a>
+<h2>2274526</h2>
+<div class="sym">ERROR: EM_CFB_DIAG_CFB_HWO_UNAVAILABLE</div>
+<div class="txt">CFB Diagnostic Error. Software failure: CFB HWO not available.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The software object used to control the CAN Fiber Optic Board (CFB) wasn&#x27;t available when requested. This could be due to a software internal error or an error in the SCP. Try a TPS reset to recover</div>
+</section>
+<section id="BM2274527"><a name="BM2274527"></a>
+<h2>2274527</h2>
+<div class="sym">ERROR: EM_CFB_DIAG_LINE_DIRECT_REQ_FAILED</div>
+<div class="txt">CFB Diagnostic Error. Software failure: CFB couldn&#x27;t set line direct mode. CFB Fiber Channel %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN Fiber Optic Board (CFB) interface software on the SCP or the firmware on the CFB couldn&#x27;t successfully change the state of the fiber optic channel setup as requested by the software. Try a TPS reset to recover.</div>
+</section>
+<section id="BM2274528"><a name="BM2274528"></a>
+<h2>2274528</h2>
+<div class="sym">ERROR: EM_CFB_DIAG_LOOPBACK_FAILED</div>
+<div class="txt">CFB Diagnostic Error. Loopback test of channel %d on the CFB failed</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN Fiber Optic Board (CFB) has 6 fiber optic channels for communication in and out of the scan room. This diagnostic requires that the channel on the CFB have a fiber optic loopback connector tool installed. If the connector was installed on the correct channel for the test, it likely means that the CFB fiber optic transmitter/receiver is bad or the fiber optic loopback connector is defective. Channel 1 is the SRI CANopen fiber optic connection Channel 2 is the RF Hub CANopen fiber optic connections Channel 3 is the PAC fiber optic pass through (in normal operation this passes the signal from channel 4) Channel 4 is the STIF(or PSE) fiber optic pass through (in normal operation this passes the signal from channel 3) Channel 5 is unused Channel 6 is unused</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Fiber Board</li></ol>
+</section>
+<section id="BM2274529"><a name="BM2274529"></a>
+<h2>2274529</h2>
+<div class="sym">ERROR: EM_CFB_DIAG_LOOPBACK_REQ_FAILED</div>
+<div class="txt">CFB Diagnostic Error. Software failure: request to test loopback failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN Fiber Optic Board (CFB) interface software on the SCP or the firmware on the CFB couldn&#x27;t successfully change the state of the fiber optic channel setup as requested by the software. Try a TPS reset to recover.</div>
+</section>
+<section id="BM2274530"><a name="BM2274530"></a>
+<h2>2274530</h2>
+<div class="sym">ERROR: EM_CFB_DIAG_CHANNEL_RESTORE_FAIL</div>
+<div class="txt">CFB Diagnostic Error. Software failure: request to restore channel %d failed. TPS reset may be required to recover</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN Fiber Optic Board (CFB) interface software on the SCP or the firmware on the CFB couldn&#x27;t successfully change the state of the fiber optic channel setup as requested by the software. Try a TPS reset to recover.</div>
+</section>
+<section id="BM2274531"><a name="BM2274531"></a>
+<h2>2274531</h2>
+<div class="sym">ERROR: EM_CFB_HARD_RESET_REQUESTED</div>
+<div class="txt">CFB communication error detected. Hard reset of the CFB issued to attempt automatic recovery. TPS reset may be required to recover</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN Fiber Optic Board (CFB) interface software on the SCP or the firmware on the CFB couldn&#x27;t set the sequence number required to ensure the CFB acted on the channel setting request. This could be caused due to intermittant CAN communication issues.</div>
+</section>
+<section id="BM2274532"><a name="BM2274532"></a>
+<h2>2274532</h2>
+<div class="sym">ERROR: EM_CFB_CAN_UNEXPECTED_MSG</div>
+<div class="txt">%s on the CFB received an unexpected message %d</div>
+</section>
+<section id="BM2274533"><a name="BM2274533"></a>
+<h2>2274533</h2>
+<div class="sym">ERROR: EM_CFB_NOT_READY_ARC_DETECTED</div>
+<div class="txt">RF arc detected</div>
+</section>
+<section id="BM2274534"><a name="BM2274534"></a>
+<h2>2274534</h2>
+<div class="sym">ERROR: EM_CFB_CONFIG_FILE_ERROR</div>
+<div class="txt">CFB Config File Error. Parameter %s is invalid Guided install or software reload may be required</div>
+</section>
+<section id="BM2274535"><a name="BM2274535"></a>
+<h2>2274535</h2>
+<div class="sym">ERROR: EM_CFB_ARC_DETECTOR_FAULT</div>
+<div class="txt">RF Arc detected. Arc duration %u ms, Measurement period %u ms Scanning may be retried, if failures continue service call may be required.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Using failing scan sequence reduce TG to zero counts. If reducing TG results in no further faults then inspect all body RF transmit line connections for signs of arcing.</div>
+</section>
+<section id="BM2274536"><a name="BM2274536"></a>
+<h2>2274536</h2>
+<div class="sym">ERROR: EM_CFB_ARC_DETECTOR_WARNING</div>
+<div class="txt">RF Arc warning detected. Arc duration %u ms, Measurement period %u ms</div>
+</section>
+<section id="BM2274537"><a name="BM2274537"></a>
+<h2>2274537</h2>
+<div class="sym">ERROR: EM_CFB_ARC_DETECTOR_MEASUREMENT_FAULT</div>
+<div class="txt">RF Arc measurement fault detected. Arc duration %u ms, Measurement period %u ms Scanning may be retried, if failures continue service call may be required.</div>
+<div class="lbl">Extended Error:</div><div class="txt">CFB or Arc detector may need to be replaced.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Arc Detector</li></ol>
+</section>
+<section id="BM2274538"><a name="BM2274538"></a>
+<h2>2274538</h2>
+<div class="sym">ERROR: EM_CFB_ARC_NOT_READY</div>
+<div class="txt">RF arc detector is not ready.</div>
+</section>
+<section id="BM2274539"><a name="BM2274539"></a>
+<h2>2274539</h2>
+<div class="sym">ERROR: EM_CFB_DIAG_ARC_MISSING_ARC</div>
+<div class="txt">RF arc detector diagnostic failed arc detection logic</div>
+<div class="lbl">Extended Error:</div><div class="txt">Likely a failure internal to the arc detector, recommend replacement</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Arc Detector</li></ol>
+</section>
+<section id="BM2274540"><a name="BM2274540"></a>
+<h2>2274540</h2>
+<div class="sym">ERROR: EM_CFB_DIAG_ARC_MISSING_ANTENNA</div>
+<div class="txt">RF arc detector diagnostic failed missing antenna</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the antenna is plugged in to the Arc Detector box in the magnet room. If antenna is connected, the antenna may be malfunctioning or the arc detector box may be malfunctioning.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Arc Detector</li></ol>
+</section>
+<section id="BM2274541"><a name="BM2274541"></a>
+<h2>2274541</h2>
+<div class="sym">ERROR: EM_CFB_DIAG_ARC_DETECTOR_MISSING</div>
+<div class="txt">CFB failed to detect the presence of the RF Arc Detector</div>
+<div class="lbl">Extended Error:</div><div class="txt">Arc detector fiber optic not lit at the CFB. Check fiber optic connection on the arc detector and the CFB. Then check the arc detector power is functioning. Then replace the arc detector.</div>
+</section>
+<section id="BM2274542"><a name="BM2274542"></a>
+<h2>2274542</h2>
+<div class="sym">ERROR: EM_CFB_DIAG_ARC_DIAGNOSTIC_ERROR</div>
+<div class="txt">RF arc detector diagnostic failed</div>
+<div class="lbl">Extended Error:</div><div class="txt">This indicates that a failure mode of the arc detector power-on (or manual diagnostic that may indicate a software error. Replacing the Arc Detector, Arc Detector antenna, and the CFB may resolve the fault.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Arc Detector</li></ol>
+</section>
+<section id="BM2274543"><a name="BM2274543"></a>
+<h2>2274543</h2>
+<div class="sym">ERROR: EM_CFB_ARC_DETECTOR_FAILED_AFTER_RUNNING</div>
+<div class="txt">RF arc detector failure</div>
+<div class="lbl">Extended Error:</div><div class="txt">This indicates that the arc detector had been functioning and now the arc detector appears to indicate arc events when the scan has stopped recommend running arc detector diagnostics.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Arc Detector</li></ol>
+</section>
+<section id="BM2274544"><a name="BM2274544"></a>
+<h2>2274544</h2>
+<div class="sym">ERROR: EM_ARC_DETECTOR_EMUL</div>
+<div class="txt">Control and monitoring of the RF Arc Detector is disabled.\b\ The RF Arc Detector is emulated in the mgd_stage file. Remove emulation flag and perform a TPS Reset to enable.</div>
+</section>
+<section id="BM2274545"><a name="BM2274545"></a>
+<h2>2274545</h2>
+<div class="sym">ERROR: EM_CFB_DIAG_ARC_LOOPBACK_FAILURE</div>
+<div class="txt">RF arc detector diagnostic failed arc detector circuit check</div>
+<div class="lbl">Extended Error:</div><div class="txt">Replace the arc detector module</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Arc Detector</li></ol>
+</section>
+<section id="BM2274546"><a name="BM2274546"></a>
+<h2>2274546</h2>
+<div class="sym">ERROR: EM_CFB_DIAG_ARC_MISSING_UNBLANK</div>
+<div class="txt">RF arc detector diagnostic failed missing unblank cable</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the unblank cable is plugged in to the Arc Detector box in the magnet room and at the driver module in the equipment room.</div>
+</section>
+<section id="BM2274800"><a name="BM2274800"></a>
+<h2>2274800</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_OVERRIDE_INHIBIT_FAILED</div>
+<div class="txt">Diagnostic error: RF Hub could not override the inhibit</div>
+<div class="lbl">Extended Error:</div><div class="txt">Diagnostic failed because the RF Hub could not override the state of the inhibit signal fed to the driver module. Check communication to RF Hub. TPS Reset might help as well.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li><li>CAN Fiber Board</li><li>RF Hub Control Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2274801"><a name="BM2274801"></a>
+<h2>2274801</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_OVERRIDE_TX_SWITCH_FAILED</div>
+<div class="txt">Diagnostic error: RF Hub could not override the transmit switch selection</div>
+<div class="lbl">Extended Error:</div><div class="txt">Diagnostic failed because the RF Hub could not override the state of the select signal(s) to the transmit switch(es). Check communication to the RF Hub. TPS Reset might help as well.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li><li>CAN Fiber Board</li><li>RF Hub Control Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2274802"><a name="BM2274802"></a>
+<h2>2274802</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_CONNECTOR_STATE_ACCESS_ERROR</div>
+<div class="txt">Diagnostic error: could not retrieve the connected coil information</div>
+<div class="lbl">Extended Error:</div><div class="txt">Diagnostic failed because connected coil information could not be retrieved. Refer to other error messages for more specific information.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li><li>CAN Fiber Board</li><li>RF Hub Control Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2274803"><a name="BM2274803"></a>
+<h2>2274803</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_INVALID_COIL_ID</div>
+<div class="txt">Diagnostic error: connected coil(s) have invalid coil ID</div>
+<div class="lbl">Extended Error:</div><div class="txt">Diagnostic failed because connected coil IDs are invalid. This diagnostic requires valid connected coils to run.</div>
+</section>
+<section id="BM2274804"><a name="BM2274804"></a>
+<h2>2274804</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MULTIPLE_TX_COILS</div>
+<div class="txt">Diagnostic error: multiple transmit coils are connected</div>
+<div class="lbl">Extended Error:</div><div class="txt">Diagnostic failed because both connectors A and P1 have local transmit coils connected. Remove one of the transmit coils and re-run the diagnostic.</div>
+</section>
+<section id="BM2274805"><a name="BM2274805"></a>
+<h2>2274805</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_INTERNAL_SW_ERROR</div>
+<div class="txt">Diagnostic detected an internal software error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please refer to diagnostic status display for more details. TPS Reset might also help.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2274806"><a name="BM2274806"></a>
+<h2>2274806</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_HUB_EMULATED</div>
+<div class="txt">Diagnostic error: RF Hub is emulated.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please unemulate CAN, the CFB, and the RF Hub in the mgd_stage file, TPS reset, and try again.</div>
+</section>
+<section id="BM2274807"><a name="BM2274807"></a>
+<h2>2274807</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_COILID_EMULATED</div>
+<div class="txt">Diagnostic error: Coil ID is emulated.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please unemulate Coil ID in the mgd_stage file, TPS reset, and try again.</div>
+</section>
+<section id="BM2274808"><a name="BM2274808"></a>
+<h2>2274808</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_NOT_OPERATIONAL</div>
+<div class="txt">Diagnostic error: RF Hub internal software error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub is not in the operational state. Check communications. TPS reset or power cycling the RF Hub might also help.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li><li>CAN Fiber Board</li><li>RF Hub Control Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2274809"><a name="BM2274809"></a>
+<h2>2274809</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_NO_COILID_RESPONSE</div>
+<div class="txt">Diagnostic error: coil ID host response was not received</div>
+<div class="lbl">Extended Error:</div><div class="txt">Diagnostic failed because the host response to a newly connected coil ID was not received. Check host to SCP communications. System restart might also help.</div>
+</section>
+<section id="BM2274810"><a name="BM2274810"></a>
+<h2>2274810</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_COILID_READ_FAILED</div>
+<div class="txt">Diagnostic error: coil ID could not be read</div>
+<div class="lbl">Extended Error:</div><div class="txt">Diagnostic failed because the coil ID for a newly connected coil could not be read. Try and reseat the coil. Check RF hub communications. TPS reset might also help.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li><li>CAN Fiber Board</li><li>RF Hub Control Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2274811"><a name="BM2274811"></a>
+<h2>2274811</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_NO_CAN_COMM</div>
+<div class="txt">RF Hub Diagnostic Error. RF Hub Communication to the SCP has FAILED.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check communications connections to the RF Hub. Also make sure that the there are no loopback fiber optic cables connected to the CFB.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li><li>SCP Board</li><li>RF Hub Control Board</li><li>CAN Fiber Board</li></ol>
+</section>
+<section id="BM2274812"><a name="BM2274812"></a>
+<h2>2274812</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_CFB_CHANNEL_SETUP_LINE</div>
+<div class="txt">CFB could not place the RF Hub&#x27;s fiber channel into line-direct mode.
+result= %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN Fiber Board could not place the RF Hub fiber channel into line-direct mode. Check the fiber connections at the CAN Fiber Board and RF Hub. Check the CAN copper connection at the CFB. Run CFB Diagnostics. TPS reset might also help.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li><li>Dual Fiber Cable</li><li>CAN Fiber Board</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2274813"><a name="BM2274813"></a>
+<h2>2274813</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_RRX_LOOPBACK_CMD_ERROR</div>
+<div class="txt">The IRF/RRX could not place the RF Hub CAN Fibers into loopback mode.</div>
+<div class="lbl">Extended Error:</div><div class="txt">RRX control of the RF Hub CAN fiber loopback mode failed, but the loopback test will continue in case the fiber connections on the CFB are jumpered. If the fiber connections are not jumpered, check the RRX to RF Hub cables that carry the RF Hub remote command signals and run the RRX to RF Hub Datapath Diagnostic. TPS reset might also help.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>Dual Fiber Cable</li><li>IRF Board</li></ol>
+</section>
+<section id="BM2274814"><a name="BM2274814"></a>
+<h2>2274814</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_CFB_LOOPBACK_FAILED</div>
+<div class="txt">The CFB -&gt; RF Hub loopback test failed</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN Fiber Board to RF Hub loopback test failed. Check the fiber connections at the CAN Fiber Board and RF Hub. Check the CAN copper connection at the CFB. Check the RRX to RF Hub cables; these carry the RF Hub remote command signals. Run the RRX to RF Hub Datapath Diagnostic. TPS reset might also help.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Dual Fiber Cable</li><li>RF Hub Backplane</li><li>RF Hub Control Board</li><li>CAN Fiber Board</li><li>RRx Module</li></ol>
+</section>
+<section id="BM2274815"><a name="BM2274815"></a>
+<h2>2274815</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_CFB_LOOPBACK_ERROR</div>
+<div class="txt">The CAN Fiber Board could not execute the loopback test for the RF Hub
+result= %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN Fiber Board could not execute the loopback test for the RF Hub fiber channel. This error does not indicate a problem with the RF Hub or the fibers. Run CAN Fiber Board diagnostics to isolate the problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Fiber Board</li></ol>
+</section>
+<section id="BM2274816"><a name="BM2274816"></a>
+<h2>2274816</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_CFB_CHANNEL_SETUP_CAN</div>
+<div class="txt">CFB could not place the RF Hub&#x27;s fiber channel back into CAN mode.
+result= %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN Fiber Board could not place the RF Hub fiber channel into CAN pass-through mode. Check the fiber connections at the CAN Fiber Board and RF Hub. Check the CAN copper connection at the CFB. Run CFB Diagnostics. TPS reset might also help.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Dual Fiber Cable</li><li>CAN Fiber Board</li></ol>
+</section>
+<section id="BM2274817"><a name="BM2274817"></a>
+<h2>2274817</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_DIG_PWR_BAD</div>
+<div class="txt">The RF Hub Digital Power is out of spec.</div>
+<div class="lbl">Extended Error:</div><div class="txt">RF Hub Digital Power is not required for the fiber loopback test, so this message can be considered a warning in that case. Other RF Hub diagnostics require digital power. The diagnostic will continue but fail due to this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Power Distribution Board</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2274818"><a name="BM2274818"></a>
+<h2>2274818</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_IRF3_READ_ERROR</div>
+<div class="txt">The IRF failed to read the RF Hub status via the RRX.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The remote status read of the RF Hub via the RRX failed. Check the RRX to RF Hub cable connections. Check the IRF to RRX DVMR Link fibers. Run the RRX to RF Hub Datapath Diagnostic, RRX Diagnostics, and IRF Diagnostics. The Receiver Reset Diagnostic might also help.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>Dual Fiber Cable</li><li>IRF Board</li></ol>
+</section>
+<section id="BM2274819"><a name="BM2274819"></a>
+<h2>2274819</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_BLD_TIMEOUT</div>
+<div class="txt">The RF Hub startup checks did not complete in time.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the RF Hub communication. Also verify that the electrical table is docked and that the P-connectors are engaged. Specific errors are logged in other messages.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>Dual Fiber Cable</li><li>CAN Fiber Board</li></ol>
+</section>
+<section id="BM2274820"><a name="BM2274820"></a>
+<h2>2274820</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_BLD_BAD_TABLE_DOCK</div>
+<div class="txt">Bad electrical table dock. Undock and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The diagnostic detected a problem with the electrical table dock. One or more of the coil port connectors in the table was not detected. This can occur if the electrical dock pedal was not fully depressed. Undock the table and attempt to redock it. Check the coil port cable connections at the RF Hub control board. Then re-run the diagnostic. If the problem persists, run the Coil Datapath Diagnostic that utilizes the MCRv tool to isolate the cause.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2274821"><a name="BM2274821"></a>
+<h2>2274821</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_CLOCK_READ_OFF_ERROR</div>
+<div class="txt">The IRF/RRX read clock off while the RF Hub was awake.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The diagnostic expected the RF Hub clock to be on but the RRX reported otherwise. Check the RRX to RF Hub cabling. Run the IRF, RRX, and RF Hub - Receiver Datapath Diagnostics to isolate the cause.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Backplane</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2274822"><a name="BM2274822"></a>
+<h2>2274822</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_SHUTDOWN_TIMEOUT</div>
+<div class="txt">The RF Hub did not shut down within %u milliseconds.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub was commanded to shutdown by the diagnostic, but did not complete the shutdown sequence. This could be due to bad CAN communication or a RF Hub clock state reporting problem. Detailed errors should be logged in other messages. Check the CAN cables, CAN Fibers, and RRX to RF Hub cabling. Run the CAN, CFB Loopback, RF Hub Board Level, IRF, and RRX Diagnostics to isolate the cause.</div>
+</section>
+<section id="BM2274823"><a name="BM2274823"></a>
+<h2>2274823</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_WAKEUP_TIMEOUT</div>
+<div class="txt">The RF Hub did not wake up within %u milliseconds.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub was commanded to wakeup by the diagnostic, but did not complete the wakeup sequence. This could be due to bad CAN communication or a RF Hub clock state reporting problem. Detailed errors should be logged in other messages. Check the CAN cables, CAN Fibers, and RRX to RF Hub cabling. Run the CAN, CFB Loopback, RF Hub Board Level, IRF, and RRX Diagnostics to isolate the cause.</div>
+</section>
+<section id="BM2274824"><a name="BM2274824"></a>
+<h2>2274824</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_UNEXPECTED_WAKEUP</div>
+<div class="txt">The RF Hub did not stay shutdown for the required test duration of %u milliseconds.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub was shutdown, but wokeup early before the diagnostic could command the wakeup. More specific errors may be logged in other messages. Run the RF Hub Board Level Diagnostic for more information.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>CAN Fiber Board</li><li>CAN Communication</li><li>Dual Fiber Cable</li></ol>
+</section>
+<section id="BM2274825"><a name="BM2274825"></a>
+<h2>2274825</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_IRF3_HUB_RESET_ERROR</div>
+<div class="txt">The RRX could not reset the RF Hub</div>
+<div class="lbl">Extended Error:</div><div class="txt">The remote RF Hub reset via the RRX failed. This is due to a problem with the IRF, Fibers, or RRX-1. Run the IRF and RRX diagnostics to isolate the cause.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>Dual Fiber Cable</li><li>IRF Board</li></ol>
+</section>
+<section id="BM2274826"><a name="BM2274826"></a>
+<h2>2274826</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_NG_TIMEOUT</div>
+<div class="txt">The RF Hub failed to reset CAN communication in response to the RRX hard reset</div>
+<div class="lbl">Extended Error:</div><div class="txt">The diagnostic did not detect a CAN node guarding failure after requesting the remote RF Hub hard reset via the RRX. This indicates a problem in the datapath between the RRX and RF Hub, or with the RF Hub backplane or control board. Run the RF Hub - Receiver Datapath Diagnostic and RRX diagnostics to isolate the cause.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Backplane</li><li>RF Hub Control Board</li><li>CAN Fiber Board</li><li>CAN Communication</li></ol>
+</section>
+<section id="BM2274827"><a name="BM2274827"></a>
+<h2>2274827</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_IRFLINK_BAD</div>
+<div class="txt">One or more RRX is reporting a bad IRF DVMR link connection. Failed RRX bitmap: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub detected RRx(s) that are reporting IRF DVMR Link errors. The errors were latched in a bitmap of receivers reporting faults. The least significant bit corresponds to RRX-1. If all RRxs are reporting IRF DVMR Link faults, the fibers may be bad or the link may be disconnected. Check for other error messages regarding link failures. If only some of the RRxs are reporting IRF Link faults, the RRX may need to be replaced. Run the RRX diagnostics to troubleshoot. This error could also be caused by scan induced RF noise on the RRX to RF Hub cable, or a defective RF Hub control board or backplane. Run the RF Hub - Receiver Datapath Diagnostic to troubleshoot.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>Dual Fiber Cable</li><li>RRx Module</li><li>RF Hub Backplane</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2274828"><a name="BM2274828"></a>
+<h2>2274828</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_VRFLINK_BAD</div>
+<div class="txt">One or more RRX is reporting a bad VRF Link. Failed RRX bitmap: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub detected RRx(s) that are reporting VRF Link errors. The errors were latched in a bitmap of receivers reporting faults. The least significant bit corresponds to RRX-1. If all RRxs are reporting VRF Link faults, the fibers may be bad or the link may be disconnected. Check for other error messages regarding link failures. If only some of the RRxs are reporting VRF Link faults, the RRX may need to be replaced. Run the RRX diagnostics to troubleshoot. This error could also be caused by scan induced RF noise on the RRX to RF Hub cable, or a defective RF Hub control board or backplane. Run the RF Hub - Receiver Datapath Diagnostic to troubleshoot.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>Dual Fiber Cable</li><li>RRx Module</li><li>RF Hub Backplane</li><li>RF Hub Control Board</li><li>Img Compute Node</li></ol>
+</section>
+<section id="BM2274829"><a name="BM2274829"></a>
+<h2>2274829</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_RRX_RESET_TIMEOUT</div>
+<div class="txt">The RRX did not reset in time</div>
+<div class="lbl">Extended Error:</div><div class="txt">The diagnostic did not receive a response from the RF Hub to confirm that the RRX hard reset pulse was asserted. This may be due to a problem with CAN communication. Run the RF Hub Board Level Diagnostics and the RF Hub Can Fiber Loopback diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li><li>CAN Fiber Board</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2274830"><a name="BM2274830"></a>
+<h2>2274830</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MONITOR_TIMEOUT</div>
+<div class="txt">The RF Hub did not communicate the RRX reset status in time</div>
+<div class="lbl">Extended Error:</div><div class="txt">The diagnostic did not receive a response from the RF Hub containing the RRX IRF and VRF Link states during the RRX reset. This may be due to a problem with CAN communication. Run the RF Hub Board Level Diagnostics and the RF Hub Can Fiber Loopback diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li><li>CAN Fiber Board</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2274831"><a name="BM2274831"></a>
+<h2>2274831</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_DVMRLINK_TIMED_OUT</div>
+<div class="txt">The DVMR Link driver is not responding</div>
+<div class="lbl">Extended Error:</div><div class="txt">The diagnostic did not receive a response from the DVMRLink driver when attempting to take control of the link. This is likely a software error. Run IRF, Sequencer Board, DTX, RRX, and Gradient diagnostics to isolate the problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>SRF Board</li><li>PSE Board</li><li>NB DTx Module</li><li>RRx Module</li><li>Gradient Fiber Optic Cable</li></ol>
+</section>
+<section id="BM2274832"><a name="BM2274832"></a>
+<h2>2274832</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_RRX_IRFVRF_RECOVERY_TIMEOUT</div>
+<div class="txt">RRX IRF and VRF signals did not recover after the reset. Failed RRX bitmap: 0x%x</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2274833"><a name="BM2274833"></a>
+<h2>2274833</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_IRFLINK_RESET_BAD</div>
+<div class="txt">One or more RRX is reporting an active IRF Link during the reset period. Failed RRX bitmap: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub detected RRx(s) that are reporting active IRF Links during the RRX reset period. The errors were latched in a bitmap of receivers reporting faults. The least significant bit corresponds to RRX-1. If all RRxs are reporting active IRF Links, the RRX-1 to RF Hub cables require inspection. If only some of the RRxs are reporting active IRF Links, the RRX may need to be replaced. Run the RRX diagnostics to troubleshoot. This error could also be caused by scan induced RF noise on the RRX to RF Hub cable, or a defective RF Hub control board or backplane. Run the RF Hub - Receiver Datapath Diagnostic to troubleshoot.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Control Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2274834"><a name="BM2274834"></a>
+<h2>2274834</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_VRFLINK_RESET_BAD</div>
+<div class="txt">One or more RRX is reporting an active VRF Link during the reset period. Failed RRX bitmap: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub detected RRx(s) that are reporting active VRF Links during the RRX reset period. The errors were latched in a bitmap of receivers reporting faults. The least significant bit corresponds to RRX-1. If all RRxs are reporting active VRF Links, the RRX-1 to RF Hub cables require inspection. If only some of the RRxs are reporting active VRF Links, the RRX may need to be replaced. Run the RRX diagnostics to troubleshoot. This error could also be caused by scan induced RF noise on the RRX to RF Hub cable, or a defective RF Hub control board or backplane. Run the RF Hub - Receiver Datapath Diagnostic to troubleshoot.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Control Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2274835"><a name="BM2274835"></a>
+<h2>2274835</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_NG_RECOVERY_TIMEOUT</div>
+<div class="txt">The RF Hub failed to recovery the CAN link after the reset</div>
+<div class="lbl">Extended Error:</div><div class="txt">The diagnostic did not detect a CAN link recovery after resetting the RF Hub. This is most likely a CAN communication problem. Run the CAN diagnostics and RF Hub Can Fiber Loopback diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li><li>CAN Fiber Board</li><li>Dual Fiber Cable</li><li>RF Hub Control Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2274836"><a name="BM2274836"></a>
+<h2>2274836</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_HOST_RESPONSE</div>
+<div class="txt">The Host did not respond to a coil ID request from %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Diagnostic failed because the host response to a newly connected ID was not received. Check Coil DB and RF Hub to SCP communications. Likely caused by a coil that is not yet installed.</div>
+</section>
+<section id="BM2274837"><a name="BM2274837"></a>
+<h2>2274837</h2>
+<div class="sym">ERROR: EM_RF_HUB_NO_COILS_DETECTED</div>
+<div class="txt">No coils were detected when running a Coil ID stress test</div>
+<div class="lbl">Extended Error:</div><div class="txt">Diagnostic failed because no coils were detected. Plug in a coil to one of the connectors and start the test again.</div>
+</section>
+<section id="BM2274838"><a name="BM2274838"></a>
+<h2>2274838</h2>
+<div class="sym">ERROR: EM_RF_HUB_NO_CONN_RESPONSE</div>
+<div class="txt">The Coil ID stress test timed out while waiting for a response from the coil connectors.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Diagnostic failed because no response was received. This is most likely an internal software failure.</div>
+</section>
+<section id="BM2274839"><a name="BM2274839"></a>
+<h2>2274839</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_RRX_CABLE_LOOP_ERROR</div>
+<div class="txt">The cables between the RF Hub and Receiver(s) are missing or mismatched for this channel configuration. Receiver failed bitmap: 0x%x.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The diagnostic detected improper RRX to RF Hub cabling for this system configuration. The errors were latched in a bitmap of receivers with bad cable links. The least significant bit corresponds to RRX-1. Run the RF Hub Board Level Diagnostic to log more detailed cabling errors and isolate the cause.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Backplane</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2274840"><a name="BM2274840"></a>
+<h2>2274840</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_HUB_RRX_DP_ERROR</div>
+<div class="txt">The RF Hub - RRX datapath diagnostic failed. Check RF Hub to RRX cabling.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The specific reasons that the diagnostic failed are logged separately. See the error log for more details.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>Dual Fiber Cable</li><li>IRF Board</li><li>RF Hub Backplane</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2274841"><a name="BM2274841"></a>
+<h2>2274841</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_STATUS_CONTROL_TIMEOUT</div>
+<div class="txt">The RF Hub Diagnostic timed out while waiting for external control and status requests to complete.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The specific reasons that the control or status timed out are logged separately. See the error log for more details.</div>
+</section>
+<section id="BM2274842"><a name="BM2274842"></a>
+<h2>2274842</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_LOGFILE_OPEN</div>
+<div class="txt">SCP / Host File Access Error The SCP could not open the logfile for the diagnostic on the Host.
+Logfile: %s Error code: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check Host-SCP communications and host disk space.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Ethernet Switch</li><li>Ethernet Cable</li><li>Software</li></ol>
+</section>
+<section id="BM2274843"><a name="BM2274843"></a>
+<h2>2274843</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_LOGFILE_CLOSE</div>
+<div class="txt">SCP / Host File Access Error The SCP could not close the logfile for the diagnostic on the Host.
+Logfile: %s Error code: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check Host-SCP communications and host disk space.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Ethernet Switch</li><li>Ethernet Cable</li><li>Software</li></ol>
+</section>
+<section id="BM2274844"><a name="BM2274844"></a>
+<h2>2274844</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_LOGFILE_WRITE</div>
+<div class="txt">SCP / Host File Access Error The SCP could not write to the logfile for the diagnostic on the Host.
+Logfile: %s Error code: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check Host-SCP communications and host disk space.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Ethernet Switch</li><li>Ethernet Cable</li><li>Software</li></ol>
+</section>
+<section id="BM2274845"><a name="BM2274845"></a>
+<h2>2274845</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_BIAS_CHECK_TIMEOUT</div>
+<div class="txt">SCP / RF Hub Communication Timeout The SCP did not receive a response from the RF Hub for a multicoil bias check. Check communication between the SCP, CFB, and RF Hub.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check for other CAN communication errors in the error log.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li></ol>
+</section>
+<section id="BM2274846"><a name="BM2274846"></a>
+<h2>2274846</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_SYSTEM_CONFIG_UNKNOWN</div>
+<div class="txt">System Configuration Error The system configuration was not set correctly. Check error log for previous configuration errors.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal software error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2274847"><a name="BM2274847"></a>
+<h2>2274847</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_BIAS_MISSING</div>
+<div class="txt">Hardware Configuration Error The RF Hub detected that required boards or bias modules are missing. Check error log for previous errors.</div>
+<div class="lbl">Extended Error:</div><div class="txt">For the diag to pass successfully, all required RF Hub boards and bias modules need to be present.</div>
+</section>
+<section id="BM2274848"><a name="BM2274848"></a>
+<h2>2274848</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_COIL_ID_STATE</div>
+<div class="txt">Coil ID Failure The diagnostic failed because a coil ID operation was in progress or incomplete. This could be caused by a coil not installed by the system.
+Connector: %s
+Internal state: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">Restart the system and try again. If this persists, make sure the coil is installed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2274849"><a name="BM2274849"></a>
+<h2>2274849</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_COIL_ID_INVALID</div>
+<div class="txt">Coil ID Failure The diagnostic failed because a coil ID was detected that is invalid. Check error log for previous errors.
+Connector: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the error log for the more detailed error.</div>
+</section>
+<section id="BM2274850"><a name="BM2274850"></a>
+<h2>2274850</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_COIL_ID_MCRV</div>
+<div class="txt">Coil ID Failure The diagnostic failed because the MCRv tool was detected. This diagnostic is not compatible with the MCRv tool.
+Connector: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Remove the MCRv tool and run the diagnostic again.</div>
+</section>
+<section id="BM2274851"><a name="BM2274851"></a>
+<h2>2274851</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_RRX_DP_MONITOR_TIMEOUT</div>
+<div class="txt">The RF Hub did not communicate the RRX to RF Hub cable connection data in time</div>
+<div class="lbl">Extended Error:</div><div class="txt">Look for CAN communication errors in the log.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li><li>RF Hub Control Board</li><li>CAN Fiber Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2274852"><a name="BM2274852"></a>
+<h2>2274852</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_RRX_DP_SCAN_SETUP_TIMEOUT</div>
+<div class="txt">The RF Hub did not communicate the Unblank/R1 index/Bias index data in time</div>
+<div class="lbl">Extended Error:</div><div class="txt">Look for CAN communication errors in the log.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li><li>RF Hub Control Board</li><li>CAN Fiber Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2274853"><a name="BM2274853"></a>
+<h2>2274853</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_SYSTEM_CONFIG_CHANGED</div>
+<div class="txt">RF Hub Configuration Error The RF Hub hardware configuration changed. Please reload the diagnostic.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub hardware configuration is set by a combination of guided install configuration and RF Hub automatic board type detection. The diagnostic needs to be initiated using the current hardware configuration. If the RF Hub hardware was recently changed without reloading the diagnostic page, the diagnostic&#x27;s RF Hub hardware configuration can become out of synch and require a reload.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2274900"><a name="BM2274900"></a>
+<h2>2274900</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_MONITOR_TIMEOUT</div>
+<div class="txt">The RF Hub did not respond to the Coil Datapath Diagnostic request for status.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check RF Hub communication. See the error log for more detailed errors. If there are no additional details available, run the RF Hub CAN Fiber Loopback diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>CAN Fiber Board</li></ol>
+</section>
+<section id="BM2274901"><a name="BM2274901"></a>
+<h2>2274901</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_CABLE_DETECT_MISSING</div>
+<div class="txt">The diagnostic did not detect the MCRv tool or a system coil port connector attached to Port P%d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the 25-pin digital control cabling to the MCRv tool or the system coil port.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2274902"><a name="BM2274902"></a>
+<h2>2274902</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_FOUND_MCRV_RUNNING_AT_PORT</div>
+<div class="txt">The diagnostic detected the MCRv tool at a service interface instead of the selected P%d Coil Connector.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the MCRv tool Connection Point, check the MCRv tool connections, and rerun the diagnostic.</div>
+</section>
+<section id="BM2274903"><a name="BM2274903"></a>
+<h2>2274903</h2>
+<div class="sym">ERROR: EM_OBSOLETE_RF_HUB_DIAG</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2274904"><a name="BM2274904"></a>
+<h2>2274904</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_NOT_FOUND_AT_PORT</div>
+<div class="txt">The diagnostic did not detect the MCRv tool control cable at the selected Port P%d and Connection Point.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The MCRv Tool&#x27;s control cable detection expected resistance was not detected at the selected port control path. Check the MCRv Tool Connection Point, the 25-pin control cable at the MCRv Tool (J2), and the connection to the control port at the connection point service service interface.</div>
+</section>
+<section id="BM2274905"><a name="BM2274905"></a>
+<h2>2274905</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_COILID_TIMEOUT</div>
+<div class="txt">The Coil IDs could not be read. See the error log for more details.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check RF Hub, SCP, and Host communication.</div>
+</section>
+<section id="BM2274906"><a name="BM2274906"></a>
+<h2>2274906</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_BIAS_CONNA_DC_FAULTS</div>
+<div class="txt">Connector A bias faults were detected exclusively on the DC bias path.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The MCRv tool places a diode-resistive load on the DC bias path on the 37-Pin control cable for Connector A. The load is reversed biased and appears as an open circuit for positive bias currents and voltages, and as a resistive load for negative bias currents and voltages. This error message indicates that only the negative current/voltage bias checks failed. Check the Connector A DC bias path from the RFCB J6, through the cable track, to Connector A on the LPCA.</div>
+</section>
+<section id="BM2274907"><a name="BM2274907"></a>
+<h2>2274907</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_BIAS_CONNA_RF_FAULTS</div>
+<div class="txt">Connector A bias faults were detected exclusively on the RF bias path.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The MCRv tool places a diode-resistive load on the RF bias path on the 8W8 RF cable cable for Connector A. The load is reversed biased and appears as an open circuit for negative bias currents and voltages, and as a resistive load for positive bias currents and voltages. This error message indicates that only the positive current/voltage bias checks failed. Check the Connector A RF bias path from the RF Switchboard, through the reroute box, and the cable track, to Connector A on the LPCA.</div>
+</section>
+<section id="BM2274908"><a name="BM2274908"></a>
+<h2>2274908</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_MC_SHORT</div>
+<div class="txt">Coil Fault - Short Circuit A multicoil bias fault was detected on the selected channel.
+Connector: %b
+Channel: %ld of %ld, counting from 1
+Fault value: %ld mV</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error could be caused by a faulty MCRv tool, RF cable, or RF Hub hardware. Re-run the diagnostic with a different MCRv tool and/or RF cable. If this still fails, run the Multicoil Bias diagnostic to test the RF Hub hardware.</div>
+</section>
+<section id="BM2274909"><a name="BM2274909"></a>
+<h2>2274909</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_MC_OPEN</div>
+<div class="txt">Coil Fault - Open Circuit A multicoil bias fault was detected on the selected channel.
+Connector: %b
+Channel: %ld of %ld, counting from 1
+Fault value: %ld mV</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check RF cable connection between the RF Hub Switchboard (RFSB) and the MCRv tool and re-run the Coil Datapath Diagnostic. If the connectors are secure and the diagnostic instructions were followed, then this error might be caused by a faulty MCRv tool, faulty cabling, or faulty RF Hub hardware. To test each of these cases, re-run the Coil Datapath Diagnostic with a different MCRv tool and/or with the other RF cable. If another MCRv tool is not available, run the Multicoil Bias Diagnostic with a coil connected that uses the failing channel.</div>
+</section>
+<section id="BM2274910"><a name="BM2274910"></a>
+<h2>2274910</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_MC_NOT_SHORT</div>
+<div class="txt">Coil Fault - Short Circuit not detected when condition induced. A multicoil bias fault was detected on the selected channel.
+Connector: %b
+Channel: %ld of %ld, counting from 1
+Fault value: %ld mV</div>
+<div class="lbl">Extended Error:</div><div class="txt">The diagnostic induced a short circuit condition, but the selected channel did not fault. This error could indicate a RF Hub hardware problem. Try to replace the driver board (MCDB or RFCB) for this channel and re-run the diagnostic.</div>
+</section>
+<section id="BM2274911"><a name="BM2274911"></a>
+<h2>2274911</h2>
+<div class="sym">ERROR: EM_RF_HUB_MCRV_MC_VOLT_TOLERANCE</div>
+<div class="txt">Multicoil Bias Drive Fault The diagnostic detected that the multicoil bias voltage was not driven correctly on the selected channel.
+Connector: %b
+Channel: %ld of %ld
+Driven: %ld mV, Read: %ld mV</div>
+<div class="lbl">Extended Error:</div><div class="txt">The bias voltage read-back in voltage sourcing mode was not within the tolerance of the system. Look for a corresponding current tolerance fault in the diagnostic logfile.
+If there is a current tolerance fault present on the same channel, that indicates that the coil datapath resistance is out of tolerance. In that case, try and swap the MCRv tool and/or RF cable, and re-run the diagnostic.
+If there is no corresponding current tolerance fault in the logfile, this error may be due to faulty RF Hub hardware. In that case, run the Multicoil Bias diagnostic for more information.</div>
+</section>
+<section id="BM2274912"><a name="BM2274912"></a>
+<h2>2274912</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_MC_NOT_SHORT_CONNECTOR</div>
+<div class="txt">Coil Fault - NOT Short Circuit when condition induced. A multicoil bias fault was detected on the selected channel.
+Connector: %b Channels faulted: 0x%lx
+First channel: %ld of %ld, counting from 1
+Fault value: %ld mV, Channel: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The diagnostic induced a short circuit condition, but the selected port did not detect faults on all channels. Re-run the Coil Datapath Diagnostic at the RF Hub Switchboard (RFSB) for one. of the failing channels.</div>
+</section>
+<section id="BM2274913"><a name="BM2274913"></a>
+<h2>2274913</h2>
+<div class="sym">ERROR: EM_RF_HUB_MCRV_MC_CURR_TOLERANCE_CONNECTOR</div>
+<div class="txt">Multicoil Bias Drive Fault The diagnostic detected that the multicoil bias current was not driven correctly.
+Connector: %b Fault bitmap: 0x%lx, Used bitmap: 0x%lx
+First channel: %ld of %ld
+Driven: %ld mA, Expected (%ld - %ld) mV, Read: %ld mV</div>
+<div class="lbl">Extended Error:</div><div class="txt">The coil datapath resistance is out of tolerance. Re-run the Coil Datapath Diagnostic at a closer (to the RF Hub) insertion point to isolate the faulty path segment.</div>
+</section>
+<section id="BM2274914"><a name="BM2274914"></a>
+<h2>2274914</h2>
+<div class="sym">ERROR: EM_RF_HUB_MCRV_MC_CURR_TOLERANCE_CHANNEL</div>
+<div class="txt">Multicoil Bias Drive Fault The diagnostic detected that the multicoil bias current was not driven correctly on the selected channel.
+Connector: %b
+Channel: %ld of %ld
+Driven: %ld mA, Expected (%ld - %ld) mV, Read: %ld mV</div>
+<div class="lbl">Extended Error:</div><div class="txt">The coil datapath resistance for the selected channel is out of tolerance. This may be due to a faulty MCRv tool, RF cable, or RF Hub hardware. Re-run the diagnostic with a different MCRv tool and/or RF cable. If the error persists, try and swap the RF Hub driver board (MCDB or RFCB) and re-run the diagnostic.</div>
+</section>
+<section id="BM2274915"><a name="BM2274915"></a>
+<h2>2274915</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_RRX_EMULATED</div>
+<div class="txt">Diagnostic error: RRx is emulated.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please unemulate RRx in the mgd_stage file, TPS reset, and try again.</div>
+</section>
+<section id="BM2274916"><a name="BM2274916"></a>
+<h2>2274916</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_IRF_NOT_READY</div>
+<div class="txt">IRF hardware is not ready. Please check IRF hardware is properly connected.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2274917"><a name="BM2274917"></a>
+<h2>2274917</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_RRX_DATA_ACQ_ERROR</div>
+<div class="txt">RRx/VRE data acquisition failed for diagnostic. Please check RRx is properly connected to VRE. See the error log for more details.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The specific reasons that the diagnostic failed are logged separately. See the error log for more details.</div>
+</section>
+<section id="BM2274918"><a name="BM2274918"></a>
+<h2>2274918</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_COIL_AT_WRONG_CONN</div>
+<div class="txt">The Diagnostic detected the MCRv tool at an unselected port.
+Detected Connector Port: %s
+Selected Connector Port: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the connections. If the connection instructions were followed check the Port P1-P4 25-Pin control cable paths from the RF Hub RFCB to the coil ports in the LPCA or the Table to make sure that they are not swapped. Run the Coil ID Diagnostic for more information.</div>
+</section>
+<section id="BM2274919"><a name="BM2274919"></a>
+<h2>2274919</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_COIL_NOT_MCRV_AT_CONN</div>
+<div class="txt">The Diagnostic detected a coil other than MCRv tool at the selected port.
+Coil Name: %s
+Selected Connector Port: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Disconnect all coils and re-run the diagnostic.</div>
+</section>
+<section id="BM2274920"><a name="BM2274920"></a>
+<h2>2274920</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_COIL_NOT_MCRV_AT_WRONG_CONN</div>
+<div class="txt">The Diagnostic detected a coil other than MCRv tool at an unselected port.
+Coil Name: %s
+Detected Connector Port: %s
+Selected Connector Port: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Disconnect all coils except the MCRv tool and re-run the diagnostic.</div>
+</section>
+<section id="BM2274921"><a name="BM2274921"></a>
+<h2>2274921</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_COIL_1_WIRE_READ_FAIL</div>
+<div class="txt">The Diagnostic failed to read the 1-wire MCRv ID.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Re-seat the MCRv tool connections and re-run the diagnostic. If the error persists, check the connections in the control cable path for the selected port, from the RFCB to the MCRv tool to make sure that the connectors are fully seated, and re-run the diagnostic. If the error persists, run the Coil ID Diagnostic.</div>
+</section>
+<section id="BM2274922"><a name="BM2274922"></a>
+<h2>2274922</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_BTE_NOT_SET_ERROR</div>
+<div class="txt">The Diagnostic detected that body transmit is not enabled for selected connector.
+Connector: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The body transmit line was not shorted. It is expected that the MCRv tool will short this line to ground. If the diagnostic was run at the coil connector, try a different insertion point and re-run the diagnostic to test the MCRv coil connector control cable. If the diagnostic was not run at the coil connector, try the coil connector insertion point and re-run the diagnostic to test the MCRv control cable. If the error persists, re-run the diagnostic at the RF Hub RFSB insertion point to isolate to a failure in the system control cable path between the RFCB and the coil connector. If the error persists, re-run the diagnostic with a different MCRv tool. If the error persists, replace the RF Hub RFCB and re-run the diagnostic.</div>
+</section>
+<section id="BM2274923"><a name="BM2274923"></a>
+<h2>2274923</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_BTE_SET_ERROR</div>
+<div class="txt">The Diagnostic detected that body transmit is enabled for an unselected connector.
+Connector: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The body transmit line for an unselected port was shorted. The default BTE state for unconnected coil ports should be open. Disconnect the failing control cable path at successively closer (to the RF Hub) insertion points and re-run the diagnostic to isolate the faulty segment of the control cable path. If the error persists even with the control cable disconnected from the RF Hub RFCB, replace the RFCB and re-run the diagnostic.</div>
+</section>
+<section id="BM2274924"><a name="BM2274924"></a>
+<h2>2274924</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_DC_HEALTH_ERROR</div>
+<div class="txt">The Diagnostic detected that DC health is not correct for the given connector.
+Connector: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The MCRv tool +10V power from the RF Hub is bad. Run the diagnostic at a closer (to the RF Hub) insertion point to isolate the faulty segment of the control path. If the error persists at the RF Hub RFSB insertion point, run the RF Hub Board Level Diagnostic to test for power distribution errors. If the RF Hub Board Level Diagnostic passes, replace the RFCB and re-run the Coil Datapath Diagnostic.</div>
+</section>
+<section id="BM2274925"><a name="BM2274925"></a>
+<h2>2274925</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_RF_HEALTH_ERROR</div>
+<div class="txt">The Diagnostic detected that RF health is not correct for the given connector.
+Connector: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the diagnostic logfile for MUX select errors and troubleshoot those signals. If there are no MUX select errors in the logfile, re-run the diagnostic with a different MCRv tool.</div>
+</section>
+<section id="BM2274926"><a name="BM2274926"></a>
+<h2>2274926</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_MUX_WRITE_ERROR</div>
+<div class="txt">The Diagnostic encounter a mux write error for the given line number.
+Line: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">Run the diagnostic at a closer (to the RF Hub) insertion point to isolate the faulty segment of the control path. If the error persists at the RF Hub RFSB insertion point, run the diagnostic with a different MCRv tool and/or control cable. If the error persists, replace the RF Hub RFCB and re-run the diagnostic.</div>
+</section>
+<section id="BM2274927"><a name="BM2274927"></a>
+<h2>2274927</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_RF_TEST_ERROR</div>
+<div class="txt">The Diagnostic RF signal test failed. Please see the log for details.
+First channel: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the diagnostic logfile for corresponding bias faults and follow the troubleshooting procedure for those errors if there are any. If there are no bias faults, run the diagnostic at a closer (to the RF Hub) insertion point to isolate the faulty segment of the RF datapath. If the error persists at the RF Hub RFSB insertion point, run the RF Calibration diagnostic. If the RF Calibration diagnostic passes, check the RF connections from the MCRv tool to the RFSB and from the RF Hub chassis to the Receiver(s) and re-run the Coil Datapath diagnostic. If the error persists, re-run the diagnostic using a different MCRv tool and/or RF cable. If the error persists, replace the RFSB and re-run the diagnostic.</div>
+</section>
+<section id="BM2274928"><a name="BM2274928"></a>
+<h2>2274928</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_FAILED</div>
+<div class="txt">The Diagnostic failed. Please see the log for details.</div>
+<div class="lbl">Extended Error:</div><div class="txt">See the system error log for the first failure, and the diagnostic logfile for all of the diagnostic error information.</div>
+</section>
+<section id="BM2274929"><a name="BM2274929"></a>
+<h2>2274929</h2>
+<div class="sym">ERROR: EM_OBSOLETE_RF_HUB_DIAG_2</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2274930"><a name="BM2274930"></a>
+<h2>2274930</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_OTHER_ERRORS</div>
+<div class="txt">Errors were detected on other channels not under test. See the diagnostic log file for more details.</div>
+<div class="lbl">Extended Error:</div><div class="txt">See the diagnostic logfile for the details regarding failures on other, unselected channels. If there are open circuit faults on the selected connector and short circuit faults on unselected connectors/channels, check the connections and the coil datapaths for these connectors/channels, as this typically indicates a swapped cables in the datapaths.</div>
+</section>
+<section id="BM2274931"><a name="BM2274931"></a>
+<h2>2274931</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_IRF_EMULATED</div>
+<div class="txt">Diagnostic error: IRF is emulated.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please unemulate IRF in the mgd_stage file, TPS reset, and try again.</div>
+</section>
+<section id="BM2274932"><a name="BM2274932"></a>
+<h2>2274932</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_NOT_DETECTED</div>
+<div class="txt">The MCRv tool was not detected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please check the MCRv tool is properly connected. Check the control cable connection to the MCRv, and re-seat the connector at the insertion point. If the error persists, run the Coil ID Diagnostic with the MCRv tool connected.</div>
+</section>
+<section id="BM2274933"><a name="BM2274933"></a>
+<h2>2274933</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_MCRV_ACQ_SW_ERROR</div>
+<div class="txt">An internal software error occurred during RF signal acquisition and processing.</div>
+<div class="lbl">Extended Error:</div><div class="txt">An unexpected internal software error occurred. Please submit a a complaint.</div>
+</section>
+</body></html>

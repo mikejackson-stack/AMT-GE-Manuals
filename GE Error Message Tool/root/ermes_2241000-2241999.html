@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2241000-2241999 (168)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2241000-2241999 (168)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2240000-2240999.html">&larr; 2240000-2240999</a><a href="ermes_2242000-2242999.html">2242000-2242999 &rarr;</a></nav></header>
+<section id="BM2241074"><a name="BM2241074"></a>
+<h2>2241074</h2>
+<div class="sym">ERROR: EM_JBP_INIT_FAIL</div>
+<div class="txt">Workspace Interface Module, WIM, failed memory tests or DUART initialization. Please Reset TPS. If error is persistent, disconnect and reconnect the power cable to the WIM. If error still exists, replace the WIM.</div>
+</section>
+<section id="BM2241075"><a name="BM2241075"></a>
+<h2>2241075</h2>
+<div class="sym">ERROR: EM_JBP_HKP_INIT_FAIL</div>
+<div class="txt">Hardkey Processor in the keyboard failed initialization request from Workspace Interface Module. Please Reset TPS. %b</div>
+</section>
+<section id="BM2241076"><a name="BM2241076"></a>
+<h2>2241076</h2>
+<div class="sym">ERROR: EM_JBP_CPB_BUSY</div>
+<div class="txt">Workspace PC is not available for waveform processing. Close out all applications on the PC and reboot the Workspace PC for waveform processing.</div>
+</section>
+<section id="BM2241077"><a name="BM2241077"></a>
+<h2>2241077</h2>
+<div class="sym">ERROR: EM_JBP_CPB_NOT_BUSY</div>
+<div class="txt">Workspace PC is available for waveform processing.</div>
+</section>
+<section id="BM2241078"><a name="BM2241078"></a>
+<h2>2241078</h2>
+<div class="sym">ERROR: EM_JBP_BAD_SPI_OPCODE</div>
+<div class="txt">SPI sent an unknown opcode to Workspace Interface Module. Opcode=0x%x First, run diagnostics to test SPI to Workspace Interface Module Communication. If problem persists, check cable connections, power cycle Workspace Interface Module &amp; Reset TPS.</div>
+</section>
+<section id="BM2241079"><a name="BM2241079"></a>
+<h2>2241079</h2>
+<div class="sym">ERROR: EM_JBP_BAD_CPB_OPCODE</div>
+<div class="txt">Workspace Interface Module received a bad opcode from Workspace PC over serial link. Opcode = 0x%x. %b</div>
+</section>
+<section id="BM2241080"><a name="BM2241080"></a>
+<h2>2241080</h2>
+<div class="sym">ERROR: EM_JBP_BAD_HKP_OPCODE</div>
+<div class="txt">Workspace Interface Module received a bad opcode from Hardkey Processor in keyboard over serial link. Opcode = 0x%x. %b</div>
+</section>
+<section id="BM2241081"><a name="BM2241081"></a>
+<h2>2241081</h2>
+<div class="sym">ERROR: EM_JBP_NO_SPI_RESPONSE</div>
+<div class="txt">SPI did not send a response to Workspace Interface Module over serial link. First, run diagnostics to test SPI to Workspace Interface Module Communication. If error persists, check cable connections, power cycle Workspace Interface Module &amp; Reset TPS.</div>
+</section>
+<section id="BM2241082"><a name="BM2241082"></a>
+<h2>2241082</h2>
+<div class="sym">ERROR: EM_JBP_NO_CPB_RESPONSE</div>
+<div class="txt">Workspace Interface Module did not receive a response packet from Workspace PC over serial link. %b</div>
+</section>
+<section id="BM2241083"><a name="BM2241083"></a>
+<h2>2241083</h2>
+<div class="sym">ERROR: EM_JBP_NO_HKP_RESPONSE</div>
+<div class="txt">Workspace Interface Module did not receive a response packet from Hardkey Processor in keyboard over serial link. %b</div>
+</section>
+<section id="BM2241084"><a name="BM2241084"></a>
+<h2>2241084</h2>
+<div class="sym">ERROR: EM_JBP_SPI_SERIAL_ERROR</div>
+<div class="txt">Serial link error between Workspace Interface Module and SPI. First, run diagnostics to test SPI to Workspace Interface Module Communication. If error persists, check cable connections, power cycle Workspace Interface Module and Reset TPS.</div>
+</section>
+<section id="BM2241085"><a name="BM2241085"></a>
+<h2>2241085</h2>
+<div class="sym">ERROR: EM_JBP_CPB_SERIAL_ERROR</div>
+<div class="txt">Serial link error between Workspace Interface Module and Workspace PC. %b</div>
+</section>
+<section id="BM2241086"><a name="BM2241086"></a>
+<h2>2241086</h2>
+<div class="sym">ERROR: EM_JBP_HKP_SERIAL_ERROR</div>
+<div class="txt">Serial link error between Workspace Interface Module and Hardkey Processor in keyboard. %b</div>
+</section>
+<section id="BM2241087"><a name="BM2241087"></a>
+<h2>2241087</h2>
+<div class="sym">ERROR: EM_JBP_DEBUG_SERIAL_ERROR</div>
+<div class="txt">Serial link error between Workspace Interface Module and Debug Terminal. If you see this in the field, and the communication paths to the Workspace Interface Module are functioning properly, write a CQA.</div>
+</section>
+<section id="BM2241088"><a name="BM2241088"></a>
+<h2>2241088</h2>
+<div class="sym">ERROR: EM_JBP_LOOPBACK_ERROR</div>
+<div class="txt">Workspace Interface Module to Workspace PC loopback test failed. The Workspace PC must be running the waveform display program for this test to pass. Check cable connections, power cycle Workspace Interface Module and reboot Workspace PC.</div>
+</section>
+<section id="BM2241089"><a name="BM2241089"></a>
+<h2>2241089</h2>
+<div class="sym">ERROR: EM_JBP_EMERGENCY_STOP</div>
+<div class="txt">Emergency Stop Key Pressed.</div>
+</section>
+<section id="BM2241090"><a name="BM2241090"></a>
+<h2>2241090</h2>
+<div class="sym">ERROR: EM_JBP_RECOVERY_PLAN</div>
+<div class="txt">If error persists, disconnect and reconnect power cable to Workspace Interface Module and verify cable connection between keyboard and Workspace Interface Module If error still persists, replace keyboard, keyboard cable and Workspace Interface Module.</div>
+</section>
+<section id="BM2241091"><a name="BM2241091"></a>
+<h2>2241091</h2>
+<div class="sym">ERROR: EM_JBP_PC_RECOVERY_PLAN</div>
+<div class="txt">First, run diagnostics to test Workspace Interface Module to Workspace PC communication. If error persists, check cable connections, power cycle Workspace Interface Module and reboot Workspace PC.</div>
+</section>
+<section id="BM2241092"><a name="BM2241092"></a>
+<h2>2241092</h2>
+<div class="sym">ERROR: EM_JBP_HKP_RECOVERY_PLAN</div>
+<div class="txt">First, run diagnostics to test Workspace Interface Module to Hardkey Processor, in the keyboard, communication. If error persists, check cable connections, and power cycle Workspace Interface Module.</div>
+</section>
+<section id="BM2241150"><a name="BM2241150"></a>
+<h2>2241150</h2>
+<div class="sym">ERROR: EM_JBP_KEYBOARD_ERROR</div>
+<div class="txt">Workspace Interface Module detected a keyboard error. Please Reset TPS. If error persists, power cycle Workspace Interface Module and check keyboard. If error still persists, replace keyboard.</div>
+</section>
+<section id="BM2241160"><a name="BM2241160"></a>
+<h2>2241160</h2>
+<div class="sym">ERROR: EM_JBP_MOUSE_ERROR</div>
+<div class="txt">Workspace Interface Module detected a mouse error. Please Reset TPS. If error persists, power cycle Workspace Interface Module, check keyboard and mouse. If error still persists, replace mouse and then keyboard and keyboard cable.</div>
+</section>
+<section id="BM2241170"><a name="BM2241170"></a>
+<h2>2241170</h2>
+<div class="sym">ERROR: EM_JBP_DIAG_DATA_ERROR</div>
+<div class="txt">IPG BOARD - SPI WIM LPBK ERROR. Pattern sent to Workspace Interface Module by SPI was not the same as \ pattern received.
+Channel No.: %d
+Pattern Sent: %08xH
+Pattern Expected: %08xH
+Pattern Read: %08xH HW Used: TPS IPG,TYME,WIM,Cables</div>
+</section>
+<section id="BM2241171"><a name="BM2241171"></a>
+<h2>2241171</h2>
+<div class="sym">ERROR: EM_JBP_DIAG_OPCODE_ERROR</div>
+<div class="txt">Opcode received from Workspace Interface Module doesn&#x27;t match expected opcode
+Channel No.: %d
+Opcode Sent: %08xH
+Opcode Expected: %08xH
+Opcode Read: %08xH HW Used: TPS IPG,TYME,WIM,Cables</div>
+</section>
+<section id="BM2241172"><a name="BM2241172"></a>
+<h2>2241172</h2>
+<div class="sym">ERROR: EM_JBP_DIAG_XMIT_TIMEOUT_ERR</div>
+<div class="txt">IPG BOARD - SPI WIM ERROR. SPI UART channel connected to Workspace Interface Module timed out. \ UART channel did not get set in the transmit mode in a fixed time period. Channel No.: 2</div>
+</section>
+<section id="BM2241173"><a name="BM2241173"></a>
+<h2>2241173</h2>
+<div class="sym">ERROR: EM_JBP_DIAG_RECV_TIMEOUT_ERR</div>
+<div class="txt">IPG BOARD - SPI WIM LOOPBACK ERROR. No data was received at the SPI from the WIM. Check that the WIM is properly connected and powered up.</div>
+</section>
+<section id="BM2241374"><a name="BM2241374"></a>
+<h2>2241374</h2>
+<div class="sym">ERROR: EM_HRECN_RESUME</div>
+<div class="txt">Host Recon Status Resume command was received.</div>
+</section>
+<section id="BM2241375"><a name="BM2241375"></a>
+<h2>2241375</h2>
+<div class="sym">ERROR: EM_HRECN_STOP</div>
+<div class="txt">Host Recon Status Stop command was received.</div>
+</section>
+<section id="BM2241376"><a name="BM2241376"></a>
+<h2>2241376</h2>
+<div class="sym">ERROR: EM_HRECN_STOP_ALL</div>
+<div class="txt">Host Recon Status Stop All command was received.</div>
+</section>
+<section id="BM2241377"><a name="BM2241377"></a>
+<h2>2241377</h2>
+<div class="sym">ERROR: EM_HRECN_TPS_RESET_START</div>
+<div class="txt">Host Recon Status TPS is resetting.</div>
+</section>
+<section id="BM2241378"><a name="BM2241378"></a>
+<h2>2241378</h2>
+<div class="sym">ERROR: EM_HRECN_UNEXPCT_OPCODE</div>
+<div class="txt">Host Recon Error A unexpected opcode (%d) was received.</div>
+</section>
+<section id="BM2241379"><a name="BM2241379"></a>
+<h2>2241379</h2>
+<div class="sym">ERROR: EM_HRECN_MAILINIT_FAIL</div>
+<div class="txt">Host Recon Error Unable to initialize MrMail.</div>
+</section>
+<section id="BM2241380"><a name="BM2241380"></a>
+<h2>2241380</h2>
+<div class="sym">ERROR: EM_HRECN_INIT_IMGBUF_TWICE</div>
+<div class="txt">Host Recon Error Image Buffer was initialized twice.</div>
+</section>
+<section id="BM2241381"><a name="BM2241381"></a>
+<h2>2241381</h2>
+<div class="sym">ERROR: EM_HRECN_INIT_RAWBUF_TWICE</div>
+<div class="txt">Host Recon Error Raw Buffer was initialized twice.</div>
+</section>
+<section id="BM2241382"><a name="BM2241382"></a>
+<h2>2241382</h2>
+<div class="sym">ERROR: EM_HRECN_PACK_CREATE_FAIL</div>
+<div class="txt">Host Recon Error Unable to create a mail packet.</div>
+</section>
+<section id="BM2241383"><a name="BM2241383"></a>
+<h2>2241383</h2>
+<div class="sym">ERROR: EM_HRECN_PACK_REPLY_FAIL</div>
+<div class="txt">Host Recon Error Unable to reply to a mail packet.</div>
+</section>
+<section id="BM2241384"><a name="BM2241384"></a>
+<h2>2241384</h2>
+<div class="sym">ERROR: EM_HRECN_PACK_SEND_FAIL</div>
+<div class="txt">Host Recon Error Unable to send a mail packet.</div>
+</section>
+<section id="BM2241385"><a name="BM2241385"></a>
+<h2>2241385</h2>
+<div class="sym">ERROR: EM_HRECN_GET_BUFCONT_FAIL</div>
+<div class="txt">Host Recon Error Unable to get bufcontent from a mail packet.</div>
+</section>
+<section id="BM2241386"><a name="BM2241386"></a>
+<h2>2241386</h2>
+<div class="sym">ERROR: EM_HRECN_SHMAT_FAIL</div>
+<div class="txt">Host Recon Error shmat() failed.</div>
+</section>
+<section id="BM2241387"><a name="BM2241387"></a>
+<h2>2241387</h2>
+<div class="sym">ERROR: EM_HRECN_SHMCTL_FAIL</div>
+<div class="txt">Host Recon Error shmctl() failed.</div>
+</section>
+<section id="BM2241388"><a name="BM2241388"></a>
+<h2>2241388</h2>
+<div class="sym">ERROR: EM_HRECN_SHMGET_FAIL</div>
+<div class="txt">Host Recon Error shmget() failed.</div>
+</section>
+<section id="BM2241389"><a name="BM2241389"></a>
+<h2>2241389</h2>
+<div class="sym">ERROR: EM_HRECN_SHM_INFO_RESP_TIMEOUT</div>
+<div class="txt">Host Recon Error Host Recon timed out waiting for shared memory key response. Check if Recon Manager is alive.</div>
+</section>
+<section id="BM2241390"><a name="BM2241390"></a>
+<h2>2241390</h2>
+<div class="sym">ERROR: EM_HRECN_INVALID_JOB_REQ</div>
+<div class="txt">Host Recon Error Invalid Job Req was received.</div>
+</section>
+<section id="BM2241391"><a name="BM2241391"></a>
+<h2>2241391</h2>
+<div class="sym">ERROR: EM_HRECN_INVALID_PAUSE_REQ</div>
+<div class="txt">Host Recon Error Invalid Pause Req was received.</div>
+</section>
+<section id="BM2241392"><a name="BM2241392"></a>
+<h2>2241392</h2>
+<div class="sym">ERROR: EM_HRECN_INVALID_RESUME_REQ</div>
+<div class="txt">Host Recon Error Invalid Resume Req was received.</div>
+</section>
+<section id="BM2241393"><a name="BM2241393"></a>
+<h2>2241393</h2>
+<div class="sym">ERROR: EM_HRECN_INVALID_CLEAR_ALL_REQ</div>
+<div class="txt">Host Recon Error Invalid Clear All Req was received.</div>
+</section>
+<section id="BM2241394"><a name="BM2241394"></a>
+<h2>2241394</h2>
+<div class="sym">ERROR: EM_HRECN_INVALID_JOBID</div>
+<div class="txt">Host Recon Error Invalid job code was received.</div>
+</section>
+<section id="BM2241395"><a name="BM2241395"></a>
+<h2>2241395</h2>
+<div class="sym">ERROR: EM_HRECN_CLEAR_SCAN_FAIL</div>
+<div class="txt">Host Recon Error Clear Scan operation failed.</div>
+</section>
+<section id="BM2241396"><a name="BM2241396"></a>
+<h2>2241396</h2>
+<div class="sym">ERROR: EM_HRECN_MALLOC_FAIL</div>
+<div class="txt">Host Recon Error Unable to allocate memory.</div>
+</section>
+<section id="BM2241397"><a name="BM2241397"></a>
+<h2>2241397</h2>
+<div class="sym">ERROR: EM_HRECN_FIND_STRUCT_FAIL</div>
+<div class="txt">Host Recon Error Unable to find Scan or Pass Structure.</div>
+</section>
+<section id="BM2241398"><a name="BM2241398"></a>
+<h2>2241398</h2>
+<div class="sym">ERROR: EM_HRECN_READ_BUF_TIMEOUT</div>
+<div class="txt">Host Recon Error Host Recon timed out for reading buffer. because shared memory was busy.
+Buffer Name = %s Buffer Number = %d</div>
+</section>
+<section id="BM2241399"><a name="BM2241399"></a>
+<h2>2241399</h2>
+<div class="sym">ERROR: EM_HRECN_TERMINATED</div>
+<div class="txt">Host Recon was terminated. Please see message log and reset the system.
+Status = %d</div>
+</section>
+<section id="BM2241400"><a name="BM2241400"></a>
+<h2>2241400</h2>
+<div class="sym">ERROR: EM_HRECN_STOREDONE_TIMEOUT</div>
+<div class="txt">Host Recon Error Host Recon timed out for waiting image store complete. because shared memory was busy.</div>
+</section>
+<section id="BM2241401"><a name="BM2241401"></a>
+<h2>2241401</h2>
+<div class="sym">ERROR: EM_HRECN_IM_ALLOC_TIMEOUT</div>
+<div class="txt">Host Recon Error Host Recon timed out for waiting image allocation done.</div>
+</section>
+<section id="BM2241402"><a name="BM2241402"></a>
+<h2>2241402</h2>
+<div class="sym">ERROR: EM_HRECN_FATWATER_INCOMPATIBLE</div>
+<div class="txt">%s is incompatible with fat water imaging</div>
+</section>
+<section id="BM2241403"><a name="BM2241403"></a>
+<h2>2241403</h2>
+<div class="sym">ERROR: EM_HRECN_BAD_FFT_SIZE</div>
+<div class="txt">FFT size was not a power of 2.</div>
+</section>
+<section id="BM2241404"><a name="BM2241404"></a>
+<h2>2241404</h2>
+<div class="sym">ERROR: EM_HRECN_CPU_SHR_INIT_FAIL</div>
+<div class="txt">cpu_shr_init() failed.</div>
+</section>
+<section id="BM2241405"><a name="BM2241405"></a>
+<h2>2241405</h2>
+<div class="sym">ERROR: EM_HRECN_CPU_SHR_EXIT_FAIL</div>
+<div class="txt">cpu_shr_exit() failed.</div>
+</section>
+<section id="BM2241406"><a name="BM2241406"></a>
+<h2>2241406</h2>
+<div class="sym">ERROR: EM_HRECN_CPU_SHR_GET_FAIL</div>
+<div class="txt">cpu_shr_get() failed.</div>
+</section>
+<section id="BM2241407"><a name="BM2241407"></a>
+<h2>2241407</h2>
+<div class="sym">ERROR: EM_HRECN_CPU_SHR_REL_FAIL</div>
+<div class="txt">cpu_shr_release() failed.</div>
+</section>
+<section id="BM2241408"><a name="BM2241408"></a>
+<h2>2241408</h2>
+<div class="sym">ERROR: EM_HRECN_CPU_SHR_RELGET_FAIL</div>
+<div class="txt">cpu_shr_relget() failed.</div>
+</section>
+<section id="BM2241424"><a name="BM2241424"></a>
+<h2>2241424</h2>
+<div class="sym">ERROR: EM_RCNMGR_UNEXPCT_OPCODE</div>
+<div class="txt">Recon Manager Error A unexpected opcode (%d) was received.</div>
+</section>
+<section id="BM2241425"><a name="BM2241425"></a>
+<h2>2241425</h2>
+<div class="sym">ERROR: EM_RCNMGR_CHK_LOG</div>
+<div class="txt">A Host Recon error occurred. Please see message log.</div>
+</section>
+<section id="BM2241426"><a name="BM2241426"></a>
+<h2>2241426</h2>
+<div class="sym">ERROR: EM_RCNMGR_HSTRCN_ERROR</div>
+<div class="txt">A Host Recon error (%d) received. Please see message log.</div>
+</section>
+<section id="BM2241427"><a name="BM2241427"></a>
+<h2>2241427</h2>
+<div class="sym">ERROR: EM_RCNMGR_MRMAIL_INIT_FAIL</div>
+<div class="txt">Recon Manager Internal Software Error Unable to initialize MrMail.</div>
+</section>
+<section id="BM2241428"><a name="BM2241428"></a>
+<h2>2241428</h2>
+<div class="sym">ERROR: EM_RCNMGR_REGIST_CALLBACK_FAIL</div>
+<div class="txt">Recon Manager Internal Software Error Registration for callback functions was failed.</div>
+</section>
+<section id="BM2241429"><a name="BM2241429"></a>
+<h2>2241429</h2>
+<div class="sym">ERROR: EM_RCNMGR_RDBM_INIT_FAIL</div>
+<div class="txt">Recon Manager Error Unable to initialize the Raw Data Base Manager.
+Status = %d</div>
+</section>
+<section id="BM2241430"><a name="BM2241430"></a>
+<h2>2241430</h2>
+<div class="sym">ERROR: EM_RCNMGR_SHM_REMOVE_FAIL</div>
+<div class="txt">Recon Manager Internal Software Error shmctl() failed.</div>
+</section>
+<section id="BM2241431"><a name="BM2241431"></a>
+<h2>2241431</h2>
+<div class="sym">ERROR: EM_RCNMGR_SHM_ATTACH_FAIL</div>
+<div class="txt">Recon Manager Internal Software Error shmat() failed.</div>
+</section>
+<section id="BM2241432"><a name="BM2241432"></a>
+<h2>2241432</h2>
+<div class="sym">ERROR: EM_RCNMGR_SHM_GET_FAIL</div>
+<div class="txt">Recon Manager Internal Software Error shmget() failed.</div>
+</section>
+<section id="BM2241433"><a name="BM2241433"></a>
+<h2>2241433</h2>
+<div class="sym">ERROR: EM_RCNMGR_SHM_DETACH_FAIL</div>
+<div class="txt">Recon Manager Internal Software Error shmdt() failed.</div>
+</section>
+<section id="BM2241434"><a name="BM2241434"></a>
+<h2>2241434</h2>
+<div class="sym">ERROR: EM_RCNMGR_MALLOC_FAIL</div>
+<div class="txt">Recon Manager Internal Software Error Unable to allocate memory.</div>
+</section>
+<section id="BM2241435"><a name="BM2241435"></a>
+<h2>2241435</h2>
+<div class="sym">ERROR: EM_RCNMGR_REALLOC_FAIL</div>
+<div class="txt">Recon Manager Internal Software Error Unable to reallocate memory.</div>
+</section>
+<section id="BM2241436"><a name="BM2241436"></a>
+<h2>2241436</h2>
+<div class="sym">ERROR: EM_RCNMGR_FILE_OPEN_ERROR</div>
+<div class="txt">Recon Manager Internal Software Error Unable to open specified file.</div>
+</section>
+<section id="BM2241437"><a name="BM2241437"></a>
+<h2>2241437</h2>
+<div class="sym">ERROR: EM_RCNMGR_FILE_STAT_ERROR</div>
+<div class="txt">Recon Manager Internal Software Error Unable to get status of specified file.</div>
+</section>
+<section id="BM2241438"><a name="BM2241438"></a>
+<h2>2241438</h2>
+<div class="sym">ERROR: EM_RCNMGR_FILE_READ_ERROR</div>
+<div class="txt">Recon Manager Internal Software Error Unable to read specified file.</div>
+</section>
+<section id="BM2241439"><a name="BM2241439"></a>
+<h2>2241439</h2>
+<div class="sym">ERROR: EM_RCNMGR_CREATE_PKT_FAIL</div>
+<div class="txt">Recon Manager Internal Software Error Unable to create a mail packet.</div>
+</section>
+<section id="BM2241440"><a name="BM2241440"></a>
+<h2>2241440</h2>
+<div class="sym">ERROR: EM_RCNMGR_SEND_PKT_FAIL</div>
+<div class="txt">Recon Manager Internal Software Error Unable to send a mail packet.</div>
+</section>
+<section id="BM2241441"><a name="BM2241441"></a>
+<h2>2241441</h2>
+<div class="sym">ERROR: EM_RCNMGR_GET_SHM_INFO_ERROR</div>
+<div class="txt">Recon Manager Internal Software Error Unable to get shared memory information.</div>
+</section>
+<section id="BM2241442"><a name="BM2241442"></a>
+<h2>2241442</h2>
+<div class="sym">ERROR: EM_RCNMGR_REPLY_ERROR</div>
+<div class="txt">Recon Manager Internal Software Error Unable to reply a mail packet.</div>
+</section>
+<section id="BM2241443"><a name="BM2241443"></a>
+<h2>2241443</h2>
+<div class="sym">ERROR: EM_RCNMGR_CREATE_SCAN_INFO_FAIL</div>
+<div class="txt">Recon Manager Internal Software Error Unable to create scan information.</div>
+</section>
+<section id="BM2241444"><a name="BM2241444"></a>
+<h2>2241444</h2>
+<div class="sym">ERROR: EM_RCNMGR_CREATE_REQ_INFO_FAIL</div>
+<div class="txt">Recon Manager Internal Software Error Unable to create request information.</div>
+</section>
+<section id="BM2241445"><a name="BM2241445"></a>
+<h2>2241445</h2>
+<div class="sym">ERROR: EM_RCNMGR_CREATE_QUEUE_FAIL</div>
+<div class="txt">Recon Manager Internal Software Error Unable to create queue.</div>
+</section>
+<section id="BM2241446"><a name="BM2241446"></a>
+<h2>2241446</h2>
+<div class="sym">ERROR: EM_RCNMGR_CREATE_AS_ANLYS_INFO_FAIL</div>
+<div class="txt">Recon Manager Internal Software Error Unable to autoshim. analysis information.</div>
+</section>
+<section id="BM2241447"><a name="BM2241447"></a>
+<h2>2241447</h2>
+<div class="sym">ERROR: EM_RCNMGR_CLEAR_RESP_FAIL</div>
+<div class="txt">Recon Manager Internal Software Error Clear scan structure was not requested.</div>
+</section>
+<section id="BM2241448"><a name="BM2241448"></a>
+<h2>2241448</h2>
+<div class="sym">ERROR: EM_RCNMGR_NO_SUPPORT_JOB</div>
+<div class="txt">Recon Manager Internal Software Error Invalid job code.</div>
+</section>
+<section id="BM2241449"><a name="BM2241449"></a>
+<h2>2241449</h2>
+<div class="sym">ERROR: EM_RCNMGR_TN_XFER_FAIL</div>
+<div class="txt">Recon Manager Internal Software Error Unable to transfer data by tn_read_from().</div>
+</section>
+<section id="BM2241450"><a name="BM2241450"></a>
+<h2>2241450</h2>
+<div class="sym">ERROR: EM_RCNMGR_ON_SCANNING</div>
+<div class="txt">Recon Manager Error Recon Manager received invalid scan request.</div>
+</section>
+<section id="BM2241451"><a name="BM2241451"></a>
+<h2>2241451</h2>
+<div class="sym">ERROR: EM_RCNMGR_RESPONSE_TIMEOUT</div>
+<div class="txt">Recon Manager Error Recon Manager timed out waiting for Host Recon response. Check if Host Recon is alive.</div>
+</section>
+<section id="BM2241452"><a name="BM2241452"></a>
+<h2>2241452</h2>
+<div class="sym">ERROR: EM_RCNMGR_HSTRCN_CONFUSE</div>
+<div class="txt">Recon Manager Internal Software Error An unexpected response (%d) was received from Host Recon.</div>
+</section>
+<section id="BM2241453"><a name="BM2241453"></a>
+<h2>2241453</h2>
+<div class="sym">ERROR: EM_RCNMGR_SUSPENDED</div>
+<div class="txt">Recon Manager was suspended. Please see message log and reset the system.</div>
+</section>
+<section id="BM2241454"><a name="BM2241454"></a>
+<h2>2241454</h2>
+<div class="sym">ERROR: EM_RCNMGR_TERMINATED</div>
+<div class="txt">Recon Manager was terminated. Please see message log and reset the system.</div>
+</section>
+<section id="BM2241455"><a name="BM2241455"></a>
+<h2>2241455</h2>
+<div class="sym">ERROR: EM_RCNMGR_IMAGES_LOST</div>
+<div class="txt">Images will be lost due to recon failure.</div>
+</section>
+<section id="BM2241474"><a name="BM2241474"></a>
+<h2>2241474</h2>
+<div class="sym">ERROR: EM_GIP_INVALID_AXIS</div>
+<div class="txt">Internal GIP software error. Number of axis is not between %d and %d.
+Axis Selected: %d If you are using a tool like SHMOD or a debugger, you requested invalid information. If no tools were being run, there is a bug in the software; write a CQA.</div>
+</section>
+<section id="BM2241477"><a name="BM2241477"></a>
+<h2>2241477</h2>
+<div class="sym">ERROR: EM_GIP_UNDEF_INTERRUPT</div>
+<div class="txt">Internal GIP software error. Invalid interrupt.
+Interrupt: %d If the GIP software is running okay ( the GIP Board LED is blinking with a period of 5 seconds ), then this is a software bug; write a CQA.</div>
+</section>
+<section id="BM2241478"><a name="BM2241478"></a>
+<h2>2241478</h2>
+<div class="sym">ERROR: EM_GIP_INVALID_TP</div>
+<div class="txt">Internal GIP software error. Invalid selection for a test point.
+Test Point Selected: %d If the GIP software is running okay ( the GIP Board LED is blinking with a period of 5 seconds ), then this is a software bug; write a CQA.</div>
+</section>
+<section id="BM2241504"><a name="BM2241504"></a>
+<h2>2241504</h2>
+<div class="sym">ERROR: EM_GIP_GPM_CABLE_OFF_FAULT</div>
+<div class="txt">The GIP is reporting a GPM %c Axis Cable Off Fault. Check the cable between the GIP and the GPM.</div>
+</section>
+<section id="BM2241505"><a name="BM2241505"></a>
+<h2>2241505</h2>
+<div class="sym">ERROR: EM_GIP_MGRAM_CABLE_OFF_FAULT</div>
+<div class="txt">The GIP is reporting a miniGRAM %c Axis Cable Off Fault. Check the cable between the GIP and the miniGRAM.</div>
+</section>
+<section id="BM2241506"><a name="BM2241506"></a>
+<h2>2241506</h2>
+<div class="sym">ERROR: EM_GIP_GPMPS_CABLE_OFF_FAULT</div>
+<div class="txt">The GIP is reporting a GPM Power Supply Cable Off Fault. Check the cable between the GIP and the GPM Power Supply.</div>
+</section>
+<section id="BM2241507"><a name="BM2241507"></a>
+<h2>2241507</h2>
+<div class="sym">ERROR: EM_GIP_MGRAMPS_CABLE_OFF_FAULT</div>
+<div class="txt">The GIP is reporting a miniGRAM Power Supply Cable Off Fault. Check the cable between the GIP and the miniGRAM Power Supply.</div>
+</section>
+<section id="BM2241508"><a name="BM2241508"></a>
+<h2>2241508</h2>
+<div class="sym">ERROR: EM_GIP_GPM_POWER_OFF_FAULT</div>
+<div class="txt">The GIP is reporting %c Axis GPM Power Off. If all 3 axes are reporting this fault, check the GPM Power Supply circuit breakers and cables. Check GPM fuses and the cable between the GIP and the GPM.</div>
+</section>
+<section id="BM2241509"><a name="BM2241509"></a>
+<h2>2241509</h2>
+<div class="sym">ERROR: EM_GIP_MGRAM_POWER_OFF_FAULT</div>
+<div class="txt">The GIP is reporting %c Axis miniGRAM Power Off. If all 3 axes are reporting this fault, check the miniGRAM Power Supply circuit breakers and cables. Check the cable between the GIP and the miniGRAM.</div>
+</section>
+<section id="BM2241510"><a name="BM2241510"></a>
+<h2>2241510</h2>
+<div class="sym">ERROR: EM_GIP_GPMPS_POWER_OFF_FAULT</div>
+<div class="txt">The GIP is reporting GPM Power Supply Power Off. Check the GPM Power Supply circuit breakers and incoming power. Check the cable between the GIP and the GPM Power Supply.</div>
+</section>
+<section id="BM2241511"><a name="BM2241511"></a>
+<h2>2241511</h2>
+<div class="sym">ERROR: EM_GIP_MGRAMPS_POWER_OFF_FAULT</div>
+<div class="txt">The GIP is reporting miniGRAM Power Supply Power Off. Check the miniGRAM Power Supply circuit breakers and incoming power. Check the cable between the GIP and the miniGRAM Power Supply.</div>
+</section>
+<section id="BM2241513"><a name="BM2241513"></a>
+<h2>2241513</h2>
+<div class="sym">ERROR: EM_GIP_MGRAM_LVPS_UV_FAULT</div>
+<div class="txt">The GIP reported a %c Axis miniGRAM Low Voltage Power Supply Undervoltage Fault. Try swapping the miniGRAM Control Board or the entire miniGRAM axis to isolate the problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Suspect the ± 15V power supply on the miniGRAM Control Board.</div>
+</section>
+<section id="BM2241514"><a name="BM2241514"></a>
+<h2>2241514</h2>
+<div class="sym">ERROR: EM_GIP_MGRAM_OC_FAULT</div>
+<div class="txt">The GIP reported a %c Axis miniGRAM OverCurrent Fault. Try swapping the miniGRAM Control Board, or the entire miniGRAM axis, or the miniGRAM Gate Driver Board, or the GPM, or the GIP to isolate the problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The following conditions can cause this ERROR:
+a) &gt;140A average current (OCAVG LED DS7)
+b) &gt;275A peak current (OCINST LED DS8)
+c) &gt;80% Pulse Width Modulation (OCDUTY LED DS6)
+d) &gt;800,000 Amp transitions/sec (OCDUTY LED DS6) If this condition, suspect the PSD. Remove the JP1 located on miniGRAM control Board to latch the appropriate LED. If this error occurs 4 more times, 2241548 will be reported and you will have to cycle power to the GRAM Power Supply to reset it.</div>
+</section>
+<section id="BM2241515"><a name="BM2241515"></a>
+<h2>2241515</h2>
+<div class="sym">ERROR: EM_GIP_MGRAM_OV_FAULT</div>
+<div class="txt">The GIP reported a %c Axis miniGRAM OverVoltage Fault. Try swapping the miniGRAM Control Board, or the entire miniGRAM axis, or the miniGRAM Power Supply to isolate the problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This occurs if miniGRAM Power Supply voltage is &gt; 850 VDC. Measure the voltage at J2 on the front of the miniGRAM Control Board; pin 8(Vbus+), pin 20(Vbus-) should be 7.5V + 0.3V. Swap miniGRAM cables to isolate between miniGRAM and miniGRAM Power Supply. If error follows miniGRAM, swap miniGRAM Control Boards to further isolate cause and replace the defective component. If this error occurs 4 more times, 2241547 will be reported and you will have to cycle power to the GRAM Power Supply to reset it.</div>
+</section>
+<section id="BM2241516"><a name="BM2241516"></a>
+<h2>2241516</h2>
+<div class="sym">ERROR: EM_GIP_MGRAM_UV_FAULT</div>
+<div class="txt">The GIP reported a %c Axis miniGRAM UnderVoltage Fault. Try swapping the miniGRAM Control Board, or the entire miniGRAM axis, or the miniGRAM Power Supply to isolate the problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error occurs if the miniGRAM Power Supply voltage is &lt; 300VDC. Measure the voltage at J2 on the front of the miniGRAM Control Board; pins 8(Vbus+), 20(Vbus-) should be 7.5V + 0.3V. Swap miniGRAM cables to isolate between miniGRAM and miniGRAM Power Supply. If error follows miniGRAM, swap miniGRAM Control Boards to further isolate cause and replace the defective component.</div>
+</section>
+<section id="BM2241517"><a name="BM2241517"></a>
+<h2>2241517</h2>
+<div class="sym">ERROR: EM_GIP_GPM_XSISTOR_FAULT</div>
+<div class="txt">The GIP reported a Transistor Fault on the %c Axis of the GPM. This fault could be related to noise. Possible causes: Cable between the GIP and GPM, %c Axis GPM Main Board or Output Shelf.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the transistor fault happens immediately when the scanner goes to Ready, this indicates a shorted transistor and the Output Shelf for this axis will have to be replaced. If this error occurs 4 more times, 2241546 will be reported and you will have to cycle power to the GPM Power Supply to reset it. If the fault is intermittent, swap the GPM Main Board for the failing axis with another Main Board to isolate the cause of the fault to the Main Board or the Output Shelf. Replace the component that reproduces the fault.</div>
+</section>
+<section id="BM2241518"><a name="BM2241518"></a>
+<h2>2241518</h2>
+<div class="sym">ERROR: EM_GIP_GPMPS_FAULT</div>
+<div class="txt">The GIP reported a GPM Power Supply Fault. Check the GPM or the GPM Power Supply.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error can be caused by Overtemp, Overcurrent, or Overvoltage conditions on GPM Power Supply. If the error occurs 4 more times, error 2241550 will be generated and power to the GPM Power Supply will need to be cycled to reset it. If error sequence reoccurs then remove output cables from the back of the GPM one at a time to isolate to GPM axis (you must always have at least one output connected or a Power Supply fault will occur.). Note: while running with an output disconnected from an axis, you can ignore error 2241522 or 2242045 for that axis.</div>
+</section>
+<section id="BM2241519"><a name="BM2241519"></a>
+<h2>2241519</h2>
+<div class="sym">ERROR: EM_GIP_MGRAMPS_FAULT</div>
+<div class="txt">The GIP reported a miniGRAM Power Supply Fault. Check GRAM Tuning, the miniGRAM, or the miniGRAM Power Supply.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error can be caused by Overtemp, Overcurrent, or Overvoltage conditions on GRAM Power Supply. If this error occurs 4 more times, error 2241549 will be genera ted and then power to the GRAM Power Supply will need to be cycled to reset it. If the error sequence reoccurs then remove output cables from miniGRAM&#x27;s one at a time to isolate to an axis (you must always have at least one output connected or an Overload error will stop the diagnostics). Note: while running with an output disconnected from an axis, you can ignore error 2241516 or 2242039 for that axis.</div>
+</section>
+<section id="BM2241520"><a name="BM2241520"></a>
+<h2>2241520</h2>
+<div class="sym">ERROR: EM_GIP_MGRAM_IDIST_FAULT</div>
+<div class="txt">The GIP reported a %c Axis Current Distortion Fault. Another fault reported in the log could be the cause of this fault. Possible causes: GRAM Tuning, miniGRAM, components of the %c Axis GPM, GIP, or cables.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The output current did not follow the commanded current. If this error is reported following another fault that shuts don the axis, focus on troubleshooting the previous error reported. Other causes: If this is a new installation, check output cabling to the gradient coil. Connect scope to DAC_I for appropriate axis on 37 sub-D connector on front GIP panel. Connect scope ground to gnd. on GIP front panel. Signal at ICOIL BNC for appropriate axis on 37 sub-D connector on front of GIP panel should be identical but inverted.</div>
+</section>
+<section id="BM2241521"><a name="BM2241521"></a>
+<h2>2241521</h2>
+<div class="sym">ERROR: EM_GIP_GPM_SHELF_OT_FAULT</div>
+<div class="txt">The GIP reported a Shelf Over Temp Fault on the %c Axis of the GPM. Wait for the temperature to cool before trying to scan. Cooling time may be in excess of 5 minutes. Make sure back door of Gradient Cabinet is closed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Shelf Overtemp Fault is sensed on the GPM. Check for the following:
+a) Verify backdoor of gradient cabinet is closed
+b) Excessive output current 9&gt;100A RMS)
+c) PPBM Vrail output malfuntion. Vrail could be stuck at high voltage ~190V.
+d) If the scanner was using a custom PSD, suspect the PSD
+e) If none of the above causes are the problem, then isolate between Main Board and Output Shelf for the failing axis by swapping with another axis.</div>
+</section>
+<section id="BM2241522"><a name="BM2241522"></a>
+<h2>2241522</h2>
+<div class="sym">ERROR: EM_GIP_GPM_SUPPLY_FAULT</div>
+<div class="txt">The GIP reported a PPBM Fault on the %c Axis of the GPM. The GPM will recover when the Supply voltage changes to a
+safe range. Possible causes: %c Axis GPM PPBM, Main Board, Output Shelf, or the GPM Power Supply.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated by the PPBM and would occur under the following conditions
+a) PPBM was Overtemp
+b) Input voltage from GPM Power Supply (in Ready) was &lt;80V or &gt;210V
+c) Average output current &gt;100A. If these are not the problem, then replace the PPBM. If the error is intermittent, swap PPBM&#x27;s.</div>
+</section>
+<section id="BM2241523"><a name="BM2241523"></a>
+<h2>2241523</h2>
+<div class="sym">ERROR: EM_GIP_GPM_LONG_OVERLOAD_FAULT</div>
+<div class="txt">The GIP reported a Long Overload Fault on the %c Axis of the GPM.
+Possible causes: %c Axis GPM. Try swapping the GPM Axis connections to isolate the problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Long overload (overload that is &gt;50 msec in duration) is sensed on the GPM when the output voltage does not follow the commanded voltage. Use a scope to verify the input signal VCNTRL for appropriate axis on front panel of GIP and the output signal on GPM BNC (Vout) are the same. Connect scope ground to gnd on GIP. Long Overloads will shutdown scan and could be indicative of image quality or stability problems.</div>
+</section>
+<section id="BM2241524"><a name="BM2241524"></a>
+<h2>2241524</h2>
+<div class="sym">ERROR: EM_GIP_MGRAM_HS_OT_FAULT</div>
+<div class="txt">The GIP reported a %c Axis miniGRAM Heatsink OverTemp Fault. Wait for the temperature to cool before trying to scan. Cooling time may be in excess of 5 minutes. Make sure back door of Gradient Cabinet is closed. Check miniGRAM Control Bd &amp; miniGRAM.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The heatsink has exceeded 70 degrees Celsius. GIP receive circuitry could be suspect. Try swapping cables to miniGRAMs if this error reoccurs to isolate fault.</div>
+</section>
+<section id="BM2241525"><a name="BM2241525"></a>
+<h2>2241525</h2>
+<div class="sym">ERROR: EM_GIP_GPMPS_READY_FAULT</div>
+<div class="txt">The GPM Power Supply failed to go to Ready when commanded, or came out of Ready. Possible causes: cable between GIP &amp; GPM Power Supply, the GPM Power Supply, or the GIP.</div>
+</section>
+<section id="BM2241526"><a name="BM2241526"></a>
+<h2>2241526</h2>
+<div class="sym">ERROR: EM_GIP_MGRAMPS_READY_FAULT</div>
+<div class="txt">The miniGRAM Power Supply failed to go to Ready when commanded, or came out of Ready. Possible causes: cable between GIP &amp; miniGRAM Power Supply, the miniGRAM Power Supply, or the GIP.</div>
+</section>
+<section id="BM2241528"><a name="BM2241528"></a>
+<h2>2241528</h2>
+<div class="sym">ERROR: EM_GIP_X_SHORT_OVERLOAD_FAULT</div>
+<div class="txt">X Axis Gradient Overload Occurred.\b\ The X Axis of the GPM has reported an overload. An overload is the result of the GPM output voltage not following the input command.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Short overload (overload is &lt;50 msec in duration) is sensed on the GPM when the output voltage does not follow the commanded voltage. Use a scope to verify the input signal VCNTRL on GIP (Test pt TBD) and the output signal on GPM BNC (Vout) are the same. Short Overloads will not shut down scan, but could be indicative of image quality or stability problems.</div>
+</section>
+<section id="BM2241529"><a name="BM2241529"></a>
+<h2>2241529</h2>
+<div class="sym">ERROR: EM_GIP_Y_SHORT_OVERLOAD_FAULT</div>
+<div class="txt">Y Axis Gradient Overload Occurred.\b\ The Y Axis of the GPM has reported an overload. An overload is the result of the GPM output voltage not following the input command.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Short overload (overload is &lt;50 msec in duration) is sensed on the GPM when the output voltage does not follow the commanded voltage. Use a scope to verify the input signal VCNTRL on GIP (Test pt TBD) and the output signal on GPM BNC (Vout) are the same. Short Overloads will not shut down scan, but could be indicative of image quality or stability problems.</div>
+</section>
+<section id="BM2241530"><a name="BM2241530"></a>
+<h2>2241530</h2>
+<div class="sym">ERROR: EM_GIP_Z_SHORT_OVERLOAD_FAULT</div>
+<div class="txt">Z Axis Gradient Overload Occurred.\b\ The Z Axis of the GPM has reported an overload. An overload is the result of the GPM output voltage not following the input command.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Short overload (overload is &lt;50 msec in duration) is sensed on the GPM when the output voltage does not follow the commanded voltage. Use a scope to verify the input signal VCNTRL on GIP (Test pt TBD) and the output signal on GPM BNC (Vout) are the same. Short Overloads will not shut down scan, but could be indicative of image quality or stability problems.</div>
+</section>
+<section id="BM2241531"><a name="BM2241531"></a>
+<h2>2241531</h2>
+<div class="sym">ERROR: EM_GIP_X_GPM_TJ_OT_FAULT</div>
+<div class="txt">X Axis of the GPM reported a Transistor Junction OverTemp Fault.\b\ Wait for temp to cool before trying to scan. Cooling time may be in excess of 5 minutes. Gradient back door must be closed. Check GRAM Tuning, GPM X Axis Main Bd, PPBM, Output Shf.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Transistor junction is hitting 200 degrees Celcius. The power module momentarily shutoff which can result in an overload or I-distortion fault. Long term reliability will be degraded on the output shelf if operation continues at these high temperatures.</div>
+</section>
+<section id="BM2241532"><a name="BM2241532"></a>
+<h2>2241532</h2>
+<div class="sym">ERROR: EM_GIP_Y_GPM_TJ_OT_FAULT</div>
+<div class="txt">Y Axis of the GPM reported a Transistor Junction OverTemp Fault.\b\ Wait for temp to cool before trying to scan. Cooling time may be in excess of 5 minutes. Gradient back door must be closed. Check GRAM Tuning, GPM Y Axis Main Bd, PPBM, Output Shf.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Transistor junction is hitting 200 degrees Celcius. The power module momentarily shutoff which can result in an overload or I-distortion fault. Long term reliability will be degraded on the output shelf if operation continues at these high temperatures.</div>
+</section>
+<section id="BM2241533"><a name="BM2241533"></a>
+<h2>2241533</h2>
+<div class="sym">ERROR: EM_GIP_Z_GPM_TJ_OT_FAULT</div>
+<div class="txt">Z Axis of the GPM reported a Transistor Junction OverTemp Fault.\b\ Wait for temp to cool before trying to scan. Cooling time may be in excess of 5 minutes. Gradient back door must be closed. Check GRAM Tuning, GPM Z Axis Main Bd, PPBM, Output Shf.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Transistor junction is hitting 200 degrees Celcius. The power module momentarily shutoff which can result in an overload or I-distortion fault. Long term reliability will be degraded on the output shelf if operation continues at these high temperatures.</div>
+</section>
+<section id="BM2241537"><a name="BM2241537"></a>
+<h2>2241537</h2>
+<div class="sym">ERROR: EM_GIP_GPM_FAILED_READY</div>
+<div class="txt">The %c Axis of the GPM failed to go to Ready when commanded. Check the cable between the GIP &amp; GPM, and the LED status on the %c Axis of the GPM. Guarantee that the switch on the GPM is set to GIP Control. Swap axis GPM Main Bd.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the GPM failed to go to Ready when commanded, the GPM to GIP cable is suspect. Or there could be a fault on the GPM that is not being reported to the GIP. The faults can be seen by viewing the LED&#x27;s through the Main Board Tray by pulling the GPM out momentarily (Remember, do not scan with the GPM pulled out of the cabinet, because the GPM needs the air flow from the cabinet). Note: it is normal for the Standby LED or the Ready LED on the GPM to be lit when the GPM PS is not enabled.</div>
+</section>
+<section id="BM2241538"><a name="BM2241538"></a>
+<h2>2241538</h2>
+<div class="sym">ERROR: EM_GIP_MGRAM_FAILED_READY</div>
+<div class="txt">The %c axis miniGRAM failed to go to Ready when commanded. Check the cable between the GIP &amp; miniGRAM, miniGRAM Ctrl Bd, GIP, and the LED status on the %c Axis miniGRAM.</div>
+</section>
+<section id="BM2241539"><a name="BM2241539"></a>
+<h2>2241539</h2>
+<div class="sym">ERROR: EM_GIP_GPM_FAILED_STANDBY</div>
+<div class="txt">The %c axis GPM failed to go to Standby when commanded. Check the cable between the GIP &amp; GPM, and the LED status on the %c Axis of the GPM. Guarantee that the switch on the GPM is set to GIP Control.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The GPM failed to go to Standby when commanded. Check the status of the GPM by observing the Standby/Ready LED&#x27;s on front of GPM. If the GPM is in Standby, then the status of GPM is not being reported properly, suspect GPM to GIP cable.</div>
+</section>
+<section id="BM2241540"><a name="BM2241540"></a>
+<h2>2241540</h2>
+<div class="sym">ERROR: EM_GIP_MGRAM_FAILED_STANDBY</div>
+<div class="txt">The %c axis miniGRAM failed to go to Standby when commanded. Check the cable between the GIP &amp; miniGRAM, miniGRAM, GIP, and the LED status on the %c Axis miniGRAM.</div>
+</section>
+<section id="BM2241541"><a name="BM2241541"></a>
+<h2>2241541</h2>
+<div class="sym">ERROR: EM_GIP_X_FAILED_RECOVERY</div>
+<div class="txt">X Axis gradient error detected; recovery in progress.</div>
+</section>
+<section id="BM2241542"><a name="BM2241542"></a>
+<h2>2241542</h2>
+<div class="sym">ERROR: EM_GIP_Y_FAILED_RECOVERY</div>
+<div class="txt">Y Axis gradient error detected; recovery in progress.</div>
+</section>
+<section id="BM2241543"><a name="BM2241543"></a>
+<h2>2241543</h2>
+<div class="sym">ERROR: EM_GIP_Z_FAILED_RECOVERY</div>
+<div class="txt">Z Axis gradient error detected; recovery in progress.</div>
+</section>
+<section id="BM2241544"><a name="BM2241544"></a>
+<h2>2241544</h2>
+<div class="sym">ERROR: EM_GIP_RECOVERY_DONE</div>
+<div class="txt">The gradient system on the %c axis recovered successfully. There are no faults at the present time.</div>
+</section>
+<section id="BM2241545"><a name="BM2241545"></a>
+<h2>2241545</h2>
+<div class="sym">ERROR: EM_GIP_GPM_OV_SPECIAL_RECV</div>
+<div class="txt">The GIP reported a second Long Overload on the %c Axis of the GPM. Power cycle the main breaker on GPM Power Supply to recover from this condition. If this fault occurs again, swap the GPM axis. Run diagnostics.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Long overload (overload is &lt;50 msec in duration) is sensed on the GPM when the output voltage does not follow the commanded voltage. Use a scope to verify the input signal VCNTRL on GIP (Test pt TBD) and the output signal on GPM BNC (Vout) are the same. Long Overloads will not shut down scan, but could be indicative of image quality or stability problems.</div>
+</section>
+<section id="BM2241546"><a name="BM2241546"></a>
+<h2>2241546</h2>
+<div class="sym">ERROR: EM_GIP_GPM_TR_SPECIAL_RECV</div>
+<div class="txt">The GIP reported a second Transistor Fault on the %c Axis of the GPM. Power cycle the main breaker on GPM Power Supply to recover from this condition. If this fault occurs again, replace the GPM %c Axis Output Shelf.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If a transistor fault happens immediately upon going to Ready, this indicates a shorted transistor; in this case replace Output Shelf. If this fault is intermittent, swap Main Boards to isolate between it and Output Shelf. Replace the component that reproduces the fault.</div>
+</section>
+<section id="BM2241547"><a name="BM2241547"></a>
+<h2>2241547</h2>
+<div class="sym">ERROR: EM_GIP_MGRAM_OV_SPECIAL_RECV</div>
+<div class="txt">The GIP reported several %c Axis miniGRAM OverVoltage Faults. Power cycle the main breaker on the miniGRAM Power Supply to recover from this condition. If this fault occurs again, check the miniGRAM Control Bd, miniGRAM, or miniGRAM Power Supply.</div>
+</section>
+<section id="BM2241548"><a name="BM2241548"></a>
+<h2>2241548</h2>
+<div class="sym">ERROR: EM_GIP_MGRAM_OC_SPECIAL_RECV</div>
+<div class="txt">The GIP reported several %c Axis miniGRAM OverCurrent Faults. Power cycle main breaker on miniGRAM Power Supply to recover from this condition. If this fault occurs again, check miniGRAM Control Bd, miniGRAM, miniGRAM Gate Driver Bd, GPM, or GIP.</div>
+</section>
+<section id="BM2241549"><a name="BM2241549"></a>
+<h2>2241549</h2>
+<div class="sym">ERROR: EM_GIP_MGRAM_PS_SPECIAL_RECV</div>
+<div class="txt">The GIP reported several miniGRAM Power Supply Faults. After the miniGRAM Power Supply fault LED turns off, power cycle main breaker on Power Supply to recover. If this fault occurs again, check GRAM Tuning, the miniGRAM, miniGRAM Power Supply.</div>
+</section>
+<section id="BM2241550"><a name="BM2241550"></a>
+<h2>2241550</h2>
+<div class="sym">ERROR: EM_GIP_GPM_PS_SPECIAL_RECV</div>
+<div class="txt">The GIP reported several GPM Power Supply Faults. After the GPM Power Supply fault LED turns off, power cycle the main breaker on Power Supply to recover. If this fault occurs again, check the GPM &amp; the GPM Power Supply. Run Diagnostics.</div>
+</section>
+<section id="BM2241551"><a name="BM2241551"></a>
+<h2>2241551</h2>
+<div class="sym">ERROR: EM_GIP_LATCHED_GPM_SPLY_FAULT</div>
+<div class="txt">The GIP reported a PPBM Fault on the %c Axis of the GPM. The GPM will recover when the Supply voltage changes to a
+safe range. Possible causes: %c Axis GPM PPBM, Main Board, Output Shelf, or the GPM Power Supply.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This fault occurs when the GPM initially goes to Ready when commanded, but then gets an error while in Ready. This fault is generated by the PPBM and will occur with any of the following conditions:
+a) Overtemp
+b) Input voltage from GPM Power Supply (in Ready) was &lt; 80V or &gt; 210 V
+c) Average output current &gt;100A. If these are not the problem, then replace the PPBM. If the fault is intermittent, swap PPBM&#x27;s to verify the failure. If swapping does not confirm a bad PPBM the error could be due to the GPM main board, output shelf, or the GIP.</div>
+</section>
+<section id="BM2241552"><a name="BM2241552"></a>
+<h2>2241552</h2>
+<div class="sym">ERROR: EM_GIP_LATCHED_GPM_SPLY_SPECIAL_RECV</div>
+<div class="txt">The GIP reported several PPBM Faults on the %c Axis of the GPM. Power cycle the main breaker on the GPM Power Supply to recover from this condition. If this fault occurs again, check the GPM &amp; the GPM Power Supply.</div>
+</section>
+<section id="BM2241604"><a name="BM2241604"></a>
+<h2>2241604</h2>
+<div class="sym">ERROR: EM_GIP_RTM_NO_SET_ADC</div>
+<div class="txt">Internal GIP software error. Unavailable signal for selection on ADC Multiplexor %d. If this error is seen in the field, please write a CQA.
+Desired Multiplexor Signal: %d</div>
+</section>
+<section id="BM2241605"><a name="BM2241605"></a>
+<h2>2241605</h2>
+<div class="sym">ERROR: EM_GIP_RTM_VRAIL_ERROR</div>
+<div class="txt">PPBM Output Voltage (VRAIL) Monitoring Error. The PPBM output voltage has exceeded the allowed range. Possible causes: GPM axis Main Board, PPBM, Output Shelf, or GIP.
+Low: %6.3fV High: %6.3fV Value: %6.3fV Axis: %c Standby/Ready State: %c</div>
+</section>
+<section id="BM2241606"><a name="BM2241606"></a>
+<h2>2241606</h2>
+<div class="sym">ERROR: EM_GIP_RTM_V_NEG12_ERROR</div>
+<div class="txt">GIP -12V is out of range. Check GIP Power Supply voltages. If voltages are correct, replace the GIP Board.
+Low: %6.3fV High: %6.3fV Value: %6.3fV Axis: %c Standby/Ready State: %c</div>
+</section>
+<section id="BM2241607"><a name="BM2241607"></a>
+<h2>2241607</h2>
+<div class="sym">ERROR: EM_GIP_RTM_V_POS10_ERROR</div>
+<div class="txt">GIP +10V Reference is out of range. Check GIP Power Supply voltages. If voltages are correct, replace the GIP Board.
+Low: %6.3fV High: %6.3fV Value: %6.3fV Axis: %c Standby/Ready State: %c</div>
+</section>
+<section id="BM2241608"><a name="BM2241608"></a>
+<h2>2241608</h2>
+<div class="sym">ERROR: EM_GIP_RTM_VCC_ERROR</div>
+<div class="txt">GIP VCC signal is out of range. Check VCC on the GIP front panel. If voltage is correct, replace the GIP Board. Else, replace the GIP Power Supply.
+Low: %6.3fV High: %6.3fV Value: %6.3fV Axis: %c Standby/Ready State: %c</div>
+</section>
+<section id="BM2241609"><a name="BM2241609"></a>
+<h2>2241609</h2>
+<div class="sym">ERROR: EM_GIP_RTM_GND_ERROR</div>
+<div class="txt">GIP GND is out of range. Replace the GIP Board.
+Low: %6.3fV High: %6.3fV Value: %6.3fV Axis: %c Standby/Ready State: %c</div>
+</section>
+<section id="BM2241610"><a name="BM2241610"></a>
+<h2>2241610</h2>
+<div class="sym">ERROR: EM_GIP_RTM_NOT_USED_ERROR</div>
+<div class="txt">Not used, if seen in the field, please write a CQA.</div>
+</section>
+<section id="BM2241611"><a name="BM2241611"></a>
+<h2>2241611</h2>
+<div class="sym">ERROR: EM_GIP_RTM_HEATSINK_ERROR</div>
+<div class="txt">miniGRAM Heatsink Temperature is out of range. Make sure back door of Gradient Cabinet is closed. Else, check miniGRAM Control Bd, the miniGRAM, &amp; GIP.
+Low: %6.3fC High: %6.3fC Value: %6.3fC Axis: %c Standby/Ready State: %c</div>
+</section>
+<section id="BM2241612"><a name="BM2241612"></a>
+<h2>2241612</h2>
+<div class="sym">ERROR: EM_GIP_RTM_V_POS12_ERROR</div>
+<div class="txt">GIP +12V is out of range. Check GIP Power Supply voltages. If voltages are correct, replace the GIP Board.
+Low: %6.3fV High: %6.3fV Value: %6.3fV Axis: %c Standby/Ready State: %c</div>
+</section>
+<section id="BM2241613"><a name="BM2241613"></a>
+<h2>2241613</h2>
+<div class="sym">ERROR: EM_GIP_RTM_V_NEG10_ERROR</div>
+<div class="txt">GIP -10V Reference is out of range. Check GIP Power Supply voltages. If voltages are correct, replace the GIP Board.
+Low: %6.3fV High: %6.3fV Value: %6.3fV Axis: %c Standby/Ready State: %c</div>
+</section>
+<section id="BM2241614"><a name="BM2241614"></a>
+<h2>2241614</h2>
+<div class="sym">ERROR: EM_GIP_RTM_VLO_GPM_ERROR</div>
+<div class="txt">GPM Power Supply V_LO Monitoring Error. Check GRAM Tuning, GPM Power Supply, incoming power, &amp; GIP.
+Low: %6.3fV High: %6.3fV Value: %6.3fV Axis: %c Standby/Ready State: %c</div>
+</section>
+<section id="BM2241615"><a name="BM2241615"></a>
+<h2>2241615</h2>
+<div class="sym">ERROR: EM_GIP_RTM_PXTEMP_ERROR</div>
+<div class="txt">GPM PXTEMP is out of range. Make sure Gradient Cabinet back door is closed. Check GRAM Tuning, components within GPM on this axis (Main Bd, PPBM, Output Shelf), &amp; GIP.
+Low: %6.3fC High: %6.3fC Value: %6.3fC Axis: %c Standby/Ready State: %c</div>
+</section>
+<section id="BM2241616"><a name="BM2241616"></a>
+<h2>2241616</h2>
+<div class="sym">ERROR: EM_GIP_RTM_V_POS15_ERROR</div>
+<div class="txt">GIP +15V Supply is out of range. Check test point on the GIP front panel. If voltage is correct, replace the GIP. Else, replace the GIP Power Supply.
+Low: %6.3fV High: %6.3fV Value: %6.3fV Axis: %c Standby/Ready State: %c</div>
+</section>
+<section id="BM2241617"><a name="BM2241617"></a>
+<h2>2241617</h2>
+<div class="sym">ERROR: EM_GIP_RTM_VLO_GRAM_ERROR</div>
+<div class="txt">miniGRAM Power Supply V_LO Monitoring Error. Check GRAM Tuning, miniGRAM Power Supply, the miniGRAM, incoming power, &amp; GIP.
+Low: %6.3fV High: %6.3fV Value: %6.3fV Axis: %c Standby/Ready State: %c</div>
+</section>
+<section id="BM2241618"><a name="BM2241618"></a>
+<h2>2241618</h2>
+<div class="sym">ERROR: EM_GIP_RTM_NXTEMP_ERROR</div>
+<div class="txt">GPM NXTEMP is out of range. Make sure Gradient Cabinet back door is closed. Check GRAM Tuning, components within GPM on this axis (Main Bd, PPBM, Output Shelf), &amp; GIP.
+Low: %6.3fC High: %6.3fC Value: %6.3fC Axis: %c Standby/Ready State: %c</div>
+</section>
+<section id="BM2241619"><a name="BM2241619"></a>
+<h2>2241619</h2>
+<div class="sym">ERROR: EM_GIP_RTM_V_NEG15_ERROR</div>
+<div class="txt">GIP -15V Supply is out of range. Check -15V testpoint on GIP Board. If voltage is correct, replace the GIP Board. Else, replace the GIP Power Supply.
+Low: %6.3fV High: %6.3fV Value: %6.3fV Axis: %c Standby/Ready State: %c</div>
+</section>
+<section id="BM2241646"><a name="BM2241646"></a>
+<h2>2241646</h2>
+<div class="sym">ERROR: EM_GIP_GRAM_TUNE_VERIFY</div>
+<div class="txt">The GIP was unsuccessful loading/verifying miniGRAM digital tuning values for the %c Axis. Possible causes: GIP board.</div>
+</section>
+<section id="BM2241974"><a name="BM2241974"></a>
+<h2>2241974</h2>
+<div class="sym">ERROR: EM_GDT_GIP_REG_PATTERN</div>
+<div class="txt">GRADIENT DRIVER TESTS - Power Up Register Pattern Test Failed. The GIP %x register has %d errors out of %d. Replace the GIP Board.</div>
+</section>
+<section id="BM2241988"><a name="BM2241988"></a>
+<h2>2241988</h2>
+<div class="sym">ERROR: EM_SGDT_MSG_HEADER</div>
+<div class="txt">GRADIENT DRIVER TESTS</div>
+</section>
+<section id="BM2241989"><a name="BM2241989"></a>
+<h2>2241989</h2>
+<div class="sym">ERROR: EM_SGDT_STAT_APPS_HOLDER</div>
+<div class="txt">%b %b %b</div>
+</section>
+<section id="BM2241991"><a name="BM2241991"></a>
+<h2>2241991</h2>
+<div class="sym">ERROR: EM_SGDT_POWERUP_STATUS</div>
+<div class="txt">GRADIENT DRIVER TESTS - %c Axis Power Up Test failures. Gradient Driver Tests will not be executed on %c Axis. Check previous error messages. %b%</div>
+</section>
+<section id="BM2241992"><a name="BM2241992"></a>
+<h2>2241992</h2>
+<div class="sym">ERROR: EM_SGDT_STDBY_VCC_MODE</div>
+<div class="txt">Static Standby Mode</div>
+</section>
+<section id="BM2241993"><a name="BM2241993"></a>
+<h2>2241993</h2>
+<div class="sym">ERROR: EM_SGDT_RDY_VCC_MODE</div>
+<div class="txt">Static Ready Mode</div>
+</section>
+<section id="BM2241994"><a name="BM2241994"></a>
+<h2>2241994</h2>
+<div class="sym">ERROR: EM_SGDT_RDY_GRAM_MODE</div>
+<div class="txt">Static Ready GRAM Mode</div>
+</section>
+<section id="BM2241995"><a name="BM2241995"></a>
+<h2>2241995</h2>
+<div class="sym">ERROR: EM_SGDT_DYN_SETTLING_MODE</div>
+<div class="txt">Dynamic Settling Test</div>
+</section>
+<section id="BM2241996"><a name="BM2241996"></a>
+<h2>2241996</h2>
+<div class="sym">ERROR: EM_SGDT_DTUNE_MODE</div>
+<div class="txt">Digital Tuning Test</div>
+</section>
+<section id="BM2241997"><a name="BM2241997"></a>
+<h2>2241997</h2>
+<div class="sym">ERROR: EM_SGDT_LCOIL_MODE</div>
+<div class="txt">LCoil Adjustment</div>
+</section>
+<section id="BM2241998"><a name="BM2241998"></a>
+<h2>2241998</h2>
+<div class="sym">ERROR: EM_SGDT_STATIC_LABEL</div>
+<div class="txt">Static</div>
+</section>
+<section id="BM2241999"><a name="BM2241999"></a>
+<h2>2241999</h2>
+<div class="sym">ERROR: EM_SGDT_DYNAMIC_LABEL</div>
+<div class="txt">Dynamic</div>
+</section>
+</body></html>

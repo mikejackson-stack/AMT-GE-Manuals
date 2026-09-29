@@ -1,0 +1,2029 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2246000-2246999 (305)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2246000-2246999 (305)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2245000-2245999.html">&larr; 2245000-2245999</a><a href="ermes_2247000-2247999.html">2247000-2247999 &rarr;</a></nav></header>
+<section id="BM2246000"><a name="BM2246000"></a>
+<h2>2246000</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_RX_RECD_WHILE_TESTING_ERR</div>
+<div class="txt">The Diagnostic Executive received a Test prescription (Rx) while a diagnostic test was in progress. Rx was ignored.</div>
+</section>
+<section id="BM2246001"><a name="BM2246001"></a>
+<h2>2246001</h2>
+<div class="sym">ERROR: EM_OBSOLETE_DIAG_2246001</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2246002"><a name="BM2246002"></a>
+<h2>2246002</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_DC_OBJ_LOCATION_ERR</div>
+<div class="txt">Error sending diagnostic message. Connection to the requested processor could not be established.
+Object ID: %d
+Process ID: %d</div>
+</section>
+<section id="BM2246003"><a name="BM2246003"></a>
+<h2>2246003</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_MSG_Q_SEND_ERR</div>
+<div class="txt">Operating system software error. The msgQSend routine failed to post a message to a message queue. Perform a reset if the problem persists. Errno: (%d) %s
+Msg Code: %d
+Destination: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The msgQSend is an OS routine for sending messages between tasks. Error is most likely a software failure. The errno value gives more information why the send failed.</div>
+</section>
+<section id="BM2246004"><a name="BM2246004"></a>
+<h2>2246004</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_DC_SOCK_WRITE_ERR</div>
+<div class="txt">Error sending diagnostic message. Socket send failure.
+Error: %d</div>
+</section>
+<section id="BM2246005"><a name="BM2246005"></a>
+<h2>2246005</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_TEST_FUNC_NAME_NOT_FOUND_ERR</div>
+<div class="txt">Software error. The %s routine name could not be found in the symbol table. This test can NOT be executed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated any time a routine name is not found in the symbol table located in the controller&#x27;s memory. The error can be caused by a version mismatch, corrupted memory, etc..</div>
+</section>
+<section id="BM2246006"><a name="BM2246006"></a>
+<h2>2246006</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_EXCEPT_MSGS_LOST</div>
+<div class="txt">Software error. One or more error message were lost due to an overflow problem.</div>
+</section>
+<section id="BM2246007"><a name="BM2246007"></a>
+<h2>2246007</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_SEMBCREATE_ERR</div>
+<div class="txt">Operating system software error. The semBCreate() routine failed to create a binary semaphore. Perform a reset to correct the problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The semBCreate() is an OS routine for preventing simultaneous accesses of a given resource. Error is most likely a lack of memory.</div>
+</section>
+<section id="BM2246008"><a name="BM2246008"></a>
+<h2>2246008</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_SOCKET_ERR</div>
+<div class="txt">Operating system software error. The socket() routine failed. Perform a reset to correct the problem. Errno: (%d) %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The socket() routine is an OS call for creating a socket for communications. Sockets are used throughout the code for communicating between the host and targets. See the Errno field for a description of the failure.</div>
+</section>
+<section id="BM2246009"><a name="BM2246009"></a>
+<h2>2246009</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_BIND_ERR</div>
+<div class="txt">Operating system software error. The bind() routine failed. Perform a reset to correct the problem. Errno: (%d) %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The bind() routine is an OS call for binding a IP address to a socket. Sockets are used throughout the code for communicating between hosts. See the Errno field for a description of the failure.</div>
+</section>
+<section id="BM2246010"><a name="BM2246010"></a>
+<h2>2246010</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_SETSOCKETOPT_ERR</div>
+<div class="txt">Operating system software error. The setsockopt() routine failed. Perform a reset to correct the problem. Errno: (%d) %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The setsockopt() routine is an OS call for setting socket options. Sockets are used throughout the code for communicating between hosts. See the Errno field for a description of the failure.</div>
+</section>
+<section id="BM2246011"><a name="BM2246011"></a>
+<h2>2246011</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_LISTEN_ERR</div>
+<div class="txt">Operating system software error. The listen() routine failed. Perform a reset to correct the problem. Errno: (%d) %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The listen() routine is an OS call listening for a socket connection. request from another host. Sockets are used throughout the code for communicating between targets and host. See the Errno field for a description of the failure.</div>
+</section>
+<section id="BM2246012"><a name="BM2246012"></a>
+<h2>2246012</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_IOCTL_ERR</div>
+<div class="txt">Operating system software error. The setsockopt() routine failed. Perform a reset to correct the problem. Errno: (%d) %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The ioctl() routine is an OS call for performing I/O on a device. See the Errno field for a description of the failure.</div>
+</section>
+<section id="BM2246013"><a name="BM2246013"></a>
+<h2>2246013</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_SENDTO_ERR</div>
+<div class="txt">Operating system software error. The sendto() routine failed. Perform a reset if the problem persists. Errno: (%d) %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This OS call sends a message to other hosts via a UDP socket. See the Errno field for a description of the failure.</div>
+</section>
+<section id="BM2246014"><a name="BM2246014"></a>
+<h2>2246014</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_SEND_ERR</div>
+<div class="txt">Operating system software error. The send() routine failed. Perform a reset if the problem persists. Errno: (%d) %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This OS call sends a message to other hosts via a TCP socket. See the Errno field for a description of the failure.</div>
+</section>
+<section id="BM2246015"><a name="BM2246015"></a>
+<h2>2246015</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_CONNECT_ERR</div>
+<div class="txt">Operating system software error. The connect() routine failed. Perform a reset if the problem persists. Errno: (%d) %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This OS call establishes a virtual circuit between sockets. See the Errno field for a description of the failure.</div>
+</section>
+<section id="BM2246016"><a name="BM2246016"></a>
+<h2>2246016</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_ACCEPT_ERR</div>
+<div class="txt">Operating system software error. The accept() routine failed. Perform a reset if the problem persists. Errno: (%d) %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This OS call accepts a socket connection from another host. See the Errno field for a description of the failure.</div>
+</section>
+<section id="BM2246017"><a name="BM2246017"></a>
+<h2>2246017</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_DCMCASTTX_ERR</div>
+<div class="txt">A multicast diagnostic message could not be sent. Perform a reset if the problem persists. %d of %d bytes was sent.
+Message code: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This routine utilizes a multicast socket send to send messages to all nodes on a system. Error is most likely a software failure.</div>
+</section>
+<section id="BM2246018"><a name="BM2246018"></a>
+<h2>2246018</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_EXEC_MSG_OVFL_ERR</div>
+<div class="txt">Excessive number of messages were received by the Diagnostic Executive. Message was discarded which may cause the diagnostic display to be incorrect. Perform a reset if the problem persists.
+Message code: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is sent when the message buffer overflows. This can occur if the Ethernet is having problems, the host is running slow, or an excessive number of errors are being logged.</div>
+</section>
+<section id="BM2246019"><a name="BM2246019"></a>
+<h2>2246019</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_EXEC_MSG_SEM_OVFL_ERR</div>
+<div class="txt">Executive message semaphore unavailable. Message was discarded which may cause the diagnostic display to be incorrect. Perform a reset if the problem persists.
+Message code: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error occurs when no more semaphores are available. Semaphores are utilized to track the unprocessed messages and run out if too many messages are being received. This can occur if the Ethernet is having problems, the host is running slow, or an excessive number of errors are bing logged.</div>
+</section>
+<section id="BM2246020"><a name="BM2246020"></a>
+<h2>2246020</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_EXEC_HOST_RESP_TMO_ERR</div>
+<div class="txt">The host failed to respond to a message in the allotted time. Message was discarded which may cause the diagnostic display to be incorrect. Perform a reset if the problem persists.
+Msg code: %d
+Retries: %d
+Time delay: %d mS</div>
+<div class="lbl">Extended Error:</div><div class="txt">The code will retry the message several times before disregarding the message. This error can be caused be an intermittent Ethernet failure or a Diagnostic Coordinator crash. Attempt to run the test.</div>
+</section>
+<section id="BM2246021"><a name="BM2246021"></a>
+<h2>2246021</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_UNKNOWN_MSG_ERR</div>
+<div class="txt">Diagnostic communications warning. An unknown message was received. Message was discarded.
+Message code: %d
+From object: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is a Diagnostic Communications (DC) message that the receiver was not programmed to receive. The error is software related and was ignored.</div>
+</section>
+<section id="BM2246022"><a name="BM2246022"></a>
+<h2>2246022</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_TTASK_MSG_SEM_TMO_ERR</div>
+<div class="txt">Timeout waiting for message send semaphore. Message was discarded which may cause the diagnostic display to be incorrect. Perform a reset if the problem persists.
+Timeout: %d mS
+Message code: %d
+To object ID: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The semaphore in this case is used to throttle the sending of messages from the Test Task to the Executive task. A backup of message can occur if the Ethernet is having problems, the host is running slow, or an excessive number of errors are being logged.</div>
+</section>
+<section id="BM2246023"><a name="BM2246023"></a>
+<h2>2246023</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_SEMTAKE_ERR</div>
+<div class="txt">Operating system software error. The semTake routine failed to take the semaphore. Perform a reset if the problem persists. Errno: (%d) %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The semTake is an OS routine for preventing simultaneous access of a device. Error is most likely a software failure. The errno value gives more information why the send failed.</div>
+</section>
+<section id="BM2246024"><a name="BM2246024"></a>
+<h2>2246024</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_MSG_CALLBACK_MISSING_ERR</div>
+<div class="txt">Software error. The DC Event Manager callback function is missing for this message. Message will not be processed.
+Message code: %d
+From object Id: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is a software error that should never occur in the field. It indicates the code may have been corrupted. Attempt a reset and try again.</div>
+</section>
+<section id="BM2246025"><a name="BM2246025"></a>
+<h2>2246025</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_TIMER_CALLBACK_MISSING_ERR</div>
+<div class="txt">Software error. The DC Event Manager Timer callback function is missing for this event. Event will not be processed.
+Event code: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is a software error that should never occur in the field. It indicates the code may have been corrupted. Attempt a reset and try again.</div>
+</section>
+<section id="BM2246026"><a name="BM2246026"></a>
+<h2>2246026</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_EVT_MNGR_NOT_INITED_ERR</div>
+<div class="txt">Software error. The DC Event Manager was accessed before being initialized. Reset the controller if problem persists.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is a software error that should never occur in the field. It indicates the code may have been corrupted. Attempt a reset and try again.</div>
+</section>
+<section id="BM2246027"><a name="BM2246027"></a>
+<h2>2246027</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_INVALID_PARAM_ERR</div>
+<div class="txt">Software error. The diagnostic platform was accessed with an invalid parameter. Reset the controller if problem persists.
+Value: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is a software error that should never occur in the field. It indicates the code may have been corrupted. Attempt a reset and try again.</div>
+</section>
+<section id="BM2246028"><a name="BM2246028"></a>
+<h2>2246028</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_TASKVARADD_ERR</div>
+<div class="txt">Operating system software error. The taskVarAdd routine failed. Perform a reset if the problem persists.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The taskVarAdd is an OS routine for declaring a task specific parameter. A failure will prevent the execution of diagnostics.</div>
+</section>
+<section id="BM2246029"><a name="BM2246029"></a>
+<h2>2246029</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_MALLOC_ERR</div>
+<div class="txt">System software error. Error performing a malloc. Reset controller and try again.
+Bytes requested: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">Malloc allocates memory for process use. This error can be caused by lack of available memory or a system failure.</div>
+</section>
+<section id="BM2246030"><a name="BM2246030"></a>
+<h2>2246030</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_MSGQCREATE_ERR</div>
+<div class="txt">Operating system software error. The msgQCreate() routine failed. Perform a reset to correct the problem. Errno: (%d) %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The msgQCreate() is an OS routine for intertask communications. See the errno parameter for information why this call failed.</div>
+</section>
+<section id="BM2246031"><a name="BM2246031"></a>
+<h2>2246031</h2>
+<div class="sym">ERROR: EM_DIAG_AGENT_ACCEPT_SOC_ERR</div>
+<div class="txt">The socket that accepts connections with other hosts has failed. Diagnostic communications with this host are being terminated. Perform a reset to recover.
+fd: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This socket connection enables other hosts to connect their socket to this node. Without this connection, no further communications with this host can be established. Task will exit. No further information is available to why this error occurred.</div>
+</section>
+<section id="BM2246032"><a name="BM2246032"></a>
+<h2>2246032</h2>
+<div class="sym">ERROR: EM_DIAG_AGENT_MCAST_SOC_ERR</div>
+<div class="txt">The socket that accepts multicast messages has failed. Diagnostic communications with this host are being terminated. Perform a reset to recover.
+fd: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This socket connection enables the host and other nodes to sense what nodes are connected to the system. Without this connection, no further communications with this host can be established. Task will exit. No further information is available to why this error occurred.</div>
+</section>
+<section id="BM2246033"><a name="BM2246033"></a>
+<h2>2246033</h2>
+<div class="sym">ERROR: EM_DIAG_AGENT_DC_SOC_ERR</div>
+<div class="txt">The socket connection with %s has failed. Communications will be retried.
+fd: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This socket connection enables the host and other nodes to sense what nodes are connected to the system. Without this connection, no further communications with this host can be established. Task will exit. No further information is available to why this error occurred.</div>
+</section>
+<section id="BM2246034"><a name="BM2246034"></a>
+<h2>2246034</h2>
+<div class="sym">ERROR: EM_DIAG_AGENT_EXCESSIVE_COMMS_ERRS</div>
+<div class="txt">Too many consecutive errors have been detected. Diagnostic communications with this host are being terminated.
+Error count: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated if one of more socket connections are causing the task to wakeup without being identified. To prevent a system lockup, the task will exit() and a reset will be required. No information is available to why this error occurred.</div>
+</section>
+<section id="BM2246035"><a name="BM2246035"></a>
+<h2>2246035</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_MSGQRECEIVE_ERR</div>
+<div class="txt">Operating system software error. The msgQReceive routine failed to return a message from the message queue. Perform a reset if the problem persists. Errno: (%d) %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The msgQReceive is an OS routine for sending messages between tasks. Error is most likely a software failure. The errno value gives more information why the receive failed.</div>
+</section>
+<section id="BM2246036"><a name="BM2246036"></a>
+<h2>2246036</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_DISABLE_INT_ERR</div>
+<div class="txt">Operating system software error. The interrupt failed to disable in the process of loading the new ISR. Perform a reset if the problem persists.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated when the interrupt does not fail in the process of loading a new ISR Error is most likely a software failure.</div>
+</section>
+<section id="BM2246037"><a name="BM2246037"></a>
+<h2>2246037</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_DISCONNECT_ISR_ERR</div>
+<div class="txt">Operating system software error. The intDisconnectAll routine failed to disconnect the persisting ISR.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated when the persisting ISR fails to disconnect. Hence the address of the persisting ISR is not saved in interruptvector. Error is most likely a software failure.</div>
+</section>
+<section id="BM2246038"><a name="BM2246038"></a>
+<h2>2246038</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_INTCONNECT_ISR_ERR</div>
+<div class="txt">Operating system software error. The intconnect routine failed to connect the new ISR.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated when the new ISR fails to connect. Hence the persisting ISR is connected back to the interrupt line. Error is most likely a software failure.</div>
+</section>
+<section id="BM2246039"><a name="BM2246039"></a>
+<h2>2246039</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_ENABLE_INT_ERR</div>
+<div class="txt">Operating system software error. The interrupt failed to enable. Perform a reset if the problem persists.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated when the interrupt fails to renable. Error is most likely a software failure.</div>
+</section>
+<section id="BM2246040"><a name="BM2246040"></a>
+<h2>2246040</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_RECONNECT_INT_ERR</div>
+<div class="txt">Operating system software error. The function failed to reconnect the old ISR: FATAL ERROR. Perform a reset if the problem persists.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated when the function fails to reconnect the old ISR. Error is most likely a software failure.</div>
+</section>
+<section id="BM2246041"><a name="BM2246041"></a>
+<h2>2246041</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_SLAVE_RESP_TMO_ERR</div>
+<div class="txt">A timeout error occurred waiting on a test slave response.
+Response type = %s
+Master Proc = %s
+Slave Proc = %s
+Function = %s
+Error = %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated anytime the Diagnostic Executive being executed on another CPU fails to respond in the allotted time. This error can cause the test to abort. A reset of the chassis may be required to continue with diagnostic testing.</div>
+</section>
+<section id="BM2246042"><a name="BM2246042"></a>
+<h2>2246042</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_SLAVE_COMPLETE_TMO_ERR</div>
+<div class="txt">A timeout error occurred waiting for the slave process on the %s task to send a COMPLETE message.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated anytime the Diagnostic Executive being executed on another CPU fails to send a slave mode complete message. Chassis may require a reset to continue diagnostic testing.</div>
+</section>
+<section id="BM2246043"><a name="BM2246043"></a>
+<h2>2246043</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_SLAVE_CMD_WHILE_TEST_IN_PROGRESS_ERR</div>
+<div class="txt">A slave test execution command was received while a test was in progress.
+From Object ID: %d
+Routine Name: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated anytime the Diagnostic Executive receives a request to execute a slave function while another test is being executed. This error should not occur and indicates a problem in the software.</div>
+</section>
+<section id="BM2246044"><a name="BM2246044"></a>
+<h2>2246044</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_SLAVE_NAME_NOT_FOUND_ERR</div>
+<div class="txt">Software error. The %s routine name could not be found. This slave command can NOT be executed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated any time a routine name is not found in the symbol table located in the controller&#x27;s memory. The error can be caused by a version mismatch, corrupted memory, etc..</div>
+</section>
+<section id="BM2246045"><a name="BM2246045"></a>
+<h2>2246045</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_GETHOSTBYNAME_ERR</div>
+<div class="txt">Operating system software error. The gethostbyname routine failed for %s. Perform a reset to correct the problem. Errno: (%d) %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The gethostbyname() routine is an OS call which converts a host name into a IP address. Failure of this call will prevent proper communications between hosts. See the Errno field for a description of the failure.</div>
+</section>
+<section id="BM2246046"><a name="BM2246046"></a>
+<h2>2246046</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_VALIDATION_MSG</div>
+<div class="txt">&lt;===================== Validation level %d in progress ===================================&gt;</div>
+</section>
+<section id="BM2246047"><a name="BM2246047"></a>
+<h2>2246047</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_APPL_NOT_LOADED</div>
+<div class="txt">The %s diagnostic test requires applications to be loaded. Perform a TPS reset and try again.</div>
+</section>
+<section id="BM2246048"><a name="BM2246048"></a>
+<h2>2246048</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_INVAL_TEST_PTR_ERR</div>
+<div class="txt">Software error. An invalid function pointer was returned for this test. Rerun the test. If problem persists, perform a TPS reset.</div>
+</section>
+<section id="BM2246049"><a name="BM2246049"></a>
+<h2>2246049</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_TMO_RECV_MSG_ERR</div>
+<div class="txt">DC Message Receive error. Only part of a message was received before a timeout occurred. Message was discarded.
+fd: %d
+Msg code: %d
+From Obj ID: %d
+Msg size: %d
+Bytes received: %d Rerun the test. If problem persists, perform a TPS reset.</div>
+</section>
+<section id="BM2246050"><a name="BM2246050"></a>
+<h2>2246050</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_APPS_FUNC_NAME_NOT_FOUND_ERR</div>
+<div class="txt">Software error. The %s routine name could not be found in the symbol table. This error may cause some of the tests to fail. If problem persists, perform a TPS reset.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated any time a routine name is not found in the symbol table located in the controller&#x27;s memory. The error can be caused by a version mismatch, corrupted memory, etc..</div>
+</section>
+<section id="BM2246051"><a name="BM2246051"></a>
+<h2>2246051</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_SLAVECMD_FAILED</div>
+<div class="txt">The interface used to execute a remote function failed to invoke the function on the slave processor.
+Master Proc = %s
+Slave Proc = %s
+Function = %s
+Error = %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">Requests to execute functions on the slave processor are initiated by the master processor using a slave command&quot; interface. When called, an interface function that initiates remote execution only verifies that the function exists on the slave processor and that it can be executed. This error indicates the function could not be executed on the slave processor.&quot;</div>
+</section>
+<section id="BM2246052"><a name="BM2246052"></a>
+<h2>2246052</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_SLAVE_WAIT_FAILED</div>
+<div class="txt">A failure was detected while waiting for a command on another processor to complete in the allotted time. Perform a TPS reset if problem persists.
+Master Proc = %s
+Slave Proc = %s
+Function = %s
+Error = %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">Requests to execute functions on the slave processor are initiated by the master processor using a slave command&quot; interface. This error was when the remote routine failed to return the correct status in the allotted time.&quot;</div>
+</section>
+<section id="BM2246053"><a name="BM2246053"></a>
+<h2>2246053</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_POPUP_RESP_TMO_ERR</div>
+<div class="txt">A timeout error occurred waiting for the user to respond to a query.
+Timeout: %d Seconds</div>
+</section>
+<section id="BM2246054"><a name="BM2246054"></a>
+<h2>2246054</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_APP_INIT_NOT_DONE</div>
+<div class="txt">WARNING: The last TPS Reset did not complete successfully. As a result, some diagnostic tests may fail due to incompletely initialized software.</div>
+<div class="lbl">Extended Error:</div><div class="txt">You have selected one or more diaganostic tests that use application mode software to execute. The failed TPS Reset indicates that some of the application mode software may not be completely initialized. Therefore, some of the diagnostic tests selected may fail due to software problems. When the system is in this state, a diagnostic failure may or may not have anything to do with the piece of hardware being tested. Interpert any error messages that follow this entry with caution.</div>
+</section>
+<section id="BM2246055"><a name="BM2246055"></a>
+<h2>2246055</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_DIAGTESTS_DECRYPT_FAIL</div>
+<div class="txt">The following file, %s, was not successfully decrypted.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The file is decrypted in /tmp as a hidden file (i.e. diagTests.xml) becomes /tmp/.diagTests.xml, for example. The file could not be created. Make sure write permissions exist for /tmp and the hidden file. These decrypted are created as needed, so they can be removed by executing rm /tmp/.diagT*</div>
+</section>
+<section id="BM2246056"><a name="BM2246056"></a>
+<h2>2246056</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_DIAGTESTS_ENCRYPT_FAIL</div>
+<div class="txt">The following file, %s, was not successfully encrypted using the decrypted file.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The file is decrypted in /tmp as a hidden file (i.e. diagTests.xml) becomes /tmp/.diagTests.xml, for example. The encrypted file could not be created from the decrypted file. Make sure write permissions exist for /tmp and the hidden file. These decrypted are created as needed, so they can be removed by executing: rm /tmp/.diagT*</div>
+</section>
+<section id="BM2246057"><a name="BM2246057"></a>
+<h2>2246057</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_DIAGTESTS_MAPPING_ERROR</div>
+<div class="txt">The diagTests.xml file has a record with an invalid reference. The value of the refid attribute within &lt;ref refid=%s/&gt; does not have a corresponding &lt;record id=%s ....&gt;.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The value of the refid attribute MUST match the id attribute of a record. Either (a) the source diagTests.xml file is invalid, or (b) the file was modified or corrupted.</div>
+</section>
+<section id="BM2246058"><a name="BM2246058"></a>
+<h2>2246058</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_DIAGTESTS_ELE_PARSING_ERROR</div>
+<div class="txt">XML Parsing error. The Element found in \diagTests.xml\&quot; is not valid for the indicated table. Table: \&quot;%s\&quot;. Invalid Element: \&quot;%s\&quot;&quot;</div>
+</section>
+<section id="BM2246059"><a name="BM2246059"></a>
+<h2>2246059</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_DIAGTESTS_ATTR_PARSING_ERROR</div>
+<div class="txt">XML Parsing error. The Element found in \diagTests.xml\&quot; is not valid for the indicated table. Table: \&quot;%s\&quot;. Invalid Element: \&quot;%s\&quot;&quot;</div>
+</section>
+<section id="BM2246060"><a name="BM2246060"></a>
+<h2>2246060</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_DIAGTESTS_PARSING_ERROR_SUMMARY</div>
+<div class="txt">A total of %d errors were encountered while processing the diagTests.xml file. Individual errors were logged for the first %d errors.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is a summary message that indicates how many errors werefound while reading the XML file. For corrective action, examine the previously logged errors.</div>
+</section>
+<section id="BM2246061"><a name="BM2246061"></a>
+<h2>2246061</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_DIAGTESTS_XML_PARSER_CREATE_ERROR</div>
+<div class="txt">Software Error. Unable to create the XML Parser object.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The XML Parser object could not be created. There is a software error with the expat libraries. Corrective action requires a new software load, or modifications to the source code.</div>
+</section>
+<section id="BM2246062"><a name="BM2246062"></a>
+<h2>2246062</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_DIAGTESTS_XML_PARSING_ERROR</div>
+<div class="txt">XML Parsing error. The source file violates XML format definitions. Processing terminated, line %04d. %s</div>
+</section>
+<section id="BM2246063"><a name="BM2246063"></a>
+<h2>2246063</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_DIAGTESTS_XML_READ_ERR</div>
+<div class="txt">Read Error occurred while reading %s.</div>
+</section>
+<section id="BM2246064"><a name="BM2246064"></a>
+<h2>2246064</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_DIAGTESTS_SLAVECMD_PROC</div>
+<div class="txt">Checking resource availability. Invalid processor (%s) specified for execution of %s().</div>
+<div class="lbl">Extended Error:</div><div class="txt">Correct the problem in diagTests.xml.</div>
+</section>
+<section id="BM2246065"><a name="BM2246065"></a>
+<h2>2246065</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_SLAVECMD_SEND_FAILED</div>
+<div class="txt">The interface used to execute a remote function failed to invoke the function on the slave processor.
+Master Proc = %s
+Slave Proc = %s
+Function = %s Error = Message send failed</div>
+<div class="lbl">Extended Error:</div><div class="txt">Requests to execute functions on the slave processor are initiated by the master processor using a slave command&quot; interface. When called, an interface function that initiates remote execution only verifies that the function exists on the slave processor and that it can be executed. This error indicates the function could not be executed on the slave processor due to a communications failure. This could indicate the processor is down, Ethernet communications failed, or system is hung. Reset the system and try again&quot;</div>
+</section>
+<section id="BM2246066"><a name="BM2246066"></a>
+<h2>2246066</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_COMM_WDOG_TMO_ERR</div>
+<div class="txt">Communications with the diagnostic coordinator has been lost. The present diagnostic test is being aborted.
+Timeout = %dmS
+Node ID = %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error occurs when the packets sent from the node are not acknowledged by the host in the given time period. Check the network for errors or the host computer is locked up.</div>
+</section>
+<section id="BM2246067"><a name="BM2246067"></a>
+<h2>2246067</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_PROG_MSG_Q_SEND_ERR</div>
+<div class="txt">Operating system software error. msgQSend failure:
+Prognostic data could not be saved. Perform a reset if the problem persists.
+Failure Code: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The msgQSend is an OS routine for sending messages between tasks. This error is most likely an overflow of data. The task is not sending data fast enough to the host. This can be caused by the logging of too much data or the Diagnostic Coordinator on the host is not able to keep up with the data flow. This can be fixed by performing a TPS reset or waiting for the data to be logged.</div>
+</section>
+<section id="BM2246068"><a name="BM2246068"></a>
+<h2>2246068</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_PROG_ACK_MSG_NOT_RECEIVE_ERR</div>
+<div class="txt">Communications error: ACK Message not received. Timeout waiting for a reply from the Diagnostic Coordinator. Parametric data was discarded. Perform a reset if the problem persists or a system restart.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated anytime the parametric task fails to get a reply from the Diagnostic Coordinator located on the host. The logging of this error indicates communications between the host and this node are operational. Therefore, the problem must be with the Diagnostic Coordinator. The system may require a system restart in order to reset this process on the host.</div>
+</section>
+<section id="BM2246069"><a name="BM2246069"></a>
+<h2>2246069</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_PROG_RNG_BUFF_CREATE_ERR</div>
+<div class="txt">Operating system software error. The rngCreate() routine failed. All prognostic data will be lost. Perform a reset to correct the problem.
+Size: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The rngCreate() is an OS routine for creating ring buffers. This failure can be generated if the node is out of memory or the operating system is corrupted. In either case, a TPS reset would be needed to recover.</div>
+</section>
+<section id="BM2246070"><a name="BM2246070"></a>
+<h2>2246070</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_PROG_RNG_CORRUPT_ERR</div>
+<div class="txt">Operating system software error. The buffer used to store prognostic data is corrupted. All prognostic data will be lost. An automatic attempt will be made to recover.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is logged any time the data stored in the ring buffer has unexpected data in it. The error can be generated by a host of software issues. The code will try to recover the best it can. Should this fail, please perform a TPS reset.</div>
+</section>
+<section id="BM2246071"><a name="BM2246071"></a>
+<h2>2246071</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_PROG_OVERFLOW_ERR</div>
+<div class="txt">Operating system software error. The prognostic data buffer has overflowed. Some prognostic data will be lost. System will attempt to recover.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is logged any time the data storage device cannot hold any more data. This can be caused by a software error on this node or a problem with the diagnostic coordinator process on the host. Reset the node if problem persists or do a host restart.</div>
+</section>
+<section id="BM2246072"><a name="BM2246072"></a>
+<h2>2246072</h2>
+<div class="sym">ERROR: EM_DIAG_AGENT_UDP_SOCKCET_ERR</div>
+<div class="txt">Internal diagnostics communications error:
+The UDP socket connection with the DC Agent has detected and error. All diagnostic communications are down for this node. Please perform a TPS reset to recover.
+fd: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This socket connection enables commands internal to this node to be sent to the DC Agent task. The agent is responsible for receiving messages from external nodes. The failure of this socket prevents the creation of connections to external nodes which limits communications. This error is usually due to an OS error and will require a reset to continue.</div>
+</section>
+<section id="BM2246073"><a name="BM2246073"></a>
+<h2>2246073</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_HOST_TMO_RECV_MSG_ERR</div>
+<div class="txt">Host DC message receive timeout error. Message was discarded.
+fd: %d
+To Obj ID: %d
+From Obj ID: %d
+Msg size: %d
+Msg code: %d
+Bytes read: %d
+IP: %d.%d.%d.%d:%d
+Cmd str: %s Rerun the test. If problem persists, perform a TPS reset.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated by the following errors:
+1) The message was only partially sent before communications were lost.
+2) Security violations: External source attempted to connect to this process. Check the IP and port of sender for invalid values.</div>
+</section>
+<section id="BM2246074"><a name="BM2246074"></a>
+<h2>2246074</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_VALIDATION_ERR</div>
+<div class="txt">Test message for BLD validation testing. Please ignore this message.
+Message:%d</div>
+</section>
+<section id="BM2246075"><a name="BM2246075"></a>
+<h2>2246075</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_DETAILED_VALIDATION_ERR</div>
+<div class="txt">Test message for BLD detailed validation testing. Please ignore this message.
+Message:%d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated to validate the diagnostic platform. Please ignore it.</div>
+</section>
+<section id="BM2246076"><a name="BM2246076"></a>
+<h2>2246076</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_CONFIG_FILE_ERR</div>
+<div class="txt">The following information is missing from the configuration file.
+File:%s
+Value:%s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated when an expected value is missing from the given configuration file. This can happen if this file was corrupted. A system reload my be needed to recover</div>
+</section>
+<section id="BM2246077"><a name="BM2246077"></a>
+<h2>2246077</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_DC_EXT_MSG_SIZE_ERR</div>
+<div class="txt">Error sending diagnostic message. Message size was incorrect.
+Number of bytes: %d
+To obj: %d
+From obj: %d
+Msg code: %d</div>
+</section>
+<section id="BM2246078"><a name="BM2246078"></a>
+<h2>2246078</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_DC_MSG_SIZE_ERR</div>
+<div class="txt">Error sending diagnostic message. Message size was incorrect.
+Number of bytes: %d</div>
+</section>
+<section id="BM2246200"><a name="BM2246200"></a>
+<h2>2246200</h2>
+<div class="sym">ERROR: EM_DMAAPI_OPEN_BOARD_TYPE_OUT_OF_RANGE</div>
+<div class="txt">DMA API - Open operation failed because the board specified for the DMA transfer is not within the defined range of board types.</div>
+<div class="lbl">Extended Error:</div><div class="txt">BOARD_TYPE, which is the second parameter of plxDmaOpen(), is the enumerated value that defines which board is responsible for performing the DMA transfer. This parameter is not a valid BOARD_TYPE value. Refer to systmeResourceApi.h.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246201"><a name="BM2246201"></a>
+<h2>2246201</h2>
+<div class="sym">ERROR: EM_DMAAPI_CLOSE_INVALID_BOARD_CHANNEL_SEMAPHORE_ID</div>
+<div class="txt">DMA API - Close operation failed because the DMA interface handle&#x27;s semaphore is no longer valid.</div>
+<div class="lbl">Extended Error:</div><div class="txt">When a DMA interface is opened a semaphore, which uniquely identifies the board and channel used for the DMA transfer, is created. The semaphore ID is stored in the DMA interface handle. When the DMA interface is closed using plxDmaClose(), the semaphore is &#x27;given&#x27; using semGive(), and deleted using semDelete(). This error occurred because the semGive(&lt;sempahore ID from DMA interface handle&gt;) function failed. Either (1) the sempahore environment of the O/S is corrupted, or (2) the DMA interface handle is corrupted.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246202"><a name="BM2246202"></a>
+<h2>2246202</h2>
+<div class="sym">ERROR: EM_DMAAPI_CLOSE_INVALID_BLOCKING_SEMAPHORE_ID</div>
+<div class="txt">DMA API - Close operation failed because the blocking semaphore is no longer valid.</div>
+<div class="lbl">Extended Error:</div><div class="txt">When a DMA interface is opened, the software defaults the transfer to a blocking transfer - meaning the task initiating the DMA transfer will suspend itself until the DMA transfer is complete. Therefore, a blocking semaphore is created. (Note: If the transfer is non-blocking, the sempahore is deleted and this error cannot occur.) The semaphore ID is stored in the DMA interface handle. For blocking transfers, when the DMA interface is closed using plxDmaClose(), the semaphore is &#x27;given&#x27; using semGive(), and deleted using semDelete(). This error occurred because the semGive(&lt;blocking sempahore ID from DMA interface handle&gt;) function failed. Either (1) the sempahore environment of the O/S is corrupted, or (2) the DMA interface handle is corrupted.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246203"><a name="BM2246203"></a>
+<h2>2246203</h2>
+<div class="sym">ERROR: EM_DMAAPI_CLOSE_C6X_HPI_CLOSE_FAILED</div>
+<div class="txt">DMA API - Close operation failed because the HPI interface, used for DMA transfers to 16 bit memory, could not be successfully closed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">DMA transfers to 16 bit memory require transfers to 32 bit Fast Update and 32 bit Burst memory. On-board hardware decode logic detects write transactions to Fast Update and Burst memory, and then initiate write transactions to 16 bit memory through the HPI interface. To ensure exclusive access to HPI hardware, software interfaces are used. During plcDmaSetup(), an HPI interface is opened (reserved for exclusive use) when the destination DMA location is Fast Update or Burst memory. The HPI interface is stored in the DMA interface handle. When the DMA interface is closed using plxDmaClose(), the HPI handle is closed. This error occurred because HPI close operation failed. Either (1) the HPI API environment is corrupted, or (2) the DMA interface handle is corrupted.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246204"><a name="BM2246204"></a>
+<h2>2246204</h2>
+<div class="sym">ERROR: EM_DMAAPI_OPEN_BOARD_LACKS_DMA_CNTLR</div>
+<div class="txt">DMA API - Open operation failed because the board specified for the DMA transfer, as reported by the board support package (BSP), does not have a resident DMA controller.</div>
+<div class="lbl">Extended Error:</div><div class="txt">BOARD_TYPE, which is the second parameter of plxDmaOpen(), is the enumerated value that defines which board is responsible for performing the DMA transfer. This parameter is a valid BOARD_TYPE value. However, the DMA API initializes a board definitions table, gstrBoardDefs[] (indexed by BOARD_TYPE), that defines various board parameters related to performing DMA transfers. The table element bDmaResident is based on an element bDmaIsResident in the static table gstrBoardTypeInfo[] (defined in dmaSys.c). This element indicates the board specified in the open operation does not support DMA transfers - meaning a DMA controller is not resident.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246205"><a name="BM2246205"></a>
+<h2>2246205</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUPHPI_HPI_HANDLE_ALREADY_DEFINED</div>
+<div class="txt">DMA API - Setup HPI operation failed because the HPI interface was already opened by a previous DMA setup or setup HPI function operation.</div>
+<div class="lbl">Extended Error:</div><div class="txt">HPI hardware, which provides access to 16 bit memory resident on custom boards, is controlled by a software interface that ensures exclusive access. The HPI interface is used by the DMA API and other software, but can also be shared provided the &#x27;other&#x27; software supervises the shared HPI interface. If the DMA API controls (is responsible for opening/closing the HPI interface), the HPI interface, call sequence is plxDmaOpen(), then plxDmaSetup(). If the &#x27;supervisory&#x27; software will control the HPI interface, the call sequence is:
+plxDmaOpen(), plxDmaSetupHpi(), then plxDmaSetup(). If the HPI interface handle is not defined when plxDmaSetup() is called for the first time, the DMA API takes control of the HPI interface. Otherwise, the DMA API assumes the calling software is supervising the HPI which had to be communicated using the plxDmaSetupHpi() function. This error is a result of plxDmaSetupHpi() being called when the HPI interface handle stored in the DMA interface handle already exists. Either (1) the DMA interface handle is corrupted, (2) plxDmaSetupHpi() was called mulitple times, or
+(3) plxDmaSetupHpi() was called after plxDmaSetup().</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246206"><a name="BM2246206"></a>
+<h2>2246206</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUP_SOURCE_AND_DEST_ARE_LOCAL_ADDRS</div>
+<div class="txt">DMA API - Setup operation failed because the source location and destination location parameters are both on the local bus of the board performing the DMA transfer.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The DMA API maintains a board type / DMA locations mapping table. Results from a lookup of that table indicate that the source location and destination location specified as parameters 2 and 4, respectively, both reside on the local bus of the board performing the DMA transfer. The DMA controller requires one local bus address and one PCI bus address.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246207"><a name="BM2246207"></a>
+<h2>2246207</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUP_XFER_SIZE_EXCEEDED</div>
+<div class="txt">DMA API - Setup operation failed because the number of bytes to transfer exceeds hardware limits.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The DMA controller has a transfer limit. In addition, transfers to Burst memory or Fast Update memory have lower transfer limits. The setup call&#x27;s eighth parameter, which specifies the number of bytes to transfer, exceeds the aforementioned limits.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246208"><a name="BM2246208"></a>
+<h2>2246208</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUP_CANNOT_CHANGE_XFER_TYPE</div>
+<div class="txt">DMA API - Setup operation failed because the transfer type changed in a subsequent setup operation.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Multiple setup calls are allowed for scatter/gather transfer types, for example. The first setup call defines the transfer type used during the DMA interface&#x27;s existence (until closed). The transfer type, the sixth parameter of plxDmaSetup(), cannot be changed in subsequent setup calls.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246209"><a name="BM2246209"></a>
+<h2>2246209</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUP_XFER_SIZE_EQUALS_ZERO</div>
+<div class="txt">DMA API - Setup operation failed because the number of bytes to transfer must be greater than zero.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The DMA controller requires that the number of bytes to transfer is greater than zero (but less than the physical hardware limits). The eighth parameter of plxDmaSetup() is set to zero.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246210"><a name="BM2246210"></a>
+<h2>2246210</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUP_CH0_REQD_FOR_DEMAND_MODE_XFERS</div>
+<div class="txt">DMA API - Setup operation failed because Demand Mode was chosen as the transfer type and the channel from the open operation was not Channel 0. Demand mode transfers are supported on Channel 0 only.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246211"><a name="BM2246211"></a>
+<h2>2246211</h2>
+<div class="sym">ERROR: EM_DMAAPI_ABORT_DONE_BIT_NOT_SET</div>
+<div class="txt">DMA API - Abort operation failed because the done bit, which indicates a DMA transfer is completed (normally or abnormally), on the DMA controller is not asserted.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The abort operation, which is only supported for Demand Mode transfers, indirectly asserts the abort bit on the DMA controller. The DMA controller terminates the transfer and asserts it&#x27;s control/status register&#x27;s done bit. After several polling attempts, the abort operation failed to detect the done bit was asserted resulting in an error.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li><li>IRF Board</li></ol>
+</section>
+<section id="BM2246212"><a name="BM2246212"></a>
+<h2>2246212</h2>
+<div class="sym">ERROR: EM_DMAAPI_FAILED_TO_ACQUIRE_LOCAL_RESOURCE_BASE_ADDR_IRF_32NPF</div>
+<div class="txt">DMA API - A special purpose &#x27;IRF Demand Mode&#x27; operation failed because the function used to acquire the base address of the IRF board&#x27;s 32 bit non-prefetchable memory resource failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A set of special purpose DMA API functions that support Demand Mode transfers involving the IRF board was created. Each function requires access to the IRF board&#x27;s registers. The function, getLocalResourceBase(), is called to acquire the base address of the memory resource that contains the IRF board&#x27;s registers - 32 bit non-prefetchable memory.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li><li>IRF Board</li></ol>
+</section>
+<section id="BM2246213"><a name="BM2246213"></a>
+<h2>2246213</h2>
+<div class="sym">ERROR: EM_DMAAPI_TAKEHPIHANDLE_OPEN_HPI_FAILED</div>
+<div class="txt">DMA API - The operation where the DMA API opens the HPI interface, which is used for transfers to 16 bit memory regions, failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">DMA transfers to 16 bit memory require transfers to 32 bit Fast Update and 32 bit Burst memory. On-board hardware decode logic detects write transactions to Fast Update and Burst memory, and then initiate write transactions to 16 bit memory through the HPI interface. To ensure exclusive access to HPI hardware, software interfaces are used. An attempt to open the HPI interface using the function c6x_hpi_open() failed. The ID used during hte open was obtained from a global table, gstrPlxDmaLocationAndBoardTypeInfo[], which is keyed off the board type, and destination location.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246214"><a name="BM2246214"></a>
+<h2>2246214</h2>
+<div class="sym">ERROR: EM_DMAAPI_OPEN_CREATE_BLOCKING_SEMAPHORE_FAILED</div>
+<div class="txt">DMA API - Open operation failed to create a blocking semaphore.</div>
+<div class="lbl">Extended Error:</div><div class="txt">By default, the DMA API assumes blocking tranfers are used. Therefore, a blocking sempahore is created initially during the open. The O/S function, semBCreate(), failed to create a semaphore.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246215"><a name="BM2246215"></a>
+<h2>2246215</h2>
+<div class="sym">ERROR: EM_DMAAPI_OPEN_CREATE_DMA_HANDLE_FAILED</div>
+<div class="txt">DMA API - Open operation failed to allocate space for the DMA interface&#x27;s handle.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The operating system function, calloc(), failed to allocate memory required for the DMA interface&#x27;s handle structure. Either
+(1) an operating system error occurred, or (2) memory on the processor is critically low.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246216"><a name="BM2246216"></a>
+<h2>2246216</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUP_ISBLOCKINGXFER_PARM_INVALID</div>
+<div class="txt">DMA API - Setup operation failed because the parameter that defines the transfer as blocking or non-blocking, the seventh parameter, is not valid. Valid values include TRUE(1) or FALSE(0)</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246217"><a name="BM2246217"></a>
+<h2>2246217</h2>
+<div class="sym">ERROR: EM_DMAAPI_OPEN_CHANNEL_OUT_OF_RANGE</div>
+<div class="txt">DMA API - Open operation failed because the channel specified for the DMA transfer is not valid.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The third parameter to the plxDmaOpen() call is the DMA_CHANNEL, which is the enumerated value of the DMA controller&#x27;s channel. The value specified in the function call is not within the valid range of channels. Refer to dmaApi.h.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246218"><a name="BM2246218"></a>
+<h2>2246218</h2>
+<div class="sym">ERROR: EM_DMAAPI_TAKEHPIHANDLE_HPI_NOT_USED_BY_LOCATION</div>
+<div class="txt">DMA API - The operation that opens the HPI interface failed because of conflicting information in the DMA API call. The transfer type indicates the HPI interface will be used, but the destination location does not use the HPI interface.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The function, plxDmaTakeHpiHandle(), that opens an HPI interface requires an HPI interface ID. This ID is obtained from the global table pstrPlxDmaLocationAndBoardTypeInfo[], which is keyed off the function call parameters: board type and destination location. Typically these parameters are obtained from the plxDmaOpen() and plxDmaSetup() calls respectively. However, plxDmaTakeHpiHandle() is an API function, so parameters may be defined by the calling software. Data returned from the global table, pstrPlxDmaLocationAndBoardTypeInfo[], indicates an HPI interface is not used. A transfer of this type using the HPI interface to the specified board and destiantion, is not possible.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246219"><a name="BM2246219"></a>
+<h2>2246219</h2>
+<div class="sym">ERROR: EM_DMAAPI_ABORT_HANDLE_STATE_INVALID</div>
+<div class="txt">DMA API - The DMA handle, a parameter of the abort function, plxDmaAbort(), contains a variable that stores the interface&#x27;s present DMA state. The interface&#x27;s state is not valid for the abort operation.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The API is state based. A transition from one state to another is accomplished using DMA API functions; each of which has predefined valid states. Either (1) the handle is corrupted, or (2) the DMA handle is not in the proper state because of an untrapped error or call sequence error. A TPS Reset may be required.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246220"><a name="BM2246220"></a>
+<h2>2246220</h2>
+<div class="sym">ERROR: EM_DMAAPI_CLOSE_HANDLE_STATE_INVALID</div>
+<div class="txt">DMA API - The DMA handle, a parameter of the close function, plxDmaClose(), contains a variable that stores the interface&#x27;s present DMA state. The interface&#x27;s state is not valid for the close operation.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The API is state based. A transition from one state to another is accomplished using DMA API functions; each of which has predefined valid states. Either (1) the handle is corrupted, or (2) the DMA handle is not in the proper state because of an untrapped error or call sequence error. A TPS Reset may be required.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246221"><a name="BM2246221"></a>
+<h2>2246221</h2>
+<div class="sym">ERROR: EM_DMAAPI_OPEN_HANDLE_STATE_INVALID</div>
+<div class="txt">DMA API - The DMA handle, a parameter of the open function, plxDmaOpen(), contains a variable that stores the interface&#x27;s present DMA state. The interface&#x27;s state is not valid for the open operation.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The API is state based. A transition from one state to another is accomplished using DMA API functions; each of which has predefined valid states. Either (1) the handle is corrupted, or (2) the DMA handle is not in the proper state because of an untrapped error or call sequence error. A TPS Reset may be required.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246222"><a name="BM2246222"></a>
+<h2>2246222</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUP_HANDLE_STATE_INVALID</div>
+<div class="txt">DMA API - The DMA handle, a parameter of the setup function, plxDmaSetup(), contains a variable that stores the interface&#x27;s present DMA state. The interface&#x27;s state is not valid for the setup operation.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The API is state based. A transition from one state to another is accomplished using DMA API functions; each of which has predefined valid states. Either (1) the handle is corrupted, or (2) the DMA handle is not in the proper state because of an untrapped error or call sequence error. A TPS Reset may be required.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246223"><a name="BM2246223"></a>
+<h2>2246223</h2>
+<div class="sym">ERROR: EM_DMAAPI_START_HANDLE_STATE_INVALID</div>
+<div class="txt">DMA API - The DMA handle, a parameter of the start function, plxDmaStart(), contains a variable that stores the interface&#x27;s present DMA state. The interface&#x27;s state is not valid for the start operation.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The API is state based. A transition from one state to another is accomplished using DMA API functions; each of which has predefined valid states. Either (1) the handle is corrupted, or (2) the DMA handle is not in the proper state because of an untrapped error or call sequence error. A TPS Reset may be required.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246224"><a name="BM2246224"></a>
+<h2>2246224</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUP_XFER_DIR_INVALID_FOR_XFERS_TO_BURST_MEM</div>
+<div class="txt">DMA API - Setup operation failed because Burst memory location cannot be specified as a source DMA location.</div>
+<div class="lbl">Extended Error:</div><div class="txt">DMA transfers to Burst memory regions are allowed, but only when a Burst memory location is specified as a destination location within the setup call.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246225"><a name="BM2246225"></a>
+<h2>2246225</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUP_XFER_DIR_INVALID_FOR_DEMAND_MODE_XFERS</div>
+<div class="txt">DMA API - Setup operation failed because parameters configure the controller for a Demand Mode transfer from PCI to local memory. Only Demand mode transfers from local to PCI memory are supported.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Demand Mode requires special hardware considerations. The implementation supporting Demand Mode only allows transfers from local memory to PCI memory.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246226"><a name="BM2246226"></a>
+<h2>2246226</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUP_XFER_DIR_INVALID_FOR_XFERS_TO_FAST_UPDATE_MEM</div>
+<div class="txt">DMA API - Setup operation failed because Fast Update memory was specified as the source location for the DMA transfer. When used for DMA transfers, Fast Update memory must be the destination location.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246227"><a name="BM2246227"></a>
+<h2>2246227</h2>
+<div class="sym">ERROR: EM_DMAAPI_ABORT_INVALID_DMA_XFER_TYPE</div>
+<div class="txt">DMA API - Abort operation failed because the abort operation can only be called when the transfer type is Demand Mode.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246228"><a name="BM2246228"></a>
+<h2>2246228</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUP_SOURCE_AND_DEST_ARE_CPCI_ADDRS</div>
+<div class="txt">DMA API - Setup operation failed because the source and destination locations are cPCI addresses relative to the board type specified in the open operation.</div>
+<div class="lbl">Extended Error:</div><div class="txt">DMA transfers require one cPCI address and one local bus address relative to the board with the resident controller. The board is specified in the open operation.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246229"><a name="BM2246229"></a>
+<h2>2246229</h2>
+<div class="sym">ERROR: EM_DMAAPI_OPEN_COULDNT_FIND_BOARD_CHANNEL_SEMPAHORE_ID</div>
+<div class="txt">DMA API - Open operation failed because the DMA semaphore name, which is based off the board &amp; channel parameters, was not found by the O/S function, smNameFind(), in the sempahore database.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The DMA API is initialized when plxDmaOpen() is called for the first time. The state of the system is examined, global tables are built, and sempahores are created. For each board capable of performing DMA transfers, semaphore entries consisting of an ID and name are created for each of the DMA controller&#x27;s channels. The semaphore name is a string based on the board and channel. During the open operation, the semaphore database is accessed, searching for the semaphore name that is based off the plxDmaopen() parameters. The smNameFind() function could not find the semaphore name in the database. Either (1) the board &amp; channel is not a valid DMA API interface, (2) the semaphore database was corrupted, or
+(3) the semaphore name was inadvertently removed from the database.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246230"><a name="BM2246230"></a>
+<h2>2246230</h2>
+<div class="sym">ERROR: EM_DMAAPI_OPEN_FAILED_TO_TAKE_DMA_HANDLE</div>
+<div class="txt">DMA API - Open operation failed because the semaphore based on the board and channel could not be taken This indicates that another DMA interface is currently using the requested board and channel.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The semaphore for the given board and channel were found in the sempahore database using smNameFind(), but could not be taken using semTake() because other software already took the board and channel.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246231"><a name="BM2246231"></a>
+<h2>2246231</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUP_SCATTER_GATHER_XFER_TO_BURST_MEM_NOT_ALLOWED</div>
+<div class="txt">DMA API - Setup operation failed because Scatter/Gather DMA transfers are not allowed to Burst memory.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246232"><a name="BM2246232"></a>
+<h2>2246232</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUP_INVALID_BOARD_FOR_DEMAN_MODE_XFERS</div>
+<div class="txt">DMA API - Setup operation failed because Demand Mode transfers are not supported for the board specified in the open operation.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Demand Mode transfers require special hardware considerations. The board specified in the plxDmaOpen() function call does not support Demand Mode transfers. Only the IRF board supports Demand Mode transfers.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246233"><a name="BM2246233"></a>
+<h2>2246233</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUP_INVALID_SOURCE_DMA_LOCATION</div>
+<div class="txt">DMA API - Setup operation failed because the source location parameter is not a valid value.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The source and destination locations are based on an enumerated value defined by PLX_DMA_LOCATION. Refer to dmaApi.h for the valid PLX_DMA_LOCATION values.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246234"><a name="BM2246234"></a>
+<h2>2246234</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUP_INVALID_DEST_DMA_LOCATION</div>
+<div class="txt">DMA API - Setup operation failed because the destination location parameter is not a valid value.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The source and destination locations are based on an enumerated value defined by PLX_DMA_LOCATION. Refer to dmaApi.h for the valid PLX_DMA_LOCATION values.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246235"><a name="BM2246235"></a>
+<h2>2246235</h2>
+<div class="sym">ERROR: EM_DMAAPI_OPEN_TAKE_BLOCKING_SEMAPHORE_FAILED</div>
+<div class="txt">DMA API - Open operation failed because the blocking semaphore was successfully created, but could not be taken immediately following creation.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The function semBCreate() is used to create the blocking semaphore by default. Immediately after the semaphore was successfully created, the semTake() function failed. The likely conclusion is that semaphore database is corrupted.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246236"><a name="BM2246236"></a>
+<h2>2246236</h2>
+<div class="sym">ERROR: EM_DMAAPI_ABORT_HANDLE_DOES_NOT_EXIST</div>
+<div class="txt">DMA API - Abort operation failed because the DMA interface handle does not exist.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The open operation creates a DMA interface handle, which is a data structure that stores various parameters related to the DMA interface being used. The handle is set to NULL indicating that that open operation failed, or a valid DMA interface handle was corrupted and set to NULL.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246237"><a name="BM2246237"></a>
+<h2>2246237</h2>
+<div class="sym">ERROR: EM_DMAAPI_CLOSE_HANDLE_DOES_NOT_EXIST</div>
+<div class="txt">DMA API - Close operation failed because the DMA interface handle does not exist.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The open operation creates a DMA interface handle, which is a data structure that stores various parameters related to the DMA interface being used. The handle is set to NULL indicating that that open operation failed, or a valid DMA interface handle was corrupted and set to NULL.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246238"><a name="BM2246238"></a>
+<h2>2246238</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUP_HANDLE_DOES_NOT_EXIST</div>
+<div class="txt">DMA API - Setup operation failed because the DMA interface handle does not exist.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The open operation creates a DMA interface handle, which is a data structure that stores various parameters related to the DMA interface being used. The handle is set to NULL indicating that that open operation failed, or a valid DMA interface handle was corrupted and set to NULL.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246239"><a name="BM2246239"></a>
+<h2>2246239</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUPHPI_HANDLE_DOES_NOT_EXIST</div>
+<div class="txt">DMA API - The operation used to open the HPI handle failed because the DMA interface handle does not exist.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The open operation creates a DMA interface handle, which is a data structure that stores various parameters related to the DMA interface being used. The handle is set to NULL indicating that that open operation failed, or a valid DMA interface handle was corrupted and set to NULL.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246240"><a name="BM2246240"></a>
+<h2>2246240</h2>
+<div class="sym">ERROR: EM_DMAAPI_START_HANDLE_DOES_NOT_EXIST</div>
+<div class="txt">DMA API - Start operation failed because the DMA interface handle does not exist.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The open operation creates a DMA interface handle, which is a data structure that stores various parameters related to the DMA interface being used. The handle is set to NULL indicating that that open operation failed, or a valid DMA interface handle was corrupted and set to NULL.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246241"><a name="BM2246241"></a>
+<h2>2246241</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUP_INVALID_DMA_XFER_TYPE</div>
+<div class="txt">DMA API - Setup operation failed because the DMA transfer type parameter is not a valid value.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The DMA transfer type is an enumerated value defined by DATA_XFER_TYPE. Refer to dmaApi.h for the valid values and transfer types.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246242"><a name="BM2246242"></a>
+<h2>2246242</h2>
+<div class="sym">ERROR: EM_DMAAPI_SETUP_FAILED_TO_CONNECT_ISR</div>
+<div class="txt">DMA API - Setup operation failed because routine that connects the DMA ISR within the API&#x27;s mapping tables, failed to find a matching board and channel in the global interrupt handler definitions table, gstrIntHandlers[].</div>
+<div class="lbl">Extended Error:</div><div class="txt">The internals of the DMA API maintain a global table that stores the valid board &amp; channel combinations available for DMA transfers. The ISR is defined every time a setup operation is called for the board and channel that were specified during the open operation. Failure to locate a matching record would indicate that the table gstrIntHandlers[] may be corrupted.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246243"><a name="BM2246243"></a>
+<h2>2246243</h2>
+<div class="sym">ERROR: EM_DMAAPI_GENERAL_ADDR_CVT_MAPPING_TABLE_ERROR</div>
+<div class="txt">DMA API - The setup operation failed because the source or destination DMA location, and possibly the board type, cannot be located within an internal mapping table that associates DMA locations, board types, and other related parameters.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The function getPlxDmaLocationAndBoardTypeInfoNdx(), which references the table gstrPlxDmaLocationAndBoardTypeInfo[], could not locate a record in the table for the given source or desintation DMA locations, and optionally the board type.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246244"><a name="BM2246244"></a>
+<h2>2246244</h2>
+<div class="sym">ERROR: EM_DMAAPI_GENERAL_ADDR_CVT_FAILED_TO_ACQUIRE_LOCAL_RESOURCE_BASE_ADDR</div>
+<div class="txt">DMA API - An operation failed because the function that returns the base address for a given resource failed. A coding error also exists: the source, destination, or descriptor block location should have been identified.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The resource used in the getLocalResourceBase() function call is obtained from an internal mapping table, gstrPlxDmaLocationAndBoardTypeInfo[], which specifies various parameters related to DMA locations and board. (The exception to this retrieval source is the special purpose DRF/APS API function that use switch/select logic based on the DMA destination.) When the resource from the mapping table was used (or the resource from from the DRF/APS logic), the getLocalResourceBase() function returned an error.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246245"><a name="BM2246245"></a>
+<h2>2246245</h2>
+<div class="sym">ERROR: EM_DMAAPI_GENERAL_ADDR_CVT_FAILED_TO_GET_ADDR_SPACE</div>
+<div class="txt">DMA API - An operation failed because the function that returns the cPCI address space for a given board failed. A coding error also exists: the source, destination, or descriptor block location should have been identified.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The board type resulting in the failure is the board type specified in the open() function call.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246246"><a name="BM2246246"></a>
+<h2>2246246</h2>
+<div class="sym">ERROR: EM_DMAAPI_GENERAL_ADDR_CVT_FAILED_TO_CONVERT_ADDR_TO_PCI_BUS_ADDR</div>
+<div class="txt">DMA API - An operation failed because the function that converts a processor&#x27;s local bus address to a cPCI address failed. A coding error also exists: the source, destination, or descriptor block location should have been identified.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The failure of the function sysLocalToBusAdrs() is based on a given local bus address and the address space, which is related to the board type specified in the open() function call.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246247"><a name="BM2246247"></a>
+<h2>2246247</h2>
+<div class="sym">ERROR: EM_DMAAPI_DESC_BLOCK_ADDR_CVT_MAPPING_TABLE_ERROR</div>
+<div class="txt">DMA API - The open operation failed because a matching record could not be found in the DMA location/board type mapping table while trying to get the descriptor block base address - an operation done by default.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The function getPlxDmaLocationAndBoardTypeInfoNdx(), which references the table gstrPlxDmaLocationAndBoardTypeInfo[], could not locate a record in the table for the given board type, which is specified in open operation, and location, which is retrieved from a board information table that specifies various parameters including the DMA location for storing descriptor blocks.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246248"><a name="BM2246248"></a>
+<h2>2246248</h2>
+<div class="sym">ERROR: EM_DMAAPI_DESC_BLOCK_ADDR_CVT_FAILED_TO_ACQUIRE_LOCAL_RESOURCE_BASE_ADDR</div>
+<div class="txt">DMA API - Open operation failed because the memory resource, which references the custom board&#x27;s local memory region where descriptor blocks (if used) reside, resulted in a failure when getLocalResourceBase() was called.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Independent of transfer type, the starting address for descriptor blocks is computed. The table gstrPlxDmaLocationAndBoardTypeInfo[], which is keyed off the board (open) and a DMA location , yields a corresponding resource. (The DMA location is a field value from a board information table. The field value corresponds to the location where descriptor blocks will reside.) The resource is passed to the function getLocalResourceBase(), which returns the base address of the given resource as seen by the processor executing the function. The base address combined with the source address offset, which is also a setup operation parameter, yields a resultant address.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246249"><a name="BM2246249"></a>
+<h2>2246249</h2>
+<div class="sym">ERROR: EM_DMAAPI_DESC_BLOCK_ADDR_CVT_FAILED_TO_GET_ADDR_SPACE</div>
+<div class="txt">DMA API - The open operation failed because the address space could not be determined for the board type. The error occurred while trying to convert the descriptor block&#x27;s starting address to a local bus address.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The descriptor block&#x27;s starting address must be converted to a Local Bus address. While trying to convert a PCI address, the address space with respect to the processor running the software must be determined in order to properly convert the address from what the processor &#x27;sees&#x27; the address as to the address as seen by the board performing the DMA transfer. The board support package (BSP) function, getAddressSpace() failed to return the address space for the custom board performing the DMA transfer.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246250"><a name="BM2246250"></a>
+<h2>2246250</h2>
+<div class="sym">ERROR: EM_DMAAPI_DESC_BLOCK_ADDR_CVT_FAILED_TO_CONVERT_ADDR_TO_PCI_BUS_ADDR</div>
+<div class="txt">DMA API - Open operation failed to convert the descriptor block&#x27;s starting address, which is a PCI address with respect to the custom board, from the processor&#x27;s local bus address to a PCI bus address Function sysLocalToBusAdrs() failed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246251"><a name="BM2246251"></a>
+<h2>2246251</h2>
+<div class="sym">ERROR: EM_DMAAPI_SOURCE_ADDR_CVT_MAPPING_TABLE_ERROR</div>
+<div class="txt">DMA API - Setup operation failed because the source DMA location, which is valid, is not found in the DMA API system tables. Internal coding error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A coding problem exists where the source DMA location specified in the setup operation is not found in the global DMA API system table, gstrPlxDmaLocationAndBoardTypeInfo[] - field &#x27;enDmaLocation&#x27;.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246252"><a name="BM2246252"></a>
+<h2>2246252</h2>
+<div class="sym">ERROR: EM_DMAAPI_SOURCE_ADDR_CVT_FAILED_TO_ACQUIRE_LOCAL_RESOURCE_BASE_ADDR</div>
+<div class="txt">DMA API - Setup operation failed because the source DMA location&#x27;s &#x27;resource&#x27; parameter to the function getLocalResourceBase() resulted in an error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The table gstrPlxDmaLocationAndBoardTypeInfo[], which is keyed off the source DMA location (setup) and board (open), yields a corresponding resource. The resource is passed to the function getLocalResourceBase(), which returns the base address of the given resource as seen by the processor executing the function. The base address combined with the source address offset, which is also a setup operation parameter, yields a resultant address.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246253"><a name="BM2246253"></a>
+<h2>2246253</h2>
+<div class="sym">ERROR: EM_DMAAPI_SOURCE_ADDR_CVT_FAILED_TO_GET_ADDR_SPACE</div>
+<div class="txt">DMA API - The setup operation failed because the address space could not be determined for the board type specified from the open operation. The error occurred while trying to convert the source address to a PCI or local bus address.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The source and destination addresses must be converted to PCI and Local Bus addresses. While trying to convert a PCI address, the address space with respect to the processor running the software must be determined in order to properly convert the address from what the processor &#x27;sees&#x27; the address as to the address as seen by the board performing the DMA transfer. The board support package (BSP) function, getAddressSpace() failed to return the address space for the custom board performing the DMA transfer.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246254"><a name="BM2246254"></a>
+<h2>2246254</h2>
+<div class="sym">ERROR: EM_DMAAPI_SOURCE_ADDR_CVT_FAILED_TO_CONVERT_ADDR_TO_PCI_BUS_ADDR</div>
+<div class="txt">DMA API - Setup operation failed to convert the source address, which is a PCI address with respect to the custom board, from the processor&#x27;s local bus address to a PCI bus address Function sysLocalToBusAdrs() failed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246255"><a name="BM2246255"></a>
+<h2>2246255</h2>
+<div class="sym">ERROR: EM_DMAAPI_DEST_ADDR_CVT_MAPPING_TABLE_ERROR</div>
+<div class="txt">DMA API - Setup operation failed because the destination DMA which is valid, is not found in the DMA API system tables. Internal coding error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A coding problem exists where the destination DMA location specified in the setup operation is not found in the global DMA API system table, gstrPlxDmaLocationAndBoardTypeInfo[] - field &#x27;enDmaLocation&#x27;.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246256"><a name="BM2246256"></a>
+<h2>2246256</h2>
+<div class="sym">ERROR: EM_DMAAPI_DEST_ADDR_CVT_FAILED_TO_ACQUIRE_LOCAL_RESOURCE_BASE_ADDR</div>
+<div class="txt">DMA API - Setup operation failed because the destination DMA location&#x27;s &#x27;resource&#x27; parameter to the function getLocalResourceBase() resulted in an error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The table gstrPlxDmaLocationAndBoardTypeInfo[], which is keyed off the destination DMA location (setup) and board (open), yields a corresponding resource. The resource is passed to the function getLocalResourceBase(), which returns the base address of the given resource as seen by the processor executing the function. The base address combined with the destination address offset, which is also a setup operation parameter, yields a resultant address.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246257"><a name="BM2246257"></a>
+<h2>2246257</h2>
+<div class="sym">ERROR: EM_DMAAPI_DEST_ADDR_CVT_FAILED_TO_GET_ADDR_SPACE</div>
+<div class="txt">DMA API - The setup operation failed because the address space could not be determined for the board type specified from the open operation. The error occurred while trying to convert the destination address to a PCI or local bus address.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The source and destination addresses must be converted to PCI and Local Bus addresses. While trying to convert a PCI address, the address space with respect to the processor running the software must be determined in order to properly convert the address from what the processor &#x27;sees&#x27; the address as to the address as seen by the board performing the DMA transfer. The board support package (BSP) function, getAddressSpace() failed to return the address space for the custom board performing the DMA transfer.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246258"><a name="BM2246258"></a>
+<h2>2246258</h2>
+<div class="sym">ERROR: EM_DMAAPI_DEST_ADDR_CVT_FAILED_TO_CONVERT_ADDR_TO_PCI_BUS_ADDR</div>
+<div class="txt">DMA API - Setup operation failed to convert the source address, which is a PCI address with respect to the custom board, from the processor&#x27;s local bus address to a PCI bus address Function sysLocalToBusAdrs() failed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246259"><a name="BM2246259"></a>
+<h2>2246259</h2>
+<div class="sym">ERROR: EM_DMA_DIAGS_FAILED_DATA_MISMATCH</div>
+<div class="txt">DMA Diagnostics failed because the data that was transferred did not compare to the original (source) data.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A data mismatch indicates that the software set up and started the DMA transfer(s), but the data DMA&#x27;ed to a destination memory region did not compare to the original source data. Block DMA and Scatter/ Gather DMAs transfer data from processor memory to custom memory, then back to processor memory. The source and DMA&#x27;ed data in processor memory is compared. DMA transfers to Burst and Fast Update memory, which use the HPI interface, DMA data to the respective memory reegion, which the HPI interface transfers to 16 bit memory. The DMA diag then performs discrete reads from the 16 bit memory, copying the data back to processor memory. Again, the source and destination data resident in processor memory is compared. The Demand Mode diag, performs discrete writes to to custom memory. Certain data patterns trigger the custom board&#x27;s hardware to initiate a DMA transfer back to processor memory. Data in the processor&#x27;s memory is again compared.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246260"><a name="BM2246260"></a>
+<h2>2246260</h2>
+<div class="sym">ERROR: EM_DMA_DIAG_DMA_CNTLR_NOT_RESIDENT</div>
+<div class="txt">DMA Diagnostics failed because the diagnostic detected that board does not have a DMA controller resident.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Tha DMA API builds a table of information regarding all the possible boards in the system. The table, which is built the first time an DMA open operation is performed and is based off values returned from the board support package (BSP) library, indicates that board does not have a DMA controller.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246261"><a name="BM2246261"></a>
+<h2>2246261</h2>
+<div class="sym">ERROR: EM_DMA_DIAG_GET_BOARD_REV_FAILED</div>
+<div class="txt">DMA Diagnostics failed because the board support package (BSP) function, getBoardRevision(), failed to get the revision number for the custom board responsible for the DMA transfer.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246262"><a name="BM2246262"></a>
+<h2>2246262</h2>
+<div class="sym">ERROR: EM_DMA_DIAG_REGISTER_DATA_BUS_TEST_FAILED</div>
+<div class="txt">DMA Diagnostics&#x27; register tests failed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246263"><a name="BM2246263"></a>
+<h2>2246263</h2>
+<div class="sym">ERROR: EM_DMA_DIAG_ALLOC_FAILED</div>
+<div class="txt">DMA Diagnostics failed because adequate memory resources could not be allocated.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246264"><a name="BM2246264"></a>
+<h2>2246264</h2>
+<div class="sym">ERROR: EM_DMA_DIAG_GET_BOARD_ID_ERROR</div>
+<div class="txt">DMA Diagnostics failed because the processor could not self-identify itself.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A call to getBoardID() failed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246265"><a name="BM2246265"></a>
+<h2>2246265</h2>
+<div class="sym">ERROR: EM_DMA_DIAG_INVALID_INTITIATING_PROCESSOR</div>
+<div class="txt">DMA Diagnostics failed because the processor initiating the DMA diagnostics is not valid. DMA Diagnostics must be initiated from the AGP or APS processor.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246266"><a name="BM2246266"></a>
+<h2>2246266</h2>
+<div class="sym">ERROR: EM_DMAAPI_START_SEMTAKE_TIMEOUT_ABORT_OK</div>
+<div class="txt">DMA API - The start operation failed. The DMA transfer did not complete prior to the timeout specified in the semTake() function call. Hardware cleanup successful.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Once the DMA transfer is initiated, a semTake() function call attempts to take a blocking semaphore that is not available until the DMA ISR handler frees the blocking semaphore. The second parameter in the semTake() function specifies the duration to wait for the blocking semaphore to become available. The following conditions may exist:
+(1) A lengthy DMA transfer did not complete in the timeframe allotted. The timeout parameter should be increased. (2) The ISR handler was not called because of a hardware or O/S error. After the timeout occurred, software attempted to clean up the hardware by aborting the DMA transfer. The cleanup was successful.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246267"><a name="BM2246267"></a>
+<h2>2246267</h2>
+<div class="sym">ERROR: EM_DMAAPI_START_SEMTAKE_SYS_ERR</div>
+<div class="txt">DMA API - The start operation failed. The semTake() function call, which suspends the task until the DMA transfer is completed, failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Once the DMA transfer is initiated, a semTake() function call attempts to take a blocking semaphore that is not available until the DMA ISR handler frees the blocking semaphore. The semTake() function call failed. Refer to O/S manuals for semTake() errors.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246268"><a name="BM2246268"></a>
+<h2>2246268</h2>
+<div class="sym">ERROR: EM_DMAAPI_GET_BOARDS_INTERRUPT_LINE_ERROR</div>
+<div class="txt">DMA API - Initialization of the DMA API interface failed. While building the board definitions table used by the DMA API interface, an error occurred while trying to get the board&#x27;s interrupt line.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The function, getInterruptLine(), was unsuccessful. The failure can be determined by looking at the gstrBoardDefs[] table. The record (indexed by the BOARD_TYPE) who&#x27;s n8InterruptLine value is MAX_INTERRUPT_LINES, but has a DMA controller is the offending board type.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246269"><a name="BM2246269"></a>
+<h2>2246269</h2>
+<div class="sym">ERROR: EM_DMAAPI_GET_REGISTER_BASE_ERROR</div>
+<div class="txt">DMA API - Initialization of the DMA API interface failed. While building the board definitions table used by the DMA API interface, an error occurred while trying to get the base address of the DMA controller&#x27;s control and status registers.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The function, getRegisterBase(), was unsuccessful because a call to getLocalResourceBase() from getRegisterBase() failed. The parameter passed to getLocaResourceBase() is from a static table gstrBoardTypeInfo[]. Examine the field, enResourceName, within the table for each board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246270"><a name="BM2246270"></a>
+<h2>2246270</h2>
+<div class="sym">ERROR: EM_DMAAPI_GET_BOARD_ID_ERROR</div>
+<div class="txt">DMA API - Initialization of the DMA API interface failed. During initialization the processor could not self-identify itself.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A call to getBoardID() during the first step of initializing the DMA API interface failed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246271"><a name="BM2246271"></a>
+<h2>2246271</h2>
+<div class="sym">ERROR: EM_DMAAPI_ALLOC_INT_HANDLER_TABLE_MEMORY_ERROR</div>
+<div class="txt">DMA API - Initialization of the DMA API interface failed - memory error. While trying to dynamically create the interrupt handlers&#x27; table, gstrIntHandlers.pstrIntHandlerDefs, the required amount of memory could not be allocated.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A call to calloc() failed to create a small dynamically allocated table. Available memory is critically low.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246272"><a name="BM2246272"></a>
+<h2>2246272</h2>
+<div class="sym">ERROR: EM_DMAAPI_CREATE_SEMAPHORE_ERROR</div>
+<div class="txt">DMA API - Initialization of the DMA API interface failed. A shared binary semaphore could not be created.</div>
+<div class="lbl">Extended Error:</div><div class="txt">For each board that has a DMA controller, shared binary sempahores are created for each DMA channel. A call to semBSmCreate() failed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246273"><a name="BM2246273"></a>
+<h2>2246273</h2>
+<div class="sym">ERROR: EM_DMAAPI_ADD_SEMAPHORE_NAME_ERROR</div>
+<div class="txt">DMA API - Initialization of the DMA API interface failed. A semaphore name could not be added to the semaphore database.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A name associated with a shared binary sempahore could not be added to the semaphore database using smNameAdd(). The name does not already exist... it simply could not be added to the database.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246274"><a name="BM2246274"></a>
+<h2>2246274</h2>
+<div class="sym">ERROR: EM_DMAAPI_SIZEOF_INT_LINES_TABLE_ERROR</div>
+<div class="txt">DMA API - Initialization of the DMA API interface failed. While connecting interrupt handlers, the size of the interrupt lines table, gn8InterruptLines[], was determined to be inadequately sized.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A maintenance problem exists. The size of the table is statically defined to match the physical limitations of the chassis hardware. The size of the table must be resized. See MAX_INTERRUPT_LINES.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246275"><a name="BM2246275"></a>
+<h2>2246275</h2>
+<div class="sym">ERROR: EM_DMAAPI_ESTABLISH_INTERRUPT_CONNECTION_ERROR</div>
+<div class="txt">DMA API - Initialization of the DMA API interface failed. DMA interrupt handler routine was not successfully connected.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246276"><a name="BM2246276"></a>
+<h2>2246276</h2>
+<div class="sym">ERROR: EM_DMAAPI_SEMTAKE_TIMEOUT_ABORT_FAILED</div>
+<div class="txt">DMA API - The start operation failed. The DMA transfer did not complete prior to the timeout specified in the semTake() function call. Hardware cleanup failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Once the DMA transfer is initiated, a semTake() function call attempts to take a blocking semaphore that is not available until the DMA ISR handler frees the blocking semaphore. The second parameter in the semTake() function specifies the duration to wait for the blocking semaphore to become available. The following conditions may exist:
+(1) A lengthy DMA transfer did not complete in the timeframe allotted. The timeout parameter should be increased. (2) The ISR handler was not called because of a hardware or O/S error.\n After the timeout occurred, software attempted to clean up the hardware by aborting the DMA transfer. The cleanup failed. The DMA controller is in an uncertain state.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246277"><a name="BM2246277"></a>
+<h2>2246277</h2>
+<div class="sym">ERROR: EM_DMAAPI_HANDLE_INFO_FULL</div>
+<div class="txt">DMA handle information from previously logged error.
+Error: %s Line %d
+State: %s
+Board: %s Ch%d (semaphore %ld)
+Xfer Type: %slocking %s %s Xfer Info: 0x%08lx %s 0x%08lx (0x%lx bytes) Plx Base: 0x%08lx</div>
+</section>
+<section id="BM2246278"><a name="BM2246278"></a>
+<h2>2246278</h2>
+<div class="sym">ERROR: EM_DMAAPI_HANDLE_INFO_OPEN</div>
+<div class="txt">DMA handle information from previously logged error.
+Error: %s Line %d
+State: %s
+Board: %s Ch%d (semaphore %ld)</div>
+</section>
+<section id="BM2246279"><a name="BM2246279"></a>
+<h2>2246279</h2>
+<div class="sym">ERROR: EM_DMAAPI_HANDLE_INFO_UNINIT</div>
+<div class="txt">DMA handle does not exist, so detailed information is unavailable.
+Error: %s Line %d</div>
+</section>
+<section id="BM2246280"><a name="BM2246280"></a>
+<h2>2246280</h2>
+<div class="sym">ERROR: EM_DMA_DIAG_IS_BOARD_PRESENT_FAILED</div>
+<div class="txt">DMA Diagnostics failed because the board support package (BSP) function, isBoardPresent(), indicated that the custom board responsible for the DMA transfer is not present in the system.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2246300"><a name="BM2246300"></a>
+<h2>2246300</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_NOT_PRESENT_ERR</div>
+<div class="txt">The DRF%d board was not detected. Testing of this board will be aborted.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated anytime the operating system cannot detect the presence of the DRF board under test. There are several reasons for this:
+1)The DRF board is missing from the system. 2)The PCI interface located on the DRF board is not operational. 3)Backplane connecting the DRF board with the CPU is defective. 4)Bent pins. Check the connector.
+5) DRF board is not seated properly.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li><li>MGD Backplane</li><li>APS Board</li></ol>
+</section>
+<section id="BM2246301"><a name="BM2246301"></a>
+<h2>2246301</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_REGISTER_INIT_TEST_FAILURE</div>
+<div class="txt">DRF%d Register initialization test failure. One or more registers were not in the correct state after a reset.</div>
+</section>
+<section id="BM2246302"><a name="BM2246302"></a>
+<h2>2246302</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_REGISTER_WRITE_TEST_FAILURE</div>
+<div class="txt">DRF%d Register write validation failure. One or more registers failed the read-write test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246303"><a name="BM2246303"></a>
+<h2>2246303</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_SEMAPHORE_TEST_FAILURE</div>
+<div class="txt">DRF%d Hardware semaphore validation failure. One or more semaphores failed the validation test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li><li>Firmware</li></ol>
+</section>
+<section id="BM2246304"><a name="BM2246304"></a>
+<h2>2246304</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_HPI_OPEN_ERROR</div>
+<div class="txt">DRF%d HPI open failure. Could not open a connection to DSP%d (C6X). All devices requiring the HPI will NOT be tested.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This Host Port Interface (HPI) enables direct access to the DSP bus via the PCI interface. This error can indicate the device is in use or can not be found. If problem persists, perform a TPS Reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li><li>DRF Board</li></ol>
+</section>
+<section id="BM2246305"><a name="BM2246305"></a>
+<h2>2246305</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_HPI_REGISTER_TEST_FAILURE</div>
+<div class="txt">DRF%d HPI Register write validation failure. One or more HPI registers failed the read-write test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246306"><a name="BM2246306"></a>
+<h2>2246306</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_HPI_FUNCTIONAL_TEST_FAILURE</div>
+<div class="txt">DRF%d HPI Functional validation failure. The functional test of the HPI interface failed on one or more C6X&#x27;s.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246307"><a name="BM2246307"></a>
+<h2>2246307</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_HPI_DPR_TEST_FAILURE</div>
+<div class="txt">DRF%d HPI Dual Port RAM validation failure. A failure with Dual Port RAM was detected via the HPI interface.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246308"><a name="BM2246308"></a>
+<h2>2246308</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_HPI_PROGRAM_MEMORY_TEST_FAILURE</div>
+<div class="txt">DRF%d HPI program memory validation failure. A failure with the C6X program memory was detected via the HPI interface.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246309"><a name="BM2246309"></a>
+<h2>2246309</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_HPI_DATA_MEMORY_TEST_FAILURE</div>
+<div class="txt">DRF%d HPI data memory validation failure. A failure with the C6X data memory was detected via the HPI interface.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246310"><a name="BM2246310"></a>
+<h2>2246310</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_HPI_SSRAM_MEMORY_TEST_FAILURE</div>
+<div class="txt">DRF%d HPI SSRAM memory validation failure. A failure with the C6X SSRAM memory was detected via the HPI interface.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246311"><a name="BM2246311"></a>
+<h2>2246311</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_PCI_DPR_TEST_FAILURE</div>
+<div class="txt">DRF%d PCI Dual Port RAM validation failure. A failure with Dual Port RAM was detected via the PCI bus interface.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246312"><a name="BM2246312"></a>
+<h2>2246312</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_DPR_SEMAPHORE_TEST_FAILURE</div>
+<div class="txt">DRF%d Dual Port Memory (DPM) Hardware semaphore validation failure. One or more or the semaphores used to protect DPM has failed the validation test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246313"><a name="BM2246313"></a>
+<h2>2246313</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_HPI_APS_INTR_TEST_FAILURE</div>
+<div class="txt">DRF%d HPI APS interrupt test failure. The DRF board failed to generate a HPI interrupt to the APS.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li><li>MGD Backplane</li><li>APS Board</li></ol>
+</section>
+<section id="BM2246314"><a name="BM2246314"></a>
+<h2>2246314</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_FE_APS_INTR_TEST_FAILURE</div>
+<div class="txt">DRF%d DSP APS interrupt test failure. The DRF board failed to generate a DSP interrupt to the APS.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li><li>MGD Backplane</li><li>APS Board</li></ol>
+</section>
+<section id="BM2246315"><a name="BM2246315"></a>
+<h2>2246315</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_ACQ_APS_INTR_TEST_FAILURE</div>
+<div class="txt">DRF%d beginning acquisition APS interrupt test failure. The DRF board failed to generate a beginning of acquisition interrupt to the APS.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li><li>MGD Backplane</li><li>APS Board</li></ol>
+</section>
+<section id="BM2246316"><a name="BM2246316"></a>
+<h2>2246316</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_C6X_RESET_APS_INTR_TEST_FAILURE</div>
+<div class="txt">DRF%d C6X reset APS interrupt test failure. The DRF board failed to generate a C6X reset interrupt to the APS.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li><li>MGD Backplane</li><li>APS Board</li></ol>
+</section>
+<section id="BM2246317"><a name="BM2246317"></a>
+<h2>2246317</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_APS_HPI_INTR_TEST_FAILURE</div>
+<div class="txt">DRF%d failed the APS to HPI interrupt test. The DRF board failed to receive an interrupt from the APS to the HPI interface.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246318"><a name="BM2246318"></a>
+<h2>2246318</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_APS_INTR_TEST_FAILURE</div>
+<div class="txt">DRF%d failed the APS interrupt test. The C6X failed to receive an interrupt from the APS.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246319"><a name="BM2246319"></a>
+<h2>2246319</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_DSP_SELF_TEST_FAILURE</div>
+<div class="txt">DRF%d failed the DSP Self Test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246320"><a name="BM2246320"></a>
+<h2>2246320</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_DMA_TEST_FAILURE</div>
+<div class="txt">DRF%d failed the DMA verification test. The PLX registers, DMA setup, or DMA transfer failed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li><li>MGD Backplane</li><li>APS Board</li></ol>
+</section>
+<section id="BM2246321"><a name="BM2246321"></a>
+<h2>2246321</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_C6X_TO_PCI_HPI_INT_TEST_ERR</div>
+<div class="txt">%s DSP%d in Slot %d failed the C6X to PCI HPI interrupt test:
+Failure type: %d (%s) PCI Dynamic Base Address: 0x%lx Intr Status Reg Address: 0x%lx Intr Status Reg Value: 0x%lx Intr Mask Reg Address: 0x%lx Intr Mask Reg Value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li><li>MGD Backplane</li><li>APS Board</li></ol>
+</section>
+<section id="BM2246322"><a name="BM2246322"></a>
+<h2>2246322</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_C6X_TO_PCI_FE_INT_TEST_ERR</div>
+<div class="txt">%s DSP%d in Slot %d failed the C6X to PCI DSP interrupt test:
+Failure type: %d (%s) PCI Dynamic Base Address: 0x%lx Intr Status Reg Address: 0x%lx Intr Status Reg Value: 0x%lx Intr Mask Reg Address: 0x%lx Intr Mask Reg Value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li><li>MGD Backplane</li><li>APS Board</li></ol>
+</section>
+<section id="BM2246323"><a name="BM2246323"></a>
+<h2>2246323</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_PCI_TO_C6X_INT_TEST_ERR</div>
+<div class="txt">%s DSP%d in Slot %d failed the C6X to PCI interrupt test:
+Interrupt type: %d (%s)
+Failure type: %d (%s) PCI Dynamic Base Address: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246324"><a name="BM2246324"></a>
+<h2>2246324</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_PCI_DPR_ERR</div>
+<div class="txt">DRF Dual Port RAM (DPR) failure. %s DSP%d in Slot %d failed the DPR test:
+Dynamic Base Address: 0x%lx PCI Failed Address: 0x%lx Value Written: 0x%lx Value Read: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246325"><a name="BM2246325"></a>
+<h2>2246325</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_DPR_SEMAPHORE_TEST_ERR</div>
+<div class="txt">%s DSP%d in Slot %d failed the DPR Semaphore Test:
+Failure code: %d (%s) PCI Dynamic Base Addr: 0x%lx PCI Semaphore Addr: 0x%lx DSP Semaphore Addr: 0x%lx
+Semaphore number: %d
+PCI Semaphore Value: %d
+DSP Semaphore Value: %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246326"><a name="BM2246326"></a>
+<h2>2246326</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_RCV_SERIAL_COMM_TEST_ERR</div>
+<div class="txt">%s DSP%d in Slot %d failed the Receiver Serial Communications test:
+Expected Data: %d
+Received Data: %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246327"><a name="BM2246327"></a>
+<h2>2246327</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_SSP_SERIAL_COMM_TEST_ERR</div>
+<div class="txt">%s DSP%d in Slot %d failed the SSP Serial Communications test:
+Expected Data: %d
+Received Data: %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246328"><a name="BM2246328"></a>
+<h2>2246328</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_SERIAL_NUM_FAILURE</div>
+<div class="txt">The serial number CRC check failed during the DRF%d BLD. Serial Number: 0x%8.8lx%8.8lx Serial Number CRC: 0x%x Calculated CRC: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The serial number read from hardware does not match the CRC calculated by software. The board mentioned in the primary error message may need to be replaced.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246329"><a name="BM2246329"></a>
+<h2>2246329</h2>
+<div class="sym">ERROR: EM_DIAG_DRF_UTOPIA_COMM_TEST_ERR</div>
+<div class="txt">DSP%d in Slot %d failed the Utopia Communications test:
+Expected Data: %d
+Received Data: %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2246600"><a name="BM2246600"></a>
+<h2>2246600</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_NOT_PRESENT_ERR</div>
+<div class="txt">The TRF board was not detected. Testing of this board will be aborted.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The test determines if the TRF board is present by reading a register on the SRF board. Failure to detect the TRF can be cause by the following:
+1) TRF board is not seated correctly on the SRF.
+2) TRF board is missing.
+3) SRF board failed to detect the TRF mezzanine board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246601"><a name="BM2246601"></a>
+<h2>2246601</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_REGISTER_INIT_TEST_FAILURE</div>
+<div class="txt">TRF Register initialization test failure. One or more registers were not in the correct state after a reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li></ol>
+</section>
+<section id="BM2246602"><a name="BM2246602"></a>
+<h2>2246602</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_REGISTER_WRITE_TEST_FAILURE</div>
+<div class="txt">TRF Register write validation failure. One or more registers failed the read-write test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246603"><a name="BM2246603"></a>
+<h2>2246603</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_SEMAPHORE_TEST_FAILURE</div>
+<div class="txt">TRF Hardware semaphore validation failure. One or more semaphores failed the validation test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li></ol>
+</section>
+<section id="BM2246604"><a name="BM2246604"></a>
+<h2>2246604</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_HPI_OPEN_ERROR</div>
+<div class="txt">TRF HPI open failure. Could not open a connection to DSP%d (C6X). All devices requiring the HPI will NOT be tested.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This Host Port Interface (HPI) enables direct access to the DSP bus via the SRF. This error can indicate the device is in use or can not be found. If problem persists, perform a TPS Reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246605"><a name="BM2246605"></a>
+<h2>2246605</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_HPI_REGISTER_TEST_FAILURE</div>
+<div class="txt">TRF HPI Register write validation failure. One or more HPI registers failed the read-write test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246606"><a name="BM2246606"></a>
+<h2>2246606</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_HPI_FUNCTIONAL_TEST_FAILURE</div>
+<div class="txt">TRF HPI Functional validation failure. The functional test of the HPI interface failed on one or more C6X&#x27;s.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246607"><a name="BM2246607"></a>
+<h2>2246607</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_HPI_DPR_TEST_FAILURE</div>
+<div class="txt">TRF HPI Dual Port RAM validation failure. A failure with Dual Port RAM was detected via the HPI interface.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246608"><a name="BM2246608"></a>
+<h2>2246608</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_HPI_PROGRAM_MEMORY_TEST_FAILURE</div>
+<div class="txt">TRF HPI program memory validation failure. A failure with the C6X program memory was detected via the HPI interface.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li></ol>
+</section>
+<section id="BM2246609"><a name="BM2246609"></a>
+<h2>2246609</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_HPI_DATA_MEMORY_TEST_FAILURE</div>
+<div class="txt">TRF HPI data memory validation failure. A failure with the C6X data memory was detected via the HPI interface.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li></ol>
+</section>
+<section id="BM2246610"><a name="BM2246610"></a>
+<h2>2246610</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_HPI_SDRAM_MEMORY_TEST_FAILURE</div>
+<div class="txt">TRF HPI SDRAM memory validation failure. A failure with the C6X SDRAM memory was detected via the HPI interface.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li></ol>
+</section>
+<section id="BM2246611"><a name="BM2246611"></a>
+<h2>2246611</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_PCI_DPR_TEST_FAILURE</div>
+<div class="txt">TRF PCI Dual Port RAM validation failure. A failure with Dual Port RAM was detected via the PCI bus interface.</div>
+</section>
+<section id="BM2246612"><a name="BM2246612"></a>
+<h2>2246612</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_DPR_SEMAPHORE_TEST_FAILURE</div>
+<div class="txt">TRF Dual Port Memory (DPM) Hardware semaphore validation failure. One or more or the semaphores used to protect DPM has failed the validation test.</div>
+</section>
+<section id="BM2246613"><a name="BM2246613"></a>
+<h2>2246613</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_HPI_AGP_INTR_TEST_FAILURE</div>
+<div class="txt">TRF HPI AGP interrupt test failure. The TRF board failed to generate a HPI interrupt to the AGP.</div>
+</section>
+<section id="BM2246614"><a name="BM2246614"></a>
+<h2>2246614</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_C6X_RESET_AGP_INTR_TEST_FAILURE</div>
+<div class="txt">TRF C6X reset AGP interrupt test failure. The TRF board failed to generate a C6X reset interrupt to the AGP.</div>
+</section>
+<section id="BM2246615"><a name="BM2246615"></a>
+<h2>2246615</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_AGP_HPI_INTR_TEST_FAILURE</div>
+<div class="txt">TRF failed the AGP to HPI interrupt test. The TRF board failed to receive an interrupt from the AGP to the HPI interface.</div>
+</section>
+<section id="BM2246616"><a name="BM2246616"></a>
+<h2>2246616</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_DSP_SELF_TEST_FAILURE</div>
+<div class="txt">TRF failed the DSP Self Test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246617"><a name="BM2246617"></a>
+<h2>2246617</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_C6X_TO_PCI_HPI_INT_TEST_ERR</div>
+<div class="txt">%s %s in Slot %d failed the C6X to PCI HPI interrupt test:
+Failure type: %d (%s) PCI Dynamic Base Address: 0x%lx Intr Status Reg Address: 0x%lx Intr Status Reg Value: 0x%lx Intr Mask Reg Address: 0x%lx Intr Mask Reg Value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246618"><a name="BM2246618"></a>
+<h2>2246618</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_PCI_TO_C6X_INT_TEST_ERR</div>
+<div class="txt">%s %s in Slot %d failed the C6X to PCI interrupt test:
+Interrupt type: %d (%s)
+Failure type: %d (%s) PCI Dynamic Base Address: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246619"><a name="BM2246619"></a>
+<h2>2246619</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_PCI_DPR_ERR</div>
+<div class="txt">TRF Dual Port RAM (DPR) failure. %s %s in Slot %d failed the DPR test:
+Dynamic Base Address: 0x%lx PCI Failed Address: 0x%lx Value Written: 0x%lx Value Read: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246620"><a name="BM2246620"></a>
+<h2>2246620</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_DPR_SEMAPHORE_TEST_ERR</div>
+<div class="txt">%s %s in Slot %d failed the DPR Semaphore Test:
+Failure code: %d (%s) PCI Dynamic Base Addr: 0x%lx PCI Semaphore Addr: 0x%lx DSP Semaphore Addr: 0x%lx
+Semaphore number: %d
+PCI Semaphore Value: %d
+DSP Semaphore Value: %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246621"><a name="BM2246621"></a>
+<h2>2246621</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_1p9V_PWR_TEST_FAILURE</div>
+<div class="txt">TRF 1.9V Power Test Failure. 1.9V Power is not within the tolerance limit on the TRF Board</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>MGD Power Supply</li><li>TRF Board</li></ol>
+</section>
+<section id="BM2246622"><a name="BM2246622"></a>
+<h2>2246622</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_3p3V_PWR_TEST_FAILURE</div>
+<div class="txt">TRF 3.3V Power Test Failure. 3.3V Power is not within the tolerance limit on the TRF Board</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>MGD Power Supply</li><li>TRF Board</li></ol>
+</section>
+<section id="BM2246623"><a name="BM2246623"></a>
+<h2>2246623</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_ABSENT_ERR</div>
+<div class="txt">The SRF board does not detect the presence of the TRF board. Some SRF diagnostics may not run due to this failure. PCI Dyn Base Addr: 0x%lx Status Reg Addr: 0x%lx Status Reg value: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">The SRF board has the ability to detect if the TRF board is present. This error can be generated if the TRF board is not attached to the SRF or a component failure exists on the SRF.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>TRF Board</li></ol>
+</section>
+<section id="BM2246624"><a name="BM2246624"></a>
+<h2>2246624</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_SPU_DUART_INT_LPBK_ERR</div>
+<div class="txt">The TRF SPU Duart failed the internal loopback test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This test causes the SPU to setup the DUART in an internal loopback configuration. The failure of this test indicates the Duart has failed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li></ol>
+</section>
+<section id="BM2246625"><a name="BM2246625"></a>
+<h2>2246625</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_SPU_DUART_EXT_LPBK_ERR</div>
+<div class="txt">The TRF SPU Duart failed to loopback the data via the STIF board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This test causes the SPU to setup the DUART channel B in an external loopback configuration. The signal passes from the TRF board through the SRF to the STIF board and back. This failure can be on any of these boards.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>STIF Board</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246626"><a name="BM2246626"></a>
+<h2>2246626</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_DUART_FAILURE</div>
+<div class="txt">TRF Duart validation failure. One or more Duart tests have failed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li></ol>
+</section>
+<section id="BM2246627"><a name="BM2246627"></a>
+<h2>2246627</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_EXTERNAL_LOOP_TEST</div>
+<div class="txt">TRF DSP External Loopback Test Failed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>SRF Board</li><li>STIF Board</li></ol>
+</section>
+<section id="BM2246628"><a name="BM2246628"></a>
+<h2>2246628</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_WARP_SERIAL_EXT_LPBK_ERR</div>
+<div class="txt">The TRF Warp Serial failed to loopback the data via the STIF board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This test causes the WARP to setup the Serial channel in an external loopback configuration. The signal passes from the TRF board to the SRF board and back. This failure can be on any of these boards.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>STIF Board</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246629"><a name="BM2246629"></a>
+<h2>2246629</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_SPU_SERIAL_EXT_LPBK_ERR</div>
+<div class="txt">The TRF SPU Serial failed to loopback the data.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This test causes the SPU to setup the Serial channel in an external loopback configuration. The signal passes from the SPU to the Synchronizer and back. This failure can be on any of these boards.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246630"><a name="BM2246630"></a>
+<h2>2246630</h2>
+<div class="sym">ERROR: EM_DIAG_STIF_NOT_PRESENT</div>
+<div class="txt">The STIF board is NOT present.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A PCI address is read to detect the presence of the STIF board. If it is not present, the test cannot be run.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>STIF Board</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246631"><a name="BM2246631"></a>
+<h2>2246631</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_SERIAL_NUM_FAILURE</div>
+<div class="txt">The serial number CRC check failed during the TRF BLD. Serial Number: 0x%8.8lx%8.8lx Serial Number CRC: 0x%x Calculated CRC: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The serial number read from hardware does not match the CRC calculated by software. The board mentioned in the primary error message may need to be replaced.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li></ol>
+</section>
+<section id="BM2246632"><a name="BM2246632"></a>
+<h2>2246632</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_SPU_DUART_STIF_EXT_LPBK_ERR</div>
+<div class="txt">The TRF SPU Duart failed to loopback the data out of the STIF board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This test causes the SPU to setup the DUART channel B in an external loopback configuration. The signal passes from the TRF board trhough the SRF to the STIF board connector. A connector needs to be placed on the Auxillary Serial Data Interface that will loop the data back to the STIF.This failure can be on anyone of these boards.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>STIF Board</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246633"><a name="BM2246633"></a>
+<h2>2246633</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_WMI_SERIAL_STIF_EXT_LPBK_ERR</div>
+<div class="txt">The TRF WARP WMI failed to loopback the data out of the STIF board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This test causes the WARP to setup the McBSP channel 2 in an external loopback configuration. The signal passes from the TRF board trhough the SRF to the STIF board connector. A connector needs to be placed on the WMI Interface connector that will loop the data back to the STIF.This failure can be on anyone of these boards.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>STIF Board</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246634"><a name="BM2246634"></a>
+<h2>2246634</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_INTERNAL_TRIG_TEST</div>
+<div class="txt">TRF DSP SPU Trigger Internal Loopback Test Failed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>SRF Board</li><li>STIF Board</li></ol>
+</section>
+<section id="BM2246635"><a name="BM2246635"></a>
+<h2>2246635</h2>
+<div class="sym">ERROR: EM_DIAG_TRF_EXTERNAL_TRIG_TEST</div>
+<div class="txt">TRF DSP SPU Trigger External Loopback Test Failed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>SRF Board</li><li>STIF Board</li></ol>
+</section>
+<section id="BM2246800"><a name="BM2246800"></a>
+<h2>2246800</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_NOT_PRESENT_ERR</div>
+<div class="txt">The SRF board was not detected. Testing of this board will be aborted.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error indicates that the SRF board failed to be sensed after a hardware reset. The error can be caused by a missing board, a failure of the SRF PCI interface, a bad backplane, or a AGP failure. If the board is present, try to reseat the board and rerun the test. If other boards are passing their diagnostics, the AGP is probably OK.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2246801"><a name="BM2246801"></a>
+<h2>2246801</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_REGISTER_INIT_TEST_FAILURE</div>
+<div class="txt">SRF Register initialization test failure. One or more registers were not in the correct state after a reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2246802"><a name="BM2246802"></a>
+<h2>2246802</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_REGISTER_WRITE_TEST_FAILURE</div>
+<div class="txt">SRF Register write validation failure. One or more registers failed the read-write test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2246803"><a name="BM2246803"></a>
+<h2>2246803</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SEMAPHORE_TEST_FAILURE</div>
+<div class="txt">SRF Hardware semaphore validation failure. One or more semaphores failed the validation test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246804"><a name="BM2246804"></a>
+<h2>2246804</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_HPI_OPEN_ERROR</div>
+<div class="txt">SRF HPI open failure. Could not open a connection to DSP%d (C6X). All devices requiring the HPI will NOT be tested.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This Host Port Interface (HPI) enables direct access to the DSP bus via the PCI interface. This error can indicate the device is in use or can not be found. If problem persists, perform a TPS Reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246805"><a name="BM2246805"></a>
+<h2>2246805</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_HPI_REGISTER_TEST_FAILURE</div>
+<div class="txt">SRF HPI Register write validation failure. One or more HPI registers failed the read-write test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246806"><a name="BM2246806"></a>
+<h2>2246806</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_HPI_FUNCTIONAL_TEST_FAILURE</div>
+<div class="txt">SRF HPI Functional validation failure. The functional test of the HPI interface failed on one or more C6X&#x27;s.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246807"><a name="BM2246807"></a>
+<h2>2246807</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_HPI_DPR_TEST_FAILURE</div>
+<div class="txt">SRF HPI Dual Port RAM validation failure. A failure with Dual Port RAM was detected via the HPI interface.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246808"><a name="BM2246808"></a>
+<h2>2246808</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_HPI_PROGRAM_MEMORY_TEST_FAILURE</div>
+<div class="txt">SRF HPI program memory validation failure. A failure with the C6X program memory was detected via the HPI interface.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246809"><a name="BM2246809"></a>
+<h2>2246809</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_HPI_DATA_MEMORY_TEST_FAILURE</div>
+<div class="txt">SRF HPI data memory validation failure. A failure with the C6X data memory was detected via the HPI interface.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246810"><a name="BM2246810"></a>
+<h2>2246810</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_AGP_HPI_INTR_TEST_FAILURE</div>
+<div class="txt">SRF failed the AGP to HPI interrupt test. The SRF board failed to receive an interrupt from the AGP to the HPI interface.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246811"><a name="BM2246811"></a>
+<h2>2246811</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_HPI_SDRAM_MEMORY_TEST_FAILURE</div>
+<div class="txt">SRF HPI SDRAM memory validation failure. A failure with the C6X SDRAM memory was detected via the HPI interface.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246812"><a name="BM2246812"></a>
+<h2>2246812</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_PCI_DPR_TEST_FAILURE</div>
+<div class="txt">SRF PCI Dual Port RAM validation failure. A failure with Dual Port RAM was detected via the PCI bus interface.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246813"><a name="BM2246813"></a>
+<h2>2246813</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_DPR_SEMAPHORE_TEST_FAILURE</div>
+<div class="txt">SRF Dual Port Memory (DPM) Hardware semaphore validation failure. One or more or the semaphores used to protect DPM has failed the validation test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246814"><a name="BM2246814"></a>
+<h2>2246814</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_HPI_AGP_INTR_TEST_FAILURE</div>
+<div class="txt">SRF HPI AGP interrupt test failure. The SRF board failed to generate a HPI interrupt to the AGP.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246815"><a name="BM2246815"></a>
+<h2>2246815</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_DSP_AGP_INTR_TEST_FAILURE</div>
+<div class="txt">SRF DSP AGP interrupt test failure. The SRF board failed to generate a DSP interrupt to the AGP.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246816"><a name="BM2246816"></a>
+<h2>2246816</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SEQ_EOS_INTR_TEST_FAILURE</div>
+<div class="txt">SRF EOS interrupt test failure. The Synchronizer failed to generate an EOS interrupt to the sequencer(s).</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246817"><a name="BM2246817"></a>
+<h2>2246817</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_C6X_RESET_AGP_INTR_TEST_FAILURE</div>
+<div class="txt">SRF C6X reset AGP interrupt test failure. The SRF board failed to generate a C6X reset interrupt to the AGP.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>AGP Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2246818"><a name="BM2246818"></a>
+<h2>2246818</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SEQ_FIFO_HALF_INTR_TEST_FAILURE</div>
+<div class="txt">SRF FIFO Half Empty interrupt test failure. The Synchronizer failed to generate a FIFO half Empty interrupt to the sequencer(s).</div>
+</section>
+<section id="BM2246819"><a name="BM2246819"></a>
+<h2>2246819</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SEQ_FIFO_EMPTY_INTR_TEST_FAILURE</div>
+<div class="txt">SRF FIFO Empty interrupt test failure. The Synchronizer failed to generate a FIFO Empty interrupt to the sequencer(s).</div>
+</section>
+<section id="BM2246820"><a name="BM2246820"></a>
+<h2>2246820</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_DSP_SELF_TEST_FAILURE</div>
+<div class="txt">SRF failed the DSP Self Test.</div>
+</section>
+<section id="BM2246821"><a name="BM2246821"></a>
+<h2>2246821</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_DMA_TEST_FAILURE</div>
+<div class="txt">SRF failed the DMA verification test. The PLX registers, DMA setup, or DMA transfer failed.</div>
+</section>
+<section id="BM2246822"><a name="BM2246822"></a>
+<h2>2246822</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_C6X_TO_PCI_HPI_INT_TEST_ERR</div>
+<div class="txt">%s DSP%d in Slot %d failed the C6X to PCI HPI interrupt test:
+Failure type: %d (%s) PCI Dynamic Base Address: 0x%lx Intr Status Reg Address: 0x%lx Intr Status Reg Value: 0x%lx Intr Mask Reg Address: 0x%lx Intr Mask Reg Value: 0x%lx</div>
+</section>
+<section id="BM2246823"><a name="BM2246823"></a>
+<h2>2246823</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_C6X_TO_PCI_DSP_INT_TEST_ERR</div>
+<div class="txt">%s DSP%d in Slot %d failed the C6X to PCI DSP interrupt test:
+Failure type: %d (%s) PCI Dynamic Base Address: 0x%lx Intr Status Reg Address: 0x%lx Intr Status Reg Value: 0x%lx Intr Mask Reg Address: 0x%lx Intr Mask Reg Value: 0x%lx</div>
+</section>
+<section id="BM2246824"><a name="BM2246824"></a>
+<h2>2246824</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_PCI_TO_C6X_INT_TEST_ERR</div>
+<div class="txt">%s DSP%d in Slot %d failed the PCI to C6X interrupt test:
+Interrupt type: %d (%s)
+Failure type: %d (%s) Value: 0x%x PCI Dynamic Base Address: 0x%lx</div>
+</section>
+<section id="BM2246825"><a name="BM2246825"></a>
+<h2>2246825</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_PCI_DPR_ERR</div>
+<div class="txt">SRF Dual Port RAM (DPR) failure. %s DSP%d in Slot %d failed the the DPM test:
+Dynamic Base Address: 0x%lx PCI Failed Address: 0x%lx Value Written: 0x%lx Value Read: 0x%lx</div>
+</section>
+<section id="BM2246826"><a name="BM2246826"></a>
+<h2>2246826</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_DPR_SEMAPHORE_TEST_ERR</div>
+<div class="txt">%s DSP%d in Slot %d failed the DPR Semaphore Test:
+Failure code: %d (%s) PCI Dynamic Base Addr: 0x%lx PCI Semaphore Addr: 0x%lx DSP Semaphore Addr: 0x%lx
+Semaphore number: %d
+PCI Semaphore Value: %d
+DSP Semaphore Value: %d</div>
+</section>
+<section id="BM2246827"><a name="BM2246827"></a>
+<h2>2246827</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNC_REG_TEST_FAILURE</div>
+<div class="txt">SRF Synchronizer Register test failure. One or more Synchronizer registers failed the read-write test.</div>
+</section>
+<section id="BM2246828"><a name="BM2246828"></a>
+<h2>2246828</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNC_SEQ_ID_TEST_FAILURE</div>
+<div class="txt">SRF Sequencer ID test failure. One or more sequence IDs was incorrect.</div>
+</section>
+<section id="BM2246829"><a name="BM2246829"></a>
+<h2>2246829</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_TO_C6X_INT_TEST_ERR</div>
+<div class="txt">%s DSP%d in Slot %d failed the Synchronizer to C6x interrupt test:
+Interrupt type: %d (%s)
+Failure type: %d (%s) Value: 0x%x PCI Dynamic Base Address: 0x%lx</div>
+</section>
+<section id="BM2246830"><a name="BM2246830"></a>
+<h2>2246830</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCHRONIZER_TEST_FAILURE</div>
+<div class="txt">SRF Synchronizer Test failure. One or more of the Synchronizer tests failed their functional verification.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246831"><a name="BM2246831"></a>
+<h2>2246831</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_1p8V_PWR_TEST_FAILURE</div>
+<div class="txt">SRF 1.8V Power Test Failure. 1.8V Power is not within the tolerance limit on the SRF Board</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>MGD Power Supply</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246832"><a name="BM2246832"></a>
+<h2>2246832</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_2p5V_PWR_TEST_FAILURE</div>
+<div class="txt">SRF 2.5V Power Test Failure. 2.5V Power is not within the tolerance limit on the SRF Board</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>MGD Power Supply</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246833"><a name="BM2246833"></a>
+<h2>2246833</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_3p3V_PWR_TEST_FAILURE</div>
+<div class="txt">SRF 3.3V Power Test Failure. 3.3V Power is not within the tolerance limit on the SRF Board</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>MGD Power Supply</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246834"><a name="BM2246834"></a>
+<h2>2246834</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_PWR_TEST_FAILURE</div>
+<div class="txt">SRF Power Test Failure. Power is not within the tolerance limit on the SRF Board</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>MGD Power Supply</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246835"><a name="BM2246835"></a>
+<h2>2246835</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_REG_STATUS_FAILED</div>
+<div class="txt">SRF Synchronizer Mode Status Register not set for test. Status Register value: 0x%lx Expected value: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">The selected test case could not be executed without setting the correct monitor mode. This can be due to a Synchronizer mode register failure or a software error.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246836"><a name="BM2246836"></a>
+<h2>2246836</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCHRONIZER_INT_TEST_FAILURE</div>
+<div class="txt">SRF Synchronizer Interrupt Test failure. One or more of the Synchronizer interrupts failed their functional verification.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246837"><a name="BM2246837"></a>
+<h2>2246837</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_ISR_ERR</div>
+<div class="txt">The AGP failed to receive an interrupt from the synchronizer. PCI Dyn Base Addr: 0x%lx Flag Reg Address: 0x%lx Flag Reg Value: 0x%lx Mask Reg Address: 0x%lx Mask Reg Value: 0x%lx Value recv: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error indicates that the Synchronizer on the SRF board failed to interrupt the AGP. This is detected by reading the Sequencer Interrupt flag register and comparing it to the value set in the ISR. This problem can be caused by a bad SRF, a broken interrupt line on the backplace, or a failure on the AGP. Try resetting the SRF and AGP boards. If problem persists, swap the AGP with the APS to see if problem is fixed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AGP Board</li><li>MGD Backplane</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2246838"><a name="BM2246838"></a>
+<h2>2246838</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_SSI_TEST_FAILURE</div>
+<div class="txt">The correct interrupts flags and/or error bits were not set after starting the sequence. PCI Dyn Base Addr: 0x%lx Flag Reg Addr: 0x%lx Flag Reg value: 0x%lx Exp: 0x%lx Status Reg Addr: 0x%lx Status Reg value: 0x%lx Exp: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246839"><a name="BM2246839"></a>
+<h2>2246839</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_B0_EOS_TEST_FAILURE</div>
+<div class="txt">The correct interrupts flags and/or error bits were not set after inducing a BO End-Of-Series error. PCI Dyn Base Addr: 0x%lx Flag Reg Addr: 0x%lx Flag Reg value: 0x%lx Exp: 0x%lx Status Reg Addr: 0x%lx Status Reg value: 0x%lx Exp: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246840"><a name="BM2246840"></a>
+<h2>2246840</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_RHO1_EOS_TEST_FAILURE</div>
+<div class="txt">The correct interrupts flags and/or error bits were not set after inducing a Rho1 End-Of-Series error. PCI Dyn Base Addr: 0x%lx Flag Reg Addr: 0x%lx Flag Reg value: 0x%lx Exp: 0x%lx Status Reg Addr: 0x%lx Status Reg value: 0x%lx Exp: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246841"><a name="BM2246841"></a>
+<h2>2246841</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_RHO2_EOS_TEST_FAILURE</div>
+<div class="txt">The correct interrupts flags and/or error bits were not set after inducing a Rho2 End-Of-Series error. PCI Dyn Base Addr: 0x%lx Flag Reg Addr: 0x%lx Flag Reg value: 0x%lx Exp: 0x%lx Status Reg Addr: 0x%lx Status Reg value: 0x%lx Exp: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246842"><a name="BM2246842"></a>
+<h2>2246842</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_T1_EOS_TEST_FAILURE</div>
+<div class="txt">The correct intr flags and/or error bits were not set after inducing a Theta 1 End-Of-Series error. PCI Dyn Base Addr: 0x%lx Flag Reg Addr: 0x%lx Flag Reg value: 0x%lx Exp: 0x%lx Status Reg Addr: 0x%lx Status Reg value: 0x%lx Exp: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246843"><a name="BM2246843"></a>
+<h2>2246843</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_T2_EOS_TEST_FAILURE</div>
+<div class="txt">The correct intr flags and/or error bits were not set after inducing a Theta 2 End-Of-Series error. PCI Dyn Base Addr: 0x%lx Flag Reg Addr: 0x%lx Flag Reg value: 0x%lx Exp: 0x%lx Status Reg Addr: 0x%lx Status Reg value: 0x%lx Exp: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246844"><a name="BM2246844"></a>
+<h2>2246844</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_X_EOS_TEST_FAILURE</div>
+<div class="txt">The correct intr flags and/or error bits were not set after inducing a X gradient End-Of-Series error. PCI Dyn Base Addr: 0x%lx Flag Reg Addr: 0x%lx Flag Reg value: 0x%lx Exp: 0x%lx Status Reg Addr: 0x%lx Status Reg value: 0x%lx Exp: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246845"><a name="BM2246845"></a>
+<h2>2246845</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_Y_EOS_TEST_FAILURE</div>
+<div class="txt">The correct intr flags and/or error bits were not set after inducing a Y gradient End-Of-Series error. PCI Dyn Base Addr: 0x%lx Flag Reg Addr: 0x%lx Flag Reg value: 0x%lx Exp: 0x%lx Status Reg Addr: 0x%lx Status Reg value: 0x%lx Exp: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246846"><a name="BM2246846"></a>
+<h2>2246846</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_Z_EOS_TEST_FAILURE</div>
+<div class="txt">The correct intr flags and/or error bits were not set after inducing a Z gradient End-Of-Series error. PCI Dyn Base Addr: 0x%lx Flag Reg Addr: 0x%lx Flag Reg value: 0x%lx Exp: 0x%lx Status Reg Addr: 0x%lx Status Reg value: 0x%lx Exp: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246847"><a name="BM2246847"></a>
+<h2>2246847</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_RF_EMPTRY_TEST_FAILURE</div>
+<div class="txt">The correct intr flags and/or error bits were not set after terminating the RF data before the EOS. PCI Dyn Base Addr: 0x%lx Flag Reg Addr: 0x%lx Flag Reg value: 0x%lx Exp: 0x%lx Status Reg Addr: 0x%lx Status Reg value: 0x%lx Exp: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246848"><a name="BM2246848"></a>
+<h2>2246848</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_SSP_EMPTRY_TEST_FAILURE</div>
+<div class="txt">The correct intr flags and/or error bits were not set after terminating the SSP data before the EOS. PCI Dyn Base Addr: 0x%lx Flag Reg Addr: 0x%lx Flag Reg value: 0x%lx Exp: 0x%lx Status Reg Addr: 0x%lx Status Reg value: 0x%lx Exp: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246849"><a name="BM2246849"></a>
+<h2>2246849</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_ISI_TEST_FAILURE</div>
+<div class="txt">The correct interrupts flags and/or ISI bits were not set after triggering an Intra-Sequence Interrupt. PCI Dyn Base Addr: 0x%lx Flag Reg Addr: 0x%lx Flag Reg value: 0x%lx Exp: 0x%lx Status Reg Addr: 0x%lx Status Reg value: 0x%lx Exp: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246850"><a name="BM2246850"></a>
+<h2>2246850</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_ISI_OVR_TEST_FAILURE</div>
+<div class="txt">The correct interrupts flags and/or error bits were not set after inducing an ISI overrun. PCI Dyn Base Addr: 0x%lx Flag Reg Addr: 0x%lx Flag Reg value: 0x%lx Exp: 0x%lx Status Reg Addr: 0x%lx Status Reg value: 0x%lx Exp: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">This test causes Intra-Sequence Interrupt (ISI) to me generated faster than the AGP can process them. The Synchronizer should respond with an error.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246851"><a name="BM2246851"></a>
+<h2>2246851</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_TRIG_TEST_ERR</div>
+<div class="txt">SRF Synchronizer Sequence Trigger Functional validation failure. One or more of the synchronizer trigger tests have failed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>STIF Board</li></ol>
+</section>
+<section id="BM2246852"><a name="BM2246852"></a>
+<h2>2246852</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_SELF_TRIG_START_ERR</div>
+<div class="txt">SRF Synchronizer failed to start the scan sequence using the self trigger mode. PCI Dynamic Base Address: 0x%lx Sequence Control Reg Addr: 0x%lx Value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246853"><a name="BM2246853"></a>
+<h2>2246853</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_60HZ_TRIG_START_ERR</div>
+<div class="txt">SRF Synchronizer failed to start the scan sequence using the 60Hz trigger mode. PCI Dynamic Base Address: 0x%lx Sequence Control Reg Addr: 0x%lx Value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>STIF Board</li></ol>
+</section>
+<section id="BM2246854"><a name="BM2246854"></a>
+<h2>2246854</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_PHY1_TRIG_START_ERR</div>
+<div class="txt">SRF Synchronizer failed to start the scan sequence using the Physiological 1 trigger mode. PCI Dynamic Base Address: 0x%lx Sequence Control Reg Addr: 0x%lx Value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>TRF Board</li></ol>
+</section>
+<section id="BM2246855"><a name="BM2246855"></a>
+<h2>2246855</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_PHY2_TRIG_START_ERR</div>
+<div class="txt">SRF Synchronizer failed to start the scan sequence using the Physiological 2 trigger mode. PCI Dynamic Base Address: 0x%lx Sequence Control Reg Addr: 0x%lx Value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>TRF Board</li></ol>
+</section>
+<section id="BM2246856"><a name="BM2246856"></a>
+<h2>2246856</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_AUX1_TRIG_START_ERR</div>
+<div class="txt">SRF Synchronizer failed to start the scan sequence using the Auxiliary 1 trigger mode. PCI Dynamic Base Address: 0x%lx Sequence Control Reg Addr: 0x%lx Value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>STIF Board</li></ol>
+</section>
+<section id="BM2246857"><a name="BM2246857"></a>
+<h2>2246857</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_AUX2_TRIG_START_ERR</div>
+<div class="txt">SRF Synchronizer failed to start the scan sequence using the Auxiliary 2 trigger mode. PCI Dynamic Base Address: 0x%lx Sequence Control Reg Addr: 0x%lx Value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>STIF Board</li></ol>
+</section>
+<section id="BM2246858"><a name="BM2246858"></a>
+<h2>2246858</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_AUX_1_OR_2_TRIG_START_ERR</div>
+<div class="txt">SRF Synchronizer failed to start the scan sequence using the Auxiliary 1 OR 2 trigger mode. PCI Dynamic Base Address: 0x%lx Sequence Control Reg Addr: 0x%lx Value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>STIF Board</li></ol>
+</section>
+<section id="BM2246859"><a name="BM2246859"></a>
+<h2>2246859</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_AUX_1_AND_2_TRIG_START_ERR</div>
+<div class="txt">SRF Synchronizer failed to start the scan sequence using the Auxiliary 1 AND 2 trigger mode. PCI Dynamic Base Address: 0x%lx Sequence Control Reg Addr: 0x%lx Value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>STIF Board</li></ol>
+</section>
+<section id="BM2246860"><a name="BM2246860"></a>
+<h2>2246860</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_AUX_1_EXOR_2_TRIG_START_ERR</div>
+<div class="txt">SRF Synchronizer failed to start the scan sequence using the Auxiliary 1 EXOR 2 trigger mode. PCI Dynamic Base Address: 0x%lx Sequence Control Reg Addr: 0x%lx Value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>STIF Board</li></ol>
+</section>
+<section id="BM2246861"><a name="BM2246861"></a>
+<h2>2246861</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_VALID_TRIG_ERR</div>
+<div class="txt">An invalid trigger error was sensed for a valid trigger configuration. PCI Dyn Base Addr: 0x%lx Seq Cntr Reg Addr: 0x%lx Seq Cntr Reg Value: 0x%lx Status Reg Addr: 0x%lx Status Reg value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246862"><a name="BM2246862"></a>
+<h2>2246862</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_INVALID_TRIG_ERR</div>
+<div class="txt">A valid trigger was sensed for an invalid trigger configuration. PCI Dyn Base Addr: 0x%lx Seq Cntr Reg Addr: 0x%lx Seq Cntr Reg Value: 0x%lx Status Reg Addr: 0x%lx Status Reg value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246863"><a name="BM2246863"></a>
+<h2>2246863</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_STIF_ABSENT_ERR</div>
+<div class="txt">The SRF board does not detect the presence of the STIF board. PCI Dyn Base Addr: 0x%lx Status Reg Addr: 0x%lx Status Reg value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>STIF Board</li></ol>
+</section>
+<section id="BM2246864"><a name="BM2246864"></a>
+<h2>2246864</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_MON_FIFO_FULL_NOT_SET_ERR</div>
+<div class="txt">The SRF synchronizer Monitor FIFO Full bit was not set when FIFO was full. PCI Dyn Base Addr: 0x%lx Flag Reg Address: 0x%lx Flag Reg Value: 0x%lx
+Number of words: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error indicates that the Synchronizer on the SRF board failed to set the Monitor FIFO Full bit after filling the FIFO with data. This error indicates a failure of the SRF board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246865"><a name="BM2246865"></a>
+<h2>2246865</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_MON_FIFO_FULL_NOT_CLR_ERR</div>
+<div class="txt">The SRF synchronizer Monitor FIFO Full bit was not cleared when FIFO was partially full or empty. PCI Dyn Base Addr: 0x%lx Flag Reg Address: 0x%lx Flag Reg Value: 0x%lx
+Number of words: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error indicates that the Synchronizer on the SRF board failed to clear the Monitor FIFO Full bit when the FIFO was below the full level. This error indicates a failure of the SRF board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246866"><a name="BM2246866"></a>
+<h2>2246866</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_MON_FIFO_HALF_FULL_NOT_SET_ERR</div>
+<div class="txt">The SRF synchronizer Monitor FIFO Half Full bit was not set when the FIFO was half full. PCI Dyn Base Addr: 0x%lx Flag Reg Address: 0x%lx Flag Reg Value: 0x%lx
+Number of words: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error indicates that the Synchronizer on the SRF board failed to set the Monitor FIFO Half Full bit after partially filling the FIFO with data. This error indicates a failure of the SRF board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246867"><a name="BM2246867"></a>
+<h2>2246867</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_MON_FIFO_HALF_FULL_NOT_CLR_ERR</div>
+<div class="txt">The SRF synchronizer Monitor FIFO Half Full bit was not cleared when the FIFO was below the half full level. PCI Dyn Base Addr: 0x%lx Flag Reg Address: 0x%lx Flag Reg Value: 0x%lx
+Number of words: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error indicates that the Synchronizer on the SRF board failed to clear the Monitor FIFO Half Full bit when the FIFO was below the half full level. This error indicates a failure of the SRF board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246868"><a name="BM2246868"></a>
+<h2>2246868</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_MON_FIFO_EMPTY_NOT_SET_ERR</div>
+<div class="txt">The SRF synchronizer Monitor FIFO Empty bit was not set after the FIFO was flushed. PCI Dyn Base Addr: 0x%lx Status Reg Address: 0x%lx Status Reg Value: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error indicates that the Synchronizer on the SRF board failed to set the Monitor FIFO empty bit after sending a flush command to the FIFO. This error indicates a failure of the SRF board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246869"><a name="BM2246869"></a>
+<h2>2246869</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_MON_FIFO_EMPTY_NOT_CLR_ERR</div>
+<div class="txt">The SRF synchronizer Monitor FIFO Empty bit was not cleared when the FIFO contained data. PCI Dyn Base Addr: 0x%lx Status Reg Address: 0x%lx Status Reg Value: 0x%lx
+Number of words: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error indicates that the Synchronizer on the SRF board failed to clear the Monitor FIFO empty bit after a sequence was initiated. This error indicates a failure of the SRF board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246870"><a name="BM2246870"></a>
+<h2>2246870</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_TIMER_TOL_ERR</div>
+<div class="txt">The SRF synchronizer EOS Timer was out of tolerance.
+Actual time: %d uS
+Expected time: %d uS Tolerance: +/- %d uS</div>
+<div class="lbl">Extended Error:</div><div class="txt">The EOS timer delays the start of the next sequence by the given amount. This test does two passes of a sequence and checks the time against the internal clock. The error indicates the timer is outside the specified limits.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246871"><a name="BM2246871"></a>
+<h2>2246871</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_ABORT_SCAN_FAILURE</div>
+<div class="txt">The correct interrupts flags and/or error bits were not set after aborting the scan. PCI Dyn Base Addr: 0x%lx Flag Reg Addr: 0x%lx Flag Reg value: 0x%lx Exp: 0x%lx Status Reg Addr: 0x%lx Status Reg value: 0x%lx Exp: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">This test causes Intra-Sequence Interrupt (ISI) to me generated faster than the AGP can process them. The Synchronizer should respond with an error.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246872"><a name="BM2246872"></a>
+<h2>2246872</h2>
+<div class="sym">ERROR: EM_DIAG_EOS_ACK_ERR</div>
+<div class="txt">%s %s in Slot %d failed the EOS Acknowledgement Test:
+Test being performed: %s Dynamic Base Address: 0x%lx HPI Base Address: 0x%lx Exp value: 0x%lx Act value: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">This test generates various EOS errors and validates the status of the EOS Acknowledgement Register as read by the various DSP&#x27;s. Failure indicates a bad SRF board.</div>
+</section>
+<section id="BM2246873"><a name="BM2246873"></a>
+<h2>2246873</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_SNAP_TEST_ERR</div>
+<div class="txt">SRF Synchronizer Snapshot validation failure. One or more of the synchronizer snapshot tests have failed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246874"><a name="BM2246874"></a>
+<h2>2246874</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_CHECKSUM_TEST_ERR</div>
+<div class="txt">SRF Synchronizer Checksum validation failure. One or more of the synchronizer snapshot tests have failed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246875"><a name="BM2246875"></a>
+<h2>2246875</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SNAPSHOT_TIMER_TOL_ERR</div>
+<div class="txt">The SRF synchronizer Snapshot Timer was out of tolerance.
+Time Stamp Read: %d
+Time Stamp Expected: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Snapshot timer delays the start of storing data in the monitor FIFO by a programmed value. This test does three passes of a sequence each with a different snapshot timer value. The error indicates the time stamp read from the monitor FIFO does not match the programmed value.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2246876"><a name="BM2246876"></a>
+<h2>2246876</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_CHECKSUM_ERR</div>
+<div class="txt">The SRF synchronizer and IRF Checksum Error Detect Circuit Failed. Checksum Error Register Value: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The SRF synchronizer forces a checksum error on the view stream that is to be detected by the IRF board. The IRF then counts in the register the number of detected checksum errors on the view stream.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>IRF Board</li></ol>
+</section>
+<section id="BM2246877"><a name="BM2246877"></a>
+<h2>2246877</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SERIAL_NUM_FAILURE</div>
+<div class="txt">The serial number CRC check failed during the SRF BLD on the %s Board. Serial Number: 0x%8.8lx%8.8lx Serial Number CRC: 0x%x Calculated CRC: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The serial number read from hardware does not match the CRC calculated by software. The board mentioned in the primary error message may need to be replaced.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>STIF Board</li></ol>
+</section>
+<section id="BM2246878"><a name="BM2246878"></a>
+<h2>2246878</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_SYNCH_EXT_TRIG_TEST_ERR</div>
+<div class="txt">SRF Synchronizer Sequence External AC Trigger Functional validation failure. External AC trigger test have failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The AC line trigger is not detected it may has been disconnected.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>STIF Board</li></ol>
+</section>
+</body></html>

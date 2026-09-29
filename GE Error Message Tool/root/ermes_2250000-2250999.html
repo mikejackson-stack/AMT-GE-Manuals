@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2250000-2250999 (16)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2250000-2250999 (16)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2249000-2249999.html">&larr; 2249000-2249999</a><a href="ermes_2251000-2251999.html">2251000-2251999 &rarr;</a></nav></header>
+<section id="BM2250000"><a name="BM2250000"></a>
+<h2>2250000</h2>
+<div class="sym">ERROR: EM_GP_INVALID_UPDATE_MODE</div>
+<div class="txt">Internal GP software error. Invalid selection for an update mode.
+Update Mode Selected: %d SCP software specified an undefined mode in a MDS packet. If the MDS link connection is good, this is a software bug; write a CQA.</div>
+</section>
+<section id="BM2250001"><a name="BM2250001"></a>
+<h2>2250001</h2>
+<div class="sym">ERROR: EM_LMGR_KEY_EXPIRED</div>
+<div class="txt">The option key %s has expired.</div>
+</section>
+<section id="BM2250002"><a name="BM2250002"></a>
+<h2>2250002</h2>
+<div class="sym">ERROR: EM_LMGR_DATE_BACKTRACKED</div>
+<div class="txt">The date has been backtracked. Flextrial option keys will not be available. Contact the OLC to reinstall the flextrial option keys.</div>
+</section>
+<section id="BM2250030"><a name="BM2250030"></a>
+<h2>2250030</h2>
+<div class="sym">ERROR: EM_GP_UNDEF_MDS_OPCODE</div>
+<div class="txt">Internal GP software error. Invalid MDS opcode.
+Undefined Opcode: %d The GP received an undefined opcode from a SCP MDS packet. If GP and SCP software are from the same release and the MDS link is good, this is a software bug; write a CQA.</div>
+</section>
+<section id="BM2250041"><a name="BM2250041"></a>
+<h2>2250041</h2>
+<div class="sym">ERROR: EM_GP_BAD_PS_LEVEL</div>
+<div class="txt">Internal GP software error. Invalid selection for Gradient Power Supply Level. SCP specified an undefined value in a MDS packet. If the MDS link connection is good, this is a software bug; write a CQA.</div>
+</section>
+<section id="BM2250042"><a name="BM2250042"></a>
+<h2>2250042</h2>
+<div class="sym">ERROR: EM_GP_NO_PS_LEVEL_STDBY</div>
+<div class="txt">SCP attempted to command the %c gradient axis to Standby before sending a GP_CONFIG packet to the GP.</div>
+</section>
+<section id="BM2250043"><a name="BM2250043"></a>
+<h2>2250043</h2>
+<div class="sym">ERROR: EM_GP_NO_PS_LEVEL_RDY</div>
+<div class="txt">SCP attempted to command the %c gradient axis to Ready before sending a GP_CONFIG packet to the GP.</div>
+</section>
+<section id="BM2250080"><a name="BM2250080"></a>
+<h2>2250080</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2250080</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2250081"><a name="BM2250081"></a>
+<h2>2250081</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2250081</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2250108"><a name="BM2250108"></a>
+<h2>2250108</h2>
+<div class="sym">ERROR: EM_GP_AMP_DATA_FRAMING</div>
+<div class="txt">The GP is reporting a data framing error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check fiber optic clock cable between Systems Cabinet and GP. Look for swapped fiber optic cables between clock and X/Y/Z data fibers. Run fiber optic diagnostics. Check SRF/TRF and STIF boards.</div>
+</section>
+<section id="BM2250109"><a name="BM2250109"></a>
+<h2>2250109</h2>
+<div class="sym">ERROR: EM_GP_CLOCK_STOP</div>
+<div class="txt">The GP is reporting a Gradient Clock Stop. The GP stopped receiving a gradient clock signal from the systems cabinet.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check fiber optic clock cable between Systems Cabinet and GP. Run fiber optic diagnostics. Check SRF/TRF and STIF baords.</div>
+</section>
+<section id="BM2250079"><a name="BM2250079"></a>
+<h2>2250079</h2>
+<div class="sym">ERROR: EM_GP_X_SGA_OVRANGE_FAULT</div>
+<div class="txt">X Axis Gradient Data Overrange Occurred.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This condition is noncritical and should not affect image quality, unless accompanied by additional error messages. An occurrence of this type, unless accompanied by additional error messages, is not due to hardware fault. If this error occurs frequently, please submit a PQR describing the conditions under which the error occurs.</div>
+</section>
+<section id="BM2250083"><a name="BM2250083"></a>
+<h2>2250083</h2>
+<div class="sym">ERROR: EM_GP_Y_SGA_OVRANGE_FAULT</div>
+<div class="txt">Y Axis Gradient Data Overrange Occurred.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This condition is noncritical and should not affect image quality, unless accompanied by additional error messages. An occurrence of this type, unless accompanied by additional error messages, is not due to hardware fault. If this error occurs frequently, please submit a PQR describing the conditions under which the error occurs.</div>
+</section>
+<section id="BM2250082"><a name="BM2250082"></a>
+<h2>2250082</h2>
+<div class="sym">ERROR: EM_GP_Z_SGA_OVRANGE_FAULT</div>
+<div class="txt">Z Axis Gradient Data Overrange Occurred.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This condition is noncritical and should not affect image quality, unless accompanied by additional error messages. An occurrence of this type, unless accompanied by additional error messages, is not due to hardware fault. If this error occurs frequently, please submit a PQR describing the conditions under which the error occurs.</div>
+</section>
+<section id="BM2250511"><a name="BM2250511"></a>
+<h2>2250511</h2>
+<div class="sym">ERROR: EM_ACGDT_NO_TESTS_SELECTED</div>
+<div class="txt">GRADIENT DRIVER TESTS - Internal GP Software Error. The Gradient Driver Tests command word was empty. SCP software specified an empty command word in a MDS packet. If the MDS link connection is good, this is a software bug; write a CQA.</div>
+</section>
+<section id="BM2250559"><a name="BM2250559"></a>
+<h2>2250559</h2>
+<div class="sym">ERROR: EM_ACGDT_SGA_OVRANGE_FAULT</div>
+<div class="txt">GRADIENT DRIVER TESTS - %c Axis Gradient Data Overrange Occurred. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please check MRconfig.cfg file to determine the amplifier type, 8915-ACGD, 8916-HFD. ACGD MESSAGE: The GP detected an error in the waveform command. During diagnostics, all waveforms are generated internally by the GP. Write a PQR. HFD MESSAGE:The GP detected an error in the waveform command or an error in the gradient calibration file(gradient_tune.dat). Check for corruption in the gradient_tune.dat file, else write a PQR.</div>
+</section>
+</body></html>

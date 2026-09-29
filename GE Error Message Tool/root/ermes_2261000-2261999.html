@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2261000-2261999 (252)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2261000-2261999 (252)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2260000-2260999.html">&larr; 2260000-2260999</a><a href="ermes_2262000-2262999.html">2262000-2262999 &rarr;</a></nav></header>
+<section id="BM2261000"><a name="BM2261000"></a>
+<h2>2261000</h2>
+<div class="sym">ERROR: EM_DCERD_SLAVE_EXCITER_ERR</div>
+<div class="txt">Internal Software Error. System does not have Slave Exciter, but the request for Slave Exciter has come.</div>
+</section>
+<section id="BM2261001"><a name="BM2261001"></a>
+<h2>2261001</h2>
+<div class="sym">ERROR: EM_DCERD_CENTER_FREQ_OUT_OF_RANGE</div>
+<div class="txt">Center frequency is out of range on RRF. freq= %d Range of center frequency is from %d to %d.</div>
+</section>
+<section id="BM2261002"><a name="BM2261002"></a>
+<h2>2261002</h2>
+<div class="sym">ERROR: EM_DCERD_DC_POWER_NOT_PRESENT</div>
+<div class="txt">RF Board Initialization Error. Failed to confirm RRF DC power presence. Check if RRF is up and Reset TPS.</div>
+</section>
+<section id="BM2261003"><a name="BM2261003"></a>
+<h2>2261003</h2>
+<div class="sym">ERROR: EM_DCERD_EXCITER_FIELD_SELECT_NOT_MATCH</div>
+<div class="txt">RF Board Configuration Error.
+Exciter Field Selection:%d doesn&#x27;t match with field strength:%d. Check if system hardware configuration is correct.</div>
+</section>
+<section id="BM2261004"><a name="BM2261004"></a>
+<h2>2261004</h2>
+<div class="sym">ERROR: EM_DCERD_DETECT_RF_BOARD_TYPE_FAILED</div>
+<div class="txt">RF Board Configuration Error. Failed to detect RF Board type from the RRF board.</div>
+</section>
+<section id="BM2261005"><a name="BM2261005"></a>
+<h2>2261005</h2>
+<div class="sym">ERROR: EM_DCERD_UNKNOWN_RF_BOARD_TYPE_DETECTED</div>
+<div class="txt">RF Board Configuration Error.
+Unknown RF Board type:%d was detected from the RRF board.</div>
+</section>
+<section id="BM2261006"><a name="BM2261006"></a>
+<h2>2261006</h2>
+<div class="sym">ERROR: EM_DCERD_RF_BOARD_TYPE_NOT_MATCH</div>
+<div class="txt">RF Board Configuration Error. The value of symbol, rfBoardType, in /w/config/MRconfig.cfg is %d, but detected value from hardware is %d. Check if system hardware configuration is correct and reset TPS.</div>
+</section>
+<section id="BM2261007"><a name="BM2261007"></a>
+<h2>2261007</h2>
+<div class="sym">ERROR: EM_DCERD_MR_CONFIG_ERROR</div>
+<div class="txt">The file MRconfig.cfg contains a missing or bad value for %s. value = %s</div>
+</section>
+<section id="BM2261008"><a name="BM2261008"></a>
+<h2>2261008</h2>
+<div class="sym">ERROR: EM_DIAG_PON_TEST_FAILURE</div>
+<div class="txt">RF Digital board Power On diagnostic failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check DIF power and the LED status on the front panel I/O board. Reseat the DIF board and repeat diagnostics. If problem persists replace the DIF.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2261009"><a name="BM2261009"></a>
+<h2>2261009</h2>
+<div class="sym">ERROR: EM_DIAG_DIGITAL_LOOPBK_TEST_FAILURE</div>
+<div class="txt">RF Digital Loopback diagnostic failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check DIF power and the LED status on the front panel I/O board. Reseat the DIF board and repeat diagnostics. If problem persists replace the DIF.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2261010"><a name="BM2261010"></a>
+<h2>2261010</h2>
+<div class="sym">ERROR: EM_DIAG_EX_TONE_TEST_FAILURE</div>
+<div class="txt">Exciter Tone Detect Test failed. 0dB Signal is %s, Other dB Signal is %s.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check Exciter power and the connector pins. Reseat Exciter board and repeat diagnostics.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Exciter Board</li></ol>
+</section>
+<section id="BM2261011"><a name="BM2261011"></a>
+<h2>2261011</h2>
+<div class="sym">ERROR: EM_DCERD_UNSUPPORTED_DIG_BD_REV</div>
+<div class="txt">OLD DCERD DIGITAL BOARD FOUND The Old Revision of DCERD Digital Board is found in DCERD chassis. Replace to newer revison of DCERD Digital Board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2261030"><a name="BM2261030"></a>
+<h2>2261030</h2>
+<div class="sym">ERROR: EM_PC_HOST_DIAG_NO_TESTS_SEL</div>
+<div class="txt">No PC Host diagnostics were selected.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2261031"><a name="BM2261031"></a>
+<h2>2261031</h2>
+<div class="sym">ERROR: EM_PC_HOST_DIAG_ITERATIONS_INVALID</div>
+<div class="txt">Number of iterations specified (%d) must be greater than zero.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2261032"><a name="BM2261032"></a>
+<h2>2261032</h2>
+<div class="sym">ERROR: EM_PC_HOST_DIAG_SCRIPT_MAPPING_TABLE</div>
+<div class="txt">Internal coding error. Mismatch exists between the enumerated list of tests &amp; the table tah tdefines the tests.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2261033"><a name="BM2261033"></a>
+<h2>2261033</h2>
+<div class="sym">ERROR: EM_PC_HOST_DIAG_TEST_NOT_EXIST</div>
+<div class="txt">The PC Host diagnostic script, \%s\&quot;, does not exist.&quot;</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2261034"><a name="BM2261034"></a>
+<h2>2261034</h2>
+<div class="sym">ERROR: EM_PC_HOST_DIAG_TEST_NOT_EXE</div>
+<div class="txt">The PC Host diagnostic script, \%s\&quot;, does not have the proper permissions in order to execute the script.&quot;</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure the script has execute permissions.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2261035"><a name="BM2261035"></a>
+<h2>2261035</h2>
+<div class="sym">ERROR: EM_PC_HOST_DIAG_FAILED_TO_ACQ</div>
+<div class="txt">Could not acquire results from the diagnostic script, \%s\&quot;&quot;</div>
+<div class="lbl">Extended Error:</div><div class="txt">The popen() command failed. Therefore, results from the script cannot be acquired &amp; displayed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2261036"><a name="BM2261036"></a>
+<h2>2261036</h2>
+<div class="sym">ERROR: EM_PC_HOST_TERM_SERVER_PORTS_LOCKED</div>
+<div class="txt">The PC Host diagnostic script, \%s\&quot;, could not complete execution. The diagnostic tests the Terminal Server ports. One or more ports are locked by terminal sessions.&quot;</div>
+<div class="lbl">Extended Error:</div><div class="txt">Terminal Sessions can be unlocked by killing the corresponding processes. Get the process IDs by typing &#x27;ps -aef | grep -v \grep\&quot; | egrep \&quot;AGP|APS|SCP\&quot;&#x27;. The process ID is the second field in the list of processes. Kill the processes using:
+&#x27;kill -9 &lt;1st process ID&gt; &lt;2nd process ID&gt; .... &lt;last process ID&gt;&#x27;&quot;</div>
+</section>
+<section id="BM2261037"><a name="BM2261037"></a>
+<h2>2261037</h2>
+<div class="sym">ERROR: EM_PC_HOST_DIAG_SET_TTY_FAILED</div>
+<div class="txt">The PC Host diagnostic script, \%s\&quot;, could not complete execution. Before testing a port, it must temporarily be reconfigured. The process of reconfiguring the port failed.&quot;</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li><li>Term Server</li></ol>
+</section>
+<section id="BM2261038"><a name="BM2261038"></a>
+<h2>2261038</h2>
+<div class="sym">ERROR: EM_PC_HOST_DIAG_RESET_TTY_FAILED</div>
+<div class="txt">The PC Host diagnostic script, \%s\&quot;, completed execution, but the port used for testing could not be reset back to the proper communications protocol. The state of the port is uncertain. A TPS reset may be required.&quot;</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li><li>Term Server</li></ol>
+</section>
+<section id="BM2261039"><a name="BM2261039"></a>
+<h2>2261039</h2>
+<div class="sym">ERROR: EM_PC_HOST_TERM_SERVER_PING_FAILED</div>
+<div class="txt">The PC Host diagnostic script, \%s\&quot;, could not be executed. The host failed to successfully ping the Terminal Server (%s) as identified in the /etc/hosts file.&quot;</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li><li>Term Server</li></ol>
+</section>
+<section id="BM2261040"><a name="BM2261040"></a>
+<h2>2261040</h2>
+<div class="sym">ERROR: EM_PC_HOST_DIGIDAEMON_FAILED</div>
+<div class="txt">The PC Host diagnostic script, \%s\&quot;, could not be executed. The host failed while trying to run \&quot;%s\&quot;.&quot;</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2261041"><a name="BM2261041"></a>
+<h2>2261041</h2>
+<div class="sym">ERROR: EM_PC_HOST_TERM_SERVER_NOT_READY</div>
+<div class="txt">The diagnostic failed execution. The digi daemon reported that the Terminal Server is not ready</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li><li>Term Server</li></ol>
+</section>
+<section id="BM2261042"><a name="BM2261042"></a>
+<h2>2261042</h2>
+<div class="sym">ERROR: EM_PC_HOST_WRONG_PORT_QTY</div>
+<div class="txt">The diagnostic failed execution. The digi daemon reported the wrong number of available ports - %s</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li><li>Term Server</li></ol>
+</section>
+<section id="BM2261043"><a name="BM2261043"></a>
+<h2>2261043</h2>
+<div class="sym">ERROR: EM_PC_HOST_TS_NOT_READY_WRONG_QTY</div>
+<div class="txt">The diagnostic failed execution. The digi daemon reported that the Terminal Server is not ready and the number of ports is not correct - %s.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li><li>Term Server</li></ol>
+</section>
+<section id="BM2261044"><a name="BM2261044"></a>
+<h2>2261044</h2>
+<div class="sym">ERROR: EM_PC_HOST_PING_PKT_LOSS</div>
+<div class="txt">The diagnostic failed execution. Packet loss of %s was reported while ping&#x27;ing the Terminal Server</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li><li>Term Server</li></ol>
+</section>
+<section id="BM2261045"><a name="BM2261045"></a>
+<h2>2261045</h2>
+<div class="sym">ERROR: EM_PC_HOST_HART_RECS_MISMATCH</div>
+<div class="txt">The PC Host diagnostic script, \%s\&quot;, failed to complete successfully. An incorrect number of records was returned by the script.&quot;</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2261046"><a name="BM2261046"></a>
+<h2>2261046</h2>
+<div class="sym">ERROR: EM_VRE_HART_LOGFILE_READ_ERR</div>
+<div class="txt">The VRE HART logging error, \%s\&quot;, does not have the proper permissions in order to read the log file.&quot;</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure the script has read permissions.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2261047"><a name="BM2261047"></a>
+<h2>2261047</h2>
+<div class="sym">ERROR: EM_VRE_HART_LOGFILE_EXIST_ERR</div>
+<div class="txt">The VRE HART logging error, \%s\&quot;, does not exist&quot;</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the VRE susbsystem to ensure it is operational.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2261048"><a name="BM2261048"></a>
+<h2>2261048</h2>
+<div class="sym">ERROR: EM_VRE_HART_LOGFILE_FOPEN_ERR</div>
+<div class="txt">The VRE HART logging error, \%s\&quot;, could not be opened&quot;</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the file permissions.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2261049"><a name="BM2261049"></a>
+<h2>2261049</h2>
+<div class="sym">ERROR: EM_VRE_HART_LOGFILE_RECS_MISMATCH</div>
+<div class="txt">The VRE HART logging error, \%s\&quot;, contains the wrong number of records. There must be five records per HART entry&quot;</div>
+<div class="lbl">Extended Error:</div><div class="txt">examine the VRE HART log file, /w/config/vreHart.txt.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2261100"><a name="BM2261100"></a>
+<h2>2261100</h2>
+<div class="sym">ERROR: EM_ATFLT_MRMAIL_INIT_FAIL</div>
+<div class="txt">Internal software error. Failed to initialize MrMail.</div>
+</section>
+<section id="BM2261101"><a name="BM2261101"></a>
+<h2>2261101</h2>
+<div class="sym">ERROR: EM_ATFLT_RPC_INIT_ERROR</div>
+<div class="txt">Internal Software Error. RPC service %s failed. Reboot the system.</div>
+</section>
+<section id="BM2261102"><a name="BM2261102"></a>
+<h2>2261102</h2>
+<div class="sym">ERROR: EM_ATFLT_DMA_INIT_ERROR</div>
+<div class="txt">Internal software error. Image Transfer initializing failed. Check the Image Transfer board connection to the MGD chassis and reboot the system.</div>
+</section>
+<section id="BM2261103"><a name="BM2261103"></a>
+<h2>2261103</h2>
+<div class="sym">ERROR: EM_ATFLT_ALLOC_ERROR</div>
+<div class="txt">Internal software error. Memory allocation failed.</div>
+</section>
+<section id="BM2261104"><a name="BM2261104"></a>
+<h2>2261104</h2>
+<div class="sym">ERROR: EM_ATFLT_DMA_XFER_ERROR</div>
+<div class="txt">Image transfer failed. (%s, pci address:%x , data size: %d byte) Check the Image Transfer board connection to the MGD chassis.</div>
+</section>
+<section id="BM2261105"><a name="BM2261105"></a>
+<h2>2261105</h2>
+<div class="sym">ERROR: EM_ATFLT_FLT_PARAM_ERROR</div>
+<div class="txt">Internal software error. SW filter parameter %s (=%d) is invalid.</div>
+</section>
+<section id="BM2261106"><a name="BM2261106"></a>
+<h2>2261106</h2>
+<div class="sym">ERROR: EM_ATFLT_SW_FILTER_ERROR</div>
+<div class="txt">Internal software error. SW filter %s failed. (status = %d)</div>
+</section>
+<section id="BM2261107"><a name="BM2261107"></a>
+<h2>2261107</h2>
+<div class="sym">ERROR: EM_ATFLT_RPC_CLNT_ERROR</div>
+<div class="txt">Internal software error. RPC client error at %s. %s%s</div>
+</section>
+<section id="BM2261108"><a name="BM2261108"></a>
+<h2>2261108</h2>
+<div class="sym">ERROR: EM_ATFLT_AUTOFILTER_FAILED</div>
+<div class="txt">Auto Image Enhancement failed. This error could degrade Image Quality.</div>
+</section>
+<section id="BM2261130"><a name="BM2261130"></a>
+<h2>2261130</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_READ_IN_PROGRESS_NOT_READY</div>
+<div class="txt">Coil ID read is in progress.</div>
+</section>
+<section id="BM2261131"><a name="BM2261131"></a>
+<h2>2261131</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_HOST_RESPONSE_NOT_READY</div>
+<div class="txt">Coil ID Host response has not been received.</div>
+</section>
+<section id="BM2261132"><a name="BM2261132"></a>
+<h2>2261132</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_INVALID_COIL_NOT_READY</div>
+<div class="txt">Invalid coil connected.</div>
+</section>
+<section id="BM2261133"><a name="BM2261133"></a>
+<h2>2261133</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_MC_FAULTS_DISABLED_NOT_READY</div>
+<div class="txt">Multicoil faults disabled and T/R coil connected.</div>
+</section>
+<section id="BM2261134"><a name="BM2261134"></a>
+<h2>2261134</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_MULTIPLE_TR_COILS_NOT_READY</div>
+<div class="txt">Multiple T/R coils connected.</div>
+</section>
+<section id="BM2261135"><a name="BM2261135"></a>
+<h2>2261135</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_BODY_TRANSMIT_NOT_READY</div>
+<div class="txt">Body transmit selected and T/R coil connected.</div>
+</section>
+<section id="BM2261136"><a name="BM2261136"></a>
+<h2>2261136</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_RESEARCH_COIL_NOT_READY</div>
+<div class="txt">Research coil connected and not in research mode.</div>
+</section>
+<section id="BM2261137"><a name="BM2261137"></a>
+<h2>2261137</h2>
+<div class="sym">ERROR: EM_OBSOLETE_HC_2261137</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2261138"><a name="BM2261138"></a>
+<h2>2261138</h2>
+<div class="sym">ERROR: EM_OBSOLETE_HC_2261138</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2261139"><a name="BM2261139"></a>
+<h2>2261139</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_SET_INVALID_NOT_READY</div>
+<div class="txt">Coil combination invalid.</div>
+</section>
+<section id="BM2261140"><a name="BM2261140"></a>
+<h2>2261140</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_DISCONNECTED_NOT_READY</div>
+<div class="txt">Coil disconnected while prepped or scanning.</div>
+</section>
+<section id="BM2261141"><a name="BM2261141"></a>
+<h2>2261141</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_CONNECTED_NOT_READY</div>
+<div class="txt">Coil connected while prepped or scanning.</div>
+</section>
+<section id="BM2261142"><a name="BM2261142"></a>
+<h2>2261142</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_SHARED_COIL_ID_NOT_READY</div>
+<div class="txt">MNS and C coil connectors both connected.</div>
+</section>
+<section id="BM2261143"><a name="BM2261143"></a>
+<h2>2261143</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_PROTOTYPE_COIL_NOT_READY</div>
+<div class="txt">Prototype coil connected and not in research mode.</div>
+</section>
+<section id="BM2261144"><a name="BM2261144"></a>
+<h2>2261144</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_PRESCRIBED_COIL_NOT_READY</div>
+<div class="txt">Prescribed coil not connected.</div>
+</section>
+<section id="BM2261150"><a name="BM2261150"></a>
+<h2>2261150</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_INVALID_COIL</div>
+<div class="txt">Warning: Invalid coil connected. Please see error log for more detail.</div>
+</section>
+<section id="BM2261151"><a name="BM2261151"></a>
+<h2>2261151</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_MC_FAULTS_DISABLED</div>
+<div class="txt">Warning: Multicoil faults disabled and T/R coil connected. Please contact service.</div>
+</section>
+<section id="BM2261152"><a name="BM2261152"></a>
+<h2>2261152</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_MULTIPLE_TR_COILS</div>
+<div class="txt">Warning: Multiple T/R coils are connected. Please remove excess T/R coils.</div>
+</section>
+<section id="BM2261153"><a name="BM2261153"></a>
+<h2>2261153</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_BODY_TRANSMIT</div>
+<div class="txt">Warning: Body transmit selected and T/R coil connected. Please remove all T/R coils or change prescription.</div>
+</section>
+<section id="BM2261154"><a name="BM2261154"></a>
+<h2>2261154</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_RESEARCH_COIL</div>
+<div class="txt">Warning: Research coil connected. Please remove coil or enter research mode.</div>
+</section>
+<section id="BM2261155"><a name="BM2261155"></a>
+<h2>2261155</h2>
+<div class="sym">ERROR: EM_OBSOLETE_HC_2261155</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2261156"><a name="BM2261156"></a>
+<h2>2261156</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_PRESCRIBED_COIL</div>
+<div class="txt">Warning: The prescribed coil has been removed. Please reconnect coil or change prescription.</div>
+</section>
+<section id="BM2261157"><a name="BM2261157"></a>
+<h2>2261157</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_SHARED_COIL_ID</div>
+<div class="txt">Warning: MNS and C connectors both connected. Please remove one coil.</div>
+</section>
+<section id="BM2261158"><a name="BM2261158"></a>
+<h2>2261158</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_PROTOTYPE_COIL</div>
+<div class="txt">Warning: Prototype coil connected. Please remove coil or enter research mode.</div>
+</section>
+<section id="BM2261170"><a name="BM2261170"></a>
+<h2>2261170</h2>
+<div class="sym">ERROR: EM_HC_EMUL_COIL_ID</div>
+<div class="txt">Coil ID has been disabled.\b\ Coil ID is emulated in the mgd_stage file. Remove emulation flag and perform a TPS Reset to enable.</div>
+</section>
+<section id="BM2261171"><a name="BM2261171"></a>
+<h2>2261171</h2>
+<div class="sym">ERROR: EM_OBSOLETE_HC_2261171</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2261172"><a name="BM2261172"></a>
+<h2>2261172</h2>
+<div class="sym">ERROR: EM_OBSOLETE_HC_2261172</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2261173"><a name="BM2261173"></a>
+<h2>2261173</h2>
+<div class="sym">ERROR: EM_OBSOLETE_HC_2261173</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2261174"><a name="BM2261174"></a>
+<h2>2261174</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_HOST_RESPONSE_TIMEOUT</div>
+<div class="txt">SCP-Host communication error:
+Host did not respond to the coil ID request from SCP in time. TPS reset may be required.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This problem could be caused by a network problem between the SCP and the Host, a problem with the Host software, or a problem with the SCP software.</div>
+</section>
+<section id="BM2261175"><a name="BM2261175"></a>
+<h2>2261175</h2>
+<div class="sym">ERROR: EM_HC_SRI_SERIAL_ID_ERROR</div>
+<div class="txt">SRI Serial ID Error:
+An error occurred reading the serial ID on the SRI board.
+Error: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Any of the errors that occur mean that there is probably an issue internal to the SRI. Please replace the SRI if the problem continues.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRI</li></ol>
+</section>
+<section id="BM2261176"><a name="BM2261176"></a>
+<h2>2261176</h2>
+<div class="sym">ERROR: EM_HC_SRI_16_CH_SERIAL_ID_ERROR</div>
+<div class="txt">SRI to 16 Channel Switch Communication Error:
+An error occurred reading the serial ID on the 16 Channel Switch. Please check the connection between the SRI and switch and make sure the switch has power.
+Error: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error could be the result of a problem with the 16 Channel Switch, the cable between the 16 Channel Switch and the SRI, or the SRI.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>16 Channel Switch</li><li>SRI</li></ol>
+</section>
+<section id="BM2261177"><a name="BM2261177"></a>
+<h2>2261177</h2>
+<div class="sym">ERROR: EM_HC_SRI_BAD_CONNECTOR</div>
+<div class="txt">SCP-SRI communication error. A TPS Reset may be necessary. The SRI indicated an invalid coil connector.
+Connector: %#x</div>
+</section>
+<section id="BM2261178"><a name="BM2261178"></a>
+<h2>2261178</h2>
+<div class="sym">ERROR: EM_HC_COIL_USED_NOT_SETUP</div>
+<div class="txt">Coil used setup incomplete</div>
+</section>
+<section id="BM2261179"><a name="BM2261179"></a>
+<h2>2261179</h2>
+<div class="sym">ERROR: EM_HC_SRI_UNKNOWN_SERIAL_ID</div>
+<div class="txt">SRI Communication Error:
+The SRI did not recognize the serial ID request from the SCP. Please check the connection between the SCP and SRI.
+Serial ID type: 0x%x</div>
+</section>
+<section id="BM2261180"><a name="BM2261180"></a>
+<h2>2261180</h2>
+<div class="sym">ERROR: EM_HC_SRI_LPCA_SERIAL_ID_ERROR</div>
+<div class="txt">SRI to IRFM1 Communication Error:
+An error occurred reading the serial ID on the IRFM1. Please check the connection between the SRI and IRFM1 and make sure the 16 Channel Switch has power.
+Error: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error could be the result of a problem with the IRFM1, the cable between the IRFM1 and the 16 Channel Switch, 16 Channel Switch, the cable between the 16 Channel Switch and the SRI, or the SRI.
+If this is an upgrade configuration, then the IRFM1 is not expected to be present.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>16 Channel Switch</li><li>SRI</li></ol>
+</section>
+<section id="BM2261181"><a name="BM2261181"></a>
+<h2>2261181</h2>
+<div class="sym">ERROR: EM_HC_SRI_LPCA_UPGRADE_CONFIG_MISMATCH</div>
+<div class="txt">Configuration mismatch detected:
+The system has been configured with an Upgrade LPCA, but the system detected a Forward Production LPCA. Update the LPCA configuration in Guided Install.</div>
+</section>
+<section id="BM2261182"><a name="BM2261182"></a>
+<h2>2261182</h2>
+<div class="sym">ERROR: EM_HC_SRI_LPCA_FWD_CONFIG_MISMATCH</div>
+<div class="txt">Configuration mismatch detected:
+The system has been configured with a Forward Production LPCA, but the system did not detect a Forward Production LPCA. Update the LPCA configuration in Guided Install.</div>
+</section>
+<section id="BM2261183"><a name="BM2261183"></a>
+<h2>2261183</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_EMULATED</div>
+<div class="txt">Configuration Error:
+Coil ID is emulated with a &#x27;c&#x27; in the /w/config/mgd_stage file. Coil ID can only be emulated if the SRI is also emulated. Please remove the emulation and perform a TPS reset.</div>
+</section>
+<section id="BM2261184"><a name="BM2261184"></a>
+<h2>2261184</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_FIELD_STRENGTH</div>
+<div class="txt">Coil validation error:
+The coil connected has an invalid coil ID. The field strength programmed in the coil was not recognized.
+Connector: %s
+Field strength: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The coil ID chip in the coil connected is invalid. Replace the coil connector that contains the coil ID chip with one that is programmed correctly.</div>
+</section>
+<section id="BM2261185"><a name="BM2261185"></a>
+<h2>2261185</h2>
+<div class="sym">ERROR: EM_HC_COIL_ID_MEMORY_PARSE</div>
+<div class="txt">Coil validation error:
+The coil connected has an invalid coil ID. The coil ID code was programmed incorrectly.
+Connector: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The coil ID chip in the coil connected is invalid. Replace the coil connector that contains the coil ID chip with one that is programmed correctly.</div>
+</section>
+<section id="BM2261186"><a name="BM2261186"></a>
+<h2>2261186</h2>
+<div class="sym">ERROR: EM_HC_SRI_8XP_SERIAL_ID_ERROR</div>
+<div class="txt">SRI to 8 Channel Cross Point Switch Communication Error:
+An error occurred reading the serial ID on the 8 Channel Cross Point Switch. Please check the connection between the SRI and switch and make sure the switch has power.
+Error: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error could be the result of a problem with the 8 Channel Cross Point Switch, the cable between the 8 Channel Cross Point Switch and the SRI, or the SRI.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>8 Channel Cross Point Switch</li><li>SRI</li></ol>
+</section>
+<section id="BM2261230"><a name="BM2261230"></a>
+<h2>2261230</h2>
+<div class="sym">ERROR: EM_HC_RF_NB_CAN_UNKNOWN_FREQ</div>
+<div class="txt">The SCP received an unknown frequency identifier from the RF cabinet. Please perform a TPS Reset. Frequency = 0x%02X</div>
+<div class="lbl">Extended Error:</div><div class="txt">An unknown frequency may mean that the RF Amp in use is not supported by the software at this time. This could also indicate a hardware problem. Check the CAN PMC board located on the SCP Board, the ASC NB IF Board, and the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>ASC NB IF Board</li><li>RF Amp</li></ol>
+</section>
+<section id="BM2261231"><a name="BM2261231"></a>
+<h2>2261231</h2>
+<div class="sym">ERROR: EM_HC_RF_MON_INVALID_SELECT_TRANS</div>
+<div class="txt">RF Amplifier Error. The RF Amp changed selection (went to select or deselect) without being commanded. Previous select: 0x%02X New select: 0x%02X Please power cycle the RF Subsystem and perform a TPS Reset.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The ASC NB IF Board reported a RF Amp select change to the SCP when no select change was commanded. This could indicate a problem with the ASC NB IF Board, CAN Communication, SCP board, or RF Amp. Verify that these components are configured correctly and perform a TPS Reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>ASC NB IF Board</li><li>CAN Communication</li><li>SCP Board</li><li>RF Amp</li></ol>
+</section>
+<section id="BM2261232"><a name="BM2261232"></a>
+<h2>2261232</h2>
+<div class="sym">ERROR: EM_HC_RF_MON_INVALID_SEQ_NUM</div>
+<div class="txt">RF Amplifier Error. The RF Amp command sequence number changed without being commanded.
+Current seq num: %d Commanded seq num: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The SCP Board detected a sequence number change in the communication between the SCP Board and the ASC NB IF Board or ASC BB IF Board. This could indicate a problem with the ASC NB IF Board, ASC BB IF Board, CAN Communication, SCP board, or RF Amp. Run the CAN Link diagnostics to see if these components are configured correctly and perform a TPS Reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>ASC NB IF Board</li><li>ASC BB IF Board</li><li>CAN Communication</li><li>SCP Board</li><li>RF Amp</li></ol>
+</section>
+<section id="BM2261233"><a name="BM2261233"></a>
+<h2>2261233</h2>
+<div class="sym">ERROR: EM_HC_RF_AMP_TYPE_NOT_VALIDATED</div>
+<div class="txt">RF Amp type in Guided Install has not been validated.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please install a validated Rf Amp type, update Guided Install, and perform a TPS Reset.
+Current RF Amp Type: %01d.%01dT %b</div>
+</section>
+<section id="BM2261234"><a name="BM2261234"></a>
+<h2>2261234</h2>
+<div class="sym">ERROR: EM_HC_RF_NB_CAN_FREQ_SDO_ERROR</div>
+<div class="txt">The frequency register of the NB RF Amp could not be read from the ASC NB IF Board. SDO Upload returned error code 0x%X.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The SCP Board could not read the Narrowband RF Amp frequency register from the ASC NB IF Board. This could indicate a problem with the CAN communication between the SCP board and the ASC NB IF board. Check the CAN Communication, verify that the CAN network is terminated properly, and perform a TPS Reset to try again.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li><li>SCP Board</li><li>ASC NB IF Board</li></ol>
+</section>
+<section id="BM2261235"><a name="BM2261235"></a>
+<h2>2261235</h2>
+<div class="sym">ERROR: EM_HC_RF_BB_MODE_RANGE</div>
+<div class="txt">SCP Software Error: RF BB mode command out of range.
+Mode = %ld</div>
+</section>
+<section id="BM2261236"><a name="BM2261236"></a>
+<h2>2261236</h2>
+<div class="sym">ERROR: EM_HC_RF_BB_NOT_CONFIGURED</div>
+<div class="txt">A spectro scan was prescribed, but specRFamp in the MRconfig.cfg file is set to no. Please set specRFamp in the MRconfig.cfg file to yes and perform a TPS Reset to enable spectro scans.</div>
+</section>
+<section id="BM2261237"><a name="BM2261237"></a>
+<h2>2261237</h2>
+<div class="sym">ERROR: EM_HC_RF_NB_AMP_NOT_CONFIGURED</div>
+<div class="txt">The ASC NB IF Board was detected but is not configured in Guided Install</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please set RF-Systems Cabinet to yes in Guided Install, verify that the RF Amp cabling is connected to the ASC NB IF Board, and perform a TPS Reset.</div>
+</section>
+<section id="BM2261238"><a name="BM2261238"></a>
+<h2>2261238</h2>
+<div class="sym">ERROR: EM_HC_RF_BB_AMP_NOT_CONFIGURED</div>
+<div class="txt">The ASC BB IF Board was detected but is not configured in Guided Install</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please set RF-Systems Cabinet to yes in Guided Install, verify that the RF Amp cabling is connected to the ASC BB IF Board, and perform a TPS Reset.</div>
+</section>
+<section id="BM2261239"><a name="BM2261239"></a>
+<h2>2261239</h2>
+<div class="sym">ERROR: EM_HC_RF_NB_AMP_CONFIGURED</div>
+<div class="txt">ASC NB IF Board was not detected but is configured in Guided Install.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this board is present, verify power, RF Amp and CAN Communication and perform a TPS Reset. If the SSM is present, set RF-Systems Cabinet to no in Guided Install and perform a TPS Reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>ASC NB IF Board</li><li>CAN Communication</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2261240"><a name="BM2261240"></a>
+<h2>2261240</h2>
+<div class="sym">ERROR: EM_HC_RF_BB_AMP_CONFIGURED</div>
+<div class="txt">ASC BB IF Board was not detected but is configured in Guided Install.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this board is present, verify power, RF Amp and CAN Communication and perform a TPS Reset. If the SSM is present, set RF-Systems Cabinet to no in Guided Install and perform a TPS Reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>ASC BB IF Board</li><li>CAN Communication</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2261241"><a name="BM2261241"></a>
+<h2>2261241</h2>
+<div class="sym">ERROR: EM_HC_RF_AMP_UPM_CONFIG_ERROR</div>
+<div class="txt">The ASC NB IF Board and ASC BB IF Board are configured in MRconfig.cfg but the UPM is not. Verify the RF Amp and UPM configuration, update PowerMonType in MRconfig.cfg to match the UPM configuration, and perform a TPS Reset.</div>
+</section>
+<section id="BM2261242"><a name="BM2261242"></a>
+<h2>2261242</h2>
+<div class="sym">ERROR: EM_HC_CAN_RESET_ERROR</div>
+<div class="txt">The CAN network could not be reset. forceNodeReset returned status 0x%x. Verify that the CAN devices are cabled correctly and powered on and perform a TPS Reset.</div>
+</section>
+<section id="BM2261243"><a name="BM2261243"></a>
+<h2>2261243</h2>
+<div class="sym">ERROR: EM_HC_RF_AMP_UPM_DETECTION_ERROR</div>
+<div class="txt">The ASC NB and/or ASC BB IF Boards were detected but the UPM1 and/or UPM2 Processor Boards were not. Verify the RF Amp/UPM configuration and perform a TPS Reset. boardDetectedMap = 0x%X</div>
+</section>
+<section id="BM2261244"><a name="BM2261244"></a>
+<h2>2261244</h2>
+<div class="sym">ERROR: EM_HC_VOLTAGE_LEVEL_CONFIG_ERROR</div>
+<div class="txt">The Driver Control Board voltage mode is incorrect for this system type. Verify that fieldStrength in MRconfig.cfg, GCoilType in GradientConfig.cfg, and Standard in DcbConfig.cfg are correct for this system type and perform a TPS Reset.</div>
+</section>
+<section id="BM2261245"><a name="BM2261245"></a>
+<h2>2261245</h2>
+<div class="sym">ERROR: EM_HC_ECC_COEF_OPEN</div>
+<div class="txt">SCP Advisory Message. SCP could not open the ECC coefficient file %b. Please do restore info or run Grafidy to create the file.</div>
+</section>
+<section id="BM2261246"><a name="BM2261246"></a>
+<h2>2261246</h2>
+<div class="sym">ERROR: EM_HC_ECC_COEF_CLOSE</div>
+<div class="txt">SCP Advisory Message. SCP was not able to properly close the ECC coefficient file %b. Perform a TPS Reset and try again.</div>
+</section>
+<section id="BM2261247"><a name="BM2261247"></a>
+<h2>2261247</h2>
+<div class="sym">ERROR: EM_HC_GRAD_ECC_COEFF_WHOLE</div>
+<div class="txt">/usr/g/caldir/grad_ecc_coeff.dat.WHOLE</div>
+</section>
+<section id="BM2261248"><a name="BM2261248"></a>
+<h2>2261248</h2>
+<div class="sym">ERROR: EM_HC_GRAD_ECC_COEFF_DAT</div>
+<div class="txt">/usr/g/caldir/grad_ecc_coeff.dat</div>
+</section>
+<section id="BM2261249"><a name="BM2261249"></a>
+<h2>2261249</h2>
+<div class="sym">ERROR: EM_HC_GRAD_ECC_COEFF_ZOOM</div>
+<div class="txt">/usr/g/caldir/grad_ecc_coeff.dat.ZOOM</div>
+</section>
+<section id="BM2261250"><a name="BM2261250"></a>
+<h2>2261250</h2>
+<div class="sym">ERROR: EM_HC_GRAD_ECC_COEFF_FILE_ERROR</div>
+<div class="txt">SCP Advisory Message. Error reading the ECC coefficient file %b. The file may be corrupted. Please do restore info or run Grafidy to create the file.</div>
+</section>
+<section id="BM2261251"><a name="BM2261251"></a>
+<h2>2261251</h2>
+<div class="sym">ERROR: EM_HC_GRAD_TUNE_OPEN</div>
+<div class="txt">SCP Advisory Message. SCP could not open the gradient tune file %b. Please do restore info or run Grafidy to create the file.</div>
+</section>
+<section id="BM2261252"><a name="BM2261252"></a>
+<h2>2261252</h2>
+<div class="sym">ERROR: EM_HC_GRAD_TUNE_CLOSE</div>
+<div class="txt">SCP Advisory Message. SCP was not able to properly close the gradient tune file %b. Perform a TPS Reset and try again.</div>
+</section>
+<section id="BM2261253"><a name="BM2261253"></a>
+<h2>2261253</h2>
+<div class="sym">ERROR: EM_HC_GRAD_TUNE_WHOLE</div>
+<div class="txt">/usr/g/caldir/gradient_tune.dat.WHOLE</div>
+</section>
+<section id="BM2261254"><a name="BM2261254"></a>
+<h2>2261254</h2>
+<div class="sym">ERROR: EM_HC_GRAD_TUNE_DAT</div>
+<div class="txt">/usr/g/caldir/gradient_tune.dat</div>
+</section>
+<section id="BM2261255"><a name="BM2261255"></a>
+<h2>2261255</h2>
+<div class="sym">ERROR: EM_HC_GRAD_TUNE_ZOOM</div>
+<div class="txt">/usr/g/caldir/gradient_tune.dat.ZOOM</div>
+</section>
+<section id="BM2261256"><a name="BM2261256"></a>
+<h2>2261256</h2>
+<div class="sym">ERROR: EM_HC_GRAD_TUNE_FILE_ERROR</div>
+<div class="txt">SCP Advisory Message. Error reading the gradient tune file %b. The file may be corrupted. Please do restore info or run Grafidy to create the file.</div>
+</section>
+<section id="BM2261257"><a name="BM2261257"></a>
+<h2>2261257</h2>
+<div class="sym">ERROR: EM_HC_RF_BB_AMP_TYPE_SDO_ERROR</div>
+<div class="txt">The amplifier type of the BB RF Amp could not be read from the ASC BB IF Board. SDO Upload returned error code 0x%X.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The SCP Board could not read the BB RF Amp type from the ASC BB IF Board. This could indicate a problem with the CAN communication between the SCP board and the ASC BB IF board. Check the CAN Communication, verify that the CAN network is terminated properly, and perform a TPS Reset to try again.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li><li>SCP Board</li><li>ASC BB IF Board</li></ol>
+</section>
+<section id="BM2261258"><a name="BM2261258"></a>
+<h2>2261258</h2>
+<div class="sym">ERROR: EM_HC_RF_BB_UNKNOWN_AMP_ID</div>
+<div class="txt">SCP received an unknown Spectro RF Amp ID from ASC BB IF Board. Verify the cable is connected from the Spectro RF Amp to the ASC BB IF Board and Spectro RF Amp Type matches ASC BB IF Board Type. Please perform a TPS Reset. Spectro RF Amp ID = 0x%02X</div>
+<div class="lbl">Extended Error:</div><div class="txt">An unknown RF Amp ID may mean that the RF Amp in use is not supported by the software at this time. This could also indicate a hardware problem. Check the CAN PMC board located on the SCP Board, the ASC BB IF Board, and the Spectro RF Amp. There are 2 types of ASC BB RF Amplifier Interface Boards: one supports CPC type amplifiers and the other supports AMT type amplifiers. The Spectro RF Amplifier (AMT or CPC) must match the ASC BB RF Amplifier Interface Board (AMT or CPC) or the ASC BB RF Amplifier Interface Board may not detect and control the Spectro RF Amplifier properly.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>ASC BB IF Board</li><li>RF Amp</li></ol>
+</section>
+<section id="BM2261259"><a name="BM2261259"></a>
+<h2>2261259</h2>
+<div class="sym">ERROR: EM_HC_RF_BB_AMP_TYPE_INCORRECT</div>
+<div class="txt">spectroRFampType in MRconfig.cfg file does not match Spectro RF Amplifier Type determined by SCP. Please verify the RF Amp Type as well as the correct type of ASC BB IF Board is installed in the ASC. Actual ASC BB IF Board: 0x%02X - %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">The value for the Spectro RFamp Type must match the type of BB RF Amplifier Interface Board installed in the ASC Chassis and the type of BB RF Amplifier Interface Board installed in the ASC Chassis must also match the type of Spectro RF Amplifier installed in the system. There are 2 types of ASC BB RF Amplifier Interface Boards:
+one supports CPC type amplifiers and the other supports AMT type amplifiers. The actual ASC BB IF Board detected is either CPC or AMT. This type must match the Spectro RF Amplifier Type in the MRconfig.cfg for a successful TPS Reset. The Spectro RF Amplifier (AMT or CPC) must also match the ASC BB RF Amplifier Interface Board (AMT or CPC) or the ASC BB RF Amplifier Interface Board may not detect and control the Spectro RF Amplifier properly.</div>
+</section>
+<section id="BM2261260"><a name="BM2261260"></a>
+<h2>2261260</h2>
+<div class="sym">ERROR: EM_HC_RF_BB_CPC_AMP_TYPE</div>
+<div class="txt">CPC Board Type - 2391148</div>
+</section>
+<section id="BM2261261"><a name="BM2261261"></a>
+<h2>2261261</h2>
+<div class="sym">ERROR: EM_HC_RF_BB_AMT_AMP_TYPE</div>
+<div class="txt">AMT Board Type - 5250032</div>
+</section>
+<section id="BM2261262"><a name="BM2261262"></a>
+<h2>2261262</h2>
+<div class="sym">ERROR: EM_HC_NOT_READY_SSM_HV</div>
+<div class="txt">SSM High Voltage Supply is not ready.</div>
+</section>
+<section id="BM2261263"><a name="BM2261263"></a>
+<h2>2261263</h2>
+<div class="sym">ERROR: EM_HC_SLAVE_GRAD_TUNE_DAT</div>
+<div class="txt">/usr/g/caldir/slave_gradient_tune.dat</div>
+</section>
+<section id="BM2261264"><a name="BM2261264"></a>
+<h2>2261264</h2>
+<div class="sym">ERROR: EM_HC_AN_RF_NB_AMP_CONFIGURED</div>
+<div class="txt">The RF Amplifier was not detected but is configured in Guided Install.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the RF Amp is present, verify power and CAN communication and perform a TPS Reset. If SSM is present, set RF-Systems Cabinet to no in Guided Install and perform a TPS Reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li><li>SCP Board</li><li>RF Amp</li></ol>
+</section>
+<section id="BM2261265"><a name="BM2261265"></a>
+<h2>2261265</h2>
+<div class="sym">ERROR: EM_HC_AN_RF_NB_AMP_NOT_CONFIGURED</div>
+<div class="txt">The RF Amplifier was detected but is not configured in Guided Install.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Set RF-Systems Cabinet to yes in Guided Install and verify that the cabling is connected to the RF Amplifier, and perform a TPS Reset.</div>
+</section>
+<section id="BM2261330"><a name="BM2261330"></a>
+<h2>2261330</h2>
+<div class="sym">ERROR: EM_HC_SOCKET_LINK_CONNECT_FAILURE</div>
+<div class="txt">Ethernet Communication Error:
+The ethernet socket connect to the port server failed.
+Device: %b
+Errno: %#lx</div>
+</section>
+<section id="BM2261331"><a name="BM2261331"></a>
+<h2>2261331</h2>
+<div class="sym">ERROR: EM_HC_SOCKET_LINK_RECEIVE_FAILURE</div>
+<div class="txt">Ethernet Communication Error:
+The ethernet socket receive from the port server failed.
+Device: %b
+Errno: %#lx</div>
+</section>
+<section id="BM2261332"><a name="BM2261332"></a>
+<h2>2261332</h2>
+<div class="sym">ERROR: EM_HC_SOCKET_LINK_SEND_FAILURE</div>
+<div class="txt">Ethernet Communication Error:
+The ethernet socket send to the port server failed.
+Device: %b
+Errno: %#lx</div>
+</section>
+<section id="BM2261333"><a name="BM2261333"></a>
+<h2>2261333</h2>
+<div class="sym">ERROR: EM_HC_SOCKET_LINK_RX_OVERFLOW</div>
+<div class="txt">Communication Error:
+Receive buffer overflow.
+Device: %b
+Receive Data: %s
+Buffer Size: %ld</div>
+</section>
+<section id="BM2261334"><a name="BM2261334"></a>
+<h2>2261334</h2>
+<div class="sym">ERROR: EM_HC_SOCKET_LINK_TX_SIZE</div>
+<div class="txt">Programming Error:
+Transmit buffer too big.
+Device: %b
+Size Requested: %ld
+Size Limit: %ld</div>
+</section>
+<section id="BM2261335"><a name="BM2261335"></a>
+<h2>2261335</h2>
+<div class="sym">ERROR: EM_HC_SOCKET_LINK_TX_QUEUE_OVERFLOW</div>
+<div class="txt">Programming Error:
+Transmit queue overflow.
+Device: %b</div>
+</section>
+<section id="BM2261336"><a name="BM2261336"></a>
+<h2>2261336</h2>
+<div class="sym">ERROR: EM_HC_SOCKET_LINK_ECHO_FAILURE</div>
+<div class="txt">Communication Error:
+The echo was not received correctly on a request to the specified device.
+Device: %b
+Transmit Opcode: %ld
+Transmit: %s
+Response: %s
+Retry Count: %ld</div>
+</section>
+<section id="BM2261337"><a name="BM2261337"></a>
+<h2>2261337</h2>
+<div class="sym">ERROR: EM_HC_SOCKET_LINK_ECHO_TIMEOUT</div>
+<div class="txt">Communication Error:
+A request to the specified device timed out waiting for the echo of the request.
+Device: %b
+Transmit Opcode: %ld
+Transmit: %s
+Timeout: %ld ms
+Retry Count: %ld</div>
+</section>
+<section id="BM2261338"><a name="BM2261338"></a>
+<h2>2261338</h2>
+<div class="sym">ERROR: EM_HC_SOCKET_LINK_RESPONSE_TIMEOUT</div>
+<div class="txt">Communication Error:
+A request to the specified device timed out waiting for the response to the request.
+Device: %b
+Transmit Opcode: %ld
+Transmit: %s
+Timeout: %ld ms
+Retry Count: %ld</div>
+</section>
+<section id="BM2261339"><a name="BM2261339"></a>
+<h2>2261339</h2>
+<div class="sym">ERROR: EM_HC_SOCKET_LINK_RETRY_FAILURE</div>
+<div class="txt">Communication Error:
+Retries of communication to the specified device failed to recover the communication link. The device will be disabled until communication is recovered.
+Device: %b</div>
+</section>
+<section id="BM2261340"><a name="BM2261340"></a>
+<h2>2261340</h2>
+<div class="sym">ERROR: EM_HC_SOCKET_LINK_RESET_DETECTED</div>
+<div class="txt">Communication Error:
+A reset was detected from the specified device. The device will be disabled until communication is recovered.
+Device: %b</div>
+</section>
+<section id="BM2261341"><a name="BM2261341"></a>
+<h2>2261341</h2>
+<div class="sym">ERROR: EM_HC_SOCKET_LINK_ASYNC_RX</div>
+<div class="txt">Communication Error:
+Unexpected data was received from the specified device.
+Device: %b
+Data: %s</div>
+</section>
+<section id="BM2261380"><a name="BM2261380"></a>
+<h2>2261380</h2>
+<div class="sym">ERROR: EM_HC_EMUL_SIG_GEN</div>
+<div class="txt">Signal Generators have been disabled.\b\ The signal generators are emulated in the mgd_stage file. Remove emulation flag and perform a TPS Reset to enable.</div>
+</section>
+<section id="BM2261381"><a name="BM2261381"></a>
+<h2>2261381</h2>
+<div class="sym">ERROR: EM_HC_SIG_GEN_A_TYPE</div>
+<div class="txt">Signal Generator A</div>
+</section>
+<section id="BM2261382"><a name="BM2261382"></a>
+<h2>2261382</h2>
+<div class="sym">ERROR: EM_HC_SIG_GEN_B_TYPE</div>
+<div class="txt">Signal Generator B</div>
+</section>
+<section id="BM2261383"><a name="BM2261383"></a>
+<h2>2261383</h2>
+<div class="sym">ERROR: EM_HC_NOT_READY_SIG_GEN</div>
+<div class="txt">Signal generator is not ready.</div>
+</section>
+<section id="BM2261384"><a name="BM2261384"></a>
+<h2>2261384</h2>
+<div class="sym">ERROR: EM_HC_SIG_GEN_FREQUENCY_NOT_SETUP</div>
+<div class="txt">Signal generator frequency setup incomplete</div>
+</section>
+<section id="BM2261385"><a name="BM2261385"></a>
+<h2>2261385</h2>
+<div class="sym">ERROR: EM_HC_SIG_GEN_AMPLITUDE_NOT_SETUP</div>
+<div class="txt">Signal generator amplitude setup incomplete</div>
+</section>
+<section id="BM2261386"><a name="BM2261386"></a>
+<h2>2261386</h2>
+<div class="sym">ERROR: EM_HC_SIG_GEN_RESPONSE_BAD</div>
+<div class="txt">Signal Generator Communication Error:
+The response from the signal generator was not valid.
+Device: %b
+Transmit Opcode: %ld
+Transmit: %s
+Response: %s
+Errno: %#lx</div>
+</section>
+<section id="BM2261387"><a name="BM2261387"></a>
+<h2>2261387</h2>
+<div class="sym">ERROR: EM_HC_SIG_GEN_FREQUENCY_BAD</div>
+<div class="txt">Signal Generator Error:
+The frequency read from the signal generator does not match the requested frequency.
+Device: %b
+Response: %0.13f Hz
+Converted Response: %ld Hz
+Expected: %ld Hz</div>
+</section>
+<section id="BM2261388"><a name="BM2261388"></a>
+<h2>2261388</h2>
+<div class="sym">ERROR: EM_HC_SIG_GEN_AMPLITUDE_BAD</div>
+<div class="txt">Signal Generator Error:
+The amplitude read from the signal generator does not match the requested amplitude.
+Device: %b
+Response: %0.8f 1/10 dBm
+Converted Response: %ld 1/10 dBm
+Expected: %ld 1/10 dBm</div>
+</section>
+<section id="BM2261389"><a name="BM2261389"></a>
+<h2>2261389</h2>
+<div class="sym">ERROR: EM_HC_SIG_GEN_ROSC_SOURCE_INTERNAL</div>
+<div class="txt">Signal Generator Error:
+The signal generator is not using the 10 MHz external reference oscillator. Please check reference oscillator connections.
+Device: %b</div>
+</section>
+<section id="BM2261390"><a name="BM2261390"></a>
+<h2>2261390</h2>
+<div class="sym">ERROR: EM_HC_SIG_GEN_OUTPUT_BAD</div>
+<div class="txt">Signal Generator Error:
+The RF output status read from the signal generator does not match the requested output status.
+Device: %b
+Response: %s
+Expected: %s</div>
+</section>
+<section id="BM2261430"><a name="BM2261430"></a>
+<h2>2261430</h2>
+<div class="sym">ERROR: EM_HC_EMUL_FCS</div>
+<div class="txt">FCS has been disabled.\b\ The FCS is emulated in the mgd_stage file. Remove emulation flag and perform a TPS Reset to enable.</div>
+</section>
+<section id="BM2261431"><a name="BM2261431"></a>
+<h2>2261431</h2>
+<div class="sym">ERROR: EM_HC_FCS_TYPE</div>
+<div class="txt">FCS</div>
+</section>
+<section id="BM2261432"><a name="BM2261432"></a>
+<h2>2261432</h2>
+<div class="sym">ERROR: EM_HC_READY_FCS</div>
+<div class="txt">FCS is not ready.</div>
+</section>
+<section id="BM2261433"><a name="BM2261433"></a>
+<h2>2261433</h2>
+<div class="sym">ERROR: EM_HC_FCS_CHANNEL_NOT_SETUP</div>
+<div class="txt">FCS channel setup incomplete</div>
+</section>
+<section id="BM2261434"><a name="BM2261434"></a>
+<h2>2261434</h2>
+<div class="sym">ERROR: EM_HC_FCS_FAULT</div>
+<div class="txt">FCS Error:
+The FCS is reporting fault %x</div>
+</section>
+<section id="BM2261435"><a name="BM2261435"></a>
+<h2>2261435</h2>
+<div class="sym">ERROR: EM_HC_FCS_STATE_BAD</div>
+<div class="txt">FCS Error:
+The state read from the signal generator does not match the requested state.
+Channel: %d
+Response: %d %c
+Expected: %d %c</div>
+</section>
+<section id="BM2261436"><a name="BM2261436"></a>
+<h2>2261436</h2>
+<div class="sym">ERROR: EM_HC_FCS_RESPONSE_BAD</div>
+<div class="txt">FCS Error:
+The response received from the FCS was bad
+Transmit Opcode: %ld
+Transmit: %s
+Response: %s
+Errno: %#lx</div>
+</section>
+<section id="BM2261480"><a name="BM2261480"></a>
+<h2>2261480</h2>
+<div class="sym">ERROR: EM_HC_TERMSERVER_TYPE</div>
+<div class="txt">TermServer</div>
+</section>
+<section id="BM2261481"><a name="BM2261481"></a>
+<h2>2261481</h2>
+<div class="sym">ERROR: EM_HC_TERMSERVER_LOGIN_FAILED</div>
+<div class="txt">TermServer Error:
+Failed to login to term server</div>
+</section>
+<section id="BM2261482"><a name="BM2261482"></a>
+<h2>2261482</h2>
+<div class="sym">ERROR: EM_HC_TERMSERVER_SETTINGS_BAD</div>
+<div class="txt">TermServer Error:
+Failed to set up ports correctly</div>
+</section>
+<section id="BM2261483"><a name="BM2261483"></a>
+<h2>2261483</h2>
+<div class="sym">ERROR: EM_HC_TERMSERVER_SOCKETCONNECT_FAILED</div>
+<div class="txt">TermServer Error:
+Socket connection failed (errno: %d)</div>
+</section>
+<section id="BM2261484"><a name="BM2261484"></a>
+<h2>2261484</h2>
+<div class="sym">ERROR: EM_HC_TERMSERVER_RESETING</div>
+<div class="txt">Term Server is recovering ...</div>
+</section>
+<section id="BM2261500"><a name="BM2261500"></a>
+<h2>2261500</h2>
+<div class="sym">ERROR: EM_HC_GRAD_TEMP_DATA_LOG_TYPE</div>
+<div class="txt">Gradient Coil temperature data logger</div>
+</section>
+<section id="BM2261501"><a name="BM2261501"></a>
+<h2>2261501</h2>
+<div class="sym">ERROR: EM_HC_NOT_READY_GRAD_COIL_TEMP_COM</div>
+<div class="txt">Gradient Coil temperature data logger is not ready.</div>
+</section>
+<section id="BM2261502"><a name="BM2261502"></a>
+<h2>2261502</h2>
+<div class="sym">ERROR: EM_HC_NOT_READY_GRAD_COIL_TEMP</div>
+<div class="txt">Gradient coil temperature sensor out of range</div>
+</section>
+<section id="BM2261503"><a name="BM2261503"></a>
+<h2>2261503</h2>
+<div class="sym">ERROR: EM_HC_GRAD_COIL_TEMP_MON_RESPONSE_BAD</div>
+<div class="txt">Gradient coil temperature Communication Error:
+The response from the Gradient coil temperature data logger was not valid.
+Device: %b
+Transmit Opcode: %ld
+Transmit: %s
+Response: %s
+Errno: %#lx</div>
+</section>
+<section id="BM2261504"><a name="BM2261504"></a>
+<h2>2261504</h2>
+<div class="sym">ERROR: EM_HC_GRAD_COIL_TIMEOUT</div>
+<div class="txt">The Gradient coil data acquisition device failed to supply temperatures in time. Gradient coil temperatures are unknown.</div>
+</section>
+<section id="BM2261505"><a name="BM2261505"></a>
+<h2>2261505</h2>
+<div class="sym">ERROR: EM_HC_FOPEN_ERROR</div>
+<div class="txt">SCP system error. SCP was unable to open or create the file %s.</div>
+</section>
+<section id="BM2261506"><a name="BM2261506"></a>
+<h2>2261506</h2>
+<div class="sym">ERROR: EM_HC_FIO_ERROR</div>
+<div class="txt">SCP system error. SCP opened the file %s but could not append data to the file.</div>
+</section>
+<section id="BM2261507"><a name="BM2261507"></a>
+<h2>2261507</h2>
+<div class="sym">ERROR: EM_HC_FCLOSE_ERROR</div>
+<div class="txt">SCP system error. SCP was not able to properly close the %s file. Perform a TPS Reset and try again.</div>
+</section>
+<section id="BM2261508"><a name="BM2261508"></a>
+<h2>2261508</h2>
+<div class="sym">ERROR: EM_HC_GRAD_COIL_TEMP_ERR</div>
+<div class="txt">Scanning inhibited. The gradient coil temperature is out of range.\b\ Current Temperature = %lf, min limit = %lf, max limit = %f</div>
+</section>
+<section id="BM2261509"><a name="BM2261509"></a>
+<h2>2261509</h2>
+<div class="sym">ERROR: EM_HC_GRAD_COIL_TEMP_WARN</div>
+<div class="txt">The gradient coil is warmer than normal.\b\ If it exceeds the tolerance, scanning will be inhibited.
+Current Temperature = %lf, min limit = %lf, max limit = %f</div>
+</section>
+<section id="BM2261510"><a name="BM2261510"></a>
+<h2>2261510</h2>
+<div class="sym">ERROR: EM_HC_GRAD_COIL_TEMP_NORMAL</div>
+<div class="txt">The gradient coil temperature has returned to normal.</div>
+</section>
+<section id="BM2261511"><a name="BM2261511"></a>
+<h2>2261511</h2>
+<div class="sym">ERROR: EM_HC_EMUL_GRAD_COIL_TEMP</div>
+<div class="txt">Gradient Coil temperature monitoring has been disabled.\b\ It is emulated in the mgd_stage file. Remove emulation flag and perform a TPS Reset to enable.</div>
+</section>
+<section id="BM2261550"><a name="BM2261550"></a>
+<h2>2261550</h2>
+<div class="sym">ERROR: EM_HC_PH_SCAN_LOCATION_INVALID_STATE</div>
+<div class="txt">The scan location was received in an invalid state.
+State: %#x
+Valid States: %#x</div>
+</section>
+<section id="BM2261551"><a name="BM2261551"></a>
+<h2>2261551</h2>
+<div class="sym">ERROR: EM_HC_PH_SCAN_LOCATION_MISMATCH</div>
+<div class="txt">The scan location received from the Host and application did not match.
+Pre-App: %d
+App: %d</div>
+</section>
+<section id="BM2261552"><a name="BM2261552"></a>
+<h2>2261552</h2>
+<div class="sym">ERROR: EM_HC_PH_OFF_SCAN_PLANE_WHILE_SCANNING</div>
+<div class="txt">The table moved off of scan plane while scanning.
+Scan location: %ld
+On plane location: %ld
+Off plane location: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is logged when the scan stops because of the table moving off of scan plane. The locations given are in encoder counts. There are 16 encoder counts per millimeter.
+This error can occur normally when the patient moves while scanning.
+Make sure that the encoder shielding is intact and that the encoder to SRI cable shielding is intact. If the encoder is OK, check the long drive motor, the SSM or PHPS, and the SRI.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Encoder</li><li>Long Drive Motor</li><li>Long Drive Amp</li><li>SSM</li><li>PHPS</li><li>SRI</li></ol>
+</section>
+<section id="BM2261600"><a name="BM2261600"></a>
+<h2>2261600</h2>
+<div class="sym">ERROR: EM_HC_AUTO_START_ENABLED_INVALID</div>
+<div class="txt">Auto Start enable was received in an invalid state.
+State: %#x</div>
+</section>
+<section id="BM2261601"><a name="BM2261601"></a>
+<h2>2261601</h2>
+<div class="sym">ERROR: EM_HC_AUTO_START_DISABLING_OFF_SCAN_PLANE</div>
+<div class="txt">Auto Start Scan was disabled because the table is not at the scan plane. Press advance to scan and start the scan manually.</div>
+</section>
+<section id="BM2261650"><a name="BM2261650"></a>
+<h2>2261650</h2>
+<div class="sym">ERROR: EM_HC_COOLING_TYPE</div>
+<div class="txt">Cooling Cabinet</div>
+</section>
+<section id="BM2261651"><a name="BM2261651"></a>
+<h2>2261651</h2>
+<div class="sym">ERROR: EM_HC_NOT_READY_COOLING</div>
+<div class="txt">The Cooling Cabinet is not ready.</div>
+</section>
+<section id="BM2261652"><a name="BM2261652"></a>
+<h2>2261652</h2>
+<div class="sym">ERROR: EM_HC_EMUL_COOLING</div>
+<div class="txt">The Cooling Cabinet monitoring has been disabled.\b\ It is emulated in the mgd_stage file. Remove emulation flag and perform a TPS Reset to enable.</div>
+</section>
+<section id="BM2261653"><a name="BM2261653"></a>
+<h2>2261653</h2>
+<div class="sym">ERROR: EM_HC_COOLING_PLC_ETHERNET_FAILURE</div>
+<div class="txt">The Ethernet connection with the Cooling Cabinet controller failed. Scanning is prohibited until this condition is fixed.</div>
+</section>
+<section id="BM2261654"><a name="BM2261654"></a>
+<h2>2261654</h2>
+<div class="sym">ERROR: EM_HC_COOLING_PLC_ETH_TEMP_FAILURE</div>
+<div class="txt">An intermittent failure of the Ethernet connection with the Cooling Cabinet controller was observed. The failure was recovered and scanning should not be prevented. Please run diagnostics if this problem happens again.</div>
+</section>
+<section id="BM2261655"><a name="BM2261655"></a>
+<h2>2261655</h2>
+<div class="sym">ERROR: EM_HC_COOLING_PLC_ETH_RECOVERED</div>
+<div class="txt">The Ethernet connection with the Cooling Cabinet controller was recovered.</div>
+</section>
+<section id="BM2261656"><a name="BM2261656"></a>
+<h2>2261656</h2>
+<div class="sym">ERROR: EM_HC_COOLING_PLC_SERIAL_FAILURE</div>
+<div class="txt">The serial connection with the Cooling Cabinet controller failed. This condition does not prevent scanning but should be fixed to ensure better diagnostic capability.</div>
+</section>
+<section id="BM2261657"><a name="BM2261657"></a>
+<h2>2261657</h2>
+<div class="sym">ERROR: EM_HC_COOLING_PLC_SER_TEMP_FAILURE</div>
+<div class="txt">An intermittent failure of the serial connection with the Cooling Cabinet controller was observed. The failure was recovered, but if this problem happens again, it should be fixed to ensure better diagnostic capability.</div>
+</section>
+<section id="BM2261658"><a name="BM2261658"></a>
+<h2>2261658</h2>
+<div class="sym">ERROR: EM_HC_COOLING_PLC_SER_RECOVERED</div>
+<div class="txt">The serial connection with the Cooling Cabinet controller was recovered.</div>
+</section>
+<section id="BM2261659"><a name="BM2261659"></a>
+<h2>2261659</h2>
+<div class="sym">ERROR: EM_HC_COOLING_PLC_ETH_OR_PWR_FAIL</div>
+<div class="txt">The Cooling Cabinet controller is not responding. This can be caused either by an Ethernet link failure or by a controller power failure. Scanning is prohibited until this condition is fixed.</div>
+</section>
+<section id="BM2261660"><a name="BM2261660"></a>
+<h2>2261660</h2>
+<div class="sym">ERROR: EM_HC_COOLING_PLC_POWER_FAILURE</div>
+<div class="txt">Both Ethernet and serial connections with the Cooling Cabinet controller failed. This is probably caused by a controller power failure. Scanning is prohibited until this condition is fixed.</div>
+</section>
+<section id="BM2261661"><a name="BM2261661"></a>
+<h2>2261661</h2>
+<div class="sym">ERROR: EM_HC_COOLING_LOW_POWER_TIMEOUT</div>
+<div class="txt">Cooling Cabinet switching to Low-Power mode after %d minutes of inactivity.</div>
+</section>
+<section id="BM2261662"><a name="BM2261662"></a>
+<h2>2261662</h2>
+<div class="sym">ERROR: EM_HC_COOLING_PLC_IP_ADDRESS_UNKNOWN</div>
+<div class="txt">The IP address of the Cooling Cabinet controller could not be determined. Please make sure the IP address for \%s\&quot; is defined on the MR host.&quot;</div>
+</section>
+<section id="BM2261663"><a name="BM2261663"></a>
+<h2>2261663</h2>
+<div class="sym">ERROR: EM_HC_COOLING_PLC_IP_ADDRESS_CORRECTED</div>
+<div class="txt">The IP address of the Cooling Cabinet controller did not match the one defined on the MR host. It has been corrected.
+Old IP address: %s
+New IP address: %s</div>
+</section>
+<section id="BM2261664"><a name="BM2261664"></a>
+<h2>2261664</h2>
+<div class="sym">ERROR: EM_HC_COOLING_PLC_STARTUP_FAILED</div>
+<div class="txt">The Cooling Cabinet monitoring startup sequence failed. Check both Ethernet and serial connections to the Cooling Cabinet controller and perform a TPS Reset.</div>
+</section>
+<section id="BM2261665"><a name="BM2261665"></a>
+<h2>2261665</h2>
+<div class="sym">ERROR: EM_HC_COOLING_DIAG_TIMEOUT_LINK_FAILURE</div>
+<div class="txt">Cooling Cabinet Diagnostic Error. The diagnostic \%s\&quot; did not complete in time. The connection with the Cooling Cabinet controller may be down.&quot;</div>
+</section>
+<section id="BM2261666"><a name="BM2261666"></a>
+<h2>2261666</h2>
+<div class="sym">ERROR: EM_HC_COOLING_DIAG_ETHERNET_FAILURE</div>
+<div class="txt">Cooling Cabinet Diagnostic Error. A communication failure occurred on the Ethernet connection with the Cooling Cabinet controller.</div>
+</section>
+<section id="BM2261667"><a name="BM2261667"></a>
+<h2>2261667</h2>
+<div class="sym">ERROR: EM_HC_COOLING_DIAG_INCORRECT_DATA</div>
+<div class="txt">Cooling Cabinet Diagnostic Error. The data read from the controller memory are different from the data written. Data Written: 0x%x. Data Read: 0x%x. This could be due to a bad connection, or a software/firmware problem.</div>
+</section>
+<section id="BM2261668"><a name="BM2261668"></a>
+<h2>2261668</h2>
+<div class="sym">ERROR: EM_HC_COOLING_PLC_CODE_DOWNLOAD_DONE</div>
+<div class="txt">The Cooling Cabinet controller firmware has been successfully updated. The new firmware revision number is 0x%X.</div>
+</section>
+<section id="BM2261669"><a name="BM2261669"></a>
+<h2>2261669</h2>
+<div class="sym">ERROR: EM_HC_COOLING_PLC_CODE_DOWNLOAD_FAILED</div>
+<div class="txt">Cooling Cabinet controller firmware download failed:
+%b Please correct the error and perform a TPS Reset.</div>
+</section>
+<section id="BM2261670"><a name="BM2261670"></a>
+<h2>2261670</h2>
+<div class="sym">ERROR: EM_HC_COOLING_DOWN_ETHERNET_FAILURE</div>
+<div class="txt">The Ethernet connection to the controller failed during download.</div>
+</section>
+<section id="BM2261671"><a name="BM2261671"></a>
+<h2>2261671</h2>
+<div class="sym">ERROR: EM_HC_COOLING_DOWN_PCOM_PARSE_ERROR</div>
+<div class="txt">An error occurred while parsing a PCOM packet from the controller.</div>
+</section>
+<section id="BM2261672"><a name="BM2261672"></a>
+<h2>2261672</h2>
+<div class="sym">ERROR: EM_HC_COOLING_DOWN_FILE_READ_ERROR</div>
+<div class="txt">Failed to open or read the controller firmware file. Please make sure that the file is present and readable.</div>
+</section>
+<section id="BM2261673"><a name="BM2261673"></a>
+<h2>2261673</h2>
+<div class="sym">ERROR: EM_HC_COOLING_DOWN_FILE_PARSE_ERROR</div>
+<div class="txt">An error occurred while parsing the controller firmware file. The file may be corrupted or invalid.</div>
+</section>
+<section id="BM2261674"><a name="BM2261674"></a>
+<h2>2261674</h2>
+<div class="sym">ERROR: EM_HC_COOLING_DOWN_OUT_OF_MEMORY</div>
+<div class="txt">Out of memory when trying to read the controller firmware file.</div>
+</section>
+<section id="BM2261675"><a name="BM2261675"></a>
+<h2>2261675</h2>
+<div class="sym">ERROR: EM_HC_COOLING_DOWN_WRONG_MODEL_OR_OS</div>
+<div class="txt">OPLC model or OS version do not match those of the controller firmware file.</div>
+</section>
+<section id="BM2261676"><a name="BM2261676"></a>
+<h2>2261676</h2>
+<div class="sym">ERROR: EM_HC_COOLING_DOWN_PLC_NOT_IDLE</div>
+<div class="txt">The controller did not get idle within the specified time.</div>
+</section>
+<section id="BM2261677"><a name="BM2261677"></a>
+<h2>2261677</h2>
+<div class="sym">ERROR: EM_HC_COOLING_DOWN_TIMEOUT</div>
+<div class="txt">The download of the controller firmware did not complete in time.</div>
+</section>
+<section id="BM2261678"><a name="BM2261678"></a>
+<h2>2261678</h2>
+<div class="sym">ERROR: EM_HC_COOLING_SCAN_STOP_ALARM</div>
+<div class="txt">Cooling Alarm Occured - Scanning will be stopped! Scan will be stopped (or TPS reset will fail) because cooling alarm. Please run diagnostic (PLC Functional Diagnostic) for details on the current alarms.</div>
+</section>
+<section id="BM2261679"><a name="BM2261679"></a>
+<h2>2261679</h2>
+<div class="sym">ERROR: EM_HC_ALL_CLEAR_ALARMS</div>
+<div class="txt">Cooling Cabinet does not detect any scan stopping alarms.</div>
+</section>
+<section id="BM2261680"><a name="BM2261680"></a>
+<h2>2261680</h2>
+<div class="sym">ERROR: EM_HC_PLC_LINK_CONNECT_FAILURE</div>
+<div class="txt">Communication Error:
+The connection to the PLC failed.
+Device: %s
+Errno: %s</div>
+</section>
+<section id="BM2261681"><a name="BM2261681"></a>
+<h2>2261681</h2>
+<div class="sym">ERROR: EM_HC_PLC_LINK_RECEIVE_FAILURE</div>
+<div class="txt">Communication Error:
+The receive from the PLC failed.
+Device: %s
+Errno: %s</div>
+</section>
+<section id="BM2261682"><a name="BM2261682"></a>
+<h2>2261682</h2>
+<div class="sym">ERROR: EM_HC_PLC_LINK_SEND_FAILURE</div>
+<div class="txt">Communication Error:
+The send to the PLC failed.
+Device: %s
+Errno: %s</div>
+</section>
+<section id="BM2261683"><a name="BM2261683"></a>
+<h2>2261683</h2>
+<div class="sym">ERROR: EM_HC_PLC_LINK_TX_SIZE</div>
+<div class="txt">Programming Error:
+Transmit buffer too big.
+Device: %s
+Size Requested: %s
+Size Limit: %s</div>
+</section>
+<section id="BM2261684"><a name="BM2261684"></a>
+<h2>2261684</h2>
+<div class="sym">ERROR: EM_HC_PLC_LINK_TX_QUEUE_OVERFLOW</div>
+<div class="txt">Cooling Cabinet:\ Transmit queue overflow. This normally happens when the messages on the SCP are not \ processed fast enough. Scan should not be affected by this state.
+Device: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The SCP is possibly overloaded and is not sending out communication \ to the cooling cabinet fast enough. This issue is software related.</div>
+</section>
+<section id="BM2261685"><a name="BM2261685"></a>
+<h2>2261685</h2>
+<div class="sym">ERROR: EM_HC_PLC_LINK_RESPONSE_TIMEOUT</div>
+<div class="txt">Communication Error:
+A request to the specified device timed out waiting for the response to the request.
+Device: %s
+Transmit Opcode: %s
+Transmit: %s
+Timeout: %s ms
+Retry Count: %s</div>
+</section>
+<section id="BM2261686"><a name="BM2261686"></a>
+<h2>2261686</h2>
+<div class="sym">ERROR: EM_HC_PLC_LINK_RETRY_FAILURE</div>
+<div class="txt">Communication Error:
+Retries of communication to the specified device failed to recover the communication link.
+Device: %s</div>
+</section>
+<section id="BM2261687"><a name="BM2261687"></a>
+<h2>2261687</h2>
+<div class="sym">ERROR: EM_HC_PLC_LINK_ASYNC_RX</div>
+<div class="txt">Communication Error:
+Unexpected data was received from the specified device.
+Device: %s
+Data: %s</div>
+</section>
+<section id="BM2261698"><a name="BM2261698"></a>
+<h2>2261698</h2>
+<div class="sym">ERROR: EM_HC_COOLING_ALARM_STOP_SCAN</div>
+<div class="txt">This alarm will stop scanning</div>
+</section>
+<section id="BM2261699"><a name="BM2261699"></a>
+<h2>2261699</h2>
+<div class="sym">ERROR: EM_HC_COOLING_ALARM_WARNING</div>
+<div class="txt">This alarm will not stop scanning</div>
+</section>
+<section id="BM2261700"><a name="BM2261700"></a>
+<h2>2261700</h2>
+<div class="sym">ERROR: EM_HC_CUST_COOLANT_TEMP_LOW_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the customer coolant temperature too low Coolant supplied to the HEC from the facility is out of specification. Please regulate the supplied facility coolant before continuing. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Read the facility coolant temperature value on the HEC display (TOP MENU: MONITOR -&gt; FACILITIES). Refer to the system pre-install manual for the temperature specification. If the temperature is outside the specification limit, please contact building maintenance to check the chiller.</div>
+</section>
+<section id="BM2261701"><a name="BM2261701"></a>
+<h2>2261701</h2>
+<div class="sym">ERROR: EM_HC_CUST_COOLANT_TEMP_HIGH_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected customer coolant temperature too high. Coolant supplied to the HEC from the facility is out of specification. Please regulate supplied facility coolant before continuing. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Read the facility coolant temperature value on the HEC display (TOP MENU: MONITOR -&gt; FACILITIES). Refer to the system pre-install manual for the proper limits. If the temperature is outside the specification, please contact building maintenance to check the chiller.</div>
+</section>
+<section id="BM2261702"><a name="BM2261702"></a>
+<h2>2261702</h2>
+<div class="sym">ERROR: EM_HC_CUST_COOLANT_PRESS_LOW_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected customer coolant pressure is too low. Please ensure the facility is providing the correct coolant flow to the HEC cabinet. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">For specifications refer to the system pre-install manual. The customer-supplied in-line filter prior to the HEC may be clogged causing a low-flow condition.</div>
+</section>
+<section id="BM2261703"><a name="BM2261703"></a>
+<h2>2261703</h2>
+<div class="sym">ERROR: EM_HC_CUST_COOLANT_PRESS_HIGH_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected customer coolant pressure is too high. Please ensure the facility is providing the correct coolant flow to the HEC cabinet %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">For specifications refer to the system pre-install manual. If flow is normal check the facility supply pressure sensor in the HEC. Operating the customer coolant pressure too high poses risk of facility coolant leakage.</div>
+</section>
+<section id="BM2261704"><a name="BM2261704"></a>
+<h2>2261704</h2>
+<div class="sym">ERROR: EM_HC_CUST_COOLANT_PRESS_DIFF_LOW_LIMIT_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the customer coolant supply to return pressure difference is too low. Please ensure the facility is providing the correct flow to the HEC cabinet and the facility coolant supply valve in the HEC is open. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Pressure differential corresponds to flow, consult pre-install manual.</div>
+</section>
+<section id="BM2261705"><a name="BM2261705"></a>
+<h2>2261705</h2>
+<div class="sym">ERROR: EM_HC_CUST_COOLANT_RETURN_PRESS_LOW_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the customer coolant return pressure is too low. Please ensure the facility is providing the correct coolant flow to the HEC cabinet %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">For specifications refer to the system pre-install manual. If flow is normal check the facility return pressure sensor in the HEC.</div>
+</section>
+<section id="BM2261706"><a name="BM2261706"></a>
+<h2>2261706</h2>
+<div class="sym">ERROR: EM_HC_CUST_COOLANT_RETURN_PRESS_HIGH_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the customer coolant return pressure is too high. Please ensure the facility return line valve in the HEC is open and the return line is not clogged. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">For specifications refer to the system pre-install manual. If flow is normal check the facility return pressure sensor in the HEC.</div>
+</section>
+<section id="BM2261707"><a name="BM2261707"></a>
+<h2>2261707</h2>
+<div class="sym">ERROR: EM_HC_CUST_COOLANT_REVERSED_FLOW_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the customer coolant flow is reversed. Please ensure the facility supply and return coolant hoses are correctly hooked up to the HEC %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Consult system install manual. If hoses correctly routed, then check operation of the facility return pressure sensor.</div>
+</section>
+<section id="BM2261708"><a name="BM2261708"></a>
+<h2>2261708</h2>
+<div class="sym">ERROR: EM_HC_GRAD_COOLANT_TEMP_LOW_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the gradient coil coolant temperature is too low. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the gradient coil pump is turned on and the mixing valve is responding.</div>
+</section>
+<section id="BM2261709"><a name="BM2261709"></a>
+<h2>2261709</h2>
+<div class="sym">ERROR: EM_HC_GRAD_COOLANT_TEMP_HIGH_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the gradient coil coolant temperature is too high. Verify that the pump is turned on and the customer coolant temperature is within specification. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">For customer coolant specifications refer to the system pre-install manual. If flow is normal and the pump is on, all in-line valves are open, and check the gradient coil coolant temperature sensor and mixing valve response.</div>
+</section>
+<section id="BM2261710"><a name="BM2261710"></a>
+<h2>2261710</h2>
+<div class="sym">ERROR: EM_HC_GRAD_COOLANT_PRESS_LOW_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the gradient coil coolant pressure is too low. Verify that the pump is turned on. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Inspect hoses for leaks, the pressure sensor wiring to the signal box, and replace the pressure sensor if necessary</div>
+</section>
+<section id="BM2261711"><a name="BM2261711"></a>
+<h2>2261711</h2>
+<div class="sym">ERROR: EM_HC_GRAD_COOLANT_PRESS_HIGH_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the gradient coil coolant pressure is too high. Verify that all in-line valves are open. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the gradient coil coolant pressure sensor.</div>
+</section>
+<section id="BM2261712"><a name="BM2261712"></a>
+<h2>2261712</h2>
+<div class="sym">ERROR: EM_HC_GRAD_COOLANT_FLOWRATE_LOW_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the gradient coil coolant flow is too low. Verify that the pump is turned on, all in-line valves are open. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify there are no leaks and that the gradient coil pressure sensor is working.</div>
+</section>
+<section id="BM2261713"><a name="BM2261713"></a>
+<h2>2261713</h2>
+<div class="sym">ERROR: EM_HC_GRAD_COOLANT_FLOWRATE_HIGH_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the gradient coil coolant flow is too high. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the gradient coil coolant pressure sensor.</div>
+</section>
+<section id="BM2261714"><a name="BM2261714"></a>
+<h2>2261714</h2>
+<div class="sym">ERROR: EM_HC_GRAD_COOLANT_RESIST_LOW_WARNING</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the gradient coil coolant resistivity has reached a warning level. Please contact service. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Order coolant deionization kit and schedule service. If the resistivity is 0 kOhm-cm, check the wiring between the sensor in the gradient coolant reservoir and the signal box.</div>
+</section>
+<section id="BM2261715"><a name="BM2261715"></a>
+<h2>2261715</h2>
+<div class="sym">ERROR: EM_HC_GRAD_COOLANT_RESIST_LOW_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the gradient coil coolant resistivity has reached an alarm level. Scanning will be inhibited until coolant serviced. Please contact service.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Order coolant deionization kit and schedule service. If the resistivity is 0 kOhm-cm, check the wiring between the sensor in the gradient coolant reservoir and the signal box.</div>
+</section>
+<section id="BM2261716"><a name="BM2261716"></a>
+<h2>2261716</h2>
+<div class="sym">ERROR: EM_HC_GRAD_COOLANT_RESERVOIR_LOW_WARNING</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the coolant in the gradient coil reservoir is low. Possible excessive coolant loss, please notify service. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please verify that there are no leaks in the system and check coolant level.</div>
+</section>
+<section id="BM2261717"><a name="BM2261717"></a>
+<h2>2261717</h2>
+<div class="sym">ERROR: EM_HC_GRAD_COOLANT_RESERVOIR_LOW_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the coolant in the gradient coil reservoir is at the alarm level. Possible catastrophic coolant loss. Pumps are turned off automatically to protect the hardware. Please contact service. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please verify that there are no leaks in the system. If the pump isn&#x27;t off, then check the level of coolant in the reservoir. If level ok, check level sensor connections.</div>
+</section>
+<section id="BM2261718"><a name="BM2261718"></a>
+<h2>2261718</h2>
+<div class="sym">ERROR: EM_HC_XGD_COOLANT_TEMP_LOW_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the power electronics coolant temperature is too low. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the power electronics pump is turned on and the mixing valve is responding.</div>
+</section>
+<section id="BM2261719"><a name="BM2261719"></a>
+<h2>2261719</h2>
+<div class="sym">ERROR: EM_HC_XGD_COOLANT_TEMP_HIGH_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the power electronics coolant temperature is too high. Verify that the pump is turned on and the customer coolant temperature is within specification limits. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">For customer coolant specifications refer to the system pre-install manual. If flow is normal and the pump is on, all in-line valves are open, and check the power electronics coolant temperature sensor and mixing valve response.</div>
+</section>
+<section id="BM2261720"><a name="BM2261720"></a>
+<h2>2261720</h2>
+<div class="sym">ERROR: EM_HC_XGD_COOLANT_TEMPCHANGE_HIGH_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the power electronics coolant temperature change is too high %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">For customer coolant specifications refer to the system pre-install manual. If flow is normal and the pump is on, all in-line valves are open, and check the power electronics coolant temperature sensor and mixing valve response.</div>
+</section>
+<section id="BM2261721"><a name="BM2261721"></a>
+<h2>2261721</h2>
+<div class="sym">ERROR: EM_HC_XGD_COOLANT_PRESS_LOW_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the power electronics coolant pressure is too low. Verify that the power electronics pump is turned on. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Inspect hoses for leaks, the pressure sensor wiring to the signal box, and replace the pressure sensor if necessary.</div>
+</section>
+<section id="BM2261722"><a name="BM2261722"></a>
+<h2>2261722</h2>
+<div class="sym">ERROR: EM_HC_XGD_COOLANT_PRESS_HIGH_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the power electronics coolant pressure is too high. Verify that all in-line valves are open. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the power electronics coolant pressure sensor.</div>
+</section>
+<section id="BM2261723"><a name="BM2261723"></a>
+<h2>2261723</h2>
+<div class="sym">ERROR: EM_HC_XGD_COOLANT_FLOWRATE_LOW_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the power electronics coolant flow is too low. Verify that the power electronics pump is turned on, all in-line valves are open. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify there are no leaks and that the power electronics pressure sensor is working.</div>
+</section>
+<section id="BM2261724"><a name="BM2261724"></a>
+<h2>2261724</h2>
+<div class="sym">ERROR: EM_HC_XGD_COOLANT_FLOWRATE_HIGH_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the power electronics coolant flow is too high. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the power electronics coolant pressure sensor.</div>
+</section>
+<section id="BM2261725"><a name="BM2261725"></a>
+<h2>2261725</h2>
+<div class="sym">ERROR: EM_HC_XGD_COOLANT_RESERVOIR_LOW_WARNING</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the coolant in the power electronics reservoir is low. Possible excessive coolant loss, please notify service. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please verify that there are no leaks in the system and check coolant level.</div>
+</section>
+<section id="BM2261726"><a name="BM2261726"></a>
+<h2>2261726</h2>
+<div class="sym">ERROR: EM_HC_XGD_COOLANT_RESERVOIR_LOW_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the coolant in the power electronics reservoir is at the alarm level. Possible catastrophic coolant loss. Pumps are turned off automatically to protect the hardware. Please contact service. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please verify that there are no leaks in the system.</div>
+</section>
+<section id="BM2261727"><a name="BM2261727"></a>
+<h2>2261727</h2>
+<div class="sym">ERROR: EM_HC_RF_AIR_TEMP_LOW_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the chilled air temperature is too low. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the mixing valve is performing correctly.</div>
+</section>
+<section id="BM2261728"><a name="BM2261728"></a>
+<h2>2261728</h2>
+<div class="sym">ERROR: EM_HC_RF_AIR_TEMP_HIGH_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the chilled air temperature is above specification limits. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the mixing valve is performing correctly, the customer coolant temperature is within specification, and check that the air filter is clean. Confirm air is being drawn into the filter.</div>
+</section>
+<section id="BM2261729"><a name="BM2261729"></a>
+<h2>2261729</h2>
+<div class="sym">ERROR: EM_HC_RF_AIR_VELOCITY_LOW_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the chilled air flow is too low. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please ensure the blower is ON and the air filter is clean. Confirm air is being drawn into the filter.</div>
+</section>
+<section id="BM2261730"><a name="BM2261730"></a>
+<h2>2261730</h2>
+<div class="sym">ERROR: EM_HC_RF_AIR_VELOCITY_HIGH_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the chilled air flow is too high. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please ensure the air filter is present and blower speed is correct.</div>
+</section>
+<section id="BM2261731"><a name="BM2261731"></a>
+<h2>2261731</h2>
+<div class="sym">ERROR: EM_HC_CRYO_FLOWRATE_LOW_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the cryogen compressor flow rate is too low. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please verify that the in-line cryo compressor filter located in HEC is clean, and that the customer coolant temperature and flow is within specification. Consult the preinstallation manual for customer coolant requirements.</div>
+</section>
+<section id="BM2261732"><a name="BM2261732"></a>
+<h2>2261732</h2>
+<div class="sym">ERROR: EM_HC_CRYO_FLOWRATE_HIGH_ALARM</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the cryogen compressor flow rate is too high. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please verify that the customer coolant temperature and flow is within specification. Consult the preinstallation manual for customer coolant requirements.</div>
+</section>
+<section id="BM2261733"><a name="BM2261733"></a>
+<h2>2261733</h2>
+<div class="sym">ERROR: EM_HC_CUST_COOLANT_TEMP_HIGH_WARNING</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected customer coolant temperature is out of specification (too high). Please verify that the facility coolant temperature and flow is within specification. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Confirm the facilities water temperature (HEC PLC MENU: MONITOR -&gt; FACILITIES). Refer to the system pre-installation manual for the customer coolant requirements. If the temperature is outside of the specification limit, please contact building maintenance to adjust or reset the chiller. After chiller stabilized wait 10 mins for the water temperature to decrease before next reading.</div>
+</section>
+<section id="BM2261734"><a name="BM2261734"></a>
+<h2>2261734</h2>
+<div class="sym">ERROR: EM_HC_GRAD_COOLANT_FLOWRATE_LOW_WARNING</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the gradient coil coolant flow is below specification limits. Verify all in-line valves are open. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify there are no leaks and that the gradient coil pressure sensor is working.</div>
+</section>
+<section id="BM2261735"><a name="BM2261735"></a>
+<h2>2261735</h2>
+<div class="sym">ERROR: EM_HC_XGD_COOLANT_FLOWRATE_LOW_WARNING</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the power electronics coolant flow is below specification limits. Verify that all in-line valves are open. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify there are no leaks and that the power electronics pressure sensor is working.</div>
+</section>
+<section id="BM2261736"><a name="BM2261736"></a>
+<h2>2261736</h2>
+<div class="sym">ERROR: EM_HC_RF_AIR_TEMP_HIGH_WARNING</div>
+<div class="txt">Heat Exchanger Cabinet (HEC) detected the chilled air temperature is too high. %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the mixing valve is performing correctly, check that the air filter is clean, and verify the air temperature sensor is working.</div>
+</section>
+<section id="BM2261737"><a name="BM2261737"></a>
+<h2>2261737</h2>
+<div class="sym">ERROR: EM_HC_COOLING_STARTING_UP</div>
+<div class="txt">Heat exchanger is starting up, please wait.</div>
+</section>
+<section id="BM2261738"><a name="BM2261738"></a>
+<h2>2261738</h2>
+<div class="sym">ERROR: EM_HC_COOLING_PE_SETPOINT_OVERRANGE</div>
+<div class="txt">The system has detected high dew point in the PGR cabinet. Please check equipment room temperature and humidity. If in specification, contact your service representative %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Aux Board (or PEM board) is communicating high temperature and humidity in the PGR cabinet. The HEC has adjusted the setpoint of the PE coolant to a maximum value of 35C to reduce the risk of condensation, but if conditions in the cabinet exceed a dewpoint of 35C, the system is at risk of condensation forming on the cold plates in the power electronics. Check that equipment room temperature and humidity are in spec, the communication between the SCP and HEC is good, and the Aux Board (or PEM board) is operating properly</div>
+</section>
+<section id="BM2261900"><a name="BM2261900"></a>
+<h2>2261900</h2>
+<div class="sym">ERROR: EM_HC_SCP_UNSUPPORTED_VER</div>
+<div class="txt">SCP Board Revision is not supported. Replace the SCP board with a supported revision.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li></ol>
+</section>
+<section id="BM2261901"><a name="BM2261901"></a>
+<h2>2261901</h2>
+<div class="sym">ERROR: EM_HC_NOT_READY_ALLOW_ADVANCE</div>
+<div class="txt">cradle must be advanced from inside scan room with an IntelliTouch landmark.</div>
+</section>
+<section id="BM2261902"><a name="BM2261902"></a>
+<h2>2261902</h2>
+<div class="sym">ERROR: EM_SRI_TABLE_TYPE_NOT_MATCHED</div>
+<div class="txt">The detected table type is not matched with configured table type. TPS reset failed. Please contact your service representative to fix this problem.</div>
+</section>
+</body></html>

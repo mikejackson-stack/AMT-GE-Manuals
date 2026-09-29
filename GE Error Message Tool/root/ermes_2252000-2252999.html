@@ -1,0 +1,2083 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2252000-2252999 (336)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2252000-2252999 (336)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2251000-2251999.html">&larr; 2251000-2251999</a><a href="ermes_2253000-2253999.html">2253000-2253999 &rarr;</a></nav></header>
+<section id="BM2252050"><a name="BM2252050"></a>
+<h2>2252050</h2>
+<div class="sym">ERROR: EM_DIAG_BT_TEST_FAILURE</div>
+<div class="txt">IT card Board Level Diagnostic failure</div>
+</section>
+<section id="BM2252051"><a name="BM2252051"></a>
+<h2>2252051</h2>
+<div class="sym">ERROR: EM_DIAG_BT_LCARD_TEST_FAILURE</div>
+<div class="txt">The IT-Host Card failed its diagnostic.
+Driver output: %s Driver info: Rev: %s, Fail code: %d, Line %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This test will fail if the fiber cable is not attached to\ the MGD or to the loopback connector.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IT Host Board</li></ol>
+</section>
+<section id="BM2252052"><a name="BM2252052"></a>
+<h2>2252052</h2>
+<div class="sym">ERROR: EM_DIAG_BT_PAIR_APS_TEST_FAILURE</div>
+<div class="txt">The IT-MGD Card failed its diagnostic. The Host could not write to \ memory on the APS board when using the IT-MGD card.
+Driver output: %s Driver info: Rev: %s, Fail code: %d, Line %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The failed device may be the IT-Host, IT-MGD, APS card, or IT cable.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IT Host Board</li><li>IT MGD Board</li><li>APS Board</li></ol>
+</section>
+<section id="BM2252053"><a name="BM2252053"></a>
+<h2>2252053</h2>
+<div class="sym">ERROR: EM_DIAG_BT_PAIR_AP_TEST_FAILURE</div>
+<div class="txt">The IT-MGD Card failed its diagnostic. The Host could not write to \ memory on the AP board when using the IT-MGD card.
+Driver output: %s Driver info: Rev: %s, Fail code: %d, Line %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The failed device may be the IT-Host, IT-MGD, AP card, or IT cable.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IT Host Board</li><li>IT MGD Board</li><li>AP Board</li></ol>
+</section>
+<section id="BM2252054"><a name="BM2252054"></a>
+<h2>2252054</h2>
+<div class="sym">ERROR: EM_DIAG_BT_CLEANUP_FAILURE</div>
+<div class="txt">The IT card diagnostic test did not exit correctly. This is a software failure. Perform a TPS Reset.
+Status code reported by bt_close function : %d</div>
+</section>
+<section id="BM2252055"><a name="BM2252055"></a>
+<h2>2252055</h2>
+<div class="sym">ERROR: EM_DIAG_BT_INIT_FAILURE</div>
+<div class="txt">IT-Host card driver initialization error. This error usually means that the IT-Cable is disconnected or that the cable is damaged.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error can be caused if the IT-Host is not connected to the IT-Mgd or to a fiber loopback cable. If the IT-Host is hooked to the IT-Mgd, then the MGD chassis must be powered up. Verify that the IT-Cable is undamaged by running the IT-Cable Loopback test with the IT-Cable hooked between the IT-Host and the loopback connector.</div>
+</section>
+<section id="BM2252056"><a name="BM2252056"></a>
+<h2>2252056</h2>
+<div class="sym">ERROR: EM_DIAG_BT_CABLE_TEST_FAILURE</div>
+<div class="txt">The IT fiber cable test failed. If the IT cable was connected \ to the Host IT card and to the IT loopback adapter, then the IT \ cable must be replaced.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the loopback adapter was not connected \ then this error msg is invalid. Verify that the Host IT card \ diagnostic runs before replacing the cable.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IT Fiber Cable</li></ol>
+</section>
+<section id="BM2252057"><a name="BM2252057"></a>
+<h2>2252057</h2>
+<div class="sym">ERROR: EM_DIAG_BT_APS_MEM_ALLOCATE_FAILURE</div>
+<div class="txt">The IT card diagnostic failed to allocate memory from the APS board. \ This is a software failure but might indicate a problem with the \ amount of memory on the APS board. Suggest running APS BLD diags.</div>
+</section>
+<section id="BM2252058"><a name="BM2252058"></a>
+<h2>2252058</h2>
+<div class="sym">ERROR: EM_DIAG_BT_AP_MEM_ALLOCATE_FAILURE</div>
+<div class="txt">The IT card diagnostic failed to allocate memory from the AP board. \ This is a software failure but might indicate a problem with the \ amount of memory on the AP board. Suggest running AP BLD diags</div>
+</section>
+<section id="BM2252059"><a name="BM2252059"></a>
+<h2>2252059</h2>
+<div class="sym">ERROR: EM_DIAG_BT_HOST_APS_COMM_FAILURE</div>
+<div class="txt">The IT card diagnostic running on the Host failed to communicate with \ a software process running on the APS board. This is a software failure. \ Try again or perform a TPS Reset and try again.</div>
+</section>
+<section id="BM2252060"><a name="BM2252060"></a>
+<h2>2252060</h2>
+<div class="sym">ERROR: EM_DIAG_BT_RCARD_APS_TEST_FAILURE</div>
+<div class="txt">The IT-MGD Card failed its diagnostic. The Host could not write to \ memory on the APS board when using the IT-MGD card.
+Driver output: %s Driver info: Rev: %s, Fail code: %d, Line %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The failed device may be the IT-MGD card, APS card, or IT cable.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IT MGD Board</li><li>APS Board</li></ol>
+</section>
+<section id="BM2252061"><a name="BM2252061"></a>
+<h2>2252061</h2>
+<div class="sym">ERROR: EM_DIAG_BT_RCARD_AP_TEST_FAILURE</div>
+<div class="txt">The IT-MGD Card failed its diagnostic. The Host could not write to \ memory on the AP board when using the IT-MGD card.
+Driver output: %s Driver info: Rev: %s, Fail code: %d, Line %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The failed device may be the IT-MGD card, AP card, or IT cable.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IT MGD Board</li><li>AP Board</li></ol>
+</section>
+<section id="BM2252062"><a name="BM2252062"></a>
+<h2>2252062</h2>
+<div class="sym">ERROR: EM_DIAG_BT_MEM_READ_FAILURE</div>
+<div class="txt">A failure was reported when the APS-&gt;IT-&gt;HOST datapath test tried to transfer data over the IT bus. IT Driver output: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">Run the other IT diagnostic tests to look for a point failure. Try a Host Reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IT Host Board</li><li>IT MGD Board</li><li>IT Fiber Cable</li></ol>
+</section>
+<section id="BM2252063"><a name="BM2252063"></a>
+<h2>2252063</h2>
+<div class="sym">ERROR: EM_DIAG_BT_BAD_DATA_FAILURE</div>
+<div class="txt">The test data transfered over the IT bus contains incorrect values. This might be caused by bad IT bus boards or cables. %d bad values found of %d values tested.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This type of data integrity problem can cause image corruption. Run the other IT diagnostic tests to look for a point failure. Try a Host Reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IT Host Board</li><li>IT MGD Board</li><li>IT Fiber Cable</li></ol>
+</section>
+<section id="BM2252064"><a name="BM2252064"></a>
+<h2>2252064</h2>
+<div class="sym">ERROR: EM_DIAG_BT_SET_INFO_FAILURE</div>
+<div class="txt">IT Bus Hardware Initialization Error. The IT diagnostics could not correctly configure the IT cards before running the test. Verify that the IT-Host card is connected to the IT-Mgd or that a loopback cable is hooked to the IT-Host card.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error can be caused if the IT-Host is not connected to the IT-Mgd or to a fiber loopback cable. If the IT-Host is hooked to the IT-Mgd, then the MGD chassis must be powered up. Verify that the IT-Cable is undamaged by running the IT-Cable Loopback test with the IT-Cable hooked between the IT-Host and the loopback connector.</div>
+</section>
+<section id="BM2252100"><a name="BM2252100"></a>
+<h2>2252100</h2>
+<div class="sym">ERROR: EM_MOT_DIAG_FAILED_INIT_TARGET_INFO</div>
+<div class="txt">System software error. %s is not a valid target board. A valid target board is the APS, AGP, or SCP.</div>
+</section>
+<section id="BM2252101"><a name="BM2252101"></a>
+<h2>2252101</h2>
+<div class="sym">ERROR: EM_MOT_DIAG_FAILED_OPEN_PORT_ERR</div>
+<div class="txt">Diagnostics Software failed to open serial port on %s board This error could be caused by serial cable disconnect or missing modem file.</div>
+</section>
+<section id="BM2252102"><a name="BM2252102"></a>
+<h2>2252102</h2>
+<div class="sym">ERROR: EM_MOT_DIAG_FAILED_GOTO_BUG__ERR</div>
+<div class="txt">Diagnostic software error. board %s failed to go to PPC bug environment when commanded</div>
+<div class="lbl">Extended Error:</div><div class="txt">Run the SCP Board Level Diagnostics with only the SCP board selected. If the diagnostic still fails, then power cycle the MGD Chassis and run the diagnostic again.</div>
+</section>
+<section id="BM2252103"><a name="BM2252103"></a>
+<h2>2252103</h2>
+<div class="sym">ERROR: EM_MOT_DIAG_FAILED_GOTO_DIAG__ERR</div>
+<div class="txt">Diagnostic software error. board %s failed to go to PPC diag environment when commanded</div>
+</section>
+<section id="BM2252104"><a name="BM2252104"></a>
+<h2>2252104</h2>
+<div class="sym">ERROR: EM_MOT_DIAG_GET_STATUS_TIMEOUT_ERR</div>
+<div class="txt">Diagnostic software error. board %s failed to read PPCbug booting pattern within %d seconds. This error could be caused by board not responding to a reset command.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that the serial cables are properly connected from the AGP/COM1 connector to serial terminal server J2 and from the SCP/Console connector to serial terminal server J3.</div>
+</section>
+<section id="BM2252105"><a name="BM2252105"></a>
+<h2>2252105</h2>
+<div class="sym">ERROR: EM_MOT_DIAG_FAILED_OPEN_DRIVER_ERR</div>
+<div class="txt">System software error. diagExecutive failed to open BLD test driver for %s board.</div>
+</section>
+<section id="BM2252106"><a name="BM2252106"></a>
+<h2>2252106</h2>
+<div class="sym">ERROR: EM_MOT_DIAG_READ_TARGET_TIMEOUT__ERR</div>
+<div class="txt">Diagnostic software error. Failed to determine hardware state for %s board within %d seconds The board may be busy loading vxWorks or may be hung. Also check the serial cable for the board and the serial terminal server.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that the Ethernet cables are properly connected to the SCP and AGP boards on one end and to the Ethernet switch/hub at the other end.</div>
+</section>
+<section id="BM2252107"><a name="BM2252107"></a>
+<h2>2252107</h2>
+<div class="sym">ERROR: EM_MOT_DIAG_LOST_CONNECTION_ERR</div>
+<div class="txt">Diagnostic software error. Board %s is not responding after %d seconds during test execution. It can be caused by a board hang or a lost target connection. Check the serial cable for the board and the serial terminal server.</div>
+</section>
+<section id="BM2252108"><a name="BM2252108"></a>
+<h2>2252108</h2>
+<div class="sym">ERROR: EM_MOT_BLD_DIAGS_FOUND_ERR</div>
+<div class="txt">Motorola BLD test detected a error:
+%s See detailed info on the diagnostics browser. or in the service log file %s.</div>
+</section>
+<section id="BM2252109"><a name="BM2252109"></a>
+<h2>2252109</h2>
+<div class="sym">ERROR: EM_MOT_PWRDIAGS__FOUND_ERR</div>
+<div class="txt">Power up test found the following errors:
+%s.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The board may be faulty. Run Motorola Board Level Diagnostics. Replace the board if necessary</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>APS Board</li><li>AGP Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2252110"><a name="BM2252110"></a>
+<h2>2252110</h2>
+<div class="sym">ERROR: EM_DIAG_CONTROL_STRUCT_INVALID_FORMAT_ERR</div>
+<div class="txt">The internal PPC bug Diagnostics Control Structure. has an invalid format. SCP cannot read the power up tests results. This would result if a new version of PPCbug was installed.</div>
+</section>
+<section id="BM2252111"><a name="BM2252111"></a>
+<h2>2252111</h2>
+<div class="sym">ERROR: EM_DIAG_DRIVER_FILE_MISSING_ERR</div>
+<div class="txt">Diagnostic software error. Failed to load the diagnostics driver for %s board, please make sure the file mot_blds is located under /usr/g/bin.</div>
+</section>
+<section id="BM2252112"><a name="BM2252112"></a>
+<h2>2252112</h2>
+<div class="sym">ERROR: EM_MOT_DIAG_INVALID_PWRON_STATE_ERR</div>
+<div class="txt">Board %s is in invalid power up state %d. Verify ENV parameters and retry power up.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The board may be in one of the following states:
+0 - No response, 1 - OS Loaded, 2 - PPC Bug, 3 - PPC Diag, 4 - OS not loaded
+If the error message states that the board is in state 4, then the OS load was stopped. This may happen if characters are detected on the serial cable. In order to eliminate this problem, disconnect the serial cable from AGP/COM1 Connector or SCP/Console Connector and reboot the board. If the error message states that the board is in state 2 or 3, then run the Motorola Board Level Diagnostics to verify the board is OK. If the BLD passes but this message appears during TPS reset then it is highly probable that the boards are not being reset by STIF(or PSE) connection. You can verify if the boards are not being reset by STIF(or PSE) connection during TPS reset either by looking at the LEDs on front of the boards or by opening MGD Terminal window.</div>
+</section>
+<section id="BM2252131"><a name="BM2252131"></a>
+<h2>2252131</h2>
+<div class="sym">ERROR: EM_COM_CORE_ISO_POWER_FAIL</div>
+<div class="txt">The Isolated 5 Volt Signal was not detected. This signal is used for CAN Communications.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The voltage needed for CAN communications was detected as missing by this CAN Core Communications board. This voltage originates on the Driver Control Board and is used by each CAN node, which receives it through the CAN cable.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252132"><a name="BM2252132"></a>
+<h2>2252132</h2>
+<div class="sym">ERROR: EM_COM_CORE_CANOPEN_PDO_FAIL</div>
+<div class="txt">PDO Communication Failure was detected on the CANopen Protocol.
+Node Detecting Failure = %b.
+Node ID = %d.
+PDO Number = %d. Error Code = 0x%x.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A PDO Communication packet failed to process on this CAN node. This could be caused by a disconnected cable or a reset or loss of power of the module containing the CAN node.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li></ol>
+</section>
+<section id="BM2252133"><a name="BM2252133"></a>
+<h2>2252133</h2>
+<div class="sym">ERROR: EM_COM_CORE_CANOPEN_SDO_FAIL</div>
+<div class="txt">SDO Communication Failure was detected on the CANopen Protocol.
+Node Detecting Failure = %b.
+Node ID = %d. Index = 0x%x. SubIndex = 0x%x. Error Code = 0x%x.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A SDO Communication packet failed to process on this CAN node. This could be caused by a disconnected cable or a reset or loss of power of the module containing the CAN node.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li></ol>
+</section>
+<section id="BM2252134"><a name="BM2252134"></a>
+<h2>2252134</h2>
+<div class="sym">ERROR: EM_SCP_NODE</div>
+<div class="txt">SCP</div>
+</section>
+<section id="BM2252135"><a name="BM2252135"></a>
+<h2>2252135</h2>
+<div class="sym">ERROR: EM_DATA_DICT_READ_FAIL</div>
+<div class="txt">Data Dictionary Read Failure on %b. Index = 0x%x. SubIndex = 0x%x.
+Failure Status = %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A Data Dictionary read failure is detected by the CANopen protocol, and is most likely caused by a software problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252136"><a name="BM2252136"></a>
+<h2>2252136</h2>
+<div class="sym">ERROR: EM_DATA_DICT_WRITE_FAIL</div>
+<div class="txt">Data Dictionary Write Failure on %b. Index = 0x%x. SubIndex = 0x%x.
+Failure Status = %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A Data Dictionary read failure is detected by the CANopen protocol, and is most likely caused by a software problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252137"><a name="BM2252137"></a>
+<h2>2252137</h2>
+<div class="sym">ERROR: EM_COM_CAN_SELFTEST_FAIL</div>
+<div class="txt">The CAN module on DSP1 detected a failure during its self-test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN module on the DSP failed its self test procedure. This is most likely an internal failure which will require replacement.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252138"><a name="BM2252138"></a>
+<h2>2252138</h2>
+<div class="sym">ERROR: EM_COM_DSP1_EEPROM_FAIL</div>
+<div class="txt">DSP1 detected that its serial EEPROM does not contain valid data.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The serial EEPROM located on the CAN Core Board that stores system data appears to be blank. This data is stored during manufacturing and assembly.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li><li>Driver Module</li></ol>
+</section>
+<section id="BM2252139"><a name="BM2252139"></a>
+<h2>2252139</h2>
+<div class="sym">ERROR: EM_COM_DSP2_EEPROM_FAIL</div>
+<div class="txt">DSP1 detected that the serial EEPROM located on its host board does not contain valid data.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The serial EEPROM located on the CAN Core Hosting Board that stores system data appears to be blank. This data is stored during manufacturing and assembly.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li><li>Driver Module</li></ol>
+</section>
+<section id="BM2252140"><a name="BM2252140"></a>
+<h2>2252140</h2>
+<div class="sym">ERROR: EM_COM_INVALID_INT_FAIL</div>
+<div class="txt">An unrecognized interrupt has occurred.</div>
+<div class="lbl">Extended Error:</div><div class="txt">An interrupt has occurred that was not expected. This could be caused by electrical noise or a software problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252141"><a name="BM2252141"></a>
+<h2>2252141</h2>
+<div class="sym">ERROR: EM_DSP1_SPI_CHKS_FAIL</div>
+<div class="txt">DSP1 has detected a Serial Communication Checksum Error. Calc&#x27;d: 0x%x Rec&#x27;d: 0x%x.
+Index = %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The DSP on the CAN Core Board has detected a checksum failure when communicating with the Hosting Board&#x27;s DSP. This could be caused by electrical noise. Repeated failures could indicate a hardware problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252142"><a name="BM2252142"></a>
+<h2>2252142</h2>
+<div class="sym">ERROR: EM_DSP2_SPI_CHKS_FAIL</div>
+<div class="txt">DSP2 has detected a Serial Communication Checksum Error. Calc&#x27;d: 0x%x Rec&#x27;d: 0x%x.
+Index = %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The DSP on the CAN Core Hosting Board has detected a checksum failure when communicating with the CAN Core Board&#x27;s DSP. This could be caused by electrical noise. Repeated failures could indicate a hardware problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252143"><a name="BM2252143"></a>
+<h2>2252143</h2>
+<div class="sym">ERROR: EM_DSP1_SPI_BUFFER_OVERLOAD</div>
+<div class="txt">DSP1 has detected that the Serial Communication queue was full when attempting to load a new transfer request.
+Attempted index location: %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN Core Board&#x27;s DSP has detected that its serial communication with the Hosting Board&#x27;s DSP is overflowing. This is most likely caused by a software problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252144"><a name="BM2252144"></a>
+<h2>2252144</h2>
+<div class="sym">ERROR: EM_DSP1_SPI_OVER_RUN_ERR</div>
+<div class="txt">DSP1 has detected that an over-run occurred during an Serial Communication transfer. Data will be lost!</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN Core Board&#x27;s DSP has detected that its serial communication hardware is being over-run with data. This can be caused by electrical noise or extremely fast PSD sequences.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252145"><a name="BM2252145"></a>
+<h2>2252145</h2>
+<div class="sym">ERROR: EM_DSP2_SPI_OVER_RUN_ERR</div>
+<div class="txt">DSP2 has detected that an over-run occurred during an Serial Communication transfer. Data will be lost!</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Hosting Board&#x27;s DSP has detected that its serial communication hardware is being over-run with data. This can be caused by electrical noise or extremely fast PSD sequences.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252146"><a name="BM2252146"></a>
+<h2>2252146</h2>
+<div class="sym">ERROR: EM_COM_CORE_BOOT_NODE</div>
+<div class="txt">Communication Core Boot</div>
+</section>
+<section id="BM2252147"><a name="BM2252147"></a>
+<h2>2252147</h2>
+<div class="sym">ERROR: EM_COM_CORE_APPS_NODE</div>
+<div class="txt">Communication Core Apps</div>
+</section>
+<section id="BM2252148"><a name="BM2252148"></a>
+<h2>2252148</h2>
+<div class="sym">ERROR: EM_BOOT_SCI_FAIL</div>
+<div class="txt">The Serial Communication (Debug) Port self-test failed during boot code.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Serial Communications Interface on the DSP failed its self-test. This affects the debug port and is typically caused by a hardware problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252149"><a name="BM2252149"></a>
+<h2>2252149</h2>
+<div class="sym">ERROR: EM_BOOT_SRAM_FAIL</div>
+<div class="txt">An SRAM memory test failed during boot code. More information is available through the debug port.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The static RAM test failed on this board. This could be caused by internal DSP RAM or external RAM. This is caused by a hardware problem and must be replaced.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252150"><a name="BM2252150"></a>
+<h2>2252150</h2>
+<div class="sym">ERROR: EM_COM_CORE_PROG_VOLT_FAIL</div>
+<div class="txt">The Flash Programming Voltage was not detected on the %b. This signal is needed to flash program the DSP.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The flash programming voltage on the DSP was detected to be low or missing. This could affect its ability to be re=programmed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252151"><a name="BM2252151"></a>
+<h2>2252151</h2>
+<div class="sym">ERROR: EM_CAN_FLASH_DOWNLOAD</div>
+<div class="txt">Firmware Detected on %b DSP%d is different from the file resident on the Host. Flash Downloading Firmware to Board. This is expected to happen during new Software Loads.</div>
+</section>
+<section id="BM2252152"><a name="BM2252152"></a>
+<h2>2252152</h2>
+<div class="sym">ERROR: EM_CAN_FLASH_DOWNLOAD_ERR</div>
+<div class="txt">Flash Download Verification Failed on %b DSP%d. Board will not be allowed to function until valid code is present. Will attempt to reset board and try again.</div>
+</section>
+<section id="BM2252153"><a name="BM2252153"></a>
+<h2>2252153</h2>
+<div class="sym">ERROR: EM_CAN_FLASH_DOWNLOAD_TIMEOUT</div>
+<div class="txt">Flash Download Verification Timeout on %b. Board will not be allowed to function until valid code is present. Will attempt to reset board and try again.</div>
+</section>
+<section id="BM2252154"><a name="BM2252154"></a>
+<h2>2252154</h2>
+<div class="sym">ERROR: EM_CAN_RESET_TIMEOUT</div>
+<div class="txt">The %b failed to respond to a Reset. Will attempt to reset the board again.</div>
+</section>
+<section id="BM2252155"><a name="BM2252155"></a>
+<h2>2252155</h2>
+<div class="sym">ERROR: EM_HC_CAN_LOAD_FAILED</div>
+<div class="txt">CAN peripheral file %s failed to load. Please fix the file and perform a TPS Reset.</div>
+</section>
+<section id="BM2252156"><a name="BM2252156"></a>
+<h2>2252156</h2>
+<div class="sym">ERROR: EM_DATA_DICT_SET_SIZE_FAIL</div>
+<div class="txt">Data Dictionary Set Size Failure on %b. Index = 0x%x. SubIndex = 0x%x.
+Failure Status = %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A Data Dictionary set size failure is detected by the CANopen protocol, and is most likely caused by a software problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252157"><a name="BM2252157"></a>
+<h2>2252157</h2>
+<div class="sym">ERROR: EM_CAN_FPGA_FLASH_DOWNLOAD</div>
+<div class="txt">Firmware Detected on %b FPGA%d is different from the file resident on the Host. Flash Downloading Firmware to Board. This is expected to happen during new Software Loads.</div>
+</section>
+<section id="BM2252158"><a name="BM2252158"></a>
+<h2>2252158</h2>
+<div class="sym">ERROR: EM_CAN_FPGA_FLASH_DOWNLOAD_ERR</div>
+<div class="txt">Flash Download Verification Failed on %b FPGA%d. Board will not be allowed to function until valid code is present. Will attempt to reset board and try again.</div>
+</section>
+<section id="BM2252159"><a name="BM2252159"></a>
+<h2>2252159</h2>
+<div class="sym">ERROR: EM_COM_CORE_DICT_PTR_SET_NULL</div>
+<div class="txt">WARNING: Data Dictionary Pointer Type Element pointer value set to NULL.
+Node ID = %d Index = 0x%x. SubIndex = 0x%x.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A Data Dictionary pointer type element&#x27;s pointer value was set to NULL. This is OK if the pointer value is set non-NULL before the next write to the dictionary.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252160"><a name="BM2252160"></a>
+<h2>2252160</h2>
+<div class="sym">ERROR: EM_COM_CORE_DICT_PTR_SET</div>
+<div class="txt">WARNING: Data Dictionary Non-Pointer Type Element pointer value set to non-NULL.
+Node ID = %d Index = 0x%x. SubIndex = 0x%x.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A Data Dictionary non-pointer type element&#x27;s pointer value was set to something other than NULL. This is OK if the pointer value is set back to NULL before the next write to the dictionary.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252161"><a name="BM2252161"></a>
+<h2>2252161</h2>
+<div class="sym">ERROR: EM_CAN_SDO_BLK_DLD_NOT_SUPPORTED</div>
+<div class="txt">WARNING: SDO Block Download attempted to an unsupported node.
+Node ID = %d Index = 0x%x. SubIndex = 0x%x.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252230"><a name="BM2252230"></a>
+<h2>2252230</h2>
+<div class="sym">ERROR: EM_NMT_FAILURE</div>
+<div class="txt">Network Management Failure detected on the CAN network.</div>
+</section>
+<section id="BM2252231"><a name="BM2252231"></a>
+<h2>2252231</h2>
+<div class="sym">ERROR: EM_NMT_RECOVERY</div>
+<div class="txt">Network Management Recovery detected on the CAN network. Recovered Node is %b.</div>
+</section>
+<section id="BM2252232"><a name="BM2252232"></a>
+<h2>2252232</h2>
+<div class="sym">ERROR: EM_CAN_NODE_RESET</div>
+<div class="txt">SCP detected a Node Reset on the CAN network. Reset Node is %b.</div>
+</section>
+<section id="BM2252233"><a name="BM2252233"></a>
+<h2>2252233</h2>
+<div class="sym">ERROR: EM_CAN_NODE_WRONG_STATE</div>
+<div class="txt">SCP detected an Invalid State on a Node on the CAN network. Failing Node is %b Detected State = 0x%x Expected State = 0x%x</div>
+</section>
+<section id="BM2252234"><a name="BM2252234"></a>
+<h2>2252234</h2>
+<div class="sym">ERROR: EM_CANOPEN_HDW_INIT_FAILURE</div>
+<div class="txt">CAN PMC Board Initialization Failure. Status = 0x%x.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Try reseating the CAN PMC Board mounted in the top of the SCP and then performing a TPS Reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li></ol>
+</section>
+<section id="BM2252235"><a name="BM2252235"></a>
+<h2>2252235</h2>
+<div class="sym">ERROR: EM_NODE_ID_ADD_FAIL</div>
+<div class="txt">Adding Node Id %d to CAN Driver Failed. Status = 0x%x</div>
+</section>
+<section id="BM2252236"><a name="BM2252236"></a>
+<h2>2252236</h2>
+<div class="sym">ERROR: EM_DIAG_DATA_MISMATCH</div>
+<div class="txt">Can Link Diagnostic Data Mismatch Error.
+Node = %d. Data Written = 0x%x. Data Read = 0x%x.</div>
+</section>
+<section id="BM2252237"><a name="BM2252237"></a>
+<h2>2252237</h2>
+<div class="sym">ERROR: EM_CAN_BOARD_EMULATED</div>
+<div class="txt">The CAN PMC Board is emulated. Please remove Emulation from the stage file and run the test again.</div>
+</section>
+<section id="BM2252238"><a name="BM2252238"></a>
+<h2>2252238</h2>
+<div class="sym">ERROR: EM_CAN_BOARD_FAILURE</div>
+<div class="txt">The CAN PMC Board failed its initialization.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Try reseating the CAN PMC Board mounted in the top of the SCP and then performing a TPS Reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li></ol>
+</section>
+<section id="BM2252239"><a name="BM2252239"></a>
+<h2>2252239</h2>
+<div class="sym">ERROR: EM_CAN_STARTUP_TIMEOUT</div>
+<div class="txt">Startup Timeout was detected on the %b.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error message indicates that the node pointed out in the error message did not communicate to the Host during TPS Reset. Ensure that the node indicated is powered up and the CAN cable is connected to it. If you get several of these messages for various nodes, it could be a problem on the whole CAN link such as the CAN terminator not plugged in or one of the CAN cables not connected properly.</div>
+</section>
+<section id="BM2252240"><a name="BM2252240"></a>
+<h2>2252240</h2>
+<div class="sym">ERROR: EM_UNKNOWN_ERMES_ARGTYPE</div>
+<div class="txt">Node %d attempted to log ermes number %d with an invalid parameter type at index %d.</div>
+</section>
+<section id="BM2252241"><a name="BM2252241"></a>
+<h2>2252241</h2>
+<div class="sym">ERROR: EM_CHAN_CONFIG_FILE_OPEN_ERR</div>
+<div class="txt">Unable to open /w/config/diagSysConfig.txt file. Defaulting to 8 channel mode.</div>
+</section>
+<section id="BM2252242"><a name="BM2252242"></a>
+<h2>2252242</h2>
+<div class="sym">ERROR: EM_CANOPEN_COMM_FAILURE</div>
+<div class="txt">Communication Failure was detected on the CANopen Protocol.
+Node Detecting Failure = %b. Error Code = 0x%x.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A communication packet failed to process on this CAN node. This could be caused by a disconnected cable or a reset or loss of power of the module containing the CAN node.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li></ol>
+</section>
+<section id="BM2252243"><a name="BM2252243"></a>
+<h2>2252243</h2>
+<div class="sym">ERROR: EM_CANOPEN_NMT_FAILURE</div>
+<div class="txt">Network Management Failure detected on the CAN network. A CAN node stopped responding to messages. Failing Node is %b.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN node indicated stopped responding to watchdog messages from the SCP. Check that the node has power and that the CAN cable is connected.
+This could also happen if a node was manually powered off.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li></ol>
+</section>
+<section id="BM2252244"><a name="BM2252244"></a>
+<h2>2252244</h2>
+<div class="sym">ERROR: EM_CANOPEN_NMT_RECOVERY_NO_RESET</div>
+<div class="txt">Network Management Recovery detected on the CAN network. The node recovered with no reset detected. Recovered Node is %b.</div>
+</section>
+<section id="BM2252245"><a name="BM2252245"></a>
+<h2>2252245</h2>
+<div class="sym">ERROR: EM_CANOPEN_NMT_RECOVERY_AFTER_RESET</div>
+<div class="txt">Network Management Recovery detected on the CAN network. The node reset and recovered. Recovered Node is %b.</div>
+</section>
+<section id="BM2252246"><a name="BM2252246"></a>
+<h2>2252246</h2>
+<div class="sym">ERROR: EM_CANOPEN_NMT_RECOVERY_QUICK_RESET</div>
+<div class="txt">Quick reset detected on the CAN network. The node reset and recovered quickly. Recovered Node is %b.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN node reset and recovered within a short amount of time.
+This message is expected if a CAN node was manually reset.
+If not manually reset, check that the CAN and power cable connections to the node are solid, and that the power supply to the node is stable.</div>
+</section>
+<section id="BM2252247"><a name="BM2252247"></a>
+<h2>2252247</h2>
+<div class="sym">ERROR: EM_CANOPEN_NETWORK_DOWN</div>
+<div class="txt">CAN Network Down. Network Management Failures were detected on all CAN nodes. The whole network is down.</div>
+<div class="lbl">Extended Error:</div><div class="txt">All of the CAN nodes stopped responding to watchdog messages from the SCP.
+Check that the Driver Module has power and that the CAN cables are connected to the Driver Module and SCP.
+This message is expected if the Driver Module is manually powered off.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li></ol>
+</section>
+<section id="BM2252248"><a name="BM2252248"></a>
+<h2>2252248</h2>
+<div class="sym">ERROR: EM_CANOPEN_NETWORK_UP</div>
+<div class="txt">CAN Network Up. Network Management Recovery was detected on all CAN nodes. The whole network is up.</div>
+</section>
+<section id="BM2252249"><a name="BM2252249"></a>
+<h2>2252249</h2>
+<div class="sym">ERROR: EM_CANOPEN_DIAG_NO_NODES</div>
+<div class="txt">CAN Diagnostic Failure. No nodes were detected on the link.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Make sure all CAN cable connections are good, that CAN terminators are on each end of the CAN link, and that CAN power is good.
+CAN power is supplied by the Driver Module.
+Also make sure that all CAN nodes have power.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>CAN Communication</li></ol>
+</section>
+<section id="BM2252280"><a name="BM2252280"></a>
+<h2>2252280</h2>
+<div class="sym">ERROR: EM_DCB_ID</div>
+<div class="txt">Self ID Successful.</div>
+</section>
+<section id="BM2252281"><a name="BM2252281"></a>
+<h2>2252281</h2>
+<div class="sym">ERROR: EM_SCP_TR_MON_COIL_WRITE_VERIF_FAIL</div>
+<div class="txt">Driver Module Coil Register Fault. A write to the driver board coil register failed to verify. Present State : 0x%x. Requested State : 0x%x.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A value written to the above register was read back as a different value. This could be a hardware or software problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2252282"><a name="BM2252282"></a>
+<h2>2252282</h2>
+<div class="sym">ERROR: EM_SCP_TR_MON_MCB_WR_VERIF_FAIL</div>
+<div class="txt">Driver Module Multi-Coil Bias Enable Fault. A write to the multi-coil array driver bias enable registers failed to verify. Present State: 0x%X 0x%X Requested State: 0x%X 0x%X</div>
+<div class="lbl">Extended Error:</div><div class="txt">A value written to the above register was read back as a different value. This could be a hardware or software problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2252283"><a name="BM2252283"></a>
+<h2>2252283</h2>
+<div class="sym">ERROR: EM_SCP_TR_MON_MCS_WR_VERIF_FAIL</div>
+<div class="txt">Driver Module Multi-Coil Channel Select Fault. A write to the multi-coil array driver channel select register failed to verify. Present State: 0x%X, 0x%X Requested State: 0x%X, 0x%X</div>
+<div class="lbl">Extended Error:</div><div class="txt">A value written to the above register was read back as a different value. This could be a hardware or software problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2252284"><a name="BM2252284"></a>
+<h2>2252284</h2>
+<div class="sym">ERROR: EM_SCP_TR_MON_OCKT0_WR_VERIF_FAIL</div>
+<div class="txt">Driver Module Multi-Coil Open Circuit 0 Fault. A write to the multi-coil array Open Circuit 0 register failed to verify. Reg 0 Present State: 0x%X Reg 0 Requested State: 0x%X Reg 1 Present State: 0x%X Reg 1 Requested State: 0x%X</div>
+<div class="lbl">Extended Error:</div><div class="txt">A value written to the above register was read back as a different value. This could be a hardware or software problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2252285"><a name="BM2252285"></a>
+<h2>2252285</h2>
+<div class="sym">ERROR: EM_SCP_TR_MON_OCKT1_WR_VERIF_FAIL</div>
+<div class="txt">Driver Module Multi-Coil Open Circuit 1 Fault. A write to the multi-coil array Open Circuit 1 register failed to verify. Reg 2 Present State: 0x%X Reg 2 Requested State: 0x%X Reg 3 Present State: 0x%X Reg 3 Requested State: 0x%X</div>
+<div class="lbl">Extended Error:</div><div class="txt">A value written to the above register was read back as a different value. This could be a hardware or software problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2252286"><a name="BM2252286"></a>
+<h2>2252286</h2>
+<div class="sym">ERROR: EM_SCP_TR_MON_SCKT0_WR_VERIF_FAIL</div>
+<div class="txt">Driver Module Multi-Coil Short Circuit 0 Fault. A write to the multi-coil array Short Circuit 0 register failed to verify. Reg 0 Present State: 0x%X Reg 0 Requested State: 0x%X Reg 1 Present State: 0x%X Reg 1 Requested State: 0x%X</div>
+<div class="lbl">Extended Error:</div><div class="txt">A value written to the above register was read back as a different value. This could be a hardware or software problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2252287"><a name="BM2252287"></a>
+<h2>2252287</h2>
+<div class="sym">ERROR: EM_SCP_TR_MON_SCKT1_WR_VERIF_FAIL</div>
+<div class="txt">Driver Module Multi-Coil Short Circuit 1 Fault. A write to the multi-coil array Short Circuit 1 register failed to verify. Reg 2 Present State: 0x%X Reg 2 Requested State: 0x%X Reg 3 Present State: 0x%X Reg 3 Requested State: 0x%X</div>
+<div class="lbl">Extended Error:</div><div class="txt">A value written to the above register was read back as a different value. This could be a hardware or software problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2252288"><a name="BM2252288"></a>
+<h2>2252288</h2>
+<div class="sym">ERROR: EM_SCP_TR_MON_VOLT_WR_VERIF_FAIL</div>
+<div class="txt">Driver Module Multi-Coil Volt Config Fault. A write to the multi-coil array Voltage Config register failed to verify. Reg 0 Present State: 0x%X Reg 0 Requested State: 0x%X Reg 1 Present State: 0x%X Reg 1 Requested State: 0x%X</div>
+<div class="lbl">Extended Error:</div><div class="txt">A value written to the above register was read back as a different value. This could be a hardware or software problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2252289"><a name="BM2252289"></a>
+<h2>2252289</h2>
+<div class="sym">ERROR: EM_DCB_SERVICE_MODE</div>
+<div class="txt">Driver Module is in Service Mode.\b\ Cause is %b.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A switch on the Driver Module is causing it to be in Service Mode. Some diagnostic functions are being disabled. If all switches are enabled, replace the Driver Module.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252290"><a name="BM2252290"></a>
+<h2>2252290</h2>
+<div class="sym">ERROR: EM_DCB_FLASH_DOWNLOAD</div>
+<div class="txt">Older version of DSP%d Firmware Detected on Driver Module. Flash Downloading Firmware to Board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">An older program version was detected on the DSP in the Driver Module. The host system is re-programming it with the latest version.</div>
+</section>
+<section id="BM2252291"><a name="BM2252291"></a>
+<h2>2252291</h2>
+<div class="sym">ERROR: EM_DCB_FLASH_DOWNLOAD_ERR</div>
+<div class="txt">Flash Download Verification Failed on Driver Module DSP%d. Module will not be allowed to function until valid code is present. Will attempt to reset board and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">An attempt to re-program the DSP on the Driver Module failed. Another attempt is being made. The Driver Module may need to be replaced if repeated attempts are unsuccessful.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252292"><a name="BM2252292"></a>
+<h2>2252292</h2>
+<div class="sym">ERROR: EM_DCB_NODE_ID</div>
+<div class="txt">Drivers Control Board</div>
+</section>
+<section id="BM2252293"><a name="BM2252293"></a>
+<h2>2252293</h2>
+<div class="sym">ERROR: EM_DCB_FAULT_DETECTED</div>
+<div class="txt">The Driver Module Has Detected a Fault.\b\ Details of the Fault can be found in other error messages.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This message is displayed in the system status area. The specific fault is located in the error log. See the error log for more details.</div>
+</section>
+<section id="BM2252294"><a name="BM2252294"></a>
+<h2>2252294</h2>
+<div class="sym">ERROR: EM_DCB_CONFIG_FAIL</div>
+<div class="txt">The Driver Module Has Detected an Invalid Configuration. Source of Fault is %b.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The requested Driver configuration has been determined to be invalid. The source of the fault will give specific information regarding the fault. Fault could be caused by hardware or software.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li><li>Software</li></ol>
+</section>
+<section id="BM2252295"><a name="BM2252295"></a>
+<h2>2252295</h2>
+<div class="sym">ERROR: EM_DCB_BOARD1_PRESENT</div>
+<div class="txt">Multi-Coil Board #1 Not Present</div>
+</section>
+<section id="BM2252296"><a name="BM2252296"></a>
+<h2>2252296</h2>
+<div class="sym">ERROR: EM_DCB_BOARD2_PRESENT</div>
+<div class="txt">Multi-Coil Board #2 Not Present</div>
+</section>
+<section id="BM2252297"><a name="BM2252297"></a>
+<h2>2252297</h2>
+<div class="sym">ERROR: EM_DCB_HIGH_VOLT_DISABLE</div>
+<div class="txt">High Voltage Disable Switch</div>
+</section>
+<section id="BM2252298"><a name="BM2252298"></a>
+<h2>2252298</h2>
+<div class="sym">ERROR: EM_DCB_MC_SELECT_CONFIG</div>
+<div class="txt">Multicoil Channel Selection without Voltage Configuration</div>
+</section>
+<section id="BM2252299"><a name="BM2252299"></a>
+<h2>2252299</h2>
+<div class="sym">ERROR: EM_DCB_TR_OVERTEMP</div>
+<div class="txt">TR Driver Over Temperature</div>
+</section>
+<section id="BM2252300"><a name="BM2252300"></a>
+<h2>2252300</h2>
+<div class="sym">ERROR: EM_DCB_INVALID_COIL</div>
+<div class="txt">Invalid Coil Selection</div>
+</section>
+<section id="BM2252301"><a name="BM2252301"></a>
+<h2>2252301</h2>
+<div class="sym">ERROR: EM_DCB_MCD_OPEN_CKT</div>
+<div class="txt">Multicoil Bias Fault - Open Circuit. Try re-seating all coil connectors.\b\ MCD%d Channel %d of 16, counting from 1
+Value: %d mA, Limit: %d mA Mask of failed channels: 0x%x MCD1 1-8 : A or C MCD1 9-16 : B MCD2 1-8 : B or Legacy MC MCD2 9-16 : C</div>
+<div class="lbl">Extended Error:</div><div class="txt">This fault was detected by the Driver Module. An open circuit fault occurs when the actual value is less than the pre-defined limit. Check system cables, connectors, coils and configurations. Re-seat all coil connectors. The mask of all failed channels indicates additional channels with the same fault - convert the hex number to a bitmap to decipher the mask, with channel 1 indicated by the least significant bit and channel 16 indicated by the most significant bit. For example, a mask of 0x3c converts to 0011 1100, meaning channels 3, 4, 5, and 6 all experienced the same failure. The key at the bottom of the error message shows the MC driver bias channels provided by the Driver Module used with each multicoil connector. Note that some systems may not have all the connectors listed. Tools such as Gather Load Data located on the CSD Diagnostics page under Peripherals, Driver Module Diagnostics can help with isolating this failure to a coil, cable, LPCA module, or Driver Module.
+In 20.0 and later systems, MC bias is supplied and sensed by the RF Hub, so this message should not be logged. TPS reset may help recover.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252302"><a name="BM2252302"></a>
+<h2>2252302</h2>
+<div class="sym">ERROR: EM_DCB_MCD_TRANSMIT_FLT</div>
+<div class="txt">Multicoil Bias Fault - Transmit Fault. Try re-seating all coil connectors. MCD%d Channel %d of 16, counting from 1
+Value: %d mA, Limit: %d mA Mask of failed channels: 0x%x MCD1 1-8 : A or C MCD1 9-16 : B MCD2 1-8 : B or Legacy MC MCD2 9-16 : C</div>
+<div class="lbl">Extended Error:</div><div class="txt">This fault was detected by the Driver Module. A transmit fault occurs when the actual value is less than the pre-defined limit and negative when the driver expected a positive value. This may be due to the driver module not switching states as it should have. Check system cables, connectors, coils and configurations. Re-seat all coil connectors. The mask of all failed channels indicates additional channels with the same fault - convert the hex number to a bitmap to decipher the mask, with channel 1 indicated by the least significant bit and channel 16 indicated by the most significant bit. For example, a mask of 0x3c converts to 0011 1100, meaning channels 3, 4, 5, and 6 all experienced the same failure. The key at the bottom of the error message shows the MC driver bias channels provided by the Driver Module used with each multicoil connector. Note that some systems may not have all the connectors listed. Tools such as Gather Load Data located on the CSD Diagnostics page under Peripherals, Driver Module Diagnostics can help with isolating this failure to a coil, cable, LPCA module, or Driver Module.
+In 20.0 and later systems, MC bias is supplied and sensed by the RF Hub, so this message should not be logged. TPS reset may help recover.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252303"><a name="BM2252303"></a>
+<h2>2252303</h2>
+<div class="sym">ERROR: EM_DCB_MCD_SHORT_CKT</div>
+<div class="txt">Multicoil Bias Fault - Short Circuit. Try re-seating all coil connectors. MCD%d Channel %d of 16, counting from 1
+Value: %d mA, Limit: %d mA Mask of failed channels: 0x%x MCD1 1-8 : A or C MCD1 9-16 : B MCD2 1-8 : B or Legacy MC MCD2 9-16 : C</div>
+<div class="lbl">Extended Error:</div><div class="txt">This fault was detected by the Driver Module. A short circuit fault occurs when the actual value is more negative than the pre-defined limit. This could be caused by a shorted diode in the coil or a short elsewhere in the system. Check coil, system cables, connectors and configurations. The mask of all failed channels indicates additional channels with the same fault - convert the hex number to a bitmap to decipher the mask, with channel 1 indicated by the least significant bit and channel 16 indicated by the most significant bit. For example, a mask of 0x3c converts to 0011 1100, meaning channels 3, 4, 5, and 6 all experienced the same failure. The key at the bottom of the error message shows the MC driver bias channels provided by the Driver Module used with each multicoil connector. Note that some systems may not have all the connectors listed. Tools such as Gather Load Data located on the CSD Diagnostics page under Peripherals, Driver Module Diagnostics can help with isolating this failure to a coil, cable, LPCA module, or Driver Module.
+In 20.0 and later systems, MC bias is supplied and sensed by the RF Hub, so this message should not be logged. TPS reset may help recover.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252304"><a name="BM2252304"></a>
+<h2>2252304</h2>
+<div class="sym">ERROR: EM_DCB_MCD_RECEIVE_FLT</div>
+<div class="txt">Multicoil Bias Fault - Receive Fault. Try re-seating all coil connectors. MCD%d Channel %d of 16, counting from 1
+Value: %d mA, Limit: %d mA Mask of failed channels: 0x%x MCD1 1-8 : A or C MCD1 9-16 : B MCD2 1-8 : B or Legacy MC MCD2 9-16 : C</div>
+<div class="lbl">Extended Error:</div><div class="txt">This fault was detected by the Driver Module. A receive fault occurs when the actual value is greater than the pre-defined limit. Also may be due to the driver module not switching states as it should have. Check system cables, connectors, coils and configurations. Re-seat all coil connectors. The mask of all failed channels indicates additional channels with the same fault - convert the hex number to a bitmap to decipher the mask, with channel 1 indicated by the least significant bit and channel 16 indicated by the most significant bit. For example, a mask of 0x3c converts to 0011 1100, meaning channels 3, 4, 5, and 6 all experienced the same failure. The key at the bottom of the error message shows the MC driver bias channels provided by the Driver Module used with each multicoil connector. Note that some systems may not have all the connectors listed. Tools such as Gather Load Data located on the CSD Diagnostics page under Peripherals, Driver Module Diagnostics can help with isolating this failure to a coil, cable, LPCA module, or Driver Module.
+In 20.0 and later systems, MC bias is supplied and sensed by the RF Hub, so this message should not be logged. TPS reset may help recover.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252305"><a name="BM2252305"></a>
+<h2>2252305</h2>
+<div class="sym">ERROR: EM_DCB_TR_OPEN_CKT</div>
+<div class="txt">TR Driver Fault Detected - Open Circuit. Source of Fault is %b.
+Value: %d mA Limit: %d mA</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this error happens repeatedly then check for a disconnected cable or other open-circuit condition somewhere in the failing transmit chain. Use TR DD MC System Path diagnostic to troubleshoot. If error happens intermittently and cannot be traced to failed hardware then may be due to gradient noise in the system.
+In 20.0 and later systems, try running the TR DD System Path diagnostic to troubleshoot.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252306"><a name="BM2252306"></a>
+<h2>2252306</h2>
+<div class="sym">ERROR: EM_DCB_TR_SHORT_CKT</div>
+<div class="txt">TR Driver Fault Detected - Short Circuit. Source of Fault is %b.
+Value: %d mA Limit: %d mA</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this error happens repeatedly then check for a short-circuited PIN diode or other short-circuit condition somewhere in the failing transmit chain. Use TR DD MC System Path diagnostic or Gather Load Data and verify that the short circuit values are less than 30mA. If error happens intermittently and cannot be traced to failed hardware then it may be due to gradient noise in the system.
+In 20.0 and later systems, try running the TR DD System Path diagnostic or Gather Load Data to troubleshoot.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252307"><a name="BM2252307"></a>
+<h2>2252307</h2>
+<div class="sym">ERROR: EM_DCB_HEAD</div>
+<div class="txt">Head TR</div>
+</section>
+<section id="BM2252308"><a name="BM2252308"></a>
+<h2>2252308</h2>
+<div class="sym">ERROR: EM_DCB_BODY</div>
+<div class="txt">Body TR</div>
+</section>
+<section id="BM2252309"><a name="BM2252309"></a>
+<h2>2252309</h2>
+<div class="sym">ERROR: EM_DCB_MNS</div>
+<div class="txt">MNS TR</div>
+</section>
+<section id="BM2252310"><a name="BM2252310"></a>
+<h2>2252310</h2>
+<div class="sym">ERROR: EM_DCB_DD_OPEN_CKT</div>
+<div class="txt">DD Driver Fault Detected - Open Circuit. Source of Fault is %b.
+Value = %d mV Limit: %d mV</div>
+<div class="lbl">Extended Error:</div><div class="txt">This usually indicates that a cable somewhere in the circuit path is not connected or one of the load diodes has failed open. Inspect the failing path. Use TR DD MC System Path diagnostic to troubleshoot. In HD/HDx Systems, BD1 is the Dynamic Disable Board at Front of Body Coil BD2 is the Dynamic Disable Board at Front of Body Coil BD3 is the Dynamic Disable Board at Back of Body Coil BD4 is the Dynamic Disable Board at Back of Body Coil
+In 20.0 and later systems, try running the TR DD System Path diagnostic to troubleshoot.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252311"><a name="BM2252311"></a>
+<h2>2252311</h2>
+<div class="sym">ERROR: EM_DCB_DD_SHORT_CKT</div>
+<div class="txt">DD Driver Fault Detected - Short Circuit. Source of Fault is %b.
+Value: %d mA Limit: %d mA</div>
+<div class="lbl">Extended Error:</div><div class="txt">This usually indicates a short-circuited PIN diode in one of the parts located in the failing circuit path. Inspect the failing path. This fault can also cause the High Voltage Power Supply to be low. Use TR DD MC System Path diagnostic to troubleshoot. In HD/HDx Systems, BD1 is the Dynamic Disable Board at Front of Body Coil BD2 is the Dynamic Disable Board at Front of Body Coil BD3 is the Dynamic Disable Board at Back of Body Coil BD4 is the Dynamic Disable Board at Back of Body Coil
+In 20.0 and later systems, try running the TR DD System Path diagnostic to troubleshoot.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252312"><a name="BM2252312"></a>
+<h2>2252312</h2>
+<div class="sym">ERROR: EM_DCB_DD_HIGH_VOLTAGE</div>
+<div class="txt">DD Driver Fault Detected - High Voltage Fault. Source of Fault is %b.
+Value = %d V Limit: %d V</div>
+<div class="lbl">Extended Error:</div><div class="txt">Use the Driver Module Diagnostic to view the current measured value of the High Voltage. In HD/HDx Systems, BD1 is the Dynamic Disable Board at Front of Body Coil BD2 is the Dynamic Disable Board at Front of Body Coil BD3 is the Dynamic Disable Board at Back of Body Coil BD4 is the Dynamic Disable Board at Back of Body Coil</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252313"><a name="BM2252313"></a>
+<h2>2252313</h2>
+<div class="sym">ERROR: EM_DCB_BD1</div>
+<div class="txt">BD1</div>
+</section>
+<section id="BM2252314"><a name="BM2252314"></a>
+<h2>2252314</h2>
+<div class="sym">ERROR: EM_DCB_BD2</div>
+<div class="txt">BD2</div>
+</section>
+<section id="BM2252315"><a name="BM2252315"></a>
+<h2>2252315</h2>
+<div class="sym">ERROR: EM_DCB_BD3</div>
+<div class="txt">BD3</div>
+</section>
+<section id="BM2252316"><a name="BM2252316"></a>
+<h2>2252316</h2>
+<div class="sym">ERROR: EM_DCB_BD4</div>
+<div class="txt">BD4</div>
+</section>
+<section id="BM2252317"><a name="BM2252317"></a>
+<h2>2252317</h2>
+<div class="sym">ERROR: EM_DCB_DD</div>
+<div class="txt">DD (Direct Drive inside the Body Hybrid Assembly)</div>
+</section>
+<section id="BM2252318"><a name="BM2252318"></a>
+<h2>2252318</h2>
+<div class="sym">ERROR: EM_DCB_PS_FAULT</div>
+<div class="txt">The Driver Module Has Detected a Power Supply Fault. Source of Fault is %b.
+Actual Voltage = %d.%d
+Limit Voltage = %d.%d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Driver Module detected a problem with one of its power supplies. Check the error message for details about the fault. If the failing supply is the High Voltage Power Supply, check for any associated Dynamic Disable Short Circuit faults that might have caused the power supply to be low. Use the Driver Module diagnostic to troubleshoot.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252319"><a name="BM2252319"></a>
+<h2>2252319</h2>
+<div class="sym">ERROR: EM_DCB_PS_ISO_24</div>
+<div class="txt">CAN Isolated 24 Volts</div>
+</section>
+<section id="BM2252320"><a name="BM2252320"></a>
+<h2>2252320</h2>
+<div class="sym">ERROR: EM_DCB_PS_MCD_15</div>
+<div class="txt">Multicoil Preamp/Aux 15 Volts</div>
+</section>
+<section id="BM2252321"><a name="BM2252321"></a>
+<h2>2252321</h2>
+<div class="sym">ERROR: EM_DCB_PS_MCD_15_N</div>
+<div class="txt">Multicoil Preamp/Aux -15 Volts</div>
+</section>
+<section id="BM2252322"><a name="BM2252322"></a>
+<h2>2252322</h2>
+<div class="sym">ERROR: EM_DCB_PS_DCB_12</div>
+<div class="txt">Driver Module Mixed Signal 12 Volts</div>
+</section>
+<section id="BM2252323"><a name="BM2252323"></a>
+<h2>2252323</h2>
+<div class="sym">ERROR: EM_DCB_PS_DCB_12_N</div>
+<div class="txt">Driver Module Mixed Signal -12 Volts</div>
+</section>
+<section id="BM2252324"><a name="BM2252324"></a>
+<h2>2252324</h2>
+<div class="sym">ERROR: EM_DCB_PS_TR_15_N</div>
+<div class="txt">TR/DD Driver -15 Volts</div>
+</section>
+<section id="BM2252325"><a name="BM2252325"></a>
+<h2>2252325</h2>
+<div class="sym">ERROR: EM_DCB_PS_TR_12</div>
+<div class="txt">TR Driver +12 Volts</div>
+</section>
+<section id="BM2252326"><a name="BM2252326"></a>
+<h2>2252326</h2>
+<div class="sym">ERROR: EM_DCB_PS_MCD1_10</div>
+<div class="txt">MCD1 Driver +10 Volts</div>
+</section>
+<section id="BM2252327"><a name="BM2252327"></a>
+<h2>2252327</h2>
+<div class="sym">ERROR: EM_DCB_PS_MCD1_10_N</div>
+<div class="txt">MCD1 Driver -10 Volts</div>
+</section>
+<section id="BM2252328"><a name="BM2252328"></a>
+<h2>2252328</h2>
+<div class="sym">ERROR: EM_DCB_PS_MCD2_10</div>
+<div class="txt">MCD2 Driver +10 Volts</div>
+</section>
+<section id="BM2252329"><a name="BM2252329"></a>
+<h2>2252329</h2>
+<div class="sym">ERROR: EM_DCB_PS_MCD2_10_N</div>
+<div class="txt">MCD2 Driver -10 Volts</div>
+</section>
+<section id="BM2252330"><a name="BM2252330"></a>
+<h2>2252330</h2>
+<div class="sym">ERROR: EM_DCB_PS_HI_V</div>
+<div class="txt">High Voltage Power Supply</div>
+</section>
+<section id="BM2252331"><a name="BM2252331"></a>
+<h2>2252331</h2>
+<div class="sym">ERROR: EM_DCB_SPI_CRC</div>
+<div class="txt">The Driver Module Has Detected a Serial Communication Checksum Error. Source: DSP%d Calc: 0x%x Rec&#x27;d: 0x%x.
+Index = %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Driver Module has detected a checksum failure when communicating between DSP&#x27;s. This could be caused by electrical noise. Repeated failures could indicate a hardware problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252332"><a name="BM2252332"></a>
+<h2>2252332</h2>
+<div class="sym">ERROR: EM_DCB_FPGA</div>
+<div class="txt">The Driver Module Has Detected a FPGA error. Source of Fault is %b.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Driver Module detected a problem with the FPGA when trying to initialize it. See the error message for more detail.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252333"><a name="BM2252333"></a>
+<h2>2252333</h2>
+<div class="sym">ERROR: EM_DCB_FPGA_MEM</div>
+<div class="txt">FPGA Read/Write failure</div>
+</section>
+<section id="BM2252334"><a name="BM2252334"></a>
+<h2>2252334</h2>
+<div class="sym">ERROR: EM_DCB_FPGA_INIT</div>
+<div class="txt">FPGA INIT not ready</div>
+</section>
+<section id="BM2252335"><a name="BM2252335"></a>
+<h2>2252335</h2>
+<div class="sym">ERROR: EM_DCB_CAN_SELFTEST</div>
+<div class="txt">The Driver Module failed its CAN selftest.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN module on the DSP failed its self test procedure. This is most likely an internal failure which will require replacement.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252336"><a name="BM2252336"></a>
+<h2>2252336</h2>
+<div class="sym">ERROR: EM_DCB_EEPROM</div>
+<div class="txt">The EEPROM on the %b contains invalid data.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The indicated serial EEPROM located in the Driver Module appears to be blank. This data is stored during manufacturing and assembly.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252337"><a name="BM2252337"></a>
+<h2>2252337</h2>
+<div class="sym">ERROR: EM_DCB_CCC_BD</div>
+<div class="txt">Driver Module Communication Core Board</div>
+</section>
+<section id="BM2252338"><a name="BM2252338"></a>
+<h2>2252338</h2>
+<div class="sym">ERROR: EM_DCB_DCB_BD</div>
+<div class="txt">Driver Module Driver Control Board</div>
+</section>
+<section id="BM2252339"><a name="BM2252339"></a>
+<h2>2252339</h2>
+<div class="sym">ERROR: EM_DCB_MCD_BOARD_FLT</div>
+<div class="txt">The Driver Module has detected that Multicoil Driver Board #%d is disconnected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This fault was detected while scanning. Check the connections to the Driver Board in the Driver Module.
+In 20.0 and later systems, MC bias is supplied and sensed by the RF Hub, so this message should not be logged. TPS reset may help recover.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252340"><a name="BM2252340"></a>
+<h2>2252340</h2>
+<div class="sym">ERROR: EM_DCB_MCD_CABLE_FLT</div>
+<div class="txt">The Driver Module has detected that Multicoil Driver Cable #%d is disconnected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This fault was detected while scanning. Check the cable connections to the Driver Module.
+In 20.0 and later systems, MC bias is supplied and sensed by the RF Hub, so this message should not be logged. TPS reset may help recover.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252341"><a name="BM2252341"></a>
+<h2>2252341</h2>
+<div class="sym">ERROR: EM_DCB_TR_OVERTEMP_FLT</div>
+<div class="txt">The Driver Module has detected a TR Over-temperature fault with the %b.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Driver Module has detected an over-temperature fault in the indicated driver. Check for short circuits and overheating.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252342"><a name="BM2252342"></a>
+<h2>2252342</h2>
+<div class="sym">ERROR: EM_DCB_TRDD_BOARD_FLT</div>
+<div class="txt">The Driver Module has detected that the TR/DD Board is disconnected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This fault was detected while scanning or attempting to scan. Check the connections to the TR/DD Board in the Driver Module.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252343"><a name="BM2252343"></a>
+<h2>2252343</h2>
+<div class="sym">ERROR: EM_DCB_FLASH_DOWNLOAD_TIMEOUT</div>
+<div class="txt">Flash Download Verification Timeout on Driver Module. Board will not be allowed to function until valid code is present. Will attempt to reset board and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">An attempt to re-program the DSP on the Driver Module failed. Another attempt is being made. The Driver Module may need to be replaced if repeated attempts are unsuccessful.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252344"><a name="BM2252344"></a>
+<h2>2252344</h2>
+<div class="sym">ERROR: EM_DCB_RESET_TIMEOUT</div>
+<div class="txt">The Drivers Module failed to respond to a Reset. Will attempt to reset the board again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">An attempt to reset the DSP on the Driver Module failed. Another attempt is being made. The Driver Module may need to be replaced if repeated attempts are unsuccessful.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252345"><a name="BM2252345"></a>
+<h2>2252345</h2>
+<div class="sym">ERROR: EM_DCB_MC_FAULT_DISABLE</div>
+<div class="txt">MC Fault Disable Switch</div>
+</section>
+<section id="BM2252346"><a name="BM2252346"></a>
+<h2>2252346</h2>
+<div class="sym">ERROR: EM_DCB_DD_FAULT_DISABLE</div>
+<div class="txt">DD Fault Disable Switch</div>
+</section>
+<section id="BM2252347"><a name="BM2252347"></a>
+<h2>2252347</h2>
+<div class="sym">ERROR: EM_DCB_TR_FAULT_DISABLE</div>
+<div class="txt">TR Fault Disable Switch</div>
+</section>
+<section id="BM2252348"><a name="BM2252348"></a>
+<h2>2252348</h2>
+<div class="sym">ERROR: EM_DCB_FPI_DISCONNECT</div>
+<div class="txt">Front Panel Interface Board Not Present</div>
+</section>
+<section id="BM2252349"><a name="BM2252349"></a>
+<h2>2252349</h2>
+<div class="sym">ERROR: EM_DCB_FAN_FAULT</div>
+<div class="txt">The Driver Module has detected that Fan #%d is malfunctioning.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The hardware fault detection is indicating that the fan is not working. Carefully check the operation of the fan. Replace module if necessary.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252350"><a name="BM2252350"></a>
+<h2>2252350</h2>
+<div class="sym">ERROR: EM_DCB_UDB_CABLE_FLT</div>
+<div class="txt">The Driver Module has detected that the Unblank Distribution Board cable is disconnected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This fault was detected while scanning or attempting to scan. Check the cable connection from the FPIO of the RRF Chassis to the Driver Module.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252351"><a name="BM2252351"></a>
+<h2>2252351</h2>
+<div class="sym">ERROR: EM_DCB_UDB_HARNESS_FLT</div>
+<div class="txt">The Driver Module has detected that the Unblank Distribution Board harness is disconnected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This fault was detected while scanning or attempting to scan. Check the connections from the Unblank Distribution Board to the Driver Control Board in the Driver Module.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252352"><a name="BM2252352"></a>
+<h2>2252352</h2>
+<div class="sym">ERROR: EM_DCB_FPGA_SN_FLT</div>
+<div class="txt">The Driver Module has detected that the FPGA was unable to read serial number information.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The FPGA was unable to read serial number information from the Driver Module boards. This could be caused by an old revision of FPGA code or a hardware problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252353"><a name="BM2252353"></a>
+<h2>2252353</h2>
+<div class="sym">ERROR: EM_SCP_TR_MON_SCKT2_WR_VERIF_FAIL</div>
+<div class="txt">DCB Multi-Coil Short Circuit 2 Fault.\b\ A write to the multi-coil array Short Circuit 2 register failed to verify. Reg 4 Present State: 0x%X Reg 4 Requested State: 0x%X Reg 5 Present State: 0x%X Reg 5 Requested State: 0x%X</div>
+</section>
+<section id="BM2252354"><a name="BM2252354"></a>
+<h2>2252354</h2>
+<div class="sym">ERROR: EM_SCP_TR_MON_SCKT3_WR_VERIF_FAIL</div>
+<div class="txt">DCB Multi-Coil Short Circuit 3 Fault.\b\ A write to the multi-coil array Short Circuit 3 register failed to verify. Reg 6 Present State: 0x%X Reg 6 Requested State: 0x%X Reg 7 Present State: 0x%X Reg 7 Requested State: 0x%X</div>
+</section>
+<section id="BM2252355"><a name="BM2252355"></a>
+<h2>2252355</h2>
+<div class="sym">ERROR: EM_SCP_TR_MON_OCKT2_WR_VERIF_FAIL</div>
+<div class="txt">DCB Multi-Coil Open Circuit 2 Fault.\b\ A write to the multi-coil array Open Circuit 2 register failed to verify. Reg 4 Present State: 0x%X Reg 4 Requested State: 0x%X Reg 5 Present State: 0x%X Reg 5 Requested State: 0x%X</div>
+</section>
+<section id="BM2252356"><a name="BM2252356"></a>
+<h2>2252356</h2>
+<div class="sym">ERROR: EM_SCP_TR_MON_OCKT3_WR_VERIF_FAIL</div>
+<div class="txt">DCB Multi-Coil Open Circuit 3 Fault.\b\ A write to the multi-coil array Open Circuit 3 register failed to verify. Reg 6 Present State: 0x%X Reg 6 Requested State: 0x%X Reg 7 Present State: 0x%X Reg 7 Requested State: 0x%X</div>
+</section>
+<section id="BM2252357"><a name="BM2252357"></a>
+<h2>2252357</h2>
+<div class="sym">ERROR: EM_SCP_STOP_DCB_ERROR</div>
+<div class="txt">Driver Module error occurred.</div>
+</section>
+<section id="BM2252358"><a name="BM2252358"></a>
+<h2>2252358</h2>
+<div class="sym">ERROR: EM_OBSOLETE_DCB_2252358</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2252359"><a name="BM2252359"></a>
+<h2>2252359</h2>
+<div class="sym">ERROR: EM_DCB_TRDD_CAL_FAIL</div>
+<div class="txt">T/R DD Calibration Failure. Driver Module has detected a potential open circuit in the %b path. Check for disconnected cables and run the calibration again.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252360"><a name="BM2252360"></a>
+<h2>2252360</h2>
+<div class="sym">ERROR: EM_SCP_TRDD_NOT_PRESENT</div>
+<div class="txt">T/R DD Board Not Detected. The Driver Module did not detect the T/R DD board, which is required. Please make sure the board is present and perform a TPS reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252361"><a name="BM2252361"></a>
+<h2>2252361</h2>
+<div class="sym">ERROR: EM_DCB_TRDD_CAL_LOW</div>
+<div class="txt">T/R DD Calibration Failure. Driver Module has detected a lower than expected value in the %b path. Check for shorted cables or a short in the DD filter, or the output of the driver and run the calibration again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">In HD/HDx Systems, BD1 is the Dynamic Disable Board at Front of Body Coil BD2 is the Dynamic Disable Board at Front of Body Coil BD3 is the Dynamic Disable Board at Back of Body Coil BD4 is the Dynamic Disable Board at Back of Body Coil</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252362"><a name="BM2252362"></a>
+<h2>2252362</h2>
+<div class="sym">ERROR: EM_DCB_DD_OPEN_CKT_LOW</div>
+<div class="txt">DD Driver Fault Detected - Low Open Circuit Value. Possible loss of -15V supply at the DD output. Source of Fault is %b.
+Value = %d mV Limit: %d mV</div>
+<div class="lbl">Extended Error:</div><div class="txt">This usually indicates that the -15V supply is lost at the Dynamic Disable output. Can try unloading the affected output and then running Driver Module diagnostic or TR DD MC diagnostic. In HD/HDx Systems, BD1 is the Dynamic Disable Board at Front of Body Coil BD2 is the Dynamic Disable Board at Front of Body Coil BD3 is the Dynamic Disable Board at Back of Body Coil BD4 is the Dynamic Disable Board at Back of Body Coil
+In 20.0 and later systems, try running the Driver Module diagnostic or TR DD diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252363"><a name="BM2252363"></a>
+<h2>2252363</h2>
+<div class="sym">ERROR: EM_DCB_THERMAL_TRIP</div>
+<div class="txt">Body Hybrid Splitter Thermal Trip or Short Circuit Detected.
+Value: %d mA Limit: %d mA</div>
+<div class="lbl">Extended Error:</div><div class="txt">Excessive reflected power from the body coil has overheated the Body Hybrid or a short circuit condition (failed PIN diode) has occurred in the Body Hybrid Splitter. If this failure is intermittent, check body coil and I/Q cabling. If this failure is hard, check Body Hybrid Splitter and TR bias cabling for short circuits. Use TR DD MC diagnostic to troubleshoot.
+In 20.0 and later systems, try running the TR DD System Path diagnostic to troubleshoot.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li><li>Body Hybrid Splitter</li><li>Body RF Coil</li></ol>
+</section>
+<section id="BM2252364"><a name="BM2252364"></a>
+<h2>2252364</h2>
+<div class="sym">ERROR: EM_DCB_SWIFT_CABLE_FAIL</div>
+<div class="txt">The SWIFT Cable Validation Test failed.
+Num of Pulses Sent: %d.
+Num of Pulses Received: %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The SWIFT Cable is the cable connecting the IRF I/O DAB out port to the Driver Module High Speed Data Port. This test verifies that pulses sent to the Driver Module from the IRF I/O board are sent and received properly. Try a different cable(the cable is not a straight through cable). If not verify the pulses are coming out of the IRF I/O by probing pins 3 and 8 on the DABout port on the IRF I/O.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li><li>IRF I/O Board</li></ol>
+</section>
+<section id="BM2252365"><a name="BM2252365"></a>
+<h2>2252365</h2>
+<div class="sym">ERROR: EM_DCB_HEAD_CONN_A</div>
+<div class="txt">Head TR on Connector A</div>
+</section>
+<section id="BM2252366"><a name="BM2252366"></a>
+<h2>2252366</h2>
+<div class="sym">ERROR: EM_DCB_CONN_A</div>
+<div class="txt">Connector A</div>
+</section>
+<section id="BM2252367"><a name="BM2252367"></a>
+<h2>2252367</h2>
+<div class="sym">ERROR: EM_DCB_DIAG_HEAD_BODY_SWAP</div>
+<div class="txt">Diagnostic Detected (possibly) swapped Head and Body TR cables.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check Head and Body TR cable connections on the rear of the Driver Module. Please refer to the troubleshooting documentation and the TR DD MC System Path Check Diagnostic to locate the failure.
+In 20.0 and later systems, try running the TR DD System Path diagnostic to troubleshoot.</div>
+</section>
+<section id="BM2252368"><a name="BM2252368"></a>
+<h2>2252368</h2>
+<div class="sym">ERROR: EM_DCB_DIAG_HEAD_CONNA_TR_SWAP</div>
+<div class="txt">Diagnostic Detected (possibly) swapped Head and Connector A transmit cables in the magnet room.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please refer to the troubleshooting documentation and the TR DD MC System Path Check Diagnostic to locate the failure.</div>
+</section>
+<section id="BM2252369"><a name="BM2252369"></a>
+<h2>2252369</h2>
+<div class="sym">ERROR: EM_DCB_DIAG_MC_OPEN_CKT</div>
+<div class="txt">Diagnostic Detected a Multicoil Bias Fault - Open Circuit.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please refer to:
+- The troubleshooting documentation and the TR DD MC System Path Check Diagnostic to locate the failure.
+- /usr/g/service/log/System_Path_Diag_Log.txt file</div>
+</section>
+<section id="BM2252370"><a name="BM2252370"></a>
+<h2>2252370</h2>
+<div class="sym">ERROR: EM_DCB_DIAG_MC_SHORT_CKT</div>
+<div class="txt">Diagnostic Detected a Multicoil Bias Fault - Short Circuit.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please refer to:
+- The troubleshooting documentation and the TR DD MC System Path Check Diagnostic to locate the failure.
+- /usr/g/service/log/System_Path_Diag_Log.txt file</div>
+</section>
+<section id="BM2252371"><a name="BM2252371"></a>
+<h2>2252371</h2>
+<div class="sym">ERROR: EM_DCB_DIAG_MC_TRANSMIT_FAULT</div>
+<div class="txt">Diagnostic Detected a Multicoil Bias Transmit Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please refer to:
+- The troubleshooting documentation and the TR DD MC System Path Check Diagnostic to locate the failure.
+- /usr/g/service/log/System_Path_Diag_Log.txt file</div>
+</section>
+<section id="BM2252372"><a name="BM2252372"></a>
+<h2>2252372</h2>
+<div class="sym">ERROR: EM_DCB_DIAG_MC_RECEIVE_FAULT</div>
+<div class="txt">Diagnostic Detected a Multicoil Bias Receive Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please refer to:
+- The troubleshooting documentation and the TR DD MC System Path Check Diagnostic to locate the failure.
+- /usr/g/service/log/System_Path_Diag_Log.txt file</div>
+</section>
+<section id="BM2252373"><a name="BM2252373"></a>
+<h2>2252373</h2>
+<div class="sym">ERROR: EM_DCB_DIAG_DD_SHORT_CKT</div>
+<div class="txt">Diagnostic detected a DD Driver Fault - Short Circuit. Source of Fault is %b.
+Value: %d mA Limit: %d mA</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please refer to the troubleshooting documentation. Try unloading the affected DD line to determine where short is located. In HD/HDx Systems, BD1 is the Dynamic Disable Board at Front of Body Coil BD2 is the Dynamic Disable Board at Front of Body Coil BD3 is the Dynamic Disable Board at Back of Body Coil BD4 is the Dynamic Disable Board at Back of Body Coil</div>
+</section>
+<section id="BM2252374"><a name="BM2252374"></a>
+<h2>2252374</h2>
+<div class="sym">ERROR: EM_DCB_DIAG_DD_OPEN_CKT</div>
+<div class="txt">Diagnostic detected a DD Driver Fault - Open Circuit. Source of Fault is %b.
+Value: %d mV Limit: %d mV</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please refer to the troubleshooting documentation. Can temporarily swap DD lines at various locations in chain to determine location of fault. In HD/HDx Systems, BD1 is the Dynamic Disable Board at Front of Body Coil BD2 is the Dynamic Disable Board at Front of Body Coil BD3 is the Dynamic Disable Board at Back of Body Coil BD4 is the Dynamic Disable Board at Back of Body Coil</div>
+</section>
+<section id="BM2252375"><a name="BM2252375"></a>
+<h2>2252375</h2>
+<div class="sym">ERROR: EM_DCB_DIAG_DD_HIGH_VOLTAGE</div>
+<div class="txt">Diagnostic detected a DD Driver Fault - High Voltage. Source of Fault is %b.
+Value: %d V Limit: %d V</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please refer to the troubleshooting documentation. Short-circuit load on affected DD line can cause this fault. Try unloading affected DD line. Try running the Driver Module Diagnostics, Power Supply Data. In HD/HDx Systems, BD1 is the Dynamic Disable Board at Front of Body Coil BD2 is the Dynamic Disable Board at Front of Body Coil BD3 is the Dynamic Disable Board at Back of Body Coil BD4 is the Dynamic Disable Board at Back of Body Coil</div>
+</section>
+<section id="BM2252376"><a name="BM2252376"></a>
+<h2>2252376</h2>
+<div class="sym">ERROR: EM_DCB_DIAG_TR_SHORT_CKT</div>
+<div class="txt">Diagnostic detected a TR Driver Fault - Short Circuit. Source of Fault is %b.
+Value: %d mA Limit: %d mA</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please refer to the troubleshooting documentation. TR bias is present on Head, Body, and MNS transmission lines. Try unloading affected TR bias line at front of RF amplifier and repeat test to see if shorted fault goes away and is replaced by open fault. If shorted fault remains then try this experiment also at rear of Driver Module. If source of fault is MNS TR, please ensure an MNS TR Switch is plugged in.</div>
+</section>
+<section id="BM2252377"><a name="BM2252377"></a>
+<h2>2252377</h2>
+<div class="sym">ERROR: EM_DCB_DIAG_TR_OPEN_CKT</div>
+<div class="txt">Diagnostic detected a TR Driver Fault - Open Circuit. Source of Fault is %b.
+Value: %d mA Limit: %d mA</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please refer to the troubleshooting documentation. TR bias is present on Head, Body, and MNS transmission lines. Disconnect affected transmission line from RF amp output and use DMM in diode test mode to verify diode drop between center pin and shield of disconnected transmission line.If Source of Fault is MNS TR, please ensure an MNS TR Switch is plugged in.</div>
+</section>
+<section id="BM2252378"><a name="BM2252378"></a>
+<h2>2252378</h2>
+<div class="sym">ERROR: EM_DCB_DIAG_MCD_CABLE_FLT</div>
+<div class="txt">The Driver Module has detected that Multicoil Driver Cable #%d is disconnected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please refer to the troubleshooting documentation and the TR DD MC System Path Check Diagnostic to locate the failure. Check the cable connections to the Driver Module, Pen Panel, and the 16 Channel Switch.
+In 20.0 and later systems, MC bias is supplied and sensed by the RF Hub, so this message should not affect scanning.</div>
+</section>
+<section id="BM2252379"><a name="BM2252379"></a>
+<h2>2252379</h2>
+<div class="sym">ERROR: EM_DCB_DIAG_MC_CABLES_SWAP</div>
+<div class="txt">Diagnostic Detected (possibly) swapped Muli-Coil bias cables.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please refer to the troubleshooting documentation, cable maps, and the TR DD MC System Path Check Diagnostic to locate the failure.
+In 20.0 and later systems, MC bias is supplied and sensed by the RF Hub, so this message should not affect scanning.</div>
+</section>
+<section id="BM2252380"><a name="BM2252380"></a>
+<h2>2252380</h2>
+<div class="sym">ERROR: EM_DCB_FPGA_MONITOR</div>
+<div class="txt">The Driver Module FPGA monitoring failed. Scanning will be inhibited until the Driver Module FPGA is recovered. Perform a TPS reset to recover.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Driver Module detected a problem with the FPGA during runtime. The FPGA stopped responding to the Driver Module processor.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252381"><a name="BM2252381"></a>
+<h2>2252381</h2>
+<div class="sym">ERROR: EM_DCB_TR_ABSENT_OPEN_CKT</div>
+<div class="txt">TR Driver Fault Detected - Load present on expected Open Circuit path. Source of Fault is %b.
+Value: %d mA Limit: %d mA</div>
+<div class="lbl">Extended Error:</div><div class="txt">The driver module detected a load present on a driver that expected an open circuit because the system did not detect a coil (of the corresponding nuclei) present. If this error happens repeatedly then check for shorted load on the affected Head, Body, or MNS transmission line. Can utilize the TR DD Diagnostic to help with isolating this problem. If source of fault is MNS TR, please insure a MNS TR Switch is plugged in. If error happens intermittently and cannot be traced to failed hardware then it may be due to gradient noise in the system.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Transmit Cable</li><li>Driver Module</li></ol>
+</section>
+<section id="BM2252382"><a name="BM2252382"></a>
+<h2>2252382</h2>
+<div class="sym">ERROR: EM_DCB_HEAD_CONN_P1</div>
+<div class="txt">Head TR on Connector P1</div>
+</section>
+<section id="BM2252383"><a name="BM2252383"></a>
+<h2>2252383</h2>
+<div class="sym">ERROR: EM_DCB_INVALID_VOLTAGE_LEVEL</div>
+<div class="txt">The Driver Module was commanded to go to an invalid high voltage setting of %d Volts. Driver Module will default to 1000V. Please run Driver Module diagnostics. Check that the proper gradient coil is selected in guided install</div>
+</section>
+<section id="BM2252384"><a name="BM2252384"></a>
+<h2>2252384</h2>
+<div class="sym">ERROR: EM_DCB_CONFIG_TIMEOUT</div>
+<div class="txt">The Driver Module has timed out while checking for prescan faults.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Driver module timed out while checking for DD open circuits during prescan. This is most likely due to another device inhibiting the unblank signal. Look for other fault messages in the system log, and run Driver Module, RF Hub, RF Amplifier, and UPM diagnostics.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li><li>Software</li></ol>
+</section>
+<section id="BM2252385"><a name="BM2252385"></a>
+<h2>2252385</h2>
+<div class="sym">ERROR: EM_DCB_TRDD_UNUSED_CAL_WARN</div>
+<div class="txt">T/R DD Calibration Warning. Driver Module has detected a potential load in the %b path. Check for misconnected cables and run the calibration again. If the cables are properly connected, this message may be ignored.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Driver Module detected a load in one of the unused dynamic disable paths. Check that the dynamic disable cables are only connected to BD1, DD, and BD4 on the rear of the Driver Module. This could also be due to an internal fault in the Driver Module that should not affect scanning. In HD/HDx Systems, BD1 is the Dynamic Disable Board at Front of Body Coil BD2 is the Dynamic Disable Board at Front of Body Coil BD3 is the Dynamic Disable Board at Back of Body Coil BD4 is the Dynamic Disable Board at Back of Body Coil</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252386"><a name="BM2252386"></a>
+<h2>2252386</h2>
+<div class="sym">ERROR: EM_DCB_DIAG_CONNA_P1_TR_SWAP</div>
+<div class="txt">Diagnostic Detected (possibly) swapped Connector A and Connector P1 transmit cables in the magnet room.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please check that cable connections are not swapped at the RF Transmit Switch on the Scan Room side of Pen Panel. Also check for swapped cables at cable IF on top of magnet, inside Rear Pedestal, and inside LPCA. May need to reference the block diagrams.</div>
+</section>
+<section id="BM2252387"><a name="BM2252387"></a>
+<h2>2252387</h2>
+<div class="sym">ERROR: EM_DCB_DIAG_MNS_BODY_SWAP</div>
+<div class="txt">Diagnostic Detected (possibly) swapped MNS and Body TR cables.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please check Body TR and MNS TR cable connections at the rear of the Driver Module. May need to reference the block diagrams. Otherwise inspect body and MNS short circuit current reported by diagnostic to understand if poor cable connection could be responsible for fault.</div>
+</section>
+<section id="BM2252388"><a name="BM2252388"></a>
+<h2>2252388</h2>
+<div class="sym">ERROR: EM_DCB_DIAG_MNS_HEAD_SWAP</div>
+<div class="txt">Diagnostic Detected (possibly) swapped MNS and Head TR cables.</div>
+<div class="lbl">Extended Error:</div><div class="txt">=Check that the Head and MNS TR cables are not swapped at the rear of the Driver Module. Also check that Head and MNS transmission lines are not swapped at the RF Transmit Switch located on the Scan Room side of the Pen Panel. Also check this at the cable IF on top of the magnet, inside the Rear Pedestal, and inside the LPCA. May need to reference the block diagrams. Otherwise inspect head and MNS short circuit current reported by diagnostic to understand if poor cable connection could be responsible for fault.&quot;</div>
+</section>
+<section id="BM2252389"><a name="BM2252389"></a>
+<h2>2252389</h2>
+<div class="sym">ERROR: EM_DCB_DIAG_INTERNAL_SW_ERROR</div>
+<div class="txt">Diagnostic detected an internal software error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please refer to diagnostic status display for more details. TPS Reset might also help.</div>
+</section>
+<section id="BM2252390"><a name="BM2252390"></a>
+<h2>2252390</h2>
+<div class="sym">ERROR: EM_DCB_SERVICE_MODE_NOT_ALLOWED</div>
+<div class="txt">Scanning has failed because the driver module is in service mode and the patient ID is not &#x27;geservice&#x27;.</div>
+<div class="lbl">Extended Error:</div><div class="txt">When any of the throw switches on the front of the driver module are in the fault disabled position (corresponding yellow LED on), the driver module is in service mode and scans can only be performed with a patient ID of &#x27;geservice&#x27;.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252391"><a name="BM2252391"></a>
+<h2>2252391</h2>
+<div class="sym">ERROR: EM_DCB_MCD2_SERIAL_NUMBER_ERROR</div>
+<div class="txt">Could not determine the number of bias channels supported by the driver module</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Driver Module MCD2 board serial number is either wrong or could not be read. This could be because of a bad 1-Wire device in the MCD2 board. Please check the channel count in the system configuration. If it is correct, replace the driver module with a 32 channel part.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252392"><a name="BM2252392"></a>
+<h2>2252392</h2>
+<div class="sym">ERROR: EM_DCB_WRONG_MCD2</div>
+<div class="txt">24 channel driver module connected to a system configured for 32 receive channels.</div>
+<div class="lbl">Extended Error:</div><div class="txt">8 or 16 channel systems will be allowed to function, but systems requiring 32 channels of multicoil bias will fail. Please check the channel count in the system configuration. If it is correct, replace the driver module with a 32 channel part.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252393"><a name="BM2252393"></a>
+<h2>2252393</h2>
+<div class="sym">ERROR: EM_DCB_TRDD_CAL_FAIL_PARTIAL_LOAD</div>
+<div class="txt">T/R DD Calibration Failure. Driver Module has detected a potential open circuit in the %b path. Check for disconnected cables in the entire bias path and run the calibration again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is caused by the RF coil and associated bias circuits not providing the expected load to the Driver Module. Possible failures can consist of an open connection, bad DD board in the RF coil, bias filter on the penetration panel, resistor box, or driver module failure. Inspect the bias path, then run calibration again. If the problem persists, contact the on-line center for assistance if no issue can be found with the cabling or connections.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Driver Module</li></ol>
+</section>
+<section id="BM2252450"><a name="BM2252450"></a>
+<h2>2252450</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_DEV_INIT_FAILED</div>
+<div class="txt">Software Error: canApiInit() failed, device initialization failed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252451"><a name="BM2252451"></a>
+<h2>2252451</h2>
+<div class="sym">ERROR: EM_CPV3_CANINIT_SEM</div>
+<div class="txt">Software Error: canApiInit() failed, can&#x27;t create semaphore.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252452"><a name="BM2252452"></a>
+<h2>2252452</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_DEV_INIT_OPEN</div>
+<div class="txt">Software Error: canApiDeviceInit() failed, CAN_Open() failed for net %d.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252453"><a name="BM2252453"></a>
+<h2>2252453</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_DEV_INIT_INIT</div>
+<div class="txt">Software Error: canApiDeviceInit() failed, CAN_Init() failed for net %d.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252454"><a name="BM2252454"></a>
+<h2>2252454</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_DEV_INIT_SEM</div>
+<div class="txt">Software Error: canApiDeviceInit() failed, can&#x27;t create Tx semaphore for net %d.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252455"><a name="BM2252455"></a>
+<h2>2252455</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_DEV_INIT_FILTER</div>
+<div class="txt">Software Error: canApiDeviceInit() failed, can&#x27;t set Rx filter for net %d.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252456"><a name="BM2252456"></a>
+<h2>2252456</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_DEV_INIT_ISR</div>
+<div class="txt">Software Error: canApiDeviceInit() failed, can&#x27;t install callback ISR for net %d.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252457"><a name="BM2252457"></a>
+<h2>2252457</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_DEV_INIT_INTMASK</div>
+<div class="txt">Software Error: canApiDeviceInit() failed, can&#x27;t set interrupt mask for net %d.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252458"><a name="BM2252458"></a>
+<h2>2252458</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_DEV_INIT_GETRX</div>
+<div class="txt">Software Error: canApiDeviceInit() failed, no available Rx channels for net %d.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252459"><a name="BM2252459"></a>
+<h2>2252459</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_DEV_INIT_ENABLERX</div>
+<div class="txt">Software Error: canApiDeviceInit() failed, can&#x27;t enable Rx channel:
+Net: %d
+Rx Channel: %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252460"><a name="BM2252460"></a>
+<h2>2252460</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_DEV_INIT_GETTX</div>
+<div class="txt">Software Error: canApiDeviceInit() failed, no available Tx channels for net %d.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252461"><a name="BM2252461"></a>
+<h2>2252461</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_DEV_INIT_ENABLETX</div>
+<div class="txt">Software Error: canApiDeviceInit() failed, can&#x27;t enable Tx channel:
+Net: %d
+Rx Channel: %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252462"><a name="BM2252462"></a>
+<h2>2252462</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_DRIVER_NOT_INIT</div>
+<div class="txt">Software Error: CAN driver is not initialized.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252463"><a name="BM2252463"></a>
+<h2>2252463</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_INVALID_HANDLE</div>
+<div class="txt">Software Error: %s(): handle 0x%lx is invalid.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252464"><a name="BM2252464"></a>
+<h2>2252464</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_OPEN_INVALID_NET</div>
+<div class="txt">Software Error: canOpen() net %d is invalid.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252465"><a name="BM2252465"></a>
+<h2>2252465</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_OPEN_INVALID_QUEUESIZE</div>
+<div class="txt">Software Error: canOpen() queue size is invalid
+Transmit queue size requested: %ld
+Receive queue size requested: %ld.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252466"><a name="BM2252466"></a>
+<h2>2252466</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_OPEN_NULL_HANDLE</div>
+<div class="txt">Software Error: canOpen() handle out pointer is NULL.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252467"><a name="BM2252467"></a>
+<h2>2252467</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_OPEN_DRIVER_NOT_INIT</div>
+<div class="txt">Software Error: canOpen() failed, driver not initialized.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252468"><a name="BM2252468"></a>
+<h2>2252468</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_OPEN_MAX_HANDLES_REACHED</div>
+<div class="txt">Software Error: canOpen() failed, max handles reached.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252469"><a name="BM2252469"></a>
+<h2>2252469</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_OPEN_OUT_OF_MEM</div>
+<div class="txt">Software Error: canOpen() failed, can&#x27;t allocate memory.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252470"><a name="BM2252470"></a>
+<h2>2252470</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_OPEN_OUT_OF_SEM</div>
+<div class="txt">Software Error: canOpen() failed, can&#x27;t create semaphore.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252471"><a name="BM2252471"></a>
+<h2>2252471</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_INVALID_BAUDRATE</div>
+<div class="txt">Software Error: CAN driver does not support requested baudrate: %d baud.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252472"><a name="BM2252472"></a>
+<h2>2252472</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_GETBAUD_NULL</div>
+<div class="txt">Software Error: canGetBaudrate() out pointer argument is NULL.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252473"><a name="BM2252473"></a>
+<h2>2252473</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_ID_ADD_INVALID_ID</div>
+<div class="txt">Software Error: canIdAdd() error, invalid ID:
+Handle: 0x%lx COB ID: 0x%lx.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252474"><a name="BM2252474"></a>
+<h2>2252474</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_ID_ADD_OUT_OF_MEM</div>
+<div class="txt">Software Error: canIdAdd() failed, can&#x27;t allocate memory.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252475"><a name="BM2252475"></a>
+<h2>2252475</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_ID_DEL_INVALID_ID</div>
+<div class="txt">Software Error: canIdDelete() error, invalid ID:
+Handle: 0x%lx COB ID: 0x%lx.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252476"><a name="BM2252476"></a>
+<h2>2252476</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_READ_NO_IDS</div>
+<div class="txt">Software Error: canReadWithTimeout() error, no Rx IDs for handle:
+Handle: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252477"><a name="BM2252477"></a>
+<h2>2252477</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_READ_INVALID_PARAM</div>
+<div class="txt">Software Error: canReadWithTimeout() error, NULL cmsg or len parameter.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252478"><a name="BM2252478"></a>
+<h2>2252478</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_READ_SEM_DELETED</div>
+<div class="txt">Software Error: canReadWithTimeout() error, binary semaphore was deleted:
+Handle: 0x%lx Sem: 0x%lx.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252479"><a name="BM2252479"></a>
+<h2>2252479</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_WRITE_INVALID_PARAM</div>
+<div class="txt">Software Error: canWrite() error, NULL cmsg or len parameter.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252480"><a name="BM2252480"></a>
+<h2>2252480</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_WRITE_SEM_DELETED</div>
+<div class="txt">Software Error: canWrite() error, mutex semaphore for controller was deleted:
+Sem: 0x%lx.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252481"><a name="BM2252481"></a>
+<h2>2252481</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_WRITE_SET_RTR</div>
+<div class="txt">Software Error: canWrite() error, can&#x27;t enable RTR for net %d.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252482"><a name="BM2252482"></a>
+<h2>2252482</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_WRITE_UNSET_RTR</div>
+<div class="txt">Software Error: canWrite() error, can&#x27;t disable RTR for net %d.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252483"><a name="BM2252483"></a>
+<h2>2252483</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_WRITE_ERROR</div>
+<div class="txt">Software Error: canWrite() error, message transmission failed:
+Net: %d Error: 0x%lx.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252484"><a name="BM2252484"></a>
+<h2>2252484</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_STATUS_INVALID_PARAM</div>
+<div class="txt">Software Error: canStatus() error, out pointer is NULL.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252485"><a name="BM2252485"></a>
+<h2>2252485</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_UNUSED_NET_ACTIVE</div>
+<div class="txt">Unused SCP CAN%d port is active. Connect the CAN network to the SCP CAN0 port.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The CAN1 port on the SCP3 board should not be used. Connect the CAN network to the CAN0 port on the SCP3.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252486"><a name="BM2252486"></a>
+<h2>2252486</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_TASK_SPAWN</div>
+<div class="txt">Software Error: can&#x27;t create task: %s
+Error number: %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252487"><a name="BM2252487"></a>
+<h2>2252487</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_CORRUPT_HANDLE_NET</div>
+<div class="txt">Software Error: handle 0x%lx has a bad controller instance number %u.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252488"><a name="BM2252488"></a>
+<h2>2252488</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_SIGNAL_SEM_DELETED</div>
+<div class="txt">Software Error: canWrite() error, binary semaphore for controller was deleted:
+Sem: 0x%lx.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252489"><a name="BM2252489"></a>
+<h2>2252489</h2>
+<div class="sym">ERROR: EM_CPV3_CAN_DEV_BUS_OFF</div>
+<div class="txt">CAN Communication Failure. SCP CAN controller %d is in a bus off state due to excessive transmit errors. Check CAN cabling and termination.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2252500"><a name="BM2252500"></a>
+<h2>2252500</h2>
+<div class="sym">ERROR: EM_AGP_WG_NO_WAVEFORM_FILE</div>
+<div class="txt">PSD Programming Error: Attempt to read an external waveform file failed.
+Filename: %s%s%s%s
+PSD Parameters: %s, %08lX, %08lX, %08lX, %08lX</div>
+</section>
+<section id="BM2252501"><a name="BM2252501"></a>
+<h2>2252501</h2>
+<div class="sym">ERROR: EM_AGP_WG_RESOLUTION_EXCEEDS_FILELENGTH</div>
+<div class="txt">PSD Programming Error: Resolution requested exceeds the length of the specified external waveform file.
+Filename: %s%s%s%s
+PSD Parameters: %s, %08lX, %08lX, %08lX, %08lX</div>
+</section>
+<section id="BM2252502"><a name="BM2252502"></a>
+<h2>2252502</h2>
+<div class="sym">ERROR: EM_AGP_WG_INSUFFICIENT_WAVEFORM_MEMORY</div>
+<div class="txt">PSD Programming Error: Insufficient waveform memory available.
+Requested size = %d
+PSD Parameters: %s, %08lX, %08lX, %08lX, %08lX</div>
+</section>
+<section id="BM2252503"><a name="BM2252503"></a>
+<h2>2252503</h2>
+<div class="sym">ERROR: EM_AGP_WG_RESOLUTION_OUT_OF_RANGE</div>
+<div class="txt">PSD Programming Error: Waveform resolution out of range.</div>
+</section>
+<section id="BM2252504"><a name="BM2252504"></a>
+<h2>2252504</h2>
+<div class="sym">ERROR: EM_AGP_WG_AMPLITUDE_OUT_OF_RANGE</div>
+<div class="txt">PSD Programming Error: Waveform amplitude out of range.</div>
+</section>
+<section id="BM2252505"><a name="BM2252505"></a>
+<h2>2252505</h2>
+<div class="sym">ERROR: EM_AGP_WG_START_PHASE_OUT_OF_RANGE</div>
+<div class="txt">PSD Programming Error: Sine waveform start phase out of range.</div>
+</section>
+<section id="BM2252506"><a name="BM2252506"></a>
+<h2>2252506</h2>
+<div class="sym">ERROR: EM_AGP_WG_PHASE_LENGTH_OUT_OF_RANGE</div>
+<div class="txt">PSD Programming Error: Sine waveform phase out of range.</div>
+</section>
+<section id="BM2252507"><a name="BM2252507"></a>
+<h2>2252507</h2>
+<div class="sym">ERROR: EM_AGP_WG_OFFSET_OUT_OF_RANGE</div>
+<div class="txt">PSD Programming Error: Sine waveform offset out of range.</div>
+</section>
+<section id="BM2252508"><a name="BM2252508"></a>
+<h2>2252508</h2>
+<div class="sym">ERROR: EM_AGP_WG_SINC_CYCLES_OUT_OF_RANGE</div>
+<div class="txt">PSD Programming Error: Number of sinc waveform cycles out of range.</div>
+</section>
+<section id="BM2252509"><a name="BM2252509"></a>
+<h2>2252509</h2>
+<div class="sym">ERROR: EM_AGP_WG_ALPHA_OUT_OF_RANGE</div>
+<div class="txt">PSD Programming Error: Sinc or Hadamard waveform windowing coefficient (alpha) is out of range.</div>
+</section>
+<section id="BM2252510"><a name="BM2252510"></a>
+<h2>2252510</h2>
+<div class="sym">ERROR: EM_AGP_WG_SLICE_SEPARATION_OUT_OF_RANGE</div>
+<div class="txt">PSD Programming Error: Hadamard waveform slice separation out of range.</div>
+</section>
+<section id="BM2252511"><a name="BM2252511"></a>
+<h2>2252511</h2>
+<div class="sym">ERROR: EM_AGP_WG_FAIL</div>
+<div class="txt">PSD waveform generation failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Probable cause is a PSD programming error.</div>
+</section>
+<section id="BM2252550"><a name="BM2252550"></a>
+<h2>2252550</h2>
+<div class="sym">ERROR: EM_AGP_RSP_WAVE_QUEUE_OVERFLOW</div>
+<div class="txt">PSD Programming Error: Fast-update waveform memory queue %d overflowed.
+PSD Parameters: %s, %08lX, %08lX, %08lX, %08lX</div>
+</section>
+<section id="BM2252551"><a name="BM2252551"></a>
+<h2>2252551</h2>
+<div class="sym">ERROR: EM_AGP_RSP_INST_QUEUE_OVERFLOW</div>
+<div class="txt">PSD Programming Error: Fast-update instruction memory queue %d overflowed.
+PSD Parameters: %s, %08lX, %08lX, %08lX, %08lX</div>
+</section>
+<section id="BM2252552"><a name="BM2252552"></a>
+<h2>2252552</h2>
+<div class="sym">ERROR: EM_AGP_RSP_INSUFFICIENT_INSTRUCTION_MEMORY</div>
+<div class="txt">PSD Programming Error: Insufficient instruction memory available within %d block.
+PSD Parameters: %s, %08lX, %08lX, %08lX, %08lX</div>
+</section>
+<section id="BM2252553"><a name="BM2252553"></a>
+<h2>2252553</h2>
+<div class="sym">ERROR: EM_AGP_RSP_PARAMETER_OUT_OF_RANGE</div>
+<div class="txt">PSD Programming Error: Parameter %s is out of range.
+Value = %08lX, Lower Bound = %08lX, Upper Bound = %08lX
+PSD Parameters: %s, %08lX, %08lX, %08lX, %08lX</div>
+</section>
+<section id="BM2252554"><a name="BM2252554"></a>
+<h2>2252554</h2>
+<div class="sym">ERROR: EM_AGP_RSP_FPARAMETER_OUT_OF_RANGE</div>
+<div class="txt">PSD Programming Error: Parameter %s is out of range.
+Value = %f, Lower Bound = %f, Upper Bound = %f
+PSD Parameters: %s, %08lX, %08lX, %08lX, %08lX</div>
+</section>
+<section id="BM2252555"><a name="BM2252555"></a>
+<h2>2252555</h2>
+<div class="sym">ERROR: EM_AGP_RSP_PSD_ERROR_TEXT</div>
+<div class="txt">PSD error text associated with the above PSD Programming Error:
+%s</div>
+</section>
+<section id="BM2252556"><a name="BM2252556"></a>
+<h2>2252556</h2>
+<div class="sym">ERROR: EM_AGP_RSP_SPI_OPCODE_NOT_ZERO</div>
+<div class="txt">PSD Programming Error: Insufficient time between rsphw* requests. This rsphw* request was ignored. Parameters: %08lX, %08lX, %08lX
+PSD Parameters: %s, %08lX, %08lX, %08lX, %08lX</div>
+</section>
+<section id="BM2252557"><a name="BM2252557"></a>
+<h2>2252557</h2>
+<div class="sym">ERROR: EM_AGP_RSP_ID_OUT_OF_RANGE</div>
+<div class="txt">Programming error: The requested RSP ID is out of range. Possible Causes: too many RSP&#x27;s requested, request packet not terminated, or requested ID number is not valid.</div>
+</section>
+<section id="BM2252558"><a name="BM2252558"></a>
+<h2>2252558</h2>
+<div class="sym">ERROR: EM_AGP_RSP_ID_NOT_INIT</div>
+<div class="txt">Programming Error: The address for the requested RSP ID has not been initialized.
+Requested ID # = %d;
+RSP index = %d.</div>
+</section>
+<section id="BM2252700"><a name="BM2252700"></a>
+<h2>2252700</h2>
+<div class="sym">ERROR: EM_AGP_VX_ERROR</div>
+<div class="txt">Software Error: A call to a VxWorks function returned an error.
+VxWorks Function: %s
+Error: %s</div>
+</section>
+<section id="BM2252701"><a name="BM2252701"></a>
+<h2>2252701</h2>
+<div class="sym">ERROR: EM_AGP_CM_ERROR</div>
+<div class="txt">Software Error: A call to a CM function returned an error.
+CM Function: %s
+Error code: %08lX</div>
+</section>
+<section id="BM2252702"><a name="BM2252702"></a>
+<h2>2252702</h2>
+<div class="sym">ERROR: EM_AGP_MCT_BAD_OPCODE</div>
+<div class="txt">Software Error: The MCT task received a bad opcode.
+Source NMRID: %s Opcode: 0x%x</div>
+</section>
+<section id="BM2252703"><a name="BM2252703"></a>
+<h2>2252703</h2>
+<div class="sym">ERROR: EM_AGP_TOO_MANY_PSD_SYMBOLS</div>
+<div class="txt">Software Error: The MCT task received a memory read or load packet which requested to read or load too many symbols.
+Source NMRID: %s
+Value: %d</div>
+</section>
+<section id="BM2252704"><a name="BM2252704"></a>
+<h2>2252704</h2>
+<div class="sym">ERROR: EM_AGP_MEM_REQ_TOO_LARGE</div>
+<div class="txt">Software Error: MCT received a memory read or load packet which attempted to read or load too much memory.
+Source NMRID: %s
+Byte count: %d</div>
+</section>
+<section id="BM2252705"><a name="BM2252705"></a>
+<h2>2252705</h2>
+<div class="sym">ERROR: EM_AGP_SYMBOL_NOT_FOUND</div>
+<div class="txt">Symbol lookup failed. MCT received a memory read or load packet or return address packet to access a symbol which does not exist in the AGP symbol table.
+Source NMRID: %s
+Symbol: %s</div>
+</section>
+<section id="BM2252706"><a name="BM2252706"></a>
+<h2>2252706</h2>
+<div class="sym">ERROR: EM_AGP_NULL_SYMBOL_NAME</div>
+<div class="txt">Software Error: MCT received a memory read or load packet, return address packet or PSD entry point packet with no symbol name.
+Source NMRID: %s</div>
+</section>
+<section id="BM2252707"><a name="BM2252707"></a>
+<h2>2252707</h2>
+<div class="sym">ERROR: EM_AGP_INVALID_DATA_SIZE</div>
+<div class="txt">Software Error: MCT received a request to return a data value which is greater than 4 bytes.
+Source NMRID: %s
+Data size: %d</div>
+</section>
+<section id="BM2252708"><a name="BM2252708"></a>
+<h2>2252708</h2>
+<div class="sym">ERROR: EM_AGP_ISI_BAD_INDEX</div>
+<div class="txt">Software Error: The ISI task received an invalid index value.
+ISI Index: %d</div>
+</section>
+<section id="BM2252709"><a name="BM2252709"></a>
+<h2>2252709</h2>
+<div class="sym">ERROR: EM_AGP_FILE_LOAD_FAIL</div>
+<div class="txt">Software Error: The AGP was unable to load a file.
+File name: %s
+VxWorks error: %d</div>
+</section>
+<section id="BM2252710"><a name="BM2252710"></a>
+<h2>2252710</h2>
+<div class="sym">ERROR: EM_AGP_PSD_SYMBOL_NOT_FOUND</div>
+<div class="txt">Software Error: A required symbol in the PSD was not found.
+Symbol: %s</div>
+</section>
+<section id="BM2252711"><a name="BM2252711"></a>
+<h2>2252711</h2>
+<div class="sym">ERROR: EM_AGP_HPI_SHARING_VIOLATION</div>
+<div class="txt">Software error. An HPI port on the SRF board was not available to an interrupt function.
+Requested by: %s
+HPI in use by: %s</div>
+</section>
+<section id="BM2252712"><a name="BM2252712"></a>
+<h2>2252712</h2>
+<div class="sym">ERROR: EM_AGP_SRF_EOS_ERROR</div>
+<div class="txt">Sequence playout error. EOS from one or more sequence generators was not received prior to SSP EOS.
+Generator: %s</div>
+</section>
+<section id="BM2252713"><a name="BM2252713"></a>
+<h2>2252713</h2>
+<div class="sym">ERROR: EM_AGP_PGEN_ACTIVE_AT_EOS</div>
+<div class="txt">PSD programming error. Pulse generation was still active when an SSP EOS was received.</div>
+<div class="lbl">Extended Error:</div><div class="txt">User interaction involving AGP can cause this error. PSD I/O such as file access can cause this error.</div>
+</section>
+<section id="BM2252714"><a name="BM2252714"></a>
+<h2>2252714</h2>
+<div class="sym">ERROR: EM_AGP_DMA_SETUP_FAIL</div>
+<div class="txt">AGP DMA failure. A call to a DMA setup function returned an error. Setup error code: 0x%d</div>
+</section>
+<section id="BM2252715"><a name="BM2252715"></a>
+<h2>2252715</h2>
+<div class="sym">ERROR: EM_AGP_DMA_START_FAIL</div>
+<div class="txt">AGP DMA failure. A call to a DMA start function returned an error. Start error code: 0x%d</div>
+</section>
+<section id="BM2252716"><a name="BM2252716"></a>
+<h2>2252716</h2>
+<div class="sym">ERROR: EM_AGP_SRF_FIFO_ERROR</div>
+<div class="txt">Sequence playout error. A synchronizer FIFO became empty while playing out a sequence.
+Sequencer: %s</div>
+</section>
+<section id="BM2252717"><a name="BM2252717"></a>
+<h2>2252717</h2>
+<div class="sym">ERROR: EM_AGP_ISI_OVERRUN</div>
+<div class="txt">Sequence playout error. The synchronizer signaled an ISI overrun.</div>
+</section>
+<section id="BM2252718"><a name="BM2252718"></a>
+<h2>2252718</h2>
+<div class="sym">ERROR: EM_AGP_SRF_BUS_DECODE</div>
+<div class="txt">Synchronizer error. The synchronizer signaled a local bus decode error.</div>
+</section>
+<section id="BM2252719"><a name="BM2252719"></a>
+<h2>2252719</h2>
+<div class="sym">ERROR: EM_AGP_WARP_DATA_FLOW</div>
+<div class="txt">Sequence playout error. The synchronizer signaled a WARP data flow error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The TRF board or the software running on the WARP DSP are likely not functioning. Run TRF BLD.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li><li>AGP Board</li></ol>
+</section>
+<section id="BM2252720"><a name="BM2252720"></a>
+<h2>2252720</h2>
+<div class="sym">ERROR: EM_AGP_SRF_POWER_FAULT</div>
+<div class="txt">Sequence playout error. The SRF signaled a SRF power fault error.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li></ol>
+</section>
+<section id="BM2252721"><a name="BM2252721"></a>
+<h2>2252721</h2>
+<div class="sym">ERROR: EM_AGP_TRF_POWER_FAULT</div>
+<div class="txt">Sequence playout error. The SRF signaled a TRF power fault error.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>TRF Board</li></ol>
+</section>
+<section id="BM2252722"><a name="BM2252722"></a>
+<h2>2252722</h2>
+<div class="sym">ERROR: EM_AGP_SRF_DSP_NOT_INIT</div>
+<div class="txt">SRF(or PSE) error. A DSP on the SRF (or PSE) did not initialize properly.
+DSP: %s</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>PSE Board</li></ol>
+</section>
+<section id="BM2252723"><a name="BM2252723"></a>
+<h2>2252723</h2>
+<div class="sym">ERROR: EM_AGP_SRF_DSP_NOT_AVAIL</div>
+<div class="txt">SRF error. A hardware semaphore for a DSP on the SRF (or PSE) was not available.
+DSP: %s</div>
+</section>
+<section id="BM2252724"><a name="BM2252724"></a>
+<h2>2252724</h2>
+<div class="sym">ERROR: EM_AGP_SRF_RESOURCE_FAIL</div>
+<div class="txt">A call to getLocalResourceBase failed to complete successfully.</div>
+</section>
+<section id="BM2252725"><a name="BM2252725"></a>
+<h2>2252725</h2>
+<div class="sym">ERROR: EM_AGP_ECC_FILE_ERROR</div>
+<div class="txt">ECC file access error. An error occurred while attempting to read the ECC coefficient file. Error code: 0x%x</div>
+</section>
+<section id="BM2252726"><a name="BM2252726"></a>
+<h2>2252726</h2>
+<div class="sym">ERROR: EM_AGP_SEQ_DSP_ERROR</div>
+<div class="txt">SRF error. One or both DSP sequencers on the SRF has indicated an error. Seq DSP 0 Error: 0x%x Seq DSP 1 Error: 0x%x</div>
+</section>
+<section id="BM2252727"><a name="BM2252727"></a>
+<h2>2252727</h2>
+<div class="sym">ERROR: EM_AGP_PCT_BAD_OPCODE</div>
+<div class="txt">Software Error: A PCT task received a bad opcode from MCT
+PCT id: %d Opcode: 0x%x</div>
+</section>
+<section id="BM2252728"><a name="BM2252728"></a>
+<h2>2252728</h2>
+<div class="sym">ERROR: EM_AGP_WG_WATCHDOG_TIMEOUT</div>
+<div class="txt">PSD Programming Error: Wave generation watchdog has timed out.</div>
+</section>
+<section id="BM2252729"><a name="BM2252729"></a>
+<h2>2252729</h2>
+<div class="sym">ERROR: EM_AGP_PSD_DOWNLOAD_FAILED</div>
+<div class="txt">PSD Download Failed. AGP was unable to load the PSD file %s,
+path = %s, VxWorks operating system error: %d. Please perform a TPS Reset!</div>
+</section>
+<section id="BM2252730"><a name="BM2252730"></a>
+<h2>2252730</h2>
+<div class="sym">ERROR: EM_AGP_PCT_PREP_FAILED</div>
+<div class="txt">PSD Software Error. Use a different PSD for this scan prescription.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Preparation of the first sequence of the scan took too long. PCT never blocked to wait for the first sequence to start.</div>
+</section>
+<section id="BM2252731"><a name="BM2252731"></a>
+<h2>2252731</h2>
+<div class="sym">ERROR: EM_AGP_UPDATEMEM_ALLOC_FAIL</div>
+<div class="txt">Sequence Update Queue Memory allocation failure for Sequencer %d. Reset TPS</div>
+<div class="lbl">Extended Error:</div><div class="txt">Not enough memory available on AGP. Or AGP memory problem. Reset TPS or run AGP BLD.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AGP Board</li></ol>
+</section>
+<section id="BM2252732"><a name="BM2252732"></a>
+<h2>2252732</h2>
+<div class="sym">ERROR: EM_AGP_UPDATEMEM_STATESET_FAIL</div>
+<div class="txt">Sequence Update Queue Memory cache state set failed for Sequencer %d. Reset TPS</div>
+<div class="lbl">Extended Error:</div><div class="txt">Not enough memory available on AGP. Or AGP memory problem. Reset TPS or run AGP BLD.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AGP Board</li></ol>
+</section>
+<section id="BM2252733"><a name="BM2252733"></a>
+<h2>2252733</h2>
+<div class="sym">ERROR: EM_AGP_EOS_TIMER_OVERRUN</div>
+<div class="txt">PSD Software Error. The Pulse sequence has not allocated enough time for updates. EOS timer set to %d. Time taken for updates %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Probable cause is a PSD programming error.</div>
+</section>
+<section id="BM2252734"><a name="BM2252734"></a>
+<h2>2252734</h2>
+<div class="sym">ERROR: EM_AGP_SEQ_HPI_ACCESS_FAIL</div>
+<div class="txt">AGP could not reserve Sequencer %d HPI semaphore. Unable to playout sequences. Please reset TPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">AGP cannot access Sequencer HPI to download sequences. Please run Sequencer BLD or HPI tests.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AGP Board</li><li>SRF Board</li></ol>
+</section>
+<section id="BM2252735"><a name="BM2252735"></a>
+<h2>2252735</h2>
+<div class="sym">ERROR: EM_AGP_ECC_FILE_ACCESS_FAIL</div>
+<div class="txt">AGP could not find the ECC file %s to download the coefficients.</div>
+<div class="lbl">Extended Error:</div><div class="txt">B0 ECC coefficients are not loaded to WARP. Perform Restore or run Grafidy.</div>
+</section>
+<section id="BM2252736"><a name="BM2252736"></a>
+<h2>2252736</h2>
+<div class="sym">ERROR: EM_AGP_MAX_ECC_TC_EXCEEDED</div>
+<div class="txt">WARP cannot process %d ECC time constants. Maximum allowed is %d. ECC coefficients will not be loaded to the WARP.</div>
+</section>
+<section id="BM2252737"><a name="BM2252737"></a>
+<h2>2252737</h2>
+<div class="sym">ERROR: EM_AGP_MAX_OSC_ECC_TC_EXCEEDED</div>
+<div class="txt">WARP cannot process %d Oscillatory ECC time constants. Maximum allowed is %d. ECC coefficients will not be loaded to the WARP.</div>
+</section>
+<section id="BM2252738"><a name="BM2252738"></a>
+<h2>2252738</h2>
+<div class="sym">ERROR: EM_AGP_SRF_NO_DATA_ERROR</div>
+<div class="txt">Sequencer DSP %s did not receive data from AGP prior to SSI causing a synchronizer EOS error. The AGP did not have enough time to download the sequencer updates. Please increase EOS-SSI time.</div>
+</section>
+<section id="BM2252739"><a name="BM2252739"></a>
+<h2>2252739</h2>
+<div class="sym">ERROR: EM_AGP_SRF_SEQ_ACTIVE_AT_EOS</div>
+<div class="txt">Sequencer DSP %s was active when synchronizer EOS occurred.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Either Sequencer could not keep up with data generation, or SSP sequence programming error. Check sequence times. Probable cause is a PSD programming error.</div>
+</section>
+<section id="BM2252740"><a name="BM2252740"></a>
+<h2>2252740</h2>
+<div class="sym">ERROR: EM_OBSOLETE_2252740</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2252741"><a name="BM2252741"></a>
+<h2>2252741</h2>
+<div class="sym">ERROR: EM_OBSOLETE_2252741</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2252742"><a name="BM2252742"></a>
+<h2>2252742</h2>
+<div class="sym">ERROR: EM_OBSOLETE_2252742</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2252743"><a name="BM2252743"></a>
+<h2>2252743</h2>
+<div class="sym">ERROR: EM_OBSOLETE_2252743</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2252744"><a name="BM2252744"></a>
+<h2>2252744</h2>
+<div class="sym">ERROR: EM_OBSOLETE_2252744</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2252745"><a name="BM2252745"></a>
+<h2>2252745</h2>
+<div class="sym">ERROR: EM_OBSOLETE_2252745</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2252746"><a name="BM2252746"></a>
+<h2>2252746</h2>
+<div class="sym">ERROR: EM_OBSOLETE_2252746</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2252747"><a name="BM2252747"></a>
+<h2>2252747</h2>
+<div class="sym">ERROR: EM_OBSOLETE_HPC_2252747</div>
+<div class="txt">EOS interrupt detected rotation matrix update or shim command was not processed by WARP. Image quality may be degraded. Possible PSD programming error.
+Number of commands missed: %d</div>
+</section>
+<section id="BM2252748"><a name="BM2252748"></a>
+<h2>2252748</h2>
+<div class="sym">ERROR: EM_OBSOLETE_HPC_2252748</div>
+<div class="txt">ISI interrupt detected rotation matrix update or shim command was not processed by WARP. Image quality may be degraded. Possible PSD programming error.
+Number of commands missed: %d</div>
+</section>
+<section id="BM2252749"><a name="BM2252749"></a>
+<h2>2252749</h2>
+<div class="sym">ERROR: EM_OBSOLETE_2252749</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2252750"><a name="BM2252750"></a>
+<h2>2252750</h2>
+<div class="sym">ERROR: EM_OBSOLETE_2252750</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2252751"><a name="BM2252751"></a>
+<h2>2252751</h2>
+<div class="sym">ERROR: EM_OBSOLETE_2252751</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2252752"><a name="BM2252752"></a>
+<h2>2252752</h2>
+<div class="sym">ERROR: EM_OBSOLETE_2252752</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2252753"><a name="BM2252753"></a>
+<h2>2252753</h2>
+<div class="sym">ERROR: EM_OBSOLETE_2252753</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2252754"><a name="BM2252754"></a>
+<h2>2252754</h2>
+<div class="sym">ERROR: EM_OBSOLETE_2252754</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2252755"><a name="BM2252755"></a>
+<h2>2252755</h2>
+<div class="sym">ERROR: EM_OBSOLETE_2252755</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2252756"><a name="BM2252756"></a>
+<h2>2252756</h2>
+<div class="sym">ERROR: EM_OBSOLETE_2252756</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2252757"><a name="BM2252757"></a>
+<h2>2252757</h2>
+<div class="sym">ERROR: EM_OBSOLETE_2252757</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2252758"><a name="BM2252758"></a>
+<h2>2252758</h2>
+<div class="sym">ERROR: EM_OBSOLETE_2252758</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2252759"><a name="BM2252759"></a>
+<h2>2252759</h2>
+<div class="sym">ERROR: EM_AGP_MCT_RF_DISABLE</div>
+<div class="txt">The RF sequencer Theta1, Theta2, rho1, and rho2 are all disabled. This will prohibit most scans.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Any images produced during this condition will be noise images because all RF output is disabled.</div>
+</section>
+<section id="BM2252760"><a name="BM2252760"></a>
+<h2>2252760</h2>
+<div class="sym">ERROR: EM_AGP_MCT_WARP_EXTENDEDB0_NEEDED</div>
+<div class="txt">The RB magnet requires extended b0 support by RIFDIF revision B and upper.</div>
+</section>
+<section id="BM2252761"><a name="BM2252761"></a>
+<h2>2252761</h2>
+<div class="sym">ERROR: EM_PGEN_NO_CINE_INIT</div>
+<div class="txt">PSD Programming Error: The Cine subroutine was called without first calling Cineinit.</div>
+</section>
+<section id="BM2252762"><a name="BM2252762"></a>
+<h2>2252762</h2>
+<div class="sym">ERROR: EM_PGEN_CINE_PASSES_EXCEEDED</div>
+<div class="txt">PSD Programming Error: The PSD tried to play more passes than Cine was told to play.</div>
+</section>
+<section id="BM2252763"><a name="BM2252763"></a>
+<h2>2252763</h2>
+<div class="sym">ERROR: EM_PGEN_CINE_FRAMES_EXCEEDED</div>
+<div class="txt">Have not detected any new Cardiac Triggers for quite a while. Check the Cardiac waveform display to see if the Cardiac waveform is present.</div>
+</section>
+<section id="BM2252764"><a name="BM2252764"></a>
+<h2>2252764</h2>
+<div class="sym">ERROR: EM_EXOR_SEARCH_FAILED</div>
+<div class="txt">Internal Software Error: Respiratory phase could not be located. Value %08lX exceeded limit %08lX.</div>
+</section>
+<section id="BM2252765"><a name="BM2252765"></a>
+<h2>2252765</h2>
+<div class="sym">ERROR: EM_EXOR_MISSING_CINE_INIT</div>
+<div class="txt">PSD Programming Error: Cine was not initialized.
+Scan mode = %08lX Cine mode = %08lX.</div>
+</section>
+<section id="BM2252766"><a name="BM2252766"></a>
+<h2>2252766</h2>
+<div class="sym">ERROR: EM_RESP_CALLS_EXCEEDED</div>
+<div class="txt">PSD Programming Error: Number of frames was exceeded.
+Frames = %08lX Limit = %08lX.</div>
+</section>
+<section id="BM2252767"><a name="BM2252767"></a>
+<h2>2252767</h2>
+<div class="sym">ERROR: EM_SPU_PHASE_OVERRANGE</div>
+<div class="txt">Internal Software Error: Respiratory phase from SPU out of range.
+SPU phase value = %08lX Limit = %08lX.</div>
+</section>
+<section id="BM2252768"><a name="BM2252768"></a>
+<h2>2252768</h2>
+<div class="sym">ERROR: EM_AGP_HART_INVALID_BOARD_FAILURE</div>
+<div class="txt">The AGP HART logging routine experienced a failure when trying to identify one of the boards using the system resource API.
+BOARD_TYPE index: %d</div>
+</section>
+<section id="BM2252769"><a name="BM2252769"></a>
+<h2>2252769</h2>
+<div class="sym">ERROR: EM_AGP_HART_BOARD_INFO_FAILURE</div>
+<div class="txt">The AGP HART logging routine failed when trying to send board data for the %s.</div>
+</section>
+<section id="BM2252770"><a name="BM2252770"></a>
+<h2>2252770</h2>
+<div class="sym">ERROR: EM_AGP_HART_SLOT_INFO_FAILURE</div>
+<div class="txt">The AGP HART logging routine failed when trying to send empty slot data for the AGP side of the MGD chassis.</div>
+</section>
+<section id="BM2252771"><a name="BM2252771"></a>
+<h2>2252771</h2>
+<div class="sym">ERROR: EM_AGP_HART_RRF_MEM_FAILURE</div>
+<div class="txt">The AGP HART logging routine failed because of an error returned when trying to read the serial number from address 0x%x of the Remote RF status memory.</div>
+</section>
+<section id="BM2252772"><a name="BM2252772"></a>
+<h2>2252772</h2>
+<div class="sym">ERROR: EM_AGP_HART_RRF_SLOT_INFO_FAILURE</div>
+<div class="txt">The AGP HART logging routine failed when trying to send empty slot data for the Remote RF chassis.</div>
+</section>
+<section id="BM2252773"><a name="BM2252773"></a>
+<h2>2252773</h2>
+<div class="sym">ERROR: EM_AGP_HART_RRF_INIT_FAILURE</div>
+<div class="txt">The AGP HART logging routine failed during the Remote RF Chassis initialization. Communications failed to establish, and no RRF HART data will be logged.</div>
+<div class="lbl">Extended Error:</div><div class="txt">It was determined that the Remote RF chassis exists on this system, but the process of switching to the recovered clock and subsequent memory updates using that clock have failed. Run the RRF diagnostics for further information.</div>
+</section>
+<section id="BM2252774"><a name="BM2252774"></a>
+<h2>2252774</h2>
+<div class="sym">ERROR: EM_BORETEMP_SEQ_UPDATE_FAILURE</div>
+<div class="txt">The bore temperature sequence was not updated for 5 seconds.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The bore temperature sequence was not updated by the SCP within the 5 second interval. This indicates that the SCP is not monitoring the bore temperature during scan. Possible SCP functionality failure.</div>
+</section>
+<section id="BM2252775"><a name="BM2252775"></a>
+<h2>2252775</h2>
+<div class="sym">ERROR: EM_AGP_WARP_OVERLOADING</div>
+<div class="txt">The WARP data processing out of sync.</div>
+<div class="lbl">Extended Error:</div><div class="txt">WARP DSP data processing is out of sync with incoming data. B0 ECC calibration file may be corrupted. Check the overloading count in WARP trace file at /export/home/service/log/warp. If the count is less than 5, image quality may not be affected. Otherwise, check the content of the grafidy calibration file. Execute Grafidy to create a new B0 ECC file. Run TRF or PSE BLD.</div>
+</section>
+<section id="BM2252776"><a name="BM2252776"></a>
+<h2>2252776</h2>
+<div class="sym">ERROR: EM_AGP_MCT_WARP_BYPASS</div>
+<div class="txt">The WARP is currently bypassed. Perform TPS Reset to recover.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This disables waveform rotation and ECC. Image planes may be incorrect.</div>
+</section>
+<section id="BM2252777"><a name="BM2252777"></a>
+<h2>2252777</h2>
+<div class="sym">ERROR: EM_AGP_PSD_CALL_FAILED</div>
+<div class="txt">PSD Software Error. Function %s returned error code %d.</div>
+</section>
+<section id="BM2252778"><a name="BM2252778"></a>
+<h2>2252778</h2>
+<div class="sym">ERROR: EM_SEQ_SSI_WD_TIMEOUT</div>
+<div class="txt">Scan did not start due to missing trigger. Trigger source is
+set to: %s. Please check the trigger source and PSD trigger settings. Seq Ctrl Reg:0x%x.</div>
+</section>
+<section id="BM2252779"><a name="BM2252779"></a>
+<h2>2252779</h2>
+<div class="sym">ERROR: EM_AGP_WARP_INPUT_OVERRANGE</div>
+<div class="txt">The WARP reported overranged input parameters happened on %s, for %d times.</div>
+</section>
+<section id="BM2252780"><a name="BM2252780"></a>
+<h2>2252780</h2>
+<div class="sym">ERROR: EM_BURSTMODE_TSK_CREATE_ERROR</div>
+<div class="txt">Failed to spawn the burstmode task, try TPS reset to recover.</div>
+</section>
+<section id="BM2252781"><a name="BM2252781"></a>
+<h2>2252781</h2>
+<div class="sym">ERROR: EM_BURSTMODE_QUEUE_FULL_ERROR</div>
+<div class="txt">Burstmode queue full, can&#x27;t send out message to host, please check the communication with host burst mode mode process.</div>
+</section>
+</body></html>

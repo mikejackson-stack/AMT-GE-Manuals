@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 101000-101999 (56)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 101000-101999 (56)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_100000-100999.html">&larr; 100000-100999</a><a href="ermes_102000-102999.html">102000-102999 &rarr;</a></nav></header>
+<section id="BM101250"><a name="BM101250"></a>
+<h2>101250</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_11F</div>
+<div class="txt">RF Amplifier Code Flash Fault. RF Amplifier detected a code flash fault during a software update attempt. ACB error code: 0x%X CIB error code: 0x%X</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure code download was successful prior to the code flash command. Reboot the RF Amp. If problem persists, replace the RF Amplifier.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101251"><a name="BM101251"></a>
+<h2>101251</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_134</div>
+<div class="txt">RF Amplifier Watchdog Timer Fault(Customer Interface Board).</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reset the RF Amplifier by running CAN link diagnostic with the Force Reset option selected. This diagnostic can be found in Peripheral Communications under System Functions. If fault persists, power cycle the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101252"><a name="BM101252"></a>
+<h2>101252</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_13B</div>
+<div class="txt">RF Amplifier Control Board Timeout. RF Amplifier detected an internal timeout while attempting to complete an operation.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reset the RF Amplifier by running CAN link diagnostic with the Force Reset option selected. This diagnostic can be found in Peripheral Communications under System Functions. If fault persists, power cycle the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101253"><a name="BM101253"></a>
+<h2>101253</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_13D</div>
+<div class="txt">RF Amplifier failed to go to Standby state. RF Amplifier detected an internal fault. The amplifier was requested to go to Standby, but it failed to go to the Standby state.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reset the RF Amplifier by running CAN link diagnostic with the Force Reset option selected. This diagnostic can be found in Peripheral Communications under System Functions. If fault persists, power cycle the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101254"><a name="BM101254"></a>
+<h2>101254</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_13E</div>
+<div class="txt">RF Amplifier failed to set the requested State. RF Amplifier detected an internal fault. The amplifier failed to set the requested state</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reset the RF Amplifier by running CAN link diagnostic with the Force Reset option selected. This diagnostic can be found in Peripheral Communications under System Functions. If fault persists, power cycle the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101255"><a name="BM101255"></a>
+<h2>101255</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_1XX</div>
+<div class="txt">RF Amplifier Fault. Error Code: 0x%X, Error Parameters: %d %d %d %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reset the RF Amplifier by running CAN link diagnostic with the Force Reset option selected. This diagnostic can be found in Peripheral Communications under System Functions. If fault persists, power cycle the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101256"><a name="BM101256"></a>
+<h2>101256</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_24</div>
+<div class="txt">RF Amplifier Peak Forward Power Fault(HEAD Mode). Peak Forward Power exceeds threshold. Possible causes: PSD exceeds system limits, RF input to amplifier exceeding limits, Load VSWR is out of range.
+Peak power: %d watts, Upper spec: %d watts.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify system limits in config file. Check exciter signal level, check waveform shape. If exciter level and waveform shape is within specification, check gain adjustment on the RF Amplifier. Check integrity of RF power measurement equipment, especially dummy load. Run RF amplifier diagnostics. Run RF Amp Power Check Tool. If the problem persists, replace the RF Amplifier.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101257"><a name="BM101257"></a>
+<h2>101257</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_25</div>
+<div class="txt">RF Amplifier Peak Forward Power Fault(BODY mode). Peak forward power exceeds threshold. Possible causes: PSD exceeds system limits, RF input to amplifier exceeds limits. Load VSWR is out of range.
+Peak power: %d watts, Upper spec: %d watts.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify system limits in config file. Check exciter signal level, check waveform shape. If exciter level and waveform shape is within specification, check gain adjustment on the RF Amplifier. Check integrity of RF power measurement equipment, especially dummy load. Run RF amplifier diagnostics. Run RF Amp Power Check Tool. If the problem persists, replace the RF Amplifier.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101258"><a name="BM101258"></a>
+<h2>101258</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_26</div>
+<div class="txt">RF Amplifier Individual Unit Peak Power Fault(BODY Mode). Peak power from internal RF Amplifier individual unit exceeds specification.
+Upper spec: %d watts. Amplifer unit number: %d(1,2,3,4-&gt;A,B,D,E)</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal failure of the RF Amplifier.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101259"><a name="BM101259"></a>
+<h2>101259</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_27</div>
+<div class="txt">RF Amplifier Power Measurement Circuitry Fault. An internal power amplifier has detected a failure of its power measurement circuitry.
+Amplifier unit number: %d(1,2,3,4,5-&gt;A,B,D,E,Combiner)</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal failure of the RF Amplifier, run amplifier self-test diagnostics.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101260"><a name="BM101260"></a>
+<h2>101260</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_28</div>
+<div class="txt">RF Amplifier Reflected Power Fault (Head Mode). RF Amplifier reflected power exceeds specification.
+Peak power: %d watts, Upper spec: %d watts.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify all RF Out cables in Head transmit chain are not disconnected or defective. Check connectors on RF Out cables. If cables and connectors are good, reboot RF amplifier. Check RF coil, insure the coil does not arc. Run RF Amplifier Diagnostics. Run RF Power Check Tool. Try connecting RF power measurement kit and check power to confirm RF amplifier function.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101261"><a name="BM101261"></a>
+<h2>101261</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_29</div>
+<div class="txt">RF Amplifier Reflected Power Fault (Body Mode). Reflected power exceeds specification. Possible causes: disconnected or defective output cable from RF Amplifier, or defective RF Amplifier.
+Peak power: %d watts, Upper spec: %d watts.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check RF Out cables are not disconnected or defective. Check connectors on RF Out cables. If cables and connectors are good, reboot RF amplifier. Check RF coil, insure the coil does not arc. If the cables, connectors and RF coil are good, and the problem persists, replace RF amplifier.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101262"><a name="BM101262"></a>
+<h2>101262</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_2A</div>
+<div class="txt">RF Amplifier Individual Amplifer Unit Reflected Power Fault. Individual internal power amplifier reflected power exceeds specification.
+Upper spec: %d watts, Amplifier unit number: %d(1,2,3,4-&gt;A,B,D,E)</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is internal to the amplifier. Run RF amplifier diagnostics to confirm.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101263"><a name="BM101263"></a>
+<h2>101263</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_2B</div>
+<div class="txt">RF Amplifier Refected Power Measurement Circuitry Fault. An internal power amplifier has detected a failure of its reflected power measurement circuitry. Possible causes: Defective RF Amplifier.
+Amp unit number: %d(1,2,3,4,5-&gt;A,B,D,E,Combiner)</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the problem persists, replace the RF Amplifier.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101264"><a name="BM101264"></a>
+<h2>101264</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_2C</div>
+<div class="txt">RF Amplifier Firmware Reported Junction Temp Fault. RF Amplifier device junction temperature exceeds spec. If research PSD is being used, verify PSD parameters.
+Junction Temp: %.2f degrees C, Upper spec: %.2f degrees C. Amp Unit: %d(1,2,3,4-&gt;A,B,D,E)</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check coolant flow and temperature. Run RF Power Check Tool. Load VSWR may be out of range or RF Amplifier may be operating out of specification.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101265"><a name="BM101265"></a>
+<h2>101265</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_2D</div>
+<div class="txt">RF Amplifier Hardware Reported Junction Temp Fault. RF Amplifier device junction temperature exceeds specification. If research PSD is being used, please verify the PSD parameters.
+Amplifier Unit: %d(1,2,3,4-&gt;A,B,D,E)</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check coolant flow and temperature, Run RF Power Check Tool. Load VSWR may be out of range or RF Amplifier may be operating out of specification.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101266"><a name="BM101266"></a>
+<h2>101266</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_2E</div>
+<div class="txt">RF Amplifier Firmware Reported Junction Absolute Temp Fault. RF Amplifier device junction absolute temperature exceeds spec. If research PSD is being used, verify PSD parameters.
+Upper Spec: %.2f degrees C, Amplifier Unit: %d(1,2,3,4-&gt;A,B,D,E)</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check coolant flow and temperature, Run RF Power Check Tool. Load VSWR may be out of range or RF Amplifier may be operating out of specification.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101267"><a name="BM101267"></a>
+<h2>101267</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_2F</div>
+<div class="txt">RF Amplifier Hardware Reported Junction Absolute Temp Fault. RF Amplifier device junction temperature exceeds specification. If research PSD is being used, please verify the PSD parameters.
+Amplifier Unit: %d(1,2,3,4-&gt;A,B,D,E)</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check coolant flow and temperature, Run RF Power Check Tool. Load VSWR may be out of range or RF Amplifier may be operating out of specification.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101268"><a name="BM101268"></a>
+<h2>101268</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_30</div>
+<div class="txt">RF Amplifier Individual Unit Peak Power Fault(HEAD Mode). Peak power from RF Amplifier individual unit other than Head unit exceeds specification.
+Amplifer unit number: %d(2,3,4,5 -&gt;Amp B, D, E, C)</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is internal to the amplifier.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101269"><a name="BM101269"></a>
+<h2>101269</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_31</div>
+<div class="txt">RF Amplifier Average Power Fault(HEAD mode). RF Amplifier average power(HEAD mode) exceeds spec. Possible causes: PSD exceeds system limits, input to the amplifier exceeds limits.
+Average power: %d W, Upper spec: %d W.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check exciter signal level. If exciter level is within specification, check gain adjustment on the RF Amplifier. Check exciter waveform shape. Run RF Power Check Tool.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101270"><a name="BM101270"></a>
+<h2>101270</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_32</div>
+<div class="txt">RF Amplifier Average Power Fault(BODY mode). RF Amplifier average power(BODY mode) exceeds spec. Possible causes: PSD exceeds system limits, input to amplifiier exceeds limits
+Average power: %d W, Upper spec: %d W.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check exciter signal level. If exciter level is within specification, check gain adjustment on the RF Amplifier. Check exciter waveform shape. Run RF Power Check Tool. @FRU=RF Amp&quot;</div>
+</section>
+<section id="BM101271"><a name="BM101271"></a>
+<h2>101271</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_33</div>
+<div class="txt">RF Amplifier Average Reflected Power Fault(HEAD mode). RF Amplifier average reflected power exceeds spec.
+Peak power: %.2f W, Upper spec: %.2f W.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify all RF Out cables in Head transmit chain are not disconnected or defective. Check connectors on RF Out cables. If cables and connectors are good, reboot RF amplifier. Check RF coil, ensure the coil does not arc. Run RF Amplifier Diagnostics Run RF Power Check Tool. Try connecting RF power measurement kit and checking power to confirm RF amplifier function.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101272"><a name="BM101272"></a>
+<h2>101272</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_34</div>
+<div class="txt">RF Amplifier Average Reflected Power Fault(BODY mode). RF Amplifier average reflected power exceeds spec.
+Peak power: %.2f W, Upper spec: %.2f W.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check RF Out cables are not disconnected or defective. Check connectors on RF Out cables. If cables and connectors are good, reboot RF amplifier. Check RF coil, insure the coil does not arc. Run RF Amplifier Diagnostics. Run RF Power Check Tool. Try connecting RF power measurement kit and checking power to confirm RF amplifier function.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101273"><a name="BM101273"></a>
+<h2>101273</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_35</div>
+<div class="txt">RF Amp Firmware Detected Power Supply(PS1) Fault. RF Amp detected a power supply(PS1) fault.
+Fault V: %dV, spec: %dV. Unit: %d(1,2,3,4,5,6-&gt;Lo+48V,Hi+48V,Lo+15V,Hi+15V,Lo-15V,Hi-15V) If research PSD is being used, please verify the PSD parameters.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check coolant flow and temperature, or RF Amplifier may be operating out of specification. If everything checks out, and the fault persists, run the RF Power Check Tool and confirm that the supply is out of tolerance. If out of tolerance replace the RF Amplifier Power Supply Unit FRU. If in tolerance then replace the RF Amplifier FRU.</div>
+</section>
+<section id="BM101274"><a name="BM101274"></a>
+<h2>101274</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_36</div>
+<div class="txt">RF Amplifier Hardware Detected Power Supply(PS1) Fault. Check coolant flow and temperature,
+Hardware Detector: %d(1-Current Sensor, 2-Regulator) If research PSD is being used, verify PSD parameters.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check coolant flow and temperature, or RF Amplifier may be operating out of specification. If everything checks out, and the fault persists, run the RF Power Check Tool and confirm that the supply is out of tolerance. If out of tolerance replace the RF Amplifier Power Supply Unit FRU. If in tolerance then replace the RF Amplifier FRU.</div>
+</section>
+<section id="BM101275"><a name="BM101275"></a>
+<h2>101275</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_37</div>
+<div class="txt">RF Amp Firmware Detected Power Supply(PS2) Fault. Check coolant flow and temp
+Fault V: %dV, spec: %dV. Unit: %d(1,2,3,4,5,6-&gt;Lo+48V,Hi+48V,Lo+15V,Hi+15V,Lo-15V,Hi-15V) If research PSD is being used, verify PSD parameters.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check coolant flow and temperature, or RF Amplifier may be operating out of specification. If everything checks out, and the fault persists, run the RF Power Check Tool and confirm that the supply is out of tolerance. If out of tolerance replace the RF Amplifier Power Supply Unit FRU. If in tolerance then replace the RF Amplifier FRU.</div>
+</section>
+<section id="BM101276"><a name="BM101276"></a>
+<h2>101276</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_38</div>
+<div class="txt">RF Amplifier Hardware Detedted Power Supply(PS2) Fault. Check coolant flow and temperature,
+Hardware Detector: %d(1,2-&gt;Current Sensor,Regulator) If research PSD is being used, verify PSD parameters.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check coolant flow and temperature, or RF Amplifier may be operating out of specification. If everything checks out, and the fault persists, run the RF Power Check Tool and confirm that the supply is out of tolerance. If out of tolerance replace the RF Amplifier Power Supply Unit FRU. If in tolerance then replace the RF Amplifier FRU.</div>
+</section>
+<section id="BM101277"><a name="BM101277"></a>
+<h2>101277</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_39</div>
+<div class="txt">RF Amplifier RF Power Supply Fault(PS/1,CIB, RF A/B +/-15V). Check coolant flow and temp,
+Amplifer Unit: %d(1,2,3,4-&gt;CIB +15V,CIB-15V,Amp +15V,Amp -15V) If research PSD is being used, verify PSD parameters.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check coolant flow and temperature, or RF Amplifier may be operating out of specification. If everything checks out, and the fault persists, run the RF Power Check Tool and confirm that the supply is out of tolerance. If out of tolerance replace the RF Amplifier Power Supply Unit FRU. If in tolerance then replace the RF Amplifier FRU.</div>
+</section>
+<section id="BM101278"><a name="BM101278"></a>
+<h2>101278</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_3A</div>
+<div class="txt">RF Amplifier RF Power Supply Fault(PS/2,RF D/E +/-15V). RF Amplifier detected a power supply fault. Check coolant flow and temperature,
+Amplifer Unit: %d(3,4-&gt;+15 D/E,-15 D/E ) If research PSD is being used, please verify the PSD parameters.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check coolant flow and temperature, or RF Amplifier may be operating out of specification. If everything checks out, and the fault persists, run the RF Power Check Tool and confirm that the supply is out of tolerance. If out of tolerance replace the RF Amplifier Power Supply Unit FRU. If in tolerance then replace the RF Amplifier FRU.</div>
+</section>
+<section id="BM101279"><a name="BM101279"></a>
+<h2>101279</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_3B</div>
+<div class="txt">RF Amplifier Firmware Reported Peak Current Overload Fault. The RF Amp detected peak current overload in one or more RF devices.
+Measured Value:%d A, Upper spec:%d A, Amp Unit:%d(1,2,3,4-&gt;A,B,D,E) If research PSD is being used, verify PSD parameters.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check center frequency setting in Manual Prescan; this fault could result if the frequency is off by a large amount. Load VSWR may be out of range. Run RF Power Check Tool. RF Amplifier may be operating out of specification. If fault persists, replace the RF Amplifier</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101280"><a name="BM101280"></a>
+<h2>101280</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_3C</div>
+<div class="txt">RF Amplifier Hardware Reported Peak RF Device Current Overload Fault. The RF Amplifier detected a peak current overload condition in one or more RF devices.
+Amplifier Unit: %d(1,2,3,4-&gt;A,B,D,E) If research PSD is being used, verify PSD parameters.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check center frequency setting in Manual Prescan; this fault could result if the frequency is off by a large amount. Load VSWR may be out of range. Run RF Power Check Tool. RF Amplifier may be operating out of specification. If fault persists, replace the RF Amplifier</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101281"><a name="BM101281"></a>
+<h2>101281</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_3D</div>
+<div class="txt">RF Amplifier RF Device 1 Shorted Fault.
+Amplifer Unit: %d(1,2,3,4-&gt;A,B,D,E)</div>
+<div class="lbl">Extended Error:</div><div class="txt">If fault persists, replace the RF amplifier.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101282"><a name="BM101282"></a>
+<h2>101282</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_3E</div>
+<div class="txt">RF Amplifier RF Device 2 Shorted Fault.
+Amplifer Unit: %d(1,2,3,4-&gt;A,B,D,E)</div>
+<div class="lbl">Extended Error:</div><div class="txt">If fault persists, replace the RF amplifier.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101283"><a name="BM101283"></a>
+<h2>101283</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_3F</div>
+<div class="txt">Peak Reflected Power, Individual(HEAD Mode). An internal power amplifier hardware module other than head unit has detected peak reflected power overload without gating.
+Amplifer Unit: %d(2,3,4,5-&gt;B,D,E,Combiner)</div>
+<div class="lbl">Extended Error:</div><div class="txt">If fault persists, replace the RF amplifier.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101284"><a name="BM101284"></a>
+<h2>101284</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_41</div>
+<div class="txt">Obsolete</div>
+</section>
+<section id="BM101285"><a name="BM101285"></a>
+<h2>101285</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_43</div>
+<div class="txt">Obsolete</div>
+</section>
+<section id="BM101286"><a name="BM101286"></a>
+<h2>101286</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_44</div>
+<div class="txt">Obsolete</div>
+</section>
+<section id="BM101287"><a name="BM101287"></a>
+<h2>101287</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_45</div>
+<div class="txt">RF Amplifier High Voltage Low Fault. RF Amplifier high voltage power supply voltage dropped below specified minimum voltage.
+HV: %.2f V, Lower spec: %.2f V, Unit:%d(1,2-&gt;PS1, PS2). If research PSD is being used, please verify the PSD parameters.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If PSD is not the problem, reset RF Amplifier. If the problem persists, replace the RF Amplifier power supply FRU.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101288"><a name="BM101288"></a>
+<h2>101288</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_46</div>
+<div class="txt">RF Amplifier High Voltage High Fault. RF Amplifier high voltage power supply voltage went above specified maximum voltage.
+HV: %.2f V, Upper spec: %.2f V, Unit:%d(1,2-&gt;PS1, PS2).</div>
+<div class="lbl">Extended Error:</div><div class="txt">Replace RF Amplifier power supply FRU.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101289"><a name="BM101289"></a>
+<h2>101289</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_48</div>
+<div class="txt">RF Amplifier Excessive Input Drive Fault. RF Amplifier detects input greater than 20dBm. Possible causes: Input to the amplifier exceeds limits.
+Input Drive Level: %.2f mW, Upper spec: %.2f mW.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check exciter level. If exciter level is within specification, check waveform shape. Check gain adjustment on RF Amplifier. Run RF Amplifier Diagnostics. Run RF Power Check Tool. Refer to RF Amplifier Functional Check procedures.</div>
+</section>
+<section id="BM101290"><a name="BM101290"></a>
+<h2>101290</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_49</div>
+<div class="txt">RF Amplifier Heat Sink Temperature Fault. Check coolant flow and temperature.
+Heat Sink Temp.: %.2f degrees C, Upper spec: %.2f degrees C. Unit: %d(1,2,3,4-&gt;A,B,D,E)</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check coolant flow and temperature, Run RF Power Check Tool RF Amplifier may be operating out of specification. If coolant flow and temperature are within system specifications, and the fault persists, replace the RF Amplifier.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101291"><a name="BM101291"></a>
+<h2>101291</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_4F</div>
+<div class="txt">RF Amplifier Undefined Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reset the RF Amplifier by running CAN link diagnostic with the Force Reset option selected. This diagnostic can be found in Peripheral Communications under System Functions. If fault persists, power cycle the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101292"><a name="BM101292"></a>
+<h2>101292</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_50</div>
+<div class="txt">RF Amplifier Watchdog Timer Fault(RF Amp Controller).</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reset the RF Amplifier by running CAN link diagnostic with the Force Reset option selected. This diagnostic can be found in Peripheral Communications under System Functions. If fault persists, power cycle the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101293"><a name="BM101293"></a>
+<h2>101293</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_51</div>
+<div class="txt">RF Amplifier Watchdog Clock Monitor Fault(RF Amp Controller).</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reset the RF Amplifier by running CAN link diagnostic with the Force Reset option selected. This diagnostic can be found in Peripheral Communications under System Functions. If fault persists, power cycle the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101294"><a name="BM101294"></a>
+<h2>101294</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_52</div>
+<div class="txt">RF Amplifier Unrecoverable Firmware Fault. RF Amplifier detected Unimplemented instruction trap.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reset the RF Amplifier by running CAN link diagnostic with the Force Reset option selected. This diagnostic can be found in Peripheral Communications under System Functions. If fault persists, power cycle the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101295"><a name="BM101295"></a>
+<h2>101295</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_53</div>
+<div class="txt">RF Amplifier Unrecoverable Firmware Fault. RF Amplifier detected Software Interrupt.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reboot the RF Amp. If problem persists, replace the RF Amplifier.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101296"><a name="BM101296"></a>
+<h2>101296</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_54</div>
+<div class="txt">RF Amplifier Unrecoverable Firmware Fault. (Unused timer channel)</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reset the RF Amplifier by running CAN link diagnostic with the Force Reset option selected. This diagnostic can be found in Peripheral Communications under System Functions. If fault persists, power cycle the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101297"><a name="BM101297"></a>
+<h2>101297</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_55</div>
+<div class="txt">RF Amplifier Unrecoverable Firmware Fault. (Unused Pulse Accumulator)</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reset the RF Amplifier by running CAN link diagnostic with the Force Reset option selected. This diagnostic can be found in Peripheral Communications under System Functions. If fault persists, power cycle the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101298"><a name="BM101298"></a>
+<h2>101298</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_56</div>
+<div class="txt">RF Amplifier Unrecoverable Firmware Fault. RF Amplifier detected ATD (Analog-to-Digital Converter) Interrupt.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reset the RF Amplifier by running CAN link diagnostic with the Force Reset option selected. This diagnostic can be found in Peripheral Communications under System Functions. If fault persists, power cycle the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101299"><a name="BM101299"></a>
+<h2>101299</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_57</div>
+<div class="txt">RF Amplifier Unrecoverable Firmware Fault. RF Amplifier detected BDLC (Byte Data Link Communications) Interrupt.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reset the RF Amplifier by running CAN link diagnostic with the Force Reset option selected. This diagnostic can be found in Peripheral Communications under System Functions. If fault persists, power cycle the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101300"><a name="BM101300"></a>
+<h2>101300</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_58</div>
+<div class="txt">RF Amplifier Unrecoverable Firmware Fault. RF Amplifier detected RAM Defect.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reset the RF Amplifier by running CAN link diagnostic with the Force Reset option selected. This diagnostic can be found in Peripheral Communications under System Functions. If fault persists, power cycle the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101301"><a name="BM101301"></a>
+<h2>101301</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_59</div>
+<div class="txt">RF Amplifier Unrecoverable Firmware Fault. (Undefined State)</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reset the RF Amplifier by running CAN link diagnostic with the Force Reset option selected. This diagnostic can be found in Peripheral Communications under System Functions. If fault persists, power cycle the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101302"><a name="BM101302"></a>
+<h2>101302</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_5B</div>
+<div class="txt">RF Amplifier Unrecoverable Firmware Fault. (Unused XIRQ interrupt)</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reset the RF Amplifier by running CAN link diagnostic with the Force Reset option selected. This diagnostic can be found in Peripheral Communications under System Functions. If fault persists, power cycle the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101303"><a name="BM101303"></a>
+<h2>101303</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_5D</div>
+<div class="txt">RF Amplifier Unrecoverable Firmware Fault. (Unused SCI interrupt)</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reset the RF Amplifier by running CAN link diagnostic with the Force Reset option selected. This diagnostic can be found in Peripheral Communications under System Functions. If fault persists, power cycle the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101304"><a name="BM101304"></a>
+<h2>101304</h2>
+<div class="sym">ERROR: EM_RF_XRFD_ERROR_5E</div>
+<div class="txt">RF Amplifier Unrecoverable Firmware Fault. (Unused SPI interrupt)</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reset the RF Amplifier by running CAN link diagnostic with the Force Reset option selected. This diagnostic can be found in Peripheral Communications under System Functions. If fault persists, power cycle the RF Amp.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Amp</li></ol>
+</section>
+<section id="BM101800"><a name="BM101800"></a>
+<h2>101800</h2>
+<div class="sym">ERROR: EM_DIAG_SRI_TNG_CABLE_DETECT</div>
+<div class="txt">SRI &lt;-&gt; Touch-and-Go Cable not Detected.</div>
+</section>
+</body></html>

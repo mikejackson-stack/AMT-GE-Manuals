@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2233000-2233999 (88)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2233000-2233999 (88)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2232000-2232999.html">&larr; 2232000-2232999</a><a href="ermes_2234000-2234999.html">2234000-2234999 &rarr;</a></nav></header>
+<section id="BM2233296"><a name="BM2233296"></a>
+<h2>2233296</h2>
+<div class="sym">ERROR: EM_CERD_NET_TPS_INT_LEVEL</div>
+<div class="txt">CERD NETWORK ERROR A CERD network call has been issued from a TPS Interrupt Service Routine. This is not allowed. Possible software error.</div>
+</section>
+<section id="BM2233297"><a name="BM2233297"></a>
+<h2>2233297</h2>
+<div class="sym">ERROR: EM_CERD_NET_BAD_SOURCE_ID</div>
+<div class="txt">CERD NETWORK ERROR A CERD network call has been issued with an invalid network source ID. Possible software error.
+Bad source ID = %d</div>
+</section>
+<section id="BM2233298"><a name="BM2233298"></a>
+<h2>2233298</h2>
+<div class="sym">ERROR: EM_CERD_NET_BAD_DEST_ID</div>
+<div class="txt">CERD NETWORK ERROR A CERD network call has been issued with an invalid network destination ID. Possible software error.
+Bad destination ID = %d</div>
+</section>
+<section id="BM2233299"><a name="BM2233299"></a>
+<h2>2233299</h2>
+<div class="sym">ERROR: EM_CERD_NET_BAD_PARAM_LEN</div>
+<div class="txt">CERD NETWORK ERROR A CERD network call has been issued with an invalid parameter length. Possible software error.
+Specified length = %d
+Maximum allowed = %d</div>
+</section>
+<section id="BM2233300"><a name="BM2233300"></a>
+<h2>2233300</h2>
+<div class="sym">ERROR: EM_CERD_NET_NO_RESP_QUEUE</div>
+<div class="txt">CERD NETWORK ERROR A CERD network call has been issued that expects a response but no response queue exists for the specified network source ID. Possible TPS software initialization failure. TPS Reset may be required.
+Source ID = %d</div>
+</section>
+<section id="BM2233301"><a name="BM2233301"></a>
+<h2>2233301</h2>
+<div class="sym">ERROR: EM_CERD_NET_DEST_NOT_ALLOWED</div>
+<div class="txt">CERD NETWORK ERROR A CERD network call has specified a network destination ID that is not capable of receiving packets and/or cannot be reached from this network device. Possible TPS software initialization error.
+Destination ID = %d</div>
+</section>
+<section id="BM2233302"><a name="BM2233302"></a>
+<h2>2233302</h2>
+<div class="sym">ERROR: EM_CERD_NET_CMDBUF_TOO_SMALL</div>
+<div class="txt">CERD NETWORK ERROR Unable to retrieve a queued packet because the caller&#x27;s buffer is too small. The packet was discarded. Possible software error.
+Needed buf size = %d Caller&#x27;s buf size = %d
+Network ID of queue = %d
+Senders ID = %d
+Opcode = %d</div>
+</section>
+<section id="BM2233303"><a name="BM2233303"></a>
+<h2>2233303</h2>
+<div class="sym">ERROR: EM_CERD_NET_RSPBUF_TOO_SMALL</div>
+<div class="txt">CERD NETWORK ERROR Unable to retrieve a response packet because the caller&#x27;s buffer is too small. Possible software error.
+Required buffer size = %d Caller&#x27;s buffer size = %d
+Network ID of queue = %d</div>
+</section>
+<section id="BM2233304"><a name="BM2233304"></a>
+<h2>2233304</h2>
+<div class="sym">ERROR: EM_CERD_NET_DATBUF_TOO_SMALL</div>
+<div class="txt">CERD NETWORK ERROR Unable to retrieve data in Dual Port RAM because the caller&#x27;s buffer is too small. Possible software error. Caller&#x27;s buffer size = %d
+Required buffer size = %d</div>
+</section>
+<section id="BM2233305"><a name="BM2233305"></a>
+<h2>2233305</h2>
+<div class="sym">ERROR: EM_CERD_NET_DATBUF_TOO_BIG</div>
+<div class="txt">CERD NETWORK ERROR Unable to store caller&#x27;s data in Dual Port RAM because the data is too big. Possible software error.
+Specified data size = %d
+Maximum allowed = %d</div>
+</section>
+<section id="BM2233306"><a name="BM2233306"></a>
+<h2>2233306</h2>
+<div class="sym">ERROR: EM_CERD_NET_ROUTE_ERROR</div>
+<div class="txt">CERD NETWORK ERROR A network routing error has occurred. A network device has received a packet that should not have arrived there. Possible software error.
+Destination ID = %d</div>
+</section>
+<section id="BM2233307"><a name="BM2233307"></a>
+<h2>2233307</h2>
+<div class="sym">ERROR: EM_CERD_NET_INVALID_OPCODE</div>
+<div class="txt">CERD NETWORK ERROR A task or Interrupt Service Routine has received an invalid network opcode. Possible software error.
+Opcode = %d</div>
+</section>
+<section id="BM2233308"><a name="BM2233308"></a>
+<h2>2233308</h2>
+<div class="sym">ERROR: EM_CERD_NET_DPR_BUSY</div>
+<div class="txt">CERD NETWORK ERROR Unable to send a network packet from TPS because the Dual Port RAM is not available for use. Reset and/or power-cycle the TPS chassis. The following packet was not sent:
+Source ID = %d
+Dest ID = %d
+Opcode = %d</div>
+</section>
+<section id="BM2233309"><a name="BM2233309"></a>
+<h2>2233309</h2>
+<div class="sym">ERROR: EM_CERD_NET_NO_PKT_QUEUE</div>
+<div class="txt">CERD NETWORK ERROR A CERD network call has been issued to check for network packets in a network queue that does not exist. Possible software error.
+Network ID of queue = %d</div>
+</section>
+<section id="BM2233310"><a name="BM2233310"></a>
+<h2>2233310</h2>
+<div class="sym">ERROR: EM_CERD_NET_PKT_QUEUE_FULL</div>
+<div class="txt">CERD NETWORK ERROR The CERD network has encountered a full network packet queue. The network packet has been discarded. Possible software error. Possible solution: increase queue size.
+Network ID of queue = %d</div>
+</section>
+<section id="BM2233311"><a name="BM2233311"></a>
+<h2>2233311</h2>
+<div class="sym">ERROR: EM_CERD_NET_NO_CAP_RESPONSE</div>
+<div class="txt">CERD NETWORK ERROR The TPS has placed a packet in DPR for the CAP to take, but the CAP has completely ignored it. The CERD DPR may be broke or (most likely) the network software is not running on the CAP. Reset and/or power-cycle the TPS chassis.</div>
+</section>
+<section id="BM2233312"><a name="BM2233312"></a>
+<h2>2233312</h2>
+<div class="sym">ERROR: EM_CERD_NET_BAD_CAP_RESPONSE</div>
+<div class="txt">CERD NETWORK ERROR The CAP has responded to a network packet transaction with the TPS but the response is invalid. The network software on the CAP is probably not running. Reset and/or power-cycle the TPS chassis.</div>
+</section>
+<section id="BM2233313"><a name="BM2233313"></a>
+<h2>2233313</h2>
+<div class="sym">ERROR: EM_CERD_NET_CERD_NOT_INSTALLED</div>
+<div class="txt">CERD NETWORK ERROR CERD network initialization has failed (from the TPS side) because the CERD board is not detected in the TPS chassis. Check that the CERD board is installed. Run CERD diags.</div>
+</section>
+<section id="BM2233314"><a name="BM2233314"></a>
+<h2>2233314</h2>
+<div class="sym">ERROR: EM_CERD_NET_INTCONNECT_FAILED</div>
+<div class="txt">CERD NETWORK ERROR CERD network initialization has failed (from the TPS side) because a failure occurred when the CERD interrupt handler was connected. Reset TPS and try again.</div>
+</section>
+<section id="BM2233315"><a name="BM2233315"></a>
+<h2>2233315</h2>
+<div class="sym">ERROR: EM_CERD_NET_RSP_TIMEOUT</div>
+<div class="txt">CERD NETWORK ERROR CERD network timed out waiting for response packet. Network or application code error, please reset TPS.
+Network ID of response queue = %d</div>
+</section>
+<section id="BM2233316"><a name="BM2233316"></a>
+<h2>2233316</h2>
+<div class="sym">ERROR: EM_CERD_NET_DPR_INT_BERR1</div>
+<div class="txt">CERD NETWORK ERROR A bus error occurred in the TPS interrupt handler for the CERD VME DPR. A CERD network packet header was being retrieved from DPR at the time. Reset and redownload the TPS.
+VME access addr: %08xH</div>
+</section>
+<section id="BM2233317"><a name="BM2233317"></a>
+<h2>2233317</h2>
+<div class="sym">ERROR: EM_CERD_NET_DPR_INT_BERR2</div>
+<div class="txt">CERD NETWORK ERROR A bus error occurred in the TPS interrupt handler for the CERD VME DPR. A CERD network packet was being retrieved from DPR and being placed in a response queue at the time. Reset and redownload the TPS.</div>
+</section>
+<section id="BM2233318"><a name="BM2233318"></a>
+<h2>2233318</h2>
+<div class="sym">ERROR: EM_CERD_NET_DPR_INT_BERR3</div>
+<div class="txt">CERD NETWORK ERROR A bus error occurred in the TPS interrupt handler for the CERD VME DPR. The TPS was accessing one of the CERD VME DPR hardware semaphore registers when the bus error occurred. Reset and redownload the TPS.</div>
+</section>
+<section id="BM2233319"><a name="BM2233319"></a>
+<h2>2233319</h2>
+<div class="sym">ERROR: EM_CERD_NET_DPR_INT_BERR4</div>
+<div class="txt">CERD NETWORK ERROR A bus error occurred in the TPS interrupt handler for the CERD VME DPR. A CERD network packet was being retrieved from DPR and being placed in a packet queue at the time. Reset and redownload the TPS.</div>
+</section>
+<section id="BM2233320"><a name="BM2233320"></a>
+<h2>2233320</h2>
+<div class="sym">ERROR: EM_CERD_NET_DPR_INT_BERR5</div>
+<div class="txt">CERD NETWORK ERROR A bus error occurred in the TPS interrupt handler for the CERD VME DPR. A CERD network response packet was being loaded into DPR at the time. Reset and redownload the TPS.
+VME access addr: %08xH</div>
+</section>
+<section id="BM2233321"><a name="BM2233321"></a>
+<h2>2233321</h2>
+<div class="sym">ERROR: EM_CERD_NET_DPR_INT_BERR6</div>
+<div class="txt">CERD NETWORK ERROR A bus error occurred in the TPS interrupt handler for the CERD VME DPR. No additional VME access information was available. Reset and redownload the TPS.</div>
+</section>
+<section id="BM2233322"><a name="BM2233322"></a>
+<h2>2233322</h2>
+<div class="sym">ERROR: EM_CERD_NET_DPR_BUSY_MORE_INFO</div>
+<div class="txt">CERD NETWORK ERROR - Additional Information The last packet to be sent via CERD DPR is listed below. This is the packet that may have failed to release the DPR for others to use.
+Source ID = %d
+Dest ID = %d
+Opcode = %d</div>
+</section>
+<section id="BM2233323"><a name="BM2233323"></a>
+<h2>2233323</h2>
+<div class="sym">ERROR: EM_CERD_NET_PARTIAL_CAP_RESPONSE</div>
+<div class="txt">CERD NETWORK ERROR The TPS has placed a packet in DPR for the CAP to take. The CAP appears to have started processing it, but has failed to finish processing it. The TPS has timed out as a result. Reset and/or the power-cycle the TPS chassis.</div>
+</section>
+<section id="BM2233324"><a name="BM2233324"></a>
+<h2>2233324</h2>
+<div class="sym">ERROR: EM_CERD_NET_NOT_INITED</div>
+<div class="txt">TPS SOFTWARE ERROR A call was made to cerd_net_send_cmd before cerd_net_init had completed.</div>
+</section>
+<section id="BM2233396"><a name="BM2233396"></a>
+<h2>2233396</h2>
+<div class="sym">ERROR: EM_CERD_CAP_DACQ_EBUFF_OVERFLOW</div>
+<div class="txt">The Frame Data Buffer Queue has overflowed. May need a longer TR time, or more time between echoes. Please restart scan.</div>
+</section>
+<section id="BM2233397"><a name="BM2233397"></a>
+<h2>2233397</h2>
+<div class="sym">ERROR: EM_CERD_CAP_DACQ_DMA_OVERRUN</div>
+<div class="txt">The DMA transfer for AIME QOUT memory to CAP local storage has not completed in time to transfer next segment. May need more time between echoes. Please restart scan.</div>
+</section>
+<section id="BM2233398"><a name="BM2233398"></a>
+<h2>2233398</h2>
+<div class="sym">ERROR: EM_CERD_CAP_DACQ_PROC_QUE_OVERFLOW</div>
+<div class="txt">All CAP data acq.processing queue elements are busy. Could not process next segment. May need more time between echoes. Please restart scan.</div>
+</section>
+<section id="BM2233399"><a name="BM2233399"></a>
+<h2>2233399</h2>
+<div class="sym">ERROR: EM_CERD_CAP_DACQ_VSB_PARITY</div>
+<div class="txt">VSB Transfer to BAM image memory resulted in Parity Error.
+Parity error VSB address: %#x Data in BAM may be corrupted. Please restart scan. If error persists, run diagnostics and check BAM.</div>
+</section>
+<section id="BM2233400"><a name="BM2233400"></a>
+<h2>2233400</h2>
+<div class="sym">ERROR: EM_CERD_CAP_SSP_DEV_NOT_EXPECTED</div>
+<div class="txt">An SSP packet with an incorrect device code &lt;%d&gt; was received by the CAP. \n \ Please restart scan.</div>
+</section>
+<section id="BM2233401"><a name="BM2233401"></a>
+<h2>2233401</h2>
+<div class="sym">ERROR: EM_CERD_CAP_SSP_OPCODE_NOT_EXPECTED</div>
+<div class="txt">An SSP packet with an incorrect opcode &lt;%d&gt; was received by the CAP. Please restart scan.</div>
+</section>
+<section id="BM2233402"><a name="BM2233402"></a>
+<h2>2233402</h2>
+<div class="sym">ERROR: EM_CERD_CAP_SSP_DEV_OPCODE_EXPECTED</div>
+<div class="txt">An SSP packet with the expected Device-Opcode Tag word combination &lt;0110&gt; did not arrive at the CAP. Device &lt;%x&gt; and Opcode &lt;%x&gt; were received. Please restart scan.</div>
+</section>
+<section id="BM2233403"><a name="BM2233403"></a>
+<h2>2233403</h2>
+<div class="sym">ERROR: EM_CERD_CAP_SSP_FIFO_OVERFLOW</div>
+<div class="txt">SSP FIFO to CAP data acq. has overflowed. Most likely data has been lost. Please restart scan.</div>
+</section>
+<section id="BM2233404"><a name="BM2233404"></a>
+<h2>2233404</h2>
+<div class="sym">ERROR: EM_CERD_CAP_DACQ_VSB_TIMEOUT</div>
+<div class="txt">VSB Transfer not completed before next transfer scheduled. Unsuccessful VSB address: 0x%x. RTB index and #RTBs: 0x%8x. # BACQS per Interval and Scan: 0x%8x. # Arrhythmias and Cine pkts: 0x%8x. # VSB xfers and SSP pkts : 0x%8x. Please restart scan.</div>
+</section>
+<section id="BM2233405"><a name="BM2233405"></a>
+<h2>2233405</h2>
+<div class="sym">ERROR: EM_CERD_CAP_DACQ_CINE_RTB_OVERRUN</div>
+<div class="txt">CAP Data Acquisition has overrun the CINE Real Time Buffers. Recon has not cleared the flags, or is still busy processing buffers</div>
+</section>
+<section id="BM2233406"><a name="BM2233406"></a>
+<h2>2233406</h2>
+<div class="sym">ERROR: EM_CERD_CAP_DACQ_CINE_FRAME_SYNC</div>
+<div class="txt">CAP CINE Data Acquisition has accumulated a different number of of frames than the PSD has requested over the SSP bus. Please restart scan.</div>
+</section>
+<section id="BM2233407"><a name="BM2233407"></a>
+<h2>2233407</h2>
+<div class="sym">ERROR: EM_CERD_PRGM_SSP_SLICE_RANGE</div>
+<div class="txt">Slice value of %d received by programmable SSP is less than zero or larger than %d, the expected number of slices.</div>
+</section>
+<section id="BM2233408"><a name="BM2233408"></a>
+<h2>2233408</h2>
+<div class="sym">ERROR: EM_CERD_PRGM_SSP_ECHO_RANGE</div>
+<div class="txt">Echo value of %d received by programmable SSP is less than zero or larger than %d, the expected number of echoes.</div>
+</section>
+<section id="BM2233409"><a name="BM2233409"></a>
+<h2>2233409</h2>
+<div class="sym">ERROR: EM_CERD_PRGM_SSP_VIEW_RANGE</div>
+<div class="txt">View value of %d received by programmable SSP is less than zero or larger than %d, the expected number of views.</div>
+</section>
+<section id="BM2233410"><a name="BM2233410"></a>
+<h2>2233410</h2>
+<div class="sym">ERROR: EM_CERD_CAP_DACQ_TIMEOUT</div>
+<div class="txt">CAP data acquisition timed out waiting for segment ready interrupt Please check scan protocol and re-start scan.</div>
+</section>
+<section id="BM2233411"><a name="BM2233411"></a>
+<h2>2233411</h2>
+<div class="sym">ERROR: EM_CERD_CAP_UNEXPCT_NETPKT</div>
+<div class="txt">An unexpected CERD Network packet was received by CAP Data Acquisition during acquisition. The unexpected opcode is %d.</div>
+</section>
+<section id="BM2233412"><a name="BM2233412"></a>
+<h2>2233412</h2>
+<div class="sym">ERROR: EM_CERD_CALIB_INVALID_RECEIVENO</div>
+<div class="txt">A request for calibration of an invalid number of receivers was\ detected.\nNumber of receivers =%d, only 1 and 4 supported. Likely programming error, calibration aborted.</div>
+</section>
+<section id="BM2233413"><a name="BM2233413"></a>
+<h2>2233413</h2>
+<div class="sym">ERROR: EM_CERD_CALIB_INVALID_POINT</div>
+<div class="txt">A calibration request for an invalid number of points detected. The number of points requested (%d) is too large. Likely programming or network error, calibration aborted.</div>
+</section>
+<section id="BM2233414"><a name="BM2233414"></a>
+<h2>2233414</h2>
+<div class="sym">ERROR: EM_CERD_CALIB_TIMEOUT</div>
+<div class="txt">Calibration acquisition did not complete - timeout detected. Please reset tps!</div>
+</section>
+<section id="BM2233415"><a name="BM2233415"></a>
+<h2>2233415</h2>
+<div class="sym">ERROR: EM_CERD_CALIB_TIMER1_ERROR</div>
+<div class="txt">Error detected during A/D converter calibration - C40 hardware timer\ 1 is not running. Likely programmer error, please reset tps!</div>
+</section>
+<section id="BM2233416"><a name="BM2233416"></a>
+<h2>2233416</h2>
+<div class="sym">ERROR: EM_CERD_XD_RECEIVER_SELECT</div>
+<div class="txt">Invalid Receiver selected for XD Bus Broadcast to SPU. Likely programmer error, please reset tps!</div>
+</section>
+<section id="BM2233417"><a name="BM2233417"></a>
+<h2>2233417</h2>
+<div class="sym">ERROR: EM_CERD_CINE_FRAME_SHORTAGE</div>
+<div class="txt">TR is too long relative to heart rate, image quality may suffer.</div>
+</section>
+<section id="BM2233418"><a name="BM2233418"></a>
+<h2>2233418</h2>
+<div class="sym">ERROR: EM_CERD_CAP_FEEDER_ERROR</div>
+<div class="txt">Error detected during initialization of CAP feeder due to exceeding waveform size over the pre-allocated waveform data storage array
+echo count/2 = %d, MAX half-waveform size = %d</div>
+</section>
+<section id="BM2233419"><a name="BM2233419"></a>
+<h2>2233419</h2>
+<div class="sym">ERROR: EM_CERD_XD_OVERRANGE</div>
+<div class="txt">Data collected from the fast receiver has overranged. Scan will continue!</div>
+</section>
+<section id="BM2233420"><a name="BM2233420"></a>
+<h2>2233420</h2>
+<div class="sym">ERROR: EM_CERD_XD_OVERFLOW</div>
+<div class="txt">Data from the fast receiver has overflowed the data acq. task Please re-try scan at lower bandwidth!</div>
+</section>
+<section id="BM2233421"><a name="BM2233421"></a>
+<h2>2233421</h2>
+<div class="sym">ERROR: EM_CERD_DMA_STRUCT_SHORTAGE</div>
+<div class="txt">There are more EBUFFERS than DMA control structures EPI will not work correctly. Check ca_dacqgb.h</div>
+</section>
+<section id="BM2233422"><a name="BM2233422"></a>
+<h2>2233422</h2>
+<div class="sym">ERROR: EM_CERD_EARLY_XD_FRAME</div>
+<div class="txt">An XD bus data frame interrupt occurred before a begin acq interrupt.
+Num begin acqs = %d, XD xfers = %d, Hyperscan pkts = %d. State of IIF register = 0x%8x. Please verify Fast receiver setup by running Scan TR in Manual Prescan.</div>
+</section>
+<section id="BM2233423"><a name="BM2233423"></a>
+<h2>2233423</h2>
+<div class="sym">ERROR: EM_CERD_RCVRMAP_ERROR</div>
+<div class="txt">CERD Internal Software Error - The receiver map (%d) did not correspond to the #channels selected (%d) for a %d-channel acquisition.</div>
+</section>
+<section id="BM2233424"><a name="BM2233424"></a>
+<h2>2233424</h2>
+<div class="sym">ERROR: EM_CERD_DACQ_EBUFFER_ALLOCATE_ERROR</div>
+<div class="txt">There is not enough CAP SRAM for ebuffers, this version of CERD can&#x27;t handle %d echo length scan, the maximum echo length is %d, please represcribe the scan</div>
+</section>
+<section id="BM2233425"><a name="BM2233425"></a>
+<h2>2233425</h2>
+<div class="sym">ERROR: EM_CERD_3D_SSP_QUEUE_OVERFLOW</div>
+<div class="txt">The 3D Pass Done Buffer Queue has overflowed. May need a longer TR time, or more time between echoes. Please restart scan.</div>
+</section>
+<section id="BM2233596"><a name="BM2233596"></a>
+<h2>2233596</h2>
+<div class="sym">ERROR: EM_CIR_UNDEF_GAIN</div>
+<div class="txt">This R1 analog gain value %d for receiver %d is not within valid range . Internal software error. Please reset the TPS.</div>
+</section>
+<section id="BM2233597"><a name="BM2233597"></a>
+<h2>2233597</h2>
+<div class="sym">ERROR: EM_CIR_SSP_TIMEOUT</div>
+<div class="txt">A write was attempted while the hold off lssp writes bit was set. Please reset the TPS.</div>
+</section>
+<section id="BM2233598"><a name="BM2233598"></a>
+<h2>2233598</h2>
+<div class="sym">ERROR: EM_CIR_INVAL_RX_NUM</div>
+<div class="txt">An invalid receiver number %d was used. Internal software error. Please reset the TPS.</div>
+</section>
+<section id="BM2233599"><a name="BM2233599"></a>
+<h2>2233599</h2>
+<div class="sym">ERROR: EM_CIR_BAD_STATE</div>
+<div class="txt">A bad state was used internally. The state should be 0 or 1. Please reset the TPS.</div>
+</section>
+<section id="BM2233600"><a name="BM2233600"></a>
+<h2>2233600</h2>
+<div class="sym">ERROR: EM_CIR_COIL_RANGE</div>
+<div class="txt">An invalid coil number %d was used internally. Please reset TPS. Please reset the TPS.</div>
+</section>
+<section id="BM2233601"><a name="BM2233601"></a>
+<h2>2233601</h2>
+<div class="sym">ERROR: EM_CIR_BSHIFT_MAX</div>
+<div class="txt">The maximum barrel shift was exceeded. Internal software error. Please reset the TPS.</div>
+</section>
+<section id="BM2233602"><a name="BM2233602"></a>
+<h2>2233602</h2>
+<div class="sym">ERROR: EM_CIR_DFILT_RANGE</div>
+<div class="txt">Filter value %d is not in the valid range. Internal software error. Please reset the TPS.</div>
+</section>
+<section id="BM2233603"><a name="BM2233603"></a>
+<h2>2233603</h2>
+<div class="sym">ERROR: EM_CIR_DFILT_CMD</div>
+<div class="txt">Digital filter command %d is not in the valid range. Internal software error. Please reset the TPS.</div>
+</section>
+<section id="BM2233604"><a name="BM2233604"></a>
+<h2>2233604</h2>
+<div class="sym">ERROR: EM_CIE_MAGNET_SIZE</div>
+<div class="txt">Unknown magnet field strength %d. Internal software error. Please reset the TPS.</div>
+</section>
+<section id="BM2233605"><a name="BM2233605"></a>
+<h2>2233605</h2>
+<div class="sym">ERROR: EM_CIE_CTR_FREQ_RANGE</div>
+<div class="txt">Center Frequency %d is not in the valid range for this field strength. Possible mismatch between system config file and RRF field strength\ register (code = %d). Possible internal software error. Please reset TPS.</div>
+</section>
+<section id="BM2233606"><a name="BM2233606"></a>
+<h2>2233606</h2>
+<div class="sym">ERROR: EM_CIE_SLICE_FREQ_RANGE</div>
+<div class="txt">The slice frequency %d is not in the valid range. Internal software error. Please reset the TPS.</div>
+</section>
+<section id="BM2233607"><a name="BM2233607"></a>
+<h2>2233607</h2>
+<div class="sym">ERROR: EM_CIE_ATTEN_RANGE</div>
+<div class="txt">The attenuation %d is not in the valid range. Internal software error. Please reset the TPS.</div>
+</section>
+<section id="BM2233608"><a name="BM2233608"></a>
+<h2>2233608</h2>
+<div class="sym">ERROR: EM_CIE_RHO_DDS_FREQ_RANGE</div>
+<div class="txt">The frequency %d is not in the valid rho dds freq range. Internal software error. Please reset the TPS.</div>
+</section>
+<section id="BM2233609"><a name="BM2233609"></a>
+<h2>2233609</h2>
+<div class="sym">ERROR: EM_CIE_RHO_DDS_PHASE_RANGE</div>
+<div class="txt">The phase %d is not in the valid dds phase range. Internal software error. Please reset the TPS.</div>
+</section>
+<section id="BM2233610"><a name="BM2233610"></a>
+<h2>2233610</h2>
+<div class="sym">ERROR: EM_CIE_RHO_DDS_AMPLITUDE_RANGE</div>
+<div class="txt">The amplitude %d is not in the valid dds amplitude range. Internal software error. Please reset the TPS.</div>
+</section>
+<section id="BM2233611"><a name="BM2233611"></a>
+<h2>2233611</h2>
+<div class="sym">ERROR: EM_CIE_RHO_DDS_SOURCE_RANGE</div>
+<div class="txt">The source %d is not in the valid dds amplitude range. Internal software error. Please reset the TPS.</div>
+</section>
+<section id="BM2233612"><a name="BM2233612"></a>
+<h2>2233612</h2>
+<div class="sym">ERROR: EM_CIE_THETA_RANGE</div>
+<div class="txt">The theta %d is not in the valid range. Internal software error. Please reset the TPS.</div>
+</section>
+<section id="BM2233613"><a name="BM2233613"></a>
+<h2>2233613</h2>
+<div class="sym">ERROR: EM_CIE_UNBLANK_ERROR</div>
+<div class="txt">An error occurred while trying to set the unblank register. Internal software error. Please reset the TPS.</div>
+</section>
+<section id="BM2233614"><a name="BM2233614"></a>
+<h2>2233614</h2>
+<div class="sym">ERROR: EM_CIE_SSP_LOCK_ERROR</div>
+<div class="txt">An error occurred while attempting to set the ssp lock bit. Internal software error. Please reset the TPS.</div>
+</section>
+<section id="BM2233615"><a name="BM2233615"></a>
+<h2>2233615</h2>
+<div class="sym">ERROR: EM_CIE_UNDEF_OPCODE</div>
+<div class="txt">The CERD detected and unrecognized opcode in a command from TPS. The unrecognized opcode is %d. Likely TPS programming error or possibly faulty CERD VME DPR.</div>
+</section>
+<section id="BM2233616"><a name="BM2233616"></a>
+<h2>2233616</h2>
+<div class="sym">ERROR: EM_CIE_SET_TARGBS</div>
+<div class="txt">An error occurred while attempting to set TG, R1, or R2. Internal software error. Please reset the TPS.</div>
+</section>
+<section id="BM2233617"><a name="BM2233617"></a>
+<h2>2233617</h2>
+<div class="sym">ERROR: EM_CIE_SYNC_GAIN</div>
+<div class="txt">An error occurred while attempting to synchronously set TG, R1, &amp; R2. Internal software error. Please reset the TPS.</div>
+</section>
+<section id="BM2233618"><a name="BM2233618"></a>
+<h2>2233618</h2>
+<div class="sym">ERROR: EM_CIX_TIC_RD_ERR</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2233619"><a name="BM2233619"></a>
+<h2>2233619</h2>
+<div class="sym">ERROR: EM_CIX_TIC_WR_ERR</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2233620"><a name="BM2233620"></a>
+<h2>2233620</h2>
+<div class="sym">ERROR: EM_CX_THRESHOLD_AD_ERR</div>
+<div class="txt">The A/D converter has not had ample time to warmup. Threshold value in MR Config file greater than A/D on time.</div>
+</section>
+<section id="BM2233621"><a name="BM2233621"></a>
+<h2>2233621</h2>
+<div class="sym">ERROR: EM_CX_THRESHOLD_PREAMP_ERR</div>
+<div class="txt">The preamp has not had ample time to warmup. Threshold value in MR Config file greater than A/D on time.</div>
+</section>
+<section id="BM2233622"><a name="BM2233622"></a>
+<h2>2233622</h2>
+<div class="sym">ERROR: EM_CX_THRESHOLD_OVOSC_ERR</div>
+<div class="txt">The ovenized oscillator has not had ample time to warmup. Threshold value in MR Config file greater than A/D on time.</div>
+</section>
+<section id="BM2233623"><a name="BM2233623"></a>
+<h2>2233623</h2>
+<div class="sym">ERROR: EM_CIE_RFOUT_DISABLED</div>
+<div class="txt">Advisory message: RF output on the RRF Exciter is disabled. For proper operation enable RF output switch.</div>
+</section>
+<section id="BM2233624"><a name="BM2233624"></a>
+<h2>2233624</h2>
+<div class="sym">ERROR: EM_CIX_TIC_DISABLED</div>
+<div class="txt">A reference to the TIC was attempted by the TPS. Internal software error. Please write a CQA and reset the TPS.</div>
+</section>
+</body></html>

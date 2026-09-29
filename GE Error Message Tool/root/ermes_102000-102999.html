@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 102000-102999 (190)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 102000-102999 (190)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_101000-101999.html">&larr; 101000-101999</a><a href="ermes_192000-192999.html">192000-192999 &rarr;</a></nav></header>
+<section id="BM102000"><a name="BM102000"></a>
+<h2>102000</h2>
+<div class="sym">ERROR: EM_SYSTOOLS_UNKNOWN</div>
+<div class="txt">Unknown system tools error %s %s %s %s</div>
+</section>
+<section id="BM102001"><a name="BM102001"></a>
+<h2>102001</h2>
+<div class="sym">ERROR: EM_SYSTOOLS_DDQUAD_LOW_SNR</div>
+<div class="txt">DD Quadrature tool: Low SNR %s in combined image. Spec is %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated when the DD Quadrature Tool performs the combined image scan i.e with both transmit channels turned on. Low SNR in the combined image could be caused by cable swaps in the transmit chain. Please troubleshoot transmit chain using the steps in the Dual Drive Quadrature tool section of service document.</div>
+</section>
+<section id="BM102002"><a name="BM102002"></a>
+<h2>102002</h2>
+<div class="sym">ERROR: EM_SYSTOOLS_DDQUAD_LOW_UNIFORMITY</div>
+<div class="txt">DD Quadrature tool: Low UNIFORMITY %s in combined image. Spec is %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated when the DD Quadrature Tool performs the combined image scan. Low Uniformity in the combined image could be caused by cable swaps in the transmit chain. Please troubleshoot transmit chain using the steps in the Dual Dual Quadrature tool section of service document.</div>
+</section>
+<section id="BM102003"><a name="BM102003"></a>
+<h2>102003</h2>
+<div class="sym">ERROR: EM_SYSTOOLS_DDQUAD_MAX_ITERATE</div>
+<div class="txt">DD Quadrature tool: Maximum attempts of %s exceeded. Unable to calibrate system.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated when the DD Quadrature Tool is unable to calibrate the system after several attempts. Please troubleshoot transmit chain using the steps in the Dual Dual Quadrature tool section of service document.</div>
+</section>
+<section id="BM102004"><a name="BM102004"></a>
+<h2>102004</h2>
+<div class="sym">ERROR: EM_SYSTOOLS_DDQUAD_MAX_COMPENSATION</div>
+<div class="txt">DD Quadrature tool: Unable to calibrate system, compensation exceeds limits.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated when the compensation required exceeds predetermined specification. Please troubleshoot transmit chain using the steps in the Dual Dual Quadrature tool section of service document.</div>
+</section>
+<section id="BM102005"><a name="BM102005"></a>
+<h2>102005</h2>
+<div class="sym">ERROR: EM_SYSTOOLS_INVALID_EXAMNO</div>
+<div class="txt">Unable to extract image %s from Exam %s, Series %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error message is generated when a System tool is unable to extract an image Reasons include duplicate exams or image database issues. Please delete duplicate exams or reset of image db.</div>
+</section>
+<section id="BM102006"><a name="BM102006"></a>
+<h2>102006</h2>
+<div class="sym">ERROR: EM_SYSTOOLS_INCOMPLETE_RX</div>
+<div class="txt">Incomplete Rx, please check coil and landmark.</div>
+</section>
+<section id="BM102007"><a name="BM102007"></a>
+<h2>102007</h2>
+<div class="sym">ERROR: EM_SYSTOOLS_NO_LANDMARK</div>
+<div class="txt">No valid landmark.</div>
+</section>
+<section id="BM102008"><a name="BM102008"></a>
+<h2>102008</h2>
+<div class="sym">ERROR: EM_SYSTOOLS_PROTO_DOWNLOAD_FAIL</div>
+<div class="txt">Protocol download failed.</div>
+</section>
+<section id="BM102009"><a name="BM102009"></a>
+<h2>102009</h2>
+<div class="sym">ERROR: EM_SYSTOOLS_PRESCAN_UPDATE_VAL_FAIL</div>
+<div class="txt">Error updating R1/R2/CF/TG during Manual Prescan.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error message is generated when a System tools is unable to set prescan parameters. Try starting a new exam and attempt to update R1/R2/CF/TG during Manual Prescan.</div>
+</section>
+<section id="BM102010"><a name="BM102010"></a>
+<h2>102010</h2>
+<div class="sym">ERROR: EM_SYSTOOLS_PFILE_EXAM_MISMATCH</div>
+<div class="txt">P-file (%s) exam number (%s) does not match scan exam number (%s). Please cleanup P-files.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error message is generated when the latest pfile by time stamp does not match the pfile generated from the last scan. This could occur when an external pfile is placed under /usr/g/mrraw or the system date and time is changed. Please try clearing the P*.7 files in the /usr/g/mrraw directory.</div>
+</section>
+<section id="BM102011"><a name="BM102011"></a>
+<h2>102011</h2>
+<div class="sym">ERROR: EM_SYSTOOLS_PHANTOM_MISPOSITIONED_AP</div>
+<div class="txt">The phantom offset in A/P direction %s is greater than spec %s.</div>
+</section>
+<section id="BM102012"><a name="BM102012"></a>
+<h2>102012</h2>
+<div class="sym">ERROR: EM_SYSTOOLS_PHANTOM_MISPOSITIONED_LR</div>
+<div class="txt">The phantom offset in L/R direction %s is greater than spec %s.</div>
+</section>
+<section id="BM102013"><a name="BM102013"></a>
+<h2>102013</h2>
+<div class="sym">ERROR: EM_SYSTOOLS_PHANTOM_MISPOSITIONED_Z</div>
+<div class="txt">The phantom is landmarked outside the valid range %s-%s. Please re-landmark within the range.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error message is generated when the phantom landmark location isn&#x27;t within the specified range. This could happen when the landmark location is incorrect or alignment light isn&#x27;t calibrated. Please perform alignment light calibration and/or the table bridge alignments if you are sure that the phantom is at the correct position on the cradle.</div>
+</section>
+<section id="BM102014"><a name="BM102014"></a>
+<h2>102014</h2>
+<div class="sym">ERROR: EM_SYSTOOLS_PRESCAN_START_LOOP_FAILED</div>
+<div class="txt">Error starting Manual Prescan through START_LOOP_EVENT svat cmd. Execute the tool again. If problem persists, perform a TPS reset.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is caused by a race condition. Try executing the tool again to see if the error remains. If so, perform a TPS reset to get the system back into a known state.</div>
+</section>
+<section id="BM102015"><a name="BM102015"></a>
+<h2>102015</h2>
+<div class="sym">ERROR: EM_SYSTOOLS_PRESCAN_STOP_LOOP_FAILED</div>
+<div class="txt">Error starting Manual Prescan through STOP_LOOP_EVENT svat cmd.. Execute the tool again. If problem persists, perform a TPS reset.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is caused by a race condition. Try executing the tool again to see if the error remains. If so, perform a TPS reset to get the system back into a known state.</div>
+</section>
+<section id="BM102016"><a name="BM102016"></a>
+<h2>102016</h2>
+<div class="sym">ERROR: EM_SYSTOOLS_RECON_STOP_FAILED</div>
+<div class="txt">Error executing RECON_STOPPED svat cmd. Not all images may have been installed. Execute the tool again. If problem persists, reboot the system.</div>
+</section>
+<section id="BM102800"><a name="BM102800"></a>
+<h2>102800</h2>
+<div class="sym">ERROR: EM_XG2_IXG_BOARD</div>
+<div class="txt">XG2 IXG board</div>
+</section>
+<section id="BM102801"><a name="BM102801"></a>
+<h2>102801</h2>
+<div class="sym">ERROR: EM_XG2_AC2_BOARD</div>
+<div class="txt">XG2 XGA-AC2 board</div>
+</section>
+<section id="BM102802"><a name="BM102802"></a>
+<h2>102802</h2>
+<div class="sym">ERROR: EM_XG2_PC2_BOARD</div>
+<div class="txt">XG2 XPS-AC2 board</div>
+</section>
+<section id="BM102803"><a name="BM102803"></a>
+<h2>102803</h2>
+<div class="sym">ERROR: EM_XG2_PSX</div>
+<div class="txt">X axis</div>
+</section>
+<section id="BM102804"><a name="BM102804"></a>
+<h2>102804</h2>
+<div class="sym">ERROR: EM_XG2_PSY</div>
+<div class="txt">Y axis</div>
+</section>
+<section id="BM102805"><a name="BM102805"></a>
+<h2>102805</h2>
+<div class="sym">ERROR: EM_XG2_PSZ</div>
+<div class="txt">Z axis</div>
+</section>
+<section id="BM102806"><a name="BM102806"></a>
+<h2>102806</h2>
+<div class="sym">ERROR: EM_XG2_PSX_BOOT_FAILURE_PRI</div>
+<div class="txt">Protected image startup of the XG2 (XPS-PC2 X axis) failed. Check EMO reset and perform a TPS reset. If this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The XPS-PC2 inside X axis XPS failed to boot into protected mode.
+* Verify that the X axis XPS and entire XG2 gradient subsystem is powered on.
+* Verify that emergency stop is not active.
+* Verify that the X axis dual-fiber cable is connected and properly seated into the IXG SFP transceiver module and X axis XPS.
+* Verify X axis dual fiber optic cable linkup status and that there are no communication faults pertaining to the SFP transceiver modules in X axis XPS or in corresponding communications port on IXG board. SFP modules can be swapped between units for troubleshooting.
+* Verify that both ends of the X axis XPS SFP Fiber cable are not damaged.
+* Check the X axis XPS Heartbeat LED from the front panel is blinking.
+* If Heartbeat LED not blinking then check condition of PDU 48V PS2 power supply.
+* Power down the XG2 subsystem and reseat cables to X axis XPS. If these steps do not resolve the problem, replace the X axis XPS and perform a TPS reset.</div>
+</section>
+<section id="BM102807"><a name="BM102807"></a>
+<h2>102807</h2>
+<div class="sym">ERROR: EM_XG2_PSX_BOOT_FAILURE_SEC</div>
+<div class="txt">Secondary image startup of the XG2 (XPS-PC2 X axis) failed. Perform a TPS reset and if this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The X axis XPS in XG2 failed to boot into normal mode. Check the error log for revision mismatches. Reinstall software to correct any revision mismatches.</div>
+</section>
+<section id="BM102808"><a name="BM102808"></a>
+<h2>102808</h2>
+<div class="sym">ERROR: EM_XG2_PSY_BOOT_FAILURE_PRI</div>
+<div class="txt">Protected image startup of the XG2 (XPS-PC2 Y axis) failed. Check EMO reset and perform a TPS reset. If this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The XPS-PC2 inside Y axis XPS failed to boot into protected mode.
+* Verify that the Y axis XPS and entire XG2 gradient subsystem is powered on.
+* Verify that emergency stop is not active.
+* Verify that the Y axis dual-fiber cable is connected and properly seated into the IXG SFP transceiver module and Y axis XPS.
+* Verify Y axis dual fiber optic cable linkup status and that there are no communication faults pertaining to the SFP transceiver modules in Y axis XPS or in corresponding communications port on IXG board. SFP modules can be swapped between units for troubleshooting.
+* Verify that both ends of the Y axis XPS SFP Fiber cable are not damaged.
+* Check the Z axis XPS Heartbeat LED from the front panel is blinking.
+* If Heartbeat LED not blinking then check condition of PDU 48V PS2 power supply.
+* Power down the XG2 subsystem and reseat cables to Y axis XPS. If these steps do not resolve the problem, replace the Y axis XPS and perform a TPS reset.</div>
+</section>
+<section id="BM102809"><a name="BM102809"></a>
+<h2>102809</h2>
+<div class="sym">ERROR: EM_XG2_PSY_BOOT_FAILURE_SEC</div>
+<div class="txt">Secondary image startup of the XG2 (XPS-PC2 Y axis) failed. Perform a TPS reset and if this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Y axis XPS in XG2 failed to boot into normal mode. Check the error log for revision mismatches. Reinstall software to correct any revision mismatches.</div>
+</section>
+<section id="BM102810"><a name="BM102810"></a>
+<h2>102810</h2>
+<div class="sym">ERROR: EM_XG2_PSZ_BOOT_FAILURE_PRI</div>
+<div class="txt">Protected image startup of the XG2 (XPS-PC2 Z axis) failed. Check EMO reset and perform a TPS reset. If this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The XPS-PC2 inside Z axis XPS failed to boot into protected mode.
+* Verify that the Z axis XPS and entire XG2 gradient subsystem is powered on.
+* Verify that emergency stop is not active.
+* Verify that the Z axis dual-fiber cable is connected and properly seated into the IXG SFP transceiver module and Z axis XPS.
+* Verify Z axis dual fiber optic cable linkup status and that there are no communication faults pertaining to the SFP transceiver modules in Z axis XPS or in corresponding communications port on IXG board. SFP modules can be swapped between units for troubleshooting.
+* Verify that both ends of the Z axis XPS SFP Fiber cable are not damaged.
+* Check the Z axis XPS Heartbeat LED from the front panel is blinking.
+* If Heartbeat LED not blinking then check condition of PDU 48V PS2 power supply.
+* Power down the XG2 subsystem and reseat cables to Z axis XPS. If these steps do not resolve the problem, replace the Z axis XPS and perform a TPS reset.</div>
+</section>
+<section id="BM102811"><a name="BM102811"></a>
+<h2>102811</h2>
+<div class="sym">ERROR: EM_XG2_PSZ_BOOT_FAILURE_SEC</div>
+<div class="txt">Secondary image startup of the XG2 (XPS-PC2 Z axis) failed. Perform a TPS reset and if this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Z axis XPS in XG2 failed to boot into normal mode. Check the error log for revision mismatches. Reinstall software to correct any revision mismatches.</div>
+</section>
+<section id="BM102812"><a name="BM102812"></a>
+<h2>102812</h2>
+<div class="sym">ERROR: EM_XG2_PC2_OT</div>
+<div class="txt">The %b XPS is reporting a PC2 over-temperature fault. The PC2 board temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure that the Power Cabinet fan trays located above the XPS are connected and running properly. Ensure that the equipment room temperature is within specification. Ensure there are no obstructions on top of the XPS or below that would restrict air-flow. If no issues are identified, cycle power and perform a TPS reset, replace the XPS if the error continues.</div>
+</section>
+<section id="BM102813"><a name="BM102813"></a>
+<h2>102813</h2>
+<div class="sym">ERROR: EM_XG2_PS_OCT_PWR_FAULT</div>
+<div class="txt">The %b XPS is reporting an Octavius power warning</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure the Octavius2 cable is not damaged and is properly connected between the XPS and XGA and reseat the cable. To verify cable is working properly, swap Octavius cables and perform a TPS reset (Note: swapping the cable will change the axis ID of the module). If the fault continues to be reported on the same axis ID after a TPS reset, replace the Ocativus cable. If the fault is reported on a new axis ID after a TPS reset, replace the XPS with the Ocativus cable ID reporting the issue.</div>
+</section>
+<section id="BM102814"><a name="BM102814"></a>
+<h2>102814</h2>
+<div class="sym">ERROR: EM_XG2_PS_OCT_OPWR_FAULT</div>
+<div class="txt">The %b XPS is reporting an Octavius power fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure the Octavius2 cable is not damaged and is properly connected between the XPS and XGA and reseat the cable. Verify that the XGA is powered on, its heartbeat LED is blinking. Check the error log for XGA communication faults.</div>
+</section>
+<section id="BM102815"><a name="BM102815"></a>
+<h2>102815</h2>
+<div class="sym">ERROR: EM_XG2_PS_OCT_LOS_FAULT</div>
+<div class="txt">The %b XPS is reporting an Octavius Loss Of Signal Fault on the XGA.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure that the Octavius cable is connected properly to the XPS and XGA and the dual-fiber optic cable is properly connected between XGA and IXG. If error persists after a power cycle and TPS reset, swap Octavius cables and perform a TPS reset (Note:
+swapping the cable will change the axis ID of the module). If the error is reported on the same axis ID, replace the octavius cable. If the error is reported on a new axis ID, swap SFP transceivers and perform a TPS reset. If error persists on the same axis, replace the XPS with the cable ID of the reported axis. If the error is reported on a new axis ID, replace the SFP transceiver.</div>
+</section>
+<section id="BM102816"><a name="BM102816"></a>
+<h2>102816</h2>
+<div class="sym">ERROR: EM_XG2_PS_OCT_FPGA_FAULT</div>
+<div class="txt">The %b XPS is reporting an Octavius FPGA Fault on the XGA.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check for the hearbeat LED on the XGA. If it&#x27;s not blinking, cycle power and perform a TPS reset. If error persists, replace the XPS. If the XGA heartbeat LED is blinking, swap Octavius cables and perform a TPS reset (Note:
+swapping the cable will change the axis ID of the module). If error is reported on the same axis ID, replace the Octavius cable. If the error is reported on a new axis ID, replace the XPS with the cable ID of the reported axis.</div>
+</section>
+<section id="BM102817"><a name="BM102817"></a>
+<h2>102817</h2>
+<div class="sym">ERROR: EM_XG2_NO_420V</div>
+<div class="txt">All XPS modules are reporting the loss of 420V power. Check EMO Button.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure that the gradient 420V breaker is in the up position on the PDU. Check that the EMO reset is not set. Check that incoming power is within specification.</div>
+</section>
+<section id="BM102818"><a name="BM102818"></a>
+<h2>102818</h2>
+<div class="sym">ERROR: EM_XG2_SINGLE_XPS_NO_420V</div>
+<div class="txt">The %b XPS module reports the loss of 420V power. Call for service.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Measure the 420V power coming out of the PDU and then verify the 420V cable is properly conencted. If 420V power is present and the 420V power cable is connected and the issue persists after a TPS reset, replace the XPS.</div>
+</section>
+<section id="BM102819"><a name="BM102819"></a>
+<h2>102819</h2>
+<div class="sym">ERROR: EM_XG2_PS_VBUS_IN_FAULT</div>
+<div class="txt">The %b XPS is reporting an internal VBus %b.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Power off the 420V power coming out of the PDU and swap XPS 420V power connector locations at top of PDU. Apply power and confirm same XPS continues to report fault condition. Perform a TPS Reset. If the fault persists on same XPS after TPS Reset and power connection swap, the XPS should be replaced.</div>
+</section>
+<section id="BM102820"><a name="BM102820"></a>
+<h2>102820</h2>
+<div class="sym">ERROR: EM_XG2_PS_BB_WF</div>
+<div class="txt">The %b XPS is reporting a Bus-Bar board Wire Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The XPS has detected a bad cable, replace the XPS.</div>
+</section>
+<section id="BM102821"><a name="BM102821"></a>
+<h2>102821</h2>
+<div class="sym">ERROR: EM_XG2_PS_RECT_WF</div>
+<div class="txt">The %b XPS is reporting a Rectifier board Wire Fault</div>
+<div class="lbl">Extended Error:</div><div class="txt">The XPS has detected a bad cable, replace the XPS.</div>
+</section>
+<section id="BM102822"><a name="BM102822"></a>
+<h2>102822</h2>
+<div class="sym">ERROR: EM_XG2_CHECK_AC2_OCT_FUSE</div>
+<div class="txt">The %b XGA is reporting an Octavius Fuse warning.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Cycle power and perform a TPS reset, if this message persists swap the octavius cable with a cable on another axis and perform a TPS reset (Note: swapping the cable will change the axis ID of the module). If the error message continues to be reported on the same axis, replace the cable. If the error message is reported on a different axis, replace the XGA that has the cable ID of the reported axis.</div>
+</section>
+<section id="BM102823"><a name="BM102823"></a>
+<h2>102823</h2>
+<div class="sym">ERROR: EM_XG2_AC2_OCT_PWR_FLT</div>
+<div class="txt">The %b XGA received an Octavius Power Fault from %b XPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check LEDs on the front of XPS. If all LEDs are off, cycle power and perform a TPS reset. If error persists, replace the XPS. If the LEDs are on, swap Octavius cables and perform a TPS Reset (Note:
+swapping the cable will change the axis ID of the module). If error is reported on the same axis ID, replace the Octavius cable. If the error is reported on a new axis ID, replace the XPS with the cable ID of the reported axis.</div>
+</section>
+<section id="BM102824"><a name="BM102824"></a>
+<h2>102824</h2>
+<div class="sym">ERROR: EM_XG2_AC2_OCT_FPGA_FLT</div>
+<div class="txt">The %b XGA received an Octavius FPGA Fault from %b XPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check for the heartbeat LED on the XPS. If it&#x27;s not blinking, cycle power and perform a TPS reset. If error persists, replace the XPS. If the XPS heartbeat LED is blinking, swap Octavius cables and perform a TPS reset (Note:
+swapping the cable will change the axis ID of the module). If error is reported on the same axis ID, replace the Octavius cable. If the error is reported on a new axis ID, replace the XPS with the cable ID of the reported axis.</div>
+</section>
+<section id="BM102825"><a name="BM102825"></a>
+<h2>102825</h2>
+<div class="sym">ERROR: EM_XG2_AC2_OCT_LOS_FLT</div>
+<div class="txt">The %b XGA received an Octavius Loss Of Signal Fault from %b XPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure that the Octavius cable is connected properly between the XPS and XGA and the dual-fiber optic cable is properly connected between XPS and IXG. If error persists after a power cycle and TPS reset, swap Octavius cables and perform a TPS reset (Note:
+swapping the cable will change the axis ID of the module). If the error is reported on the same axis ID, replace the octavius cable. If the error is reported on a new axis ID, swap SFP transceivers and perform a TPS reset. If error persists on the same axis, replace the XPS with the cable ID of the reported axis. If the error is reported on a new axis ID, replace the SFP transceiver.</div>
+</section>
+<section id="BM102826"><a name="BM102826"></a>
+<h2>102826</h2>
+<div class="sym">ERROR: EM_XG2_AC2_ICOIL_WF</div>
+<div class="txt">The %b XGA is reporting a I_Coil Wire Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The cables between the coil current sensor and the AC2 board may be loose or may have fallen off. Ensure cables J5 and J6 of the XGA are connected to the corresponding axis current sensor at the top of the Power Cabinet. If all cables are properly connected and error persists after a power cycle and TPS reset, replace the XGA.</div>
+</section>
+<section id="BM102827"><a name="BM102827"></a>
+<h2>102827</h2>
+<div class="sym">ERROR: EM_XG2_AC2_LINK_DOWN</div>
+<div class="txt">The %b XGA is reporting an Axis Link Down Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the dual-fiber optic cable on both the IXG and XGA sides to ensure a proper connection, reseat the SFP modules and cables and perform a TPS reset. If error persists, swap the XGA dual-fiber optic cable with another XGA dual-fiber optic cable at the IXG and perform a TPS reset. If the fault is now reported on a different axis ID, See IXG Troubleshooting. If the fault is reported on the same axis ID, see XGA Troubleshooting. *XGA Troubleshooting: Swap SFP modules between two XGAs and perform a TPS reset. If the error is reported on a new axis, replace the failing SFP module, if the error is reported on the same the same axis ID, swap dual-fiber optic cables on both ends of the link and perform a TPS reset. If the error is reported on a new axis, replace the cable, if the error is reported on the same axis replace the XGA. *IXG Troubleshooting: Swap the SFP module of the failing axis with another SFP module at the IXG and perform a TPS reset. If the error is reported on a new axis, replace the failing SFP. If the error is being reported on the same axis, replace the IXG.</div>
+</section>
+<section id="BM102828"><a name="BM102828"></a>
+<h2>102828</h2>
+<div class="sym">ERROR: EM_XG2_AC2_PLL_FAIL</div>
+<div class="txt">The %b XGA is reporting a PLL Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the dual-fiber optic cable is seated properly in its connector. Verify the cables is latched by gently pulling on the cable and confirming it stays in place.</div>
+</section>
+<section id="BM102829"><a name="BM102829"></a>
+<h2>102829</h2>
+<div class="sym">ERROR: EM_XG2_AC2_LV0_0V</div>
+<div class="txt">The %b XGA is reporting an LV0 %b Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the power cables from the XPS (J8 and J9) to the XGA (J13 and J14) and cycle power and perform a TPS reset. If the error does not persist, perform a scan to ensure error does not return. If the error message persists, replace the XGA.</div>
+</section>
+<section id="BM102830"><a name="BM102830"></a>
+<h2>102830</h2>
+<div class="sym">ERROR: EM_XG2_AC2_LV0_UV</div>
+<div class="txt">The %b XGA is reporting an LV0 %b Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the power cables from the XPS (J8 and J9) to the XGA (J13 and J14). If cables are correctly connected or if the error persists after a power cycle and TPS reset, replace the XGA.</div>
+</section>
+<section id="BM102831"><a name="BM102831"></a>
+<h2>102831</h2>
+<div class="sym">ERROR: EM_XG2_AC2_LV90_0V</div>
+<div class="txt">The %b XGA is reporting an LV90 %b Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the power cables from the XPS (J8 and J9) to the XGA (J13 and J14) and cycle power and perform a TPS reset. If the error does not persist, perform a scan to ensure error does not return. If the error message persists, replace the XGA.</div>
+</section>
+<section id="BM102832"><a name="BM102832"></a>
+<h2>102832</h2>
+<div class="sym">ERROR: EM_XG2_AC2_LV90_UV</div>
+<div class="txt">The %b XGA is reporting an LV90 %b Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the power cables from the XPS (J8 and J9) to the XGA (J13 and J14). If cables are correctly connected or if the error persists after a power cycle and TPS reset, replace the XGA.</div>
+</section>
+<section id="BM102833"><a name="BM102833"></a>
+<h2>102833</h2>
+<div class="sym">ERROR: EM_XG2_AC2_HV0_0V</div>
+<div class="txt">The %b XGA is reporting an HV0 %b Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the power cables from the XPS (J8 and J9) to the XGA (J13 and J14) and cycle power and perform a TPS reset. If the error does not persist, perform a scan to ensure error does not return. If the error message persists, replace the XGA.</div>
+</section>
+<section id="BM102834"><a name="BM102834"></a>
+<h2>102834</h2>
+<div class="sym">ERROR: EM_XG2_AC2_HV0_UV</div>
+<div class="txt">The %b XGA is reporting an HV0 %b Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the power cables from the XPS (J8 and J9) to the XGA (J13 and J14). If cables are correctly connected or if the error persists after a power cycle and TPS reset, replace the XGA.</div>
+</section>
+<section id="BM102835"><a name="BM102835"></a>
+<h2>102835</h2>
+<div class="sym">ERROR: EM_XG2_AC2_HV90_0V</div>
+<div class="txt">The %b XGA is reporting an HV90 %b Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the power cables from the XPS (J8 and J9) to the XGA (J13 and J14) and cycle power and perform a TPS reset. If the error does not persist, perform a scan to ensure error does not return. If the error message persists, replace the XGA.</div>
+</section>
+<section id="BM102836"><a name="BM102836"></a>
+<h2>102836</h2>
+<div class="sym">ERROR: EM_XG2_AC2_HV90_UV</div>
+<div class="txt">The %b XGA is reporting an HV90 %b Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the power cables from the XPS (J8 and J9) to the XGA (J13 and J14). If cables are correctly connected or if the error persists after a power cycle and TPS reset, replace the XGA.</div>
+</section>
+<section id="BM102837"><a name="BM102837"></a>
+<h2>102837</h2>
+<div class="sym">ERROR: EM_XG2_AC2_VC0IL_0V</div>
+<div class="txt">The %b XGA is reporting a VCoil %b Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the connections are tight at the output of the XGA, at the gradient penetration filter and the gradient coil. If this message persists after a power-cycle and TPS reset, the XGA should be replaced.</div>
+</section>
+<section id="BM102838"><a name="BM102838"></a>
+<h2>102838</h2>
+<div class="sym">ERROR: EM_XG2_AC2_VBRDG_0V</div>
+<div class="txt">The %b XGA is reporting a V-Bridge %b Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a power-cycle and TPS reset, the XGA should be replaced.</div>
+</section>
+<section id="BM102839"><a name="BM102839"></a>
+<h2>102839</h2>
+<div class="sym">ERROR: EM_XG2_AC2_ICOIL_OC</div>
+<div class="txt">The %b XGA is reporting an I-Coil Over-current Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Remove all power and ensure that the XGA has a proper connection to the gradient coil. The X and Y coil resistance should closely match, if an X or Y axis is reporting the fault, compare the measured resistance of that axis with the other axis, by measuring the &#x27;+&#x27; and &#x27;-&#x27; terminals at the top of the XGA. Also check that there is no short from &#x27;+&#x27; terminal to ground or the &#x27;-&#x27; terminal to ground. Ensure that the gradient penetration filter measures correctly. If all measurements are normal, replace the XGA</div>
+</section>
+<section id="BM102840"><a name="BM102840"></a>
+<h2>102840</h2>
+<div class="sym">ERROR: EM_XG2_AC2_ICROSS_OC</div>
+<div class="txt">The %b XGA is reporting an I-Cross Over-current Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure that the corresponding XPS is not reporting any output voltage faults on the LV bus. If XPS faults are reported, troubleshoot those first. If not XPS faults are being reported, retry the scan and if the fault persists, replace the XGA.</div>
+</section>
+<section id="BM102841"><a name="BM102841"></a>
+<h2>102841</h2>
+<div class="sym">ERROR: EM_XG2_AC2_CT_FAULT</div>
+<div class="txt">The %b XGA is reporting a Current Transducer Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The I-Coil current transducer with the associated axis reported an over-current. This may indicate a failing I-Coil current transducer.</div>
+</section>
+<section id="BM102842"><a name="BM102842"></a>
+<h2>102842</h2>
+<div class="sym">ERROR: EM_XG2_AC2_TEC_IDRAW_OC</div>
+<div class="txt">The %b XGA-AC2 is reporting a TEC over-current.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure proper coolant flow through the XGA and verify the fans are rotating at normal speed with no obstructions above or below the XGA and XPS. Cycle power and perform a TPS reset. If the issue persists, replace the XGA</div>
+</section>
+<section id="BM102843"><a name="BM102843"></a>
+<h2>102843</h2>
+<div class="sym">ERROR: EM_XG2_AC2_I_ERR_OC</div>
+<div class="txt">A gradient distortion fault has occurred on the %b.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Perform a TPS Reset and try scan again. Cycle gradient power, perform a TPS Reset, and try scan again. Perform all gradient diagnostics to confirm condition of gradient hardware. Remove power to gradients and XG2 and confirm that DC resistances as measured through X, Y, and Z gradient coil circuits from “+” and “-“ terminals at top of XGAs are all similar. Ensure all fiber optic communication lines are functioning properly and that the gradient coil is connected and functioning properly. If gradient diags fail and resistances of all gradient coil axis’s appear similar then refer to gradient troubleshooting service methods document for more actions.</div>
+</section>
+<section id="BM102844"><a name="BM102844"></a>
+<h2>102844</h2>
+<div class="sym">ERROR: EM_XG2_AC2_DATA_OF</div>
+<div class="txt">The %b AC2 is reporting a data overflow fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a power-cycle and TPS reset, the XGA should be replaced.</div>
+</section>
+<section id="BM102845"><a name="BM102845"></a>
+<h2>102845</h2>
+<div class="sym">ERROR: EM_XG2_AC2_OFFSET_OF</div>
+<div class="txt">The %b AC2 is reporting a offset overflow fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a power-cycle and TPS reset, the XGA should be replaced.</div>
+</section>
+<section id="BM102846"><a name="BM102846"></a>
+<h2>102846</h2>
+<div class="sym">ERROR: EM_XG2_AC2_GD_OC</div>
+<div class="txt">The %b XGA-AC2 is reporting an AC2-GD I-Draw over-current.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a power-cycle and TPS reset, the XGA should be replaced.</div>
+</section>
+<section id="BM102847"><a name="BM102847"></a>
+<h2>102847</h2>
+<div class="sym">ERROR: EM_XG2_AC2_GD_UC</div>
+<div class="txt">The %b XGA-AC2 is reporting an AC2-GD I-Draw under-current.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a power-cycle and TPS reset, the XGA should be replaced.</div>
+</section>
+<section id="BM102848"><a name="BM102848"></a>
+<h2>102848</h2>
+<div class="sym">ERROR: EM_XG2_AC2_CP_OT</div>
+<div class="txt">The %b XGA-AC2 is reporting a cold plate over-temperature.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the coolant supply and return lines (J15 and J16) are connected to the XGA. Check that the HEC is not reporting an over-temperature fault. If the issue persists after a power cycle and TPS reset, replace the XGA.</div>
+</section>
+<section id="BM102849"><a name="BM102849"></a>
+<h2>102849</h2>
+<div class="sym">ERROR: EM_XG2_AC2_GD_OT</div>
+<div class="txt">The %b XGA-AC2 is reporting a gate drive over-temperature.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the fan tray and make sure all fans are running. Also check that there are no obstructions on top of and below the XGA. If this message persists after a power cycle and TPS reset, replace the XGA.</div>
+</section>
+<section id="BM102850"><a name="BM102850"></a>
+<h2>102850</h2>
+<div class="sym">ERROR: EM_XG2_AC2_GD_PS_FAULT</div>
+<div class="txt">The %b XGA is reporting a GD power failure %sV %b.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102851"><a name="BM102851"></a>
+<h2>102851</h2>
+<div class="sym">ERROR: EM_XG2_OVERVOLTAGE</div>
+<div class="txt">overvoltage</div>
+</section>
+<section id="BM102852"><a name="BM102852"></a>
+<h2>102852</h2>
+<div class="sym">ERROR: EM_XG2_UNDERVOLTAGE</div>
+<div class="txt">undervoltage</div>
+</section>
+<section id="BM102853"><a name="BM102853"></a>
+<h2>102853</h2>
+<div class="sym">ERROR: EM_XG2_AC2_OC</div>
+<div class="txt">The %b XGA-AC2 is reporting an AC2 over current.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102854"><a name="BM102854"></a>
+<h2>102854</h2>
+<div class="sym">ERROR: EM_XG2_AC2_UC</div>
+<div class="txt">The %b XGA-AC2 is reporting an AC2 under current.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102855"><a name="BM102855"></a>
+<h2>102855</h2>
+<div class="sym">ERROR: EM_XG2_AC2_PWR_OK_FAULT</div>
+<div class="txt">The %b XGA-AC2 is reporting an AC2 %sV power ok fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102856"><a name="BM102856"></a>
+<h2>102856</h2>
+<div class="sym">ERROR: EM_XG2_AC2_ONBOARD_FAULT</div>
+<div class="txt">The %b XGA is reporting an AC2 power %sV %b.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102857"><a name="BM102857"></a>
+<h2>102857</h2>
+<div class="sym">ERROR: EM_XG2_AC2_SYNC_ERROR</div>
+<div class="txt">The %b XGA is reporting an AC2 sync error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the dual-fiber optic cable between the XGA and IXG. Gently pull on the cable and verify the cable stays connected. If this message persists after a power cycle and TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102858"><a name="BM102858"></a>
+<h2>102858</h2>
+<div class="sym">ERROR: EM_XG2_AC2_LINK_ERR</div>
+<div class="txt">The %b XGA is reporting an AC2 link error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a power cycle and TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102859"><a name="BM102859"></a>
+<h2>102859</h2>
+<div class="sym">ERROR: EM_XG2_AC2_PACKET_INVALID</div>
+<div class="txt">The %b XGA is reporting an AC2 packet invalid fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a power cycle and TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102860"><a name="BM102860"></a>
+<h2>102860</h2>
+<div class="sym">ERROR: EM_XG2_AC2_SFP_FAULT</div>
+<div class="txt">The %b XGA is reporting an SFP Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure the dulal-fiber optic cable is connected to the corresponding XGA, that light is present, and that the SFP module is seated properly on the XGA-AC2. If the error persists after a TPS reset, swap the SFP modules with another axis. If the fault moves to another axis ID, replace the bad SFP. If the fault remains on the same axis ID, replace the XGA.</div>
+</section>
+<section id="BM102861"><a name="BM102861"></a>
+<h2>102861</h2>
+<div class="sym">ERROR: EM_XG2_AC2_LINK_RESET</div>
+<div class="txt">The %b XGA is reporting an AC2 link reset.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102862"><a name="BM102862"></a>
+<h2>102862</h2>
+<div class="sym">ERROR: EM_XG2_GD_OT</div>
+<div class="txt">The %b XGA-AC2 is reporting a gate drive over temperature. The gate drive board temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the fan tray and make sure all fans are running. Also check that there are no obstructions on top of and below the XGA. If this message persists after a power cycle and TPS reset, replace the XGA.</div>
+</section>
+<section id="BM102863"><a name="BM102863"></a>
+<h2>102863</h2>
+<div class="sym">ERROR: EM_XG2_CP_OT</div>
+<div class="txt">The %b XGA-AC2 is reporting a cold plate over temperature. The cold plate temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the coolant supply and return lines (J15 and J16) are connected to the XGA. Check that the HEC is not reporting an over-temperature fault. Check that the coolant in running through the XGA. If the issue persists after a power cycle and TPS reset, replace the XGA.</div>
+</section>
+<section id="BM102864"><a name="BM102864"></a>
+<h2>102864</h2>
+<div class="sym">ERROR: EM_XG2_AC2_OT</div>
+<div class="txt">The %b XGA is reporting an AC2 over-temperature fault. The AC2 board temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure that the Power Cabinet fan trays are connected and running properly and that there are no obstructions above or below the XGA and XPS. If the issue persists after a TPS reset, replace the XGA.</div>
+</section>
+<section id="BM102865"><a name="BM102865"></a>
+<h2>102865</h2>
+<div class="sym">ERROR: EM_XG2_AC2_FPGA_OT</div>
+<div class="txt">The %b XGA-AC2 is reporting an FPGA over temperature. The AC2 FPGA temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Cycle power and perform a TPS reset, if the issue persists, replace the XGA</div>
+</section>
+<section id="BM102866"><a name="BM102866"></a>
+<h2>102866</h2>
+<div class="sym">ERROR: EM_XG2_TEC_OT</div>
+<div class="txt">The %b XGA-AC2 is reporting a TEC over temperature. The TEC temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102867"><a name="BM102867"></a>
+<h2>102867</h2>
+<div class="sym">ERROR: EM_XG2_GD_UT</div>
+<div class="txt">The %b XGA-AC2 is reporting a gate drive under temperature. The gate drive board temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102868"><a name="BM102868"></a>
+<h2>102868</h2>
+<div class="sym">ERROR: EM_XG2_CP_UT</div>
+<div class="txt">The %b XGA-AC2 is reporting a cold plate under temperature. The cold plate temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102869"><a name="BM102869"></a>
+<h2>102869</h2>
+<div class="sym">ERROR: EM_XG2_AC2_UT</div>
+<div class="txt">The %b XGA-AC2 is reporting an AC2 under temperature. The AC2 board temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102870"><a name="BM102870"></a>
+<h2>102870</h2>
+<div class="sym">ERROR: EM_XG2_AC2_FPGA_UT</div>
+<div class="txt">The %b XGA-AC2 is reporting a FPGA under temperature. The AC2 FPGA temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102871"><a name="BM102871"></a>
+<h2>102871</h2>
+<div class="sym">ERROR: EM_XG2_TEC_UT</div>
+<div class="txt">The %b XGA-AC2 is reporting a TEC under temperature. The TEC temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102872"><a name="BM102872"></a>
+<h2>102872</h2>
+<div class="sym">ERROR: EM_XG2_AC2_GD_WF</div>
+<div class="txt">The %b XGA is reporting a gate drive wire fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The XGA has detected a bad cable, replace the XGA</div>
+</section>
+<section id="BM102873"><a name="BM102873"></a>
+<h2>102873</h2>
+<div class="sym">ERROR: EM_XG2_AC2_I_COIL_WF</div>
+<div class="txt">The %b XGA-AC2 is reporting an AC2 I coil wire fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The cable between the current transducer and the XGA may be loose or may have fallen off.</div>
+</section>
+<section id="BM102874"><a name="BM102874"></a>
+<h2>102874</h2>
+<div class="sym">ERROR: EM_XG2_AC2_SFP_WF</div>
+<div class="txt">The %b XGA-AC2 is reporting a missing SFP fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure the SFP is properly connected by reseating the SFP module and the cable. If the error persists after a TPS reset, swap the SFP module with another axis. If the error is reported on a new axis ID, replace the SFP. If error persists on the same axis ID, replace the XGA.</div>
+</section>
+<section id="BM102875"><a name="BM102875"></a>
+<h2>102875</h2>
+<div class="sym">ERROR: EM_XG2_AC2_TEC_WF</div>
+<div class="txt">The %b XGA-AC2 is reporting a TEC Wire Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The XGA has detected a bad cable, replace the XGA.</div>
+</section>
+<section id="BM102876"><a name="BM102876"></a>
+<h2>102876</h2>
+<div class="sym">ERROR: EM_XG2_AC2_OCT_WF</div>
+<div class="txt">The %b XGA-AC2 is reporting an Octavius Wire Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure that the Octavius cable is properly connected. If the issue persits after a TPS reset, swap Octavius cables with another axis and perform a TPS reset. After performing a TPS reset, if the error is reported on the same axis ID, replace the cable If the error is reported on a new axis ID, replace the XGA with Octavius cable ID reporting the fault.</div>
+</section>
+<section id="BM102877"><a name="BM102877"></a>
+<h2>102877</h2>
+<div class="sym">ERROR: EM_XG2_AC2_CELL_TEST</div>
+<div class="txt">TODO</div>
+<div class="lbl">Extended Error:</div><div class="txt">TODO</div>
+</section>
+<section id="BM102878"><a name="BM102878"></a>
+<h2>102878</h2>
+<div class="sym">ERROR: EM_XG2_AC2_COIL_MC</div>
+<div class="txt">TODO</div>
+<div class="lbl">Extended Error:</div><div class="txt">TODO</div>
+</section>
+<section id="BM102879"><a name="BM102879"></a>
+<h2>102879</h2>
+<div class="sym">ERROR: EM_XG2_AC2_I_ERR_FFT</div>
+<div class="txt">TODO</div>
+<div class="lbl">Extended Error:</div><div class="txt">TODO</div>
+</section>
+<section id="BM102880"><a name="BM102880"></a>
+<h2>102880</h2>
+<div class="sym">ERROR: EM_XG2_AC2_SHOOT_THRU</div>
+<div class="txt">The %b XGA-AC2 is reporting a bus shoot thru fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102881"><a name="BM102881"></a>
+<h2>102881</h2>
+<div class="sym">ERROR: EM_XG2_AC2_NMI_FAULT</div>
+<div class="txt">The %b XGA-AC2 is reporting a non-maskable interrupt fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102882"><a name="BM102882"></a>
+<h2>102882</h2>
+<div class="sym">ERROR: EM_XG2_AC2_OVR_SR</div>
+<div class="txt">The %b XGA-AC2 is reporting an over-slew rate fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102883"><a name="BM102883"></a>
+<h2>102883</h2>
+<div class="sym">ERROR: EM_XG2_AC2_OVR_IREF</div>
+<div class="txt">The %b XGA-AC2 is reporting an over I-Ref Current fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102884"><a name="BM102884"></a>
+<h2>102884</h2>
+<div class="sym">ERROR: EM_XG2_AC2_NULL_IERR</div>
+<div class="txt">The %b XGA-AC2 is reporting an I error null fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102885"><a name="BM102885"></a>
+<h2>102885</h2>
+<div class="sym">ERROR: EM_XG2_AC2_V_DIDT</div>
+<div class="txt">The %b XGA-AC2 is reporting a feed forward voltage maxed fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102886"><a name="BM102886"></a>
+<h2>102886</h2>
+<div class="sym">ERROR: EM_XG2_AC2_VREG_SAT</div>
+<div class="txt">The %b XGA-AC2 is reporting a voltage regulator saturation fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102887"><a name="BM102887"></a>
+<h2>102887</h2>
+<div class="sym">ERROR: EM_XG2_AC2_IERR_SAT</div>
+<div class="txt">The %b XGA-AC2 is reporting an I error regulator saturation fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102888"><a name="BM102888"></a>
+<h2>102888</h2>
+<div class="sym">ERROR: EM_XG2_AC2_IERR_INTG_SAT</div>
+<div class="txt">The %b XGA-AC2 is reporting an I error integrator saturation fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102889"><a name="BM102889"></a>
+<h2>102889</h2>
+<div class="sym">ERROR: EM_XG2_AC2_ICROSS_SAT</div>
+<div class="txt">The %b XGA-AC2 is reporting an I cross regulator saturation fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102890"><a name="BM102890"></a>
+<h2>102890</h2>
+<div class="sym">ERROR: EM_XG2_AC2_ICROSS_INTG_SAT</div>
+<div class="txt">The %b XGA-AC2 is reporting an I cross integrator saturation fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102891"><a name="BM102891"></a>
+<h2>102891</h2>
+<div class="sym">ERROR: EM_XG2_AC2_MIS_INT4</div>
+<div class="txt">The %b XGA-AC2 is reporting a DSP missed Int4 interrupt fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102892"><a name="BM102892"></a>
+<h2>102892</h2>
+<div class="sym">ERROR: EM_XG2_AC2_LATE_PWM</div>
+<div class="txt">The %b XGA-AC2 is reporting a late PWM command to FPGA from DSP relative to int4 fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102893"><a name="BM102893"></a>
+<h2>102893</h2>
+<div class="sym">ERROR: EM_XG2_AC2_BAD_LINK</div>
+<div class="txt">The %b XGA-AC2 is reporting a communication issue with the DSP.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102894"><a name="BM102894"></a>
+<h2>102894</h2>
+<div class="sym">ERROR: EM_XG2_AC2_NULL_ICOIL</div>
+<div class="txt">The %b XGA-AC2 is reporting an I coil null fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102895"><a name="BM102895"></a>
+<h2>102895</h2>
+<div class="sym">ERROR: EM_XG2_AC2_ICOIL_OVR</div>
+<div class="txt">The %b XGA-AC2 is reporting an I coil over current fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102896"><a name="BM102896"></a>
+<h2>102896</h2>
+<div class="sym">ERROR: EM_XG2_AC2_NULL_ICROSS</div>
+<div class="txt">The %b XGA-AC2 is reporting an I cross null fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102897"><a name="BM102897"></a>
+<h2>102897</h2>
+<div class="sym">ERROR: EM_XG2_AC2_ICROSS_OVR</div>
+<div class="txt">The %b XGA-AC2 is reporting an I cross over current fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102898"><a name="BM102898"></a>
+<h2>102898</h2>
+<div class="sym">ERROR: EM_XG2_AC2_ICOIL_MC</div>
+<div class="txt">The %b XGA-AC2 is reporting an I coil misconnect fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This fault indicates that the I coil current transducer is placed backwards. Correctly wire the current transducer and TPS reset.</div>
+</section>
+<section id="BM102899"><a name="BM102899"></a>
+<h2>102899</h2>
+<div class="sym">ERROR: EM_XG2_AC2_ICROSS_MC</div>
+<div class="txt">The %b XGA-AC2 is reporting an I cross misconnect fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This fault indicates that the I cross current transducer is placed backwards. The XGA should be replaced.</div>
+</section>
+<section id="BM102900"><a name="BM102900"></a>
+<h2>102900</h2>
+<div class="sym">ERROR: EM_XG2_AC2_UNBAL_LV</div>
+<div class="txt">The %b XGA-AC2 is reporting an unbalanced LV0 and LV90 bus fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102901"><a name="BM102901"></a>
+<h2>102901</h2>
+<div class="sym">ERROR: EM_XG2_AC2_DSP_WD</div>
+<div class="txt">The %b XGA-AC2 is reporting an DSP watch dog timeout fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XGA should be replaced.</div>
+</section>
+<section id="BM102902"><a name="BM102902"></a>
+<h2>102902</h2>
+<div class="sym">ERROR: EM_XG2_PC2_UT</div>
+<div class="txt">The %b XPS is reporting a PC2 undertemperature fault. The PC2 board temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Cycle power and perform a TPS reset. If the error persists, replace the XPS.</div>
+</section>
+<section id="BM102903"><a name="BM102903"></a>
+<h2>102903</h2>
+<div class="sym">ERROR: EM_XG2_PS_GD_UC</div>
+<div class="txt">The %b XPS is reporting a Gate Drive under current.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Perform a TPS reset, if issue persists, replace the XPS.</div>
+</section>
+<section id="BM102904"><a name="BM102904"></a>
+<h2>102904</h2>
+<div class="sym">ERROR: EM_XG2_PS_BB_UT</div>
+<div class="txt">The %b XPS is reporting a Bus Bar undertemperature fault. The Bus Bar board temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Cycle power and perform a TPS reset. If error persists, replace the XPS.</div>
+</section>
+<section id="BM102905"><a name="BM102905"></a>
+<h2>102905</h2>
+<div class="sym">ERROR: EM_XG2_PS_ICNTRL_UC</div>
+<div class="txt">The %b XPS is reporting a PC2 under current.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Perform a TPS reset, if issue persists, replace the XPS.</div>
+</section>
+<section id="BM102906"><a name="BM102906"></a>
+<h2>102906</h2>
+<div class="sym">ERROR: EM_XG2_PS_OCT_WF</div>
+<div class="txt">The %b XPS is reporting an Octavius Cable Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the Octavius cable is properly connected. If the error persists after a TPS reset, swap Octavius cables between two axis. After a TPS reset, if the fault remains on the same axis ID, replace the cable. If the fault appears on a new axis ID, replace the XPS connected to the cable of the reporting axis ID.</div>
+</section>
+<section id="BM102907"><a name="BM102907"></a>
+<h2>102907</h2>
+<div class="sym">ERROR: EM_XG2_PS_BB_OT</div>
+<div class="txt">The %b XPS is reporting a bus-bar board over-temperature. The bus-bar board temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that all fans in the fan tray are running and verify there are no air-flow obstructions above and below the XPS. Also check that the room temperature is within spec. If no issues are found, replace the XPS.</div>
+</section>
+<section id="BM102908"><a name="BM102908"></a>
+<h2>102908</h2>
+<div class="sym">ERROR: EM_XG2_PS_CP_OT</div>
+<div class="txt">The %b XPS is reporting a cold plate over-temperature. The cold-plate temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the coolant supply and return lines are connected to the XPS and that the HEC pump for the gradient cooling is on. Also verify the coolant temperature at the HEC is within spec. If no issues are found, replace the XPS.</div>
+</section>
+<section id="BM102909"><a name="BM102909"></a>
+<h2>102909</h2>
+<div class="sym">ERROR: EM_XG2_PS_CP_UT</div>
+<div class="txt">The %b XPS is reporting a cold plate undertemperature fault. The cold plate temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the HEC coolant temperature is within the operating spec and perform a TPS reset. If the issue persists, replace the XPS.</div>
+</section>
+<section id="BM102910"><a name="BM102910"></a>
+<h2>102910</h2>
+<div class="sym">ERROR: EM_XG2_PS_GD_OT</div>
+<div class="txt">The %b XPS is reporting a gate drive over-temperature. The gate drive temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure that the Power Cabinet fan trays above the XPS are connected and that there are no obstructions above and below the XPS restricting air flow. Ensure that the equipment room temperature is within specification. If fans and room temperature are OK then replace XPS.</div>
+</section>
+<section id="BM102911"><a name="BM102911"></a>
+<h2>102911</h2>
+<div class="sym">ERROR: EM_XG2_PS_GD_UT</div>
+<div class="txt">The %b XPS is reporting a gate drive undertemperature fault. The gate drive temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the room temperature is within the operating spec and perform a TPS reset. If the issue persists, replace the XPS.</div>
+</section>
+<section id="BM102912"><a name="BM102912"></a>
+<h2>102912</h2>
+<div class="sym">ERROR: EM_XG2_PS_SFP_FAULT</div>
+<div class="txt">The %b XPS is reporting an SFP Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure the dual-fiber optic cable is connected to the failing XPS, light is present on XPS SFP transceiver module, and that the SFP module is seated properly in the XPS. If issue persists after a TPS reset, swap the SFP module with another axis. If the error is reported on a different axis after a TPS reset, replace the SFP module. If the error remains on the same axis, swap fiber optic cables. If the error is reported on a different axis after a TPS reset, replace the cable. If the error remains on the same axis, replace the XPS.</div>
+</section>
+<section id="BM102913"><a name="BM102913"></a>
+<h2>102913</h2>
+<div class="sym">ERROR: EM_XG2_PS_INT4_FAULT</div>
+<div class="txt">The %b XPS is reporting an Int4_Lock Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure that the dual-fiber cable is secured into the SFP and cannot be removed by pulling on it. Ensure that light is visible from both ends of the dual-fiber cable. SFP transceiver modules can be swapped for troubleshooting.</div>
+</section>
+<section id="BM102914"><a name="BM102914"></a>
+<h2>102914</h2>
+<div class="sym">ERROR: EM_XG2_PS_LINK_COMM_ERR</div>
+<div class="txt">The %b XPS is reporting a fiber link communications failure.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure that dual-fiber optic cable from XPS SFP transceiver module is connected to the IXG SFP transceiver module. The SFP transceiver modules can be swapped between units for troubleshooting. Check that the cable is properly seated and does not have an extremely tight bend radius in the cable routing.</div>
+</section>
+<section id="BM102915"><a name="BM102915"></a>
+<h2>102915</h2>
+<div class="sym">ERROR: EM_XG2_PS_GDSB_FAULT</div>
+<div class="txt">The %b XPS is reporting a gate-drive power failure %sV %b.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XPS should be replaced.</div>
+</section>
+<section id="BM102916"><a name="BM102916"></a>
+<h2>102916</h2>
+<div class="sym">ERROR: EM_XG2_PS_ONBOARD_FAULT</div>
+<div class="txt">The %b XPS is reporting a PC2 power %sV %b.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a TPS reset the XPS should be replaced.</div>
+</section>
+<section id="BM102917"><a name="BM102917"></a>
+<h2>102917</h2>
+<div class="sym">ERROR: EM_XG2_PS_LV_OC</div>
+<div class="txt">The %b XPS is reporting a Low Voltage I-Bus Over-current Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the power cables between the XPS and XGA to ensure connection is tight. Perform a TPS and reset and repeat the scan. If issue persists, the XPS pair of power cables may be moved to a neighboring axis. If the fault moves to the new XPS, replace the XGA. If the fault remains on the same XPS axis, replace the failing XPS.</div>
+</section>
+<section id="BM102918"><a name="BM102918"></a>
+<h2>102918</h2>
+<div class="sym">ERROR: EM_XG2_PS_HV_OC</div>
+<div class="txt">The %b XPS is reporting a High Voltage I-Bus Over-current Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the power cables between the XPS and XGA to ensure connection is tight. Perform a TPS and reset and repeat the scan. If issue persists, the XPS side of power cables may be moved to a neighboring axis. If the fault moves to the new XPS, replace the XGA. If the fault remains on the same XPS axis, replace the failing XPS.</div>
+</section>
+<section id="BM102919"><a name="BM102919"></a>
+<h2>102919</h2>
+<div class="sym">ERROR: EM_XG2_PS_GD_OC</div>
+<div class="txt">The %b XPS is reporting a gate-drive over-current</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after TPS resets, the corresponding XPS should be replaced.</div>
+</section>
+<section id="BM102920"><a name="BM102920"></a>
+<h2>102920</h2>
+<div class="sym">ERROR: EM_XG2_PS_RECT_OT</div>
+<div class="txt">The %b XPS is reporting a Rectifier board over-temperature fault. The Rectifier board temperature is %dC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure that the Power Cabinet fan trays above the XPS are connected and that there are no obstructions above and below the XPS restricting air flow. Ensure that the equipment room temperature is within specification. If fans and room temperature are OK then replace XPS.</div>
+</section>
+<section id="BM102921"><a name="BM102921"></a>
+<h2>102921</h2>
+<div class="sym">ERROR: EM_XG2_PS_CONT_OL</div>
+<div class="txt">The %b XPS is reporting a Continuous Overload Fault. Increase TR to reduce the DC power draw on the XPS.</div>
+</section>
+<section id="BM102922"><a name="BM102922"></a>
+<h2>102922</h2>
+<div class="sym">ERROR: EM_XG2_PS_LONGTERM_CONT_OL</div>
+<div class="txt">The %b XPS is reporting a Long-term Continuous Overload Fault. A TPS Reset is required to recover. Increase TR to reduce the DC power draw on the XPS.</div>
+</section>
+<section id="BM102923"><a name="BM102923"></a>
+<h2>102923</h2>
+<div class="sym">ERROR: EM_XG2_PS_IBUS_IN_OC</div>
+<div class="txt">The %b XPS is reporting an input bus over-current.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this reported on all axis then check incoming AC power phases. If only on one axis then turn off 420V power and swap XPS 420V power connector locations at top of PDU. Apply power and confirm same XPS continues to report fault condition. Perform a TPS Reset. If the fault persists on same XPS after TPS Reset and power connection swap then XPS should be replaced.</div>
+</section>
+<section id="BM102924"><a name="BM102924"></a>
+<h2>102924</h2>
+<div class="sym">ERROR: EM_XG2_PS_ICNTRL_OC</div>
+<div class="txt">The %b XPS is reporting a PC2 over-current.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this message persists after a power-cycle and TPS reset, the XPS should be replaced.</div>
+</section>
+<section id="BM102925"><a name="BM102925"></a>
+<h2>102925</h2>
+<div class="sym">ERROR: EM_XG2_PS_LV_OV</div>
+<div class="txt">The %b XPS is reporting an LV-Bus over-voltage fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Perform a TPS and repeat the scan. If the issue persists, replace the XPS.</div>
+</section>
+<section id="BM102926"><a name="BM102926"></a>
+<h2>102926</h2>
+<div class="sym">ERROR: EM_XG2_PS_HV_OV</div>
+<div class="txt">The %b XPS is reporting an HV-Bus over-voltage fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the power cables between the XPS and XGA to ensure connection is tight. Perform a TPS reset and repeat the scan. If issue persists, the XPS side of power cables may be moved to a neighboring axis. If the fault moves to the new XPS, replace the XGA. If the fault remains on the same XPS axis, swap power cables with a known good set of cables and perform a TPS reset. If the fault moves to another axis using the old cables, or is no longer reported after completing a scan, replace the cables. If the fault remains on the same axis, replace the failing XPS.</div>
+</section>
+<section id="BM102927"><a name="BM102927"></a>
+<h2>102927</h2>
+<div class="sym">ERROR: EM_XG2_PS_PRI_OC</div>
+<div class="txt">The %b XPS is reporting an input power Primary over-current fault. Try increasing scan TR to lower the DC power draw out of the XPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the power cables between the XPS and XGA to ensure connection is tight. Perform a TPS reset and repeat the scan. If issue persists, the XPS side of power cables may be moved to a neighboring axis. If the fault moves to the new XPS, replace the XGA. If the fault remains on the same XPS axis, swap power cables with a known good set of cables and perform a TPS reset. If the fault moves to another axis using the old cables, or is no longer reported after completing a scan, replace the cables. If the fault remains on the same axis, replace the failing XPS.</div>
+</section>
+<section id="BM102928"><a name="BM102928"></a>
+<h2>102928</h2>
+<div class="sym">ERROR: EM_XG2_PS_PRI_AVG_OC</div>
+<div class="txt">The %b XPS is reporting an input power Primary Average Over-current fault. Try increasing scan TR to lower the DC power draw out of the XPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the power cables between the XPS and XGA to ensure connection is tight. Perform a TPS reset and repeat the scan. If issue persists, the XPS side of power cables may be moved to a neighboring axis. If the fault moves to the new XPS, replace the XGA. If the fault remains on the same XPS axis, swap power cables with a known good set of cables and perform a TPS reset. If the fault moves to another axis using the old cables, or is no longer reported after completing a scan, replace the cables. If the fault remains on the same axis, replace the failing XPS.</div>
+</section>
+<section id="BM102929"><a name="BM102929"></a>
+<h2>102929</h2>
+<div class="sym">ERROR: EM_XG2_PS_LV_UV</div>
+<div class="txt">The %b XPS is reporting an LV-Bus Under-voltage Warning.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Look for error messages relating to input power to the XPS. If error occurs on widebore Z axis, verify the Z axis is wired with 2/0 AWG cable at both the PGR cabinet and the magnet. An output current limiter on the XPS may also cause the bus voltage to drop. Lowering the TR of the scan, may eliminate issue.</div>
+</section>
+<section id="BM102930"><a name="BM102930"></a>
+<h2>102930</h2>
+<div class="sym">ERROR: EM_XG2_PS_HV_UV</div>
+<div class="txt">The %b XPS is reporting an HV-Bus Under-voltage Warning.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Look for error messages relating to input power to the XPS.</div>
+</section>
+<section id="BM102931"><a name="BM102931"></a>
+<h2>102931</h2>
+<div class="sym">ERROR: EM_XG2_PS_VOLT_UNBALANCE</div>
+<div class="txt">The %b XPS is reporting a VBus Unbalanced Warning.</div>
+</section>
+<section id="BM102932"><a name="BM102932"></a>
+<h2>102932</h2>
+<div class="sym">ERROR: EM_XG2_PS_GD_WF</div>
+<div class="txt">The %b XPS is reporting a gate-drive wire fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The XPS has detected a bad cable and the XPS should be replaced.</div>
+</section>
+<section id="BM102933"><a name="BM102933"></a>
+<h2>102933</h2>
+<div class="sym">ERROR: EM_XG2_PC3_BOARD</div>
+<div class="txt">XG2 PC3 board</div>
+</section>
+<section id="BM102934"><a name="BM102934"></a>
+<h2>102934</h2>
+<div class="sym">ERROR: EM_XG2_HWO_COM_FAILURE</div>
+<div class="txt">Unexpected communication loss with XG2 Gradient Subsystem. Please TPS reset and try again. If this error occurs again, contact your service representative</div>
+<div class="lbl">Extended Error:</div><div class="txt">The SCP unexpectedly lost its Ethernet connection to the XG2.
+* Verify that an Ethernet cable is connected from the IXG to the switch and that the link LED on the IXG Ethernet port is illuminated (top LED).
+* Verify that an Ethernet cable is connected from the SCP to the switch and that the link LED on the SCP Ethernet port is illuminated (top LED).
+* Power down the MGD chassis and verify that SCP and the IXG are seated securely in their corresponding slot by removing and re-seating it. Power on the MGD chassis and perform a TPS reset.</div>
+</section>
+<section id="BM102935"><a name="BM102935"></a>
+<h2>102935</h2>
+<div class="sym">ERROR: EM_AC2X</div>
+<div class="txt">AC2(X-axis)</div>
+</section>
+<section id="BM102936"><a name="BM102936"></a>
+<h2>102936</h2>
+<div class="sym">ERROR: EM_AC2Y</div>
+<div class="txt">AC2(Y-axis)</div>
+</section>
+<section id="BM102937"><a name="BM102937"></a>
+<h2>102937</h2>
+<div class="sym">ERROR: EM_AC2Z</div>
+<div class="txt">AC2(Z-Axis)</div>
+</section>
+<section id="BM102938"><a name="BM102938"></a>
+<h2>102938</h2>
+<div class="sym">ERROR: EM_IXG</div>
+<div class="txt">IXG</div>
+</section>
+<section id="BM102939"><a name="BM102939"></a>
+<h2>102939</h2>
+<div class="sym">ERROR: EM_PC2X</div>
+<div class="txt">PC2(X-Axis)</div>
+</section>
+<section id="BM102940"><a name="BM102940"></a>
+<h2>102940</h2>
+<div class="sym">ERROR: EM_PC2Y</div>
+<div class="txt">PC2(Y-Axis)</div>
+</section>
+<section id="BM102941"><a name="BM102941"></a>
+<h2>102941</h2>
+<div class="sym">ERROR: EM_PC2Z</div>
+<div class="txt">PC2(Z-Axis</div>
+</section>
+<section id="BM102942"><a name="BM102942"></a>
+<h2>102942</h2>
+<div class="sym">ERROR: EM_XG2_IXG_BOOT_FAILURE_SAFE</div>
+<div class="txt">Safe mode startup of the XG2 (IXG) failed. Perform a TPS reset and if this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The IXG board in XG2 failed to boot into safe mode.
+* Verify that the XG2 is powered on.
+* Verify that an Ethernet cable is connected from the IXG to the switch and that the link LED on the IXG Ethernet port is illuminated (top LED).
+* Power down the XG2 and the MGD chassis and verify that the IXG is seated securely in its slot by removing and re-seating it. Power on the XG2 and the MGD chassis and perform a TPS reset. If these steps do not resolve the problem, replace the IXG and perform a TPS reset.</div>
+</section>
+<section id="BM102943"><a name="BM102943"></a>
+<h2>102943</h2>
+<div class="sym">ERROR: EM_XG2_IXG_PIFF_LOAD_FAILURE</div>
+<div class="txt">Application update of the XGD (IXG) failed. Perform a TPS reset and if this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The IXG board in XG2 failed to load its PIFF files properly.
+* Verify that the XG2 is powered on.
+* Verify that an Ethernet cable is connected from the IXG to the switch and that the link LED on the IXG Ethernet port is illuminated (top LED).
+* Power down the MGD chassis and verify that the IXG is seated securely in its slot by removing and re-seating it. Power on the MGD chassis and perform a TPS reset. If these steps do not resolve the problem, replace the GMC and perform a TPS reset.</div>
+</section>
+<section id="BM102944"><a name="BM102944"></a>
+<h2>102944</h2>
+<div class="sym">ERROR: EM_XG2_IXG_BOOT_FAILURE_APP</div>
+<div class="txt">Appliation mode startup of the XG2 (IXG) failed. Perform a TPS reset and if this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The IXG board in XG2 failed to boot into application mode.
+* Verify that the XG2 IXG PIFF files on the host are not corrupted.
+* Verify that the XG2 IXG PIFF file revisions on the host are the proper revision for this release. Check the error log for revision mismatches.</div>
+</section>
+<section id="BM102945"><a name="BM102945"></a>
+<h2>102945</h2>
+<div class="sym">ERROR: EM_XG2_AC2_BOOT_FAILURE_SAFE</div>
+<div class="txt">Safe mode startup of the XG2 (AC2) failed. Perform a TPS reset and if this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The AC2 board in XG2 failed to boot into safe mode.
+* Verify that the XG2 is powered on.
+* Power down the XG2. After 10 seconds power on the XG2 and perform a TPS reset. If these steps do not resolve the problem, replace the AC2 and perform a TPS reset.</div>
+</section>
+<section id="BM102946"><a name="BM102946"></a>
+<h2>102946</h2>
+<div class="sym">ERROR: EM_XG2_AC2_PIFF_LOAD_FAILURE</div>
+<div class="txt">Application update of the XG2 (AC2) failed. Perform a TPS reset and if this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The AC2 board in XG2 failed to load its PIFF files or to restart in application mode.
+* Verify that the XG2 is powered on.
+* Verify that the XG2 AC2 PIFF files exist and are not corrupted (/tftpboot/xg2/).
+* Verify that the XG2 AC2 PIFF files on the host have the right permissions (444).
+* Power down the XG2. After 10 seconds power on the XG2 and perform a TPS reset. If these steps do not resolve the problem, replace the AC2 and perform a TPS reset.</div>
+</section>
+<section id="BM102947"><a name="BM102947"></a>
+<h2>102947</h2>
+<div class="sym">ERROR: EM_XG2_AC2_BOOT_FAILURE_APP</div>
+<div class="txt">Appliation mode startup of the XG2 (AC2) failed. Perform a TPS reset and if this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The AC2 board in XG2 failed to boot into application mode.
+* Verify that the XG2 AC2 PIFF files exist and are not corrupted (/tftpboot/xg2/).
+* Verify that the XG2 AC2 PIFF files on the host have the right permissions (444).
+* Verify that the XG2 AC2 PIFF file revisions on the host are the proper revision for this release. Check the error log for revision mismatches.</div>
+</section>
+<section id="BM102948"><a name="BM102948"></a>
+<h2>102948</h2>
+<div class="sym">ERROR: EM_XG2_PC2_BOOT_FAILURE_SAFE</div>
+<div class="txt">Safe mode startup of the XG2 (PC2) failed. Perform a TPS reset and if this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The PC2 board in XG2 failed to boot into safe mode.
+* Verify that the XG2 is powered on.
+* Power down the XG2. After 10 seconds power on the XG2 and perform a TPS reset. If these steps do not resolve the problem, replace the XPS-CB and perform a TPS reset.</div>
+</section>
+<section id="BM102949"><a name="BM102949"></a>
+<h2>102949</h2>
+<div class="sym">ERROR: EM_XG2_PC2_PIFF_LOAD_FAILURE</div>
+<div class="txt">Application update of the XG2 (PC2) failed. Perform a TPS reset and if this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The PC2 board in XG2 failed to load its PIFF files or to restart in application mode.
+* Verify that the XG2 is powered on.
+* Verify that the XG2 PC2 PIFF files exist and are not corrupted (/tftpboot/xg2/).
+* Verify that the XG2 PC2 PIFF files on the host have the right permissions (444).
+* Power down the XG2. After 10 seconds power on the XG2 and perform a TPS reset. If these steps do not resolve the problem, replace the XPS-CB and perform a TPS reset.</div>
+</section>
+<section id="BM102950"><a name="BM102950"></a>
+<h2>102950</h2>
+<div class="sym">ERROR: EM_XG2_PC2_BOOT_FAILURE_APP</div>
+<div class="txt">Appliation mode startup of the XG2 (PC2) failed. Perform a TPS reset and if this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The XPS-CB board in XGD failed to boot into application mode.
+* Verify that the XG2 AC2 PIFF files exist and are not corrupted (/tftpboot/xg2/).
+* Verify that the XG2 AC2 PIFF files on the host have the right permissions (444).
+* Verify that the XG2 AC2 PIFF file revisions on the host are the proper revision for this release. Check the error log for revision mismatches.</div>
+</section>
+<section id="BM102951"><a name="BM102951"></a>
+<h2>102951</h2>
+<div class="sym">ERROR: EM_XG2_SOCKET_FAILURE</div>
+<div class="txt">Unable to communicate with XG2 Gradient Subsystem. Perform a TPS reset and if this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The SCP was unable to establish an Ethernet connection to the XG2.
+* Verify that an Ethernet cable is connected from the IXG to the switch and that the link LED on the IXG Ethernet port is illuminated (top LED).
+* Verify that an Ethernet cable is connected from the SCP to the switch and that the link LED on the SCP Ethernet port is illuminated (top LED).
+* Power down the XG2 and the MGD chassis and verify that SCP and the IXG is seated securely in its slot by removing them and re-seating them. Power on the XG2 and MGD chassis and perform a TPS reset.</div>
+</section>
+<section id="BM102952"><a name="BM102952"></a>
+<h2>102952</h2>
+<div class="sym">ERROR: EM_XG2_BOOT_FAILED_NO_DVMR_LINK</div>
+<div class="txt">The XG2 failed to start properly because the DVMR link is not functioning.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that the clock cable from the exciter is attached to the IXG and is generating a clock signal.</div>
+</section>
+<section id="BM102953"><a name="BM102953"></a>
+<h2>102953</h2>
+<div class="sym">ERROR: EM_XG2_STARTUP_FAULT</div>
+<div class="txt">An error on the XG2 has prevented TPS reset from completing successfully. Please review the log for XG2 faults to determine the cause and action(s) to take. Perform another TPS reset and if this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If no XG2 specific faults are available, try the following steps:
+* Verify that the 420 volt circuit breaker on the PDU is on.
+* Verify that the transeiver from the exciter to the IXG clock input is good.
+* Verify that the clock fiberoptic cable form the exiter to the IXG is good.
+* Power down the MGD chassis and verify that the IXG is seated securely in its slot by removing and re-seating the board. Power on the MGD chassis and perform a TPS reset.
+* Power down the XG2 (48V), wait 10 seconds and power back on. Perform TPS reset.</div>
+</section>
+<section id="BM102954"><a name="BM102954"></a>
+<h2>102954</h2>
+<div class="sym">ERROR: EM_GRAD_CONFIG_SCP_IP_NOTFOUND</div>
+<div class="txt">XG2 cannot find SCP board. This will prevent TPS reset from passing. Perform another TPS reset and if this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The host is not able to detect the SCP:
+* Double check that the SCP is connected to the switch.
+* Power down the MGD Chassis and reposition the SCP. Power up the CAM chassis and perform TPS reset.
+* Double check that the host has a Network connection.
+* Double check that Guided Install is set up correctly.</div>
+</section>
+<section id="BM102955"><a name="BM102955"></a>
+<h2>102955</h2>
+<div class="sym">ERROR: EM_GRAD_CONFIG_IP_FAILED</div>
+<div class="txt">Gradients Failed to set the IP address. Perform another TPS reset and if this error occurs again, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The host is not able to detect the SCP:
+* Double check that the SCP is connected to the switch.
+* Power down the MGD Chassis and reposition the SCP. Power up the CAM chassis and perform TPS reset.
+* Double check that the host has a Network connection.
+* Double check that Guided Install is set up correctly.</div>
+</section>
+<section id="BM102956"><a name="BM102956"></a>
+<h2>102956</h2>
+<div class="sym">ERROR: EM_GRAD_CONFIG_FAILED</div>
+<div class="txt">Gradient Autoconfig Failed to configure Gradient Subsystem. Perform a host restart, contact your service representative.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The host is not able to detect the SCP:
+* Double check that Guided Install is set up correctly.</div>
+</section>
+<section id="BM102957"><a name="BM102957"></a>
+<h2>102957</h2>
+<div class="sym">ERROR: EM_XG2_IXG_REF_CLOCK_STOP</div>
+<div class="txt">The IXG is reporting a reference clock-stop.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the IXG end of the REF CLK fiber optic cable has light. If there is no light on the IXG end of the cable, check the exciter. If light is present, verify the cable is properly connected and perform a TPS reset. If the issue persists, check the exciter.</div>
+</section>
+<section id="BM102958"><a name="BM102958"></a>
+<h2>102958</h2>
+<div class="sym">ERROR: EM_XG2_IXG_INTERNAL_DVMR_LINK_FAIL</div>
+<div class="txt">The IXG internal DVMR link is down.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an interal communication link that cannot be debugged. If the link does not come up after a TPS reset, replace the IXG.</div>
+</section>
+<section id="BM102959"><a name="BM102959"></a>
+<h2>102959</h2>
+<div class="sym">ERROR: EM_XG2_IXG_AXIS2G_AC2_LINK_DOWN</div>
+<div class="txt">The IXG is reporting %b AC2 Axis2G link is down</div>
+<div class="lbl">Extended Error:</div><div class="txt">The following troubleshooting techniques can be used:
+- Swap SFP transceivers between XGA units and perform a TPS reset. If error message is reported on a new axis, replace the SFP.
+- Swap SFP transceivers between two XGA channels on the IXG side of the link and perform a TPS reset. If the error message is reported on a new axis, replace the SFP.
+- Unplug dual-fiber cable on each side of the link, one side at a time and verify there is light. If no light is present on the transmit side of the cbale, replace the cable.
+- Cycle gradient power and perform a TPS reset. If the error persists, replace the XGA.</div>
+</section>
+<section id="BM102960"><a name="BM102960"></a>
+<h2>102960</h2>
+<div class="sym">ERROR: EM_XG2_IXG_AXIS2G_PC2_LINK_DOWN</div>
+<div class="txt">The IXG is reporting %b PC2 Axis2G link is down</div>
+<div class="lbl">Extended Error:</div><div class="txt">The following troubleshooting techniques can be used:
+- Swap SFP transceivers between XPS units and perform a TPS reset. If error message is reported on a new axis, replace the SFP.
+- Swap SFP transceivers between two XPS channels on the IXG side of the link and perform a TPS reset. If the error message is reported on a new axis, replace the SFP.
+- Unplug dual-fiber cable on each side of the link, one side at a time and verify there is light. If no light is present on the transmit side of the cbale, replace the cable.
+- Cycle gradient power and perform a TPS reset. If the error persists, replace the XPS.&quot;</div>
+</section>
+<section id="BM102961"><a name="BM102961"></a>
+<h2>102961</h2>
+<div class="sym">ERROR: EM_XG2_AXIS2G_IXG_TO_AC2_LINK_SFP_NOT_PRESENT</div>
+<div class="txt">The IXG is reporting %b AC2 to IXG Axis2G link SFP module is missing at the IXG</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the SFP module and make sure it is properly connected. If the SFP is properly connected, swap the SFP with another IXG SFP module and perform a TPS reset. If the error message is reported on a new axis, replace the SFP module. If the error message is reported on the same axis, cycle power to the IXG and perform a TPS reset. If ther error persists, replace the IXG.</div>
+</section>
+<section id="BM102962"><a name="BM102962"></a>
+<h2>102962</h2>
+<div class="sym">ERROR: EM_XG2_AXIS2G_IXG_TO_PC2_LINK_SFP_NOT_PRESENT</div>
+<div class="txt">The IXG is reporting %b PC2 to IXG Axis2G link SFP module is missing at the IXG</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the SFP module and make sure it is properly connected. If the SFP is properly connected, swap the SFP with another IXG SFP module and perform a TPS reset. If the error message is reported on a new axis, replace the SFP module. If the error message is reported on the same axis, cycle power to the IXG and perform a TPS reset. If ther error persists, replace the IXG.</div>
+</section>
+<section id="BM102963"><a name="BM102963"></a>
+<h2>102963</h2>
+<div class="sym">ERROR: EM_XG2_AXIS2G_ALL_LINK_DOWN</div>
+<div class="txt">All of the power supply and amplifier Axis2G links are down, perform a TPS reset.</div>
+<div class="lbl">Extended Error:</div><div class="txt">- Check the 48V circuit breaker for 48V power and press the EMO reset button.
+- Check the 48V power supply, verify the 48V power cables are properly connected.
+- Check that all the dual-fiber cables are connected between the IXG and the XGA and XPS units.
+- Check the LEDs on the XGA and XPS units, if none of the LEDs are lit, check teh 48V power supply in the PDU.</div>
+</section>
+<section id="BM102964"><a name="BM102964"></a>
+<h2>102964</h2>
+<div class="sym">ERROR: EM_XG2_AXIS2G_LINK_DOWN_ON_SINGLE_AXIS</div>
+<div class="txt">The PC2 and AC2 %b Axis2G links are down on a single axis.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the Axis2G link LEDs on the IXG. If fault LEDs are displayed for both the XPS and XGA of the same axis, check the 48V power on the XPS and XGA by checking the front panel LEDs. If all LEDs are off, there is no power to the XPS and XGA. If the XPS and XGA have no power, check that the 48V power cable is connected from the PDU to the XPS and from the XPS to the XGA. If the front panel LEDs of the XPS and XGA are lit, check the dual-fiber cables and SFP modules at the XPS/XGA and the IXG. Dual-fiber cables and transceiver modules may be swapped to try and isolate the failure.</div>
+</section>
+<section id="BM102965"><a name="BM102965"></a>
+<h2>102965</h2>
+<div class="sym">ERROR: EM_XG2_IXG_INTERNAL_CLOCK_MISMATCH</div>
+<div class="txt">The IXG is reporting an internal clock mismatch, perform a TPS reset.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal IXG fault that cannot be debugged. If a TPS reset does not resolve this issue, cycle power and perform a TPS reset again. If issue persists, replace the IXG</div>
+</section>
+<section id="BM102966"><a name="BM102966"></a>
+<h2>102966</h2>
+<div class="sym">ERROR: EM_XG2_IXG_BOARD_TEMPERATURE_WARNING</div>
+<div class="txt">AN IXG board temperature warning has been generated.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the CAM chassis fan is running and check for any obstructions of air flow through the CAM chassis. If no issues are detected with air flow in the CAM chassis and a TPS reset does not fix the issue, replace the IXG.</div>
+</section>
+<section id="BM102967"><a name="BM102967"></a>
+<h2>102967</h2>
+<div class="sym">ERROR: EM_XG2_IXG_FPGA_TEMPERATURE_WARNING</div>
+<div class="txt">An IXG FPGA temperature warning has been generated.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the CAM chassis fan is running and check for any obstructions of air flow through the CAM chassis. If no issues are detected with air flow in the CAM chassis and a TPS reset does not fix the issue, replace the IXG.</div>
+</section>
+<section id="BM102968"><a name="BM102968"></a>
+<h2>102968</h2>
+<div class="sym">ERROR: EM_XG2_IXG_NO_REF_CLOCK_DETECTED</div>
+<div class="txt">The IXG has deteced the REF clock is missing. Perform a TPS reset to clear fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the REF clock fiber cable and verify light can be seen coming out of the cable. If no light is detected, check the exciter. If the exciter is ok, check for damage to fiber optic cable and verify the bend radius in the cable is not too tight. If light is detected coming from fiber optic cable, reseat cable and perform a TPS reset. If a TPS reset does not resolve issue, replace the IXG.</div>
+</section>
+<section id="BM102969"><a name="BM102969"></a>
+<h2>102969</h2>
+<div class="sym">ERROR: EM_XG2_AXIS_MISSING_IN_CONFIG</div>
+<div class="txt">A Gradient Amplifier/Power Supply pair for the %s was not identified in the configuration.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check fiberoptic connections to the given axis. Verify that the Octavius cable for the given device pair is correct and properly connected.</div>
+</section>
+<section id="BM102970"><a name="BM102970"></a>
+<h2>102970</h2>
+<div class="sym">ERROR: EM_XG2_AXIS_DUP_IN_CONFIG</div>
+<div class="txt">A Gradient Amplifier/Power Supply pair for the %s was found duplicated in the configuration.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the Octavius cables for the given axes are correct.</div>
+</section>
+<section id="BM102971"><a name="BM102971"></a>
+<h2>102971</h2>
+<div class="sym">ERROR: EM_XG2_DEVICE_INCORRECT_IN_CONFIG</div>
+<div class="txt">A %b for the %s was incorrectly identified in the configuration.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check fiberoptic connections to the given device. Verify that the Octavius cable for the device is correct and properly connected.</div>
+</section>
+<section id="BM102972"><a name="BM102972"></a>
+<h2>102972</h2>
+<div class="sym">ERROR: EM_XG2_IXG_USING_DEFAULT_MAC_ID</div>
+<div class="txt">The IXG is using the default MAC ID</div>
+<div class="lbl">Extended Error:</div><div class="txt">The MAC ID was not properly programmed during manufacture or this is a development board.</div>
+</section>
+</body></html>

@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2269000-2269999 (187)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2269000-2269999 (187)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2268000-2268999.html">&larr; 2268000-2268999</a><a href="ermes_2270000-2270999.html">2270000-2270999 &rarr;</a></nav></header>
+<section id="BM2269000"><a name="BM2269000"></a>
+<h2>2269000</h2>
+<div class="sym">ERROR: EM_ENVMON_DIAG_COORD_CONNECTION_ERR</div>
+<div class="txt">The Environmental Monitor failed to connect to the Diagnostic Coordinator. This error prevents status information from being collected and additional error information from being logged when a failure is detected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the log for additional information. System may need to be reboot.</div>
+</section>
+<section id="BM2269001"><a name="BM2269001"></a>
+<h2>2269001</h2>
+<div class="sym">ERROR: EM_1WIRE_IF_ENVMON_CONNECTION_ERR</div>
+<div class="txt">The 1-Wire Interface failed to connect to the Environmental Monitor process. This error prevents 1-Wire information from being collected and Environmental information from being collected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the log for additional information. System may need to be reboot.</div>
+</section>
+<section id="BM2269002"><a name="BM2269002"></a>
+<h2>2269002</h2>
+<div class="sym">ERROR: EM_ENVMON_FILE_OPEN_ERR</div>
+<div class="txt">Cannot write the lockout file to the disk. This prevents UIF from warning the user of potential out of tolerance environmental error conditions with the equipment. Host may need to be rebooted to clear this error.</div>
+</section>
+<section id="BM2269003"><a name="BM2269003"></a>
+<h2>2269003</h2>
+<div class="sym">ERROR: EM_ENVMON_RESPONSE_TMO_ERR</div>
+<div class="txt">The device listed below failed to respond in the given time. Monitoring of the device will be disabled.
+Name: %s
+ID: %d
+Instance: %d
+Last Response: %d S
+Retries: %d</div>
+</section>
+<section id="BM2269004"><a name="BM2269004"></a>
+<h2>2269004</h2>
+<div class="sym">ERROR: EM_ENVMON_TEST_WARNING_LEVEL_ERR</div>
+<div class="txt">The test device has exceeded the warning limits. \b\ This is a test message. Please ignore this.
+Instance: %d
+Parameter: %d
+Value: %5.2f %s Limit: %5.2f</div>
+</section>
+<section id="BM2269005"><a name="BM2269005"></a>
+<h2>2269005</h2>
+<div class="sym">ERROR: EM_ENVMON_TEST_LOCKOUT_LEVEL_ERR</div>
+<div class="txt">The test device has exceeded the lockout limits. \b\ This is a test message. Please ignore this.
+Instance: %d
+Parameter: %d
+Value: %5.2f %s Limit: %5.2f</div>
+</section>
+<section id="BM2269006"><a name="BM2269006"></a>
+<h2>2269006</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_NO_USB</div>
+<div class="txt">The 1-Wire Interface failed to find a USB device for the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This prevents Diagnostics and the UIF from using the 1-Wire Network to find problems in the system and from warning the user of potential out of tolerance environmental error conditions with the equipment. Verify the 1-Wire USB cable is connected to the host computer. After connecting USB cable, a TPS Reset may be necessary to enable the 1-Wire network.</div>
+</section>
+<section id="BM2269007"><a name="BM2269007"></a>
+<h2>2269007</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_NO_USB_ACCESS</div>
+<div class="txt">The 1-Wire Interface failed to access the USB device for the 1-Wire Network. The permissions on the USB Device, %s, may not be set correctly.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This prevents Diagnostics and the UIF from using the 1-Wire Network to find problems in the system and from warning the user of potential out of tolerance environmental error conditions with the equipment. Possible network access problem. After fixing problem, a TPS Reset may be necessary to enable the 1-Wire network.</div>
+</section>
+<section id="BM2269008"><a name="BM2269008"></a>
+<h2>2269008</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_CONFIG_FILE_OPEN_ERR</div>
+<div class="txt">The 1-Wire Interface failed to open the %s file on the disk.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This prevents Diagnostics and the UIF from using the 1-Wire Network to find problems in the system and from warning the user of potential out of tolerance environmental error conditions with the equipment. Possible file access problem. After fixing problem, a TPS Reset may be necessary to enable the 1-Wire network.</div>
+</section>
+<section id="BM2269009"><a name="BM2269009"></a>
+<h2>2269009</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_MAP_FILE_OPEN_ERR</div>
+<div class="txt">The 1-Wire Interface failed to open the %s file on the disk.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This prevents Diagnostics and the UIF from using the 1-Wire Network to find problems in the system and from warning the user of potential out of tolerance environmental error conditions with the equipment. Possible file access problem. After fixing problem, a TPS Reset may be necessary to enable the 1-Wire network.</div>
+</section>
+<section id="BM2269010"><a name="BM2269010"></a>
+<h2>2269010</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_MAP_FILE_ERR</div>
+<div class="txt">The 1-Wire Interface failed to create the %s file on the disk. Verify power to the PHPS and the status of the cable from the GOC to the PHPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This prevents Diagnostics and the UIF from using the 1-Wire Network to find problems in the system and from warning the user of potential out of tolerance environmental error conditions with the equipment. Verify power to the PHPS and the status of the cable from the GOC to the PHPS. See system block diagram if necessary. After fixing problem, a TPS Reset may be necessary to enable the 1-Wire network.</div>
+</section>
+<section id="BM2269011"><a name="BM2269011"></a>
+<h2>2269011</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_LOOKUP_ERR</div>
+<div class="txt">An unknown 1-Wire Device, %d, was queried from The 1-Wire Interface. This is most likely a software communications error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Host may need to be rebooted to clear this error.</div>
+</section>
+<section id="BM2269012"><a name="BM2269012"></a>
+<h2>2269012</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_NO_DS2480</div>
+<div class="txt">The Host could not communicate with the PHPS 1-Wire Network via the Host USB to serial converter.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify power to the PHPS and the status of the cable from the GOC to the PHPS. See system block diagram if necessary. The interface to the USB to serial converter is operational. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269013"><a name="BM2269013"></a>
+<h2>2269013</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_SWITCH_NOT_SET</div>
+<div class="txt">A 1-Wire Switch in the 1-Wire Network could not be set correctly to access a 1-Wire Device.
+Switch ID: %X
+Requested Device: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify power to hardware. Most likely a hardware fault. The Switch was working correctly during the last TPS Reset.</div>
+</section>
+<section id="BM2269014"><a name="BM2269014"></a>
+<h2>2269014</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_MAP_FILE_DATA_ERR</div>
+<div class="txt">A 1-Wire Switch, %s, is not in the proper format in the map file.
+Possible corrupted file: %s.</div>
+<div class="lbl">Extended Error:</div><div class="txt">TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269015"><a name="BM2269015"></a>
+<h2>2269015</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_DEVICE_READ_ERR</div>
+<div class="txt">The information in the 1-Wire Device, %s, could not be successfully read. Verify the connections on the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Possible hardware failure. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269016"><a name="BM2269016"></a>
+<h2>2269016</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_PHPS_NODE</div>
+<div class="txt">The PHPS Board Identification 1-Wire Device, %s, was not discovered on the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the device was not powered or properly connected when the system was booted. Verify the 1-Wire Device is properly connected. See system block diagram if necessary. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269017"><a name="BM2269017"></a>
+<h2>2269017</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_CFB_NODE</div>
+<div class="txt">A CAN Fiber Optic Board 1-Wire Device, %s, was not discovered on the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the device was not powered or properly connected when the system was booted. Verify the 1-Wire Device is properly connected. See system block diagrams if necessary. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269018"><a name="BM2269018"></a>
+<h2>2269018</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_NBEXC_NODE</div>
+<div class="txt">An Exciter Board 1-Wire Device, %s, was not discovered on the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the device was not powered or properly connected when the system was booted. Verify the 1-Wire Device is properly connected. See system block diagrams if necessary. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269019"><a name="BM2269019"></a>
+<h2>2269019</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_NBCLK_NODE</div>
+<div class="txt">The Reference Clock Board Identification 1-Wire Device, %s, was not discovered on the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the device was not powered or properly connected when the system was booted. Verify the 1-Wire Device is properly connected. See system block diagrams if necessary. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269020"><a name="BM2269020"></a>
+<h2>2269020</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_SRPS_NODE</div>
+<div class="txt">A Scan Room Power Supply Board 1-Wire Device, %s, was not discovered on the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the device was not powered or properly connected when the system was booted. Verify the 1-Wire Device is properly connected. See system block diagrams if necessary. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269021"><a name="BM2269021"></a>
+<h2>2269021</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_SRI_NODE</div>
+<div class="txt">A SRI Board 1-Wire Device, %s, was not discovered on the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the device was not powered or properly connected when the system was booted. Verify the 1-Wire Device is properly connected. See system block diagrams if necessary. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269022"><a name="BM2269022"></a>
+<h2>2269022</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_IRM_NODE</div>
+<div class="txt">The In Room Monitor Board Identification 1-Wire Device, %s, was not discovered on the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the device was not powered or properly connected when the system was booted. Verify the 1-Wire Device is properly connected. See system block diagrams if necessary. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269023"><a name="BM2269023"></a>
+<h2>2269023</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_DISP_NODE</div>
+<div class="txt">A Display Interface Box 1-Wire Device, %s, was not discovered on the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the device was not powered or properly connected when the system was booted. Verify the 1-Wire Device is properly connected. See system block diagrams if necessary. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269024"><a name="BM2269024"></a>
+<h2>2269024</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_TDM_NODE</div>
+<div class="txt">A Transient Detection Module 1-Wire Device, %s, was not discovered on the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the device was not powered or properly connected when the system was booted. Verify the 1-Wire Device is properly connected. See system block diagrams if necessary. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269025"><a name="BM2269025"></a>
+<h2>2269025</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_PEN_NODE</div>
+<div class="txt">The Pen Cabinet Temperature 1-Wire Device, %s, was not discovered on the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the device was not powered or properly connected when the system was booted. Verify the 1-Wire Device is properly connected. See system block diagrams if necessary. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269026"><a name="BM2269026"></a>
+<h2>2269026</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_OW_NODE</div>
+<div class="txt">The Operator Workspace Temperature 1-Wire Device, %s, was not discovered on the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the device was not powered or properly connected when the system was booted. Verify the 1-Wire Device is properly connected. See system block diagrams if necessary. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269027"><a name="BM2269027"></a>
+<h2>2269027</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_EMULATION</div>
+<div class="txt">One or more 1-Wire Devices are emulated on the 1-Wire Network.\b\ Data from 1-Wire Devices may not indicate the correct state of the system.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Remove emulation by removing the /w/config/onewire.cfg file or reloading software and restarting the system. Prognostic data from emulated devices will not accurately reflect the state of the system.</div>
+</section>
+<section id="BM2269028"><a name="BM2269028"></a>
+<h2>2269028</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_DEVICE_WRITE_ERR</div>
+<div class="txt">The data for the 1-Wire Device, %s, could not be successfully written. Verify the connections on the 1-Wire Network. See system block diagrams if necessary.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Possible hardware failure. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269029"><a name="BM2269029"></a>
+<h2>2269029</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_XGD_NODE</div>
+<div class="txt">A XGD GMC Board 1-Wire Device, %s, was not discovered on the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the device was not powered or properly connected when the system was booted. Verify the 1-Wire Device is properly connected. See system block diagrams if necessary. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269030"><a name="BM2269030"></a>
+<h2>2269030</h2>
+<div class="sym">ERROR: EM_ENVMON_CONFIG_ERROR</div>
+<div class="txt">The %s file could not be read correctly. There is an error at line number %d. This error will prevent the Environmental Monitor from operating correctly.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the file was edited inadvertently. Please reload the file and reinitialize the host. This file is part of the load from cold or contact the OLC.</div>
+</section>
+<section id="BM2269031"><a name="BM2269031"></a>
+<h2>2269031</h2>
+<div class="sym">ERROR: EM_ENVMON_CONFIG_OPEN_ERROR</div>
+<div class="txt">The %s file could not be opened. This error will prevent the Environmental Monitor from operating correctly.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the file was deleted inadvertently. Please reload the file and reinitialize the host. This file is part of the load from cold or contact the OLC.</div>
+</section>
+<section id="BM2269032"><a name="BM2269032"></a>
+<h2>2269032</h2>
+<div class="sym">ERROR: EM_ENVMON_PROG_MAX_BUFFER_SIZE_EXCEEDED_ERROR</div>
+<div class="txt">Software error: Too many prognostic entries for this packet. This error will prevent the Environmental Monitor from logging prognostic information correctly.
+Lookup: %d
+ID: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is internally generated when data being entered exceeds the maximum buffer size. A PQR must be written to fix this.</div>
+</section>
+<section id="BM2269033"><a name="BM2269033"></a>
+<h2>2269033</h2>
+<div class="sym">ERROR: EM_ENVMON_GOC_TEMP_UPPER_WARNING_LEVEL_ERR</div>
+<div class="txt">The operator room temperature has exceeded the upper warning limits.\b\ Please make the necessary adjustments to prevent equipment damage.
+Instance: %d
+Value instance: %d
+Value: %5.2f %s Limit: %5.2f</div>
+</section>
+<section id="BM2269034"><a name="BM2269034"></a>
+<h2>2269034</h2>
+<div class="sym">ERROR: EM_ENVMON_GOC_TEMP_UPPER_LOCKOUT_LEVEL_ERR</div>
+<div class="txt">The operator room temperature has exceeded the maximum upper limits.\b\ Please make the necessary adjustments to prevent equipment damage.
+Instance: %d
+Value instance: %d
+Value: %5.2f %s Limit: %5.2f</div>
+</section>
+<section id="BM2269035"><a name="BM2269035"></a>
+<h2>2269035</h2>
+<div class="sym">ERROR: EM_ENVMON_GOC_TEMP_LOWER_WARNING_LEVEL_ERR</div>
+<div class="txt">The operator room temperature has exceeded the lower warning limits.\b\ Please make the necessary adjustments to prevent equipment damage.
+Instance: %d
+Value instance: %d
+Value: %5.2f %s Limit: %5.2f</div>
+</section>
+<section id="BM2269036"><a name="BM2269036"></a>
+<h2>2269036</h2>
+<div class="sym">ERROR: EM_ENVMON_GOC_TEMP_LOWER_LOCKOUT_LEVEL_ERR</div>
+<div class="txt">The operator room temperature has exceeded the maximum lower limits.\b\ Please make the necessary adjustments to prevent equipment damage.
+Instance: %d
+Value instance: %d
+Value: %5.2f %s Limit: %5.2f</div>
+</section>
+<section id="BM2269037"><a name="BM2269037"></a>
+<h2>2269037</h2>
+<div class="sym">ERROR: EM_ENVMON_GOC_HUMID_UPPER_WARNING_LEVEL_ERR</div>
+<div class="txt">The operator room humidity has exceeded the upper warning limits.\b\ Please make the necessary adjustments to prevent equipment damage.
+Instance: %d
+Value instance: %d
+Value: %5.2f %s Limit: %5.2f</div>
+</section>
+<section id="BM2269038"><a name="BM2269038"></a>
+<h2>2269038</h2>
+<div class="sym">ERROR: EM_ENVMON_GOC_HUMID_UPPER_LOCKOUT_LEVEL_ERR</div>
+<div class="txt">The operator room humidity has exceeded the maximum upper limits.\b\ Please make the necessary adjustments to prevent equipment damage.
+Instance: %d
+Value instance: %d
+Value: %5.2f %s Limit: %5.2f</div>
+</section>
+<section id="BM2269039"><a name="BM2269039"></a>
+<h2>2269039</h2>
+<div class="sym">ERROR: EM_ENVMON_GOC_HUMID_LOWER_WARNING_LEVEL_ERR</div>
+<div class="txt">The operator room humidity has exceeded the lower warning limits.\b\ Please make the necessary adjustments to prevent equipment damage.
+Instance: %d
+Value instance: %d
+Value: %5.2f %s Limit: %5.2f</div>
+</section>
+<section id="BM2269040"><a name="BM2269040"></a>
+<h2>2269040</h2>
+<div class="sym">ERROR: EM_ENVMON_GOC_HUMID_LOWER_LOCKOUT_LEVEL_ERR</div>
+<div class="txt">The operator room humidity has exceeded the maximum lower limits.\b\ Please make the necessary adjustments to prevent equipment damage.
+Instance: %d
+Value instance: %d
+Value: %5.2f %s Limit: %5.2f</div>
+</section>
+<section id="BM2269041"><a name="BM2269041"></a>
+<h2>2269041</h2>
+<div class="sym">ERROR: EM_ENVMON_EQP_TEMP_UPPER_WARNING_LEVEL_ERR</div>
+<div class="txt">The equipment room temperature has exceeded the upper warning limits.\b\ Please make the necessary adjustments to prevent equipment damage.
+Instance: %d
+Value instance: %d
+Value: %5.2f %s Limit: %5.2f</div>
+</section>
+<section id="BM2269042"><a name="BM2269042"></a>
+<h2>2269042</h2>
+<div class="sym">ERROR: EM_ENVMON_EQP_TEMP_UPPER_LOCKOUT_LEVEL_ERR</div>
+<div class="txt">The equipment room temperature has exceeded the maximum upper limits.\b\ Please make the necessary adjustments to prevent equipment damage.
+Instance: %d
+Value instance: %d
+Value: %5.2f %s Limit: %5.2f</div>
+</section>
+<section id="BM2269043"><a name="BM2269043"></a>
+<h2>2269043</h2>
+<div class="sym">ERROR: EM_ENVMON_EQP_TEMP_LOWER_WARNING_LEVEL_ERR</div>
+<div class="txt">The equipment room temperature has exceeded the lower warning limits.\b\ Please make the necessary adjustments to prevent equipment damage.
+Instance: %d
+Value instance: %d
+Value: %5.2f %s Limit: %5.2f</div>
+</section>
+<section id="BM2269044"><a name="BM2269044"></a>
+<h2>2269044</h2>
+<div class="sym">ERROR: EM_ENVMON_EQP_TEMP_LOWER_LOCKOUT_LEVEL_ERR</div>
+<div class="txt">The equipment room temperature has exceeded the maximum lower limits.\b\ Please make the necessary adjustments to prevent equipment damage.
+Instance: %d
+Value instance: %d
+Value: %5.2f %s Limit: %5.2f</div>
+</section>
+<section id="BM2269045"><a name="BM2269045"></a>
+<h2>2269045</h2>
+<div class="sym">ERROR: EM_ENVMON_EQP_HUMID_UPPER_WARNING_LEVEL_ERR</div>
+<div class="txt">The equipment room humidity has exceeded the upper warning limits.\b\ Please make the necessary adjustments to prevent equipment damage.
+Instance: %d
+Value instance: %d
+Value: %5.2f %s Limit: %5.2f</div>
+</section>
+<section id="BM2269046"><a name="BM2269046"></a>
+<h2>2269046</h2>
+<div class="sym">ERROR: EM_ENVMON_EQP_HUMID_UPPER_LOCKOUT_LEVEL_ERR</div>
+<div class="txt">The equipment room humidity has exceeded the maximum upper limits.\b\ Please make the necessary adjustments to prevent equipment damage.
+Instance: %d
+Value instance: %d
+Value: %5.2f %s Limit: %5.2f</div>
+</section>
+<section id="BM2269047"><a name="BM2269047"></a>
+<h2>2269047</h2>
+<div class="sym">ERROR: EM_ENVMON_EQP_HUMID_LOWER_WARNING_LEVEL_ERR</div>
+<div class="txt">The equipment room humidity has exceeded the lower warning limits.\b\ Please make the necessary adjustments to prevent equipment damage.
+Instance: %d
+Value instance: %d
+Value: %5.2f %s Limit: %5.2f</div>
+</section>
+<section id="BM2269048"><a name="BM2269048"></a>
+<h2>2269048</h2>
+<div class="sym">ERROR: EM_ENVMON_EQP_HUMID_LOWER_LOCKOUT_LEVEL_ERR</div>
+<div class="txt">The equipment room humidity has exceeded the maximum lower limits.\b\ Please make the necessary adjustments to prevent equipment damage.
+Instance: %d
+Value instance: %d
+Value: %5.2f %s Limit: %5.2f</div>
+</section>
+<section id="BM2269049"><a name="BM2269049"></a>
+<h2>2269049</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_BBEXC_NODE</div>
+<div class="txt">An MNS Exciter Board 1-Wire Device, %s, was not discovered on the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the device was not properly connected when the system was booted. Verify the 1-Wire Device is properly connected. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269050"><a name="BM2269050"></a>
+<h2>2269050</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_PHPS_CFB_CABLE</div>
+<div class="txt">The 1-Wire Network did not detect the CFB to PHPS2 Cable.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the cable is connected properly to the front of the PHPS2. See system block diagrams if necessary.</div>
+</section>
+<section id="BM2269051"><a name="BM2269051"></a>
+<h2>2269051</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_PHPS_POWER_MON</div>
+<div class="txt">The 1-Wire Network detected the 60VDC and/or 8VDC from the PHPS2 Table Power Supply is not working properly.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the power in the PHPS2. Run PHPS2 Diagnostics and check the table 60VDC measurement test point located on the PHPS2. Check the longitudinal and dock motors loads connected to PHPS2.</div>
+</section>
+<section id="BM2269052"><a name="BM2269052"></a>
+<h2>2269052</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_CFB_1WIRE_POWER</div>
+<div class="txt">The 1-Wire Network detected the 8VDC power from the PHPS2 as well as other CFB regulated power derived from the 8VDC is not working properly.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the power from the PHPS2 to the CFB. See PHPS2 diagnostics and measurement test points.</div>
+</section>
+<section id="BM2269053"><a name="BM2269053"></a>
+<h2>2269053</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_CFB_CAN_POWER</div>
+<div class="txt">The 1-Wire Network did not detect the isolated 24VDC CAN Power.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify 24VDC CAN Power is functional and CAN Cables are connected starting at the SCP. See system block diagrams if necessary.</div>
+</section>
+<section id="BM2269054"><a name="BM2269054"></a>
+<h2>2269054</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_NBPIO_CLOCK</div>
+<div class="txt">The 1-Wire Network did not detect the Exciter 80MHz Clock that comes from the Clock Reference Board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If other devices (TDM and IRF3) are also reporting a missing exciter clock reference signal, check Exciter power.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>NB DTx Module</li></ol>
+</section>
+<section id="BM2269055"><a name="BM2269055"></a>
+<h2>2269055</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_NBPIO_FIBER_LINK</div>
+<div class="txt">The 1-Wire Network did not detect communication on the DVMR Fiber Optic Link between the Exciter and the IRF3 Board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the Exciter DVMR Fiber Optic Link is connected properly. A successful TPS Reset is required for communication on the Fiber Optic Link. This may be reported when other devices on the DVMR Fiber Optic Link are down. Verify the Exciter 80MHz Clock (a single Fiber Optic cable) is connected to the IRF3 Board.</div>
+</section>
+<section id="BM2269056"><a name="BM2269056"></a>
+<h2>2269056</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_NBBID_POWER</div>
+<div class="txt">The 1-Wire Network did not detect Exciter Digital Power.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the Exciter has power from the SRPS by visually checking the power LED on the front of the Exciter and measuring the test points on the front of the SRPS for Exciter Voltages.</div>
+</section>
+<section id="BM2269057"><a name="BM2269057"></a>
+<h2>2269057</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_NBBID_FIBER_SIGNAL</div>
+<div class="txt">The 1-Wire Network did not detect light on the DVMR Fiber Optic Link between the Exciter and the IRF3 Board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the DVMR Fiber Optic Link is connected between the IRF3 and the Exciter.</div>
+</section>
+<section id="BM2269058"><a name="BM2269058"></a>
+<h2>2269058</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_CLKREF_12V_POWER</div>
+<div class="txt">The 1-Wire Network did not detect Clock Reference 12V Power.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the Exciter has power from the SRPS by visually checking the power LED on the front of the Exciter and measuring the test point on the front of the SRPS for 15.8V.</div>
+</section>
+<section id="BM2269059"><a name="BM2269059"></a>
+<h2>2269059</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_CLKREF_80MHZ</div>
+<div class="txt">The 1-Wire Network did not detect the Clock Reference 80MHz Clock that is generated in the Exciter Module.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If other devices (TDM, Exciter and IRF3) are also reporting a missing exciter clock reference signal, check Exciter power.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>NB DTx Module</li></ol>
+</section>
+<section id="BM2269060"><a name="BM2269060"></a>
+<h2>2269060</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_XGD_POWER</div>
+<div class="txt">The 1-Wire Network did not detect XGD GMC Power.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the XGD Cronus chassis power cable is connected and that the Gradient 48V circuit breaker in the PDU is switched on.</div>
+</section>
+<section id="BM2269061"><a name="BM2269061"></a>
+<h2>2269061</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_XGD_LINK</div>
+<div class="txt">The 1-Wire Network detected that either the XGD Ethernet or DVMR Fiber Optic Links are down.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the XGD Ethernet and DVMR Fiber Optic Links are connected properly. A successful TPS Reset is required for the DVMR Fiber Optic Links to be up.</div>
+</section>
+<section id="BM2269062"><a name="BM2269062"></a>
+<h2>2269062</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_HUB_CABLE_DETECT</div>
+<div class="txt">The 1-Wire Network did not detect RF Hub 8.5V Cable.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the cable is connected properly at RF Hub and SRPS.</div>
+</section>
+<section id="BM2269063"><a name="BM2269063"></a>
+<h2>2269063</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_HUB_UNDER_VOLTAGE_SENSE</div>
+<div class="txt">The 1-Wire Network detected a SRPS 8.5V Under Voltage Warning.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the SRPS is functioning properly by checking the LEDs and measuring test points on the front of the SRPS.</div>
+</section>
+<section id="BM2269064"><a name="BM2269064"></a>
+<h2>2269064</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_HUB_OVER_VOLTAGE_SENSE</div>
+<div class="txt">The 1-Wire Network detected a SRPS 8.5V Over Voltage Warning.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the RF Hub and SRPS are functioning properly by checking the LEDs and measuring the test points on the front of the SRPS. Run RF Hub Diagnostics.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Scan Room PS</li></ol>
+</section>
+<section id="BM2269065"><a name="BM2269065"></a>
+<h2>2269065</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_HUB_OVER_VOLTAGE_FAULT</div>
+<div class="txt">The 1-Wire Network detected a RF Hub Over Voltage Fault. This can cause the SRPS to cut power to the RF Hub.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The 1-Wire Network may have reset the SRPS and recovered this problem. If the problem remains, the SRPS may be power cycled once. If the manual power cycle did not fix the problem, do not continue to power cycle the SRPS. Verify the RF Hub and SRPS are functioning properly.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Scan Room PS</li></ol>
+</section>
+<section id="BM2269066"><a name="BM2269066"></a>
+<h2>2269066</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_HUB_OVER_CURRENT_FAULT</div>
+<div class="txt">The 1-Wire Network detected an RF Hub Over Current Fault. This can cause the SRPS to cut power to the RF Hub.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The 1-Wire Network may have reset the SRPS and recovered this problem. If the problem remains, the SRPS may be power cycled once. If the manual power cycle did not fix the problem, do not continue to power cycle the SRPS. Verify the RF Hub is functioning properly.</div>
+</section>
+<section id="BM2269067"><a name="BM2269067"></a>
+<h2>2269067</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_SRI_POWER_OK</div>
+<div class="txt">The 1-Wire Network detected the SRI regulated 1.2V power is not working properly.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the SRI power cable from the PHPS2 is connected.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRI</li></ol>
+</section>
+<section id="BM2269068"><a name="BM2269068"></a>
+<h2>2269068</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_SRI_POWER_ENABLED</div>
+<div class="txt">The 1-Wire Network detected the SRI regulated 3.3V and 2.5V power is not working properly.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the SRI power cable from the PHPS2 is connected.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRI</li></ol>
+</section>
+<section id="BM2269069"><a name="BM2269069"></a>
+<h2>2269069</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_IRMPIO_POWER</div>
+<div class="txt">The 1-Wire Network detected invalid power for the In Room Display.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This message will be logged if 2269051 and 2269052 are also logged. Verify power from the PHPS2. Verify the In Room Display power cabling is attached. Run PHPS2 diagnostics and check measurement test points on the front of the PHPS2.</div>
+</section>
+<section id="BM2269070"><a name="BM2269070"></a>
+<h2>2269070</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_IRMPIO_USB1</div>
+<div class="txt">The 1-Wire Network detected the In Room Display USB1 is not operational.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify USB1 is properly connected to the In Room Display. Reboot to reinitialize USB1 driver.</div>
+</section>
+<section id="BM2269071"><a name="BM2269071"></a>
+<h2>2269071</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_IRMPIO_USB2</div>
+<div class="txt">The 1-Wire Network detected the In Room Display USB2 is not operational.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify USB2 is properly connected to the In Room Display. Reboot to reinitialize USB2 driver.</div>
+</section>
+<section id="BM2269072"><a name="BM2269072"></a>
+<h2>2269072</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_IRMPIO_FPGA</div>
+<div class="txt">The 1-Wire Network detected the In Room Display FPGA is not initialized.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the In Room Display functionality.</div>
+</section>
+<section id="BM2269073"><a name="BM2269073"></a>
+<h2>2269073</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_IRMPIO_SYNC</div>
+<div class="txt">The 1-Wire Network did not detect the In Room Display Fiber Optic sync signal.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify fiber optic connections at the In Room Display and magnet interface panel located on the magnet, and In Room Display Converter inside the GOC. Check the LED on the In Room Display Converter to verify it is receiving sync signal from Host PC. See the In Room Display Help. Check the cable connection between the DVI-D connectors on the Host PC and In Room Display Converter. Check operation of the In Room Display Converter.</div>
+</section>
+<section id="BM2269074"><a name="BM2269074"></a>
+<h2>2269074</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_IRMBID_POWER</div>
+<div class="txt">The 1-Wire Network did not detect the In Room Display 14V Power from the PHPS2.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the cable connections at the top of the In Room Display and magnet interface panel located on the magnet, connection at the Penetration Cabinet Panel, and connection to the PHPS2. See PHPS2 diagnostics and measurement test points if necessary.</div>
+</section>
+<section id="BM2269075"><a name="BM2269075"></a>
+<h2>2269075</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_SRPS_HS_OT</div>
+<div class="txt">The 1-Wire Network detected a SRPS Heatsink Over Temperature Fault. This can cause the SRPS to cut power to the Rf Hub, TDM, Receivers, and Exciters.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The 1-Wire Network may have reset the SRPS and recovered this problem. If the problem remains, the SRPS may be power cycled once. If the manual power cycle did not fix the problem, do not continue to power cycle the SRPS. Verify the SRPS is functioning and ventilating properly.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Scan Room PS</li></ol>
+</section>
+<section id="BM2269076"><a name="BM2269076"></a>
+<h2>2269076</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_SRPS_FAN</div>
+<div class="txt">The 1-Wire Network detected a SRPS Fan Run Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the SRPS Fans are functioning properly.</div>
+</section>
+<section id="BM2269077"><a name="BM2269077"></a>
+<h2>2269077</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_EXC_MNS_OVER_CURRENT</div>
+<div class="txt">The 1-Wire Network detected a SRPS MNS Exciter Over Current Fault. This can cause the SRPS to cut power to the exciters and clock reference board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the MNS Exciter is functioning properly. The 1-Wire Network may have reset the SRPS and recovered this problem. If the problem remains, the SRPS may be power cycled once. If the manual power cycle did not fix the problem, do not continue to power cycle the SRPS.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>BB DTx Module</li></ol>
+</section>
+<section id="BM2269078"><a name="BM2269078"></a>
+<h2>2269078</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_EXC_UNDER_VOLTAGE_SENSE</div>
+<div class="txt">The 1-Wire Network detected a SRPS Exciter 5.3V Under Voltage Warning.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the SRPS is functioning properly by checking the LEDs and measuring test points on the front of the SRPS.</div>
+</section>
+<section id="BM2269079"><a name="BM2269079"></a>
+<h2>2269079</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_EXC_OVER_VOLTAGE_SENSE</div>
+<div class="txt">The 1-Wire Network detected a SRPS Exciter 5.3V Over Voltage Warning.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the Exciter and SRPS are functioning properly.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Scan Room PS</li></ol>
+</section>
+<section id="BM2269080"><a name="BM2269080"></a>
+<h2>2269080</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_EXC_OVER_VOLTAGE_FAULT</div>
+<div class="txt">The 1-Wire Network detected a SRPS Exciter Over Voltage Fault. This can cause the SRPS to cut power to the exciters and clock reference board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the RF Hub and SRPS are functioning properly. The 1-Wire Network may have reset the SRPS and recovered this problem. If the problem remains, the SRPS may be power cycled once. If the manual power cycle did not fix the problem, do not continue to power cycle the SRPS.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Scan Room PS</li></ol>
+</section>
+<section id="BM2269081"><a name="BM2269081"></a>
+<h2>2269081</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_EXC_OVER_CURRENT_FAULT</div>
+<div class="txt">The 1-Wire Network detected a SRPS Exciter Over Current Fault. This can cause the SRPS to cut power to the exciters and clock reference board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the Exciter is functioning properly. The 1-Wire Network may have reset the SRPS and recovered this problem. If the problem remains, the SRPS may be power cycled once. If the manual power cycle does not fix the problem, do not continue to power cycle the SRPS.</div>
+</section>
+<section id="BM2269082"><a name="BM2269082"></a>
+<h2>2269082</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_DIF_POWER</div>
+<div class="txt">The 1-Wire Network detected In Room Display Interface invalid power.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Display Interface may not be properly powered. Ensure power cable is properly connected at Display Interface. Also, verify power LED is steady green.</div>
+</section>
+<section id="BM2269083"><a name="BM2269083"></a>
+<h2>2269083</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_DIF_DVI</div>
+<div class="txt">The 1-Wire Network did not detect the DVI at the In Room Display Interface.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the DVI-D is properly connected. Ensure that DVI-D status LED is steady green. Ensure that fiber optic cables are properly connected. Also, ensure that DVI-D cable is properly connected.</div>
+</section>
+<section id="BM2269084"><a name="BM2269084"></a>
+<h2>2269084</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_DIF_VIDEO_TIMING</div>
+<div class="txt">The 1-Wire Network detected invalid Video Timing at the In Room Display Interface.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure the fiber optic cable is properly connected. Also, ensure that DVI-D cable is properly connected.</div>
+</section>
+<section id="BM2269085"><a name="BM2269085"></a>
+<h2>2269085</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_DIF_FPGA_DONE</div>
+<div class="txt">The 1-Wire Network detected an unloaded FGPA in the In Room Display Interface.</div>
+</section>
+<section id="BM2269086"><a name="BM2269086"></a>
+<h2>2269086</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_DIF_FIBER</div>
+<div class="txt">The 1-Wire Network did not detect the Fiber at the In Room Display Interface.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure fiber optic cable is properly connected between the converter box in Display Interface.</div>
+</section>
+<section id="BM2269087"><a name="BM2269087"></a>
+<h2>2269087</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_DIF_USB_POWER</div>
+<div class="txt">The 1-Wire Network did not detect USB Power at the In Room Display Interface.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure USB cable is properly connected between the host and fiber converter box.</div>
+</section>
+<section id="BM2269088"><a name="BM2269088"></a>
+<h2>2269088</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_DIF_USB_LINK</div>
+<div class="txt">The 1-Wire Network detected an invalid USB Link at the In Room Display Interface.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Ensure USB cable is properly connected between the host and fiber converter box.</div>
+</section>
+<section id="BM2269089"><a name="BM2269089"></a>
+<h2>2269089</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_TCB_3V_UNDER_VOLTAGE_SENSE</div>
+<div class="txt">The 1-Wire Network detected a 3.16V Under Voltage Warning at the SRPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the SRPS is functioning properly by checking the LEDs and measuring test points on the front of the SRPS.</div>
+</section>
+<section id="BM2269090"><a name="BM2269090"></a>
+<h2>2269090</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_TCB_3V_OVER_VOLTAGE_SENSE</div>
+<div class="txt">The 1-Wire Network detected a 3.16V Over Voltage Warning at the SRPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the SRPS is functioning properly by checking the LEDs and measuring test points on the front of the SRPS.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Scan Room PS</li></ol>
+</section>
+<section id="BM2269091"><a name="BM2269091"></a>
+<h2>2269091</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_TCB_5V_UNDER_VOLTAGE_SENSE</div>
+<div class="txt">The 1-Wire Network detected a 5.05V Under Voltage Warning at the SRPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the SRPS is functioning properly by checking the LEDs and measuring test points on the front of the SRPS.</div>
+</section>
+<section id="BM2269092"><a name="BM2269092"></a>
+<h2>2269092</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_TCB_5V_OVER_VOLTAGE_SENSE</div>
+<div class="txt">The 1-Wire Network detected a 5.05V Over Voltage Warning at the SRPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the TDM and SRPS are functioning properly.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Scan Room PS</li></ol>
+</section>
+<section id="BM2269093"><a name="BM2269093"></a>
+<h2>2269093</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_TCB_TDM_OVER_VOLTAGE_FAULT</div>
+<div class="txt">The 1-Wire Network detected a TDM Over Voltage Fault at the SRPS. This can cause the SRPS to cut power to the TDM and receivers.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the TDM and SRPS are functioning properly. The 1-Wire Network may have reset the SRPS and recovered this problem. If the problem remains, the SRPS may be power cycled once. If the manual power cycle did not fix the problem, do not continue to power cycle the SRPS.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Scan Room PS</li></ol>
+</section>
+<section id="BM2269094"><a name="BM2269094"></a>
+<h2>2269094</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_TCB_TDM_OVER_CURRENT_FAULT</div>
+<div class="txt">The 1-Wire Network detected a TDM Over Current Fault at the SRPS. This can cause the SRPS to cut power to the TDM and receivers.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the TDM and SRPS are functioning properly. The 1-Wire Network may have reset the SRPS and recovered this problem. If the problem remains, the SRPS may be power cycled once. If the manual power cycle does not fix the problem, do not continue to power cycle the SRPS. Check the fuse in SRPS.</div>
+</section>
+<section id="BM2269095"><a name="BM2269095"></a>
+<h2>2269095</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_CABLE_EXCITER</div>
+<div class="txt">The 1-Wire Network detected a disconnected cable between the SRPS and the Exciter. Verify the cable is connected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the cable is connected properly at Exciter and SRPS.</div>
+</section>
+<section id="BM2269096"><a name="BM2269096"></a>
+<h2>2269096</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_CABLE_MNS_EXCITER</div>
+<div class="txt">The 1-Wire Network detected a disconnected between the SRPS and the MNS Exciter. Verify the cable is connected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the cable is connected properly at MNS Exciter and SRPS.</div>
+</section>
+<section id="BM2269097"><a name="BM2269097"></a>
+<h2>2269097</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_CABLE_RF_HUB</div>
+<div class="txt">The 1-Wire Network detected a disconnected cable between the SRPS and the RF Hub. Verify all the cables between the SRPS and RF Hub are connected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the five cables are connected properly at the RF Hub and SRPS.</div>
+</section>
+<section id="BM2269098"><a name="BM2269098"></a>
+<h2>2269098</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_CABLE_TDM</div>
+<div class="txt">The 1-Wire Network detected a disconnected cable between the SRPS and the TDM. Verify both cables are connected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the two cables are connected properly at TDM and SRPS.</div>
+</section>
+<section id="BM2269099"><a name="BM2269099"></a>
+<h2>2269099</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_RRX_0</div>
+<div class="txt">The system detected a disconnected cable between the TDM module and RRX-1.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify RRX 1 is properly connected.</div>
+</section>
+<section id="BM2269100"><a name="BM2269100"></a>
+<h2>2269100</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_RRX_1</div>
+<div class="txt">The system detected a disconnected cable between the TDM module and RRX-2.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify RRX 2 is properly connected.</div>
+</section>
+<section id="BM2269101"><a name="BM2269101"></a>
+<h2>2269101</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_RRX_2</div>
+<div class="txt">The system detected a disconnected cable between the TDM module and RRX-3.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify RRX 3 is properly connected.</div>
+</section>
+<section id="BM2269102"><a name="BM2269102"></a>
+<h2>2269102</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_RRX_3</div>
+<div class="txt">The system detected a disconnected cable between the TDM module and RRX-4.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify RRX 4 is properly connected.</div>
+</section>
+<section id="BM2269103"><a name="BM2269103"></a>
+<h2>2269103</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_RRX_4</div>
+<div class="txt">The system detected a disconnected cable between the TDM module and RRX-5.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify RRX 5 is properly connected.</div>
+</section>
+<section id="BM2269104"><a name="BM2269104"></a>
+<h2>2269104</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_RRX_5</div>
+<div class="txt">The system detected a disconnected cable between the TDM module and RRX-6.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify RRX 6 is properly connected.</div>
+</section>
+<section id="BM2269105"><a name="BM2269105"></a>
+<h2>2269105</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_RRX_6</div>
+<div class="txt">The system detected a disconnected cable between the TDM module and RRX-7.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify RRX 7 is properly connected.</div>
+</section>
+<section id="BM2269106"><a name="BM2269106"></a>
+<h2>2269106</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_RRX_7</div>
+<div class="txt">The system detected a disconnected cable between the TDM module and RRX-8.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify RRX 8 is properly connected.</div>
+</section>
+<section id="BM2269107"><a name="BM2269107"></a>
+<h2>2269107</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_TDM_INPUT_POWER</div>
+<div class="txt">The TDM does not have the correct input voltages from the SRPS.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that the SRPS is powered on and outputting the correct voltages.</div>
+</section>
+<section id="BM2269108"><a name="BM2269108"></a>
+<h2>2269108</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_TDM_POWER</div>
+<div class="txt">The regulated TDM internal voltages are out of specification.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that the SRPS is outputting the correct voltages. This message will be logged if error message 2269107 is logged indicating the input voltage to the TDM is not correct. If the input voltage is correct and the SRPS voltages are correct, this may be caused by a defective voltage regulator in the TDM or a TDM wiring error.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Transient Detection Module</li></ol>
+</section>
+<section id="BM2269109"><a name="BM2269109"></a>
+<h2>2269109</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_TDM_CLKIN</div>
+<div class="txt">The TDM does not have a clock reference input signal. Verify that the exciter/clock ref module is powered up and that the twin-ax cable is connected from the exciter to TDM module.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The 80MHz clock reference signal is generated by the exciter and sent to the TDM over a twin-ax cable. The TDM distributes this clock signal to each of the RRX modules. Verify that the clock ref cable and the LO cable are not swapped on the exciter side. Verify that the two pins on each end of the twin-ax cable are not damaged.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>NB DTx Module</li></ol>
+</section>
+<section id="BM2269110"><a name="BM2269110"></a>
+<h2>2269110</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_TDM_CLKOUT</div>
+<div class="txt">The TDM did not detect the 80MHz clock reference at the TDM outputs to the RRX modules.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the TDM detects a reference clock at its input from the exciter but not at its output to the RRX, then the TDM may have an internal fault.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Transient Detection Module</li></ol>
+</section>
+<section id="BM2269111"><a name="BM2269111"></a>
+<h2>2269111</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_TDM_ANTENNA</div>
+<div class="txt">The TNS antenna is not connected to the TDM.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reconnect the TNS loop antenna to the TDM on the side of the magnet. If connected, then check the cable connected at the TDM all the way to the loop antenna. Verify the TNS loop antenna is not damaged with a defective solder joint or a broken center wire at the antenna.</div>
+</section>
+<section id="BM2269112"><a name="BM2269112"></a>
+<h2>2269112</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_BBPIO_CLOCK</div>
+<div class="txt">The 1-Wire device in the MNS Exciter is not detecting the 80MHz clock ref signal from the NB Exciter.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If other devices (TDM, Exciter and IRF3) are also reporting a missing exciter clock reference signal, check MNS Exciter and NB Exciter power.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>BB DTx Module</li><li>NB DTx Module</li></ol>
+</section>
+<section id="BM2269113"><a name="BM2269113"></a>
+<h2>2269113</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_BBPIO_FIBER_LINK</div>
+<div class="txt">The 1-Wire Network did not detect communication on the DVMR Fiber Optic Link between the MNS Exciter and the IRF3 Board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that a DVMR Fiber Optic Link is connected securely between the MNS exciter and the IRF3 or IXG board in the CAM chassis. Verify that the clock cable is connected between the narrowband and MNS exciters. Verify that both exciters have power. Verify that the Clk Ref LED on the IRF3 or IXG board is on and not blinking. Its possible for failures in other modules (exciters, receivers, VRE, or XGD) to prevent this module from establishing a link over its DVMR Fiber Optic Link.</div>
+</section>
+<section id="BM2269114"><a name="BM2269114"></a>
+<h2>2269114</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_BBBID_POWER</div>
+<div class="txt">The 1-Wire Network did not detect MNS Exciter Digital Power.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the MNS Exciter has power from the SRPS by visually checking the power LED on the front of the MNS Exciter.</div>
+</section>
+<section id="BM2269115"><a name="BM2269115"></a>
+<h2>2269115</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_BBBID_FIBER_SIGNAL</div>
+<div class="txt">The 1-Wire Network did not detect any signal coming from the IRF3 to the MNS exciter over the DVMR Fiber Optic Link.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the DVMR Fiber Optic Link is connected between the IRF3 and the MNS Exciter.</div>
+</section>
+<section id="BM2269116"><a name="BM2269116"></a>
+<h2>2269116</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_SRPS_FAULT_RESET</div>
+<div class="txt">The 1-Wire Network indicates that the SRPS has faulted. The system was not able to clear this fault by itself. Manual SRPS recovery is necessary.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the SRPS is currently faulted, the fault LED in its front panel will be lighted. The system will automatically try to reset a faulted SRPS but won&#x27;t try more than two times. If the 2nd SRPS reset attempt does not clear the fault, manual intervention is required. Run 1-wire diagnostics to see the current state of the individual SRPS fault and warning signals. Power cycling the SRPS, once, may clear the fault.</div>
+</section>
+<section id="BM2269117"><a name="BM2269117"></a>
+<h2>2269117</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_PEM_POWER</div>
+<div class="txt">The 1-Wire Network did not detect PEM Power.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the PEM power cable is connected.</div>
+</section>
+<section id="BM2269118"><a name="BM2269118"></a>
+<h2>2269118</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_PEM_FPGA</div>
+<div class="txt">The 1-Wire Network detected a PEM FPGA image error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">TODO</div>
+</section>
+<section id="BM2269119"><a name="BM2269119"></a>
+<h2>2269119</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_PEM_48V</div>
+<div class="txt">The 1-Wire Network detected a PEM 48V scale error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">TODO</div>
+</section>
+<section id="BM2269120"><a name="BM2269120"></a>
+<h2>2269120</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_PEM_SOFTWARE</div>
+<div class="txt">The 1-Wire Network detected a PEM software error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">TODO</div>
+</section>
+<section id="BM2269121"><a name="BM2269121"></a>
+<h2>2269121</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_RESETTING_SRPS</div>
+<div class="txt">An attempt has been made to clear a SRPS fault by sending a reset command to it over the 1-Wire Network. This will cause the SRPS to power cycle the RF Hub, TDM, Receivers, Exciters, and clock reference board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the SRPS is currently faulted, the fault LED in its front panel will be lighted. The system will automatically try to reset a faulted SRPS but won&#x27;t try more than two times. If the 2nd SRPS reset attempt does not clear the fault, manual intervention is required. Power cycling the SRPS, once, may clear the fault.</div>
+</section>
+<section id="BM2269122"><a name="BM2269122"></a>
+<h2>2269122</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_SEVERE_SRPS_FAULT</div>
+<div class="txt">The 1-Wire Network indicates that the SRPS has a severe fault. The system can not clear this fault by itself. Manual SRPS recovery is necessary.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error indicates that the SRPS has a severe error such as an over-current or over-voltage that is way over the limit. The system can not reset this type of fault by itself. The SRPS must be power cycled. If the SRPS is currently faulted, the fault LED in its front panel will be lighted. Verify that the input power to the SRPS is correct. Run 1-wire diagnostics to see the current state of the individual SRPS fault and warning signals.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Scan Room PS</li></ol>
+</section>
+<section id="BM2269123"><a name="BM2269123"></a>
+<h2>2269123</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_EXC_MAIN_AC_UNDER_VOLTAGE_SENSE</div>
+<div class="txt">The 1-Wire Network detected a SRPS Main AC Input Under Voltage Warning.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the SRPS is functioning properly by checking the LEDs and measuring test points on the front of the SRPS. Check incoming power phases to SRPS.</div>
+</section>
+<section id="BM2269124"><a name="BM2269124"></a>
+<h2>2269124</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_PACPMPIO_12V_POWER</div>
+<div class="txt">The 1-Wire Network indicates that PAC has detected a power monitor fault for 12V power.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the cable from the PHPS2 to PAC is properly connected. Check power from the PHPS2 to the PAC.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PAC</li></ol>
+</section>
+<section id="BM2269125"><a name="BM2269125"></a>
+<h2>2269125</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_PACPMPIO_12VN_POWER</div>
+<div class="txt">The 1-Wire Network indicates that PAC has detected a power monitor fault for -12V power.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the cable from the PHPS2 to PAC is properly connected. Check power from the PHPS2 to the PAC.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PAC</li></ol>
+</section>
+<section id="BM2269126"><a name="BM2269126"></a>
+<h2>2269126</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_PACPMPIO_1V8_POWER</div>
+<div class="txt">The 1-Wire Network indicates that PAC has detected a power monitor fault for 1.8V power.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the cable from the PHPS2 to PAC is properly connected. Check power from the PHPS2 to the PAC.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PAC</li></ol>
+</section>
+<section id="BM2269127"><a name="BM2269127"></a>
+<h2>2269127</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_PACPMPIO_3V3_POWER</div>
+<div class="txt">The 1-Wire Network indicates that PAC has detected a power monitor fault for 3.3V power.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the cable from the PHPS2 to PAC is properly connected. Check power from the PHPS2 to the PAC.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PAC</li></ol>
+</section>
+<section id="BM2269128"><a name="BM2269128"></a>
+<h2>2269128</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_PACPMPIO_5V_POWER</div>
+<div class="txt">The 1-Wire Network indicates that PAC has detected a power monitor fault for 5V power.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the cable from the PHPS2 to PAC is properly connected. Check power from the PHPS2 to the PAC.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PAC</li></ol>
+</section>
+<section id="BM2269129"><a name="BM2269129"></a>
+<h2>2269129</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_PACPMPIO_5VN_POWER</div>
+<div class="txt">The 1-Wire Network indicates that PAC has detected a power monitor fault for -5V power.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the cable from the PHPS2 to PAC is properly connected. Check power from the PHPS2 to the PAC.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PAC</li></ol>
+</section>
+<section id="BM2269130"><a name="BM2269130"></a>
+<h2>2269130</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_PACFPGAPIO_CONFIG_DONE</div>
+<div class="txt">The 1-Wire Network indicates that PAC has experienced an FPGA configuration error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Possible hardware failure. TPS Reset or power cycle of PAC may be necessary to clear this error.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PAC</li></ol>
+</section>
+<section id="BM2269131"><a name="BM2269131"></a>
+<h2>2269131</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_PACFPGAPIO_INIT_DONE</div>
+<div class="txt">The 1-Wire Network indicates that PAC has experienced an FPGA initialization error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Possible hardware or software failure. TPS Reset or power cycle of PAC may be necessary to clear this error.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PAC</li></ol>
+</section>
+<section id="BM2269132"><a name="BM2269132"></a>
+<h2>2269132</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_PACFPGAPIO_OW_LPBKEN</div>
+<div class="txt">The 1-Wire Network indicates that PAC 1-wire loopback is enabled.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Possible hardware failure. TPS Reset or power cycle of PAC may be necessary to clear this error.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PAC</li></ol>
+</section>
+<section id="BM2269133"><a name="BM2269133"></a>
+<h2>2269133</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_PACFPGAPIO_OW_RESET</div>
+<div class="txt">The 1-Wire Network indicates that the PAC 1-wire reset is latched.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Possible hardware failure. TPS Reset or power cycle of PAC may be necessary to clear this error.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PAC</li></ol>
+</section>
+<section id="BM2269134"><a name="BM2269134"></a>
+<h2>2269134</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_PACFPGAPIO_1V2_POWER</div>
+<div class="txt">The 1-Wire Network indicates that PAC has detected a power monitor fault for 1.2V power.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the cable from the PHPS2 to PAC is properly connected. Check power from the PHPS2 to the PAC.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PAC</li></ol>
+</section>
+<section id="BM2269135"><a name="BM2269135"></a>
+<h2>2269135</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_PACFPGAPIO_2V5_POWER</div>
+<div class="txt">The 1-Wire Network indicates that PAC has detected a power monitor fault for 2.5V power.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the cable from the PHPS2 to PAC is properly connected. Check power from the PHPS2 to the PAC.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PAC</li></ol>
+</section>
+<section id="BM2269136"><a name="BM2269136"></a>
+<h2>2269136</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_SRI_CAN_FIBER_LOOPBACK</div>
+<div class="txt">The 1-Wire Network detected the SRI CAN fiber optic loopback is enabled.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the SRI power cable from the PHPS2 is connected.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRI</li></ol>
+</section>
+<section id="BM2269137"><a name="BM2269137"></a>
+<h2>2269137</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_BOARD_ID_ERROR</div>
+<div class="txt">The 1-Wire Network detected an error in the 1-Wire identification logic for %s.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error indicates that a device may not be correctly identified by the 1-Wire software. Verify that the indicated device/board has power and is properly connected or is properly seated. It may be necessary to power cycle the device.</div>
+</section>
+<section id="BM2269138"><a name="BM2269138"></a>
+<h2>2269138</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_DEVICE_IN_CONFIG_NOT_FOUND</div>
+<div class="txt">The 1-Wire Network could not detect a device that is in the system configuration.
+Device: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This issue may point to incorrect identification of the 1-Wire device. Verify that the indicated device/board has power and is properly connected or is properly seated.</div>
+</section>
+<section id="BM2269139"><a name="BM2269139"></a>
+<h2>2269139</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_DEVICE_RESET_FAILURE_OVER_1WIRE</div>
+<div class="txt">The 1-Wire Reset utility could not reset a device using the 1-Wire network.
+Device: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This issue may point to incorrect identification of the 1-Wire device. Verify that the indicated device/board has power and is properly connected or is properly seated.</div>
+</section>
+<section id="BM2269140"><a name="BM2269140"></a>
+<h2>2269140</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_DEVICE_RESET_FAILURE_OVER_CAN</div>
+<div class="txt">The 1-Wire Reset utility could not reset a device using the CAN network.
+Device: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that the indicated device/board has power and is properly connected or is properly seated.&quot;</div>
+</section>
+<section id="BM2269141"><a name="BM2269141"></a>
+<h2>2269141</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_DEVICE_READ_STATUS_TIMEOUT</div>
+<div class="txt">A 1-Wire device read for %s timed-out while executing diagnostics.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Perform a TPS Reset. If the problem persists, verify that the indicated device/board has power and is properly connected or is properly seated.</div>
+</section>
+<section id="BM2269142"><a name="BM2269142"></a>
+<h2>2269142</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_DEVICE_READ_STATUS_ERROR</div>
+<div class="txt">A 1-Wire device read error was encountered for %s while executing diagnostics.
+Status: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">Perform a TPS Reset. If the problem persists, verify that the indicated device/board has power and is properly connected or is properly seated.</div>
+</section>
+<section id="BM2269143"><a name="BM2269143"></a>
+<h2>2269143</h2>
+<div class="sym">ERROR: EM_DIAG_1WIRE_DEVICE_STATUS_CHECK_ERROR</div>
+<div class="txt">A 1-Wire status check error occurred during %s execution.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Perform a TPS Reset. If the problem persists, verify that the indicated device/board has power and is properly connected or is properly seated.</div>
+</section>
+<section id="BM2269250"><a name="BM2269250"></a>
+<h2>2269250</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_NO_USB_ADAPTER</div>
+<div class="txt">The Host could not communicate with the 1-Wire Network via the Host USB adapter.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the 1-Wire Network is connected to the Host USB port. If the USB Cable was disconnected, the system may need to be restarted after the cable is connected to communicate successfully via USB. See system block diagram if necessary. System restart may be necessary to clear this error.</div>
+</section>
+<section id="BM2269251"><a name="BM2269251"></a>
+<h2>2269251</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_EQUIP_NODE</div>
+<div class="txt">The Equipment Room Temperature 1-Wire Device was not discovered on the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the device was not powered or properly connected when the system was booted. Verify the 1-Wire Device is properly connected. See system block diagrams if necessary. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269252"><a name="BM2269252"></a>
+<h2>2269252</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_GOC_NODE</div>
+<div class="txt">The Operator Workspace Temperature 1-Wire Device was not discovered on the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the device was not powered or properly connected when the system was booted. Verify the 1-Wire Device is properly connected. See system block diagrams if necessary. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269253"><a name="BM2269253"></a>
+<h2>2269253</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_PEM_NODE</div>
+<div class="txt">A PEM Board 1-Wire Device, %s, was not discovered on the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the device was not powered or properly connected when the system was booted. Verify the 1-Wire Device is properly connected. See system block diagrams if necessary. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269254"><a name="BM2269254"></a>
+<h2>2269254</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_PAC_NODE</div>
+<div class="txt">A PAC 1-Wire Device, %s, was not discovered on the 1-Wire Network.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This can happen if the device was not properly connected when the system was booted. Verify the 1-Wire Device is properly connected. TPS Reset may be necessary to clear this error.</div>
+</section>
+<section id="BM2269255"><a name="BM2269255"></a>
+<h2>2269255</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_MAP_SWITCH_NOT_SET</div>
+<div class="txt">The 1-Wire mapping process did not complete as a 1-Wire Switch in the network could not be set to %s.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify power to hardware. Most likely a hardware fault. The Switch was working correctly during the last TPS Reset.</div>
+</section>
+<section id="BM2269256"><a name="BM2269256"></a>
+<h2>2269256</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_NET_ADAPTER_AQUIRE_ERR</div>
+<div class="txt">The 1-Wire network adapter could not be aquired by the 1-Wire software.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that 1-Wire network adapter is connected correctly. This error error may indicate that the network adapter is bad, or a wire is not properly connected.</div>
+</section>
+<section id="BM2269257"><a name="BM2269257"></a>
+<h2>2269257</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_MAP_READ_ERR</div>
+<div class="txt">The 1-Wire mapping process experienced an error attempting to read a 1-Wire device.
+Device ID: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify power to hardware. Most likely a hardware fault. The device was working correctly during the last TPS Reset.</div>
+</section>
+<section id="BM2269258"><a name="BM2269258"></a>
+<h2>2269258</h2>
+<div class="sym">ERROR: EM_ENVMON_1WIRE_MAP_SWITCH_NOT_SET_2</div>
+<div class="txt">The 1-Wire mapping process experienced an error attempting to set a 1-Wire Switch to %s.
+Switch ID: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify power to hardware. Most likely a hardware fault. The Switch was working correctly during the previous TPS Reset.</div>
+</section>
+<section id="BM2269307"><a name="BM2269307"></a>
+<h2>2269307</h2>
+<div class="sym">ERROR: EM_OS_PEARLMAP_SYNC_ERR</div>
+<div class="txt">Communication problem between the AGP and SCP boards. Value 0x%X not found at address 0x%X after %d msec.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be an indication of a hardware problem. Perform a TPS Reset. Run diagnostics if the problem recurs.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AGP Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2269308"><a name="BM2269308"></a>
+<h2>2269308</h2>
+<div class="sym">ERROR: EM_OS_PEARLMAP_SIZE_ERR</div>
+<div class="txt">Communication problem between the AGP and SCP boards. Memory mapping could not program setup register. Requested parameters:
+Translated Base = 0x%X; Requested Size = 0x%X.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be an indication of a hardware problem. Perform a TPS Reset. Run diagnostics if the problem recurs.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AGP Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2269311"><a name="BM2269311"></a>
+<h2>2269311</h2>
+<div class="sym">ERROR: EM_OS_DEC2155X_INVALID_CC1_PAGE_SIZE_ERR</div>
+<div class="txt">Communication problem between the AGP and SCP boards. Invalid page size read from 2155X CC1 for US Mem2. Page size = 0x%X.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be an indication of a hardware problem. Perform a TPS Reset. Run diagnostics if the problem recurs.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AGP Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2269315"><a name="BM2269315"></a>
+<h2>2269315</h2>
+<div class="sym">ERROR: EM_OS_SHARED_MGD_RESOURCE_ALLOC_ERR</div>
+<div class="txt">Communication problem between the AGP and SCP boards. MGD Resource Probe could not allocate space for the shared data structure. vxWorks errno = 0x%X.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be an indication of a hardware problem. Perform a TPS Reset. Run diagnostics if the problem recurs.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AGP Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2269316"><a name="BM2269316"></a>
+<h2>2269316</h2>
+<div class="sym">ERROR: EM_OS_MGD_RESOURCE_SM_NAME_ADD_ERR</div>
+<div class="txt">Communication problem between the AGP and SCP boards. MGD Resource Probe could not add the shared data structure to the name database. vxWorks errno = 0x%X.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be an indication of a hardware problem. Perform a TPS Reset. Run diagnostics if the problem recurs.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AGP Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2269317"><a name="BM2269317"></a>
+<h2>2269317</h2>
+<div class="sym">ERROR: EM_OS_MGD_RESOURCE_SM_NAME_FIND_ERR</div>
+<div class="txt">Communication problem between the AGP and SCP boards. MGD Resource Probe could not find the shared data structure in the name database. vxWorks errno = 0x%X.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be an indication of a hardware problem. Perform a TPS Reset. Run diagnostics if the problem recurs.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AGP Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2269323"><a name="BM2269323"></a>
+<h2>2269323</h2>
+<div class="sym">ERROR: EM_OS_SCP_START_CONVERT_ERR</div>
+<div class="txt">Communication problem between the AGP and SCP boards. Timeout: scpStartConvert not received.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be an indication of a hardware problem. Perform a TPS Reset. Run diagnostics if the problem recurs.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AGP Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2269336"><a name="BM2269336"></a>
+<h2>2269336</h2>
+<div class="sym">ERROR: EM_OS_CM_INIT_INVALID_BOARD_CONFIG_ERR</div>
+<div class="txt">CM init failed due to invalid board configuration.
+Local board type = %d.
+AGP status = %d.
+SCP status = %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be an indication of a hardware problem. Perform a TPS Reset. Run diagnostics if the problem recurs.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AGP Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2269361"><a name="BM2269361"></a>
+<h2>2269361</h2>
+<div class="sym">ERROR: EM_OS_SCP_PROBE_COMPLETE_ERR</div>
+<div class="txt">Communication problem between the AGP and SCP boards. Timeout: scpProbeComplete not received.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be an indication of a hardware problem. Perform a TPS Reset. Run diagnostics if the problem recurs.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AGP Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2269369"><a name="BM2269369"></a>
+<h2>2269369</h2>
+<div class="sym">ERROR: EM_OS_POSIXSYNC_SYNC_ERR</div>
+<div class="txt">Communication problem between the AGP and SCP boards. Posix clock synchronization timeout occurred. Value 0x%X not found at address 0x%X after %d msec.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be an indication of a hardware problem. Perform a TPS Reset. Run diagnostics if the problem recurs.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AGP Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2269405"><a name="BM2269405"></a>
+<h2>2269405</h2>
+<div class="sym">ERROR: EM_OS_USER_FLASH_REV_ERR</div>
+<div class="txt">The FLASH revision on the Motorola board specified in the Object field (AGP or SCP) is incorrect for this software build. Please contact your Service Representative as soon as possible. Current FLASH rev. is %s. Expected FLASH rev. is %s.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Motorola board specified in the object field (AGP or SCP) must be replaced with a new board with the proper FLASH rev. for this software build.</div>
+</section>
+<section id="BM2269436"><a name="BM2269436"></a>
+<h2>2269436</h2>
+<div class="sym">ERROR: EM_OS_CM_INIT_RPC_VRE</div>
+<div class="txt">Communication problem between AGP and VRE. The AGP could not notify the VRE that communication is established.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be an indication of a hardware problem with the AGP or VRE boards or an ethernet cabling problem on the MGD subnet. Verify the ethernet cabling on the MGD subnet, reboot VRE, and perform a TPS Reset. Run diagnostics if the problem recurs.</div>
+</section>
+<section id="BM2269900"><a name="BM2269900"></a>
+<h2>2269900</h2>
+<div class="sym">ERROR: EM_ECL_CALLBACKMSG_TOO_LARGE</div>
+<div class="txt">Message sent through EclCallbackMsg was too large.
+Task: %s
+Source: %b Likely firmware error.</div>
+</section>
+<section id="BM2269901"><a name="BM2269901"></a>
+<h2>2269901</h2>
+<div class="sym">ERROR: EM_ECL_SEM_GET</div>
+<div class="txt">Failed to get semaphore.
+Sem: %s
+Task: %s
+Error: %d
+Source: %b Likely firmware error.</div>
+</section>
+<section id="BM2269902"><a name="BM2269902"></a>
+<h2>2269902</h2>
+<div class="sym">ERROR: EM_ECL_SEM_PUT</div>
+<div class="txt">Failed to put semaphore.
+Sem: %s
+Task: %s
+Error: %d
+Source: %b Likely firmware error.</div>
+</section>
+<section id="BM2269903"><a name="BM2269903"></a>
+<h2>2269903</h2>
+<div class="sym">ERROR: EM_ECL_MSG_CREATE_SIZE</div>
+<div class="txt">Size of buffer not big enough for a message header.
+Task: %s
+Size: %d
+Hdr Size: %d
+Source: %b Likely firmware error.</div>
+</section>
+<section id="BM2269904"><a name="BM2269904"></a>
+<h2>2269904</h2>
+<div class="sym">ERROR: EM_ECL_MSG_RCV_PIPE_CREATE_NO_WAIT</div>
+<div class="txt">EclMessageReceiverPipe timeouts set to invalid value: NO_WAIT.
+Source: %b Likely firmware error.</div>
+</section>
+<section id="BM2269905"><a name="BM2269905"></a>
+<h2>2269905</h2>
+<div class="sym">ERROR: EM_ECL_TASK_MAKE_SPACE</div>
+<div class="txt">Couldn&#x27;t move priorities for priority inheritance.
+Source: %b Likely firmware error.</div>
+</section>
+<section id="BM2269906"><a name="BM2269906"></a>
+<h2>2269906</h2>
+<div class="sym">ERROR: EM_ECL_PROTECT_TYPE</div>
+<div class="txt">Invalid EclProtect type used.
+Type: %d
+Source: %b Likely firmware error.</div>
+</section>
+<section id="BM2269907"><a name="BM2269907"></a>
+<h2>2269907</h2>
+<div class="sym">ERROR: EM_ECL_MUTEX_POOL_FREE_FAIL</div>
+<div class="txt">Mutex wasn&#x27;t available when free attempted.
+Source: %b</div>
+</section>
+<section id="BM2269908"><a name="BM2269908"></a>
+<h2>2269908</h2>
+<div class="sym">ERROR: EM_ECL_CPLD_WRONG_MODE_IN_SAFE</div>
+<div class="txt">Reset into SAFE mode when APPLICATION mode was requested.
+Board: %b Likely hardware error.</div>
+</section>
+<section id="BM2269909"><a name="BM2269909"></a>
+<h2>2269909</h2>
+<div class="sym">ERROR: EM_ECL_CPLD_WRONG_MODE_IN_APP</div>
+<div class="txt">Reset into APPLICATION mode when SAFE mode was requested.
+Board: %b Likely hardware error.</div>
+</section>
+<section id="BM2269910"><a name="BM2269910"></a>
+<h2>2269910</h2>
+<div class="sym">ERROR: EM_ECL_CPLD_WATCHDOG_RESET</div>
+<div class="txt">The CPLD watchdog timed out causing a reset.
+Board: %b Likely firmware error.</div>
+</section>
+<section id="BM2269911"><a name="BM2269911"></a>
+<h2>2269911</h2>
+<div class="sym">ERROR: EM_ECL_CPLD_UNKNOWN_RESET_REASON</div>
+<div class="txt">A reset occured for an unknown reason.
+Board: %b Likely hardware error.</div>
+</section>
+<section id="BM2269912"><a name="BM2269912"></a>
+<h2>2269912</h2>
+<div class="sym">ERROR: EM_ECL_CPLD_APP_LOAD_FAILURE</div>
+<div class="txt">Loading APPLICATION mode failed.
+Board: %b
+Number of attempts before successful: %d Likely hardware error.</div>
+</section>
+<section id="BM2269913"><a name="BM2269913"></a>
+<h2>2269913</h2>
+<div class="sym">ERROR: EM_ECL_CPLD_SAFE_LOAD_FAILURE</div>
+<div class="txt">Loading SAFE mode failed.
+Board: %b
+Number of attempts before successful: %d Likely hardware error.</div>
+</section>
+<section id="BM2269914"><a name="BM2269914"></a>
+<h2>2269914</h2>
+<div class="sym">ERROR: EM_ECL_CPLD_WATCHDOG_OFF</div>
+<div class="txt">CPLD WATCHDOG OFF!
+Board: %b Likely firmware error through debug terminal.</div>
+</section>
+<section id="BM2269915"><a name="BM2269915"></a>
+<h2>2269915</h2>
+<div class="sym">ERROR: EM_ECL_CPLD_BOOT_APP_FROM_APP</div>
+<div class="txt">CPLD WATCHDOG OFF!
+Board: %b Requested reconfiguration into application code from application code. Likely firmware error.</div>
+</section>
+<section id="BM2269916"><a name="BM2269916"></a>
+<h2>2269916</h2>
+<div class="sym">ERROR: EM_ECL_PIPE_MSG_CNT_ERR</div>
+<div class="txt">EclPipe message count is higher than the counting semaphore count
+Msg Count: %d
+Sem Count: %d
+Board: %b</div>
+</section>
+<section id="BM2269917"><a name="BM2269917"></a>
+<h2>2269917</h2>
+<div class="sym">ERROR: EM_ECL_PIFF_FAILURE_PROGRAM_FLASH</div>
+<div class="txt">Unable to program flash when requested
+Board: %b</div>
+</section>
+<section id="BM2269918"><a name="BM2269918"></a>
+<h2>2269918</h2>
+<div class="sym">ERROR: EM_ECL_PIFF_FAILURE_NO_IMAGES</div>
+<div class="txt">Unable to boot requested mode, no images found in flash
+Board: %b</div>
+</section>
+<section id="BM2269919"><a name="BM2269919"></a>
+<h2>2269919</h2>
+<div class="sym">ERROR: EM_ECL_WDOG_TASK_CREATE_FAILED</div>
+<div class="txt">Unable to create the watchdog task object
+Board: %b</div>
+</section>
+<section id="BM2269920"><a name="BM2269920"></a>
+<h2>2269920</h2>
+<div class="sym">ERROR: EM_ECL_WDOG_TASK_RESET_SINGLE</div>
+<div class="txt">A task&#x27;s watchdog timed out causing a reset.
+Priority of unresponsive task: %d Likely firmware error.</div>
+</section>
+<section id="BM2269921"><a name="BM2269921"></a>
+<h2>2269921</h2>
+<div class="sym">ERROR: EM_ECL_WDOG_TASK_RESET_MULTIPLE</div>
+<div class="txt">Multiple tasks&#x27; watchdogs timed out causing a reset.
+Priority of last unresponsive task: %d Likely firmware error.</div>
+</section>
+</body></html>

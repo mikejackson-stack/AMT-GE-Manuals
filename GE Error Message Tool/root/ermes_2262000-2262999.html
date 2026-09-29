@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2262000-2262999 (189)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2262000-2262999 (189)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2261000-2261999.html">&larr; 2261000-2261999</a><a href="ermes_2263000-2263999.html">2263000-2263999 &rarr;</a></nav></header>
+<section id="BM2262130"><a name="BM2262130"></a>
+<h2>2262130</h2>
+<div class="sym">ERROR: EM_SRI3_COIL_ID_INTERRUPT_OVERFLOW</div>
+<div class="txt">SRI Coil ID Interrupt Overflow:
+Coil ID interrupt overflow. Coil ID state changes lost. A TPS Reset may be necessary.</div>
+</section>
+<section id="BM2262131"><a name="BM2262131"></a>
+<h2>2262131</h2>
+<div class="sym">ERROR: EM_SRI3_COIL_ID_BAD_DEVICE_INDEX</div>
+<div class="txt">SRI Programming Error. A TPS Reset may be necessary. Bad one-wire device index while reading a coil ID.
+Device index: %d</div>
+</section>
+<section id="BM2262132"><a name="BM2262132"></a>
+<h2>2262132</h2>
+<div class="sym">ERROR: EM_SRI3_COIL_ID_BAD_STATE</div>
+<div class="txt">SRI Programming Error. A TPS Reset may be necessary. Bad coil ID state while reading a coil ID.
+State: %#X</div>
+</section>
+<section id="BM2262133"><a name="BM2262133"></a>
+<h2>2262133</h2>
+<div class="sym">ERROR: EM_SRI3_COIL_ID_ECHO_NOT_RECEIVED</div>
+<div class="txt">Coil validation error:
+Coil ID command echo not received.
+Connector: %s Port</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be a problem with the coil ID communication chain which includes the Coil, the cable between the Coil and the LPCA, the LPCA, the cable between the LPCA and SRI, and the SRI.
+Please run Coil ID diagnostics.</div>
+</section>
+<section id="BM2262134"><a name="BM2262134"></a>
+<h2>2262134</h2>
+<div class="sym">ERROR: EM_SRI3_COIL_ID_DEVICE_NOT_PRESENT</div>
+<div class="txt">Coil validation error:
+Coil ID device was not detected on a coil. Coil ID is required for this connector. Please try connecting coil again.
+Connector: %s Port</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be a problem with the coil ID communication chain which includes the Coil, the cable between the Coil and the LPCA, the LPCA, the cable between the LPCA and SRI, and the SRI.
+Please run Coil ID diagnostics.</div>
+</section>
+<section id="BM2262135"><a name="BM2262135"></a>
+<h2>2262135</h2>
+<div class="sym">ERROR: EM_SRI3_COIL_ID_INTERMITTANT_NOT_PRESENT</div>
+<div class="txt">Coil validation error:
+Coil ID device was detected on a coil but the connection is intermittent. Please try connecting coil again.
+Connector: %s Port</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be a problem with the coil ID communication chain which includes the Coil, the cable between the Coil and the LPCA, the LPCA, the cable between the LPCA and SRI, and the SRI.
+Please run Coil ID diagnostics.</div>
+</section>
+<section id="BM2262136"><a name="BM2262136"></a>
+<h2>2262136</h2>
+<div class="sym">ERROR: EM_SRI3_COIL_ID_COMMAND_CRC_FAILURE</div>
+<div class="txt">Coil validation error:
+A command CRC failure occurred while trying to communicate to a coil ID device.
+Connector: %s Port Expected CRC: 0x%02X%02X Received CRC: 0x%02X%02X</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be a problem with the coil ID communication chain which includes the Coil, the cable between the Coil and the LPCA, the LPCA, the cable between the LPCA and SRI, and the SRI.
+Please run Coil ID diagnostics.</div>
+</section>
+<section id="BM2262137"><a name="BM2262137"></a>
+<h2>2262137</h2>
+<div class="sym">ERROR: EM_SRI3_COIL_ID_INCORRECT_FAMILY_CODE</div>
+<div class="txt">Coil validation error:
+Incorrect family code received from a coil ID device.
+Connector: %s Port Expected family code: 0x%02X Received family code: 0x%02X</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is probably a problem with the coil.</div>
+</section>
+<section id="BM2262138"><a name="BM2262138"></a>
+<h2>2262138</h2>
+<div class="sym">ERROR: EM_SRI3_COIL_ID_REDIRECT_ERROR</div>
+<div class="txt">Coil validation error:
+A coil ID device has been reprogrammed. Reprogrammed coil ID devices are not allowed.
+Connector: %s Port</div>
+<div class="lbl">Extended Error:</div><div class="txt">The SRI is able to read the coil ID device in the coil, but the device was reprogrammed. If this problem persists, the coil was probably manufactured incorrectly.</div>
+</section>
+<section id="BM2262139"><a name="BM2262139"></a>
+<h2>2262139</h2>
+<div class="sym">ERROR: EM_SRI3_COIL_ID_MEMORY_BLANK</div>
+<div class="txt">Coil validation error:
+Coil ID device is not programmed.
+Connector: %s Port</div>
+<div class="lbl">Extended Error:</div><div class="txt">The SRI is able to read the coil ID device in the coil, but the device was not programmed. If this problem persists, the coil was probably manufactured incorrectly.</div>
+</section>
+<section id="BM2262140"><a name="BM2262140"></a>
+<h2>2262140</h2>
+<div class="sym">ERROR: EM_SRI3_COIL_ID_PAGE_LENGTH_INVALID</div>
+<div class="txt">Coil validation error:
+Coil ID device is programmed incorrectly. The memory page length is invalid.
+Connector: %s Port
+Length: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The SRI is able to read the coil ID device in the coil, but the device is programmed incorrectly. If this problem persists, the coil was probably manufactured incorrectly.</div>
+</section>
+<section id="BM2262141"><a name="BM2262141"></a>
+<h2>2262141</h2>
+<div class="sym">ERROR: EM_SRI3_COIL_ID_MEMORY_CRC_FAILURE</div>
+<div class="txt">Coil validation error:
+Coil ID device is programmed incorrectly. A CRC failure occurred while reading device memory.
+Connector: %s Port Expected CRC: 0x%02X%02X Received CRC: 0x%02X%02X</div>
+<div class="lbl">Extended Error:</div><div class="txt">The SRI is able to read the coil ID device in the coil, but the device is programmed incorrectly. If this problem persists, the coil was probably manufactured incorrectly.</div>
+</section>
+<section id="BM2262142"><a name="BM2262142"></a>
+<h2>2262142</h2>
+<div class="sym">ERROR: EM_SRI3_COIL_ID_READ_TIMEOUT</div>
+<div class="txt">Coil validation error:
+Coil ID read took too long. A TPS Reset may be necessary.
+Connector: %s Port</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRI</li></ol>
+</section>
+<section id="BM2262143"><a name="BM2262143"></a>
+<h2>2262143</h2>
+<div class="sym">ERROR: EM_SRI3_BAD_CONNECTOR</div>
+<div class="txt">SRI-SCP Communication Error. A TPS Reset may be necessary. The SRI received a packet from the SCP containing an unknown connector type.
+Connector: %#x</div>
+</section>
+<section id="BM2262430"><a name="BM2262430"></a>
+<h2>2262430</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_RECOVERY</div>
+<div class="txt">SRI to motor controller link is in recovery.\b\ A failure occurred on the motor controller link. See previously logged error messages for more detail. The SRI is attempting recovery of the link.</div>
+</section>
+<section id="BM2262431"><a name="BM2262431"></a>
+<h2>2262431</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_ERROR_LIST</div>
+<div class="txt">SRI Error:
+The error list has overflowed.
+Length: %ld</div>
+</section>
+<section id="BM2262432"><a name="BM2262432"></a>
+<h2>2262432</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_DROPPED_PACKET</div>
+<div class="txt">SRI/Motor Controller Link Error:
+A receive packet was discarded unfinished.
+Opcode: %c
+Length: %ld</div>
+</section>
+<section id="BM2262433"><a name="BM2262433"></a>
+<h2>2262433</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_RECEIVE_OVERFLOW</div>
+<div class="txt">SRI/Motor Controller Link Error:
+The motor link receive buffer has overflowed.</div>
+</section>
+<section id="BM2262434"><a name="BM2262434"></a>
+<h2>2262434</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_RECEIVE_PACKET_OVERFLOW</div>
+<div class="txt">SRI/Motor Controller Link Error:
+The motor link receive packet has overflowed.
+Opcode: %c
+Length: %ld</div>
+</section>
+<section id="BM2262435"><a name="BM2262435"></a>
+<h2>2262435</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_UNEXPECTED_RECEIVE</div>
+<div class="txt">SRI/Motor Controller Link Error:
+Unexpected data was received from the motor link.
+Data: %c (%#x)</div>
+</section>
+<section id="BM2262436"><a name="BM2262436"></a>
+<h2>2262436</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_RECEIVE_ERROR</div>
+<div class="txt">SRI/Motor Controller Link Error:
+A UART receive error occurred.
+Error: %#x</div>
+</section>
+<section id="BM2262437"><a name="BM2262437"></a>
+<h2>2262437</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_RESET_FAILED</div>
+<div class="txt">SRI/Motor Controller Link Error:
+The motor link failed to respond to a reset.</div>
+</section>
+<section id="BM2262438"><a name="BM2262438"></a>
+<h2>2262438</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_INIT_FAILED</div>
+<div class="txt">SRI/Motor Controller Link Error:
+The motor link failed to initialize after a reset.</div>
+</section>
+<section id="BM2262439"><a name="BM2262439"></a>
+<h2>2262439</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_RESPONSE_TIMEOUT</div>
+<div class="txt">SRI/Motor Controller Link Error:
+A response was not received in time.
+Response Opcode: %c</div>
+</section>
+<section id="BM2262440"><a name="BM2262440"></a>
+<h2>2262440</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_RETRY_RESPONSE_TIMEOUT</div>
+<div class="txt">SRI/Motor Controller Link Error:
+A retry response was not received in time.
+Response Opcode: %c</div>
+</section>
+<section id="BM2262441"><a name="BM2262441"></a>
+<h2>2262441</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_INVALID_ACK</div>
+<div class="txt">SRI/Motor Controller Link Error:
+An acknowledgement was received with an invalid opcode.
+Opcode: %c</div>
+</section>
+<section id="BM2262442"><a name="BM2262442"></a>
+<h2>2262442</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_INVALID_OPCODE</div>
+<div class="txt">SRI/Motor Controller Link Error:
+A packet was received with an invalid opcode.
+Opcode: %c</div>
+</section>
+<section id="BM2262443"><a name="BM2262443"></a>
+<h2>2262443</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_RECEIVE_LENGTH</div>
+<div class="txt">SRI/Motor Controller Link Error:
+A packet was received with the incorrect length.
+Opcode: %c
+Length: %ld
+Expected Length: %ld</div>
+</section>
+<section id="BM2262444"><a name="BM2262444"></a>
+<h2>2262444</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_UNEXPECTED_ACK</div>
+<div class="txt">SRI/Motor Controller Link Error:
+An unexpected acknowledgement packet was received.
+Opcode: %c</div>
+</section>
+<section id="BM2262445"><a name="BM2262445"></a>
+<h2>2262445</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_INCORRECT_ACK</div>
+<div class="txt">SRI/Motor Controller Link Error:
+An acknowledgement was received for a different opcode then expected.
+Opcode: %c
+Expected Opcode: %c</div>
+</section>
+<section id="BM2262446"><a name="BM2262446"></a>
+<h2>2262446</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_REG_FAILED</div>
+<div class="txt">SRI/Motor Controller Link Error:
+A register read or write failed.
+Register Opcode: %c
+Register: %#x</div>
+</section>
+<section id="BM2262447"><a name="BM2262447"></a>
+<h2>2262447</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_INCORRECT_REG</div>
+<div class="txt">SRI/Motor Controller Link Error:
+A register read or write returned the incorrect index.
+Register Opcode: %c
+Register: %#x
+Expected Register: %#x</div>
+</section>
+<section id="BM2262448"><a name="BM2262448"></a>
+<h2>2262448</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_UNEXPECTED_RESET</div>
+<div class="txt">SRI/Motor Controller Link Error:
+An unexpected reset was detected from the motor link.</div>
+</section>
+<section id="BM2262449"><a name="BM2262449"></a>
+<h2>2262449</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_INVALID_ASCII_HEX</div>
+<div class="txt">SRI/Motor Controller Link Error:
+An invalid ASCII hex character was received from the motor link.
+Character: %c (%#x)</div>
+</section>
+<section id="BM2262450"><a name="BM2262450"></a>
+<h2>2262450</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_TRANSMIT_OVERFLOW</div>
+<div class="txt">SRI/Motor Controller Link Error:
+The motor link transmit buffer has overflowed.</div>
+</section>
+<section id="BM2262451"><a name="BM2262451"></a>
+<h2>2262451</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_STATUS_TIMEOUT</div>
+<div class="txt">SRI/Motor Controller Link Error:
+The motor controller has not sent the status packet in time. Disabling movement until communication is recovered.</div>
+</section>
+<section id="BM2262452"><a name="BM2262452"></a>
+<h2>2262452</h2>
+<div class="sym">ERROR: EM_SRI_MOTOR_FAULT</div>
+<div class="txt">SRI/Motor Controller Error:
+The motor controller has indicated there is a fault.
+Fault Code: 0x%0.4lx%0.4lx</div>
+</section>
+<section id="BM2262600"><a name="BM2262600"></a>
+<h2>2262600</h2>
+<div class="sym">ERROR: EM_PHPS_NODE_ID</div>
+<div class="txt">Patient Handling Power Supplies</div>
+</section>
+<section id="BM2262601"><a name="BM2262601"></a>
+<h2>2262601</h2>
+<div class="sym">ERROR: EM_PHPS_TABLE_DC_FAULT</div>
+<div class="txt">A Fault was detected on the Table DC Power Supplies.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PHPS</li></ol>
+</section>
+<section id="BM2262602"><a name="BM2262602"></a>
+<h2>2262602</h2>
+<div class="sym">ERROR: EM_PHPS_MAGNET_DC_FAULT</div>
+<div class="txt">A Fault was detected on the Magnet DC Power Supplies.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PHPS</li></ol>
+</section>
+<section id="BM2262603"><a name="BM2262603"></a>
+<h2>2262603</h2>
+<div class="sym">ERROR: EM_PHPS_AMP_FAULT</div>
+<div class="txt">A Fault was detected on the Table Motor Controller.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PHPS</li></ol>
+</section>
+<section id="BM2262604"><a name="BM2262604"></a>
+<h2>2262604</h2>
+<div class="sym">ERROR: EM_PARAM_WRITE_FAIL</div>
+<div class="txt">A Failure was encountered downloading parameter 0x%x to the PHPS Motor Amplifier. Please try again or try resetting the Motor Amplifier through the Diagnostic Screen. Failure code is %d.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PHPS</li></ol>
+</section>
+<section id="BM2262605"><a name="BM2262605"></a>
+<h2>2262605</h2>
+<div class="sym">ERROR: EM_PARAM_READ_FAIL</div>
+<div class="txt">A Failure was encountered uploading parameter 0x%x from the PHPS Motor Amplifier. Please try again or try resetting the Motor Amplifier through the Diagnostic Screen. Failure code is %d.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PHPS</li></ol>
+</section>
+<section id="BM2262606"><a name="BM2262606"></a>
+<h2>2262606</h2>
+<div class="sym">ERROR: EM_PHPS_NOT_PRESENT</div>
+<div class="txt">The PHPS was not detected on the system CAN bus.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This message indicates that the PHPS may not have the CAN bus connected. There are CAN in and out connections on the PHPS, ensure that the cable is connected to both. For more information run the CAN Link Diagnostic.</div>
+</section>
+<section id="BM2262650"><a name="BM2262650"></a>
+<h2>2262650</h2>
+<div class="sym">ERROR: EM_MR_MX_viz_CANNOT_RESAVE_BOOKMARK</div>
+<div class="txt">Bookmark images are already saved. They will not be saved again.</div>
+</section>
+<section id="BM2262651"><a name="BM2262651"></a>
+<h2>2262651</h2>
+<div class="sym">ERROR: EM_MR_MX_viz_MAX_BOOKMARK_LIMIT</div>
+<div class="txt">Maximum number of bookmark series have been saved and no additional bookmark series may be saved.</div>
+</section>
+<section id="BM2262652"><a name="BM2262652"></a>
+<h2>2262652</h2>
+<div class="sym">ERROR: EM_MR_MX_viz_NO_CARDIACREALTIME_FOUND</div>
+<div class="txt">Scan and Save images cannot be placed into a bookmark. Please use Autoview to view them.</div>
+</section>
+<section id="BM2262700"><a name="BM2262700"></a>
+<h2>2262700</h2>
+<div class="sym">ERROR: EM_SRP_NOT_READY_CSB</div>
+<div class="txt">Coil switched bias board is not ready.</div>
+</section>
+<section id="BM2262701"><a name="BM2262701"></a>
+<h2>2262701</h2>
+<div class="sym">ERROR: EM_SRP_NOT_READY_PREAMP</div>
+<div class="txt">Pre amplifier is not ready.</div>
+</section>
+<section id="BM2262702"><a name="BM2262702"></a>
+<h2>2262702</h2>
+<div class="sym">ERROR: EM_SRP_INVALID_TIME_VAL</div>
+<div class="txt">SCP Software Error: Invalid time display setting
+upper: %#lx, lower: %#lx</div>
+</section>
+<section id="BM2262703"><a name="BM2262703"></a>
+<h2>2262703</h2>
+<div class="sym">ERROR: EM_SRP_INVALID_COLON_VAL</div>
+<div class="txt">SCP Software Error: Invalid colon display setting: %ld</div>
+</section>
+<section id="BM2262704"><a name="BM2262704"></a>
+<h2>2262704</h2>
+<div class="sym">ERROR: EM_SRP_UNK_COIL_BIAS</div>
+<div class="txt">SCP Software Error:
+SCP received unknown Coil Bias from Host: %ld</div>
+</section>
+<section id="BM2262705"><a name="BM2262705"></a>
+<h2>2262705</h2>
+<div class="sym">ERROR: EM_SRP_INVALID_LED_VAL</div>
+<div class="txt">SCP Software Error: Invalid LED setting
+LED ld: %d, value: %ld</div>
+</section>
+<section id="BM2262706"><a name="BM2262706"></a>
+<h2>2262706</h2>
+<div class="sym">ERROR: EM_SRP_STOP_ACTION_MCD_ERROR</div>
+<div class="txt">Multi-coil driver board error occurred, see log.</div>
+</section>
+<section id="BM2262707"><a name="BM2262707"></a>
+<h2>2262707</h2>
+<div class="sym">ERROR: EM_SRP_STOP_ACTION_CSB_ERROR</div>
+<div class="txt">Coil switched bias board error occurred, see log.</div>
+</section>
+<section id="BM2262708"><a name="BM2262708"></a>
+<h2>2262708</h2>
+<div class="sym">ERROR: EM_SRP_STOP_ACTION_SRP_ERROR</div>
+<div class="txt">SRI board error occurred, see log.</div>
+</section>
+<section id="BM2262709"><a name="BM2262709"></a>
+<h2>2262709</h2>
+<div class="sym">ERROR: EM_SRP_STOP_ACTION_COIL_CHANGED</div>
+<div class="txt">Coil code was changed.</div>
+</section>
+<section id="BM2262710"><a name="BM2262710"></a>
+<h2>2262710</h2>
+<div class="sym">ERROR: EM_SRP_COIL_NOT_CONNECTED</div>
+<div class="txt">Coil is not connected.</div>
+</section>
+<section id="BM2262711"><a name="BM2262711"></a>
+<h2>2262711</h2>
+<div class="sym">ERROR: EM_SRP_PREAMP_ERROR1</div>
+<div class="txt">Undefined error code received from pre-amplifier. &lt;1&gt;</div>
+</section>
+<section id="BM2262712"><a name="BM2262712"></a>
+<h2>2262712</h2>
+<div class="sym">ERROR: EM_SRP_PREAMP_ERROR2</div>
+<div class="txt">Undefined error code received from pre-amplifier. &lt;2&gt;</div>
+</section>
+<section id="BM2262713"><a name="BM2262713"></a>
+<h2>2262713</h2>
+<div class="sym">ERROR: EM_SRP_PREAMP_ERROR3</div>
+<div class="txt">Undefined error code received from pre-amplifier. &lt;3&gt;</div>
+</section>
+<section id="BM2262714"><a name="BM2262714"></a>
+<h2>2262714</h2>
+<div class="sym">ERROR: EM_SRP_PREAMP_ERROR4</div>
+<div class="txt">Undefined error code received from pre-amplifier. &lt;4&gt;</div>
+</section>
+<section id="BM2262715"><a name="BM2262715"></a>
+<h2>2262715</h2>
+<div class="sym">ERROR: EM_SRP_PREAMP_ERROR5</div>
+<div class="txt">Undefined error code received from pre-amplifier. &lt;5&gt;</div>
+</section>
+<section id="BM2262716"><a name="BM2262716"></a>
+<h2>2262716</h2>
+<div class="sym">ERROR: EM_SRP_PREAMP_ERROR6</div>
+<div class="txt">Undefined error code received from pre-amplifier. &lt;6&gt;</div>
+</section>
+<section id="BM2262717"><a name="BM2262717"></a>
+<h2>2262717</h2>
+<div class="sym">ERROR: EM_SRP_PREAMP_ERROR7</div>
+<div class="txt">Pre amplifier bias error was occurred. Bias current of T/R SW1 is under range. It may be necessary to change the pre-amplifier box.</div>
+</section>
+<section id="BM2262718"><a name="BM2262718"></a>
+<h2>2262718</h2>
+<div class="sym">ERROR: EM_SRP_PREAMP_ERROR8</div>
+<div class="txt">Pre amplifier bias error was occurred. Bias current of T/R SW1 is over range. It may be necessary to change the pre-amplifier box.</div>
+</section>
+<section id="BM2262719"><a name="BM2262719"></a>
+<h2>2262719</h2>
+<div class="sym">ERROR: EM_SRP_PREAMP_ERROR9</div>
+<div class="txt">Pre amplifier bias error was occurred. Bias current of T/R SW2 is under range. It may be necessary to change the pre-amplifier box.</div>
+</section>
+<section id="BM2262720"><a name="BM2262720"></a>
+<h2>2262720</h2>
+<div class="sym">ERROR: EM_SRP_PREAMP_ERROR10</div>
+<div class="txt">Pre amplifier bias error was occurred. Bias current of T/R SW2 is over range. It may be necessary to change the pre-amplifier box.</div>
+</section>
+<section id="BM2262721"><a name="BM2262721"></a>
+<h2>2262721</h2>
+<div class="sym">ERROR: EM_SRP_PREAMP_ERROR11</div>
+<div class="txt">Pre amplifier bias error was occurred. Bias current of active decoupling surface coil is under range. It may be necessary to change the pre-amplifier box.</div>
+</section>
+<section id="BM2262722"><a name="BM2262722"></a>
+<h2>2262722</h2>
+<div class="sym">ERROR: EM_SRP_PREAMP_ERROR12</div>
+<div class="txt">Pre amplifier bias error was occurred. Bias current of active decoupling surface coil is over range. It may be necessary to change the pre-amplifier box.</div>
+</section>
+<section id="BM2262723"><a name="BM2262723"></a>
+<h2>2262723</h2>
+<div class="sym">ERROR: EM_SRP_PREAMP_ERROR13</div>
+<div class="txt">Pre amplifier bias errors were occurred. Please check error LED of SW CTL board in pre amplifier box. It may be necessary to change the pre-amplifier box.</div>
+</section>
+<section id="BM2262724"><a name="BM2262724"></a>
+<h2>2262724</h2>
+<div class="sym">ERROR: EM_SRP_PM_PREAMP_ERROR1</div>
+<div class="txt">Phased Array bias error(short) is occurred.</div>
+</section>
+<section id="BM2262725"><a name="BM2262725"></a>
+<h2>2262725</h2>
+<div class="sym">ERROR: EM_SRP_PM_PREAMP_ERROR2</div>
+<div class="txt">Phased Array bias error(open) is occurred.</div>
+</section>
+<section id="BM2262726"><a name="BM2262726"></a>
+<h2>2262726</h2>
+<div class="sym">ERROR: EM_SRP_PM_PREAMP_ERROR3</div>
+<div class="txt">Undefined error code received from pre-amplifier. &lt;3&gt;</div>
+</section>
+<section id="BM2262727"><a name="BM2262727"></a>
+<h2>2262727</h2>
+<div class="sym">ERROR: EM_SRP_PM_PREAMP_ERROR4</div>
+<div class="txt">Undefined error code received from pre-amplifier. &lt;4&gt;</div>
+</section>
+<section id="BM2262728"><a name="BM2262728"></a>
+<h2>2262728</h2>
+<div class="sym">ERROR: EM_SRP_PM_PREAMP_ERROR5</div>
+<div class="txt">Pre amplifier bias error was occurred on 0 degree port. It may be necessary to change the pre-amplifier box.</div>
+</section>
+<section id="BM2262729"><a name="BM2262729"></a>
+<h2>2262729</h2>
+<div class="sym">ERROR: EM_SRP_PM_PREAMP_ERROR6</div>
+<div class="txt">Pre amplifier bias error was occurred on 90 degree port. It may be necessary to change the pre-amplifier box.</div>
+</section>
+<section id="BM2262730"><a name="BM2262730"></a>
+<h2>2262730</h2>
+<div class="sym">ERROR: EM_SRP_PM_PREAMP_ERROR7</div>
+<div class="txt">Undefined error code received from pre-amplifier. &lt;7&gt;</div>
+</section>
+<section id="BM2262731"><a name="BM2262731"></a>
+<h2>2262731</h2>
+<div class="sym">ERROR: EM_SRP_PM_PREAMP_ERROR8</div>
+<div class="txt">Undefined error code received from pre-amplifier. &lt;8&gt;</div>
+</section>
+<section id="BM2262732"><a name="BM2262732"></a>
+<h2>2262732</h2>
+<div class="sym">ERROR: EM_SRP_PM_PREAMP_ERROR9</div>
+<div class="txt">Undefined error code received from pre-amplifier. &lt;9&gt;</div>
+</section>
+<section id="BM2262733"><a name="BM2262733"></a>
+<h2>2262733</h2>
+<div class="sym">ERROR: EM_SRP_PM_PREAMP_ERROR10</div>
+<div class="txt">Undefined error code received from pre-amplifier. &lt;10&gt;</div>
+</section>
+<section id="BM2262734"><a name="BM2262734"></a>
+<h2>2262734</h2>
+<div class="sym">ERROR: EM_SRP_PM_PREAMP_ERROR11</div>
+<div class="txt">Undefined error code received from pre-amplifier. &lt;11&gt;</div>
+</section>
+<section id="BM2262735"><a name="BM2262735"></a>
+<h2>2262735</h2>
+<div class="sym">ERROR: EM_SRP_PM_PREAMP_ERROR12</div>
+<div class="txt">Undefined error code received from pre-amplifier. &lt;12&gt;</div>
+</section>
+<section id="BM2262736"><a name="BM2262736"></a>
+<h2>2262736</h2>
+<div class="sym">ERROR: EM_SRP_PM_PREAMP_ERROR13</div>
+<div class="txt">Undefined error code received from pre-amplifier. &lt;13&gt;</div>
+</section>
+<section id="BM2262737"><a name="BM2262737"></a>
+<h2>2262737</h2>
+<div class="sym">ERROR: EM_SRP_PM_PREAMP_ERROR14</div>
+<div class="txt">Undefined error code received from pre-amplifier. &lt;14&gt;</div>
+</section>
+<section id="BM2262738"><a name="BM2262738"></a>
+<h2>2262738</h2>
+<div class="sym">ERROR: EM_SRP_MCD_ERROR1</div>
+<div class="txt">Multi-Coil T/R Driver Board Fault An open circuit was detected on port 1. Check cable to multi-coil board or check for an open pin diode.</div>
+</section>
+<section id="BM2262739"><a name="BM2262739"></a>
+<h2>2262739</h2>
+<div class="sym">ERROR: EM_SRP_MCD_ERROR2</div>
+<div class="txt">Multi-Coil T/R Driver Board Fault An open circuit was detected on port 2. Check cable to multi-coil board or check for an open pin diode.</div>
+</section>
+<section id="BM2262740"><a name="BM2262740"></a>
+<h2>2262740</h2>
+<div class="sym">ERROR: EM_SRP_MCD_ERROR3</div>
+<div class="txt">Multi-Coil T/R Driver Board Fault An open circuit was detected on port 3. Check cable to multi-coil board or check for an open pin diode.</div>
+</section>
+<section id="BM2262741"><a name="BM2262741"></a>
+<h2>2262741</h2>
+<div class="sym">ERROR: EM_SRP_MCD_ERROR4</div>
+<div class="txt">Multi-Coil T/R Driver Board Fault An open circuit was detected on port 4. Check cable to multi-coil board or check for an open pin diode.</div>
+</section>
+<section id="BM2262742"><a name="BM2262742"></a>
+<h2>2262742</h2>
+<div class="sym">ERROR: EM_SRP_MCD_ERROR5</div>
+<div class="txt">Multi-Coil T/R Driver Board Fault A short circuit was detected on port 1. Check cable to multi-coil board or check for a shorted pin diode.</div>
+</section>
+<section id="BM2262743"><a name="BM2262743"></a>
+<h2>2262743</h2>
+<div class="sym">ERROR: EM_SRP_MCD_ERROR6</div>
+<div class="txt">Multi-Coil T/R Driver Board Fault A short circuit was detected on port 2. Check cable to multi-coil board or check for a shorted pin diode.</div>
+</section>
+<section id="BM2262744"><a name="BM2262744"></a>
+<h2>2262744</h2>
+<div class="sym">ERROR: EM_SRP_MCD_ERROR7</div>
+<div class="txt">Multi-Coil T/R Driver Board Fault A short circuit was detected on port 3. Check cable to multi-coil board or check for a shorted pin diode.</div>
+</section>
+<section id="BM2262745"><a name="BM2262745"></a>
+<h2>2262745</h2>
+<div class="sym">ERROR: EM_SRP_MCD_ERROR8</div>
+<div class="txt">Multi-Coil T/R Driver Board Fault A short circuit was detected on port 4. Check cable to multi-coil board or check for a shorted pin diode.</div>
+</section>
+<section id="BM2262746"><a name="BM2262746"></a>
+<h2>2262746</h2>
+<div class="sym">ERROR: EM_SRP_MCD_ERROR9</div>
+<div class="txt">Multi-coil array driver board error. A write to the multi-coil array driver board coil register failed to verify. This could indicate a problem with the multi-coil board or with the SRI board, or with the link between them.</div>
+</section>
+<section id="BM2262747"><a name="BM2262747"></a>
+<h2>2262747</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR1</div>
+<div class="txt">Coil switched bias board error. Body coil disable error 1 &lt;OPEN&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262748"><a name="BM2262748"></a>
+<h2>2262748</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR2</div>
+<div class="txt">Coil switched bias board error. Body coil disable error 2 &lt;OPEN&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262749"><a name="BM2262749"></a>
+<h2>2262749</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR3</div>
+<div class="txt">Coil switched bias board error. Body coil disable error 3 &lt;OPEN&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262750"><a name="BM2262750"></a>
+<h2>2262750</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR4</div>
+<div class="txt">Coil switched bias board error. Body coil disable error 4 &lt;OPEN&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262751"><a name="BM2262751"></a>
+<h2>2262751</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR5</div>
+<div class="txt">Coil switched bias board error. Body coil enable error &lt;OPEN&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262752"><a name="BM2262752"></a>
+<h2>2262752</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR6</div>
+<div class="txt">Coil switched bias board error. Body coil disable error 1 &lt;SHORT&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262753"><a name="BM2262753"></a>
+<h2>2262753</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR7</div>
+<div class="txt">Coil switched bias board error. Body coil disable error 2 &lt;SHORT&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262754"><a name="BM2262754"></a>
+<h2>2262754</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR8</div>
+<div class="txt">Coil switched bias board error. Body coil disable error 3 &lt;SHORT&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262755"><a name="BM2262755"></a>
+<h2>2262755</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR9</div>
+<div class="txt">Coil switched bias board error. Body coil disable error 4 &lt;SHORT&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262756"><a name="BM2262756"></a>
+<h2>2262756</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR10</div>
+<div class="txt">Coil switched bias board error. Body coil enable error &lt;SHORT&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262757"><a name="BM2262757"></a>
+<h2>2262757</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR11</div>
+<div class="txt">Coil switched bias board error. Body coil enable error 1 &lt;OPEN&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262758"><a name="BM2262758"></a>
+<h2>2262758</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR12</div>
+<div class="txt">Coil switched bias board error. Body coil enable error 2 &lt;OPEN&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262759"><a name="BM2262759"></a>
+<h2>2262759</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR13</div>
+<div class="txt">Coil switched bias board error. Body coil enable error 3 &lt;OPEN&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262760"><a name="BM2262760"></a>
+<h2>2262760</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR14</div>
+<div class="txt">Coil switched bias board error. Body coil enable error 4 &lt;OPEN&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262761"><a name="BM2262761"></a>
+<h2>2262761</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR15</div>
+<div class="txt">Coil switched bias board error. Body coil disable error &lt;OPEN&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262762"><a name="BM2262762"></a>
+<h2>2262762</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR16</div>
+<div class="txt">Coil switched bias board error. Body coil enable error 1 &lt;SHORT&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262763"><a name="BM2262763"></a>
+<h2>2262763</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR17</div>
+<div class="txt">Coil switched bias board error. Body coil enable error 2 &lt;SHORT&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262764"><a name="BM2262764"></a>
+<h2>2262764</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR18</div>
+<div class="txt">Coil switched bias board error. Body coil enable error 3 &lt;SHORT&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262765"><a name="BM2262765"></a>
+<h2>2262765</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR19</div>
+<div class="txt">Coil switched bias board error. Body coil enable error 4 &lt;SHORT&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262766"><a name="BM2262766"></a>
+<h2>2262766</h2>
+<div class="sym">ERROR: EM_SRP_CSB_ERROR20</div>
+<div class="txt">Coil switched bias board error. Body coil disable error &lt;SHORT&gt; occurred. Check the CSB board, Coil ID, and the bias cable between CSB and Body coil. Or the diode switch of the body coil was broken.</div>
+</section>
+<section id="BM2262767"><a name="BM2262767"></a>
+<h2>2262767</h2>
+<div class="sym">ERROR: EM_SRP_SRP_ERROR1</div>
+<div class="txt">SRI-SCP Communication Error. It may be necessary to Reset TPS. The SRI received a packet from the SCP containing an unknown opcode.</div>
+</section>
+<section id="BM2262768"><a name="BM2262768"></a>
+<h2>2262768</h2>
+<div class="sym">ERROR: EM_SRP_SRP_ERROR2</div>
+<div class="txt">SRI-SCP Communication Error. It may be necessary to Reset TPS. The SRI received a packet from the SCP which did not include all required parameters.</div>
+</section>
+<section id="BM2262769"><a name="BM2262769"></a>
+<h2>2262769</h2>
+<div class="sym">ERROR: EM_SRP_SRP_ERROR3</div>
+<div class="txt">SRI internal error. The SRI received the distance from alignment to isocenter again. May be the SCP is not in the correct state. It may be necessary to reset TPS.</div>
+</section>
+<section id="BM2262770"><a name="BM2262770"></a>
+<h2>2262770</h2>
+<div class="sym">ERROR: EM_SRP_SRP_ERROR4</div>
+<div class="txt">SRI internal error. The SRI received the distance from home to inlimit again. May be the SCP is not in the correct state. It may be necessary to reset TPS.</div>
+</section>
+<section id="BM2262771"><a name="BM2262771"></a>
+<h2>2262771</h2>
+<div class="sym">ERROR: EM_SRP_SRP_DUART_ERROR</div>
+<div class="txt">SRI internal error. It may be necessary to Reset TPS. The DUART of SRI reported an error upon reception of a character.</div>
+</section>
+<section id="BM2262772"><a name="BM2262772"></a>
+<h2>2262772</h2>
+<div class="sym">ERROR: EM_SRP_SRP_QUEUE_OVERFLOW1</div>
+<div class="txt">SRI internal error. It may be necessary to Reset TPS. The SCP-SRI receive buffer overflowed. Characters have been lost.</div>
+</section>
+<section id="BM2262773"><a name="BM2262773"></a>
+<h2>2262773</h2>
+<div class="sym">ERROR: EM_SRP_SRP_QUEUE_OVERFLOW2</div>
+<div class="txt">SRI internal error. It may be necessary to Reset TPS. The SCP-SRI transmit buffer overflowed. Characters have been lost.</div>
+</section>
+<section id="BM2262774"><a name="BM2262774"></a>
+<h2>2262774</h2>
+<div class="sym">ERROR: EM_SRP_SRP_QUEUE_OVERFLOW3</div>
+<div class="txt">SRI internal error. It may be necessary to Reset TPS. The SRI magnet shroud interface buffer overflowed. Characters have been lost.</div>
+</section>
+<section id="BM2262775"><a name="BM2262775"></a>
+<h2>2262775</h2>
+<div class="sym">ERROR: EM_SRP_POST_MESSAGE1</div>
+<div class="txt">The cradle must be at outlimit when you want to up/down the table. Please move the cradle manually, and make sure the outlimit LED is turned on.</div>
+</section>
+<section id="BM2262776"><a name="BM2262776"></a>
+<h2>2262776</h2>
+<div class="sym">ERROR: EM_SRP_POST_MESSAGE2</div>
+<div class="txt">The table can not be upped or downed when the multi coil is connected. If you want to move the table, please disconnect the multi coil.</div>
+</section>
+<section id="BM2262777"><a name="BM2262777"></a>
+<h2>2262777</h2>
+<div class="sym">ERROR: EM_SRP_POST_MESSAGE3</div>
+<div class="txt">The cradle is not latched. Please latch the cradle.</div>
+</section>
+<section id="BM2262778"><a name="BM2262778"></a>
+<h2>2262778</h2>
+<div class="sym">ERROR: EM_SRP_POST_MESSAGE4</div>
+<div class="txt">The advance to scan switch is disabled due to the landmark is not established.</div>
+</section>
+<section id="BM2262779"><a name="BM2262779"></a>
+<h2>2262779</h2>
+<div class="sym">ERROR: EM_SRP_POST_MESSAGE5</div>
+<div class="txt">Can not move the cradle. Scan center is over the inlimit range. Please establish the landmark again.</div>
+</section>
+<section id="BM2262780"><a name="BM2262780"></a>
+<h2>2262780</h2>
+<div class="sym">ERROR: EM_SRP_POST_MESSAGE6</div>
+<div class="txt">The cradle was sliding. Please check for patient safety.</div>
+</section>
+<section id="BM2262781"><a name="BM2262781"></a>
+<h2>2262781</h2>
+<div class="sym">ERROR: EM_SRP_POST_MESSAGE7</div>
+<div class="txt">The cradle was moved from isocenter. Please make sure the patient position, then press advance to scan button and move the cradle to isocenter.</div>
+</section>
+<section id="BM2262782"><a name="BM2262782"></a>
+<h2>2262782</h2>
+<div class="sym">ERROR: EM_SRP_POST_MESSAGE8</div>
+<div class="txt">SRI is in LED test mode.</div>
+</section>
+<section id="BM2262783"><a name="BM2262783"></a>
+<h2>2262783</h2>
+<div class="sym">ERROR: EM_SRP_POST_MESSAGE9</div>
+<div class="txt">SRI is in service mode. The table is emulated.</div>
+</section>
+<section id="BM2262784"><a name="BM2262784"></a>
+<h2>2262784</h2>
+<div class="sym">ERROR: EM_SRP_POST_BUTTON_MESSAGE1</div>
+<div class="txt">The IN key on the magnet shroud has been activated more than 3 minutes. Check the magnet shroud button, SRI, and cables between them.</div>
+</section>
+<section id="BM2262785"><a name="BM2262785"></a>
+<h2>2262785</h2>
+<div class="sym">ERROR: EM_SRP_POST_BUTTON_MESSAGE2</div>
+<div class="txt">The OUT key on the magnet shroud has been activated more than 3 minutes. Check the magnet shroud button, SRI, and cables between them.</div>
+</section>
+<section id="BM2262786"><a name="BM2262786"></a>
+<h2>2262786</h2>
+<div class="sym">ERROR: EM_SRP_POST_BUTTON_MESSAGE3</div>
+<div class="txt">The UP key on the magnet shroud has been activated more than 1 minutes. Check the magnet shroud button, SRI, and cables between them.</div>
+</section>
+<section id="BM2262787"><a name="BM2262787"></a>
+<h2>2262787</h2>
+<div class="sym">ERROR: EM_SRP_POST_BUTTON_MESSAGE4</div>
+<div class="txt">The DOWN key on the magnet shroud has been activated more than 1 minutes. Check the magnet shroud button, SRI, and cables between them.</div>
+</section>
+<section id="BM2262788"><a name="BM2262788"></a>
+<h2>2262788</h2>
+<div class="sym">ERROR: EM_SRP_POST_BUTTON_MESSAGE5</div>
+<div class="txt">The FAST key on the magnet shroud has been activated more than 3 minutes. Check the magnet shroud button, SRI, and cables between them.</div>
+</section>
+<section id="BM2262789"><a name="BM2262789"></a>
+<h2>2262789</h2>
+<div class="sym">ERROR: EM_SRP_POST_BUTTON_MESSAGE6</div>
+<div class="txt">The ADV TO SCAN key on the magnet shroud has been activated more than 3 minutes. Check the magnet shroud button, SRI, and cables between them.</div>
+</section>
+<section id="BM2262790"><a name="BM2262790"></a>
+<h2>2262790</h2>
+<div class="sym">ERROR: EM_SRP_POST_BUTTON_MESSAGE7</div>
+<div class="txt">The START SCAN key on the magnet shroud has been activated more than 3 minutes. Check the magnet shroud button, SRI, and cables between them.</div>
+</section>
+<section id="BM2262791"><a name="BM2262791"></a>
+<h2>2262791</h2>
+<div class="sym">ERROR: EM_SRP_POST_BUTTON_MESSAGE8</div>
+<div class="txt">The STOP SCAN key on the magnet shroud has been activated more than 3 minutes. Check the magnet shroud button, SRI, and cables between them.</div>
+</section>
+<section id="BM2262792"><a name="BM2262792"></a>
+<h2>2262792</h2>
+<div class="sym">ERROR: EM_SRP_POST_BUTTON_MESSAGE9</div>
+<div class="txt">The PAUSE SCAN key on the magnet shroud has been activated more than 3 minutes. Check the magnet shroud button, SRI, and cables between them.</div>
+</section>
+<section id="BM2262793"><a name="BM2262793"></a>
+<h2>2262793</h2>
+<div class="sym">ERROR: EM_SRP_POST_BUTTON_MESSAGE10</div>
+<div class="txt">The FAN key on the magnet shroud has been activated more than 3 minutes. Check the magnet shroud button, SRI, and cables between them.</div>
+</section>
+<section id="BM2262794"><a name="BM2262794"></a>
+<h2>2262794</h2>
+<div class="sym">ERROR: EM_SRP_POST_BUTTON_MESSAGE11</div>
+<div class="txt">The LIGHT key on the magnet shroud has been activated more than 3 minutes. Check the magnet shroud button, SRI, and cables between them.</div>
+</section>
+<section id="BM2262795"><a name="BM2262795"></a>
+<h2>2262795</h2>
+<div class="sym">ERROR: EM_SRP_POST_BUTTON_MESSAGE12</div>
+<div class="txt">The LANDMARK SET key on the magnet shroud has been activated more than 3 minutes. Check the magnet shroud button, SRI, and cables between them.</div>
+</section>
+<section id="BM2262796"><a name="BM2262796"></a>
+<h2>2262796</h2>
+<div class="sym">ERROR: EM_SRP_POST_BUTTON_MESSAGE13</div>
+<div class="txt">The ALIGNMENT LIGHT key on the magnet shroud has been activated more than 3 minutes. Check the magnet shroud button, SRI, and cables between them.</div>
+</section>
+<section id="BM2262797"><a name="BM2262797"></a>
+<h2>2262797</h2>
+<div class="sym">ERROR: EM_SRP_POST_BUTTON_MESSAGE14</div>
+<div class="txt">The LATERAL MOVEMENT(RIGHT) key on the magnet shroud has been activated more than 3 minutes. Check the magnet shroud button, SRI, and cables between them.</div>
+</section>
+<section id="BM2262798"><a name="BM2262798"></a>
+<h2>2262798</h2>
+<div class="sym">ERROR: EM_SRP_POST_BUTTON_MESSAGE15</div>
+<div class="txt">The LATERAL MOVEMENT(LEFT) key on the magnet shroud has been activated more than 3 minutes. Check the magnet shroud button, SRI, and cables between them.</div>
+</section>
+<section id="BM2262799"><a name="BM2262799"></a>
+<h2>2262799</h2>
+<div class="sym">ERROR: EM_SRP_POST_BUTTON_MESSAGE16</div>
+<div class="txt">The BACK TO LANDMARK key on the magnet shroud has been activated more than 3 minutes. Check the magnet shroud button, SRI, and cables between them.</div>
+</section>
+<section id="BM2262800"><a name="BM2262800"></a>
+<h2>2262800</h2>
+<div class="sym">ERROR: EM_SRP_POST_BUTTON_MESSAGE17</div>
+<div class="txt">The HOME key on the magnet shroud has been activated more than 3 minutes. Check the magnet shroud button, SRI, and cables between them.</div>
+</section>
+<section id="BM2262830"><a name="BM2262830"></a>
+<h2>2262830</h2>
+<div class="sym">ERROR: EM_MR_MX_ExamState_DeleteExamStateService</div>
+<div class="txt">\fAttempting to delete ExamStateService.</div>
+</section>
+<section id="BM2262831"><a name="BM2262831"></a>
+<h2>2262831</h2>
+<div class="sym">ERROR: EM_MR_MX_ExamState_InvalidNodeIndexForExamStateService</div>
+<div class="txt">\fExamStateService received illegal node index %s.</div>
+</section>
+<section id="BM2262832"><a name="BM2262832"></a>
+<h2>2262832</h2>
+<div class="sym">ERROR: EM_MR_MX_ExamState_ExamStateServiceInternalError</div>
+<div class="txt">\fInternal error occurred in a ExamStateService object.</div>
+</section>
+<section id="BM2262840"><a name="BM2262840"></a>
+<h2>2262840</h2>
+<div class="sym">ERROR: EM_MR_MX_Standby_DeleteStandByStateHandler</div>
+<div class="txt">\fAttempting to delete StandByStateHandler.</div>
+</section>
+<section id="BM2262841"><a name="BM2262841"></a>
+<h2>2262841</h2>
+<div class="sym">ERROR: EM_MR_MX_Standby_InvalidNodeIndexForStandByStateHandler</div>
+<div class="txt">\fStandByStateHandler received illegal node index %s.</div>
+</section>
+<section id="BM2262842"><a name="BM2262842"></a>
+<h2>2262842</h2>
+<div class="sym">ERROR: EM_MR_MX_Standby_StandByStateHandlerInternalError</div>
+<div class="txt">\fInternal error occurred in a StandByStateHandler object.</div>
+</section>
+<section id="BM2262843"><a name="BM2262843"></a>
+<h2>2262843</h2>
+<div class="sym">ERROR: EM_MR_MX_Standby_StandByStateHandlerStandBy</div>
+<div class="txt">The system is in the standby mode.</div>
+</section>
+<section id="BM2262844"><a name="BM2262844"></a>
+<h2>2262844</h2>
+<div class="sym">ERROR: EM_MR_MX_Standby_StandByStateHandlerStandUp</div>
+<div class="txt">\vThe system is back from the standby mode.</div>
+</section>
+<section id="BM2262850"><a name="BM2262850"></a>
+<h2>2262850</h2>
+<div class="sym">ERROR: EM_NIOS_LD_APP_ERROR</div>
+<div class="txt">%b Hardware FPGA Load Error. The processor did not load successfully. Possible corrupted hardware image file.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A Hardware FPGA Load Error can occur if there is a problem with the Board transferring code into the FPGA.</div>
+</section>
+<section id="BM2262851"><a name="BM2262851"></a>
+<h2>2262851</h2>
+<div class="sym">ERROR: EM_NIOS_APP_MODE_ERROR</div>
+<div class="txt">%b Application Mode Error. The node is not in the application mode, which is necessary to run diagnostics. Possible application load error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error can occur when the board is reset to start diagnostics and there is an error loading and/or starting the application image on the board.</div>
+</section>
+<section id="BM2262875"><a name="BM2262875"></a>
+<h2>2262875</h2>
+<div class="sym">ERROR: EM_FLASH_INIT_ERROR</div>
+<div class="txt">%b FLASH initialization error. The FLASH device could not be initialized. Possible bad FLASH device. Error: 0x%X</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>ASC NB IF Board</li><li>ASC BB IF Board</li></ol>
+</section>
+<section id="BM2262876"><a name="BM2262876"></a>
+<h2>2262876</h2>
+<div class="sym">ERROR: EM_FLASH_GET_CONFIG_DATA_ERROR</div>
+<div class="txt">%b FLASH configuration data read error. Configuration Data could not be read from the FLASH device. Possible bad FLASH device. Error: 0x%X</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>ASC NB IF Board</li><li>ASC BB IF Board</li></ol>
+</section>
+<section id="BM2262877"><a name="BM2262877"></a>
+<h2>2262877</h2>
+<div class="sym">ERROR: EM_FLASH_ERASE_ERROR</div>
+<div class="txt">%b FLASH erase error. Could not erase the FLASH device. Possible bad FLASH device. Erase Offset: 0x%X Erase Size: 0x%X bytes Error: 0x%X</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>ASC NB IF Board</li><li>ASC BB IF Board</li></ol>
+</section>
+<section id="BM2262878"><a name="BM2262878"></a>
+<h2>2262878</h2>
+<div class="sym">ERROR: EM_FLASH_WRITE_ERROR</div>
+<div class="txt">%b FLASH erase then write error. Could not erase and then write the FLASH device. Possible bad FLASH device. Write Offset: 0x%X Write Size: 0x%X bytes Error: 0x%X</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>ASC NB IF Board</li><li>ASC BB IF Board</li></ol>
+</section>
+<section id="BM2262879"><a name="BM2262879"></a>
+<h2>2262879</h2>
+<div class="sym">ERROR: EM_FLASH_WRITE_ERASED_ERROR</div>
+<div class="txt">%b FLASH write error. Could not write the FLASH device. Possible bad FLASH device. Write Offset: 0x%X Write Size: 0x%X bytes Error: 0x%X</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>ASC NB IF Board</li><li>ASC BB IF Board</li></ol>
+</section>
+<section id="BM2262880"><a name="BM2262880"></a>
+<h2>2262880</h2>
+<div class="sym">ERROR: EM_FLASH_READ_ERROR</div>
+<div class="txt">%b FLASH read error. Could not read data from the FLASH device. Possible bad FLASH device. Read Offset: 0x%X Read Size: 0x%X bytes Error: 0x%X</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>ASC NB IF Board</li><li>ASC BB IF Board</li></ol>
+</section>
+<section id="BM2262900"><a name="BM2262900"></a>
+<h2>2262900</h2>
+<div class="sym">ERROR: EM_PIFF_LOADER_FILENAME_NAME</div>
+<div class="txt">Filename:</div>
+</section>
+<section id="BM2262901"><a name="BM2262901"></a>
+<h2>2262901</h2>
+<div class="sym">ERROR: EM_PIFF_LOADER_FILE_IO_FAILED</div>
+<div class="txt">File I/O Failure A file I/O error occurred on a PIFF file. The file may not be present or may be corrupted.
+Filename: %s%s
+Operation: %s Error: 0x%08lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the specified file exists on the Host. If this problem persists across TPS resets, the file may have become corrupted or erased. If the problem does not persist, this could be the result of a network error.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2262902"><a name="BM2262902"></a>
+<h2>2262902</h2>
+<div class="sym">ERROR: EM_PIFF_SWAP_VALIDATION_FAILED</div>
+<div class="txt">PIFF File Validation Failure A PIFF header could not be swapped.
+Source: %b%s%s
+Header Type: %s
+Endian: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">If a filename is given, the file may have become corrupted. If the name of a peripheral is given, the memory on the peripheral may have become corrupted or erased. This could also happen once if the peripheral has not been loaded yet.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2262903"><a name="BM2262903"></a>
+<h2>2262903</h2>
+<div class="sym">ERROR: EM_PIFF_MAGIC_VALIDATION_FAILED</div>
+<div class="txt">PIFF Validation Failure A PIFF header had an incorrect magic number.
+Source: %b%s%s
+Header Type: %s Magic Number: 0x%08lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">If a filename is given, the file may have become corrupted. If the name of a peripheral is given, the memory on the peripheral may have become corrupted or erased. This could also happen once if the peripheral has not been loaded yet.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2262904"><a name="BM2262904"></a>
+<h2>2262904</h2>
+<div class="sym">ERROR: EM_PIFF_CRC_VALIDATION_FAILED</div>
+<div class="txt">PIFF Validation Failure A PIFF header failed CRC checking.
+Source: %b%s%s
+Header Type: %s CRC: 0x%08lx Header CRC: 0x%08lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">If a filename is given, the file may have become corrupted. If the name of a peripheral is given, the memory on the peripheral may have become corrupted or erased. This could also happen once if the peripheral has not been loaded yet.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2262905"><a name="BM2262905"></a>
+<h2>2262905</h2>
+<div class="sym">ERROR: EM_PIFF_SIZE_VALIDATION_FAILED</div>
+<div class="txt">PIFF Validation Failure A PIFF header failed size checking.
+Source: %b%s%s
+Header Type: %s
+Size: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">If a filename is given, the file may have become corrupted. If the name of a peripheral is given, the memory on the peripheral may have become corrupted or erased. This could also happen once if the peripheral has not been loaded yet.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2262906"><a name="BM2262906"></a>
+<h2>2262906</h2>
+<div class="sym">ERROR: EM_PIFF_DATA_CRC_FAILED</div>
+<div class="txt">PIFF Validation Failure A PIFF image failed data CRC checking.
+Source: %b%s%s CRC: 0x%08lx Header CRC: 0x%08lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">If a filename is given, the file may have become corrupted. If the name of a peripheral is given, the memory on the peripheral may have become corrupted or erased. This could also happen once if the peripheral has not been loaded yet.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2262930"><a name="BM2262930"></a>
+<h2>2262930</h2>
+<div class="sym">ERROR: EM_FLASH_PIFF_DOWNLOAD</div>
+<div class="txt">Firmware Detected on %b is different from the file(s) resident on the Host. Flash Downloading Firmware to Board. This is expected to happen during new Software Loads.</div>
+</section>
+<section id="BM2262931"><a name="BM2262931"></a>
+<h2>2262931</h2>
+<div class="sym">ERROR: EM_FLASH_PIFF_DOWNLOAD_ERR</div>
+<div class="txt">Flash Download Failed on %b. Board will not be allowed to function until valid code is present. Will attempt to reset board and try again.</div>
+</section>
+<section id="BM2262932"><a name="BM2262932"></a>
+<h2>2262932</h2>
+<div class="sym">ERROR: EM_PIFF_LOAD_SECTION_ERR</div>
+<div class="txt">PIFF Node %b: loadNextSectionBlock returned status 0x%X for file %s%s.</div>
+</section>
+<section id="BM2262933"><a name="BM2262933"></a>
+<h2>2262933</h2>
+<div class="sym">ERROR: EM_PIFF_COMMAND_TIMEOUT_ERR</div>
+<div class="txt">PIFF Node %b: command response timed out for Command 0x%X.</div>
+</section>
+<section id="BM2262934"><a name="BM2262934"></a>
+<h2>2262934</h2>
+<div class="sym">ERROR: EM_PIFF_NODE_INVALID_STATE_ERR</div>
+<div class="txt">PIFF Node %b: state error: node state: 0x%X; mode 0x%X.</div>
+</section>
+<section id="BM2262935"><a name="BM2262935"></a>
+<h2>2262935</h2>
+<div class="sym">ERROR: EM_PIFF_NO_FILES_ERR</div>
+<div class="txt">PIFF Node %b: No PIFF files were registered with the PIFF node. Most likely a software error.</div>
+</section>
+<section id="BM2262936"><a name="BM2262936"></a>
+<h2>2262936</h2>
+<div class="sym">ERROR: EM_PIFF_LOAD_IMG_HDR_ERR</div>
+<div class="txt">PIFF Node %b: loadImageHeader returned status 0x%X for file %s%s.</div>
+</section>
+<section id="BM2262937"><a name="BM2262937"></a>
+<h2>2262937</h2>
+<div class="sym">ERROR: EM_PIFF_PROGRAM_AND_START_APP_ERR</div>
+<div class="txt">PIFF Node %b: FLASH Programming Failed. Possible bad FLASH device.</div>
+</section>
+<section id="BM2262960"><a name="BM2262960"></a>
+<h2>2262960</h2>
+<div class="sym">ERROR: EM_PIFF_STATUS_VALIDATION_FAILED</div>
+<div class="txt">PIFF Validation Failure A PIFF control block status was invalid.
+Source: %b Status: 0x%08lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">The memory on the peripheral may have become corrupted or erased.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2262961"><a name="BM2262961"></a>
+<h2>2262961</h2>
+<div class="sym">ERROR: EM_PIFF_MIRROR_OUT_OF_MEMORY</div>
+<div class="txt">PIFF Programming Failure Not enough memory to program PIFF image.
+Source: %b %s: 0x%08lx, Size: %#lx, Limit: 0x%08lx</div>
+</section>
+<section id="BM2262962"><a name="BM2262962"></a>
+<h2>2262962</h2>
+<div class="sym">ERROR: EM_PIFF_MIRROR_DATA_ADDRESS_INVALID</div>
+<div class="txt">PIFF Programming Failure The data address or size specified is invalid.
+Source: %b Copy Address: 0x%08lx Data Address: 0x%08lx
+Data Size: %ld Block Start: 0x%08lx, Size: %ld</div>
+</section>
+<section id="BM2262963"><a name="BM2262963"></a>
+<h2>2262963</h2>
+<div class="sym">ERROR: EM_PIFF_MIRROR_IMAGE_NOT_FOUND</div>
+<div class="txt">PIFF Programming Failure The image specified was not found.
+Source: %b
+Image ID: %ld</div>
+</section>
+<section id="BM2262964"><a name="BM2262964"></a>
+<h2>2262964</h2>
+<div class="sym">ERROR: EM_PIFF_MIRROR_IMAGE_NOT_DOWNLOADED</div>
+<div class="txt">PIFF Programming Failure The image specified in a section download has not been downloaded yet.
+Source: %b
+Image ID: %ld</div>
+</section>
+<section id="BM2262965"><a name="BM2262965"></a>
+<h2>2262965</h2>
+<div class="sym">ERROR: EM_PIFF_MIRROR_SECTION_NOT_FOUND</div>
+<div class="txt">PIFF Programming Failure The section specified in a section data download was not found.
+Source: %b
+Image ID: %ld
+Section ID: %ld</div>
+</section>
+<section id="BM2262966"><a name="BM2262966"></a>
+<h2>2262966</h2>
+<div class="sym">ERROR: EM_PIFF_MIRROR_SECTION_DATA_ADDRESS_INVALID</div>
+<div class="txt">PIFF Programming Failure The section data location downloaded is invalid.
+Source: %b
+Image ID: %ld
+Section ID: %ld Data Offset: 0x%08lx, Size: %ld
+Total Size: %ld</div>
+</section>
+<section id="BM2262967"><a name="BM2262967"></a>
+<h2>2262967</h2>
+<div class="sym">ERROR: EM_PIFF_MIRROR_SECTION_NOT_COMPLETE</div>
+<div class="txt">PIFF Programming Failure Programming failed because a section was not fully downloaded.
+Source: %b
+Image ID: %ld
+Section ID: %ld</div>
+</section>
+<section id="BM2262968"><a name="BM2262968"></a>
+<h2>2262968</h2>
+<div class="sym">ERROR: EM_PIFF_MIRROR_SECTION_NUMBER_MISMATCH</div>
+<div class="txt">PIFF Programming Failure Programming failed because a different number of sections were downloaded than expected.
+Source: %b
+Image ID: %ld
+Number Of Sections: %ld
+Number Downloaded: %ld</div>
+</section>
+<section id="BM2262969"><a name="BM2262969"></a>
+<h2>2262969</h2>
+<div class="sym">ERROR: EM_PIFF_MIRROR_SECTION_SIZE_MISMATCH</div>
+<div class="txt">PIFF Programming Failure Programming failed because the section data sizes did not match total size.
+Source: %b
+Image ID: %ld
+Total Size: %ld
+Downloaded Size: %ld</div>
+</section>
+</body></html>

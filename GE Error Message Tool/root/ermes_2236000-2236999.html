@@ -1,0 +1,2558 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2236000-2236999 (374)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2236000-2236999 (374)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2234000-2234999.html">&larr; 2234000-2234999</a><a href="ermes_2237000-2237999.html">2237000-2237999 &rarr;</a></nav></header>
+<section id="BM2236296"><a name="BM2236296"></a>
+<h2>2236296</h2>
+<div class="sym">ERROR: EM_ACI_CMD_TIMEOUT</div>
+<div class="txt">CERD DIAGS - CAP/ASC Communications Timeout error. A timeout error occurred while sending a command to the ASC. The command was not sent. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236297"><a name="BM2236297"></a>
+<h2>2236297</h2>
+<div class="sym">ERROR: EM_ACI_OPCODE_TIMEOUT</div>
+<div class="txt">CERD DIAGS - CAP/ASC Communications Timeout error. A timeout error occurred while waiting for a packet opcode from the ASC. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236298"><a name="BM2236298"></a>
+<h2>2236298</h2>
+<div class="sym">ERROR: EM_ACI_DONE_TIMEOUT</div>
+<div class="txt">CERD DIAGS - CAP/ASC Communications Timeout error. A command done opcode has been received from the ASC but a timeout occurred while waiting for the arguments that follow. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236299"><a name="BM2236299"></a>
+<h2>2236299</h2>
+<div class="sym">ERROR: EM_ACI_ERROR_TIMEOUT</div>
+<div class="txt">CERD DIAGS - CAP/ASC Communications Timeout error. An error opcode has been received from the ASC but a timeout occurred while waiting for the arguments that follow. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236300"><a name="BM2236300"></a>
+<h2>2236300</h2>
+<div class="sym">ERROR: EM_ACI_SERVERREQ_TIMEOUT</div>
+<div class="txt">CERD DIAGS - CAP/ASC Communications Timeout error. A server request opcode has been received from the ASC but a timeout occurred while waiting for the arguments that follow. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236301"><a name="BM2236301"></a>
+<h2>2236301</h2>
+<div class="sym">ERROR: EM_ACI_BAD_DONE_ARGC</div>
+<div class="txt">CERD DIAGS - Software error. The CAP received a command done packet from the ASC with an invalid argument count.
+Expected: %d arguments.
+Received: %d arguments.</div>
+</section>
+<section id="BM2236302"><a name="BM2236302"></a>
+<h2>2236302</h2>
+<div class="sym">ERROR: EM_ACI_BAD_ERROR_ARGC</div>
+<div class="txt">CERD DIAGS - Software error. The CAP received an error packet from the ASC with an invalid argument count.
+Expected: %d arguments.
+Received: %d arguments.</div>
+</section>
+<section id="BM2236303"><a name="BM2236303"></a>
+<h2>2236303</h2>
+<div class="sym">ERROR: EM_ACI_BAD_SERVERREQ_ARGC</div>
+<div class="txt">CERD DIAGS - Software error. The CAP received a server request packet with too many arguments.
+Maximum argument count allowed: %d
+Received argument count: %d</div>
+</section>
+<section id="BM2236304"><a name="BM2236304"></a>
+<h2>2236304</h2>
+<div class="sym">ERROR: EM_ACI_BAD_OPCODE</div>
+<div class="txt">CERD DIAGS - Software error. The CAP received an invalid opcode from the ASC.
+Opcode: %08xH</div>
+</section>
+<section id="BM2236305"><a name="BM2236305"></a>
+<h2>2236305</h2>
+<div class="sym">ERROR: EM_ACI_BAD_SERVER_NUM</div>
+<div class="txt">CERD DIAGS - Software error. The CAP received an invalid diags server request from the ASC.
+Server request number: %d</div>
+</section>
+<section id="BM2236306"><a name="BM2236306"></a>
+<h2>2236306</h2>
+<div class="sym">ERROR: EM_ADE_BAD_OPCODE</div>
+<div class="txt">CERD DIAGS - Software error. The ASC received an invalid opcode from the CAP.
+Opcode: %08xH</div>
+</section>
+<section id="BM2236307"><a name="BM2236307"></a>
+<h2>2236307</h2>
+<div class="sym">ERROR: EM_ADE_BAD_ARGCOUNT</div>
+<div class="txt">CERD DIAGS - Software error. The ASC received a command from the CAP with an invalid argument count for the specified opcode.
+Expected: %d arguments.
+Received: %d arguments.</div>
+</section>
+<section id="BM2236308"><a name="BM2236308"></a>
+<h2>2236308</h2>
+<div class="sym">ERROR: EM_ADE_BAD_TESTGROUP</div>
+<div class="txt">CERD DIAGS - Software error. The ASC received a command to run diags, but the specified test group is invalid.
+Specified test group: %d</div>
+</section>
+<section id="BM2236309"><a name="BM2236309"></a>
+<h2>2236309</h2>
+<div class="sym">ERROR: EM_ADE_RPC_TOOMANYARGS</div>
+<div class="txt">CERD DIAGS - Software error. The ASC received a Remote Procedure Call with too many arguments.
+Specified argument count: %d
+Maximum argument count allowed: %d</div>
+</section>
+<section id="BM2236310"><a name="BM2236310"></a>
+<h2>2236310</h2>
+<div class="sym">ERROR: EM_ADE_RPC_BAD_RPCCODE</div>
+<div class="txt">CERD DIAGS - Software error. The ASC received an invalid Remote Procedure Call (RPC) request from the CAP.
+RPC number: %d
+Highest allowable RPC number: %d</div>
+</section>
+<section id="BM2236311"><a name="BM2236311"></a>
+<h2>2236311</h2>
+<div class="sym">ERROR: EM_AIMED_INVALID_TEST</div>
+<div class="txt">CERD DIAGS - Software error. An invalid AIME test has been selected in the diagnostic command word. No tests will be run.
+Command word: %08xH
+Valid test bits: %08xH</div>
+</section>
+<section id="BM2236312"><a name="BM2236312"></a>
+<h2>2236312</h2>
+<div class="sym">ERROR: EM_ASCD_INVALID_TEST</div>
+<div class="txt">CERD DIAGS - Software error. An invalid ASC test has been selected in the diagnostic command word. No tests will be run.
+Command word: %08xH
+Valid test bits: %08xH</div>
+</section>
+<section id="BM2236313"><a name="BM2236313"></a>
+<h2>2236313</h2>
+<div class="sym">ERROR: EM_RAPD_INVALID_TEST</div>
+<div class="txt">CERD DIAGS - Software error. An invalid RAP test has been selected in the diagnostic command word. No tests will be run.
+Command word: %08xH
+Valid test bits: %08xH</div>
+</section>
+<section id="BM2236314"><a name="BM2236314"></a>
+<h2>2236314</h2>
+<div class="sym">ERROR: EM_AIMED_AG_Q_DATA</div>
+<div class="txt">CERD DIAGS - AIME Q Port Address Generator Failure. The Q port AG has failed the register data pattern test.
+Register: %02xH
+Data exp: %02xH
+Data read: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236315"><a name="BM2236315"></a>
+<h2>2236315</h2>
+<div class="sym">ERROR: EM_AIMED_AG_QIN_DATA</div>
+<div class="txt">CERD DIAGS - AIME QIN Address Generator Failure. The QIN AG has failed the register data pattern test.
+Register: %02xH
+Data exp: %02xH
+Data read: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236316"><a name="BM2236316"></a>
+<h2>2236316</h2>
+<div class="sym">ERROR: EM_AIMED_AG_QOUT_DATA</div>
+<div class="txt">CERD DIAGS - AIME QOUT Address Generator Failure. The QOUT AG has failed the register data pattern test.
+Register: %02xH
+Data exp: %02xH
+Data read: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236317"><a name="BM2236317"></a>
+<h2>2236317</h2>
+<div class="sym">ERROR: EM_AIMED_AG_A_DATA</div>
+<div class="txt">CERD DIAGS - AIME A Port Address Generator Failure. The A port AG has failed the register data pattern test.
+Register: %02xH
+Data exp: %02xH
+Data read: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236318"><a name="BM2236318"></a>
+<h2>2236318</h2>
+<div class="sym">ERROR: EM_AIMED_AG_B_DATA</div>
+<div class="txt">CERD DIAGS - AIME B Port Address Generator Failure. The B port AG has failed the register data pattern test.
+Register: %02xH
+Data exp: %02xH
+Data read: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236319"><a name="BM2236319"></a>
+<h2>2236319</h2>
+<div class="sym">ERROR: EM_AIMED_AG_C_DATA</div>
+<div class="txt">CERD DIAGS - AIME C Port Address Generator Failure. The C port AG has failed the register data pattern test.
+Register: %02xH
+Data exp: %02xH
+Data read: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236320"><a name="BM2236320"></a>
+<h2>2236320</h2>
+<div class="sym">ERROR: EM_AIMED_AG_Q_ADDR</div>
+<div class="txt">CERD DIAGS - AIME Q Port Address Generator Failure. The Q port AG has failed the register address pattern test.
+Register: %02xH
+Data exp: %02xH
+Data read: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236321"><a name="BM2236321"></a>
+<h2>2236321</h2>
+<div class="sym">ERROR: EM_AIMED_AG_QIN_ADDR</div>
+<div class="txt">CERD DIAGS - AIME QIN Address Generator Failure. The QIN AG has failed the register address pattern test.
+Register: %02xH
+Data exp: %02xH
+Data read: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236322"><a name="BM2236322"></a>
+<h2>2236322</h2>
+<div class="sym">ERROR: EM_AIMED_AG_QOUT_ADDR</div>
+<div class="txt">CERD DIAGS - AIME QOUT Address Generator Failure. The QOUT AG has failed the register address pattern test.
+Register: %02xH
+Data exp: %02xH
+Data read: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236323"><a name="BM2236323"></a>
+<h2>2236323</h2>
+<div class="sym">ERROR: EM_AIMED_AG_A_ADDR</div>
+<div class="txt">CERD DIAGS - AIME A Port Address Generator Failure. The A port AG has failed the register address pattern test.
+Register: %02xH
+Data exp: %02xH
+Data read: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236324"><a name="BM2236324"></a>
+<h2>2236324</h2>
+<div class="sym">ERROR: EM_AIMED_AG_B_ADDR</div>
+<div class="txt">CERD DIAGS - AIME B Port Address Generator Failure. The B port AG has failed the register address pattern test.
+Register: %02xH
+Data exp: %02xH
+Data read: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236325"><a name="BM2236325"></a>
+<h2>2236325</h2>
+<div class="sym">ERROR: EM_AIMED_AG_C_ADDR</div>
+<div class="txt">CERD DIAGS - AIME C Port Address Generator Failure. The C port AG has failed the register address pattern test.
+Register: %02xH
+Data exp: %02xH
+Data read: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236326"><a name="BM2236326"></a>
+<h2>2236326</h2>
+<div class="sym">ERROR: EM_AIMED_AG_SELECT</div>
+<div class="txt">CERD DIAGS - AIME Address Generator Failure. An addressing problem has been detected with one or more of the AIME Address Generators chips.
+AG address: %08xH
+Data exp: %02xH
+Data read: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236327"><a name="BM2236327"></a>
+<h2>2236327</h2>
+<div class="sym">ERROR: EM_AIMED_NO_EOP_INT</div>
+<div class="txt">CERD DIAGS - AIME Interrupt Test Failure. The AIME was programmed and started, but no End of Pass Interrupt was received by the ASC. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236328"><a name="BM2236328"></a>
+<h2>2236328</h2>
+<div class="sym">ERROR: EM_AIMED_AIME_TIMEOUT</div>
+<div class="txt">CERD DIAGS - AIME Timeout Error. The current test has failed because the AIME has timed out. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236329"><a name="BM2236329"></a>
+<h2>2236329</h2>
+<div class="sym">ERROR: EM_AIMED_BR_DATA_PAT</div>
+<div class="txt">CERD DIAGS - AIME B Port Memory Failure. AIME B Port Memory (real) has failed the data pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236330"><a name="BM2236330"></a>
+<h2>2236330</h2>
+<div class="sym">ERROR: EM_AIMED_BI_DATA_PAT</div>
+<div class="txt">CERD DIAGS - AIME B Port Memory Failure. AIME B Port Memory (imaginary) has failed the data pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236331"><a name="BM2236331"></a>
+<h2>2236331</h2>
+<div class="sym">ERROR: EM_AIMED_BR_ADDR_PAT</div>
+<div class="txt">CERD DIAGS - AIME B Port Memory Failure. AIME B Port Memory (real) has failed the address pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236332"><a name="BM2236332"></a>
+<h2>2236332</h2>
+<div class="sym">ERROR: EM_AIMED_BI_ADDR_PAT</div>
+<div class="txt">CERD DIAGS - AIME B Port Memory Failure. AIME B Port Memory (imaginary) has failed the address pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236333"><a name="BM2236333"></a>
+<h2>2236333</h2>
+<div class="sym">ERROR: EM_AIMED_BR_WALK1</div>
+<div class="txt">CERD DIAGS - AIME B Port Memory Failure. AIME B Port Memory (real) has failed the walking 1&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236334"><a name="BM2236334"></a>
+<h2>2236334</h2>
+<div class="sym">ERROR: EM_AIMED_BI_WALK1</div>
+<div class="txt">CERD DIAGS - AIME B Port Memory Failure. AIME B Port Memory (imaginary) has failed the walking 1&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236335"><a name="BM2236335"></a>
+<h2>2236335</h2>
+<div class="sym">ERROR: EM_AIMED_BR_WALK0</div>
+<div class="txt">CERD DIAGS - AIME B Port Memory Failure. AIME B Port Memory (real) has failed the walking 0&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236336"><a name="BM2236336"></a>
+<h2>2236336</h2>
+<div class="sym">ERROR: EM_AIMED_BI_WALK0</div>
+<div class="txt">CERD DIAGS - AIME B Port Memory Failure. AIME B Port Memory (imaginary) has failed the walking 0&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236337"><a name="BM2236337"></a>
+<h2>2236337</h2>
+<div class="sym">ERROR: EM_AIMED_CR_DATA_PAT</div>
+<div class="txt">CERD DIAGS - AIME C Port Memory Failure. AIME C Port Memory (real) has failed the data pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236338"><a name="BM2236338"></a>
+<h2>2236338</h2>
+<div class="sym">ERROR: EM_AIMED_CI_DATA_PAT</div>
+<div class="txt">CERD DIAGS - AIME C Port Memory Failure. AIME C Port Memory (imaginary) has failed the data pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236339"><a name="BM2236339"></a>
+<h2>2236339</h2>
+<div class="sym">ERROR: EM_AIMED_CR_ADDR_PAT</div>
+<div class="txt">CERD DIAGS - AIME C Port Memory Failure. AIME C Port Memory (real) has failed the address pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236340"><a name="BM2236340"></a>
+<h2>2236340</h2>
+<div class="sym">ERROR: EM_AIMED_CI_ADDR_PAT</div>
+<div class="txt">CERD DIAGS - AIME C Port Memory Failure. AIME C Port Memory (imaginary) has failed the address pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236341"><a name="BM2236341"></a>
+<h2>2236341</h2>
+<div class="sym">ERROR: EM_AIMED_CR_WALK1</div>
+<div class="txt">CERD DIAGS - AIME C Port Memory Failure. AIME C Port Memory (real) has failed the walking 1&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236342"><a name="BM2236342"></a>
+<h2>2236342</h2>
+<div class="sym">ERROR: EM_AIMED_CI_WALK1</div>
+<div class="txt">CERD DIAGS - AIME C Port Memory Failure. AIME C Port Memory (imaginary) has failed the walking 1&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236343"><a name="BM2236343"></a>
+<h2>2236343</h2>
+<div class="sym">ERROR: EM_AIMED_CR_WALK0</div>
+<div class="txt">CERD DIAGS - AIME C Port Memory Failure. AIME C Port Memory (real) has failed the walking 0&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236344"><a name="BM2236344"></a>
+<h2>2236344</h2>
+<div class="sym">ERROR: EM_AIMED_CI_WALK0</div>
+<div class="txt">CERD DIAGS - AIME C Port Memory Failure. AIME C Port Memory (imaginary) has failed the walking 0&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236345"><a name="BM2236345"></a>
+<h2>2236345</h2>
+<div class="sym">ERROR: EM_AIMED_AR_DATA_PAT</div>
+<div class="txt">CERD DIAGS - AIME A Port Memory Failure. AIME A Port Memory (real) has failed the data pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236346"><a name="BM2236346"></a>
+<h2>2236346</h2>
+<div class="sym">ERROR: EM_AIMED_AI_DATA_PAT</div>
+<div class="txt">CERD DIAGS - AIME A Port Memory Failure. AIME A Port Memory (imaginary) has failed the data pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236347"><a name="BM2236347"></a>
+<h2>2236347</h2>
+<div class="sym">ERROR: EM_AIMED_AR_ADDR_PAT</div>
+<div class="txt">CERD DIAGS - AIME A Port Memory Failure. AIME A Port Memory (real) has failed the address pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236348"><a name="BM2236348"></a>
+<h2>2236348</h2>
+<div class="sym">ERROR: EM_AIMED_AI_ADDR_PAT</div>
+<div class="txt">CERD DIAGS - AIME A Port Memory Failure. AIME A Port Memory (imaginary) has failed the address pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236349"><a name="BM2236349"></a>
+<h2>2236349</h2>
+<div class="sym">ERROR: EM_AIMED_AR_WALK1</div>
+<div class="txt">CERD DIAGS - AIME A Port Memory Failure. AIME A Port Memory (real) has failed the walking 1&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236350"><a name="BM2236350"></a>
+<h2>2236350</h2>
+<div class="sym">ERROR: EM_AIMED_AI_WALK1</div>
+<div class="txt">CERD DIAGS - AIME A Port Memory Failure. AIME A Port Memory (imaginary) has failed the walking 1&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236351"><a name="BM2236351"></a>
+<h2>2236351</h2>
+<div class="sym">ERROR: EM_AIMED_AR_WALK0</div>
+<div class="txt">CERD DIAGS - AIME A Port Memory Failure. AIME A Port Memory (real) has failed the walking 0&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236352"><a name="BM2236352"></a>
+<h2>2236352</h2>
+<div class="sym">ERROR: EM_AIMED_AI_WALK0</div>
+<div class="txt">CERD DIAGS - AIME A Port Memory Failure. AIME A Port Memory (imaginary) has failed the walking 0&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236353"><a name="BM2236353"></a>
+<h2>2236353</h2>
+<div class="sym">ERROR: EM_AIMED_R_BANKSEL</div>
+<div class="txt">CERD DIAGS - AIME A Port Memory Failure. AIME A Port Memory (real) has failed the bank selection test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH
+Bank: %d FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236354"><a name="BM2236354"></a>
+<h2>2236354</h2>
+<div class="sym">ERROR: EM_AIMED_I_BANKSEL</div>
+<div class="txt">CERD DIAGS - AIME A Port Memory Failure. AIME A Port Memory (imaginary) has failed the bank selection test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH
+Bank: %d FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236355"><a name="BM2236355"></a>
+<h2>2236355</h2>
+<div class="sym">ERROR: EM_AIMED_R_PAGESEL</div>
+<div class="txt">CERD DIAGS - AIME A Port Memory Failure. AIME A Port Memory (real) has failed the bank 1 page selection test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH
+Page: %d
+Page size: %dK FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236356"><a name="BM2236356"></a>
+<h2>2236356</h2>
+<div class="sym">ERROR: EM_AIMED_I_PAGESEL</div>
+<div class="txt">CERD DIAGS - AIME A Port Memory Failure. AIME A Port Memory (imaginary) has failed the bank 1 page selection test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH
+Page: %d
+Page size: %dK FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236357"><a name="BM2236357"></a>
+<h2>2236357</h2>
+<div class="sym">ERROR: EM_AIMED_R_BANK0_HIT</div>
+<div class="txt">CERD DIAGS - AIME A Port Memory Failure. Bank 0 memory (real) was corrupted during the bank 1 page selection test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH
+Page: %d
+Page size: %dK FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236358"><a name="BM2236358"></a>
+<h2>2236358</h2>
+<div class="sym">ERROR: EM_AIMED_I_BANK0_HIT</div>
+<div class="txt">CERD DIAGS - AIME A Port Memory Failure. Bank 0 memory (imaginary) was corrupted during the bank 1 page selection test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH
+Page: %d
+Page size: %dK FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236359"><a name="BM2236359"></a>
+<h2>2236359</h2>
+<div class="sym">ERROR: EM_AIMED_R_DZIDZO_NONE</div>
+<div class="txt">CERD DIAGS - AIME DZI/DZO Test Failure. The DZI/DZO test failed with neither DZI nor DZO asserted. The failure is in the real component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236360"><a name="BM2236360"></a>
+<h2>2236360</h2>
+<div class="sym">ERROR: EM_AIMED_I_DZIDZO_NONE</div>
+<div class="txt">CERD DIAGS - AIME DZI/DZO Test Failure. The DZI/DZO test failed with neither DZI nor DZO asserted. The failure is in the imaginary component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236361"><a name="BM2236361"></a>
+<h2>2236361</h2>
+<div class="sym">ERROR: EM_AIMED_R_DZI_ALT</div>
+<div class="txt">CERD DIAGS - AIME DZI/DZO Test Failure. The DZI/DZO test failed using alternating DZI assertions. The failure is in the real component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236362"><a name="BM2236362"></a>
+<h2>2236362</h2>
+<div class="sym">ERROR: EM_AIMED_I_DZI_ALT</div>
+<div class="txt">CERD DIAGS - AIME DZI/DZO Test Failure. The DZI/DZO test failed using alternating DZI assertions. The failure is in the imaginary component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236363"><a name="BM2236363"></a>
+<h2>2236363</h2>
+<div class="sym">ERROR: EM_AIMED_R_DZO_ALT</div>
+<div class="txt">CERD DIAGS - AIME DZI/DZO Test Failure. The DZI/DZO test failed using alternating DZO assertions. The failure is in the real component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236364"><a name="BM2236364"></a>
+<h2>2236364</h2>
+<div class="sym">ERROR: EM_AIMED_I_DZO_ALT</div>
+<div class="txt">CERD DIAGS - AIME DZI/DZO Test Failure. The DZI/DZO test failed using alternating DZO assertions. The failure is in the imaginary component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236365"><a name="BM2236365"></a>
+<h2>2236365</h2>
+<div class="sym">ERROR: EM_AIMED_R_DZI_PAD</div>
+<div class="txt">CERD DIAGS - AIME DZI/DZO Test Failure. The DZI/DZO test failed with DZI asserted at the start of a sequence. The failure is in the real component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236366"><a name="BM2236366"></a>
+<h2>2236366</h2>
+<div class="sym">ERROR: EM_AIMED_I_DZI_PAD</div>
+<div class="txt">CERD DIAGS - AIME DZI/DZO Test Failure. The DZI/DZO test failed with DZI asserted at the start of a sequence. The failure is in the imaginary component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236367"><a name="BM2236367"></a>
+<h2>2236367</h2>
+<div class="sym">ERROR: EM_AIMED_R_DZO_PAD</div>
+<div class="txt">CERD DIAGS - AIME DZI/DZO Test Failure. The DZI/DZO test failed with DZO asserted at the end of a sequence. The failure is in the real component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236368"><a name="BM2236368"></a>
+<h2>2236368</h2>
+<div class="sym">ERROR: EM_AIMED_I_DZO_PAD</div>
+<div class="txt">CERD DIAGS - AIME DZI/DZO Test Failure. The DZI/DZO test failed with DZO asserted at the end of a sequence. The failure is in the imaginary component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236369"><a name="BM2236369"></a>
+<h2>2236369</h2>
+<div class="sym">ERROR: EM_AIMED_R_DCIDCO</div>
+<div class="txt">CERD DIAGS - AIME DCI/DCO Test Failure. The DCI/DCO test failed using the listed DCI/DCO values. The failure is in the real component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH
+DCI=%1d, DCO=%1d FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236370"><a name="BM2236370"></a>
+<h2>2236370</h2>
+<div class="sym">ERROR: EM_AIMED_I_DCIDCO</div>
+<div class="txt">CERD DIAGS - AIME DCI/DCO Test Failure. The DCI/DCO test failed using the listed DCI/DCO values. The failure is in the imaginary component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH
+DCI=%1d, DCO=%1d FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236371"><a name="BM2236371"></a>
+<h2>2236371</h2>
+<div class="sym">ERROR: EM_AIMED_R_CCRCCI_NONE</div>
+<div class="txt">CERD DIAGS - AIME CCR/CCI Test Failure. The CCR/CCI test failed with neither CCR nor CCI asserted. The failure is in the real component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236372"><a name="BM2236372"></a>
+<h2>2236372</h2>
+<div class="sym">ERROR: EM_AIMED_I_CCRCCI_NONE</div>
+<div class="txt">CERD DIAGS - AIME CCR/CCI Test Failure. The CCR/CCI test failed with neither CCR nor CCI asserted. The failure is in the imaginary component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236373"><a name="BM2236373"></a>
+<h2>2236373</h2>
+<div class="sym">ERROR: EM_AIMED_R_CCR_ONLY</div>
+<div class="txt">CERD DIAGS - AIME CCR/CCI Test Failure. The CCR/CCI test failed with only CCR asserted. The failure is in the real component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236374"><a name="BM2236374"></a>
+<h2>2236374</h2>
+<div class="sym">ERROR: EM_AIMED_I_CCR_ONLY</div>
+<div class="txt">CERD DIAGS - AIME CCR/CCI Test Failure. The CCR/CCI test failed with only CCR asserted. The failure is in the imaginary component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236375"><a name="BM2236375"></a>
+<h2>2236375</h2>
+<div class="sym">ERROR: EM_AIMED_R_CCI_ATSTART</div>
+<div class="txt">CERD DIAGS - AIME CCR/CCI Test Failure. The CCR/CCI test failed with CCI asserted at the start of a sequence. The failure is in the real component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236376"><a name="BM2236376"></a>
+<h2>2236376</h2>
+<div class="sym">ERROR: EM_AIMED_I_CCI_ATSTART</div>
+<div class="txt">CERD DIAGS - AIME CCR/CCI Test Failure. The CCR/CCI test failed with CCI asserted at the start of a sequence. The failure is in the imaginary component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236377"><a name="BM2236377"></a>
+<h2>2236377</h2>
+<div class="sym">ERROR: EM_AIMED_R_CCI_ATEND</div>
+<div class="txt">CERD DIAGS - AIME CCR/CCI Test Failure. The CCR/CCI test failed with CCI asserted at the end of a sequence. The failure is in the real component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236378"><a name="BM2236378"></a>
+<h2>2236378</h2>
+<div class="sym">ERROR: EM_AIMED_I_CCI_ATEND</div>
+<div class="txt">CERD DIAGS - AIME CCR/CCI Test Failure. The CCR/CCI test failed with CCI asserted at the end of a sequence. The failure is in the imaginary component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236379"><a name="BM2236379"></a>
+<h2>2236379</h2>
+<div class="sym">ERROR: EM_AIMED_R_CCI_ALT</div>
+<div class="txt">CERD DIAGS - AIME CCR/CCI Test Failure. The CCR/CCI test failed using alternating CCI assertions. The failure is in the real component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236380"><a name="BM2236380"></a>
+<h2>2236380</h2>
+<div class="sym">ERROR: EM_AIMED_I_CCI_ALT</div>
+<div class="txt">CERD DIAGS - AIME CCR/CCI Test Failure. The CCR/CCI test failed using alternating CCI assertions. The failure is in the imaginary component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236381"><a name="BM2236381"></a>
+<h2>2236381</h2>
+<div class="sym">ERROR: EM_AIMED_R_CSFI</div>
+<div class="txt">CERD DIAGS - AIME CSFI Test Failure. The CSFI test failed using the specified CSFI value. The failure is in the real component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH
+CSFI value: %d FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236382"><a name="BM2236382"></a>
+<h2>2236382</h2>
+<div class="sym">ERROR: EM_AIMED_I_CSFI</div>
+<div class="txt">CERD DIAGS - AIME CSFI Test Failure. The CSFI test failed using the specified CSFI value. The failure is in the imaginary component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH
+CSFI value: %d FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236383"><a name="BM2236383"></a>
+<h2>2236383</h2>
+<div class="sym">ERROR: EM_AIMED_SCALEFACTOR</div>
+<div class="txt">CERD DIAGS - AIME Scale Factor Register Failure. A data error has been detected in the Scale Factor register.
+DSF exp: %02xH
+BFP exp: %02xH
+DSF read: %02xH
+BFP read: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236384"><a name="BM2236384"></a>
+<h2>2236384</h2>
+<div class="sym">ERROR: EM_AIMED_R_DSFI</div>
+<div class="txt">CERD DIAGS - AIME DSFI Test Failure. The DSFI test failed using the specified DSFI value. The failure is in the real component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH
+DSFI value: %d FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236385"><a name="BM2236385"></a>
+<h2>2236385</h2>
+<div class="sym">ERROR: EM_AIMED_I_DSFI</div>
+<div class="txt">CERD DIAGS - AIME DSFI Test Failure. The DSFI test failed using the specified DSFI value. The failure is in the imaginary component of the results.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH
+DSFI value: %d FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236386"><a name="BM2236386"></a>
+<h2>2236386</h2>
+<div class="sym">ERROR: EM_AIMED_DSFO</div>
+<div class="txt">CERD DIAGS - AIME DSFO Test Failure. The DSFO test failed using the specified complex input value.
+Input value: %08xH + j%08xH
+DSFO exp: %d
+DSFO read: %d FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236387"><a name="BM2236387"></a>
+<h2>2236387</h2>
+<div class="sym">ERROR: EM_AIMED_BFP_DATA</div>
+<div class="txt">CERD DIAGS - AIME BFP Accumulator Failure. A data error has been detected in the BFP data path.
+BFP exp: %02xH
+BFP read: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236388"><a name="BM2236388"></a>
+<h2>2236388</h2>
+<div class="sym">ERROR: EM_AIMED_BFP_ADD</div>
+<div class="txt">CERD DIAGS - AIME BFP Accumulator Failure. The BFP accumulator has failed the accumulation test.
+BFP exp: %02xH
+BFP read: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236389"><a name="BM2236389"></a>
+<h2>2236389</h2>
+<div class="sym">ERROR: EM_AIMED_DATAFLOW_ERROR</div>
+<div class="txt">CERD DIAGS - AIME DataFlow Codes Failure. A data error has occurred in the DataFlow codes test. One of the data flow codes is not working correctly.
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236390"><a name="BM2236390"></a>
+<h2>2236390</h2>
+<div class="sym">ERROR: EM_AIMED_FUNCCODE_CA</div>
+<div class="txt">CERD DIAGS - AIME Function Codes Failure. The specified function code (from the Complex Arithmetic group) is not working properly which resulted in a data error.
+DSP chip function code: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236391"><a name="BM2236391"></a>
+<h2>2236391</h2>
+<div class="sym">ERROR: EM_AIMED_FUNCCODE_VA</div>
+<div class="txt">CERD DIAGS - AIME Function Codes Failure. The specified function code (from the Vector Arithmetic group) is not working properly which resulted in a data error.
+DSP chip function code: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236392"><a name="BM2236392"></a>
+<h2>2236392</h2>
+<div class="sym">ERROR: EM_AIMED_FUNCCODE_VL</div>
+<div class="txt">CERD DIAGS - AIME Function Codes Failure. The specified function code (from the Vector Logical group) is not working properly which resulted in a data error.
+DSP chip function code: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236393"><a name="BM2236393"></a>
+<h2>2236393</h2>
+<div class="sym">ERROR: EM_AIMED_FUNCCODE_DSP</div>
+<div class="txt">CERD DIAGS - AIME Function Codes Failure. The specified function code (from the DSP group) is not working properly which resulted in a data error.
+DSP chip function code: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236394"><a name="BM2236394"></a>
+<h2>2236394</h2>
+<div class="sym">ERROR: EM_AIMED_FFT_R_IMPULSE</div>
+<div class="txt">CERD DIAGS - AIME Functional Test Failure. Output point %d of a %d point FFT is incorrect. The input is an Impulse function. The failure is in the real component of the results.
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236395"><a name="BM2236395"></a>
+<h2>2236395</h2>
+<div class="sym">ERROR: EM_AIMED_FFT_I_IMPULSE</div>
+<div class="txt">CERD DIAGS - AIME Functional Test Failure. Output point %d of a %d point FFT is incorrect. The input is an Impulse function. The failure is in the imaginary component of the results.
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236396"><a name="BM2236396"></a>
+<h2>2236396</h2>
+<div class="sym">ERROR: EM_AIMED_FFT_R_CONSTANT</div>
+<div class="txt">CERD DIAGS - AIME Functional Test Failure. Output point %d of a %d point FFT is incorrect. The input is a Constant function. The failure is in the real component of the results.
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236397"><a name="BM2236397"></a>
+<h2>2236397</h2>
+<div class="sym">ERROR: EM_AIMED_FFT_I_CONSTANT</div>
+<div class="txt">CERD DIAGS - AIME Functional Test Failure. Output point %d of a %d point FFT is incorrect. The input is a Constant function. The failure is in the imaginary component of the results.
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236398"><a name="BM2236398"></a>
+<h2>2236398</h2>
+<div class="sym">ERROR: EM_AIMED_FFT_R_GATE</div>
+<div class="txt">CERD DIAGS - AIME Functional Test Failure. Output point %d of a %d point FFT is incorrect. The input is a Gate function. The failure is in the real component of the results.
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236399"><a name="BM2236399"></a>
+<h2>2236399</h2>
+<div class="sym">ERROR: EM_AIMED_FFT_I_GATE</div>
+<div class="txt">CERD DIAGS - AIME Functional Test Failure. Output point %d of a %d point FFT is incorrect. The input is a Gate function. The failure is in the imaginary component of the results.
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236400"><a name="BM2236400"></a>
+<h2>2236400</h2>
+<div class="sym">ERROR: EM_AIMED_FFT_R_SINC</div>
+<div class="txt">CERD DIAGS - AIME Functional Test Failure. Output point %d of a %d point FFT is incorrect. The input is a Sinc function. The failure is in the real component of the results.
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236401"><a name="BM2236401"></a>
+<h2>2236401</h2>
+<div class="sym">ERROR: EM_AIMED_FFT_I_SINC</div>
+<div class="txt">CERD DIAGS - AIME Functional Test Failure. Output point %d of a %d point FFT is incorrect. The input is a Sinc function. The failure is in the imaginary component of the results.
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236402"><a name="BM2236402"></a>
+<h2>2236402</h2>
+<div class="sym">ERROR: EM_ASCD_SRAM_DATA_PAT</div>
+<div class="txt">CERD DIAGS - ASC Static RAM Failure. ASC Static RAM has failed the data pattern test.
+Address: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236403"><a name="BM2236403"></a>
+<h2>2236403</h2>
+<div class="sym">ERROR: EM_ASCD_SRAM_ADDR_PAT</div>
+<div class="txt">CERD DIAGS - ASC Static RAM Failure. ASC Static RAM has failed the address pattern test.
+Address: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236404"><a name="BM2236404"></a>
+<h2>2236404</h2>
+<div class="sym">ERROR: EM_ASCD_SRAM_WALK1</div>
+<div class="txt">CERD DIAGS - ASC Static RAM Failure. ASC Static RAM has failed the walking 1&#x27;s test.
+Address: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236405"><a name="BM2236405"></a>
+<h2>2236405</h2>
+<div class="sym">ERROR: EM_ASCD_SRAM_WALK0</div>
+<div class="txt">CERD DIAGS - ASC Static RAM Failure. ASC Static RAM has failed the walking 0&#x27;s test.
+Address: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236406"><a name="BM2236406"></a>
+<h2>2236406</h2>
+<div class="sym">ERROR: EM_ASCD_C40_CHECK_FAILED</div>
+<div class="txt">CERD DIAGS - ASC C40 Internal Test Failure. The ASC C40 processor has failed one of the C40 internal tests.
+Test error code: %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236407"><a name="BM2236407"></a>
+<h2>2236407</h2>
+<div class="sym">ERROR: EM_ASCD_NO_QIN_BUSERROR_INT</div>
+<div class="txt">CERD DIAGS - ASC Interrupts Test Failure. The ASC caused a QIN memory bus error and the QIN bus error status bit is set in the AIME Bus Grant Register but the ASC did not receive the QIN bus error interrupt. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236408"><a name="BM2236408"></a>
+<h2>2236408</h2>
+<div class="sym">ERROR: EM_ASCD_NO_QOUT_BUSERROR_INT</div>
+<div class="txt">CERD DIAGS - ASC Interrupts Test Failure. The ASC caused a QOUT memory bus error and the QOUT bus error status bit is set in the AIME Bus Grant Register but the ASC did not receive the QOUT bus error interrupt. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236409"><a name="BM2236409"></a>
+<h2>2236409</h2>
+<div class="sym">ERROR: EM_ASCD_NO_QIN_BUSERROR_STATUS</div>
+<div class="txt">CERD DIAGS - ASC Interrupts Test Failure. The ASC caused a QIN memory bus error but the QIN bus error status bit is not set in the AIME Bus Grant Register. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236410"><a name="BM2236410"></a>
+<h2>2236410</h2>
+<div class="sym">ERROR: EM_ASCD_NO_QOUT_BUSERROR_STATUS</div>
+<div class="txt">CERD DIAGS - ASC Interrupts Test Failure. The ASC caused a QOUT memory bus error but the QOUT bus error status bit is not set in the AIME Bus Grant Register. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236411"><a name="BM2236411"></a>
+<h2>2236411</h2>
+<div class="sym">ERROR: EM_ASCD_CANNOT_CLEAR_BUSERROR</div>
+<div class="txt">CERD DIAGS - ASC Interrupts Test Failure. The ASC was unable to clear the QIN/QOUT bus error status bits in the AIME Bus Grant Register. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236412"><a name="BM2236412"></a>
+<h2>2236412</h2>
+<div class="sym">ERROR: EM_ASCD_NO_FILTERSEL_INT</div>
+<div class="txt">CERD DIAGS - ASC Interrupts Test Failure. The CAP wrote to the Filter Select register but the ASC did not receive the Filter Select interrupt. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236413"><a name="BM2236413"></a>
+<h2>2236413</h2>
+<div class="sym">ERROR: EM_ASCD_COMMPORT_DATA</div>
+<div class="txt">CERD DIAGS - ASC/CAP Comm Port Test Failure. The ASC/CAP Communications port test failed the data pattern test.
+Data exp: %08xH
+Data read: %08xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236414"><a name="BM2236414"></a>
+<h2>2236414</h2>
+<div class="sym">ERROR: EM_ASCD_SIGN_EXTEND_QIN</div>
+<div class="txt">CERD DIAGS - ASC Sign Extension Test Failure. The sign extension of QIN memory from 24 to 32 bits has failed.
+Data exp: %08xH
+Data read: %08xH
+Data written: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236415"><a name="BM2236415"></a>
+<h2>2236415</h2>
+<div class="sym">ERROR: EM_ASCD_SIGN_EXTEND_QOUT</div>
+<div class="txt">CERD DIAGS - ASC Sign Extension Test Failure. The sign extension of QOUT memory from 24 to 32 bits has failed.
+Data exp: %08xH
+Data read: %08xH
+Data written: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236416"><a name="BM2236416"></a>
+<h2>2236416</h2>
+<div class="sym">ERROR: EM_ASCD_QINR_DATA_PAT</div>
+<div class="txt">CERD DIAGS - QIN Memory Failure. ASC QIN Memory (real) has failed the data pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236417"><a name="BM2236417"></a>
+<h2>2236417</h2>
+<div class="sym">ERROR: EM_ASCD_QINI_DATA_PAT</div>
+<div class="txt">CERD DIAGS - QIN Memory Failure. ASC QIN Memory (imaginary) has failed the data pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236418"><a name="BM2236418"></a>
+<h2>2236418</h2>
+<div class="sym">ERROR: EM_ASCD_QINR_ADDR_PAT</div>
+<div class="txt">CERD DIAGS - QIN Memory Failure. ASC QIN Memory (real) has failed the address pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236419"><a name="BM2236419"></a>
+<h2>2236419</h2>
+<div class="sym">ERROR: EM_ASCD_QINI_ADDR_PAT</div>
+<div class="txt">CERD DIAGS - QIN Memory Failure. ASC QIN Memory (imaginary) has failed the address pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236420"><a name="BM2236420"></a>
+<h2>2236420</h2>
+<div class="sym">ERROR: EM_ASCD_QINR_WALK1</div>
+<div class="txt">CERD DIAGS - QIN Memory Failure. ASC QIN Memory (real) has failed the walking 1&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236421"><a name="BM2236421"></a>
+<h2>2236421</h2>
+<div class="sym">ERROR: EM_ASCD_QINI_WALK1</div>
+<div class="txt">CERD DIAGS - QIN Memory Failure. ASC QIN Memory (imaginary) has failed the walking 1&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236422"><a name="BM2236422"></a>
+<h2>2236422</h2>
+<div class="sym">ERROR: EM_ASCD_QINR_WALK0</div>
+<div class="txt">CERD DIAGS - QIN Memory Failure. ASC QIN Memory (real) has failed the walking 0&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236423"><a name="BM2236423"></a>
+<h2>2236423</h2>
+<div class="sym">ERROR: EM_ASCD_QINI_WALK0</div>
+<div class="txt">CERD DIAGS - QIN Memory Failure. ASC QIN Memory (imaginary) has failed the walking 0&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236424"><a name="BM2236424"></a>
+<h2>2236424</h2>
+<div class="sym">ERROR: EM_ASCD_QOUTR_DATA_PAT</div>
+<div class="txt">CERD DIAGS - QOUT Memory Failure. ASC QOUT Memory (real) has failed the data pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236425"><a name="BM2236425"></a>
+<h2>2236425</h2>
+<div class="sym">ERROR: EM_ASCD_QOUTI_DATA_PAT</div>
+<div class="txt">CERD DIAGS - QOUT Memory Failure. ASC QOUT Memory (imaginary) has failed the data pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236426"><a name="BM2236426"></a>
+<h2>2236426</h2>
+<div class="sym">ERROR: EM_ASCD_QOUTR_ADDR_PAT</div>
+<div class="txt">CERD DIAGS - QOUT Memory Failure. ASC QOUT Memory (real) has failed the address pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236427"><a name="BM2236427"></a>
+<h2>2236427</h2>
+<div class="sym">ERROR: EM_ASCD_QOUTI_ADDR_PAT</div>
+<div class="txt">CERD DIAGS - QOUT Memory Failure. ASC QOUT Memory (imaginary) has failed the address pattern test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236428"><a name="BM2236428"></a>
+<h2>2236428</h2>
+<div class="sym">ERROR: EM_ASCD_QOUTR_WALK1</div>
+<div class="txt">CERD DIAGS - QOUT Memory Failure. ASC QOUT Memory (real) has failed the walking 1&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236429"><a name="BM2236429"></a>
+<h2>2236429</h2>
+<div class="sym">ERROR: EM_ASCD_QOUTI_WALK1</div>
+<div class="txt">CERD DIAGS - QOUT Memory Failure. ASC QOUT Memory (imaginary) has failed the walking 1&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236430"><a name="BM2236430"></a>
+<h2>2236430</h2>
+<div class="sym">ERROR: EM_ASCD_QOUTR_WALK0</div>
+<div class="txt">CERD DIAGS - QOUT Memory Failure. ASC QOUT Memory (real) has failed the walking 0&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236431"><a name="BM2236431"></a>
+<h2>2236431</h2>
+<div class="sym">ERROR: EM_ASCD_QOUTI_WALK0</div>
+<div class="txt">CERD DIAGS - QOUT Memory Failure. ASC QOUT Memory (imaginary) has failed the walking 0&#x27;s test.
+Address: %08xH
+Data exp: %06xH
+Data read: %06xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236432"><a name="BM2236432"></a>
+<h2>2236432</h2>
+<div class="sym">ERROR: EM_ASCD_CANNOT_READ_FILTSEL</div>
+<div class="txt">CERD DIAGS - ASC Filter Select Test Failure. The Filter Select interrupt (which indicates that data has been written to the Filter Select register) was not received by the ASC. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236433"><a name="BM2236433"></a>
+<h2>2236433</h2>
+<div class="sym">ERROR: EM_ASCD_FILTSEL_DATA</div>
+<div class="txt">CERD DIAGS - ASC Filter Select Test Failure. The Filter Select register has failed the data pattern test.
+Data exp: %02xH
+Data read: %02xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236434"><a name="BM2236434"></a>
+<h2>2236434</h2>
+<div class="sym">ERROR: EM_ASCD_WATCHDOG_FAILED</div>
+<div class="txt">CERD DIAGS - ASC Watchdog Timer Test Failure. The ASC Watchdog Timer has failed to reset the ASC after %d seconds. The watchdog hardware is broke or the watchdog timer value is too long. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236435"><a name="BM2236435"></a>
+<h2>2236435</h2>
+<div class="sym">ERROR: EM_ASCD_ASC_RESTART_FAILED</div>
+<div class="txt">CERD DIAGS - ASC Watchdog Timer Test Failure. The ASC has been reset during the ASC Watchdog Timer test; however, the CAP has failed to restart the ASC. The CERD board should be reset. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236436"><a name="BM2236436"></a>
+<h2>2236436</h2>
+<div class="sym">ERROR: EM_RAPD_STATUS_REG_RESET</div>
+<div class="txt">CERD DIAGS - RAP Register Test Failure. The RAP Status register value was incorrect after a RAP reset.
+Data exp: %04xH
+Data read: %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236437"><a name="BM2236437"></a>
+<h2>2236437</h2>
+<div class="sym">ERROR: EM_RAPD_CLIP_REG_RESET</div>
+<div class="txt">CERD DIAGS - RAP Register Test Failure. The RAP Clip register value was incorrect after a RAP reset.
+Data exp: %04xH
+Data read: %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236438"><a name="BM2236438"></a>
+<h2>2236438</h2>
+<div class="sym">ERROR: EM_RAPD_PEAK_REG_RESET</div>
+<div class="txt">CERD DIAGS - RAP Register Test Failure. The specified RAP Peak register value was incorrect after a RAP reset.
+Data exp: %04xH
+Data read: %04xH
+Peak register no.: %d FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236439"><a name="BM2236439"></a>
+<h2>2236439</h2>
+<div class="sym">ERROR: EM_RAPD_RAPIN_REG_RESET</div>
+<div class="txt">CERD DIAGS - RAP Register Test Failure. The RAP Input Xfer Counter register value was incorrect after a RAP reset.
+Data exp: %05xH
+Data read: %05xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236440"><a name="BM2236440"></a>
+<h2>2236440</h2>
+<div class="sym">ERROR: EM_RAPD_RAPOUT_REG_RESET</div>
+<div class="txt">CERD DIAGS - RAP Register Test Failure. The RAP Output Xfer Counter register value was incorrect after a RAP reset.
+Data exp: %05xH
+Data read: %05xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236441"><a name="BM2236441"></a>
+<h2>2236441</h2>
+<div class="sym">ERROR: EM_RAPD_QINADR_REG_RESET</div>
+<div class="txt">CERD DIAGS - RAP Register Test Failure. The RAP QIN Address Pointer register value was incorrect after a RAP reset.
+Data exp: %04xH
+Data read: %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236442"><a name="BM2236442"></a>
+<h2>2236442</h2>
+<div class="sym">ERROR: EM_RAPD_CONTROL_REG_DATA</div>
+<div class="txt">CERD DIAGS - RAP Register Test Failure. The RAP Control register has failed the data pattern test.
+Data exp: %04xH
+Data read: %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236443"><a name="BM2236443"></a>
+<h2>2236443</h2>
+<div class="sym">ERROR: EM_RAPD_OVRANGE_REG_DATA</div>
+<div class="txt">CERD DIAGS - RAP Register Test Failure. The RAP Overrange register has failed the data pattern test.
+Data exp: %04xH
+Data read: %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236444"><a name="BM2236444"></a>
+<h2>2236444</h2>
+<div class="sym">ERROR: EM_RAPD_OFFSET_REG_DATA</div>
+<div class="txt">CERD DIAGS - RAP Register Test Failure. The specified RAP Offset register has failed the data pattern test.
+Data exp: %04xH
+Data read: %04xH
+Offset register no.: %d FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236445"><a name="BM2236445"></a>
+<h2>2236445</h2>
+<div class="sym">ERROR: EM_RAPD_REG_ADDR_FAILED</div>
+<div class="txt">CERD DIAGS - RAP Register Test Failure. A register addressing problem has been detected with one or more of the RAP registers.
+RAP register address: %08xH
+Data exp: %04xH
+Data read: %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236446"><a name="BM2236446"></a>
+<h2>2236446</h2>
+<div class="sym">ERROR: EM_RAPD_NO_BEGIN_ACQ_INT</div>
+<div class="txt">CERD DIAGS - RAP Interrupts Test Failure. The RAP has been started, but the ASC did not receive a Begin Acq interrupt. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236447"><a name="BM2236447"></a>
+<h2>2236447</h2>
+<div class="sym">ERROR: EM_RAPD_NO_END_SEGMENT_INT</div>
+<div class="txt">CERD DIAGS - RAP Interrupts Test Failure. The RAP has been started, but the ASC has not received the End of Segment interrupt indicating that all data has been acquired by the RAP. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236448"><a name="BM2236448"></a>
+<h2>2236448</h2>
+<div class="sym">ERROR: EM_RAPD_NO_UNDERFLOW_INT</div>
+<div class="txt">CERD DIAGS - RAP Interrupts Test Failure. The XD FIFO has underflowed but the ASC has not received the XD FIFO Underflow interrupt. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236449"><a name="BM2236449"></a>
+<h2>2236449</h2>
+<div class="sym">ERROR: EM_RAPD_NO_OVERFLOW_INT</div>
+<div class="txt">CERD DIAGS - RAP Interrupts Test Failure. The Intra-RAP FIFO has overflowed but the ASC has not received the Intra-RAP FIFO Overflow interrupt. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236450"><a name="BM2236450"></a>
+<h2>2236450</h2>
+<div class="sym">ERROR: EM_RAPD_SPURIOUS_BEGIN_ACQ_INT</div>
+<div class="txt">CERD DIAGS - RAP Interrupts Test Failure. The ASC has received a spurious Begin Acq interrupt even though the RAP has not been started yet. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236451"><a name="BM2236451"></a>
+<h2>2236451</h2>
+<div class="sym">ERROR: EM_RAPD_SPURIOUS_UNDERFLOW_INT</div>
+<div class="txt">CERD DIAGS - RAP Interrupts Test Failure. The ASC has received a spurious XD FIFO Underflow interrupt. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236452"><a name="BM2236452"></a>
+<h2>2236452</h2>
+<div class="sym">ERROR: EM_RAPD_SPURIOUS_OVERFLOW_INT</div>
+<div class="txt">CERD DIAGS - RAP Interrupts Test Failure. The ASC has received a spurious Intra-RAP FIFO Overflow interrupt. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236453"><a name="BM2236453"></a>
+<h2>2236453</h2>
+<div class="sym">ERROR: EM_RAPD_FIFO_DATA</div>
+<div class="txt">CERD DIAGS - RAP FIFO&#x27;s Test Failure. The RAP FIFO&#x27;s test has failed the data pattern test.
+Data index: %d
+Data exp: %04xH
+Data read: %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236454"><a name="BM2236454"></a>
+<h2>2236454</h2>
+<div class="sym">ERROR: EM_RAPD_FIFO_ADDR</div>
+<div class="txt">CERD DIAGS - RAP FIFO&#x27;s Test Failure. The RAP FIFO&#x27;s test has failed the address pattern test.
+Data index: %d
+Data exp: %04xH
+Data read: %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236455"><a name="BM2236455"></a>
+<h2>2236455</h2>
+<div class="sym">ERROR: EM_RAPD_XDFIFO_FLAGS</div>
+<div class="txt">CERD DIAGS - RAP XD FIFO Flags Test Failure. The XD FIFO status flags are incorrect given the amount of data that has been loaded into the XD FIFO.
+XD flags exp: %04xH
+XD flags read: %04xH
+FIFO data count: %d FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236456"><a name="BM2236456"></a>
+<h2>2236456</h2>
+<div class="sym">ERROR: EM_RAPD_NO_SOA_TRIG</div>
+<div class="txt">CERD DIAGS - RAP Trigger Modes Test Failure. The RAP failed to start using the ASC SOA trigger mode. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236457"><a name="BM2236457"></a>
+<h2>2236457</h2>
+<div class="sym">ERROR: EM_RAPD_RAP_TIMEOUT</div>
+<div class="txt">CERD DIAGS - RAP Timeout Error. The current test has failed because the RAP has timed out. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236458"><a name="BM2236458"></a>
+<h2>2236458</h2>
+<div class="sym">ERROR: EM_RAPD_NO_INTERNAL_TRIG</div>
+<div class="txt">CERD DIAGS - RAP Trigger Modes Test Failure. The RAP failed to start using the ASC Internal trigger mode. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236459"><a name="BM2236459"></a>
+<h2>2236459</h2>
+<div class="sym">ERROR: EM_RAPD_BAD_QIN_PTR</div>
+<div class="txt">CERD DIAGS - RAP Trigger Modes Test Failure. The RAP has acquired segment %d of %d but the QIN address pointer is incorrect when done.
+QIN addr read: %05xH
+QIN addr exp: %05xH
+Segment size: %d points FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236460"><a name="BM2236460"></a>
+<h2>2236460</h2>
+<div class="sym">ERROR: EM_RAPD_TRIGMODES_DATA</div>
+<div class="txt">CERD DIAGS - RAP Trigger Modes Test Failure. The RAP has acquired segment %d of %d but the data is incorrect.
+Data exp: %04xH
+Data read: %04xH
+Data index: %d FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236461"><a name="BM2236461"></a>
+<h2>2236461</h2>
+<div class="sym">ERROR: EM_RAPD_BAD_BEGIN_ACQ_COUNT</div>
+<div class="txt">CERD DIAGS - RAP Trigger Modes Test Failure. The RAP has acquired all expected data segments but %d Begin Acq interrupts were generated. The test was expecting %d to occur. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236462"><a name="BM2236462"></a>
+<h2>2236462</h2>
+<div class="sym">ERROR: EM_RAPD_RCVRMODES_DATA_EPI</div>
+<div class="txt">CERD DIAGS - RAP Receiver Modes Test Failure. The RAP has acquired data using EPI/Spectro Receiver mode but the acquired data is incorrect.
+Data exp: %04xH
+Data read: %04xH
+ASC address: %08xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236463"><a name="BM2236463"></a>
+<h2>2236463</h2>
+<div class="sym">ERROR: EM_RAPD_RCVRMODES_DATA_1CH</div>
+<div class="txt">CERD DIAGS - RAP Receiver Modes Test Failure. The RAP has acquired data using Single Channel Receiver mode but the acquired data is incorrect.
+Data exp: %04xH
+Data read: %04xH
+ASC address: %08xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236464"><a name="BM2236464"></a>
+<h2>2236464</h2>
+<div class="sym">ERROR: EM_RAPD_RCVRMODES_DATA_4CH</div>
+<div class="txt">CERD DIAGS - RAP Receiver Modes Test Failure. The RAP has acquired data using 4 Channel Receiver mode but the acquired data is incorrect.
+Data exp: %04xH
+Data read: %04xH
+ASC address: %08xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236465"><a name="BM2236465"></a>
+<h2>2236465</h2>
+<div class="sym">ERROR: EM_RAPD_OFFSET</div>
+<div class="txt">CERD DIAGS - RAP Offset Correction Test Failure. A RAP offset correction error occurred in channel %d.
+Input data value: %04xH
+Data exp: %04xH
+Data read: %04xH
+Offset used: %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236466"><a name="BM2236466"></a>
+<h2>2236466</h2>
+<div class="sym">ERROR: EM_RAPD_PEAK_FIRST</div>
+<div class="txt">CERD DIAGS - RAP Peak Detect Test Failure. A RAP peak detection error occurred in channel %d. The peak value was first in the data sequence.
+Peak Reg exp: %04xH
+Peak Reg read: %04xH
+Input data: %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236467"><a name="BM2236467"></a>
+<h2>2236467</h2>
+<div class="sym">ERROR: EM_RAPD_PEAK_LAST</div>
+<div class="txt">CERD DIAGS - RAP Peak Detect Test Failure. A RAP peak detection error occurred in channel %d. The peak value was last in the data sequence.
+Peak Reg exp: %04xH
+Peak Reg read: %04xH
+Input data: %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236468"><a name="BM2236468"></a>
+<h2>2236468</h2>
+<div class="sym">ERROR: EM_RAPD_CLIP_FIRST</div>
+<div class="txt">CERD DIAGS - RAP Clip Detect Test Failure. A RAP clip detection error occurred. The clipped value was first in the data sequence.
+Clip Reg exp: %04xH
+Clip Reg read: %04xH
+Input data: %04xH Input data+(offset): %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236469"><a name="BM2236469"></a>
+<h2>2236469</h2>
+<div class="sym">ERROR: EM_RAPD_CLIP_LAST</div>
+<div class="txt">CERD DIAGS - RAP Clip Detect Test Failure. A RAP clip detection error occurred. The clipped value was last in the data sequence.
+Clip Reg exp: %04xH
+Clip Reg read: %04xH
+Input data: %04xH Input data+(offset): %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236470"><a name="BM2236470"></a>
+<h2>2236470</h2>
+<div class="sym">ERROR: EM_RAPD_MAXNEG_ADJUST</div>
+<div class="txt">CERD DIAGS - RAP Clip Detect Test Failure. The RAP failed to properly clip negative input data.
+Data exp: %04xH
+Data read: %04xH
+Input data: %04xH Input data+(offset): %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236471"><a name="BM2236471"></a>
+<h2>2236471</h2>
+<div class="sym">ERROR: EM_RAPD_OVERRANGE_NOT_CLEAR</div>
+<div class="txt">CERD DIAGS - RAP Overrange Detect Test Failure. A RAP overrange condition occurred in channel %d yet the input data did not exceed the Overrange Register value.
+Overrange Reg: %04xH
+Input data: %04xH |Input data|: %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236472"><a name="BM2236472"></a>
+<h2>2236472</h2>
+<div class="sym">ERROR: EM_RAPD_OVERRANGE_NOT_SET_FIRST</div>
+<div class="txt">CERD DIAGS - RAP Overrange Detect Test Failure. The RAP failed to detect an overrange in channel %d. The overrange value was first in the data sequence.
+Overrange Reg: %04xH
+Input data: %04xH |Input data|: %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236473"><a name="BM2236473"></a>
+<h2>2236473</h2>
+<div class="sym">ERROR: EM_RAPD_OVERRANGE_NOT_SET_LAST</div>
+<div class="txt">CERD DIAGS - RAP Overrange Detect Test Failure. The RAP failed to detect an overrange in channel %d. The overrange value was last in the data sequence.
+Overrange Reg: %04xH
+Input data: %04xH |Input data|: %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236474"><a name="BM2236474"></a>
+<h2>2236474</h2>
+<div class="sym">ERROR: EM_RAPD_DEMOD_ERROR_1CH</div>
+<div class="txt">CERD DIAGS - RAP Demodulation Test Failure. The RAP acquired single channel data with demodulation enabled but the acquired data is incorrect.
+Data index: %d
+Data exp: %04xH
+Data read: %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236475"><a name="BM2236475"></a>
+<h2>2236475</h2>
+<div class="sym">ERROR: EM_RAPD_DEMOD_ERROR_4CH</div>
+<div class="txt">CERD DIAGS - RAP Demodulation Test Failure. The RAP acquired 4 channel data with demodulation enabled but the acquired data is incorrect.
+Data index: %d
+Data exp: %04xH
+Data read: %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236476"><a name="BM2236476"></a>
+<h2>2236476</h2>
+<div class="sym">ERROR: EM_ACI_ACQUIRE_DATA_ERROR</div>
+<div class="txt">CERD DIAGS - CAP/ASC Data Acquisition error. A data acquisition error occurred while calling cax_acquire_data.
+cax_err: %04xH
+num_points: %04xH FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236477"><a name="BM2236477"></a>
+<h2>2236477</h2>
+<div class="sym">ERROR: EM_ASCD_WATCHDOG_CANNOT_TEST</div>
+<div class="txt">CERD DIAGS - ASC Watchdog Timer Test Failure. The ASC Watchdog Timer cannot be tested because the ASC to CAP interrupt mechanism appears to be broken. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2236536"><a name="BM2236536"></a>
+<h2>2236536</h2>
+<div class="sym">ERROR: EM_PATTERN_TEST_MISMATCH</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - PATTERN TEST FAILURE Failed while running pattern test on TPS - CERD DPR.
+Expected pattern: %08xH
+Actual pattern: %08xH Error occurred at address %08xH</div>
+</section>
+<section id="BM2236537"><a name="BM2236537"></a>
+<h2>2236537</h2>
+<div class="sym">ERROR: EM_FLASH_CHKSUM_MISMATCH</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - CHECKSUM MISMATCH Checksum of Flash Memory File %d (%b) does not match the checksum in \ the CERD header block.
+Expected checksum: %08xH
+Actual checksum: %08xH</div>
+</section>
+<section id="BM2236538"><a name="BM2236538"></a>
+<h2>2236538</h2>
+<div class="sym">ERROR: EM_ID_TO_NAME</div>
+<div class="txt">0=CAP Boot Module, 1=ASC Powerup Diags, 2=ASC Boot Diags, 3=LCA file</div>
+</section>
+<section id="BM2236539"><a name="BM2236539"></a>
+<h2>2236539</h2>
+<div class="sym">ERROR: EM_EXCEED_DMA_CHANNEL</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - INTERNAL SOFTWARE ERROR Selected DMA Channel is out of range. Valid DMA Channels are 0 thru 5. Selected DMA Channel is %d</div>
+</section>
+<section id="BM2236540"><a name="BM2236540"></a>
+<h2>2236540</h2>
+<div class="sym">ERROR: EM_DMA_CHANNEL_BUSY</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - DMA CHANNEL BUSY Selected DMA Channel is Busy. A call was made to start DMA transfer on channel number %d but the channel is busy.</div>
+</section>
+<section id="BM2236541"><a name="BM2236541"></a>
+<h2>2236541</h2>
+<div class="sym">ERROR: EM_ASC_LOAD_ERROR</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - ASC BOOT ERROR Encountered error while sending Executable file to ASC. File type is %d (%b).</div>
+</section>
+<section id="BM2236542"><a name="BM2236542"></a>
+<h2>2236542</h2>
+<div class="sym">ERROR: EM_LCA_LOAD_ERROR</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - LCA LOAD ERROR Encountered error while sending LCA program data to LCA loader.</div>
+</section>
+<section id="BM2236543"><a name="BM2236543"></a>
+<h2>2236543</h2>
+<div class="sym">ERROR: EM_FLASH_STATUS</div>
+<div class="txt">CERD BOOT STATUS MESSAGE - ON CAP - BLANK FLASH MEMORY Flash memory is blank/invalid. Boot software will attempt to reprogram the Flash memory with a new file. The checksum of Flash memory as indicated in the header block is %08xH</div>
+</section>
+<section id="BM2236544"><a name="BM2236544"></a>
+<h2>2236544</h2>
+<div class="sym">ERROR: EM_INVALID_SWITCH</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - INTERNAL SOFTWARE ERROR Invalid option selected. The selection is out of range. Status: %d</div>
+</section>
+<section id="BM2236545"><a name="BM2236545"></a>
+<h2>2236545</h2>
+<div class="sym">ERROR: EM_SEM_TIME_OUT</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - DPR HARDWARE SEMAPHORE TIME OUT Timeout occurred while waiting for DPR hardware semaphore. The hardware semaphore was not available from the CAP side. Selected semaphore is %d Waiting time was %d mSec</div>
+</section>
+<section id="BM2236546"><a name="BM2236546"></a>
+<h2>2236546</h2>
+<div class="sym">ERROR: EM_COMMAND_NOT_RECEIVED</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - COMMAND TIMEOUT ERROR CERD boot software on CAP timed out while waiting for a command from TPS side. Duration of wait before time out was %d milliseconds.</div>
+</section>
+<section id="BM2236547"><a name="BM2236547"></a>
+<h2>2236547</h2>
+<div class="sym">ERROR: EM_RESPONSE_NON_ZERO</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - RESPONSE REGISTER NON ZERO Response register of boot packet is not cleared. Previous response was not
+read by TPS side. Response register = %d</div>
+</section>
+<section id="BM2236548"><a name="BM2236548"></a>
+<h2>2236548</h2>
+<div class="sym">ERROR: EM_TIC_STATUS_ERROR</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2236549"><a name="BM2236549"></a>
+<h2>2236549</h2>
+<div class="sym">ERROR: EM_TIC_CLEAR_ERROR</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2236550"><a name="BM2236550"></a>
+<h2>2236550</h2>
+<div class="sym">ERROR: EM_TIC_START_ERROR</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2236551"><a name="BM2236551"></a>
+<h2>2236551</h2>
+<div class="sym">ERROR: EM_TIC_READ_WRITE_STATUS</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2236552"><a name="BM2236552"></a>
+<h2>2236552</h2>
+<div class="sym">ERROR: EM_FLASH_ERROR</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - CAP ERASE/PROGRAM OF FLASH MEMORY FAILED. Encountered error while %d (0=Erasing, 1=Programming) Flash Memory. Flash may be bad, but also CHECK ISE POWER SUPPLY VOLTAGE LEVELS.
+Address: %xH
+Status: %xH</div>
+</section>
+<section id="BM2236553"><a name="BM2236553"></a>
+<h2>2236553</h2>
+<div class="sym">ERROR: EM_FLASH_TIMEOUT_ERROR</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - CAP ERASE/PROGRAM OF FLASH MEMORY TIMED OUT. Timeout occurred while %d (0=Erasing, 1=Programming). Flash may be bad, but also CHECK ISE POWER SUPPLY VOLTAGE LEVELS.
+Error Status: %xH</div>
+</section>
+<section id="BM2236554"><a name="BM2236554"></a>
+<h2>2236554</h2>
+<div class="sym">ERROR: EM_FILE_DATA_ERROR</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - DATA NOT PRESENT IN THE FILE File corresponding to the ID is not present in CAP memory space. File was not loaded to the required destination.
+File ID: %d (%b)
+Start address: %08xH
+Length: %08xH</div>
+</section>
+<section id="BM2236555"><a name="BM2236555"></a>
+<h2>2236555</h2>
+<div class="sym">ERROR: EM_FLASH_DATA_ERROR</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - FLASH MEMORY HAS INVALID DATA The contents of flash memory is invalid. Flash memory programming was incomplete or not programmed or it is a new device.
+File ID: %d (%b)
+Start address: %08xH
+Length: %08xH</div>
+</section>
+<section id="BM2236556"><a name="BM2236556"></a>
+<h2>2236556</h2>
+<div class="sym">ERROR: EM_DMA_XFER_ERROR</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - DMA TRANSFER INCOMPLETE Timeout occurred while transferring %d (%b). IT MAY BE NECESSARY TO \ CYCLE POWER ON THE ISE CHASSIS TO CLEAR THIS CONDITION.</div>
+</section>
+<section id="BM2236557"><a name="BM2236557"></a>
+<h2>2236557</h2>
+<div class="sym">ERROR: EM_VIC_INIT_ERROR</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - VIC INITIALIZATION ERROR Encountered error while Initializing Vme Interface Controller (VIC).</div>
+</section>
+<section id="BM2236558"><a name="BM2236558"></a>
+<h2>2236558</h2>
+<div class="sym">ERROR: EM_LCA_STAT_DONE_ERROR</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - LCA LOAD ERROR %b
+Failed LCA: %08xH (%b)
+LCA program status register: %08xH</div>
+</section>
+<section id="BM2236559"><a name="BM2236559"></a>
+<h2>2236559</h2>
+<div class="sym">ERROR: EM_LCA_STAT_EXT</div>
+<div class="txt">LCA program status register indicates that LCA Done bit is not set. LCA files were transferred to LCA loader but the status register indicates that the LCAs are not properly programmed.</div>
+</section>
+<section id="BM2236560"><a name="BM2236560"></a>
+<h2>2236560</h2>
+<div class="sym">ERROR: EM_LCA_STAT_INIT_ERROR</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - LCA LOAD ERROR LCA Program status register indicates that there was a configuration data error while programming LCA.
+Failed LCA: %08xH (%b)
+LCA program status register: %08xH</div>
+</section>
+<section id="BM2236561"><a name="BM2236561"></a>
+<h2>2236561</h2>
+<div class="sym">ERROR: EM_BIT_TO_LCA_MAP</div>
+<div class="txt">bit_0 = SSP LCA, bit_1 = XD LCA, bit_2 = VSB LCA, bit_3 = RAP LCA, \ bit_4 = Exciter LCA</div>
+</section>
+<section id="BM2236562"><a name="BM2236562"></a>
+<h2>2236562</h2>
+<div class="sym">ERROR: EM_FILE_XFER_ERROR</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - CHECKSUM ERROR %b
+Expected checksum: %08xH
+Actual checksum: %08xH</div>
+</section>
+<section id="BM2236563"><a name="BM2236563"></a>
+<h2>2236563</h2>
+<div class="sym">ERROR: EM_FILE_XFER_ERROR_EXT</div>
+<div class="txt">Failed in Checksum check of the data block transferred from TPS to CAP. The checksum of the data block does not match the checksum field in the header of the block.</div>
+</section>
+<section id="BM2236564"><a name="BM2236564"></a>
+<h2>2236564</h2>
+<div class="sym">ERROR: EM_ASC_INIT_ERROR</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - ASC INITIALIZATION ERROR Failed while initializing the interface between CAP and ASC.
+Status: %xH</div>
+</section>
+<section id="BM2236565"><a name="BM2236565"></a>
+<h2>2236565</h2>
+<div class="sym">ERROR: EM_INVALID_START_ADDR</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - INVALID START ADDRESS Detected a invalid start address while transferring/executing the data in CAP SRAM.
+Start Address of data block: %08xH
+Length of data block: %08xH</div>
+</section>
+<section id="BM2236566"><a name="BM2236566"></a>
+<h2>2236566</h2>
+<div class="sym">ERROR: EM_EXCEED_SRAM_RANGE</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - EXCEEDED SRAM RANGE Exceeded SRAM Range on CAP while transferring data from TPS to CAP. CERD boot process will be aborted.
+CAP SRAM required until the address: %08xH
+CAP SRAM last valid address location: %08xH</div>
+</section>
+<section id="BM2236567"><a name="BM2236567"></a>
+<h2>2236567</h2>
+<div class="sym">ERROR: EM_INVALID_SRAM_SIZE</div>
+<div class="txt">CERD BOOT STATUS MESSAGE - ON CAP - SRAM SIZE ERROR Driver call to get the SRAM size on CAP failed. SRAM on CAP is
+set to the default size: %08xH</div>
+</section>
+<section id="BM2236568"><a name="BM2236568"></a>
+<h2>2236568</h2>
+<div class="sym">ERROR: EM_ASC_BOOT_ERROR</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - ASC DIAGS ERROR Failed while running asc power up diags.
+Status: %xH</div>
+</section>
+<section id="BM2236569"><a name="BM2236569"></a>
+<h2>2236569</h2>
+<div class="sym">ERROR: EM_TIC_READ_ERROR</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2236570"><a name="BM2236570"></a>
+<h2>2236570</h2>
+<div class="sym">ERROR: EM_TIC_WRITE_ERROR</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2236571"><a name="BM2236571"></a>
+<h2>2236571</h2>
+<div class="sym">ERROR: EM_SYNC_TIMER_ERROR</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2236572"><a name="BM2236572"></a>
+<h2>2236572</h2>
+<div class="sym">ERROR: EM_LCA_COMM_ERROR</div>
+<div class="txt">CERD BOOT ERROR MESSAGE - ON CAP - FAILED WHILE LOADING LCA FILE Failed while transferring data to LCA via communication port. Failure occurred after transferring %d long words of data.
+Actual LCA file length: %d</div>
+</section>
+<section id="BM2236596"><a name="BM2236596"></a>
+<h2>2236596</h2>
+<div class="sym">ERROR: EM_INVALID_VECTOR</div>
+<div class="txt">CERD DIAG EXEC ERROR - Invalid interrupt. The CAP received an invalid interrupt from the TPS CPU. The interrupt will be ignored.
+Interrupt vector number: %d.</div>
+</section>
+<section id="BM2236597"><a name="BM2236597"></a>
+<h2>2236597</h2>
+<div class="sym">ERROR: EM_INVALID_CAP_TASK_ID</div>
+<div class="txt">CERD EXEC ERROR - Invalid CAP Task ID. The CAP is trying to process a command for an invalid CAP task ID. The command will be ignored.
+CAP task ID: %d.</div>
+</section>
+<section id="BM2236598"><a name="BM2236598"></a>
+<h2>2236598</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXDPR_PTN</div>
+<div class="txt">CERD Diags : Exciter DPR pattern test failure (from CAP processor)
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236599"><a name="BM2236599"></a>
+<h2>2236599</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXDPR_ADR</div>
+<div class="txt">CERD Diags : Exciter DPR address test failure (from CAP processor)
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236600"><a name="BM2236600"></a>
+<h2>2236600</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXDPR_WALK</div>
+<div class="txt">CERD Diags : Exciter DPR walking 1s/0s test failure (from CAP processor)
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236601"><a name="BM2236601"></a>
+<h2>2236601</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_SRAM_PTN</div>
+<div class="txt">CERD Diags : CAP SRAM pattern test failure (from CAP processor)
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236602"><a name="BM2236602"></a>
+<h2>2236602</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_SRAM_ADR</div>
+<div class="txt">CERD Diags : CAP SRAM address test failure (from CAP processor)
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236603"><a name="BM2236603"></a>
+<h2>2236603</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_SRAM_WALK</div>
+<div class="txt">CERD Diags : CAP SRAM walking 1s/0s test failure (from CAP processor)
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236604"><a name="BM2236604"></a>
+<h2>2236604</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_VMEDPR_PTN</div>
+<div class="txt">CERD Diags : VME DPR pattern test failure (from CAP processor)
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236605"><a name="BM2236605"></a>
+<h2>2236605</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_VMEDPR_ADR</div>
+<div class="txt">CERD Diags : VME DPR address test failure (from CAP processor)
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236606"><a name="BM2236606"></a>
+<h2>2236606</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_VMEDPR_WALK</div>
+<div class="txt">CERD Diags : VME DPR walking 1s/0s test failure (from CAP processor)
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236607"><a name="BM2236607"></a>
+<h2>2236607</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_VSBDPR_PTN</div>
+<div class="txt">CERD Diags : VSB DPR pattern test failure (from CAP processor)
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236608"><a name="BM2236608"></a>
+<h2>2236608</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_VSBDPR_ADR</div>
+<div class="txt">CERD Diags : VSB DPR address test failure (from CAP processor)
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236609"><a name="BM2236609"></a>
+<h2>2236609</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_VSBDPR_WALK</div>
+<div class="txt">CERD Diags : VSB DPR walking 1s/0s test failure (from CAP processor)
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236610"><a name="BM2236610"></a>
+<h2>2236610</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_SRAM_ERR</div>
+<div class="txt">CERD Diags : Memory test failed on CAP SRAM. This is a Fatal error. CERD boot is aborted. If the error can be reproduced, the CERD board needs to be replaced.
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236611"><a name="BM2236611"></a>
+<h2>2236611</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_VMEDPR_ERR</div>
+<div class="txt">CERD Diags : Memory test failed on VME DPR between CAP and TPS (from CAP). This is a Fatal error. If the error can be reproduced, the CERD board needs to be replaced.
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236612"><a name="BM2236612"></a>
+<h2>2236612</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_QOUT_PTN</div>
+<div class="txt">CERD Diags : CAP Qout memory pattern test failure (from CAP processor)
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236613"><a name="BM2236613"></a>
+<h2>2236613</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_QOUT_ADR</div>
+<div class="txt">CERD Diags : CAP Qout memory address test failure (from CAP processor)
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236614"><a name="BM2236614"></a>
+<h2>2236614</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_QOUT_WALK</div>
+<div class="txt">CERD Diags : CAP Qout memory walking 1s/0s test failure (from CAP processor)
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236615"><a name="BM2236615"></a>
+<h2>2236615</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_QOUT_TOUT</div>
+<div class="txt">CERD Diags : CAP Qout memory test failure (from CAP processor). CAP could not obtain the AIME Qout memory.</div>
+</section>
+<section id="BM2236616"><a name="BM2236616"></a>
+<h2>2236616</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_QOUT_ERR</div>
+<div class="txt">CERD Diags : Memory test failed on CAP Qout memory. This is a Fatal error. If the error can be reproduced, the CERD board needs to be replaced.
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236617"><a name="BM2236617"></a>
+<h2>2236617</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_ASC_INT</div>
+<div class="txt">CERD Diags : ASC-CAP Interrupt Test Failed Number of interrupts expected : 1
+Number of interrupts received : %d</div>
+</section>
+<section id="BM2236618"><a name="BM2236618"></a>
+<h2>2236618</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_VIC_RST_TOUT</div>
+<div class="txt">CERD Diags : VIC register test failure (from CAP processor) VIC reset did not complete.
+Timeout : %08xH
+Mode : %08xH</div>
+</section>
+<section id="BM2236619"><a name="BM2236619"></a>
+<h2>2236619</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_VIC_BUS_TOUT</div>
+<div class="txt">CERD Diags : VIC register test failure (from CAP processor) CAP could not get VIC local bus.
+Timeout : %08xH
+Mode : %08xH</div>
+</section>
+<section id="BM2236620"><a name="BM2236620"></a>
+<h2>2236620</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_VIC_INIT_VAL</div>
+<div class="txt">CERD Diags : VIC register test failure (from CAP processor) An incorrect initial value is detected.
+Address : %08xH
+Expected : %08xH
+Actual : %08xH
+Mode : %08xH</div>
+</section>
+<section id="BM2236621"><a name="BM2236621"></a>
+<h2>2236621</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_VIC_REG_PTTN</div>
+<div class="txt">CERD Diags : VIC register test pattern test failure (from CAP processor)
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236622"><a name="BM2236622"></a>
+<h2>2236622</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_VIC_REG_ADDR</div>
+<div class="txt">CERD Diags : VIC register test address test failure (from CAP processor)
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236623"><a name="BM2236623"></a>
+<h2>2236623</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_VIC_REG_WALK</div>
+<div class="txt">CERD Diags : VIC register test walking 1s/0s test failure (from CAP processor)
+Address : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236624"><a name="BM2236624"></a>
+<h2>2236624</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_DUART_TX_TOUT</div>
+<div class="txt">CERD Diags : DUART test failure (from CAP processor) DUART did not get TX ready.
+Channel : %08xH
+Timeout : %08xH</div>
+</section>
+<section id="BM2236625"><a name="BM2236625"></a>
+<h2>2236625</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_DUART_RX_TOUT</div>
+<div class="txt">CERD Diags : DUART test failure (from CAP processor) DUART did not get RX ready.
+Channel : %08xH
+Timeout : %08xH</div>
+</section>
+<section id="BM2236626"><a name="BM2236626"></a>
+<h2>2236626</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_DUART_DATA_ERR</div>
+<div class="txt">CERD Diags : DUART test failure (from CAP processor)
+Channel : %08xH
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236627"><a name="BM2236627"></a>
+<h2>2236627</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_DUART_STS_ERR</div>
+<div class="txt">CERD Diags : DUART test failure (from CAP processor) DUART detected an error.
+Channel : %08xH
+Status : %08xH</div>
+</section>
+<section id="BM2236628"><a name="BM2236628"></a>
+<h2>2236628</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RTC_PAT</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2236629"><a name="BM2236629"></a>
+<h2>2236629</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RTC_ADR</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2236630"><a name="BM2236630"></a>
+<h2>2236630</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RTC_REAL_COUNT</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2236631"><a name="BM2236631"></a>
+<h2>2236631</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RTC_INTVAL_COUNT</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2236632"><a name="BM2236632"></a>
+<h2>2236632</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RTC_READ_FAIL</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2236633"><a name="BM2236633"></a>
+<h2>2236633</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RTC_WRITE_FAIL</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2236634"><a name="BM2236634"></a>
+<h2>2236634</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RTC_CRC_ERR</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2236635"><a name="BM2236635"></a>
+<h2>2236635</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RTC_RESTORE</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2236636"><a name="BM2236636"></a>
+<h2>2236636</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXTR_MAN_COARSE_PHASE</div>
+<div class="txt">CERD Diags : Exciter manual test playout_coarse_phase failure.</div>
+</section>
+<section id="BM2236637"><a name="BM2236637"></a>
+<h2>2236637</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXTR_MAN_FINE_PHASE</div>
+<div class="txt">CERD Diags : Exciter manual test playout_fine_phase failure.</div>
+</section>
+<section id="BM2236638"><a name="BM2236638"></a>
+<h2>2236638</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXTR_MAN_COARSE_SLICEFREQ</div>
+<div class="txt">CERD Diags : Exciter manual test playout_coarse_slice failure.</div>
+</section>
+<section id="BM2236639"><a name="BM2236639"></a>
+<h2>2236639</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXTR_MAN_FINE_SLICEFREQ</div>
+<div class="txt">CERD Diags : Exciter manual test playout_fine_slice failure.</div>
+</section>
+<section id="BM2236640"><a name="BM2236640"></a>
+<h2>2236640</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXTR_MAN_COARSE_RHOMOD</div>
+<div class="txt">CERD Diags : Exciter manual test playout_coarse_rho failure.</div>
+</section>
+<section id="BM2236641"><a name="BM2236641"></a>
+<h2>2236641</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXTR_MAN_FINE_RHOMOD</div>
+<div class="txt">CERD Diags : Exciter manual test playout_fine_rho failure.</div>
+</section>
+<section id="BM2236642"><a name="BM2236642"></a>
+<h2>2236642</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXTR_MAN_DC_RHOMOD</div>
+<div class="txt">CERD Diags : Exciter manual test playout_dc_rho failure.</div>
+</section>
+<section id="BM2236643"><a name="BM2236643"></a>
+<h2>2236643</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXTR_MAN_SINE_RHOMOD</div>
+<div class="txt">CERD Diags : Exciter manual test playout_sine_rho failure.</div>
+</section>
+<section id="BM2236644"><a name="BM2236644"></a>
+<h2>2236644</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXTR_MAN_PWRAMP_DISBL</div>
+<div class="txt">CERD Diags : Exciter manual test Power Amp disable test failure. Power Amp should be disabled but actually is not disabled.
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236645"><a name="BM2236645"></a>
+<h2>2236645</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXTR_MAN_PWRAMP_ENABL</div>
+<div class="txt">CERD Diags : Exciter manual test Power Amp disable test failure. Power Amp should not be disabled but actually is disabled.
+Expected : %08xH
+Actual : %08xH</div>
+</section>
+<section id="BM2236646"><a name="BM2236646"></a>
+<h2>2236646</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXTR_MAN_PWRAMP_DRIV</div>
+<div class="txt">CERD Diags : Exciter manual test Power Amp disable test failure. A driver error detected in Poweramp Disable Test.</div>
+</section>
+<section id="BM2236647"><a name="BM2236647"></a>
+<h2>2236647</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXTR_MAN_PREAMP_FLDBK</div>
+<div class="txt">CERD Diags : Exciter manual test Pre-Amp bias foldback test failure. Pre Amp should be on the foldback condition but actually is not.
+Expected at Coil : %08xH</div>
+</section>
+<section id="BM2236648"><a name="BM2236648"></a>
+<h2>2236648</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXTR_MAN_PREAMP_NOTFLD</div>
+<div class="txt">CERD Diags : Exciter manual test Pre-Amp bias foldback test failure. Pre Amp should not be on the foldback condition but actually is.
+Actually at Coil : %08xH</div>
+</section>
+<section id="BM2236649"><a name="BM2236649"></a>
+<h2>2236649</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXTR_MAN_PREAMP_DRIV</div>
+<div class="txt">CERD Diags : Exciter manual test Pre-Amp bias foldback test failure. A driver error detected in Preamp Bias Foldback Test.</div>
+</section>
+<section id="BM2236650"><a name="BM2236650"></a>
+<h2>2236650</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXTR_MAN_MULTI_DET</div>
+<div class="txt">CERD Diags : Exciter manual test RF multiplexer test failure. RF signal should be detected but actually is not detected.
+Select : %08xH
+Coil : %08xH
+Module : %08xH</div>
+</section>
+<section id="BM2236651"><a name="BM2236651"></a>
+<h2>2236651</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXTR_MAN_MULTI_NOTDET</div>
+<div class="txt">CERD Diags : Exciter manual test RF multiplexer test failure. RF signal should not be detected but actually is detected.
+Select : %08xH
+Coil : %08xH
+MOdule : %08xH</div>
+</section>
+<section id="BM2236652"><a name="BM2236652"></a>
+<h2>2236652</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXTR_MAN_MULTI_DRIV</div>
+<div class="txt">CERD Diags : Exciter manual test RF multiplexer test failure. A driver error detected in Multiplexer Test.</div>
+</section>
+<section id="BM2236653"><a name="BM2236653"></a>
+<h2>2236653</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RCVR_NONEXIST</div>
+<div class="txt">CERD Diags : Receiver tests were aborted since the CERD board is not equipped with analog receiver hardware.</div>
+</section>
+<section id="BM2236696"><a name="BM2236696"></a>
+<h2>2236696</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RCVA_ARPC</div>
+<div class="txt">CERD Diags : Analog receiver test failure (ASC RPC call failed)
+Receiver: %d. Run CAP, ASC, AIME, and RAP board level diagnostics.
+Error status: %d, NumPts: %d, QOUTaddr: %08xH</div>
+</section>
+<section id="BM2236697"><a name="BM2236697"></a>
+<h2>2236697</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RCVA_PRES</div>
+<div class="txt">CERD Diags : Analog Receiver Channel Present LO Test Failure Receiver channel %d is not present per the RF Receiver Status register. Check that the receiver module is correctly installed on the CERD board.</div>
+</section>
+<section id="BM2236698"><a name="BM2236698"></a>
+<h2>2236698</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RCVA_LO</div>
+<div class="txt">CERD Diags : Analog Receiver Channel Present LO Test Failure Receiver channel %d is missing LO1 or LO2 per RF Receiver Status register. Check receiver module installation.</div>
+</section>
+<section id="BM2236699"><a name="BM2236699"></a>
+<h2>2236699</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RCVA_OFFS</div>
+<div class="txt">CERD Diags : Analog Receiver Loopback Test Failure Receiver channel %d has an out-of-range ADC offset.
+Offset: %d, Min.Allowed: %d, Max.Allowed: %d, RHO mult: %d</div>
+</section>
+<section id="BM2236700"><a name="BM2236700"></a>
+<h2>2236700</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RCVA_GAIN</div>
+<div class="txt">CERD Diags : Analog Rcvr Lpbk Test Failure Rcvr channel %d has out-of-range amplitude (possible gain error)
+Amplitude: %d, Min: %d, Max: %d, RHO mult: %d This error may occur due to warmup when a syscab is powered up, but should pass in 15-20 minutes.</div>
+</section>
+<section id="BM2236701"><a name="BM2236701"></a>
+<h2>2236701</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RCVA_NOIS</div>
+<div class="txt">CERD Diags : Analog Receiver Loopback Test Failure Receiver channel %d has an out-of-range RMS noise value.
+RMS Value: %d, Min.Allowed: %d, Max.Allowed: %d, RHO mult: %d</div>
+</section>
+<section id="BM2236702"><a name="BM2236702"></a>
+<h2>2236702</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RCVA_UNBL</div>
+<div class="txt">CERD Diags : Analog Receiver Unblank Test Failure Receiver channel %d has an out-of-range amplitude during receiver unblank.
+Amplitude: %d, Min.Allowed: %d, Max.Allowed: %d, RHO mult: %d</div>
+</section>
+<section id="BM2236703"><a name="BM2236703"></a>
+<h2>2236703</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RCVA_ATTEN</div>
+<div class="txt">CERD Diags : Analog Receiver Attenuation Test Failure Receiver channel %d has an out-of-range amplitude for an R1 attenuation.
+Amplitude: %d, Min.Allowed: %d, Max.Allowed: %d, R1 dB: %d</div>
+</section>
+<section id="BM2236704"><a name="BM2236704"></a>
+<h2>2236704</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RCVA_RSEL</div>
+<div class="txt">CERD Diags : Analog Receiver Select Test Failure Receiver channel %d has an out-of-range amplitude (R1 is unique per channel).
+Amplitude: %d, Min.Allowed: %d, Max.Allowed: %d, R1 dB: %d</div>
+</section>
+<section id="BM2236705"><a name="BM2236705"></a>
+<h2>2236705</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RCVA_LOWP</div>
+<div class="txt">CERD Diags : Analog Receiver Anti Alias Filter Test Failure Receiver channel %d has poor frequency response (fixed antialias filter).
+FFT Mag: %d, Min.Allowed: %d, Max.Allowed: %d, Freq.Hz: %d</div>
+</section>
+<section id="BM2236706"><a name="BM2236706"></a>
+<h2>2236706</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RCVA_FSEL</div>
+<div class="txt">CERD Diags : Analog Receiver Narrowband Filter Select Test Failure Receiver channel %d has poor frequency response (selectable BP filter).
+FFT Mag: %d, Min.Allowed: %d, Max.Allowed: %d, Freq.Hz: %d</div>
+</section>
+<section id="BM2236707"><a name="BM2236707"></a>
+<h2>2236707</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RCVA_TONE</div>
+<div class="txt">CERD Diags : Analog Receiver Narrowband Filter Two Tone Test Failure Receiver channel %d has large third-order intermodulation products.
+FFT Mag: %d, Min.Allowed: %d, Max.Allowed: %d, Freq.Hz: %d</div>
+</section>
+<section id="BM2236708"><a name="BM2236708"></a>
+<h2>2236708</h2>
+<div class="sym">ERROR: EM_EX_DIAG_UCERD_LO</div>
+<div class="txt">CERD Diags : Wideband Exciter LO PLL &amp; uC Comm Test Failure The Comm link between CERD and Exciter uC is bad or the Exciter PLL is not working. Check that the exciter module is correctly installed on the CERD board.</div>
+</section>
+<section id="BM2236709"><a name="BM2236709"></a>
+<h2>2236709</h2>
+<div class="sym">ERROR: EM_EX_DIAG_LO2_PRES</div>
+<div class="txt">CERD Diags : Analog Exciter Local Oscillator Test Failure LO2 is not detected on the exciter module. Check that the exciter module is correctly installed on the CERD board.</div>
+</section>
+<section id="BM2236710"><a name="BM2236710"></a>
+<h2>2236710</h2>
+<div class="sym">ERROR: EM_EX_DIAG_OUT_MAX</div>
+<div class="txt">CERD Diags : Analog exciter maximum output level is out of range Check that the exciter module is correctly installed on the CERD board.</div>
+</section>
+<section id="BM2236711"><a name="BM2236711"></a>
+<h2>2236711</h2>
+<div class="sym">ERROR: EM_EX_DIAG_OUT_BLANK</div>
+<div class="txt">CERD Diags : Analog exciter RF blank output level is out of range Check that the exciter module is correctly installed on the CERD board.</div>
+</section>
+<section id="BM2236712"><a name="BM2236712"></a>
+<h2>2236712</h2>
+<div class="sym">ERROR: EM_EX_DIAG_OUT_30DB</div>
+<div class="txt">CERD Diags : Analog exciter 30 dB test output level is out of range Check that the exciter module is correctly installed on the CERD board.</div>
+</section>
+<section id="BM2236713"><a name="BM2236713"></a>
+<h2>2236713</h2>
+<div class="sym">ERROR: EM_EX_DIAG_OUT_COARSE</div>
+<div class="txt">CERD Diags : Analog Exciter RF Output Test Failure Coarse attenuation output is out of range. Check that the exciter module is correctly installed on the CERD board.</div>
+</section>
+<section id="BM2236714"><a name="BM2236714"></a>
+<h2>2236714</h2>
+<div class="sym">ERROR: EM_EX_DIAG_OUT_FINE</div>
+<div class="txt">CERD Diags : Analog exciter fine attenuation output is out of range Check that the exciter module is correctly installed on the CERD board.</div>
+</section>
+<section id="BM2236715"><a name="BM2236715"></a>
+<h2>2236715</h2>
+<div class="sym">ERROR: EM_EX_DIAG_OUT_LOOP</div>
+<div class="txt">CERD Diags : Analog exciter loopback output level is out of range Check that the exciter module is correctly installed on the CERD board.</div>
+</section>
+<section id="BM2236716"><a name="BM2236716"></a>
+<h2>2236716</h2>
+<div class="sym">ERROR: EM_EX_DIAG_OUT_RHO</div>
+<div class="txt">CERD Diags : Analog exciter RHO modulation output is out of range Check that the exciter module is correctly installed on the CERD board.</div>
+</section>
+<section id="BM2236717"><a name="BM2236717"></a>
+<h2>2236717</h2>
+<div class="sym">ERROR: EM_EX_DIAG_OUT_CENTER</div>
+<div class="txt">CERD Diags : Analog exciter center frequency output is out of range Check that the exciter module is correctly installed on the CERD board.</div>
+</section>
+<section id="BM2236718"><a name="BM2236718"></a>
+<h2>2236718</h2>
+<div class="sym">ERROR: EM_EX_DIAG_BLANK_ATTEN</div>
+<div class="txt">CERD Diags : Analog Exciter RF Blank Test Failure Exciter loopback has an out-of-range amplitude during exciter RF blanking.
+Amplitude: %d, Min.Allowed: %d, Max.Allowed: %d
+Unblanked Amplitude: %d</div>
+</section>
+<section id="BM2236719"><a name="BM2236719"></a>
+<h2>2236719</h2>
+<div class="sym">ERROR: EM_EX_DIAG_ATTEN_COARSE</div>
+<div class="txt">CERD Diags : Analog Exciter RF Attenuation Test Failure Exciter loopback has an out-of-range amplitude for a coarse attenuation.
+Amplitude: %d, Min.Allowed: %d, Max.Allowed: %d, Atten.dB: %d
+Amplitude at 0 dB: %d</div>
+</section>
+<section id="BM2236720"><a name="BM2236720"></a>
+<h2>2236720</h2>
+<div class="sym">ERROR: EM_EX_DIAG_ATTEN_FINE</div>
+<div class="txt">CERD Diags : Analog Exciter RF Attenuation Test Failure Exciter loopback has an out-of-range amplitude for a fine attenuation.
+Amplitude: %d, Min.Allowed: %d, Max.Allowed: %d, Atten.Value: %d
+Amplitude at 0 dB: %d</div>
+</section>
+<section id="BM2236721"><a name="BM2236721"></a>
+<h2>2236721</h2>
+<div class="sym">ERROR: EM_CERD_BAD_BLD_SERVER_REQ</div>
+<div class="txt">CERD Diags: Bad BLD Server Request. The CERD Exec task on the CAP received an invalid request from one of the TPS board level diags.
+Request number: %d</div>
+</section>
+<section id="BM2236722"><a name="BM2236722"></a>
+<h2>2236722</h2>
+<div class="sym">ERROR: EM_CERD_FRX_INPUT_SELECT</div>
+<div class="txt">CERD Diags: Fast Receiver Analog Loopback Test Failure. Unable to put the CERD Ex/Rcvr in loopback mode. This test will fail and will probably log additional errors. FRU(s): CERD Dig Bd, CERD Analog Exciter.</div>
+</section>
+<section id="BM2236723"><a name="BM2236723"></a>
+<h2>2236723</h2>
+<div class="sym">ERROR: EM_CERD_FRX_LPBK_TIMEOUT</div>
+<div class="txt">CERD Diags: Fast Receiver Analog Loopback Test Failure. The test timed out after %d sec waiting for XD bus data. Check Fast Receiver power and connections.
+Exp: %4d XD pts.
+Rcvd: %4d XD pts. FRU(s): CERD Dig Bd, Fast Rcvr Bds + Cables</div>
+</section>
+<section id="BM2236724"><a name="BM2236724"></a>
+<h2>2236724</h2>
+<div class="sym">ERROR: EM_CERD_FRX_LPBK_DC_OFFSET</div>
+<div class="txt">CERD Diags: Fast Receiver Analog Loopback Test Failure. The average DC offset is out of range in the I or Q signal path.
+Min: %d counts
+Max: %d counts
+Measured DC offset: %d.%1d counts
+Which path: %c FRU(s): CERD Ex/Rcvr, Fast Rcvr Bds, Cables</div>
+</section>
+<section id="BM2236725"><a name="BM2236725"></a>
+<h2>2236725</h2>
+<div class="sym">ERROR: EM_CERD_FRX_LPBK_RCVR_GAIN</div>
+<div class="txt">CERD Diags: Fast Receiver Analog Loopback Test Failure. The Fast Receiver has an out-of-range amplitude (i.e. possible gain error).
+Min: %d counts
+Max: %d counts
+Measured Amplitude: %d counts FRU(s): CERD Ex/Rcvr, Fast Rcvr Bds, Cables</div>
+</section>
+<section id="BM2236726"><a name="BM2236726"></a>
+<h2>2236726</h2>
+<div class="sym">ERROR: EM_CERD_FRX_LPBK_RCVR_NOISE</div>
+<div class="txt">CERD Diags: Fast Receiver Analog Loopback Test Failure. The Fast Receiver has an out-of-range RMS noise value.
+Max: %d counts
+Measured RMS noise: %d.%1d counts FRU(s): CERD Ex/Rcvr, Fast Rcvr Bds, Cables</div>
+</section>
+<section id="BM2236727"><a name="BM2236727"></a>
+<h2>2236727</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RCVA_BW</div>
+<div class="txt">CERD Diags : Analog Receiver Anti Alias Filter Test RESULTS Receiver channel %d has bandwidth of %d kHz. This is a configuration message, NOT a test error.</div>
+</section>
+<section id="BM2236756"><a name="BM2236756"></a>
+<h2>2236756</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXC_INIT</div>
+<div class="txt">CERD Diags : Exciter Initialization Failure Could not init the Exciter to perform diags. FRU(s) indicated : CERD digital board, or Exciter RF module</div>
+</section>
+<section id="BM2236757"><a name="BM2236757"></a>
+<h2>2236757</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXC_PATTERN</div>
+<div class="txt">CERD Diags : Digital Exciter Register Test Failure
+Value written (and expected) : %d Value read %d
+Register Address: %x (indicates which register failed) FRU(s) indicated : CERD digital board</div>
+</section>
+<section id="BM2236758"><a name="BM2236758"></a>
+<h2>2236758</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXC_ADDRESS</div>
+<div class="txt">CERD Diags : Digital Exciter Pattern Test Failure
+Value written (and expected) : %d Value read %d
+Register Address: %x (indicates which register failed) FRU(s) indicated : CERD digital board</div>
+</section>
+<section id="BM2236759"><a name="BM2236759"></a>
+<h2>2236759</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXC_DDS_CTR</div>
+<div class="txt">CERD Diags : Digital Exciter DDS Center Frequency Test Failure Value written %d differs from value read %d.
+Sine LUT Address: %x</div>
+</section>
+<section id="BM2236760"><a name="BM2236760"></a>
+<h2>2236760</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXC_DDS_SLC</div>
+<div class="txt">CERD Diags : Digital Exciter DDS Slice Frequency Test Failure Value written %d differs from value read %d.
+Sine LUT Address: %x</div>
+</section>
+<section id="BM2236761"><a name="BM2236761"></a>
+<h2>2236761</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXC_DDS_RHO</div>
+<div class="txt">CERD Diags : Digital Exciter DDS RHO Frequency Test Failure Value written %d differs from value read %d.
+Sine LUT Address: %x</div>
+</section>
+<section id="BM2236762"><a name="BM2236762"></a>
+<h2>2236762</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXC_SINE_LUT_CO</div>
+<div class="txt">CERD Diags : Digital Exciter Sine LUT Center/Slice Test Failure Expected value %d differs from value read %d.</div>
+</section>
+<section id="BM2236763"><a name="BM2236763"></a>
+<h2>2236763</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXC_SINE_LUT_RHO</div>
+<div class="txt">CERD Diags : Digital Exciter Sine LUT Rho Test Failure Expected value %d differs from value read %d.</div>
+</section>
+<section id="BM2236764"><a name="BM2236764"></a>
+<h2>2236764</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXC_RHO_MULT1</div>
+<div class="txt">CERD Diags : Digital Exciter Rho Multiplier 1 Test Failure</div>
+</section>
+<section id="BM2236765"><a name="BM2236765"></a>
+<h2>2236765</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXC_RHO_MULT2</div>
+<div class="txt">CERD Diags : Digital Exciter Rho Multiplier 2 Test Failure</div>
+</section>
+<section id="BM2236766"><a name="BM2236766"></a>
+<h2>2236766</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXC_FREQ_CNCL</div>
+<div class="txt">CERD Diags : Digital Exciter Frequency Cancel Center/Slice Test Failure</div>
+</section>
+<section id="BM2236767"><a name="BM2236767"></a>
+<h2>2236767</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXC_FREQ_POS</div>
+<div class="txt">CERD Diags : Digital Exciter Frequency Cancel Positive Test Failure</div>
+</section>
+<section id="BM2236768"><a name="BM2236768"></a>
+<h2>2236768</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_EXC_FREQ_NEG</div>
+<div class="txt">CERD Diags : Digital Exciter Frequency Cancel Negative Test Failure</div>
+</section>
+<section id="BM2236769"><a name="BM2236769"></a>
+<h2>2236769</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RCV_PATTERN</div>
+<div class="txt">CERD Diags : Digital Receiver Register Test Failure
+Value written (and expected) : %d Value read %d
+Register Address: %x (indicates which register failed) FRU(s) indicated : CERD digital board</div>
+</section>
+<section id="BM2236770"><a name="BM2236770"></a>
+<h2>2236770</h2>
+<div class="sym">ERROR: EM_CAP_DIAG_RCV_ADDRESS</div>
+<div class="txt">CERD Diags : Digital Receiver Pattern Test Failure
+Value written (and expected) : %d Value read %d
+Register Address: %x (indicates which register failed) FRU(s) indicated : CERD digital board</div>
+</section>
+<section id="BM2236816"><a name="BM2236816"></a>
+<h2>2236816</h2>
+<div class="sym">ERROR: EM_ISEDP_BAD_DP_SERVER_REQ</div>
+<div class="txt">ISE DP: Bad Datapath Server Request. The CERD Exec task on the CAP received an invalid request from one of the TPS datapath tasks.
+Request number: %d</div>
+</section>
+<section id="BM2236817"><a name="BM2236817"></a>
+<h2>2236817</h2>
+<div class="sym">ERROR: EM_ISEDP_RF_TEST_BAD_COMMAND</div>
+<div class="txt">ISE DP: RF Bus Test error. The RF Bus task on the CAP received an invalid command from the TPS task.
+Command number: %d</div>
+</section>
+<section id="BM2236818"><a name="BM2236818"></a>
+<h2>2236818</h2>
+<div class="sym">ERROR: EM_ISEDP_RF_TEST_SSP_TIMEOUT</div>
+<div class="txt">ISE DP: RF Bus Test Timeout. The CERD timed out after %d seconds. All RF bus data points were not received.
+Expected: %d data points
+Received: %d data points FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236819"><a name="BM2236819"></a>
+<h2>2236819</h2>
+<div class="sym">ERROR: EM_ISEDP_RF_TEST_BAD_SSP_PACKET</div>
+<div class="txt">ISE DP: RF Bus Test error. The CERD received an SSP packet from the IPG with invalid TAG bits.
+Tags expected: %05xH
+Tags received: %05xH FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236820"><a name="BM2236820"></a>
+<h2>2236820</h2>
+<div class="sym">ERROR: EM_ISEDP_RF_TEST_BAD_SSP_DEVICE</div>
+<div class="txt">ISE DP: RF Bus Test error. The CERD received an SSP packet with an invalid device code. It should have been the CAP device code.
+CAP device code: %d
+Device code received: %d FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236821"><a name="BM2236821"></a>
+<h2>2236821</h2>
+<div class="sym">ERROR: EM_ISEDP_RF_TEST_RHO_ERROR</div>
+<div class="txt">ISE DP: RF Bus Test Failure. An invalid RHO value has been received via the RF bus.
+Data exp: %04xH
+Data read: %04xH
+Data index: %d FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236822"><a name="BM2236822"></a>
+<h2>2236822</h2>
+<div class="sym">ERROR: EM_ISEDP_RF_TEST_THETA_ERROR</div>
+<div class="txt">ISE DP: RF Bus Test Failure. An invalid THETA value has been received via the RF bus.
+Data exp: %04xH
+Data read: %04xH
+Data index: %d FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236823"><a name="BM2236823"></a>
+<h2>2236823</h2>
+<div class="sym">ERROR: EM_ISEDP_RF_TEST_OMEGA_ERROR</div>
+<div class="txt">ISE DP: RF Bus Test Failure. An invalid OMEGA value has been received via the RF bus causing an invalid Sine value to be read.
+Sine val exp: %03xH
+Sine val read: %03xH
+Omega val: %04xH
+Data index: %d FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236824"><a name="BM2236824"></a>
+<h2>2236824</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_BAD_COMMAND</div>
+<div class="txt">ISE DP: SSP Bus Test error. The SSP Bus task on the CAP received an invalid command from the TPS task.
+Command number: %d</div>
+</section>
+<section id="BM2236825"><a name="BM2236825"></a>
+<h2>2236825</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_SSP_TIMEOUT</div>
+<div class="txt">ISE DP: SSP Bus Test Timeout. The CERD timed out after %d seconds. All SSP interrupts were not received.
+Expected: %d interrupts
+Received: %d interrupts FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236826"><a name="BM2236826"></a>
+<h2>2236826</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_BAD_SSP_PACKET</div>
+<div class="txt">ISE DP: SSP Bus Test error. The CERD received an SSP packet from the IPG with invalid TAG bits.
+Tags expected: %05xH
+Tags received: %05xH FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236827"><a name="BM2236827"></a>
+<h2>2236827</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_BAD_SSP_DEVICE</div>
+<div class="txt">ISE DP: SSP Bus Test error. The CERD received an SSP packet with an invalid device code. It should have been the CAP device code.
+CAP device code: %d
+Device code received: %d FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236828"><a name="BM2236828"></a>
+<h2>2236828</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_SSP_TAGS_ERROR</div>
+<div class="txt">ISE DP: SSP Bus Test error. The CERD received an SSP packet with incorrect tag bits. The tag bits should have been DEVICE SELECT and OPCODE.
+Tags expected: %05xH
+Tags received: %05xH FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236829"><a name="BM2236829"></a>
+<h2>2236829</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_SSP_NOP_FILTER</div>
+<div class="txt">ISE DP: SSP Bus Test error. The CERD SSP hardware is not filtering out SSP NOP&#x27;s properly. The tag bits should have been DATA and DATA.
+Tags expected: %05xH
+Tags received: %05xH FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236830"><a name="BM2236830"></a>
+<h2>2236830</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_SSP_NOP_PAD</div>
+<div class="txt">ISE DP: SSP Bus Test error. The CERD SSP hardware did not pad an SSP Opcode with an SSP NOP. The tag bits should have been NOP and OPCODE.
+Tags expected: %05xH
+Tags received: %05xH FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236831"><a name="BM2236831"></a>
+<h2>2236831</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_SSP_DATA_ERROR</div>
+<div class="txt">ISE DP: SSP Bus Test error. An invalid SSP value has been received by the CAP via the SSP bus.
+Data exp: %02xH
+Data read: %02xH
+Data index: %d FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236832"><a name="BM2236832"></a>
+<h2>2236832</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_REGDATA_ERROR</div>
+<div class="txt">ISE DP: SSP Bus Test error. An invalid SSP value has been received by the Exciter Theta register (high byte) via the SSP bus.
+Data exp: %02xH
+Data read: %02xH
+Data index: %d FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236833"><a name="BM2236833"></a>
+<h2>2236833</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_REGADDR_ATTEN</div>
+<div class="txt">ISE DP: SSP Bus Test error. An invalid SSP value has been received by the Exciter Attenuation register via the SSP bus.
+Data exp: %04xH
+Data read: %04xH FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236834"><a name="BM2236834"></a>
+<h2>2236834</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_REGADDR_THETA</div>
+<div class="txt">ISE DP: SSP Bus Test error. An invalid SSP value has been received by the Exciter Theta register via the SSP bus.
+Data exp: %04xH
+Data read: %04xH FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236835"><a name="BM2236835"></a>
+<h2>2236835</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_REGADDR_STATUS1</div>
+<div class="txt">ISE DP: SSP Bus Test error. The SSP lock bit could not be set via an SSP bus write to the Exciter Unblank register. The lock bit is read back in Exciter Status register #1.
+Status exp: %02xH
+Status read: %02xH FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236836"><a name="BM2236836"></a>
+<h2>2236836</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_REGADDR_FILTSEL</div>
+<div class="txt">ISE DP: SSP Bus Test error. An invalid SSP value has been received by the Receiver Filter Select register via the SSP bus.
+Data exp: %02xH
+Data read: %02xH FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236837"><a name="BM2236837"></a>
+<h2>2236837</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_REGADDR_RX_GAIN</div>
+<div class="txt">ISE DP: SSP Bus Test error. An invalid SSP value has been received by one of the Receiver Attenuation registers via the SSP bus.
+Rcvr no.: %d
+Data exp: %02xH
+Data read: %02xH FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236838"><a name="BM2236838"></a>
+<h2>2236838</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_REGADDR_MISC</div>
+<div class="txt">ISE DP: SSP Bus Test error. An invalid SSP value has been received by the Exciter Miscellaneous register via the SSP bus.
+Data exp: %02xH
+Data read: %02xH FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236839"><a name="BM2236839"></a>
+<h2>2236839</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_REGADDR_COFDDS</div>
+<div class="txt">ISE DP: SSP Bus Test error. An invalid SSP value has been received by one of the Exciter RF DDS regs (center, slice, or theta) via the SSP bus causing an invalid Sine value to be read.
+Sine exp: %03xH
+Sine read: %03xH FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236840"><a name="BM2236840"></a>
+<h2>2236840</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_REGADDR_RHODDS</div>
+<div class="txt">ISE DP: SSP Bus Test error. An invalid SSP value has been received by one of the Exciter RHO DDS regs (freq or phase) via the SSP bus causing an invalid Sine value to be read.
+Sine exp: %03xH
+Sine read: %03xH FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236841"><a name="BM2236841"></a>
+<h2>2236841</h2>
+<div class="sym">ERROR: EM_ISEDP_XDBM_TEST_BAD_COMMAND</div>
+<div class="txt">ISE DP: XD Bus Monitor Test error. The XD Bus task on the CAP received an invalid command from the TPS task.
+Command number: %d</div>
+</section>
+<section id="BM2236842"><a name="BM2236842"></a>
+<h2>2236842</h2>
+<div class="sym">ERROR: EM_ISEDP_XDBM_TEST_XDBM_TIMEOUT</div>
+<div class="txt">ISE DP: XD Bus Monitor Test Timeout. The CERD timed out after %d seconds. All XD bus data points were not broadcast. Tried to broadcast %d data points. FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236843"><a name="BM2236843"></a>
+<h2>2236843</h2>
+<div class="sym">ERROR: EM_ISEDP_VSB_INVALID_MODE</div>
+<div class="txt">ISE DP: VSB Bus Test error. The VSB Bus task on the CAP received a VSB transfer request that specified an invalid VSB transfer mode.
+Mode: %d</div>
+</section>
+<section id="BM2236844"><a name="BM2236844"></a>
+<h2>2236844</h2>
+<div class="sym">ERROR: EM_ISEDP_VSB_CAP_TO_MEDCAM</div>
+<div class="txt">ISE DP: VSB Transfer Failure. The VSB LCA has detected a VSB transfer error while doing a CAP to MEDCAM/SBAM blockmode data transfer. See errors that follow for more information. FRU(s): CERD Digital Bd, MEDCAM/SBAM</div>
+</section>
+<section id="BM2236845"><a name="BM2236845"></a>
+<h2>2236845</h2>
+<div class="sym">ERROR: EM_ISEDP_VSB_MEDCAM_TO_CAP</div>
+<div class="txt">ISE DP: VSB Transfer Failure. The VSB LCA has detected a VSB transfer error while doing a MEDCAM/SBAM to CAP blockmode data transfer. See errors that follow for more information. FRU(s): CERD Digital Bd, MEDCAM/SBAM</div>
+</section>
+<section id="BM2236846"><a name="BM2236846"></a>
+<h2>2236846</h2>
+<div class="sym">ERROR: EM_ISEDP_VSB_FILL</div>
+<div class="txt">ISE DP: VSB Transfer Failure. The VSB LCA has detected a VSB transfer error while doing a CAP to MEDCAM/SBAM blockmode memory fill. See errors that follow for more information. FRU(s): CERD Digital Bd, MEDCAM/SBAM</div>
+</section>
+<section id="BM2236847"><a name="BM2236847"></a>
+<h2>2236847</h2>
+<div class="sym">ERROR: EM_ISEDP_VSB_CAP_TO_MEDCAM_NB</div>
+<div class="txt">ISE DP: VSB Transfer Failure. The VSB LCA has detected a VSB transfer error while doing a CAP to MEDCAM/SBAM NON-blockmode data transfer. See errors that follow for more information. FRU(s): CERD Digital Bd, MEDCAM/SBAM</div>
+</section>
+<section id="BM2236848"><a name="BM2236848"></a>
+<h2>2236848</h2>
+<div class="sym">ERROR: EM_ISEDP_VSB_MEDCAM_TO_CAP_NB</div>
+<div class="txt">ISE DP: VSB Transfer Failure. The VSB LCA has detected a VSB transfer error while doing a MEDCAM/SBAM to CAP NON-blockmode data transfer. See errors that follow for more information. FRU(s): CERD Digital Bd, MEDCAM/SBAM</div>
+</section>
+<section id="BM2236849"><a name="BM2236849"></a>
+<h2>2236849</h2>
+<div class="sym">ERROR: EM_ISEDP_VSB_LCA_TIMEOUT</div>
+<div class="txt">ISE DP: VSB Transfer Failure. A VSB transfer was started but the VSB task on the CAP timed out after %d seconds because a VSB LCA interrupt was not received.
+VSB status register: %03xH FRU(s): CERD Digital Bd, MEDCAM/SBAM</div>
+</section>
+<section id="BM2236850"><a name="BM2236850"></a>
+<h2>2236850</h2>
+<div class="sym">ERROR: EM_ISEDP_VSB_TIMEOUT</div>
+<div class="txt">ISE DP: VSB Transfer Failure. The VSB LCA timed out due to no response from the VSB slave device (i.e. MEDCAM/SBAM).
+VSB status register: %03xH FRU(s): CERD Digital Bd, MEDCAM/SBAM</div>
+</section>
+<section id="BM2236851"><a name="BM2236851"></a>
+<h2>2236851</h2>
+<div class="sym">ERROR: EM_ISEDP_VSB_BUSERROR</div>
+<div class="txt">ISE DP: VSB Transfer Failure. The VSB transfer failed due to a VSB Bus error being asserted on the VSB bus (mostly likely due to a VSB parity error).
+VSB status register: %03xH FRU(s): CERD Digital Bd, MEDCAM/SBAM</div>
+</section>
+<section id="BM2236852"><a name="BM2236852"></a>
+<h2>2236852</h2>
+<div class="sym">ERROR: EM_ISEDP_VSB_CAPLOCKOUT</div>
+<div class="txt">ISE DP: VSB Transfer Failure. The VSB transfer failed because the CAP was unable to access the VSB Dual Port RAM (due to collision with VSB LCA access).
+VSB status register: %03xH FRU(s): CERD Digital Bd, MEDCAM/SBAM</div>
+</section>
+<section id="BM2236853"><a name="BM2236853"></a>
+<h2>2236853</h2>
+<div class="sym">ERROR: EM_ISEDP_VSB_VSBLOCKOUT</div>
+<div class="txt">ISE DP: VSB Transfer Failure. The VSB transfer failed because the VSB LCA was unable to access the VSB Dual Port RAM (due to collision with CAP access).
+VSB status register: %03xH FRU(s): CERD Digital Bd, MEDCAM/SBAM</div>
+</section>
+<section id="BM2236854"><a name="BM2236854"></a>
+<h2>2236854</h2>
+<div class="sym">ERROR: EM_ISEDP_VSB_DATA_ERR_MODE2</div>
+<div class="txt">ISE DP: VSB Bus Test Failure. A data error occurred during MEDCAM/SBAM to CAP blockmode transfer. The data was verified by the CAP.
+CAP addr: %08xH
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH
+Pkg size: %08xH FRU(s): CERD Digital Bd, MEDCAM/SBAM</div>
+</section>
+<section id="BM2236855"><a name="BM2236855"></a>
+<h2>2236855</h2>
+<div class="sym">ERROR: EM_ISEDP_VSB_DATA_ERR_MODE5</div>
+<div class="txt">ISE DP:VSB Bus Test Failure. A data error occurred during MEDCAM/SBAM to CAP NON-blockmode transfer. The data was verified by the CAP.
+CAP addr: %08xH
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH
+Pkg size: %08xH FRU(s):CERD Digital Bd, MEDCAM/SBAM</div>
+</section>
+<section id="BM2236856"><a name="BM2236856"></a>
+<h2>2236856</h2>
+<div class="sym">ERROR: EM_ISEDP_B0_DATA_ERROR</div>
+<div class="txt">ISE DP: B0 Compensation Test Failure. An invalid B0 value has been received from the WARP. Possible causes: a bad B0 datapath from the WARP (on the IPG) to the B0 input on the CERD or bad CERD Digital Exciter hardware. Run CERD Digital Exciter diags.</div>
+</section>
+<section id="BM2236857"><a name="BM2236857"></a>
+<h2>2236857</h2>
+<div class="sym">ERROR: EM_ISEDP_B0_ERROR_ADD_INFO</div>
+<div class="txt">ISE DP: Additional Info on B0 Compensation Test Failure.
+B0 value: %04xH
+Sine val exp: %03xH Synthesizer count exp: %d
+Sine val read: %03xH Synthesizer count read: %d FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236858"><a name="BM2236858"></a>
+<h2>2236858</h2>
+<div class="sym">ERROR: EM_ISEDP_B0_SCALE_DATA_ERROR</div>
+<div class="txt">ISE DP: B0 Scale Test Failure. Possible causes: CERD B0 scale hardware failure, or IPG to CERD B0 datapath failure or bad CERD Digital Exciter hardware.
+Scale Factor: %04xH Expected Scaled B0 Value: %04xH Run CERD Digital Exciter diags.</div>
+</section>
+<section id="BM2236859"><a name="BM2236859"></a>
+<h2>2236859</h2>
+<div class="sym">ERROR: EM_ISEDP_B0_SCALE_ERROR_ADD_INFO</div>
+<div class="txt">ISE DP: Additional Info on B0 Compensation Test Failure.
+Sine val exp: %03xH Synthesizer count exp: %d
+Sine val read: %03xH Synthesizer count read: %d FRU(s): CERD Digital Bd, IPG</div>
+</section>
+<section id="BM2236860"><a name="BM2236860"></a>
+<h2>2236860</h2>
+<div class="sym">ERROR: EM_ISEDP_FRX_XD_TIMEOUT_B_VME</div>
+<div class="txt">ISE DP: Fast Rcvr XD Bus Test Failure. The test timed out after %d sec waiting for XD bus data. Fast Rcvr diags mode B, setup by TPS via VME.
+Exp: %4d XD pts.
+Rcvd: %4d XD pts. FRU(s): CERD Dig Bd, Fast Rcvr Local/Remote Bds + Cables</div>
+</section>
+<section id="BM2236861"><a name="BM2236861"></a>
+<h2>2236861</h2>
+<div class="sym">ERROR: EM_ISEDP_FRX_XD_TIMEOUT_A_VME</div>
+<div class="txt">ISE DP: Fast Rcvr XD Bus Test Failure. The test timed out after %d sec waiting for XD bus data. Fast Rcvr diags mode A, setup by TPS via VME.
+Exp: %4d XD pts.
+Rcvd: %4d XD pts. FRU(s): CERD Dig Bd, Fast Rcvr Local/Remote Bds + Cables</div>
+</section>
+<section id="BM2236862"><a name="BM2236862"></a>
+<h2>2236862</h2>
+<div class="sym">ERROR: EM_ISEDP_FRX_XD_TIMEOUT_A_SSP</div>
+<div class="txt">ISE DP: Fast Rcvr XD Bus Test Failure. The test timed out after %d sec waiting for XD bus data. Fast Rcvr diags mode A, setup by IPG via SSP.
+Exp: %4d XD pts.
+Rcvd: %4d XD pts. FRU(s): CERD Dig Bd, Fast Rcvr Local/Remote Bds + Cables, IPG</div>
+</section>
+<section id="BM2236863"><a name="BM2236863"></a>
+<h2>2236863</h2>
+<div class="sym">ERROR: EM_ISEDP_FRX_XD_DATA_ERR_B_VME</div>
+<div class="txt">ISE DP: Fast Rcvr XD Bus Test Failure. %d of %d XD data pts are bad. Data for 1st error shown below. Fast Rcvr diags mode B, setup by TPS via VME.
+Index: %d
+XD exp: %08xH
+XD rd: %08xH FRU(s): CERD Dig Bd, Fast Rcvr Local/Remote Bds + Cables</div>
+</section>
+<section id="BM2236864"><a name="BM2236864"></a>
+<h2>2236864</h2>
+<div class="sym">ERROR: EM_ISEDP_FRX_XD_DATA_ERR_A_VME</div>
+<div class="txt">ISE DP: Fast Rcvr XD Bus Test Failure. %d of %d XD data pts are bad. Data for 1st error shown below. Fast Rcvr diags mode A, setup by TPS via VME.
+Index: %d
+XD exp: %08xH
+XD rd: %08xH FRU(s): CERD Dig Bd, Fast Rcvr Local/Remote Bds + Cables</div>
+</section>
+<section id="BM2236865"><a name="BM2236865"></a>
+<h2>2236865</h2>
+<div class="sym">ERROR: EM_ISEDP_FRX_XD_DATA_ERR_A_SSP</div>
+<div class="txt">ISE DP: Fast Rcvr XD Bus Test Failure. %d of %d XD data pts are bad. Data for 1st error shown below. Fast Rcvr diags mode A, setup by IPG via SSP.
+Index: %d
+XD exp: %08xH
+XD rd: %08xH FRU(s): CERD Dig Bd, Fast Rcvr Local/Remote Bds + Cables, IPG</div>
+</section>
+</body></html>

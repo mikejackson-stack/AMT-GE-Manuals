@@ -1,0 +1,2748 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2225000-2225999 (526)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2225000-2225999 (526)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2224000-2224999.html">&larr; 2224000-2224999</a><a href="ermes_2226000-2226999.html">2226000-2226999 &rarr;</a></nav></header>
+<section id="BM2225000"><a name="BM2225000"></a>
+<h2>2225000</h2>
+<div class="sym">ERROR: EM_HPC_INSUFFIC_MEM_FOR_FILE</div>
+<div class="txt">HPC was unable to read the file %s because it was too large to fit in available memory.</div>
+</section>
+<section id="BM2225001"><a name="BM2225001"></a>
+<h2>2225001</h2>
+<div class="sym">ERROR: EM_HPC_CONFIG_FIO_ERROR</div>
+<div class="txt">HPC was unable to open or read the file %s. Verify that the file is located in /w/config. If the file is present, the /etc/vxhosts file may be missing or corrupted.</div>
+</section>
+<section id="BM2225002"><a name="BM2225002"></a>
+<h2>2225002</h2>
+<div class="sym">ERROR: EM_HPC_ERROR_READING_SYS_CFG_VALUE</div>
+<div class="txt">The file %s contains a missing or bad value for %s.</div>
+</section>
+<section id="BM2225003"><a name="BM2225003"></a>
+<h2>2225003</h2>
+<div class="sym">ERROR: EM_HPC_ERROR_READING_MULTICOIL_FLAG</div>
+<div class="txt">System Configuration Error IPG could not find the multicoil flag in the system config file.</div>
+</section>
+<section id="BM2225004"><a name="BM2225004"></a>
+<h2>2225004</h2>
+<div class="sym">ERROR: EM_HPC_ERROR_READING_TABLE_CALIB</div>
+<div class="txt">System Configuration Error IPG could not find the table calibration constants in the system config file.</div>
+</section>
+<section id="BM2225005"><a name="BM2225005"></a>
+<h2>2225005</h2>
+<div class="sym">ERROR: EM_HPC_ERROR_READING_SPECTRO_FLAG</div>
+<div class="txt">System Configuration Error IPG could not find the spectro flag in the system config file.</div>
+</section>
+<section id="BM2225006"><a name="BM2225006"></a>
+<h2>2225006</h2>
+<div class="sym">ERROR: EM_HPC_ERROR_READING_ISO_TO_ALIGN</div>
+<div class="txt">System Configuration Error IPG could not find the isocenter value in the system config file.</div>
+</section>
+<section id="BM2225007"><a name="BM2225007"></a>
+<h2>2225007</h2>
+<div class="sym">ERROR: EM_HPC_GRAM_TUNE_OPEN</div>
+<div class="txt">IPG Advisory Message. IPG could not open the `gram_tune.dat&#x27; file in /usr/g/caldir. Please do restore info or run Grafidy to create the file.</div>
+</section>
+<section id="BM2225008"><a name="BM2225008"></a>
+<h2>2225008</h2>
+<div class="sym">ERROR: EM_HPC_GRAM_TUNE_CLOSE</div>
+<div class="txt">IPG System Error. IPG was not able to properly close the `gram_tune.dat&#x27; file in /usr/g/caldir. Reset TPS and try again.</div>
+</section>
+<section id="BM2225009"><a name="BM2225009"></a>
+<h2>2225009</h2>
+<div class="sym">ERROR: EM_HPC_CONFIG_FCLOSE_ERROR</div>
+<div class="txt">HPC was unable to close the file %s. Reset TPS and try again.</div>
+</section>
+<section id="BM2225010"><a name="BM2225010"></a>
+<h2>2225010</h2>
+<div class="sym">ERROR: EM_HPC_DEAD_SPI_ON_INIT</div>
+<div class="txt">IPG Communication Error. Please reset TPS.\b\ SPI failed to inform HPC that it had initialized correctly. This could be caused by a bad SPI or bad DPR between SPI and the IPG CPU.</div>
+</section>
+<section id="BM2225011"><a name="BM2225011"></a>
+<h2>2225011</h2>
+<div class="sym">ERROR: EM_HPC_SPI_DIDNT_CLR_STRT_OPCD</div>
+<div class="txt">IPG Communication Error. Please reset TPS.\b\ SPI failed to respond to the start command from HPC. This could be caused by a bad SPI or bad DPR between SPI and the IPG CPU.</div>
+</section>
+<section id="BM2225012"><a name="BM2225012"></a>
+<h2>2225012</h2>
+<div class="sym">ERROR: EM_HPC_SPI_PM_SET_ERROR</div>
+<div class="txt">The IPG was unable to load the power monitor with the correct settings. Possibly a bad power monitor, RF/Pen Cabinet MDS peripheral, or a bad connection between them. It may be necessary to reset TPS.</div>
+</section>
+<section id="BM2225013"><a name="BM2225013"></a>
+<h2>2225013</h2>
+<div class="sym">ERROR: EM_HPC_INVALID_SPI_OPCODE_ERROR</div>
+<div class="txt">IPG Communication Error. It may be necessary to reset TPS. HPC received an invalid opcode from SPI. This could be caused by a programming error OR by bad DPR between SPI and HPC.
+Opcode: %d</div>
+</section>
+<section id="BM2225014"><a name="BM2225014"></a>
+<h2>2225014</h2>
+<div class="sym">ERROR: EM_HPC_SPI_QUEUE_FULL_ERROR</div>
+<div class="txt">IPG Communication Error. Please reset TPS. SPI is not responding to HPC communication. This could be caused by a bad SPI or bad DPR between SPI and the IPG main CPU.</div>
+</section>
+<section id="BM2225015"><a name="BM2225015"></a>
+<h2>2225015</h2>
+<div class="sym">ERROR: EM_HPC_SPI_NOT_READY_NO_REASON</div>
+<div class="txt">Hardware not ready to scan. Reason unknown. It may be necessary to reset TPS.</div>
+</section>
+<section id="BM2225016"><a name="BM2225016"></a>
+<h2>2225016</h2>
+<div class="sym">ERROR: EM_HPC_SPI_FAIL_RESP_PM</div>
+<div class="txt">SPI failed to respond to a power monitor set packet with a power monitor status. It may be necessary to reset TPS. If problem persists, cycle the power on the power monitor.</div>
+</section>
+<section id="BM2225017"><a name="BM2225017"></a>
+<h2>2225017</h2>
+<div class="sym">ERROR: EM_HPC_SPI_FAIL_RCV_COIL_SET</div>
+<div class="txt">SPI failed to respond to a set receive coil packet with a receive coil set packet, or with an error. It may be necessary to reset TPS. If problem persists, cycle the power on the RF cabinet.</div>
+</section>
+<section id="BM2225018"><a name="BM2225018"></a>
+<h2>2225018</h2>
+<div class="sym">ERROR: EM_HPC_SPI_FAIL_LEAVE_STANDBY</div>
+<div class="txt">SPI failed to leave the standby state when the start scan command was received. It may be necessary to reset TPS.</div>
+</section>
+<section id="BM2225019"><a name="BM2225019"></a>
+<h2>2225019</h2>
+<div class="sym">ERROR: EM_HPC_SPI_WDOG_TIMEOUT</div>
+<div class="txt">SPI watchdog timed out. Please reset TPS.\b\ This may be caused by a SPI hardware or (less likely) a SPI software failure.</div>
+</section>
+<section id="BM2225020"><a name="BM2225020"></a>
+<h2>2225020</h2>
+<div class="sym">ERROR: EM_HPC_SPI_PM_RESPONSE_ERROR</div>
+<div class="txt">The RF/Pen Cabinet MDS peripheral received an incorrect response from the power monitor. Possibly a bad power monitor, RF/Pen Cabinet MDS peripheral, or a bad connection between them. It may be necessary to reset TPS.</div>
+</section>
+<section id="BM2225021"><a name="BM2225021"></a>
+<h2>2225021</h2>
+<div class="sym">ERROR: EM_HPC_SPI_PM_TIMEOUT_ERROR</div>
+<div class="txt">The RF/Pen Cabinet MDS peripheral did not receive a response from the power monitor. Possibly a bad power monitor, RF/Pen Cabinet MDS peripheral, or a bad connection between them. It may be necessary to reset TPS.</div>
+</section>
+<section id="BM2225022"><a name="BM2225022"></a>
+<h2>2225022</h2>
+<div class="sym">ERROR: EM_HPC_SPI_PM_CHECKSUM_ERROR</div>
+<div class="txt">The RF/Pen Cabinet MDS peripheral received a response from the power monitor with a bad checksum. Possibly a bad power monitor, RF/Pen Cabinet MDS peripheral, or a bad connection between them. It may be necessary to reset TPS.</div>
+</section>
+<section id="BM2225023"><a name="BM2225023"></a>
+<h2>2225023</h2>
+<div class="sym">ERROR: EM_HPC_SPI_PM_ERROR</div>
+<div class="txt">The RF/Pen Cabinet MDS peripheral received an error code %d from the power monitor. Possibly a bad power monitor, RF/Pen Cabinet MDS peripheral, or a bad connection between them.</div>
+</section>
+<section id="BM2225024"><a name="BM2225024"></a>
+<h2>2225024</h2>
+<div class="sym">ERROR: EM_HPC_SPI_PM_VERSION_ERROR</div>
+<div class="txt">The SPI has reported the power monitor firmware version is not compatible. (.5T vs 1.0T vs 1.5T) Check for correct PowerMonType in MRconfig.cfg file, then verify correct power monitor firmware.</div>
+</section>
+<section id="BM2225025"><a name="BM2225025"></a>
+<h2>2225025</h2>
+<div class="sym">ERROR: EM_HPC_NOT_READY_NO_REASON</div>
+<div class="txt">HPC indicates it is not ready to scan. Gradient and/or RF Hardware maybe be transitioning from standby to ready. If the system does not recover, please reset TPS.</div>
+</section>
+<section id="BM2225026"><a name="BM2225026"></a>
+<h2>2225026</h2>
+<div class="sym">ERROR: EM_HPC_SPI_GAP_NO_DIG_TUNE</div>
+<div class="txt">GRAM TUNING BOARD CONFIGURATION ERROR The MRconfig.cfg file indicates GRAMs have Digital Tuning Boards, but the GAP was unable to communicate with the boards. If analog boards are connected, change MRconfig.cfg; else check cable connections.</div>
+</section>
+<section id="BM2225027"><a name="BM2225027"></a>
+<h2>2225027</h2>
+<div class="sym">ERROR: EM_HPC_SPI_GAP_NO_DIG_TUNE_AXIS</div>
+<div class="txt">GRAM TUNING BOARD CONFIGURATION ERROR The MRconfig.cfg file indicates GRAMs have Digital Tuning Boards, but the GAP was unable to communicate with the %s Axis Digital Tuning Board. Check cable connections and then reset TPS.</div>
+</section>
+<section id="BM2225028"><a name="BM2225028"></a>
+<h2>2225028</h2>
+<div class="sym">ERROR: EM_HPC_SPI_GAP_NO_ANAL_TUNE</div>
+<div class="txt">GRAM TUNING BOARD CONFIGURATION ERROR The MRconfig.cfg file indicates no Digital Tuning Board is present on the GRAMs, but the GAP detects the Digital Tuning Boards on each axis. Please change the MRconfig.cfg file and reset TPS.</div>
+</section>
+<section id="BM2225029"><a name="BM2225029"></a>
+<h2>2225029</h2>
+<div class="sym">ERROR: EM_HPC_SPI_GAP_NO_ANAL_TUNE_AXIS</div>
+<div class="txt">GRAM TUNING BOARD CONFIGURATION ERROR The MRconfig.cfg file indicates GRAMs do not have Digital Tuning Boards, but the GAP detects a Digital Tuning Board on the %s Axis. Verify a Digital Tuning Board on each axis, change MRconfig.cfg and reset TPS.</div>
+</section>
+<section id="BM2225030"><a name="BM2225030"></a>
+<h2>2225030</h2>
+<div class="sym">ERROR: EM_HPC_SPI_GIP_NO_DIG_TUNE</div>
+<div class="txt">GRAM TUNING ERROR A GIP/GP to IPG MDS Link packet contains incorrect data. Check the MDS Link cable between the GIP/GP and IPG, or replace the GIP/GP Board. Reset TPS.</div>
+</section>
+<section id="BM2225031"><a name="BM2225031"></a>
+<h2>2225031</h2>
+<div class="sym">ERROR: EM_HPC_SPI_GIP_DIG_TUNE_CONFIG</div>
+<div class="txt">GRAM TUNING CONFIGURATION ERROR The MRconfig.cfg file indicates Digital Tuning is not selected for an 8651 or 8915 Gradient System. Digital Tuning MUST be selected. Change the MRconfig.cfg file, shutdown, and restart the system.</div>
+</section>
+<section id="BM2225032"><a name="BM2225032"></a>
+<h2>2225032</h2>
+<div class="sym">ERROR: EM_HPC_SPI_GIP_NO_GRAMS</div>
+<div class="txt">GRADIENT CONFIGURATION ERROR The MRconfig.cfg file indicates that an 8651 or 8915 Gradient System is present, but GRAMs are not. GRAMs MUST be selected for 8651 and 8915 Gradients. Change the MRconfig.cfg file and reset TPS.</div>
+</section>
+<section id="BM2225033"><a name="BM2225033"></a>
+<h2>2225033</h2>
+<div class="sym">ERROR: EM_HPC_SPI_SGD_BASE_GRAMS</div>
+<div class="txt">GRADIENT CONFIGURATION ERROR The MRconfig.cfg file indicates that an 8280 Gradient System is present, but GRAMs are configured. GRAMs must NOT be selected for 8280 Gradients. Change the MRconfig.cfg file and reset TPS.</div>
+</section>
+<section id="BM2225040"><a name="BM2225040"></a>
+<h2>2225040</h2>
+<div class="sym">ERROR: EM_HPC_DEAD_SPU_ON_INIT</div>
+<div class="txt">IPG Communication Error. Please reset TPS to use gating.\b\ SPU failed to inform HPC that it had initialized correctly. This could be caused by a bad SPU or bad DPR between SPU and the IPG main CPU.</div>
+</section>
+<section id="BM2225041"><a name="BM2225041"></a>
+<h2>2225041</h2>
+<div class="sym">ERROR: EM_HPC_SPU_BUSY</div>
+<div class="txt">IPG Communication Error. Please reset TPS.\b\ SPU is not responding to HPC communication. This could be caused by a bad SPU or bad DPR between SPU and the IPG main CPU.</div>
+</section>
+<section id="BM2225042"><a name="BM2225042"></a>
+<h2>2225042</h2>
+<div class="sym">ERROR: EM_HPC_SPU_INVALID_OPCODE</div>
+<div class="txt">SPU to HPC Interface Error. HPC received an invalid opcode from SPU. This could be caused by a programming error OR by bad DPR between SPU and HPC.\nOpcode: %d</div>
+</section>
+<section id="BM2225043"><a name="BM2225043"></a>
+<h2>2225043</h2>
+<div class="sym">ERROR: EM_HPC_SPU_GATE_SEL_CARD_CONFLICT</div>
+<div class="txt">Host to HPC Interface Error. The gating selection packet HPC received attempted to enable both ECG and CINE, which are not compatible.</div>
+</section>
+<section id="BM2225044"><a name="BM2225044"></a>
+<h2>2225044</h2>
+<div class="sym">ERROR: EM_HPC_SPU_GATE_SEL_RESP_CONFLICT</div>
+<div class="txt">Host to HPC Interface Error. The gating selection packet HPC received attempted to enable both normal respiratory gating and NMRMON, which are not compatible.</div>
+</section>
+<section id="BM2225045"><a name="BM2225045"></a>
+<h2>2225045</h2>
+<div class="sym">ERROR: EM_HPC_SPU_GATE_REQ_BAD_HEART_RATE</div>
+<div class="txt">Host to HPC Interface Error. The HPC received a gating request packet with an out of range heart rate.
+Heart rate: %d</div>
+</section>
+<section id="BM2225046"><a name="BM2225046"></a>
+<h2>2225046</h2>
+<div class="sym">ERROR: EM_HPC_SPU_GATE_REQ_BAD_TRIGGER_WINDOW</div>
+<div class="txt">Host to HPC Interface Error. The HPC received a gating request packet with an invalid trigger window.
+Window: %d</div>
+</section>
+<section id="BM2225047"><a name="BM2225047"></a>
+<h2>2225047</h2>
+<div class="sym">ERROR: EM_HPC_SPU_GATE_REQ_BAD_LEAD_SELECT</div>
+<div class="txt">Host to HPC Interface Error. The HPC received a gating request packet with an invalid lead selected.
+lead: %d</div>
+</section>
+<section id="BM2225048"><a name="BM2225048"></a>
+<h2>2225048</h2>
+<div class="sym">ERROR: EM_HPC_SPU_WAVE_DIS_INVALID_CARD</div>
+<div class="txt">Host to HPC Interface Error. The HPC received a gating waveform display packet with an invalid cardiac display requested.
+value: %d</div>
+</section>
+<section id="BM2225049"><a name="BM2225049"></a>
+<h2>2225049</h2>
+<div class="sym">ERROR: EM_HPC_SPU_WAVE_DIS_INVALID_RESP</div>
+<div class="txt">Host to HPC Interface Error. The HPC received a gating waveform display packet with an invalid respiratory display requested.
+value: %d</div>
+</section>
+<section id="BM2225050"><a name="BM2225050"></a>
+<h2>2225050</h2>
+<div class="sym">ERROR: EM_HPC_SPU_WAVE_DIS_INVALID_AUX</div>
+<div class="txt">Host to HPC Interface Error. The HPC received a gating waveform display packet with an invalid auxiliary display requested.
+value: %d</div>
+</section>
+<section id="BM2225051"><a name="BM2225051"></a>
+<h2>2225051</h2>
+<div class="sym">ERROR: EM_HPC_SPU_LEAD_REQ_INVALID</div>
+<div class="txt">Host to HPC Interface Error. The HPC received a lead request packet with an invalid lead selected.
+lead: %d</div>
+</section>
+<section id="BM2225052"><a name="BM2225052"></a>
+<h2>2225052</h2>
+<div class="sym">ERROR: EM_HPC_SPU_GATE_REQ_HEART_RATE_CONFLICT</div>
+<div class="txt">Internal Software Error The HPC received a bad lead request packet.</div>
+</section>
+<section id="BM2225053"><a name="BM2225053"></a>
+<h2>2225053</h2>
+<div class="sym">ERROR: EM_HPC_SPU_GATE_REQ_HEART_RATE_NIL</div>
+<div class="txt">Internal Software Error The HPC received a heart rate of zero.</div>
+</section>
+<section id="BM2225054"><a name="BM2225054"></a>
+<h2>2225054</h2>
+<div class="sym">ERROR: EM_HPC_SPU_GATE_REQ_TRIGGER_WINDOW_CONFLICT</div>
+<div class="txt">Internal Software Error The HPC received a packet with a trigger window conflict.</div>
+</section>
+<section id="BM2225055"><a name="BM2225055"></a>
+<h2>2225055</h2>
+<div class="sym">ERROR: EM_HPC_SPU_GATE_REQ_TRIGGER_WINDOW_NIL</div>
+<div class="txt">Internal Software Error The HPC received a trigger window of zero.</div>
+</section>
+<section id="BM2225056"><a name="BM2225056"></a>
+<h2>2225056</h2>
+<div class="sym">ERROR: EM_HPC_SPU_GATE_REQ_LEAD_SELECT_CONFLICT</div>
+<div class="txt">Host to HPC Interface Error. The HPC received a packet with a lead select conflict.</div>
+</section>
+<section id="BM2225057"><a name="BM2225057"></a>
+<h2>2225057</h2>
+<div class="sym">ERROR: EM_HPC_SPU_GATE_REQ_LEAD_SELECT_NIL</div>
+<div class="txt">Internal Software Error The HPC received a lead select of zero.</div>
+</section>
+<section id="BM2225058"><a name="BM2225058"></a>
+<h2>2225058</h2>
+<div class="sym">ERROR: EM_HPC_SPU_UNEXPECTED_TRIGGER_PACKET</div>
+<div class="txt">SPU to HPC Interface Error. The HPC received a gated triggers found packet while already in the scanning state.</div>
+</section>
+<section id="BM2225059"><a name="BM2225059"></a>
+<h2>2225059</h2>
+<div class="sym">ERROR: EM_HPC_SPU_TRIGGER_LEVEL_INVALID</div>
+<div class="txt">Host to HPC Interface Error. The HPC received a trigger level packet with an invalid trigger level.
+trigger level: %d</div>
+</section>
+<section id="BM2225060"><a name="BM2225060"></a>
+<h2>2225060</h2>
+<div class="sym">ERROR: EM_HPC_NONZERO_WARP_CMND_IN_EOS</div>
+<div class="txt">IPG Communication Error. It will necessary to reset TPS. WARP failed to respond to an update command from HPC. This could be caused by a software error OR by a bad WARP, \ or bad DPR between WARP and the IPG main CPU.</div>
+</section>
+<section id="BM2225061"><a name="BM2225061"></a>
+<h2>2225061</h2>
+<div class="sym">ERROR: EM_HPC_ECC_FILE_NOT_FOUND</div>
+<div class="txt">IPG Advisory message - DECC will not be performed during scanning. Eddy Current Compensation coefficient file /usr/g/caldir/ecccoeff.dat could not be found or could not be opened. Please run Grafidy to create the file.</div>
+</section>
+<section id="BM2225062"><a name="BM2225062"></a>
+<h2>2225062</h2>
+<div class="sym">ERROR: EM_HPC_ECC_FILE_CLOSE_ERR</div>
+<div class="txt">IPG Communication error. ECC coefficient file could not be closed. This could be caused by an internal s/w error or network error. Please reset TPS!</div>
+</section>
+<section id="BM2225063"><a name="BM2225063"></a>
+<h2>2225063</h2>
+<div class="sym">ERROR: EM_HPC_ECC_COEFF_READ_ERR</div>
+<div class="txt">IPG internal error reading ECC coefficient file. File ecccoeff.dat may not be correctly formatted or corrupted, please check!</div>
+</section>
+<section id="BM2225064"><a name="BM2225064"></a>
+<h2>2225064</h2>
+<div class="sym">ERROR: EM_HPC_ECC_COEFF_XLATE_ERR</div>
+<div class="txt">IPG internal error translating ECC coefficient to WARP format. File ecccoeff.dat may not be correctly formatted or corrupted, please check!</div>
+</section>
+<section id="BM2225065"><a name="BM2225065"></a>
+<h2>2225065</h2>
+<div class="sym">ERROR: EM_HPC_WARP_UPDATE_ERR_IN_EOS</div>
+<div class="txt">EOS interrupt detected rotation matrix update or shim command was not processed by WARP. Image quality may be degraded. Possible PSD programming error.
+Number of commands missed: %d</div>
+</section>
+<section id="BM2225066"><a name="BM2225066"></a>
+<h2>2225066</h2>
+<div class="sym">ERROR: EM_HPC_WARP_UPDATE_ERR_IN_ISI</div>
+<div class="txt">ISI interrupt detected rotation matrix update or shim command was not processed by WARP. Image quality may be degraded. Possible PSD programming error.
+Number of commands missed: %d</div>
+</section>
+<section id="BM2225067"><a name="BM2225067"></a>
+<h2>2225067</h2>
+<div class="sym">ERROR: EM_HPC_WARP_ECC_UPDATE_ERROR</div>
+<div class="txt">ECC and B0 coefficient update was not processed by the WARP. Compensation state may not be as expected, possible IQ degradation. Re-download the PSD, run IMP/WARP diags.</div>
+</section>
+<section id="BM2225068"><a name="BM2225068"></a>
+<h2>2225068</h2>
+<div class="sym">ERROR: EM_HPC_WARP_ECC_CONFIG_MISMATCH</div>
+<div class="txt">WARP eccload configuration error detected by IPG - WARP executable is SR config %d, ecc coeff file is intended for SR %d. Consider re-running Grafidy...</div>
+</section>
+<section id="BM2225069"><a name="BM2225069"></a>
+<h2>2225069</h2>
+<div class="sym">ERROR: EM_HPC_WARP_ECC_COEFF_OVERFLOW</div>
+<div class="txt">WARP eccload configuration error detected by IPG - ECC coefficient file contains %d Cn/Fn coefficients, but only %d can be processed by the WARP.</div>
+</section>
+<section id="BM2225070"><a name="BM2225070"></a>
+<h2>2225070</h2>
+<div class="sym">ERROR: EM_SHMOD_CM_DEFINE_ERROR</div>
+<div class="txt">SHMOD was unable to establish its communication port. The cm_define call of SHMOD_PORT failed. Reset TPS if you wish to use SHMOD.</div>
+</section>
+<section id="BM2225071"><a name="BM2225071"></a>
+<h2>2225071</h2>
+<div class="sym">ERROR: EM_SHMOD_CM_DELETE_ERROR</div>
+<div class="txt">Please Reset TPS. SHMOD was unable to remove its communication port. The cm_delete call of SHMOD_PORT failed.</div>
+</section>
+<section id="BM2225080"><a name="BM2225080"></a>
+<h2>2225080</h2>
+<div class="sym">ERROR: EM_HPC_EMUL_PAC</div>
+<div class="txt">Patient cardiac and respiratory data is being simulated by software.\b\ A steady, non-varying signal is being used for the simulation. The PAC is emulated in the ipg_stage file. Remove emulation flag and Reset TPS to use patient data.</div>
+</section>
+<section id="BM2225081"><a name="BM2225081"></a>
+<h2>2225081</h2>
+<div class="sym">ERROR: EM_HPC_EMUL_TYME_II</div>
+<div class="txt">RF door switch and PDU status are not being monitored.\b\ The TYME II is emulated in the ipg_stage file. Remove emulation flag and Reset TPS to enable monitoring.</div>
+</section>
+<section id="BM2225082"><a name="BM2225082"></a>
+<h2>2225082</h2>
+<div class="sym">ERROR: EM_HPC_EMUL_GCP</div>
+<div class="txt">Scan time display and waveform display has been disabled.\b\ The hard keys will not function. The Integrated Work Space is emulated in the ipg_stage file. Remove emulation flag and Reset TPS to enable.</div>
+</section>
+<section id="BM2225083"><a name="BM2225083"></a>
+<h2>2225083</h2>
+<div class="sym">ERROR: EM_HPC_EMUL_TR</div>
+<div class="txt">Control and monitoring of the T/R driver, dynamic disable board is disabled.\b\ The T/R driver is emulated in the ipg_stage file. Remove emulation flag and Reset TPS to enable.</div>
+</section>
+<section id="BM2225084"><a name="BM2225084"></a>
+<h2>2225084</h2>
+<div class="sym">ERROR: EM_HPC_EMUL_GRAD</div>
+<div class="txt">Control and monitoring of the Gradient Driver Subsystem is disabled.\b\ The gradients are emulated in the ipg_stage file. Remove emulation flag and Reset TPS to enable.</div>
+</section>
+<section id="BM2225085"><a name="BM2225085"></a>
+<h2>2225085</h2>
+<div class="sym">ERROR: EM_HPC_EMUL_RF</div>
+<div class="txt">Control and monitoring of the RF amplifier(s) is disabled.\b\ The RF amplifier(s) is emulated in the ipg_stage file. Remove emulation flag and Reset TPS to enable.</div>
+</section>
+<section id="BM2225086"><a name="BM2225086"></a>
+<h2>2225086</h2>
+<div class="sym">ERROR: EM_HPC_EMUL_PM</div>
+<div class="txt">Control and monitoring of the RF power monitor is disabled.\b\ The power monitor is emulated in the ipg_stage file. This will cause it to trip if you try to scan. Remove emulation flag and Reset TPS before scanning.</div>
+</section>
+<section id="BM2225087"><a name="BM2225087"></a>
+<h2>2225087</h2>
+<div class="sym">ERROR: EM_HPC_EMUL_MDS</div>
+<div class="txt">Control and monitoring of RF System, Gradient Driver System, and TYME II functions are disabled.\b\ The MDS link is emulated in the ipg_stage file. Remove emulation flag and Reset TPS to enable.</div>
+</section>
+<section id="BM2225088"><a name="BM2225088"></a>
+<h2>2225088</h2>
+<div class="sym">ERROR: EM_HPC_EMUL_SPI</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2225089"><a name="BM2225089"></a>
+<h2>2225089</h2>
+<div class="sym">ERROR: EM_HPC_EMUL_SRI</div>
+<div class="txt">Landmarking and all buttons on the magnet shroud have been disabled.\b\ The SRI is emulated in the ipg_stage file. Remove emulation flag and Reset TPS to enable.</div>
+</section>
+<section id="BM2225090"><a name="BM2225090"></a>
+<h2>2225090</h2>
+<div class="sym">ERROR: EM_HPC_EMUL_TABLE</div>
+<div class="txt">Landmarking has been disabled.\b\ The table is emulated in the ipg_stage file. Remove emulation flag and Reset TPS to enable.</div>
+</section>
+<section id="BM2225091"><a name="BM2225091"></a>
+<h2>2225091</h2>
+<div class="sym">ERROR: EM_HPC_EMUL_SPU</div>
+<div class="txt">This message is no longer used. If you see it, write a CQA.</div>
+</section>
+<section id="BM2225092"><a name="BM2225092"></a>
+<h2>2225092</h2>
+<div class="sym">ERROR: EM_HPC_EMUL_SRI_ERR</div>
+<div class="txt">SRI Error Checking has been disabled.\b\ The SRI (table &amp; buttons on magnet shroud) will work. SRI errors may be reported but they will not stop the scan. It is disabled in the ipg_stage file. Remove emulation flag and Reset TPS to enable.</div>
+</section>
+<section id="BM2225093"><a name="BM2225093"></a>
+<h2>2225093</h2>
+<div class="sym">ERROR: EM_HPC_EMUL_GRAD_ERR</div>
+<div class="txt">Gradient Driver Subsystem error reporting has been disabled.\b\ The gradients will be controlled, but no errors will be reported or recovered. It is disabled in the ipg_stage file. Remove emulation flag and Reset TPS to enable.</div>
+</section>
+<section id="BM2225094"><a name="BM2225094"></a>
+<h2>2225094</h2>
+<div class="sym">ERROR: EM_HPC_DIS_GRAD_OL</div>
+<div class="txt">Gradient Driver Subsystem Overload Error Reporting has been disabled.\b\ The gradients will be controlled normally, but no overload errors will be reported. It is disabled in the ipg_stage file. Remove emulation flag and Reset TPS to enable.</div>
+</section>
+<section id="BM2225095"><a name="BM2225095"></a>
+<h2>2225095</h2>
+<div class="sym">ERROR: EM_HPC_EMUL_PAC_PP</div>
+<div class="txt">Patient plethysmograph data is being simulated by software.\b\ A steady, non-varying signal is being used for the simulation. The PAC PP is emulated in the ipg_stage file. Remove emulation flag and Reset TPS to use patient data.</div>
+</section>
+<section id="BM2225096"><a name="BM2225096"></a>
+<h2>2225096</h2>
+<div class="sym">ERROR: EM_HPC_EMUL_BORE_TEMP</div>
+<div class="txt">The bore temperature sensor is disabled. Do not scan patients. The bore temperature sensor is emulated in the ipg_stage file. Remove emulation flag and Reset TPS to enable monitoring.</div>
+</section>
+<section id="BM2225100"><a name="BM2225100"></a>
+<h2>2225100</h2>
+<div class="sym">ERROR: EM_HPC_SPU_UNXPCTD_CARD_REINIT</div>
+<div class="txt">The Gating Subsystem can not be reset during scanning.</div>
+</section>
+<section id="BM2225101"><a name="BM2225101"></a>
+<h2>2225101</h2>
+<div class="sym">ERROR: EM_HPC_SPU_GATE_REQ_MULT_PROV</div>
+<div class="txt">HPC to Host Interface Error. The HPC received a gating request packet with more than one request bit set.
+Requested Bits: %d</div>
+</section>
+<section id="BM2225102"><a name="BM2225102"></a>
+<h2>2225102</h2>
+<div class="sym">ERROR: EM_HPC_SPU_ECG_CINE_FILTER_INVALID</div>
+<div class="txt">Host to HPC Interface Error. The HPC received a PAC ECG CINE Filter packet with an invalid filter requested.
+Filter: %d</div>
+</section>
+<section id="BM2225103"><a name="BM2225103"></a>
+<h2>2225103</h2>
+<div class="sym">ERROR: EM_HPC_SPU_RT_TP_INVALID</div>
+<div class="txt">Host to HPC Interface Error. HPC received a Resp Trig Trigger Point value out of range.
+Trigger Point = %d</div>
+</section>
+<section id="BM2225104"><a name="BM2225104"></a>
+<h2>2225104</h2>
+<div class="sym">ERROR: EM_HPC_SPU_RT_TW_INVALID</div>
+<div class="txt">Host to HPC Interface Error. HPC received a Resp Trig Trigger Window value out of range.
+Trigger Window = %d</div>
+</section>
+<section id="BM2225105"><a name="BM2225105"></a>
+<h2>2225105</h2>
+<div class="sym">ERROR: EM_HPC_SPU_GATE_MODE_INVALID</div>
+<div class="txt">Host to HPC Interface Error. HPC received a gate mode packet value out of range.
+Mode Value = %d</div>
+</section>
+<section id="BM2225106"><a name="BM2225106"></a>
+<h2>2225106</h2>
+<div class="sym">ERROR: EM_HPC_SPU_PAC_TYPE_INVALID</div>
+<div class="txt">PAC CONFIGURATION ERROR The MRconfig.cfg file indicates that the pacType field is set to %d, but this is not a valid configuration. Change the MRconfig.cfg file and reset TPS.</div>
+</section>
+<section id="BM2225110"><a name="BM2225110"></a>
+<h2>2225110</h2>
+<div class="sym">ERROR: EM_HPC_BORE_TEMP_FOPEN_ERROR</div>
+<div class="txt">IPG system error. HPC was unable to open or create the file /usr/g/service/log/pcft.log.</div>
+</section>
+<section id="BM2225111"><a name="BM2225111"></a>
+<h2>2225111</h2>
+<div class="sym">ERROR: EM_HPC_BORE_TEMP_FIO_ERROR</div>
+<div class="txt">IPG system error. HPC opened the file /usr/g/service/log/pcft.log but could not append data to the file.</div>
+</section>
+<section id="BM2225112"><a name="BM2225112"></a>
+<h2>2225112</h2>
+<div class="sym">ERROR: EM_HPC_BORE_TEMP_FCLOSE_ERROR</div>
+<div class="txt">IPG system error. IPG was not able to properly close the `pcft.log&#x27; file in /usr/g/service/log. Reset TPS and try again.</div>
+</section>
+<section id="BM2225113"><a name="BM2225113"></a>
+<h2>2225113</h2>
+<div class="sym">ERROR: EM_HPC_COLDHEAD_ON_IQ_DEGRADATION</div>
+<div class="txt">ColdHead switching not enabled during scan. HPC was told to initiate a scan with the ColdHeads on. Image degradation is likely while this condition remains.</div>
+</section>
+<section id="BM2225120"><a name="BM2225120"></a>
+<h2>2225120</h2>
+<div class="sym">ERROR: EM_HPC_ASM_SIG_UPDATE_ERROR</div>
+<div class="txt">GRADIENT SIGNAL LIMIT UPDATE ERROR. An error occurred while updating ASM/GIP signal limits. Only %d of %d new signal limits were updated. Real Time Monitoring will run, but false errors may be logged as a result.</div>
+</section>
+<section id="BM2225121"><a name="BM2225121"></a>
+<h2>2225121</h2>
+<div class="sym">ERROR: EM_HPC_GASM_SIG_UPDATE_ERROR</div>
+<div class="txt">GRADIENT SIGNAL LIMIT UPDATE ERROR. An error occurred while updating GASM signal limits. Only %d of %d new signal limits were updated. Real Time Monitoring will run, but false errors may be logged as a result.</div>
+</section>
+<section id="BM2225122"><a name="BM2225122"></a>
+<h2>2225122</h2>
+<div class="sym">ERROR: EM_HPC_SIG_LIMIT_FILE_ERROR</div>
+<div class="txt">GRADIENT SIGNAL LIMIT UPDATE ERROR. An error was detected while validating the contents of the gradient signal limit files. No signal limits have been updated. Real Time Monitoring will run, but false errors may be logged as a result.</div>
+</section>
+<section id="BM2225125"><a name="BM2225125"></a>
+<h2>2225125</h2>
+<div class="sym">ERROR: EM_HPC_INIT_FAILED_MSGPOST</div>
+<div class="txt">A VxWorks error occurred when HPC was making a msgpost call.
+VxWorks error code = %08lX</div>
+</section>
+<section id="BM2225126"><a name="BM2225126"></a>
+<h2>2225126</h2>
+<div class="sym">ERROR: EM_HPC_VME_BUS_TYME_FAN_FAILED</div>
+<div class="txt">VME Bus Failed - cannot write to TYME II card over VME. HPC was unable to write the bore fan state to the TYME II card using the VME Bus. A TPS reset may fix the problem.</div>
+</section>
+<section id="BM2225127"><a name="BM2225127"></a>
+<h2>2225127</h2>
+<div class="sym">ERROR: EM_HPC_VME_BUS_TYME_ALIGN_FAILED</div>
+<div class="txt">VME Bus Failed - cannot write to TYME II card over VME. HPC was unable to write the alignment light state to the TYME II card using the VME Bus. A TPS reset may fix the problem.</div>
+</section>
+<section id="BM2225128"><a name="BM2225128"></a>
+<h2>2225128</h2>
+<div class="sym">ERROR: EM_HPC_VME_BUS_TYME_LIGHT_FAILED</div>
+<div class="txt">VME Bus Failed - cannot write to TYME II card over VME. HPC was unable to write the bore light state to the TYME II card using the VME Bus. A TPS reset may fix the problem.</div>
+</section>
+<section id="BM2225129"><a name="BM2225129"></a>
+<h2>2225129</h2>
+<div class="sym">ERROR: EM_HPC_VME_BUS_TYME_HELIUM_FAILED</div>
+<div class="txt">VME Bus Failed - cannot read to TYME II card over VME. HPC was unable to read the helium alarm status from the TYME II card using the VME Bus. A TPS reset may fix the problem.</div>
+</section>
+<section id="BM2225130"><a name="BM2225130"></a>
+<h2>2225130</h2>
+<div class="sym">ERROR: EM_HPC_VME_BUS_TYME_DOOR_FAILED</div>
+<div class="txt">VME Bus Failed - cannot read to TYME II card over VME. HPC was unable to read the RF door status from the TYME II card using the VME Bus. A TPS reset may fix the problem.</div>
+</section>
+<section id="BM2225131"><a name="BM2225131"></a>
+<h2>2225131</h2>
+<div class="sym">ERROR: EM_HPC_VME_BUS_TYME_STOP_FAILED</div>
+<div class="txt">VME Bus Failed - cannot read to TYME II card over VME. HPC was unable to read the PDU stop mode status from the TYME II card using the VME Bus. A TPS reset may fix the problem.</div>
+</section>
+<section id="BM2225132"><a name="BM2225132"></a>
+<h2>2225132</h2>
+<div class="sym">ERROR: EM_HPC_VME_BUS_TYME_TEMP_FAILED</div>
+<div class="txt">VME Bus Failed - cannot read to TYME II card over VME. HPC was unable to read the PDU overtemperature status from the TYME II card using the VME Bus. A TPS reset may fix the problem.</div>
+</section>
+<section id="BM2225133"><a name="BM2225133"></a>
+<h2>2225133</h2>
+<div class="sym">ERROR: EM_HPC_VME_BUS_TYME_COIL_FAILED</div>
+<div class="txt">VME Bus Failed - cannot read to TYME II card over VME. HPC was unable to read the coil overtemperature status from the TYME II card using the VME Bus. A TPS reset may fix the problem.</div>
+</section>
+<section id="BM2225134"><a name="BM2225134"></a>
+<h2>2225134</h2>
+<div class="sym">ERROR: EM_HPC_VME_BUS_TYME_ESTOP_FAILED</div>
+<div class="txt">VME Bus Failed - cannot read to TYME II card over VME. HPC was unable to read the emergency stop status from the TYME II card using the VME Bus. A TPS reset may fix the problem.</div>
+</section>
+<section id="BM2225135"><a name="BM2225135"></a>
+<h2>2225135</h2>
+<div class="sym">ERROR: EM_HPC_VME_BUS_TYME_40C_FAILED</div>
+<div class="txt">VME Bus Error - cannot read to TYME II card over VME. HPC was unable to read the 40C temperature status from the TYME II card. A TPS reset may fix the problem.</div>
+</section>
+<section id="BM2225136"><a name="BM2225136"></a>
+<h2>2225136</h2>
+<div class="sym">ERROR: EM_HPC_VME_BUS_TYME_COLDHEAD_FAILED</div>
+<div class="txt">VME Bus Failed - cannot write to TYME II card over VME. HPC was unable to write the cold head pump state to the TYME II card using the VME Bus. A TPS reset may fix the problem.</div>
+</section>
+<section id="BM2225140"><a name="BM2225140"></a>
+<h2>2225140</h2>
+<div class="sym">ERROR: EM_HPC_SR17_LINEAR_ERROR</div>
+<div class="txt">IPG Advisory Message - Linear compensation found enabled in the ecccoeff.dat file, which is not expected in a SR17 gradient configuration. Please consider running grafidy to correct this.</div>
+</section>
+<section id="BM2225141"><a name="BM2225141"></a>
+<h2>2225141</h2>
+<div class="sym">ERROR: EM_HPC_SR17_B0COMP_ERROR</div>
+<div class="txt">IPG Advisory Message - B0 compensation found enabled in the ecccoeff.dat file, which is not expected in a SR17 gradient configuration. Please consider running grafidy to correct this.</div>
+</section>
+<section id="BM2225142"><a name="BM2225142"></a>
+<h2>2225142</h2>
+<div class="sym">ERROR: EM_HPC_SR17_B0DELAY_ERROR</div>
+<div class="txt">IPG Advisory Message - B0 delay found to be non-zero in the ecccoeff.dat file, which is not expected in a SR17 gradient configuration. Please consider running grafidy to correct this.</div>
+</section>
+<section id="BM2225143"><a name="BM2225143"></a>
+<h2>2225143</h2>
+<div class="sym">ERROR: EM_HPC_SR20_LINEAR_ERROR</div>
+<div class="txt">IPG Advisory Message - Linear compensation found disabled in the ecccoeff.dat file, which is not expected in a SR20 gradient configuration. Please consider running grafidy to correct this.</div>
+</section>
+<section id="BM2225144"><a name="BM2225144"></a>
+<h2>2225144</h2>
+<div class="sym">ERROR: EM_HPC_SR20_B0COMP_ERROR</div>
+<div class="txt">IPG Advisory Message - B0 compensation found disabled in the ecccoeff.dat file, which is not expected in a SR20 gradient configuration. Please consider running grafidy to correct this.</div>
+</section>
+<section id="BM2225145"><a name="BM2225145"></a>
+<h2>2225145</h2>
+<div class="sym">ERROR: EM_HPC_SR20_B0DELAY_ERROR</div>
+<div class="txt">IPG Advisory Message - B0 delay found to be zero in the ecccoeff.dat file, which is not expected in a SR20 gradient configuration. Please consider running grafidy to correct this.</div>
+</section>
+<section id="BM2225146"><a name="BM2225146"></a>
+<h2>2225146</h2>
+<div class="sym">ERROR: EM_HPC_SR77_LINEAR_ERROR</div>
+<div class="txt">IPG Advisory Message - Linear compensation found disabled in the ecccoeff.dat file, which is not expected in a SR50/77/120 gradient configuration. Please consider running grafidy to correct this.</div>
+</section>
+<section id="BM2225147"><a name="BM2225147"></a>
+<h2>2225147</h2>
+<div class="sym">ERROR: EM_HPC_SR77_B0COMP_ERROR</div>
+<div class="txt">IPG Advisory Message - B0 compensation found disabled in the ecccoeff.dat file, which is not expected in a SR50/77/120 gradient configuration. Please consider running grafidy to correct this.</div>
+</section>
+<section id="BM2225148"><a name="BM2225148"></a>
+<h2>2225148</h2>
+<div class="sym">ERROR: EM_HPC_SR77_B0DELAY_ERROR</div>
+<div class="txt">IPG Advisory Message - B0 delay found to be zero in the ecccoeff.dat file, which is not expected in a SR50/77/120 gradient configuration. Please consider running grafidy to correct this.</div>
+</section>
+<section id="BM2225178"><a name="BM2225178"></a>
+<h2>2225178</h2>
+<div class="sym">ERROR: EM_SPI_ADVANCE_TO_SCAN</div>
+<div class="txt">Press advance to scan.</div>
+</section>
+<section id="BM2225179"><a name="BM2225179"></a>
+<h2>2225179</h2>
+<div class="sym">ERROR: EM_SPI_RF_MON_RECOV_IN_PROG</div>
+<div class="txt">Recovery in progress, see log.</div>
+</section>
+<section id="BM2225180"><a name="BM2225180"></a>
+<h2>2225180</h2>
+<div class="sym">ERROR: EM_SPI_GRAD_MON_RECOV_IN_PROGRESS</div>
+<div class="txt">Gradient amplifier recovery in progress.</div>
+</section>
+<section id="BM2225181"><a name="BM2225181"></a>
+<h2>2225181</h2>
+<div class="sym">ERROR: EM_SPI_TURN_ON_ALIGN_LIGHTS</div>
+<div class="txt">Landmark disabled; Turn alignment lights on to landmark.</div>
+</section>
+<section id="BM2225182"><a name="BM2225182"></a>
+<h2>2225182</h2>
+<div class="sym">ERROR: EM_SPI_EMERG_STOP_BUTTON_PRESS</div>
+<div class="txt">PDU is in Stop mode. Emergency Stop button was pressed \ or PDU 24 Volt supply has failed.</div>
+</section>
+<section id="BM2225183"><a name="BM2225183"></a>
+<h2>2225183</h2>
+<div class="sym">ERROR: EM_SPI_SPARE</div>
+<div class="txt">Spare message placeholder.</div>
+</section>
+<section id="BM2225184"><a name="BM2225184"></a>
+<h2>2225184</h2>
+<div class="sym">ERROR: EM_SPI_RF_DOOR_IS_OPEN</div>
+<div class="txt">Scan room door is open: please close.</div>
+</section>
+<section id="BM2225185"><a name="BM2225185"></a>
+<h2>2225185</h2>
+<div class="sym">ERROR: EM_SPI_NO_LANDMARK</div>
+<div class="txt">No landmark is established.</div>
+</section>
+<section id="BM2225186"><a name="BM2225186"></a>
+<h2>2225186</h2>
+<div class="sym">ERROR: EM_SPI_RF_AMP_POWERING_ON</div>
+<div class="txt">Recovery in progress, details in log. Please wait.</div>
+</section>
+<section id="BM2225187"><a name="BM2225187"></a>
+<h2>2225187</h2>
+<div class="sym">ERROR: EM_SPI_SRI_LINK_FAIL</div>
+<div class="txt">The SPI-SRI link has failed. Attempting recovery.</div>
+</section>
+<section id="BM2225188"><a name="BM2225188"></a>
+<h2>2225188</h2>
+<div class="sym">ERROR: EM_SPI_SRI_LOST_HOME</div>
+<div class="txt">Landmark is lost due to SRI reset. \ Move table all the way out, then establish landmark.</div>
+</section>
+<section id="BM2225189"><a name="BM2225189"></a>
+<h2>2225189</h2>
+<div class="sym">ERROR: EM_SPI_PDU_LOST_24V</div>
+<div class="txt">PDU is not on. Possible loss of power (24V) at PDU control board.</div>
+</section>
+<section id="BM2225190"><a name="BM2225190"></a>
+<h2>2225190</h2>
+<div class="sym">ERROR: EM_SPI_EMUL_BORE_TEMP</div>
+<div class="txt">The bore temperature sensor is disabled. Do not scan patients.</div>
+</section>
+<section id="BM2225200"><a name="BM2225200"></a>
+<h2>2225200</h2>
+<div class="sym">ERROR: EM_SPI_PAUSE_BUTTON_PRESS</div>
+<div class="txt">Pause button was pressed.</div>
+</section>
+<section id="BM2225201"><a name="BM2225201"></a>
+<h2>2225201</h2>
+<div class="sym">ERROR: EM_SPI_PAUSE_RF_AMP</div>
+<div class="txt">RF amplifier error occurred.</div>
+</section>
+<section id="BM2225202"><a name="BM2225202"></a>
+<h2>2225202</h2>
+<div class="sym">ERROR: EM_SPI_PAUSE_SPEC_FILT</div>
+<div class="txt">Spectroscopy filter error occurred.</div>
+</section>
+<section id="BM2225203"><a name="BM2225203"></a>
+<h2>2225203</h2>
+<div class="sym">ERROR: EM_SPI_PAUSE_SPECTRO_AMP</div>
+<div class="txt">Spectro RF amplifier error occurred.</div>
+</section>
+<section id="BM2225204"><a name="BM2225204"></a>
+<h2>2225204</h2>
+<div class="sym">ERROR: EM_SPI_PAUSE_GRAD</div>
+<div class="txt">Gradient amplifier error occurred.</div>
+</section>
+<section id="BM2225205"><a name="BM2225205"></a>
+<h2>2225205</h2>
+<div class="sym">ERROR: EM_SPI_PAUSE_TR_DYNA</div>
+<div class="txt">T/R driver, dynamic disable error occurred.</div>
+</section>
+<section id="BM2225206"><a name="BM2225206"></a>
+<h2>2225206</h2>
+<div class="sym">ERROR: EM_SPI_PAUSE_MULTI_COIL</div>
+<div class="txt">Multi-coil driver error occurred.</div>
+</section>
+<section id="BM2225207"><a name="BM2225207"></a>
+<h2>2225207</h2>
+<div class="sym">ERROR: EM_SPI_PAUSE_LDMK_SET</div>
+<div class="txt">Landmark was cleared.</div>
+</section>
+<section id="BM2225208"><a name="BM2225208"></a>
+<h2>2225208</h2>
+<div class="sym">ERROR: EM_SPI_PAUSE_AT_SCAN_PLANE</div>
+<div class="txt">Table moved off scan plane.</div>
+</section>
+<section id="BM2225209"><a name="BM2225209"></a>
+<h2>2225209</h2>
+<div class="sym">ERROR: EM_SPI_PAUSE_SCAN_LOC</div>
+<div class="txt">Scan location was lost.</div>
+</section>
+<section id="BM2225210"><a name="BM2225210"></a>
+<h2>2225210</h2>
+<div class="sym">ERROR: EM_SPI_PAUSE_SCAN_TIME</div>
+<div class="txt">Scan time was lost.</div>
+</section>
+<section id="BM2225211"><a name="BM2225211"></a>
+<h2>2225211</h2>
+<div class="sym">ERROR: EM_SPI_PAUSE_TR_XMT</div>
+<div class="txt">T/R Driver transmit mode setting was lost.</div>
+</section>
+<section id="BM2225212"><a name="BM2225212"></a>
+<h2>2225212</h2>
+<div class="sym">ERROR: EM_SPI_PAUSE_TR_RCV</div>
+<div class="txt">T/R Driver receive mode setting was lost.</div>
+</section>
+<section id="BM2225213"><a name="BM2225213"></a>
+<h2>2225213</h2>
+<div class="sym">ERROR: EM_SPI_PAUSE_MDS</div>
+<div class="txt">MDS error occurred.</div>
+</section>
+<section id="BM2225214"><a name="BM2225214"></a>
+<h2>2225214</h2>
+<div class="sym">ERROR: EM_SPI_PAUSE_CPB_LINK</div>
+<div class="txt">SPI-Workspace Interface Module link failed.</div>
+</section>
+<section id="BM2225215"><a name="BM2225215"></a>
+<h2>2225215</h2>
+<div class="sym">ERROR: EM_SPI_PAUSE_UNKNOWN</div>
+<div class="txt">Unknown reason.</div>
+</section>
+<section id="BM2225216"><a name="BM2225216"></a>
+<h2>2225216</h2>
+<div class="sym">ERROR: EM_SPI_STOP_BUTTON_PRESS</div>
+<div class="txt">Stop button was pressed.</div>
+</section>
+<section id="BM2225217"><a name="BM2225217"></a>
+<h2>2225217</h2>
+<div class="sym">ERROR: EM_STOP_ACTION_GRAD_ERROR</div>
+<div class="txt">Gradient data stopped.</div>
+</section>
+<section id="BM2225218"><a name="BM2225218"></a>
+<h2>2225218</h2>
+<div class="sym">ERROR: EM_SPI_STOP_ACTION_TR_ERROR</div>
+<div class="txt">A T/R or dynamic disable fault occurred.</div>
+</section>
+<section id="BM2225219"><a name="BM2225219"></a>
+<h2>2225219</h2>
+<div class="sym">ERROR: EM_SPI_PAUSE_RF_DOOR_OPEN</div>
+<div class="txt">Scan room door open.</div>
+</section>
+<section id="BM2225220"><a name="BM2225220"></a>
+<h2>2225220</h2>
+<div class="sym">ERROR: EM_SPI_NEW_LANDMARK_SET</div>
+<div class="txt">A new landmark was set.</div>
+</section>
+<section id="BM2225221"><a name="BM2225221"></a>
+<h2>2225221</h2>
+<div class="sym">ERROR: EM_SPI_ESTOP_PRESSED</div>
+<div class="txt">The Emergency Stop was pressed or PDU 24V power supply has failed.</div>
+</section>
+<section id="BM2225222"><a name="BM2225222"></a>
+<h2>2225222</h2>
+<div class="sym">ERROR: EM_SPI_PAUSE_RTIA_CMD</div>
+<div class="txt">RTIA commanded pause.</div>
+</section>
+<section id="BM2225223"><a name="BM2225223"></a>
+<h2>2225223</h2>
+<div class="sym">ERROR: EM_SCP_STOP_ACTION_DCB_ERROR</div>
+<div class="txt">Driver Control Board error occurred.</div>
+</section>
+<section id="BM2225240"><a name="BM2225240"></a>
+<h2>2225240</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_RF_AMP</div>
+<div class="txt">RF amplifier is not ready.</div>
+</section>
+<section id="BM2225241"><a name="BM2225241"></a>
+<h2>2225241</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_SPEC_FILT</div>
+<div class="txt">Spectroscopy filter has not been set.</div>
+</section>
+<section id="BM2225242"><a name="BM2225242"></a>
+<h2>2225242</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_SPECTRO_AMP</div>
+<div class="txt">Spectro RF amplifier is not ready.</div>
+</section>
+<section id="BM2225243"><a name="BM2225243"></a>
+<h2>2225243</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_GRAD</div>
+<div class="txt">Gradient amplifiers are not ready.</div>
+</section>
+<section id="BM2225244"><a name="BM2225244"></a>
+<h2>2225244</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_TR_DYNA</div>
+<div class="txt">T/R driver, dynamic disable is not ready.</div>
+</section>
+<section id="BM2225245"><a name="BM2225245"></a>
+<h2>2225245</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_MULTI_COIL</div>
+<div class="txt">Multi-coil driver is not ready.</div>
+</section>
+<section id="BM2225246"><a name="BM2225246"></a>
+<h2>2225246</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_LDMK_SET</div>
+<div class="txt">Landmark has not been set.</div>
+</section>
+<section id="BM2225247"><a name="BM2225247"></a>
+<h2>2225247</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_AT_SCAN_PLANE</div>
+<div class="txt">The table is not at scan plane.</div>
+</section>
+<section id="BM2225248"><a name="BM2225248"></a>
+<h2>2225248</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_SCAN_LOC</div>
+<div class="txt">Scan location is not set.</div>
+</section>
+<section id="BM2225249"><a name="BM2225249"></a>
+<h2>2225249</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_SCAN_TIME</div>
+<div class="txt">Scan time is not set.</div>
+</section>
+<section id="BM2225250"><a name="BM2225250"></a>
+<h2>2225250</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_TR_XMT</div>
+<div class="txt">T/R transmit mode is not set.</div>
+</section>
+<section id="BM2225251"><a name="BM2225251"></a>
+<h2>2225251</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_TR_RCV</div>
+<div class="txt">NOT USED</div>
+</section>
+<section id="BM2225252"><a name="BM2225252"></a>
+<h2>2225252</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_MDS</div>
+<div class="txt">SPI-MDS link is not working.</div>
+</section>
+<section id="BM2225253"><a name="BM2225253"></a>
+<h2>2225253</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_CPB_LINK</div>
+<div class="txt">SPI-Workspace Interface Module link is not working.</div>
+</section>
+<section id="BM2225254"><a name="BM2225254"></a>
+<h2>2225254</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_MDS_LINK</div>
+<div class="txt">NOT USED</div>
+</section>
+<section id="BM2225255"><a name="BM2225255"></a>
+<h2>2225255</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_SRI_LINK</div>
+<div class="txt">SRI link is not working.</div>
+</section>
+<section id="BM2225256"><a name="BM2225256"></a>
+<h2>2225256</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_RF_DOOR</div>
+<div class="txt">Scan room door is open.</div>
+</section>
+<section id="BM2225257"><a name="BM2225257"></a>
+<h2>2225257</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_PDU_STAT</div>
+<div class="txt">The PDU is in Stop mode.</div>
+</section>
+<section id="BM2225258"><a name="BM2225258"></a>
+<h2>2225258</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_COIL_HOT</div>
+<div class="txt">The gradient coils are over temperature.</div>
+</section>
+<section id="BM2225259"><a name="BM2225259"></a>
+<h2>2225259</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_UNKNOWN</div>
+<div class="txt">Unknown reason.</div>
+</section>
+<section id="BM2225260"><a name="BM2225260"></a>
+<h2>2225260</h2>
+<div class="sym">ERROR: EM_SPI_NOT_READY_BORE_HOT</div>
+<div class="txt">Patient comfort temperature sensor trip.</div>
+</section>
+<section id="BM2225270"><a name="BM2225270"></a>
+<h2>2225270</h2>
+<div class="sym">ERROR: EM_SPI_UNK_PKT_NOTSENT</div>
+<div class="txt">SPI programming error. It may be necessary to reset TPS. The SPI attempted to send an unrecognized packet to the SRI. Unknown Opcode: 0x%02X</div>
+</section>
+<section id="BM2225271"><a name="BM2225271"></a>
+<h2>2225271</h2>
+<div class="sym">ERROR: EM_SPI_UNK_HPC_REQUEST</div>
+<div class="txt">SPI programming error. It may be necessary to reset TPS. The SPI attempted to send an unrecognized opcode to the HPC. Opcode: 0x%02X</div>
+</section>
+<section id="BM2225272"><a name="BM2225272"></a>
+<h2>2225272</h2>
+<div class="sym">ERROR: EM_SPI_HPC_BUF_OVERFLOW</div>
+<div class="txt">SPI to HPC communications error. Overflow occurred in the SPI-HPC DPR. It may be necessary to reset TPS.</div>
+</section>
+<section id="BM2225273"><a name="BM2225273"></a>
+<h2>2225273</h2>
+<div class="sym">ERROR: EM_SPI_CPB_BUF_DATA</div>
+<div class="txt">Internal SPI software error. It may be necessary to reset TPS. Unexpected data in Workspace Interface Module xmit buffer.</div>
+</section>
+<section id="BM2225274"><a name="BM2225274"></a>
+<h2>2225274</h2>
+<div class="sym">ERROR: EM_SPI_CPB_XMITQ_FULL</div>
+<div class="txt">SPI-Workspace Interface Module Communication Error. It may be necessary to reset TPS. SPI-Workspace Interface Module xmit queue full. DUART status: 0x%02X Last value read from vector/level register: 0x%02X Interrupt mask register: 0x%02X</div>
+</section>
+<section id="BM2225275"><a name="BM2225275"></a>
+<h2>2225275</h2>
+<div class="sym">ERROR: EM_SPI_CPB_PKT_LEN</div>
+<div class="txt">Internal SPI programming error. It may be necessary to reset TPS. Invalid length of packet queued to Workspace Interface Module xmit buffer.</div>
+</section>
+<section id="BM2225276"><a name="BM2225276"></a>
+<h2>2225276</h2>
+<div class="sym">ERROR: EM_SPI_MDS_QUEUE_INVAL_PACKET</div>
+<div class="txt">Invalid SHMOD request. SPI received a request to read an undefined. hardware register %d. The valid range is %d to %d.</div>
+</section>
+<section id="BM2225277"><a name="BM2225277"></a>
+<h2>2225277</h2>
+<div class="sym">ERROR: EM_SPI_MDS_XMIT_QUEUE_OVFLW</div>
+<div class="txt">Internal SPI software error. It may be necessary to reset TPS. MDS transmit queue overflow.</div>
+</section>
+<section id="BM2225278"><a name="BM2225278"></a>
+<h2>2225278</h2>
+<div class="sym">ERROR: EM_SPI_RF_MON_RUNTIME_SOFTARE_ERROR</div>
+<div class="txt">SPI RF software is in an invalid state. Possible IPG/SPI hardware failure. Run Board Level Diagnostics.</div>
+</section>
+<section id="BM2225279"><a name="BM2225279"></a>
+<h2>2225279</h2>
+<div class="sym">ERROR: EM_SPI_GRAD_MON_SOFTWARE_ERROR</div>
+<div class="txt">Internal SPI software error. It may be necessary to reset TPS. A runtime software error in gradient amplifier monitor routines.</div>
+</section>
+<section id="BM2225280"><a name="BM2225280"></a>
+<h2>2225280</h2>
+<div class="sym">ERROR: EM_SPI_CPB_RCVR_Q_FULL</div>
+<div class="txt">Internal SPI software error. It may be necessary to reset TPS. SPI-Workspace Interface Module receive queue full. SPI processing has not kept up with incoming Workspace Interface Module data stream.</div>
+</section>
+<section id="BM2225281"><a name="BM2225281"></a>
+<h2>2225281</h2>
+<div class="sym">ERROR: EM_SPI_SRI_XMIT_Q_FULL</div>
+<div class="txt">Internal SPI software error. It may be necessary to reset TPS. SPI-SRI xmit queue full. DUART status: 0x%02X Last value read from vector/level register: 0x%02X Interrupt mask register: 0x%02X</div>
+</section>
+<section id="BM2225282"><a name="BM2225282"></a>
+<h2>2225282</h2>
+<div class="sym">ERROR: EM_SPI_SRI_RCVR_Q_FULL</div>
+<div class="txt">Internal SPI software error. It may be necessary to reset TPS. SPI-SRI receive queue full. SPI processing has not kept up with incoming SRI data stream.</div>
+</section>
+<section id="BM2225283"><a name="BM2225283"></a>
+<h2>2225283</h2>
+<div class="sym">ERROR: EM_SPI_INTERRUPT_ERROR</div>
+<div class="txt">Internal SPI error. It may be necessary to reset TPS. Interrupt controller hardware returned invalid vector or interrupt received from a disabled 80c196 internal interrupt sources. Resetting power on the TPS chassis or systems cabinet may also help.</div>
+</section>
+<section id="BM2225300"><a name="BM2225300"></a>
+<h2>2225300</h2>
+<div class="sym">ERROR: EM_SPI_UNK_HPC_OPCODE</div>
+<div class="txt">SPI-HPC Communication Error:
+The SPI read an unrecognized opcode from shared memory. Opcode: 0x%02X</div>
+</section>
+<section id="BM2225301"><a name="BM2225301"></a>
+<h2>2225301</h2>
+<div class="sym">ERROR: EM_SPI_INVALID_HPC_STATE</div>
+<div class="txt">SPI-HPC Communication Error:
+The HPC sent an invalid scan state to the SPI via shared memory. Scan State: 0x%02X</div>
+</section>
+<section id="BM2225302"><a name="BM2225302"></a>
+<h2>2225302</h2>
+<div class="sym">ERROR: EM_SPI_UNK_SCAN_TIME_MODE</div>
+<div class="txt">SPI-HPC Communication Error:
+The HPC sent an invalid scan time mode to the SPI via shared memory. This could be caused by a PSD error or an HPC software error. Scan Time Mode: 0x%02X</div>
+</section>
+<section id="BM2225303"><a name="BM2225303"></a>
+<h2>2225303</h2>
+<div class="sym">ERROR: EM_SPI_UNK_RF_AMP</div>
+<div class="txt">IPG received a request for an unknown RF amplifier, or no RF amplifier was selected. This could be caused by a PSD error. The amp selected was %d</div>
+</section>
+<section id="BM2225304"><a name="BM2225304"></a>
+<h2>2225304</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_ILLEG_COIL_SELECT</div>
+<div class="txt">The IPG received a request for an invalid coil (transmit or receive). This could be caused by a PSD error. Abcode is %d, coil selected is %d.</div>
+</section>
+<section id="BM2225305"><a name="BM2225305"></a>
+<h2>2225305</h2>
+<div class="sym">ERROR: EM_SPI_ENI_SEL_NO_ENABLE</div>
+<div class="txt">SPI-HPC Communication Error. An invalid amplifier was requested. The SPI received a request to use the spectroscopy broadband RF amplifier, but it is not enabled in the system configuration file.</div>
+</section>
+<section id="BM2225306"><a name="BM2225306"></a>
+<h2>2225306</h2>
+<div class="sym">ERROR: EM_SPI_HPC_NOT_RESPONDING</div>
+<div class="txt">SPI-HPC Communication Error. HPC has not responded to an opcode from the SPI. SPI has sent a signal to HPC to attempt recovery.</div>
+</section>
+<section id="BM2225330"><a name="BM2225330"></a>
+<h2>2225330</h2>
+<div class="sym">ERROR: EM_SPI_UNK_SRI_OPCODE</div>
+<div class="txt">SRI-SPI Communication Error. The SPI received a packet from the SRI containing an unknown opcode. Opcode: 0x%02X</div>
+</section>
+<section id="BM2225331"><a name="BM2225331"></a>
+<h2>2225331</h2>
+<div class="sym">ERROR: EM_SPI_UNK_SRI_RESPPACK</div>
+<div class="txt">SRI-SPI Communication Error. The SPI received a response from the SRI containing an unknown opcode byte. Response Opcode: 0x%02X</div>
+</section>
+<section id="BM2225332"><a name="BM2225332"></a>
+<h2>2225332</h2>
+<div class="sym">ERROR: EM_SPI_UNK_SRI_CLOSURE</div>
+<div class="txt">SRI-SPI Communication Error. The SPI received a bad switch closure data packet from the SRI. Closure Data: 0x%02X</div>
+</section>
+<section id="BM2225333"><a name="BM2225333"></a>
+<h2>2225333</h2>
+<div class="sym">ERROR: EM_SPI_UNK_SRI_MESSAGE</div>
+<div class="txt">SRI-SPI Communication Error. The SPI received a unknown message request from the SRI. Request: 0x%02X</div>
+</section>
+<section id="BM2225334"><a name="BM2225334"></a>
+<h2>2225334</h2>
+<div class="sym">ERROR: EM_SPI_SRI_PKT_RESP_TIMEOUT</div>
+<div class="txt">SPI-SRI Communication Error. SRI failed to respond to a data packet from SPI. Data packets waiting for a response: 0x%04X</div>
+</section>
+<section id="BM2225335"><a name="BM2225335"></a>
+<h2>2225335</h2>
+<div class="sym">ERROR: EM_SPI_UNXPCTD_SRI_DATA</div>
+<div class="txt">SRI-SPI Communication Error. The SPI received a data byte from the SRI when an opcode byte was expected. Data: 0x%02X</div>
+</section>
+<section id="BM2225336"><a name="BM2225336"></a>
+<h2>2225336</h2>
+<div class="sym">ERROR: EM_SPI_SRI_HAS_RESET</div>
+<div class="txt">SRI-SPI Communication Error. The SPI received a packet indicating that SRI has reset.</div>
+</section>
+<section id="BM2225337"><a name="BM2225337"></a>
+<h2>2225337</h2>
+<div class="sym">ERROR: EM_SPI_SRI_WDOG_PKT_TIMEOUT</div>
+<div class="txt">SPI-SRI Communication Error. SRI failed to respond to a watchdog packet from SPI. Watchdog packets waiting for a response: 0x%04X</div>
+</section>
+<section id="BM2225338"><a name="BM2225338"></a>
+<h2>2225338</h2>
+<div class="sym">ERROR: EM_SPI_SRI_DUART_ERR</div>
+<div class="txt">SPI-SRI Communication Error. The SRI channel of the DUART reported an error upon reception of a character. DUART status: 0x%02X Character: 0x%02X</div>
+</section>
+<section id="BM2225339"><a name="BM2225339"></a>
+<h2>2225339</h2>
+<div class="sym">ERROR: EM_SPI_SRI_LINK_INTERMITTENT</div>
+<div class="txt">Repeated SPI-SRI communication errors recorded. The fiberoptic link may be intermittently bad, or a fiberoptic repeater box may need to be installed. Please run SPI-SRI datapath diags!</div>
+</section>
+<section id="BM2225360"><a name="BM2225360"></a>
+<h2>2225360</h2>
+<div class="sym">ERROR: EM_SPI_SPU_INT_TIMING</div>
+<div class="txt">SPI-SPU Communication Error. SPI - SPU interrupt timing mismatch error occurred. Ticks between SPU interrupts: 0x%02X</div>
+</section>
+<section id="BM2225380"><a name="BM2225380"></a>
+<h2>2225380</h2>
+<div class="sym">ERROR: EM_SPI_CPB_INV_OPCODE</div>
+<div class="txt">SPI-Workspace Interface Module Communication Error. The SPI received a packet from the Workspace Interface Module containing an invalid opcode. Opcode: 0x%02X</div>
+</section>
+<section id="BM2225381"><a name="BM2225381"></a>
+<h2>2225381</h2>
+<div class="sym">ERROR: EM_SPI_UNK_CPB_OPCODE</div>
+<div class="txt">SPI-Workspace Interface Module Communication Error. The SPI processed a packet from the Workspace Interface Module containing an unknown opcode. Opcode: 0x%02X</div>
+</section>
+<section id="BM2225382"><a name="BM2225382"></a>
+<h2>2225382</h2>
+<div class="sym">ERROR: EM_SPI_CPB_LINK_FAILED</div>
+<div class="txt">SPI-Workspace Interface Module Communication Error. The SPI link to the Workspace Interface Module failed - failure detected via timeout. DUART status: 0x%02X Last value read from vector/level register: 0x%02X Interrupt mask register: 0x%02X</div>
+</section>
+<section id="BM2225383"><a name="BM2225383"></a>
+<h2>2225383</h2>
+<div class="sym">ERROR: EM_SPI_CPB_DUART_ERR</div>
+<div class="txt">SPI-Workspace Interface Module Communication Error. The Workspace Interface Module channel of the DUART reported an error upon reception of a character. DUART status: 0x%02X Character: 0x%02X</div>
+</section>
+<section id="BM2225384"><a name="BM2225384"></a>
+<h2>2225384</h2>
+<div class="sym">ERROR: EM_SPI_CPB_INITIALIZING</div>
+<div class="txt">Workspace Interface Module Initializing.</div>
+</section>
+<section id="BM2225385"><a name="BM2225385"></a>
+<h2>2225385</h2>
+<div class="sym">ERROR: EM_SPI_CPB_INIT_TIMEOUT</div>
+<div class="txt">Workspace Interface Module Initialize failed. If recovery fails, check Workspace Interface Module connections and run Workspace Interface Module diagnostics.</div>
+</section>
+<section id="BM2225400"><a name="BM2225400"></a>
+<h2>2225400</h2>
+<div class="sym">ERROR: EM_SPI_LCA_TIMEOUT</div>
+<div class="txt">Scan stopped due to loss of externally generated triggers, either ECG, Respiratory, Peripheral Pulse, or 60 Hz.</div>
+</section>
+<section id="BM2225401"><a name="BM2225401"></a>
+<h2>2225401</h2>
+<div class="sym">ERROR: EM_SPI_EMUL_ERROR</div>
+<div class="txt">An attempt was made to write to an MDS hardware register that was not first emulated. MDS address: 0x%02X Register address: 0x%02X</div>
+</section>
+<section id="BM2225460"><a name="BM2225460"></a>
+<h2>2225460</h2>
+<div class="sym">ERROR: EM_SPI_GCOIL_OVERTEMP</div>
+<div class="txt">Gradient coil temperature high.\b\ Protective automatic shutdown likely if temperature continues to rise.</div>
+</section>
+<section id="BM2225467"><a name="BM2225467"></a>
+<h2>2225467</h2>
+<div class="sym">ERROR: EM_SPI_MDS_GRAD_ERROR</div>
+<div class="txt">Gradient Cabinet MDS peripheral response error. Unknown error code returned from Gradient Cabinet. Unknown error: 0x%02X</div>
+</section>
+<section id="BM2225468"><a name="BM2225468"></a>
+<h2>2225468</h2>
+<div class="sym">ERROR: EM_SPI_GRAD_HW_UNKNOWN</div>
+<div class="txt">IPG could not determine the type of Gradient Subsystem present. If a valid Gradient Subsystem is present, the MDS link communication may be bad. Gradient system type detected: 0x%02X</div>
+</section>
+<section id="BM2225470"><a name="BM2225470"></a>
+<h2>2225470</h2>
+<div class="sym">ERROR: EM_SPI_MDS_RF_AMP_BICYCL_ERROR</div>
+<div class="txt">RF amplifier response timeout.\b\ RF MDS peripheral - RF Amp/RF Interface link failure. Verify that the RF Amplifier or SSM is powered on and that the SSM is connected to the RF Amplifier or RF Interface.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check to make sure that the SSM to RF Amp communication cable is attached and that the SSM and RF Amp have power. This could also be caused by a bad communication cable or an intermittant power connection.</div>
+</section>
+<section id="BM2225471"><a name="BM2225471"></a>
+<h2>2225471</h2>
+<div class="sym">ERROR: EM_SPI_RF_MON_AMP_STATE</div>
+<div class="txt">RF Amplifier Error. The RF amplifier is in an invalid, undefined state. RF amplifier status register read: 0x%02X Please power cycle the RF Subsystem and Reset TPS.</div>
+</section>
+<section id="BM2225472"><a name="BM2225472"></a>
+<h2>2225472</h2>
+<div class="sym">ERROR: EM_SPI_RF_MON_INVAL_MODE</div>
+<div class="txt">RF Amplifier Error. The RF amplifier failed to go into the commanded mode (head or body), or the RF amplifier changed mode when not commanded to change. Present Mode: 0x%02X Requested Mode: 0x%02X Please power cycle the RF Subsystem and Reset TPS.</div>
+</section>
+<section id="BM2225473"><a name="BM2225473"></a>
+<h2>2225473</h2>
+<div class="sym">ERROR: EM_SPI_RF_MON_WATCHDOG</div>
+<div class="txt">RF Amplifier Error. The RF amplifier reset watchdog engaged. This indicates either a microprocessor fault condition exists or a cold start is in progress.</div>
+</section>
+<section id="BM2225474"><a name="BM2225474"></a>
+<h2>2225474</h2>
+<div class="sym">ERROR: EM_SPI_RF_MON_INVALID_STATE_TRANS</div>
+<div class="txt">RF Amplifier Error. The RF amplifier changed state (powered off, went to standby or operate) without being commanded. Previous state: 0x%02X New state: 0x%02X Please power cycle the RF Subsystem and Reset TPS.</div>
+</section>
+<section id="BM2225475"><a name="BM2225475"></a>
+<h2>2225475</h2>
+<div class="sym">ERROR: EM_SPI_RF_MON_FAIL_TO_ACC_POW_OFF</div>
+<div class="txt">RF Amplifier Write Verify Error. The RF amplifier failed to accept the power off command from the MDS peripheral. New State: 0x%02X Present Status: 0x%02X Please power cycle the RF Subsystem and Reset TPS.</div>
+</section>
+<section id="BM2225476"><a name="BM2225476"></a>
+<h2>2225476</h2>
+<div class="sym">ERROR: EM_SPI_RF_MON_FAIL_TO_POW_OFF</div>
+<div class="txt">RF Amplifier Error. RF amplifier failed to power off, in the allotted amount of time, when commanded to do so. Please power cycle the RF Subsystem and Reset TPS.</div>
+</section>
+<section id="BM2225477"><a name="BM2225477"></a>
+<h2>2225477</h2>
+<div class="sym">ERROR: EM_SPI_RF_MON_FAIL_TO_ACC_READY</div>
+<div class="txt">RF Amplifier Write Verify Error. RF amplifier failed to accept the ready command from the MDS peripheral. New State: 0x%02X Present Status: 0x%02X Please power cycle the RF Subsystem and Reset TPS.</div>
+</section>
+<section id="BM2225478"><a name="BM2225478"></a>
+<h2>2225478</h2>
+<div class="sym">ERROR: EM_SPI_RF_MON_FAIL_TO_READY</div>
+<div class="txt">RF Amplifier Error. RF amplifier failed to power on or go to ready when commanded, or took too long to power on. Please power cycle the RF Subsystem and Reset TPS.</div>
+</section>
+<section id="BM2225479"><a name="BM2225479"></a>
+<h2>2225479</h2>
+<div class="sym">ERROR: EM_SPI_RF_MON_FAIL_TO_ACC_OPERATE</div>
+<div class="txt">RF Amplifier Write Verify Error. RF amplifier failed to accept the operate command, in the allotted amount of time, from the MDS peripheral. New State: 0x%02X Present Status: 0x%02X Please power cycle the RF Subsystem and Reset TPS.</div>
+</section>
+<section id="BM2225480"><a name="BM2225480"></a>
+<h2>2225480</h2>
+<div class="sym">ERROR: EM_SPI_RF_MON_FAIL_TO_OPERATE</div>
+<div class="txt">RF Amplifier Error. RF amplifier failed to go to operate when commanded to do so. Please power cycle the RF Subsystem and Reset TPS.</div>
+</section>
+<section id="BM2225481"><a name="BM2225481"></a>
+<h2>2225481</h2>
+<div class="sym">ERROR: EM_SPI_RF_MON_AMP_IN_FACTORY_MODE</div>
+<div class="txt">RF Amplifier Error. The RF amplifier is in factory, not product mode.</div>
+</section>
+<section id="BM2225482"><a name="BM2225482"></a>
+<h2>2225482</h2>
+<div class="sym">ERROR: EM_SPI_MDS_CMB_BICYCLE_ERROR</div>
+<div class="txt">RF/Pen or RF/PDU Cabinet MDS peripheral response timeout. Unknown link failure internal to the RF/Pen or RF/PDU Cabinet. Unknown link: 0x%02X Please power cycle the RF Subsystem and Reset TPS.</div>
+</section>
+<section id="BM2225483"><a name="BM2225483"></a>
+<h2>2225483</h2>
+<div class="sym">ERROR: EM_SPI_MDS_CMB_ERROR</div>
+<div class="txt">RF/Pen or RF/PDU Cabinet MDS peripheral response error. Unknown error code returned from RF/Pen or RF/PDU Cabinet. Unknown error: 0x%02X Please power cycle the RF Subsystem and Reset TPS.</div>
+</section>
+<section id="BM2225484"><a name="BM2225484"></a>
+<h2>2225484</h2>
+<div class="sym">ERROR: EM_SPI_RF_AMP_READ_REG</div>
+<div class="txt">IPG tried to read an undefined RF Amplifier Register. Register: 0x%02X</div>
+</section>
+<section id="BM2225485"><a name="BM2225485"></a>
+<h2>2225485</h2>
+<div class="sym">ERROR: EM_SPI_RF_AMP_WRITE_REG</div>
+<div class="txt">IPG tried to write an undefined RF Amplifier Register. Register: 0x%02X</div>
+</section>
+<section id="BM2225486"><a name="BM2225486"></a>
+<h2>2225486</h2>
+<div class="sym">ERROR: EM_SPI_RF_AMP_WRITE_DATA</div>
+<div class="txt">IPG tried to write an undefined command to the RF Control Register. Data: 0x%02X</div>
+</section>
+<section id="BM2225487"><a name="BM2225487"></a>
+<h2>2225487</h2>
+<div class="sym">ERROR: EM_SPI_RF_AMP_TYPE_INCORRECT</div>
+<div class="txt">RFampType in MRconfig.cfg file does not match RF Amplifier Type determined by SPI. Please update MRconfig.cfg file with correct RFampType.
+Actual RF Amplifier Type: %01d.%01dT %b</div>
+</section>
+<section id="BM2225488"><a name="BM2225488"></a>
+<h2>2225488</h2>
+<div class="sym">ERROR: EM_SPI_ERBTEC_STRING</div>
+<div class="txt">Erbtec</div>
+</section>
+<section id="BM2225489"><a name="BM2225489"></a>
+<h2>2225489</h2>
+<div class="sym">ERROR: EM_SPI_TELI_STRING</div>
+<div class="txt">Solid State TELI</div>
+</section>
+<section id="BM2225490"><a name="BM2225490"></a>
+<h2>2225490</h2>
+<div class="sym">ERROR: EM_SPI_MDS_SPEC_AMP_BICYCL_ERROR</div>
+<div class="txt">Spectro Amplifier response timeout. This error message is not used.</div>
+</section>
+<section id="BM2225491"><a name="BM2225491"></a>
+<h2>2225491</h2>
+<div class="sym">ERROR: EM_SPI_SPEC_MON_ONLY_GEN_FAULT_SET</div>
+<div class="txt">Spectro RF Amplifier Error. RF power fault. Please verify the fault number on the Spectro RF Amplifier display.</div>
+</section>
+<section id="BM2225492"><a name="BM2225492"></a>
+<h2>2225492</h2>
+<div class="sym">ERROR: EM_SPI_SPEC_MON_DUTY_CYCLE_FAULT</div>
+<div class="txt">Spectro RF Amplifier Error. A Spectro RF Amplifier duty cycle fault occurred.</div>
+</section>
+<section id="BM2225493"><a name="BM2225493"></a>
+<h2>2225493</h2>
+<div class="sym">ERROR: EM_SPI_SPEC_MON_PULSE_WIDTH_FAULT</div>
+<div class="txt">Spectro RF Amplifier Error. Power supply or RF energy fault. Please verify the fault number on the Spectro RF Amplifier display.</div>
+</section>
+<section id="BM2225494"><a name="BM2225494"></a>
+<h2>2225494</h2>
+<div class="sym">ERROR: EM_SPI_SPEC_MON_AMP_OVRHT</div>
+<div class="txt">Spectro RF Amplifier Error. A Spectro RF Amplifier overheat fault occurred.</div>
+</section>
+<section id="BM2225495"><a name="BM2225495"></a>
+<h2>2225495</h2>
+<div class="sym">ERROR: EM_SPI_SPEC_MON_POWER_OFF</div>
+<div class="txt">Spectro RF Amplifier Power is off. Please check circuit breakers and verify LED is lit on Spectro RF Amplifier.</div>
+</section>
+<section id="BM2225496"><a name="BM2225496"></a>
+<h2>2225496</h2>
+<div class="sym">ERROR: EM_SPI_SPEC_MON_SHUTDOWN</div>
+<div class="txt">Spectro RF Amplifier Error. The power monitor tripped and disabled the amplifier. Possible defective power monitor, cables or Processor Board.</div>
+</section>
+<section id="BM2225497"><a name="BM2225497"></a>
+<h2>2225497</h2>
+<div class="sym">ERROR: EM_SPI_SPEC_MON_FILT_VERIF</div>
+<div class="txt">Spectro RF Amplifier Error. The filter value written to the Spectro RF Amplifier failed to verify.</div>
+</section>
+<section id="BM2225498"><a name="BM2225498"></a>
+<h2>2225498</h2>
+<div class="sym">ERROR: EM_SPI_UNKNOWN_STRING</div>
+<div class="txt">Unknown Amplifier</div>
+</section>
+<section id="BM2225510"><a name="BM2225510"></a>
+<h2>2225510</h2>
+<div class="sym">ERROR: EM_SPI_MDS_TR_DRIVER_BICYCL_ERROR</div>
+<div class="txt">Dynamic disable and T/R driver response timeout. T/R and dynamic disable communication link failure. Verify that the RF MDS peripheral is connected to the T/R driver assembly.</div>
+</section>
+<section id="BM2225511"><a name="BM2225511"></a>
+<h2>2225511</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_RF_PEAK_PWR</div>
+<div class="txt">RF peak power was exceeded.\b\ Error detected by T/R driver board.</div>
+</section>
+<section id="BM2225512"><a name="BM2225512"></a>
+<h2>2225512</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_COIL_WRITE_VERIF_FAIL</div>
+<div class="txt">Dynamic disable and T/R driver fault.\b\ A write to the driver board coil register failed to verify.</div>
+</section>
+<section id="BM2225513"><a name="BM2225513"></a>
+<h2>2225513</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_IN_SERVICE_MODE</div>
+<div class="txt">Attention: T/R driver in service, not product mode.</div>
+</section>
+<section id="BM2225514"><a name="BM2225514"></a>
+<h2>2225514</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_PWR_SUPPL_1</div>
+<div class="txt">SSM fault.\b\ +15 volt switching power supply low.</div>
+</section>
+<section id="BM2225515"><a name="BM2225515"></a>
+<h2>2225515</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_PWR_SUPPL_2</div>
+<div class="txt">SSM fault\b\ -15 volt switching power supply low.</div>
+</section>
+<section id="BM2225516"><a name="BM2225516"></a>
+<h2>2225516</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_PWR_SUPPL_3</div>
+<div class="txt">SSM fault.\b\ High voltage power supply low. Also may be a shorted load on dynamic disable or direct drive circuits.</div>
+</section>
+<section id="BM2225517"><a name="BM2225517"></a>
+<h2>2225517</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_HEAD_OPEN</div>
+<div class="txt">T/R driver fault, head path open\b\ Possibly a disconnected cable between the driver board and the head T/R network, or an open diode in the head T/R switch.</div>
+</section>
+<section id="BM2225518"><a name="BM2225518"></a>
+<h2>2225518</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_HEAD_SHORT</div>
+<div class="txt">T/R driver fault, head path short\b\ Possibly a shorted diode in the head T/R switch network, or a short circuit load.</div>
+</section>
+<section id="BM2225519"><a name="BM2225519"></a>
+<h2>2225519</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_BODY_OPEN</div>
+<div class="txt">T/R driver fault, Body Path open\b\ Possibly a disconnected cable between the driver board and the body T/R network, or an open diode in the body T/R switch.</div>
+</section>
+<section id="BM2225520"><a name="BM2225520"></a>
+<h2>2225520</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_BODY_SHORT</div>
+<div class="txt">T/R driver fault, Body Path short\b\ Possibly a shorted diode in the body T/R switch network, or a short circuit load.</div>
+</section>
+<section id="BM2225521"><a name="BM2225521"></a>
+<h2>2225521</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_DD_OPEN</div>
+<div class="txt">Not used.</div>
+</section>
+<section id="BM2225522"><a name="BM2225522"></a>
+<h2>2225522</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_DD_SHORT</div>
+<div class="txt">Not used.</div>
+</section>
+<section id="BM2225523"><a name="BM2225523"></a>
+<h2>2225523</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_SPEC_OPEN</div>
+<div class="txt">T/R driver fault, spectro path open\b\ Possibly a disconnected cable between the driver board and the spectro T/R network, or an open diode in the spectro T/R switch.</div>
+</section>
+<section id="BM2225524"><a name="BM2225524"></a>
+<h2>2225524</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_SPEC_SHORT</div>
+<div class="txt">T/R driver fault, spectro path short\b\ Possibly a shorted diode in the the spectro T/R switch network, or a short circuit load.</div>
+</section>
+<section id="BM2225525"><a name="BM2225525"></a>
+<h2>2225525</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_TR_ID_OPEN</div>
+<div class="txt">Inductive or Direct Drive fault, path open\b\ Driver bias fault. Possibly a disconnected cable between the driver board and the driver switches, or an open diode in the driver switches.</div>
+</section>
+<section id="BM2225526"><a name="BM2225526"></a>
+<h2>2225526</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_TR_ID_SHORT</div>
+<div class="txt">Inductive or Direct Drive fault, or Body TR switch fault due to impedance mismatch, path short\b\ Drive bias fault. Possibly a shorted diode in the the driver switches, or a short circuit load.</div>
+</section>
+<section id="BM2225527"><a name="BM2225527"></a>
+<h2>2225527</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_TR_DP1_OPEN</div>
+<div class="txt">Dynamic disable and T/R driver fault.\b\ Dynamic Disable bias fault on driver 1. Possibly a disconnected cable between the driver board and the dynamic disable switch boxes, or an open diode in dynamic disable switch boxes 1 and 3.</div>
+</section>
+<section id="BM2225528"><a name="BM2225528"></a>
+<h2>2225528</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_TR_DP1_SHORT</div>
+<div class="txt">Dynamic disable and T/R driver fault.\b\ Dynamic Disable bias fault on driver 1. Possibly a short circuit load or a shorted diode in the dynamic disable switch boxes 1 and 3.</div>
+</section>
+<section id="BM2225529"><a name="BM2225529"></a>
+<h2>2225529</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_TR_DP2_OPEN</div>
+<div class="txt">Dynamic disable and T/R driver fault.\b\ Dynamic Disable bias fault on driver 2. Possibly a disconnected cable between the driver board and the dynamic disable switch boxes, or an open diode in dynamic disable switch boxes 2 and 4.</div>
+</section>
+<section id="BM2225530"><a name="BM2225530"></a>
+<h2>2225530</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_TR_DP2_SHORT</div>
+<div class="txt">Dynamic disable and T/R driver fault.\b\ Dynamic Disable bias fault on driver 2. Possibly a short circuit load or a shorted diode in the dynamic disable switch boxes 2 and 4.</div>
+</section>
+<section id="BM2225531"><a name="BM2225531"></a>
+<h2>2225531</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_TR_DP3_OPEN</div>
+<div class="txt">Dynamic disable and T/R driver fault.\b\ Dynamic Disable bias fault on driver 3. Possibly a disconnected cable between the driver board and the dynamic disable switch boxes, or an open diode in dynamic disable switch boxes 5 and 7.</div>
+</section>
+<section id="BM2225532"><a name="BM2225532"></a>
+<h2>2225532</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_TR_DP3_SHORT</div>
+<div class="txt">Dynamic disable and T/R driver fault.\b\ Dynamic Disable bias fault on driver 3. Possibly a short circuit load or a shorted diode in the dynamic disable switch boxes 5 and 7.</div>
+</section>
+<section id="BM2225533"><a name="BM2225533"></a>
+<h2>2225533</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_TR_DP4_OPEN</div>
+<div class="txt">Dynamic disable and T/R driver fault.\b\ Dynamic Disable bias fault on driver 4. Possibly a disconnected cable between the driver board and the dynamic disable switch boxes, or an open diode in dynamic disable switch boxes 6 and 8.</div>
+</section>
+<section id="BM2225534"><a name="BM2225534"></a>
+<h2>2225534</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_TR_DP4_SHORT</div>
+<div class="txt">Dynamic disable and T/R driver fault.\b\ Dynamic Disable bias fault on driver 4. Possibly a short circuit load or a shorted diode in the dynamic disable switch boxes 6 and 8.</div>
+</section>
+<section id="BM2225535"><a name="BM2225535"></a>
+<h2>2225535</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_REG_2_FLT</div>
+<div class="txt">Dynamic disable and T/R driver board error.\b\ A spurious T/R or inductive drive fault occurred. It cleared itself before the specific problem could be read. Possible causes: noise on the dynamic disable board or a bad board.</div>
+</section>
+<section id="BM2225536"><a name="BM2225536"></a>
+<h2>2225536</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_REG_3_FLT</div>
+<div class="txt">Dynamic disable and T/R driver board error.\b\ A spurious dynamic disable fault occurred. It cleared itself before the specific problem could be read. Possible causes: noise on the dynamic disable board or a bad board.</div>
+</section>
+<section id="BM2225537"><a name="BM2225537"></a>
+<h2>2225537</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_REG_A_FLT</div>
+<div class="txt">A spurious multi coil T/R fault occurred.\b\ Fault cleared before the specific problem could be read. Possible causes:
+noise on the dynamic disable or multi-coil board or a bad board.</div>
+</section>
+<section id="BM2225538"><a name="BM2225538"></a>
+<h2>2225538</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_ABNORMAL_MODE</div>
+<div class="txt">T/R driver indicates it is no longer in a normal mode of operation.</div>
+</section>
+<section id="BM2225539"><a name="BM2225539"></a>
+<h2>2225539</h2>
+<div class="sym">ERROR: EM_SPI_MON_DD_FRONT_BRM_OPEN</div>
+<div class="txt">Dynamic disable fault, Front of Coil open\b\ Dynamic Disable bias fault on front drivers. Possibly a disconnected cable between the driver board and the dynamic disable switch boxes, or an open diode in dynamic disable switch boxes on FRONT of BRM.</div>
+</section>
+<section id="BM2225540"><a name="BM2225540"></a>
+<h2>2225540</h2>
+<div class="sym">ERROR: EM_SPI_MON_DD_FRONT_BRM_SHORT</div>
+<div class="txt">Dynamic disable fault, Front of Coil short\b\ Dynamic Disable bias fault on front drivers. Possibly a short circuit load or a shorted diode in the dynamic disable switch boxes on FRONT of BRM.</div>
+</section>
+<section id="BM2225541"><a name="BM2225541"></a>
+<h2>2225541</h2>
+<div class="sym">ERROR: EM_SPI_MON_DD_BACK_BRM_OPEN</div>
+<div class="txt">Dynamic disable fault, Rear of Coil open \b\ Dynamic Disable bias fault on back drivers. Possibly a disconnected cable between the driver board and the dynamic disable switch boxes, or an open diode in dynamic disable switch boxes on BACK of BRM.</div>
+</section>
+<section id="BM2225542"><a name="BM2225542"></a>
+<h2>2225542</h2>
+<div class="sym">ERROR: EM_SPI_MON_DD_BACK_BRM_SHORT</div>
+<div class="txt">Dynamic disable fault, Rear of Coil short\b\ Dynamic Disable bias fault on back drivers. Possibly a short circuit load or a shorted diode in the dynamic disable switch boxes on BACK of BRM.</div>
+</section>
+<section id="BM2225543"><a name="BM2225543"></a>
+<h2>2225543</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_DD_SPARE</div>
+<div class="txt">Dynamic disable fault.\b\ This error should not occur with BRM. Possible cause is bad Pin Switch Driver Board.</div>
+</section>
+<section id="BM2225550"><a name="BM2225550"></a>
+<h2>2225550</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_MCD_COIL_WR_VERIF_FAIL</div>
+<div class="txt">Multi-coil array driver error.\b\ A write to the multi-coil array driver coil register failed to verify. Possible causes: bad board or connections in the TR chassis. Present State: 0x%02X Requested State: 0x%02X</div>
+</section>
+<section id="BM2225551"><a name="BM2225551"></a>
+<h2>2225551</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_P1_LOAD_FLT</div>
+<div class="txt">Multi-Coil T/R Driver Fault.\b\ An open circuit was detected on port 1. Check cable to multi-coil board or check for an open pin diode.</div>
+</section>
+<section id="BM2225552"><a name="BM2225552"></a>
+<h2>2225552</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_P2_LOAD_FLT</div>
+<div class="txt">Multi-Coil T/R Driver Fault.\b\ An open circuit was detected on port 2. Check cable to multi-coil board or check for an open pin diode.</div>
+</section>
+<section id="BM2225553"><a name="BM2225553"></a>
+<h2>2225553</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_P3_LOAD_FLT</div>
+<div class="txt">Multi-Coil T/R Driver Fault.\b\ An open circuit was detected on port 3. Check cable to multi-coil board or check for an open pin diode.</div>
+</section>
+<section id="BM2225554"><a name="BM2225554"></a>
+<h2>2225554</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_P4_LOAD_FLT</div>
+<div class="txt">Multi-Coil T/R Driver Fault.\b\ An open circuit was detected on port 4. Check cable to multi-coil board or check for an open pin diode.</div>
+</section>
+<section id="BM2225555"><a name="BM2225555"></a>
+<h2>2225555</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_P1_SHORT</div>
+<div class="txt">Multi-Coil T/R Driver Fault, Multi-Coil Path Short\b\ A short circuit was detected on port 1. Check cable to multi-coil board or check for a shorted pin diode.</div>
+</section>
+<section id="BM2225556"><a name="BM2225556"></a>
+<h2>2225556</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_P2_SHORT</div>
+<div class="txt">Multi-Coil T/R Driver Fault, Multi-Coil Path Short\b\ A short circuit was detected on port 2. Check cable to multi-coil board or check for a shorted pin diode.</div>
+</section>
+<section id="BM2225557"><a name="BM2225557"></a>
+<h2>2225557</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_P3_SHORT</div>
+<div class="txt">Multi-Coil T/R Driver Fault, Multi-Coil Path Short\b\ A short circuit was detected on port 3. Check cable to multi-coil board or check for a shorted pin diode.</div>
+</section>
+<section id="BM2225558"><a name="BM2225558"></a>
+<h2>2225558</h2>
+<div class="sym">ERROR: EM_SPI_TR_MON_P4_SHORT</div>
+<div class="txt">Multi-Coil T/R Driver Fault, Multi-Coil Path Short\b\ A short circuit was detected on port 4. Check cable to multi-coil board or check for a shorted pin diode.</div>
+</section>
+<section id="BM2225570"><a name="BM2225570"></a>
+<h2>2225570</h2>
+<div class="sym">ERROR: EM_SPI_POW_MON_CHKSUM</div>
+<div class="txt">Power Monitor Checksum Error:
+The SPI has reported a checksum error on the data sent from IPG. Attempt to prescribe the scan again.</div>
+</section>
+<section id="BM2225571"><a name="BM2225571"></a>
+<h2>2225571</h2>
+<div class="sym">ERROR: EM_SPI_PM_HEAD_AMPLITUDE</div>
+<div class="txt">Fault in head amplitude. If you need to confirm the source of the fault, reset the power monitor and repeat the scan.</div>
+</section>
+<section id="BM2225572"><a name="BM2225572"></a>
+<h2>2225572</h2>
+<div class="sym">ERROR: EM_SPI_PM_BODY_AMPLITUDE</div>
+<div class="txt">Fault in body amplitude. If you need to confirm the source of the fault, reset the power monitor and repeat the scan.</div>
+</section>
+<section id="BM2225573"><a name="BM2225573"></a>
+<h2>2225573</h2>
+<div class="sym">ERROR: EM_SPI_PM_SPEC_AMPLITUDE</div>
+<div class="txt">Fault in spectro amplitude. If you need to confirm the source of the fault, reset the power monitor and repeat the scan.</div>
+</section>
+<section id="BM2225574"><a name="BM2225574"></a>
+<h2>2225574</h2>
+<div class="sym">ERROR: EM_SPI_PM_HEAD_WIDTH</div>
+<div class="txt">Fault in head pulse width. If you need to confirm the source of the fault, reset the power monitor and repeat the scan.</div>
+</section>
+<section id="BM2225575"><a name="BM2225575"></a>
+<h2>2225575</h2>
+<div class="sym">ERROR: EM_SPI_PM_BODY_WIDTH</div>
+<div class="txt">Fault in body pulse width. If you need to confirm the source of the fault, reset the power monitor and repeat the scan.</div>
+</section>
+<section id="BM2225576"><a name="BM2225576"></a>
+<h2>2225576</h2>
+<div class="sym">ERROR: EM_SPI_PM_SPEC_WIDTH</div>
+<div class="txt">Fault in spectro pulse width. If you need to confirm the source of the fault, reset the power monitor and repeat the scan.</div>
+</section>
+<section id="BM2225577"><a name="BM2225577"></a>
+<h2>2225577</h2>
+<div class="sym">ERROR: EM_SPI_PM_HEAD_DUTY</div>
+<div class="txt">Fault in head duty cycle.</div>
+</section>
+<section id="BM2225578"><a name="BM2225578"></a>
+<h2>2225578</h2>
+<div class="sym">ERROR: EM_SPI_PM_BODY_DUTY</div>
+<div class="txt">Fault in body duty cycle.</div>
+</section>
+<section id="BM2225579"><a name="BM2225579"></a>
+<h2>2225579</h2>
+<div class="sym">ERROR: EM_SPI_PM_SPEC_DUTY</div>
+<div class="txt">Fault in spectro duty cycle.</div>
+</section>
+<section id="BM2225580"><a name="BM2225580"></a>
+<h2>2225580</h2>
+<div class="sym">ERROR: EM_SPI_MDS_RCV_PDU_ERROR</div>
+<div class="txt">Unused SPI error.</div>
+</section>
+<section id="BM2225581"><a name="BM2225581"></a>
+<h2>2225581</h2>
+<div class="sym">ERROR: EM_SPI_PDU_HI_TEMP_ALERT</div>
+<div class="txt">The PDU is in overtemperature. The power distribution unit is indicating an overtemperature condition.</div>
+</section>
+<section id="BM2225582"><a name="BM2225582"></a>
+<h2>2225582</h2>
+<div class="sym">ERROR: EM_SPI_PDU_STOP_MODE_ACTIVE</div>
+<div class="txt">The PDU is in stop mode. Emergency Stop button was pressed or PDU 24 Volt supply has failed. Note that this causes the MDS link to break, since the power should be off to both the gradient and RF cabinets.</div>
+</section>
+<section id="BM2225583"><a name="BM2225583"></a>
+<h2>2225583</h2>
+<div class="sym">ERROR: EM_SPI_PDU_NIGHT_MODE_ACTIVE</div>
+<div class="txt">The PDU is in overnight mode.</div>
+</section>
+<section id="BM2225584"><a name="BM2225584"></a>
+<h2>2225584</h2>
+<div class="sym">ERROR: EM_SPI_H_WARNING</div>
+<div class="txt">Attention: The helium level is low or the meter is off.\b\ The helium level is low in the superconduction magnet, the helium meter is off, or the cable between the meter and the SPI is disconnected.</div>
+</section>
+<section id="BM2225590"><a name="BM2225590"></a>
+<h2>2225590</h2>
+<div class="sym">ERROR: EM_SPI_ERB_AMP_ERROR</div>
+<div class="txt">RF Amplifier fault %02d.</div>
+</section>
+<section id="BM2225591"><a name="BM2225591"></a>
+<h2>2225591</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_00</div>
+<div class="txt">ERBTEC RF Amplifier fault. Fault interlock held in the faulted state. Microprocessor is in reset, or possible defective cable between Processor Board and Display Board.</div>
+</section>
+<section id="BM2225592"><a name="BM2225592"></a>
+<h2>2225592</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_01</div>
+<div class="txt">ERBTEC RF Amplifier fault 01. Internal EPROM contents inconsistent with a run. The microprocessor detected a possible check-sum error Possible address bus fault or defective EPROM on the processor board.</div>
+</section>
+<section id="BM2225593"><a name="BM2225593"></a>
+<h2>2225593</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_02</div>
+<div class="txt">ERBTEC RF Amplifier fault 02. Dual port RAM problem. Possible defective Processor Board.</div>
+</section>
+<section id="BM2225594"><a name="BM2225594"></a>
+<h2>2225594</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_03</div>
+<div class="txt">ERBTEC RF Amplifier fault 03. A/D has failed. Possible problem with Processor Board.</div>
+</section>
+<section id="BM2225595"><a name="BM2225595"></a>
+<h2>2225595</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_04</div>
+<div class="txt">ERBTEC RF Amplifier fault 04. A/D multiplexer has failed. Possible problem with the Processor Board or 1 of the 32 analog signals.</div>
+</section>
+<section id="BM2225596"><a name="BM2225596"></a>
+<h2>2225596</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_05</div>
+<div class="txt">ERBTEC RF Amplifier fault 05. A/D self-test in the microprocessor has failed. The check of the Gnd., 1/2 Vcc, and Vcc in the microprocessor failed. Possible defective Processor Board.</div>
+</section>
+<section id="BM2225597"><a name="BM2225597"></a>
+<h2>2225597</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_06</div>
+<div class="txt">ERBTEC RF Amplifier fault 06. Stepping motor coil is open. Possible defective or open motor cable, open stepping motor winding, or defective Processor Board.</div>
+</section>
+<section id="BM2225598"><a name="BM2225598"></a>
+<h2>2225598</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_07</div>
+<div class="txt">ERBTEC RF Amplifier fault 07. Illegal opcode. Possible defective Processor Board.</div>
+</section>
+<section id="BM2225599"><a name="BM2225599"></a>
+<h2>2225599</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_08</div>
+<div class="txt">ERBTEC RF Amplifier fault 08. Microprocessor external interrupt high does not cause an interrupt. Possible defective Processor Board.</div>
+</section>
+<section id="BM2225600"><a name="BM2225600"></a>
+<h2>2225600</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_09</div>
+<div class="txt">ERBTEC RF Amplifier fault 09. Microprocessor external interrupt low does not cause an interrupt. Possible defective Processor Board.</div>
+</section>
+<section id="BM2225601"><a name="BM2225601"></a>
+<h2>2225601</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_10</div>
+<div class="txt">ERBTEC RF Amplifier fault 10. Heat sink monitor temperature unacceptable. Possible defective thermistor on Solid State Amplifier Board or disconnected cable between Processor Board and Solid State Amplifier Board.</div>
+</section>
+<section id="BM2225602"><a name="BM2225602"></a>
+<h2>2225602</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_11</div>
+<div class="txt">ERBTEC RF Amplifier fault 11. SCM cable interlock fault. Possible disconnected or defective SCM Jumper Connector.</div>
+</section>
+<section id="BM2225603"><a name="BM2225603"></a>
+<h2>2225603</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_12</div>
+<div class="txt">ERBTEC RF Amplifier fault 12. 100V power supply unacceptable - less than 88V or greater than 147V. Possible defective Power Control Board, IPI or PA tube, or open cables.</div>
+</section>
+<section id="BM2225604"><a name="BM2225604"></a>
+<h2>2225604</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_13</div>
+<div class="txt">ERBTEC RF Amplifier fault 13. IPA HV unacceptable. +3kV power supply is below 2.25kV or more than 3.784kV; probably a low voltage. Possible defective IPA tube or bad High Voltage Rectifier/Filter Board. Check line voltage for low or varying voltage.</div>
+</section>
+<section id="BM2225605"><a name="BM2225605"></a>
+<h2>2225605</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_14</div>
+<div class="txt">ERBTEC RF Amplifier fault 14. IPA heater current unacceptable. The current is either greater than 1.9 amps or less than 1.1 amps. Possible defective IPA tube, Power Control Board, or harness.</div>
+</section>
+<section id="BM2225606"><a name="BM2225606"></a>
+<h2>2225606</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_15</div>
+<div class="txt">ERBTEC RF Amplifier fault 15. -5V power supply unacceptable. Less than -5.4V or greater than -4.2V. Possible defective Processor Board.</div>
+</section>
+<section id="BM2225607"><a name="BM2225607"></a>
+<h2>2225607</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_16</div>
+<div class="txt">ERBTEC RF Amplifier fault 16. 48V power supply unacceptable. Less than 42.9V or greater than 51.5V. Possible defective Power Control Board or Solid State Amplifier Board.</div>
+</section>
+<section id="BM2225608"><a name="BM2225608"></a>
+<h2>2225608</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_17</div>
+<div class="txt">ERBTEC RF Amplifier fault 17. PA HV unacceptable. +6kV less than 4.5kV or greater than 7.592kV; most probably a low voltage. Possible defective PA tube or HV Rectifier/Filter Board. Check incoming power for low or varying voltages.</div>
+</section>
+<section id="BM2225609"><a name="BM2225609"></a>
+<h2>2225609</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_18</div>
+<div class="txt">ERBTEC RF Amplifier fault 18. PA heater current unacceptable. The current is either greater than 16 amps or less than 12 amps. Possible defective PA tube, Power Control Board, or harness.</div>
+</section>
+<section id="BM2225610"><a name="BM2225610"></a>
+<h2>2225610</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_19</div>
+<div class="txt">ERBTEC RF Amplifier fault 19. 32V power supply unacceptable, less than 21.8V or greater than 38.4V. Possible defective AC Switching Module connectors or fuses F3, F6, or F9. Check for excessive loading, such as on the stepping motors.</div>
+</section>
+<section id="BM2225611"><a name="BM2225611"></a>
+<h2>2225611</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_20</div>
+<div class="txt">ERBTEC RF Amplifier fault 20. 2.5V reference unacceptable. Less than 2.2V or greater than 2.7V. Possible defective Processor Board or AC Switching Module transformer T1 or fuses.</div>
+</section>
+<section id="BM2225612"><a name="BM2225612"></a>
+<h2>2225612</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_21</div>
+<div class="txt">ERBTEC RF Amplifier fault 21. 24V power supply unacceptable. Less than 22.3V or greater than 25V. Possible defective Power Control Board.</div>
+</section>
+<section id="BM2225613"><a name="BM2225613"></a>
+<h2>2225613</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_22</div>
+<div class="txt">ERBTEC RF Amplifier fault 22. Motor 1 zero fault. Either motor 1 is stuck at zero or AFT has failed and forced motor to zero. Possible defective motor or cable.</div>
+</section>
+<section id="BM2225614"><a name="BM2225614"></a>
+<h2>2225614</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_23</div>
+<div class="txt">ERBTEC RF Amplifier fault 23. Motor 2 zero fault. Either motor 2 is stuck at zero or AFT has failed and forced motor to zero. Possible defective motor or cable.</div>
+</section>
+<section id="BM2225615"><a name="BM2225615"></a>
+<h2>2225615</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_24</div>
+<div class="txt">ERBTEC RF Amplifier fault 24. Motor 3 zero fault. Either motor 3 is stuck at zero or AFT has failed and forced motor to zero. Possible defective motor or cable.</div>
+</section>
+<section id="BM2225616"><a name="BM2225616"></a>
+<h2>2225616</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_25</div>
+<div class="txt">ERBTEC RF Amplifier fault 25. Motor 4 zero fault. Either motor 4 is stuck at zero or AFT has failed and forced motor to zero. Possible defective motor or cable.</div>
+</section>
+<section id="BM2225617"><a name="BM2225617"></a>
+<h2>2225617</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_26</div>
+<div class="txt">ERBTEC RF Amplifier fault 26. Motor 1 zero not found, although the zero was found while initializing. Possible defective cables to motor 1 and zero sensors, and drivers on Processor Board.</div>
+</section>
+<section id="BM2225618"><a name="BM2225618"></a>
+<h2>2225618</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_27</div>
+<div class="txt">ERBTEC RF Amplifier fault 27. Motor 2 zero not found, although the zero was found while initializing. Possible defective cables to motor 2 and zero sensors, and drivers on Processor Board.</div>
+</section>
+<section id="BM2225619"><a name="BM2225619"></a>
+<h2>2225619</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_28</div>
+<div class="txt">ERBTEC RF Amplifier fault 28. Motor 3 zero not found, although the zero was found while initializing. Possible defective cables to motor 3 and zero sensors, and drivers on Processor Board.</div>
+</section>
+<section id="BM2225620"><a name="BM2225620"></a>
+<h2>2225620</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_29</div>
+<div class="txt">ERBTEC RF Amplifier fault 29. Motor 4 zero not found, although the zero was found while initializing. Possible defective cables to motor 4 and zero sensors, and drivers on Processor Board.</div>
+</section>
+<section id="BM2225621"><a name="BM2225621"></a>
+<h2>2225621</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_30</div>
+<div class="txt">ERBTEC RF Amplifier fault 30. Motor or washer stuck. All motors were able to pass the zero and non-zero tests during initialization. Now, one or more is not operating correctly.</div>
+</section>
+<section id="BM2225622"><a name="BM2225622"></a>
+<h2>2225622</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_32</div>
+<div class="txt">ERBTEC RF Amplifier fault 32. Unblank longer than 20 msec. The rising and falling edge of the unblank signal did not fall within the 20 msec time limit. Check the unblank cable and the Processor Board.</div>
+</section>
+<section id="BM2225623"><a name="BM2225623"></a>
+<h2>2225623</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_33</div>
+<div class="txt">ERBTEC RF Amplifier fault 33. Unblank without Power Monitor.</div>
+</section>
+<section id="BM2225624"><a name="BM2225624"></a>
+<h2>2225624</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_35</div>
+<div class="txt">ERBTEC RF Amplifier fault 35. FET 1 coarse convergence failed. Possible defective Solid State Amplifier Board, Processor Board, or cables between them.</div>
+</section>
+<section id="BM2225625"><a name="BM2225625"></a>
+<h2>2225625</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_36</div>
+<div class="txt">ERBTEC RF Amplifier fault 36. FET 2 coarse convergence failed. Possible defective Solid State Amplifier Board, Processor Board, or cables between them.</div>
+</section>
+<section id="BM2225626"><a name="BM2225626"></a>
+<h2>2225626</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_37</div>
+<div class="txt">ERBTEC RF Amplifier fault 37. FET 3 coarse convergence failed. Possible defective Solid State Amplifier Board, Processor Board, or cables between them.</div>
+</section>
+<section id="BM2225627"><a name="BM2225627"></a>
+<h2>2225627</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_38</div>
+<div class="txt">ERBTEC RF Amplifier fault 38. FET 4 coarse convergence failed. Possible defective Solid State Amplifier Board, Processor Board, or cables between them.</div>
+</section>
+<section id="BM2225628"><a name="BM2225628"></a>
+<h2>2225628</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_42</div>
+<div class="txt">ERBTEC RF Amplifier fault 42. FET 1 fine convergence failed. Possible defective Solid State Amplifier Board, Processor Board, or cables between them.</div>
+</section>
+<section id="BM2225629"><a name="BM2225629"></a>
+<h2>2225629</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_43</div>
+<div class="txt">ERBTEC RF Amplifier fault 43. FET 2 fine convergence failed. Possible defective Solid State Amplifier Board, Processor Board, or cables between them.</div>
+</section>
+<section id="BM2225630"><a name="BM2225630"></a>
+<h2>2225630</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_44</div>
+<div class="txt">ERBTEC RF Amplifier fault 44. FET 3 fine convergence failed. Possible defective Solid State Amplifier Board, Processor Board, or cables between them.</div>
+</section>
+<section id="BM2225631"><a name="BM2225631"></a>
+<h2>2225631</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_45</div>
+<div class="txt">ERBTEC RF Amplifier fault 45. FET 4 fine convergence failed. Possible defective Solid State Amplifier Board, Processor Board, or cables between them.</div>
+</section>
+<section id="BM2225632"><a name="BM2225632"></a>
+<h2>2225632</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_46</div>
+<div class="txt">ERBTEC RF Amplifier fault 46. FET 1 bias tracked out of range. Possible defective Solid State Amplifier Board (most likely), Processor Board, or cables between them.</div>
+</section>
+<section id="BM2225633"><a name="BM2225633"></a>
+<h2>2225633</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_47</div>
+<div class="txt">ERBTEC RF Amplifier fault 47. FET 2 bias tracked out of range. Possible defective Solid State Amplifier Board (most likely), Processor Board, or cables between them.</div>
+</section>
+<section id="BM2225634"><a name="BM2225634"></a>
+<h2>2225634</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_48</div>
+<div class="txt">ERBTEC RF Amplifier fault 48. FET 3 bias tracked out of range. Possible defective Solid State Amplifier Board (most likely), Processor Board, or cables between them.</div>
+</section>
+<section id="BM2225635"><a name="BM2225635"></a>
+<h2>2225635</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_49</div>
+<div class="txt">ERBTEC RF Amplifier fault 49. FET 4 bias tracked out of range. Possible defective Solid State Amplifier Board (most likely), Processor Board, or cables between them.</div>
+</section>
+<section id="BM2225636"><a name="BM2225636"></a>
+<h2>2225636</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_50</div>
+<div class="txt">ERBTEC RF Amplifier fault 50. 100V power supply was less than 85V one second after 100V start relay closed. Possible defective Power Control Board, AC Switching Module, or excessive loading on power supply bus.</div>
+</section>
+<section id="BM2225637"><a name="BM2225637"></a>
+<h2>2225637</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_51</div>
+<div class="txt">ERBTEC RF Amplifier fault 51. 100V power supply was less than 90V one msec after 100V run relay closed. Possible defective Power Control Board, AC Switching Module, or excessive loading on power supply bus - possibly a PA tube heater.</div>
+</section>
+<section id="BM2225638"><a name="BM2225638"></a>
+<h2>2225638</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_52</div>
+<div class="txt">ERBTEC RF Amplifier fault 52. IPA heater current was unacceptable one second after heater relay was enabled. Possible defective IPA tube, Power Control Board, or harness between tube and Power Control Board.</div>
+</section>
+<section id="BM2225639"><a name="BM2225639"></a>
+<h2>2225639</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_53</div>
+<div class="txt">ERBTEC RF Amplifier fault 53. PA heater current was unacceptable. Current is less than 10.6 amps or greater than 18.6 amps. Possible defective Power Control Board, PA tubes, or harness.</div>
+</section>
+<section id="BM2225640"><a name="BM2225640"></a>
+<h2>2225640</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_54</div>
+<div class="txt">ERBTEC RF Amplifier fault 54. PA tube heater soft-start failure within 15 seconds. Possible defective PA tube, Power Control Board, or Processor Board.</div>
+</section>
+<section id="BM2225641"><a name="BM2225641"></a>
+<h2>2225641</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_55</div>
+<div class="txt">ERBTEC RF Amplifier fault 55. 3kV power supply unacceptable within 0.5 sec after closing HV start relay. Possible defective HV rectifier/filter board, bad relay in AC Switching Module, or bad A/D on Processor Board.</div>
+</section>
+<section id="BM2225642"><a name="BM2225642"></a>
+<h2>2225642</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_56</div>
+<div class="txt">ERBTEC RF Amplifier fault 56. +6kV power supply unacceptable within 0.5 sec after closing HV start relay. Possible defective HV rectifier/filter board, bad relay in AC Switching Module, or bad A/D on Processor Board.</div>
+</section>
+<section id="BM2225643"><a name="BM2225643"></a>
+<h2>2225643</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_57</div>
+<div class="txt">ERBTEC RF Amplifier fault 57. +3kV power supply unacceptable within 0.5 to 6 seconds after closing HV start relay. Possible defective HV rectifier/filter board, bad relay in AC Switching Module, or bad A/D on Processor Board.</div>
+</section>
+<section id="BM2225644"><a name="BM2225644"></a>
+<h2>2225644</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_58</div>
+<div class="txt">ERBTEC RF Amplifier fault 58. +6kV power supply unacceptable within 0.5 to 6 seconds after closing HV start relay. Possible defective HV rectifier/filter board, bad relay in AC Switching Module, or bad A/D on Processor Board.</div>
+</section>
+<section id="BM2225645"><a name="BM2225645"></a>
+<h2>2225645</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_59</div>
+<div class="txt">ERBTEC RF Amplifier fault 59. HV Rectifier/Filter Board unacceptable within 100msec of closing HV run relay. Possible defective HV rectifier/filter board, bad relay in AC Switching Module, or bad A/D on Processor Board.</div>
+</section>
+<section id="BM2225646"><a name="BM2225646"></a>
+<h2>2225646</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_60</div>
+<div class="txt">ERBTEC RF Amplifier fault 60. IPA tube AFT algorithm has gone beyond limit. The AFT routine could not converge after 160 steps of the IPA tune and load capacitors. Possible defective IPA phase detector board, motor drivers or A/D on processor board.</div>
+</section>
+<section id="BM2225647"><a name="BM2225647"></a>
+<h2>2225647</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_61</div>
+<div class="txt">ERBTEC RF Amplifier fault 61. PA tube AFT algorithm has gone beyond limit. The AFT routine could not converge after 800 steps of the PA tune and load capacitors. Possible defective PA phase detector board, motor drivers, or A/D on processor board.</div>
+</section>
+<section id="BM2225648"><a name="BM2225648"></a>
+<h2>2225648</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_62</div>
+<div class="txt">ERBTEC RF Amplifier fault 62. Insufficient power for AFT. Not enough power was seen at the IPA envelope detector to perform AFT. Possible defective Solid State Amplifier Board, bad connection to VTAC, bad IPA tube, input board or phase detector.</div>
+</section>
+<section id="BM2225649"><a name="BM2225649"></a>
+<h2>2225649</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_70</div>
+<div class="txt">ERBTEC RF Amplifier fault 70. Operate command fault. An invalid command was received by the microprocessor. Possible shorted SCM cable or defective Processor Board.</div>
+</section>
+<section id="BM2225650"><a name="BM2225650"></a>
+<h2>2225650</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_71</div>
+<div class="txt">ERBTEC RF Amplifier fault 71. Frequency command fault. Amp was commanded to the wrong frequency or frequency command was given while amp was in operate state. Possible cause: wrong magnet field strength in system config file (.5T vs 1.0T vs 1.5T)</div>
+</section>
+<section id="BM2225651"><a name="BM2225651"></a>
+<h2>2225651</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_72</div>
+<div class="txt">ERBTEC RF Amplifier fault 72. Mode command fault. The mode command was given while the amplifier was in the operate state or the amplifier was commanded to an invalid mode.</div>
+</section>
+<section id="BM2225652"><a name="BM2225652"></a>
+<h2>2225652</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_73</div>
+<div class="txt">ERBTEC RF Amplifier fault 73. PA (Body mode) forward power too high. Possible defective Erbtec RF Monitor Module, or high input signal to the amp, or bad A/D on processor board.</div>
+</section>
+<section id="BM2225653"><a name="BM2225653"></a>
+<h2>2225653</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_74</div>
+<div class="txt">ERBTEC RF Amplifier fault 74. IPA (Head mode) forward power too high. Possible defective Erbtec RF Monitor Module, or high input signal to the amp, or bad A/D on processor board.</div>
+</section>
+<section id="BM2225654"><a name="BM2225654"></a>
+<h2>2225654</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_75</div>
+<div class="txt">ERBTEC RF Amplifier fault 75. PA (Body mode) reflected power too high. Possible disconnected output cable, or improper load outside of the amplifier, or bad A/D on processor board.</div>
+</section>
+<section id="BM2225655"><a name="BM2225655"></a>
+<h2>2225655</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_76</div>
+<div class="txt">ERBTEC RF Amplifier fault 76. IPA (Head mode) reflected power too high. Possible disconnected output cable, or improper load outside of the amplifier, or bad A/D on processor board.</div>
+</section>
+<section id="BM2225656"><a name="BM2225656"></a>
+<h2>2225656</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_77</div>
+<div class="txt">ERBTEC RF Amplifier fault 77. PA grid current too high. Possible defective PA tube, or problems on the power control board or processor board.</div>
+</section>
+<section id="BM2225657"><a name="BM2225657"></a>
+<h2>2225657</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_78</div>
+<div class="txt">ERBTEC RF Amplifier fault 78. IPA grid current too high. Possible defective IPA tube, or problems on the power control board or processor board.</div>
+</section>
+<section id="BM2225658"><a name="BM2225658"></a>
+<h2>2225658</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_79</div>
+<div class="txt">ERBTEC RF Amplifier fault 79. PA plate current too high. Possible defective PA tube, bad High Voltage Rectifier/Filter Board, Power Control Board, or Processor Board.</div>
+</section>
+<section id="BM2225659"><a name="BM2225659"></a>
+<h2>2225659</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_80</div>
+<div class="txt">ERBTEC RF Amplifier fault 80. IPA plate current too high. Possible defective IPA tube, bad High Voltage Rectifier/Filter Board, Power Control Board, or Processor Board.</div>
+</section>
+<section id="BM2225660"><a name="BM2225660"></a>
+<h2>2225660</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_81</div>
+<div class="txt">ERBTEC RF Amplifier fault 81. 3kV arc detected. Possible defective IPA tube or bad processor board.</div>
+</section>
+<section id="BM2225661"><a name="BM2225661"></a>
+<h2>2225661</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_82</div>
+<div class="txt">ERBTEC RF Amplifier fault 82. Cover interlock 1 on HV tube cavity side. Possible defective cover and switch.</div>
+</section>
+<section id="BM2225662"><a name="BM2225662"></a>
+<h2>2225662</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_83</div>
+<div class="txt">ERBTEC RF Amplifier fault 83. Cover interlock 2 on processor board side. Possible defective cover and switch.</div>
+</section>
+<section id="BM2225663"><a name="BM2225663"></a>
+<h2>2225663</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_84</div>
+<div class="txt">ERBTEC RF Amplifier fault 84. RF power monitor fault. Proper signals are not being received from RF power monitor. Possible defective power monitor, cables, Processor Board, or power monitor microprocessor power momentarily dropped causing a reset.</div>
+</section>
+<section id="BM2225664"><a name="BM2225664"></a>
+<h2>2225664</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_85</div>
+<div class="txt">RF Amplifier fault 85. RF Transmit power has reached safety limit allowed for scan parameters and patient weight. Check patient weight entered.
+amplitude: %02d
+pulse width: %02d
+duty cycle: %02d %b</div>
+</section>
+<section id="BM2225665"><a name="BM2225665"></a>
+<h2>2225665</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_86</div>
+<div class="txt">ERBTEC RF Amplifier fault 86. +6kV arc detected. Possible defective PA tube or bad processor board.</div>
+</section>
+<section id="BM2225666"><a name="BM2225666"></a>
+<h2>2225666</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_87</div>
+<div class="txt">ERBTEC RF Amplifier fault 87. Arc detect circuit failure. Possible defective Processor Board.</div>
+</section>
+<section id="BM2225667"><a name="BM2225667"></a>
+<h2>2225667</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_88</div>
+<div class="txt">ERBTEC RF Amplifier fault 88. Fan air problem. Possible defective fans, Power Control Board, sensor, or cables.</div>
+</section>
+<section id="BM2225668"><a name="BM2225668"></a>
+<h2>2225668</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_89</div>
+<div class="txt">ERBTEC RF Amplifier fault 89. Tube air problems. Possible defective blower, Power Control Board, sensor, and cables.</div>
+</section>
+<section id="BM2225669"><a name="BM2225669"></a>
+<h2>2225669</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_90</div>
+<div class="txt">ERBTEC RF Amplifier fault 90. IPA idle current fault. The IPA tube cannot produce any idle current. Possible defective IPA tube, bad cable, power control board, or bad A/D on processor board.</div>
+</section>
+<section id="BM2225670"><a name="BM2225670"></a>
+<h2>2225670</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_91</div>
+<div class="txt">ERBTEC RF Amplifier fault 91. PA idle current fault. The PA tube cannot produce any idle current. Possible defective PA tube, bad cable, power control board, or bad A/D on processor board.</div>
+</section>
+<section id="BM2225671"><a name="BM2225671"></a>
+<h2>2225671</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_92</div>
+<div class="txt">ERBTEC RF Amplifier fault 92. Low line voltage shutdown. The Processor Board detected a 20%% drop in voltage of the unregulated +12V power supply. Possible low line voltage or a defective Processor Board.</div>
+</section>
+<section id="BM2225672"><a name="BM2225672"></a>
+<h2>2225672</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_93</div>
+<div class="txt">ERBTEC RF Amplifier fault 93. Processor Board watchdog failed to fire. Possible defective Processor Board.</div>
+</section>
+<section id="BM2225673"><a name="BM2225673"></a>
+<h2>2225673</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_94</div>
+<div class="txt">ERBTEC RF Amplifier fault 94. Processor Board Watchdog intercepted program. Possible defective Processor Board.</div>
+</section>
+<section id="BM2225674"><a name="BM2225674"></a>
+<h2>2225674</h2>
+<div class="sym">ERROR: EM_SPI_ERB_ERROR_95</div>
+<div class="txt">ERBTEC RF Amplifier fault 95. High speed blanker box activated. Transient RF pulses greater than 3.5 KW detected.</div>
+</section>
+<section id="BM2225680"><a name="BM2225680"></a>
+<h2>2225680</h2>
+<div class="sym">ERROR: EM_SPI_MDS_RCV_ERR_BROK</div>
+<div class="txt">SPI MDS link failure. MDS received an MDS broke error packet.</div>
+</section>
+<section id="BM2225681"><a name="BM2225681"></a>
+<h2>2225681</h2>
+<div class="sym">ERROR: EM_SPI_GRAD_MON_CLOCK_STOP</div>
+<div class="txt">IPG Hardware Error - Gradients timed out.\b\ A gradient clock stop error occurred. The SPG stopped receiving gradient data from the IPG during the scan.</div>
+</section>
+<section id="BM2225682"><a name="BM2225682"></a>
+<h2>2225682</h2>
+<div class="sym">ERROR: EM_SPI_BORE_TEMP_TRIP_1</div>
+<div class="txt">The patient comfort level is warmer than normal.\b\ The patient may be uncomfortable. Further increases in the temperature will inhibit scanning. Verify:
+1. Patient fan is ON.
+2. Room temperature is normal.
+3. Air flow through the bore is unobstructed.</div>
+</section>
+<section id="BM2225683"><a name="BM2225683"></a>
+<h2>2225683</h2>
+<div class="sym">ERROR: EM_SPI_BORE_TEMP_RETURN_0</div>
+<div class="txt">The patient comfort level has returned to normal.</div>
+</section>
+<section id="BM2225684"><a name="BM2225684"></a>
+<h2>2225684</h2>
+<div class="sym">ERROR: EM_SPI_BORE_TEMP_TRIP_2</div>
+<div class="txt">Scan inhibited. Patient comfort sensor trip.\b\ To return to scanning, verify:
+1. Patient fan is ON.
+2. Scan room temperature is normal.
+3. Air flow through the bore is unobstructed.
+4. Gradient Cooling fan is normal.
+5. BRM heat exchanger is normal.</div>
+</section>
+<section id="BM2225685"><a name="BM2225685"></a>
+<h2>2225685</h2>
+<div class="sym">ERROR: EM_SPI_BORE_TEMP_RETURN_1</div>
+<div class="txt">New scans can be initiated, but the patient comfort level is still warmer than normal.</div>
+</section>
+<section id="BM2225686"><a name="BM2225686"></a>
+<h2>2225686</h2>
+<div class="sym">ERROR: EM_SPI_BORE_TEMP_UNDERRANGE</div>
+<div class="txt">The bore temperature reading is low. Check for low room temperature, a short in the sensor, sensor cable, or connector, or a problem with the piggy-back amplifier board in the SRI.</div>
+</section>
+<section id="BM2225687"><a name="BM2225687"></a>
+<h2>2225687</h2>
+<div class="sym">ERROR: EM_SPI_BORE_TEMP_OVERRANGE</div>
+<div class="txt">Hardware Failure: the bore temperature reading is invalid. It is reading too high. Check for an open in the sensor, sensor cable, or connector, or a problem with the amplifier board on the SRI.</div>
+</section>
+<section id="BM2225688"><a name="BM2225688"></a>
+<h2>2225688</h2>
+<div class="sym">ERROR: EM_SENSOR_CONFIG_ERR</div>
+<div class="txt">Dual Bore Temperature Sensor is not detected. It is required for systems with 8915 gradient drivers. Scanning is disabled.\b\ Please install a Dual Bore Temperature Sensor and TPS Reset.</div>
+</section>
+<section id="BM2225690"><a name="BM2225690"></a>
+<h2>2225690</h2>
+<div class="sym">ERROR: EM_SPI_MDS_ECHO_RX</div>
+<div class="txt">MDS link failure. A receive error was detected on the echo of an MDS transmission. Check the connections and signal level on the MDS fiber optic link.
+Timer: %d UART status: 0x%02X Received byte: 0x%02X</div>
+</section>
+<section id="BM2225691"><a name="BM2225691"></a>
+<h2>2225691</h2>
+<div class="sym">ERROR: EM_SPI_MDS_ECHO_TIME</div>
+<div class="txt">MDS link failure. The IPG failed to receive an MDS transmission echo. If the link is broken, a separate error message will be logged. If not, a spurious error occurred.
+Timer: %d Transmitted byte: 0x%02X</div>
+</section>
+<section id="BM2225692"><a name="BM2225692"></a>
+<h2>2225692</h2>
+<div class="sym">ERROR: EM_SPI_MDS_RESP_RX</div>
+<div class="txt">MDS link failure. A receive error was detected on an MDS response. Check the connections and signal level on the MDS fiber optic link.
+Timer: %d UART status: 0x%02X Received byte: 0x%02X</div>
+</section>
+<section id="BM2225693"><a name="BM2225693"></a>
+<h2>2225693</h2>
+<div class="sym">ERROR: EM_SPI_MDS_RESP_TIME</div>
+<div class="txt">MDS link failure. An MDS device failed to respond to IPG. If the link is broken, a separate error message will be logged. If not, a spurious error occurred.
+Timer: %d MDS header: 0x%02X -(00/10 = Grad, 01/11 = RF Cabinet) MDS opcode: 0x%02X</div>
+</section>
+<section id="BM2225694"><a name="BM2225694"></a>
+<h2>2225694</h2>
+<div class="sym">ERROR: EM_SPI_MDS_LOST_RX</div>
+<div class="txt">MDS link failure. A response packet was lost due to a UART receive error. If the link is broken, a separate error message will be logged.
+Timer: %d First response byte: 0x%02X Second response byte: 0x%02X</div>
+</section>
+<section id="BM2225695"><a name="BM2225695"></a>
+<h2>2225695</h2>
+<div class="sym">ERROR: EM_SPI_MDS_INCOMP_ERR</div>
+<div class="txt">MDS link failure. An MDS peripheral indicated an error but did not send an error code. If the link is broken, a separate error message will be logged. If not, a spurious error occurred.
+Timer: %d MDS peripheral address: 0x%02X</div>
+</section>
+<section id="BM2225696"><a name="BM2225696"></a>
+<h2>2225696</h2>
+<div class="sym">ERROR: EM_SPI_MDS_RETRY_ECHO_RX</div>
+<div class="txt">MDS link failure. A receive error was detected on the echo of an MDS retry transmission. Check the connections and signal level on the MDS fiber optic link.
+Timer: %d UART status: 0x%02X Received byte: 0x%02X</div>
+</section>
+<section id="BM2225697"><a name="BM2225697"></a>
+<h2>2225697</h2>
+<div class="sym">ERROR: EM_SPI_MDS_RETRY_ECHO_TIME</div>
+<div class="txt">MDS link failure. The IPG failed to receive an MDS transmission echo on a second try. If the link is broken, a separate error message will be logged. If not, a spurious error occurred.
+Timer: %d Transmitted byte: 0x%02X</div>
+</section>
+<section id="BM2225698"><a name="BM2225698"></a>
+<h2>2225698</h2>
+<div class="sym">ERROR: EM_SPI_MDS_RETRY_RESP_RX</div>
+<div class="txt">MDS link failure. A receive error was detected on an MDS response on a retry. Check the connections and signal level on the MDS fiber optic link.
+Timer: %d UART status: 0x%02X Received byte: 0x%02X</div>
+</section>
+<section id="BM2225699"><a name="BM2225699"></a>
+<h2>2225699</h2>
+<div class="sym">ERROR: EM_SPI_MDS_RETRY_RESP_TIME</div>
+<div class="txt">MDS link failure. An MDS device failed to respond to IPG on a 2nd try. If the link is broken, a separate error message will be logged. If not, a spurious error occurred.
+Timer: %d MDS header: 0x%02X -(00/10 = Grad, 01/11 = RF Cab) MDS opcode: 0x%02X</div>
+</section>
+<section id="BM2225700"><a name="BM2225700"></a>
+<h2>2225700</h2>
+<div class="sym">ERROR: EM_SPI_MDS_RETRY_LOST_RX</div>
+<div class="txt">MDS link failure. A response packet was lost due to a UART receive error on a retry. If the link is broken, a separate error message will be logged.
+Timer: %d First response byte: 0x%02X Second response byte: 0x%02X</div>
+</section>
+<section id="BM2225701"><a name="BM2225701"></a>
+<h2>2225701</h2>
+<div class="sym">ERROR: EM_SPI_MDS_UNEXPECTED_RX</div>
+<div class="txt">MDS link failure. Unexpected data was received on the MDS link. Check the connections and signal level on the MDS fiber optic link.
+Timer: %d UART status: 0x%02X Received byte: 0x%02X</div>
+</section>
+<section id="BM2225702"><a name="BM2225702"></a>
+<h2>2225702</h2>
+<div class="sym">ERROR: EM_SPI_MDS_RCV_ERR_BRK_0</div>
+<div class="txt">MDS link failure. The link appears to be broken between the IPG and the Gradient Subsystem. Check the connections and signal level of the MDS fiber optic link between the TYME II card and the Gradient Subsystem. Run MDS fiber optic link diagnostics.</div>
+</section>
+<section id="BM2225703"><a name="BM2225703"></a>
+<h2>2225703</h2>
+<div class="sym">ERROR: EM_SPI_MDS_RCV_ERR_BRK_1</div>
+<div class="txt">MDS link failure. The MDS fiber optic link appears to be broken between the Gradient and the RF cabinets. Check gradient cabinet power, fiber optic connections and signal level of fiber optic link. Run MDS fiber optic link diagnostics.</div>
+</section>
+<section id="BM2225704"><a name="BM2225704"></a>
+<h2>2225704</h2>
+<div class="sym">ERROR: EM_SPI_MDS_RCV_ERR_BRK_2</div>
+<div class="txt">MDS link failure. The MDS fiber optic link appears to be broken between the RF and System cabinets. Check RF cabinet power, fiber optic connections and signal level of the fiber optic link between cabinets. Run MDS fiber optic link diagnostics.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this is a Twin System and there are GSC errors occuring in the error log at about the same time as these MDS link errors then this may be a problem attributable to the GSC. In this case, please check the operation of the GSC before replacing any MDS-related hardware.</div>
+</section>
+<section id="BM2225705"><a name="BM2225705"></a>
+<h2>2225705</h2>
+<div class="sym">ERROR: EM_SPI_MDS_RCV_ERR_BRK_3</div>
+<div class="txt">MDS link failure. The MDS fiber optic link appears to be broken internal to the Systems Cabinet. Check RF/Pen Cabinet power, fiber optic connections and signal level of the fiber optic link between the cabinets. Run MDS fiber optic link diagnostics.</div>
+</section>
+<section id="BM2225707"><a name="BM2225707"></a>
+<h2>2225707</h2>
+<div class="sym">ERROR: EM_SPI_MDS_SPC_RCV_BAD_ADDRESS</div>
+<div class="txt">MDS link failure. The RF cabinet MDS peripheral board reported a bad address. Replace the RF MDS peripheral board.</div>
+</section>
+<section id="BM2225708"><a name="BM2225708"></a>
+<h2>2225708</h2>
+<div class="sym">ERROR: EM_SPI_MDS_LINK_ERROR</div>
+<div class="txt">MDS link failure. Please see log.</div>
+</section>
+<section id="BM2225709"><a name="BM2225709"></a>
+<h2>2225709</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_20</div>
+<div class="txt">RF Interface (RFI) General Overheating Fault. Possible causes: restricted air flow, or defective RFI.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The internal heat sensor in the RFI detected fault. Check fan, may be blocked or defective.</div>
+</section>
+<section id="BM2225710"><a name="BM2225710"></a>
+<h2>2225710</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_21</div>
+<div class="txt">RF Interface (RFI) Mismatch Fault. The Dump Resistor in the RFI has overheated. Possible causes: improper calibration, missing or improper cables between RFI and amplifier(s), defective RFI or defective TELI RF Amplifier(s).</div>
+<div class="lbl">Extended Error:</div><div class="txt">Improper cables expand on input and output stages of Amp Cables in and out of RF Amps. Small and large cables open or missing. Check RFI Phase Balance Calibration.</div>
+</section>
+<section id="BM2225711"><a name="BM2225711"></a>
+<h2>2225711</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_22</div>
+<div class="txt">TELI RF Amplifier 1 Cable Fault. The RF Interface (RFI) is reporting the cable is disconnected or defective between the RFI and the TELI RF Amplifier 1.</div>
+</section>
+<section id="BM2225712"><a name="BM2225712"></a>
+<h2>2225712</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_23</div>
+<div class="txt">TELI RF Amplifier 2 Cable Fault. The RF Interface (RFI) is reporting the cable is disconnected or defective between the RFI and the TELI RF Amplifier 2.</div>
+</section>
+<section id="BM2225713"><a name="BM2225713"></a>
+<h2>2225713</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_30</div>
+<div class="txt">Power Monitor 1 Fault. RF Transmit power has reached safety limit allowed for scan parameters and patient weight. Check patient weight entered.
+amplitude: %02d
+pulse width: %02d
+duty cycle: %02d %b This could also occur when power cycling SSM.</div>
+</section>
+<section id="BM2225714"><a name="BM2225714"></a>
+<h2>2225714</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_31</div>
+<div class="txt">Power Monitor 2 Fault. RF Transmit power has reached safety limit allowed for scan parameters and patient weight. Check patient weight entered.
+amplitude: %02d
+pulse width: %02d
+duty cycle: %02d %b This could also occur when power cycling SSM.</div>
+</section>
+<section id="BM2225715"><a name="BM2225715"></a>
+<h2>2225715</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_32</div>
+<div class="txt">RF Interface (RFI) High Voltage Relay Fault. Possible causes: RF Monitor Cable to System Support Module (SSM) is disconnected or defective. Note: This fault may occur in conjunction with a Power Monitor Fault or when power cycling the SSM.</div>
+<div class="lbl">Extended Error:</div><div class="txt">High voltage (is really emulated for Erbtec Amp) relay fault will occur with Power Monitor Faults.</div>
+</section>
+<section id="BM2225716"><a name="BM2225716"></a>
+<h2>2225716</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_41</div>
+<div class="txt">TELI RF Amplifier 1 Power Supply Fault. TELI Amplifier 1 indicates the main power supply is out of specification. Possible causes: bad capacitor, power amplifier stages, or power supply failure. See RF Amplifier Functional Checks.</div>
+<div class="lbl">Extended Error:</div><div class="txt">VDD faults on measure/output of (54V) power supply shorted capacitors.</div>
+</section>
+<section id="BM2225717"><a name="BM2225717"></a>
+<h2>2225717</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_48</div>
+<div class="txt">TELI RF Amplifier 1 Excessive Input Drive Fault. TELI Amplifier 1 detects input greater than 2.5dBm. Possible causes: RF Interface (RFI) miscalibration, defective exciter, or defective RF Amplifier 1.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check exciters signal level. If exciter levels are within specification, check gain adjustment on RFI is correct (within specifications). Refer to RF/PDU Functional Check procedures.</div>
+</section>
+<section id="BM2225718"><a name="BM2225718"></a>
+<h2>2225718</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_49</div>
+<div class="txt">TELI RF Amplifier 1 Overheat Fault. TELI Amplifier 1 reports the thermal switch has exceeded 80 degrees C. Possible causes: restricted air flow, blown fan fuse, defective fan, room environment out of specification or defective RF Amplifier 1.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check Fan Fuses on Amps.</div>
+</section>
+<section id="BM2225719"><a name="BM2225719"></a>
+<h2>2225719</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_4A</div>
+<div class="txt">TELI RF Amplifier 1 Peak Power Fault. TELI RF Amplifier 1 reports its peak power has exceeded 4.5kW. Possible causes: RF Interface (RFI) calibration, defective RFI output stage, defective Exciter or defective RF Amplifier 1.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check exciters signal level/gain adjustment on RFI is correct (within specs). Refer to procedure.</div>
+</section>
+<section id="BM2225720"><a name="BM2225720"></a>
+<h2>2225720</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_4B</div>
+<div class="txt">TELI RF Amplifier 1 Average Power Fault. TELI RF Amplifier 1 reports its average power has exceeded 450W. Possible causes: the PSD is exceeding the limits of the system, defective RF Interface (RFI) output stage, or defective RF Amplifier 1.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check exciters signal level. If exciter levels are within specification, check gain adjustment on RFI is correct (within specifications). Refer to RF/PDU Functional Check procedures.</div>
+</section>
+<section id="BM2225721"><a name="BM2225721"></a>
+<h2>2225721</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_4C</div>
+<div class="txt">TELI RF Amplifier 1 Voltage Standing Wave Ratio (VSWR) Fault. TELI RF Amplifier 1 reports a greater than 4:1 ratio. Possible causes: disconnected or defective output cable from RF Amplifier 1 to RF Interface (RFI), defective RFI or RF Amplifier 1.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Improper cables expand on output stages of Amp cables out of RF Amps.</div>
+</section>
+<section id="BM2225722"><a name="BM2225722"></a>
+<h2>2225722</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_4D</div>
+<div class="txt">TELI RF Amplifier 1 Gate Fault. TELI RF Amplifier 1 reports an unblank pulse width greater than 30ms. Possible causes: the PSD is exceeding the limits of the system, defective RF Interface (RFI) or defective RF Amplifier 1.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Look to ensure proper PSD is being used. If PSD is not the problem, perform RF Amplifier Functional Check procedure for RF/PDU Cabinet. If RF Amplifier is operating with in specification then perform RFI Functional Checks for RF/PDU Cabinet.</div>
+</section>
+<section id="BM2225723"><a name="BM2225723"></a>
+<h2>2225723</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_61</div>
+<div class="txt">TELI RF Amplifier 2 Power Supply Fault. TELI Amplifier 2 indicates the main power supply is out of specification. Possible causes: bad capacitor, power amplifier stages, or power supply failure. See RF Amplifier Functional Checks.</div>
+<div class="lbl">Extended Error:</div><div class="txt">VDD faults on measure/output of (54V) Power Supply shorted capacitors.</div>
+</section>
+<section id="BM2225724"><a name="BM2225724"></a>
+<h2>2225724</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_68</div>
+<div class="txt">TELI RF Amplifier 2 Excessive Input Drive Fault. TELI Amplifier 2 detects input greater than 2.5dBm. Possible causes: RF Interface (RFI) miscalibration, defective exciter, or defective RF Amplifier 2.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check exciters signal level. If exciter levels are within specification, check gain adjustment on RFI is correct (within specifications). Refer to RF/PDU Functional Check procedures.</div>
+</section>
+<section id="BM2225725"><a name="BM2225725"></a>
+<h2>2225725</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_69</div>
+<div class="txt">TELI RF Amplifier 2 Overheat Fault. TELI Amplifier 2 reports the thermal switch has exceeded 80 degrees C. Possible causes: restricted air flow, blown fan fuse, defective fan, room environment out of specification or defective RF Amplifier 2.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check Fan Fuses on Amps.</div>
+</section>
+<section id="BM2225726"><a name="BM2225726"></a>
+<h2>2225726</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_6A</div>
+<div class="txt">TELI RF Amplifier 2 Peak Power Fault. TELI RF Amplifier 2 reports its peak power has exceeded 4.5kW. Possible causes: RF Interface (RFI) calibration, defective RFI output stage, defective Exciter or defective RF Amplifier 2.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check exciters signal level/gain adjustment on RFI is correct(within specs). Refer to procedure.</div>
+</section>
+<section id="BM2225727"><a name="BM2225727"></a>
+<h2>2225727</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_6B</div>
+<div class="txt">TELI RF Amplifier 2 Average Power Fault. TELI RF Amplifier 2 reports its average power has exceeded 450W. Possible causes: the PSD is exceeding the limits of the system, defective RF Interface (RFI) output stage, or defective RF Amplifier 2.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check exciters signal level. If exciter levels are within specification, check gain adjustment on RFI is correct (within specifications). Refer to RF/PDU Functional Check procedures.</div>
+</section>
+<section id="BM2225728"><a name="BM2225728"></a>
+<h2>2225728</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_6C</div>
+<div class="txt">TELI RF Amplifier 2 Voltage Standing Wave Ratio (VSWR) Fault. TELI RF Amplifier 2 reports a greater than 4:1 ratio. Possible causes: disconnected or defective output cable from RF Amplifier 2 to RF Interface (RFI), defective RFI or RF Amplifier 2.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Improper cables expand on output stages of Amp cables out of RF Amps.</div>
+</section>
+<section id="BM2225729"><a name="BM2225729"></a>
+<h2>2225729</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_6D</div>
+<div class="txt">TELI RF Amplifier 2 Gate Fault. TELI RF Amplifier 2 reports an unblank pulse width greater than 30ms. Possible causes: the PSD is exceeding the limits of the system, defective RF Interface (RFI) or defective RF Amplifier 2.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Look to ensure proper PSD is being used. If PSD is not the problem, perform RF Amplifier Functional Check procedure for RF/PDU Cabinet. If RF Amplifier is operating with in specification then perform RFI Functional Checks for RF/PDU Cabinet.</div>
+</section>
+<section id="BM2225730"><a name="BM2225730"></a>
+<h2>2225730</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_40</div>
+<div class="txt">TELI RF Amplifier 1 Power Loss Fault. RF Interface (RFI) detects no power to TELI RF Amplifier 1. Possible cause: the breaker on the front of the RFI is turned off. If a cable fault is also reported, fixing the cable will probably fix this fault.</div>
+</section>
+<section id="BM2225731"><a name="BM2225731"></a>
+<h2>2225731</h2>
+<div class="sym">ERROR: EM_SPI_TELI_ERROR_60</div>
+<div class="txt">TELI RF Amplifier 2 Power Loss Fault. RF Interface (RFI) detects no power to TELI RF Amplifier 2. Possible cause: the breaker on the front of the RFI is turned off. If a cable fault is also reported, fixing the cable will probably fix this fault.</div>
+</section>
+<section id="BM2225732"><a name="BM2225732"></a>
+<h2>2225732</h2>
+<div class="sym">ERROR: EM_SPI_ANALOGIC_STRING</div>
+<div class="txt">Solid State Analogic</div>
+</section>
+<section id="BM2225733"><a name="BM2225733"></a>
+<h2>2225733</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_20</div>
+<div class="txt">RF Interface (RFI) General Overheating Fault. Possible causes: restricted air flow, or defective RFI.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The internal heat sensor in the RFI detected fault. Check fan, may be blocked or defective.</div>
+</section>
+<section id="BM2225734"><a name="BM2225734"></a>
+<h2>2225734</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_21</div>
+<div class="txt">RF Interface (RFI) Mismatch Fault. The Dump Resistor in the RFI has overheated. Possible causes: improper calibration, missing or improper cables between RFI and amplifier(s), defective RFI or defective Analogic RF Amplifier(s).</div>
+<div class="lbl">Extended Error:</div><div class="txt">Improper cables expand on input and output stages of Amp Cables in and out of RF Amps. Small and large cables open or missing. Check RFI Phase Balance Calibration.</div>
+</section>
+<section id="BM2225735"><a name="BM2225735"></a>
+<h2>2225735</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_22</div>
+<div class="txt">Analogic RF Amplifier 1 Cable Fault. The RF Interface (RFI) is reporting the cable is disconnected or defective between the RFI and the Analogic RF Amplifier 1.</div>
+</section>
+<section id="BM2225736"><a name="BM2225736"></a>
+<h2>2225736</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_23</div>
+<div class="txt">Analogic RF Amplifier 2 Cable Fault. The RF Interface (RFI) is reporting the cable is disconnected or defective between the RFI and the Analogic RF Amplifier 2.</div>
+</section>
+<section id="BM2225737"><a name="BM2225737"></a>
+<h2>2225737</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_30</div>
+<div class="txt">Power Monitor 1 Fault. RF Transmit power has reached safety limit allowed for scan parameters and patient weight. Check patient weight entered.
+amplitude: %02d
+pulse width: %02d
+duty cycle: %02d %b This could also occur when power cycling SSM.</div>
+</section>
+<section id="BM2225738"><a name="BM2225738"></a>
+<h2>2225738</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_31</div>
+<div class="txt">Power Monitor 2 Fault. RF Transmit power has reached safety limit allowed for scan parameters and patient weight. Check patient weight entered.
+amplitude: %02d
+pulse width: %02d
+duty cycle: %02d %b This could also occur when power cycling SSM.</div>
+</section>
+<section id="BM2225739"><a name="BM2225739"></a>
+<h2>2225739</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_32</div>
+<div class="txt">RF Interface (RFI) High Voltage Relay Fault. Possible causes: RF Monitor Cable to System Support Module (SSM) is disconnected or defective. Note: This fault may occur in conjunction with a Power Monitor Fault or when power cycling the SSM.</div>
+<div class="lbl">Extended Error:</div><div class="txt">High voltage (is really emulated for Erbtec Amp) relay fault will occur with Power Monitor Faults.</div>
+</section>
+<section id="BM2225740"><a name="BM2225740"></a>
+<h2>2225740</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_40</div>
+<div class="txt">Analogic RF Amplifier 1 Power Loss Fault. RF Interface (RFI) detects no power to Analogic RF Amplifier 1. Possible cause: the breaker on the front of the RFI is turned off.</div>
+<div class="lbl">Extended Error:</div><div class="txt">RF Amplifier 1 breaker could be OFF or AC switch at rear of RF Amplifier may be in OFF position.</div>
+</section>
+<section id="BM2225741"><a name="BM2225741"></a>
+<h2>2225741</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_41</div>
+<div class="txt">Analogic RF Amplifier 1 Power Supply Fault. Analogic Amplifier 1 indicates the main power supply is out of specification. Possible causes: Supply feedback loop exceeds 2.5v, PS heat sink is overheated, Power supply FETS are shorted.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check fans, may be blocked or defective, Cabinet Filters need to be changed, or RF Amplifier 1 may be operating out of specification.</div>
+</section>
+<section id="BM2225742"><a name="BM2225742"></a>
+<h2>2225742</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_42</div>
+<div class="txt">Analogic RF Amplifier 1 Duty Cycle Fault. Unblank duty cycle exceeds 63%%.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify proper PSD is being used. If PSD is not the problem, perform RF Amplifier Functional Check procedure for RF/PDU Cabinet. UNBLANK Pulse corrupted, check Tyme Board.</div>
+</section>
+<section id="BM2225743"><a name="BM2225743"></a>
+<h2>2225743</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_43</div>
+<div class="txt">Analogic RF Amplifier 1 I Peak Overloaded Fault. Instantaneous peak drain current of RF devices exceeds 120 amps.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify proper PSD is being used. If PSD is not the problem, perform RF Amplifier Functional Check procedure for RF/PDU Cabinet. RF Amplifier 1 may be operating out of specification.</div>
+</section>
+<section id="BM2225744"><a name="BM2225744"></a>
+<h2>2225744</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_44</div>
+<div class="txt">Analogic RF Amplifier 1 Device Fault 44. RF FET device is shorted. Replace amplifier.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Replace Amplifier</div>
+</section>
+<section id="BM2225745"><a name="BM2225745"></a>
+<h2>2225745</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_45</div>
+<div class="txt">Analogic RF Amplifier 1 High Voltage Low Fault. Analogic Amplifier 1 power supply voltage dropped below 120V DC.(150V nominal).</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify proper PSD is being used. If PSD is not the problem, perform RF Amplifier Functional Check procedure for RF/PDU Cabinet.</div>
+</section>
+<section id="BM2225746"><a name="BM2225746"></a>
+<h2>2225746</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_46</div>
+<div class="txt">Analogic RF Amplifier 1 High Voltage High Fault. Analogic Amplifier 1 power supply voltage went above 170V DC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify proper PSD is being used. If PSD is not the problem, perform RF Amplifier Functional Check procedure for RF/PDU Cabinet.</div>
+</section>
+<section id="BM2225747"><a name="BM2225747"></a>
+<h2>2225747</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_49</div>
+<div class="txt">Analogic RF Amplifier 1 Overheat Fault. Analogic Amplifier 1 reports the thermal switch has exceeded 80 degrees C. Possible causes: restricted air flow, blown fan fuse, defective fan, room environment out of spec or defective RF Amplifier 1.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check fans, may be blocked or defective, Cabinet Filters need to be changed, or RF Amplifier 1 may be operating out of specification.</div>
+</section>
+<section id="BM2225748"><a name="BM2225748"></a>
+<h2>2225748</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_4A</div>
+<div class="txt">Analogic RF Amplifier 1 Peak Power Fault. Peak power from Analogic RF Amplifier 1 exceeds specification(69.5-69.8dbm). Possible causes: RF Interface (RFI) calibration, defective RFI output stage, defective Exciter or defective RF Amplifier 1.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check exciter signal Level/gain adjustment on RFI is within specification. Refer to procedure for RFI and RF Amplifier Functional Checks.</div>
+</section>
+<section id="BM2225749"><a name="BM2225749"></a>
+<h2>2225749</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_4B</div>
+<div class="txt">Analogic RF Amplifier 1 Average Power Fault. Analogic RF Amplifier 1 reports its average power has exceeded 1000W. Possible causes: the PSD exceeds system limits, defective RF Interface (RFI) output stage, or defective RF Amplifier 1.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check exciter signal Level/gain adjustment on RFI is within specification. Refer to procedure for RFI and RF Amplifier Functional Checks.</div>
+</section>
+<section id="BM2225750"><a name="BM2225750"></a>
+<h2>2225750</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_4C</div>
+<div class="txt">Analogic RF Amplifier 1 Voltage Standing Wave Ratio (VSWR) Fault. Analogic RF Amplifier 1 reflected power exceeds 2250W. Possible causes: disconnected or defective output cable from RF Amplifier 1 to RF Interface (RFI), defective RFI or RF Amp 1.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check RF Out (J4) cable is not disconnected or defective. Check cable lengths. Check connectors on RF Out (J4) cable.</div>
+</section>
+<section id="BM2225751"><a name="BM2225751"></a>
+<h2>2225751</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_4D</div>
+<div class="txt">Analogic RF Amplifier 1 Gate Fault. Analogic RF Amplifier 1 reports an unblank pulse width exceeding specification(62-68msec). Possible causes: the PSD is exceeding the limits of the system, defective RF Interface (RFI) or defective RF Amplifier 1.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify proper PSD is being used. If PSD is not the problem, perform RF Amplifier Functional Check procedure for RF/PDU Cabinet. UNBLANK Pulse corrupted.</div>
+</section>
+<section id="BM2225752"><a name="BM2225752"></a>
+<h2>2225752</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_4E</div>
+<div class="txt">Analogic RF Amplifier 1 Junction Temp Fault. Analogic RF Amplifier 1 device junction temperature &gt; 130deg C.</div>
+<div class="lbl">Extended Error:</div><div class="txt">RFI balance is out of specification, refer to the RF/PDU Maximum Power RF Output Setup And Calibration procedure.</div>
+</section>
+<section id="BM2225753"><a name="BM2225753"></a>
+<h2>2225753</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_60</div>
+<div class="txt">Analogic RF Amplifier 2 Power Loss Fault. RF Interface (RFI) detects no power to Analogic RF Amplifier 2. Possible cause: the breaker on the front of the RFI is turned off.</div>
+<div class="lbl">Extended Error:</div><div class="txt">RF Amplifier 2 breaker could be OFF or AC switch at rear of RF Amplifier may be in OFF position.</div>
+</section>
+<section id="BM2225754"><a name="BM2225754"></a>
+<h2>2225754</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_61</div>
+<div class="txt">Analogic RF Amplifier 2 Power Supply Fault. Analogic Amplifier 2 indicates the main power supply is out of specification. Possible causes: Supply feedback loop exceeds 2.5v, PS heat sink is overheated, Power supply FETS are shorted.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check fans, may be blocked or defective, Cabinet Filters need to be changed, or RF Amplifier 1 may be operating out of specification.</div>
+</section>
+<section id="BM2225755"><a name="BM2225755"></a>
+<h2>2225755</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_62</div>
+<div class="txt">Analogic RF Amplifier 2 Duty Cycle Fault. Unblank duty cycle exceeds 63%%.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify proper PSD is being used. If PSD is not the problem, perform RF Amplifier Functional Check procedure for RF/PDU Cabinet. UNBLANK Pulse corrupted, check Tyme Board.</div>
+</section>
+<section id="BM2225756"><a name="BM2225756"></a>
+<h2>2225756</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_63</div>
+<div class="txt">Analogic RF Amplifier 2 I Peak Overloaded Fault. Instantaneous peak drain current of RF devices exceeds 120 amps.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify proper PSD is being used. If PSD is not the problem, perform RF Amplifier Functional Check procedure for RF/PDU Cabinet. RF Amplifier 2 may be operating out of specification.</div>
+</section>
+<section id="BM2225757"><a name="BM2225757"></a>
+<h2>2225757</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_64</div>
+<div class="txt">Analogic RF Amplifier 2 Device Fault 64. RF FET device is shorted. Replace amplifier.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Replace Amplifier.</div>
+</section>
+<section id="BM2225758"><a name="BM2225758"></a>
+<h2>2225758</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_65</div>
+<div class="txt">Analogic RF Amplifier 2 High Voltage Low Fault. Analogic Amplifier 2 power supply voltage dropped below 120V DC.(150V nominal).</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify proper PSD is being used. If PSD is not the problem, perform RF Amplifier Functional Check procedure for RF/PDU Cabinet.</div>
+</section>
+<section id="BM2225759"><a name="BM2225759"></a>
+<h2>2225759</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_66</div>
+<div class="txt">Analogic RF Amplifier 2 High Voltage High Fault. Analogic Amplifier 2 power supply voltage went above 170V DC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify proper PSD is being used. If PSD is not the problem, perform RF Amplifier Functional Check procedure for RF/PDU Cabinet.</div>
+</section>
+<section id="BM2225760"><a name="BM2225760"></a>
+<h2>2225760</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_69</div>
+<div class="txt">Analogic RF Amplifier 2 Overheat Fault. Analogic Amplifier 2 reports the thermal switch has exceeded 80 degrees C. Possible causes: restricted air flow, blown fan fuse, defective fan, room environment out of spec or defective RF Amplifier 2.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check fans, may be blocked or defective, Cabinet Filters need to be changed, or RF Amplifier 2 may be operating out of specification.</div>
+</section>
+<section id="BM2225761"><a name="BM2225761"></a>
+<h2>2225761</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_6A</div>
+<div class="txt">Analogic RF Amplifier 2 Peak Power Fault. Peak power from Analogic RF Amplifier 2 exceeds specification(69.5-69.8dbm). Possible causes: RF Interface (RFI) calibration, defective RFI output stage, defective Exciter or defective RF Amplifier 2.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check exciter signal Level/gain adjustment on RFI is within specification. Refer to procedure for RFI and RF Amplifier Functional Checks.</div>
+</section>
+<section id="BM2225762"><a name="BM2225762"></a>
+<h2>2225762</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_6B</div>
+<div class="txt">Analogic RF Amplifier 2 Average Power Fault. Analogic RF Amplifier 2 reports its average power has exceeded 1000W. Possible causes: the PSD exceeds system limits, defective RF Interface (RFI) output stage, or defective RF Amplifier 2.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check exciter signal Level/gain adjustment on RFI is within specification. Refer to procedure for RFI and RF Amplifier Functional Checks.</div>
+</section>
+<section id="BM2225763"><a name="BM2225763"></a>
+<h2>2225763</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_6C</div>
+<div class="txt">Analogic RF Amplifier 2 Voltage Standing Wave Ratio (VSWR) Fault. Analogic RF Amplifier 2 reflected power exceeds 2250W. Possible causes: disconnected or defective output cable from RF Amplifier 2 to RF Interface (RFI), defective RFI or RF Amp 2.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check RF Out (J4) cable is not disconnected or defective. Check cable lengths. Check connectors on RF Out (J4) cable.</div>
+</section>
+<section id="BM2225764"><a name="BM2225764"></a>
+<h2>2225764</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_6D</div>
+<div class="txt">Analogic RF Amplifier 2 Gate Fault. Analogic RF Amplifier 2 reports an unblank pulse width exceeding specification(62-68msec). Possible causes: the PSD is exceeding the limits of the system, defective RF Interface (RFI) or defective RF Amplifier 2.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify proper PSD is being used. If PSD is not the problem, perform RF Amplifier Functional Check procedure for RF/PDU Cabinet. UNBLANK Pulse corrupted.</div>
+</section>
+<section id="BM2225765"><a name="BM2225765"></a>
+<h2>2225765</h2>
+<div class="sym">ERROR: EM_SPI_AN_ERROR_6E</div>
+<div class="txt">Analogic RF Amplifier 2 Junction Temp Fault. Analogic RF Amplifier 2 device junction temperature &gt; 130deg C.</div>
+<div class="lbl">Extended Error:</div><div class="txt">RFI balance is out of specification, refer to the RF/PDU Maximum Power RF Output Setup And Calibration procedure.</div>
+</section>
+<section id="BM2225766"><a name="BM2225766"></a>
+<h2>2225766</h2>
+<div class="sym">ERROR: EM_SPI_PM_HARDWARE</div>
+<div class="txt">Possible power monitor hardware failure: power sensed with monitor blanked, DC rail to power monitor, or +15V sense failed.</div>
+</section>
+<section id="BM2225767"><a name="BM2225767"></a>
+<h2>2225767</h2>
+<div class="sym">ERROR: EM_SPI_PM_UNKNOWN_FAULT</div>
+<div class="txt">Power Monitor Tripped with undetermined cause.</div>
+</section>
+<section id="BM2225768"><a name="BM2225768"></a>
+<h2>2225768</h2>
+<div class="sym">ERROR: EM_SPI_PM_OLD_PM</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2225769"><a name="BM2225769"></a>
+<h2>2225769</h2>
+<div class="sym">ERROR: EM_SPI_PM_OLD_PM_SPECTRO</div>
+<div class="txt">Power Monitor may have tripped due to the Spectro RF Amp being powered off. Check Spectro RF Amp power, or reconfigure as a non-Spectro system and reboot the system.</div>
+</section>
+<section id="BM2225770"><a name="BM2225770"></a>
+<h2>2225770</h2>
+<div class="sym">ERROR: EM_SPI_PM_HARDWARE_SPECTRO</div>
+<div class="txt">Possible power monitor hardware failure: power sensed with monitor blanked, DC rail to power monitor, or +15V sense failed. Spectro RF may be powered off. Check Spectro RF Amp power, or reconfigure as a non-Spectro system and reboot the system.</div>
+</section>
+<section id="BM2225778"><a name="BM2225778"></a>
+<h2>2225778</h2>
+<div class="sym">ERROR: EM_SPU_SPI_IF_DMA_CTRLR</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. DMA controller did not operate correctly or timer did not fire.</div>
+</section>
+<section id="BM2225779"><a name="BM2225779"></a>
+<h2>2225779</h2>
+<div class="sym">ERROR: EM_SPU_SPI_IF_NO_RESPONSE</div>
+<div class="txt">IPG Communication Error. SPI is not responding to SPU display requests. This could be caused by a faulty SPU / SPI interface or by an internal software error. Number of failures recorded = %d</div>
+</section>
+<section id="BM2225780"><a name="BM2225780"></a>
+<h2>2225780</h2>
+<div class="sym">ERROR: EM_SPU_DIS_HPC_OPCD</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary.
+Invalid display opcode value. Value = %d.</div>
+</section>
+<section id="BM2225781"><a name="BM2225781"></a>
+<h2>2225781</h2>
+<div class="sym">ERROR: EM_SPU_DIS_CAR_LEAD_NUMBER</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. Invalid lead number to display was read from the cardiac process.
+Lead number = %d.</div>
+</section>
+<section id="BM2225782"><a name="BM2225782"></a>
+<h2>2225782</h2>
+<div class="sym">ERROR: EM_SPU_DIS_CAR_SELECTION</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. Reception of an invalid cardiac assignment from HPC. Value = %d.</div>
+</section>
+<section id="BM2225783"><a name="BM2225783"></a>
+<h2>2225783</h2>
+<div class="sym">ERROR: EM_SPU_DIS_RES_SELECTION</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. Invalid respiratory display assignment received from HPC. Value = %d.</div>
+</section>
+<section id="BM2225784"><a name="BM2225784"></a>
+<h2>2225784</h2>
+<div class="sym">ERROR: EM_SPU_DIS_AUX_SELECTION</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. Invalid auxiliary display assignment received from HPC. Value = %d.</div>
+</section>
+<section id="BM2225785"><a name="BM2225785"></a>
+<h2>2225785</h2>
+<div class="sym">ERROR: EM_SPU_DIS_CAR_SWEEP_RATE</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. Invalid cardiac sweep rate received from HPC. Value = %d.</div>
+</section>
+<section id="BM2225786"><a name="BM2225786"></a>
+<h2>2225786</h2>
+<div class="sym">ERROR: EM_SPU_DIS_RES_SWEEP_RATE</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. Invalid respiratory sweep rate received from HPC. Value = %d.</div>
+</section>
+<section id="BM2225787"><a name="BM2225787"></a>
+<h2>2225787</h2>
+<div class="sym">ERROR: EM_SPU_DIS_ECG_HIST_SWP_RATE</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. Invalid ECG histogram sweep rate received from HPC. Value = %d.</div>
+</section>
+<section id="BM2225788"><a name="BM2225788"></a>
+<h2>2225788</h2>
+<div class="sym">ERROR: EM_SPU_DIS_AUX_DEFAULT_SWP_RATE</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. Invalid sweep rate received from HPC for aux. general purpose or resp phase.
+Value = %d.</div>
+</section>
+<section id="BM2225789"><a name="BM2225789"></a>
+<h2>2225789</h2>
+<div class="sym">ERROR: EM_SPU_DIS_RES_BUILD</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. An error occurred in the building of the respiratory data packet.</div>
+</section>
+<section id="BM2225790"><a name="BM2225790"></a>
+<h2>2225790</h2>
+<div class="sym">ERROR: EM_SPU_DIS_AUX_BUILD</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. An error occurred in the building of the respiratory phase or general purpose data packet.</div>
+</section>
+<section id="BM2225791"><a name="BM2225791"></a>
+<h2>2225791</h2>
+<div class="sym">ERROR: EM_SPU_DIS_WIND_TRIGGERS</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. Invalid percentage of windowed triggers reported. Value = %d.</div>
+</section>
+<section id="BM2225792"><a name="BM2225792"></a>
+<h2>2225792</h2>
+<div class="sym">ERROR: EM_SPU_DIS_CAR_HEART_RATE</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary.
+Invalid heart rate reported. Value = %d.</div>
+</section>
+<section id="BM2225793"><a name="BM2225793"></a>
+<h2>2225793</h2>
+<div class="sym">ERROR: EM_SPU_DIS_TIMER0_COUNT</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. Timer0 not running correctly.</div>
+</section>
+<section id="BM2225794"><a name="BM2225794"></a>
+<h2>2225794</h2>
+<div class="sym">ERROR: EM_SPU_DIS_SPI_NO_SYNC</div>
+<div class="txt">SPU-SPI initialization failed - SPI did not synchronize with the SPU. Possible hardware problem with SPU-SPI DPR, or download failure, or SPI or SPU software failure.</div>
+</section>
+<section id="BM2225795"><a name="BM2225795"></a>
+<h2>2225795</h2>
+<div class="sym">ERROR: EM_SPU_DIS_CAR_TRIGLEVEL</div>
+<div class="txt">Internal software Error. A reset of TPS may be necessary.
+Invalid trigger level reported. Value = %d.</div>
+</section>
+<section id="BM2225796"><a name="BM2225796"></a>
+<h2>2225796</h2>
+<div class="sym">ERROR: EM_SPU_DIS_UNK_TIME_STATE</div>
+<div class="txt">Internal software error. A reset of TPS may be necessary. Unrecognized Scan Time state encountered by the SPU.
+Value = %d.</div>
+</section>
+<section id="BM2225820"><a name="BM2225820"></a>
+<h2>2225820</h2>
+<div class="sym">ERROR: EM_SPU_RES_INVAL_MODE_RCVD</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. Invalid respiratory mode read out of Dual ported RAM from the PSD. Value = %d.</div>
+</section>
+<section id="BM2225821"><a name="BM2225821"></a>
+<h2>2225821</h2>
+<div class="sym">ERROR: EM_SPU_RES_INVAL_FIFO_SIZE</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. Invalid fifo size read out of Dual ported RAM from the PSD. Value = %d.</div>
+</section>
+<section id="BM2225822"><a name="BM2225822"></a>
+<h2>2225822</h2>
+<div class="sym">ERROR: EM_SPU_RES_INVAL_RATE_RCVD</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. Invalid update rate read out of Dual ported RAM from the PSD. Value = %d.</div>
+</section>
+<section id="BM2225823"><a name="BM2225823"></a>
+<h2>2225823</h2>
+<div class="sym">ERROR: EM_SPU_RES_INVAL_PHASE_CALC</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. Invalid phase value has been calculated. Value = %d.</div>
+</section>
+<section id="BM2225824"><a name="BM2225824"></a>
+<h2>2225824</h2>
+<div class="sym">ERROR: EM_SPU_RES_INVAL_POS_CALC</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. Invalid positional value has been calculated. Value = %d.</div>
+</section>
+<section id="BM2225825"><a name="BM2225825"></a>
+<h2>2225825</h2>
+<div class="sym">ERROR: EM_SPU_CMON_INVAL_OFFSET</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. Invalid CMON offset read from the PSD. Value = %d, should be [%d,%d].</div>
+</section>
+<section id="BM2225826"><a name="BM2225826"></a>
+<h2>2225826</h2>
+<div class="sym">ERROR: EM_SPU_CMON_INVAL_HPERIODS</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. Invalid no. of CMON heart periods to average read out of DPR from the PSD.
+Value = %d, should be [%d,%d].</div>
+</section>
+<section id="BM2225827"><a name="BM2225827"></a>
+<h2>2225827</h2>
+<div class="sym">ERROR: EM_SPU_RES_INVAL_PKT</div>
+<div class="txt">An invalid packet from HPC was received by the SPU Resp process. Likely programming error. Opcode is %d.</div>
+</section>
+<section id="BM2225850"><a name="BM2225850"></a>
+<h2>2225850</h2>
+<div class="sym">ERROR: EM_SPU_CAR_INVAL_PAC_FILTER</div>
+<div class="txt">An invalid selection of PAC Cardiac Filter has been detected by the SPU CARDIAC process. The invalid selection is %d.</div>
+</section>
+<section id="BM2225930"><a name="BM2225930"></a>
+<h2>2225930</h2>
+<div class="sym">ERROR: EM_SPU_OS_DISP_NO_RESPONSE</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. SPU Display Process not responding to IMP commands. Command = %d.</div>
+</section>
+<section id="BM2225931"><a name="BM2225931"></a>
+<h2>2225931</h2>
+<div class="sym">ERROR: EM_SPU_OS_NO_RESPONSE</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. SPU Operating System not responding to IMP commands. Command = %d.</div>
+</section>
+<section id="BM2225932"><a name="BM2225932"></a>
+<h2>2225932</h2>
+<div class="sym">ERROR: EM_SPU_OS_CARD_NO_RESPONSE</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. SPU Cardiac Process not responding to IMP commands. Command = %d.</div>
+</section>
+<section id="BM2225933"><a name="BM2225933"></a>
+<h2>2225933</h2>
+<div class="sym">ERROR: EM_SPU_OS_INPUT_QUEUE_FULL</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. IMP to SPU input queue is full.</div>
+</section>
+<section id="BM2225934"><a name="BM2225934"></a>
+<h2>2225934</h2>
+<div class="sym">ERROR: EM_SPU_OS_UNREC_CMD_FROM_IMP</div>
+<div class="txt">Internal Software Error. A reset of TPS may be necessary. IMP to SPU unrecognized command received. Command = %d.</div>
+</section>
+<section id="BM2225935"><a name="BM2225935"></a>
+<h2>2225935</h2>
+<div class="sym">ERROR: EM_SPU_OS_PAC_DEAD_LOG</div>
+<div class="txt">The PAC does not respond. Check PAC power and fiberoptic connections, run PAC diags. This error condition adversely affects gated scans only.</div>
+</section>
+<section id="BM2225936"><a name="BM2225936"></a>
+<h2>2225936</h2>
+<div class="sym">ERROR: EM_SPU_OS_IMPIF_NO_RESPONSE</div>
+<div class="txt">Internal Software Error. IPG 020 did not respond to a packet request within %d msec.
+Packet with opcode = %d retransmitted, if continues replace IPG bd.</div>
+</section>
+<section id="BM2225937"><a name="BM2225937"></a>
+<h2>2225937</h2>
+<div class="sym">ERROR: EM_SPU_OS_DISABLE_GSCAN</div>
+<div class="txt">Scanning Disabled / Paused since no gating triggers are found.</div>
+</section>
+<section id="BM2225938"><a name="BM2225938"></a>
+<h2>2225938</h2>
+<div class="sym">ERROR: EM_SPU_OS_PACLINK_ERROR</div>
+<div class="txt">Suspect bad SPU to PAC fiber optic hardware link! Corrupted data detected. This error will produce poor gated scans until corrected! \vInsufficient light power output. Use the fiber optic light meter kit to measure the power (see service direction).</div>
+</section>
+<section id="BM2225939"><a name="BM2225939"></a>
+<h2>2225939</h2>
+<div class="sym">ERROR: EM_SPU_OS_PAC_RESET_NORESP</div>
+<div class="txt">The PAC did not respond correctly to a reset command from IPG. Check PAC power and fiberoptic connections, run PAC diags.</div>
+</section>
+<section id="BM2225940"><a name="BM2225940"></a>
+<h2>2225940</h2>
+<div class="sym">ERROR: EM_SPU_OS_PACII_ADVISORY</div>
+<div class="txt">The system is equipped with a PAC II acquisition module.</div>
+</section>
+<section id="BM2225941"><a name="BM2225941"></a>
+<h2>2225941</h2>
+<div class="sym">ERROR: EM_SPU_OS_PAC_MGR_STATE</div>
+<div class="txt">The SPU detected an invalid internal PAC Manager state. Likely program corruption or internal software error. State is %d. Recovery attempted, run Diagnostics!.</div>
+</section>
+<section id="BM2225942"><a name="BM2225942"></a>
+<h2>2225942</h2>
+<div class="sym">ERROR: EM_SPU_OS_PACI_ADVISORY</div>
+<div class="txt">PAC I detected. If the system is equipped with a PAC II, TPS Reset is advised. If this condition persists, check PAC power and fiberoptic connections, run PAC diags. This condition w/ a PAC II system, adversely affects gated scans only.</div>
+</section>
+<section id="BM2225943"><a name="BM2225943"></a>
+<h2>2225943</h2>
+<div class="sym">ERROR: EM_SPU_OS_PACII_ID_ADVISORY</div>
+<div class="txt">Communication error - missing opcode from PAC II to SPU. TPS reset is advised. If this condition persists, check PAC power and fiberoptic connections, run PAC diags. This error condition adversely affects gated scans only.</div>
+</section>
+<section id="BM2225944"><a name="BM2225944"></a>
+<h2>2225944</h2>
+<div class="sym">ERROR: EM_SPU_OS_INCONSISTENT_PAC_REV</div>
+<div class="txt">MRconfig.cfg and PAC HW report different PAC revs. Please verify that the pacType field in the MRconfig.cfg file matches the PAC HW rev number. If the config file is correct, check PAC power and fiberoptic connections; run PAC diags. TPS reset advised.</div>
+</section>
+<section id="BM2225945"><a name="BM2225945"></a>
+<h2>2225945</h2>
+<div class="sym">ERROR: EM_SPU_OS_MRCONFIG_WRONG_PAC_REV</div>
+<div class="txt">MRconfig.cfg and PAC HW report different PAC revs. Please verify that the pacType field in the MRconfig.cfg file matches the PAC HW rev number.</div>
+</section>
+<section id="BM2225970"><a name="BM2225970"></a>
+<h2>2225970</h2>
+<div class="sym">ERROR: EM_SPU_CAR_TRIGGERS_LOST</div>
+<div class="txt">No gating triggers were found.</div>
+</section>
+<section id="BM2225990"><a name="BM2225990"></a>
+<h2>2225990</h2>
+<div class="sym">ERROR: EM_SPU_CAR_TASK_OVERRUN</div>
+<div class="txt">Internal software error - Cardiac overrun on the SPU. Gating performance may be degraded.</div>
+</section>
+</body></html>

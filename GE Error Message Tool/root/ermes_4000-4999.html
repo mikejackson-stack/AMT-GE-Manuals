@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 4000-4999 (58)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 4000-4999 (58)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_5000-5999.html">5000-5999 &rarr;</a></nav></header>
+<section id="BM4000"><a name="BM4000"></a>
+<h2>4000</h2>
+<div class="sym">ERROR: EM_MSGHANDLER_NOSPACE</div>
+<div class="txt">The passed-in buffer is too small to hold the message.
+Buffer size (bytes): %d
+String length (bytes): %d
+Ermes number: %ld
+Text: %s</div>
+</section>
+<section id="BM4001"><a name="BM4001"></a>
+<h2>4001</h2>
+<div class="sym">ERROR: EM_MSGHANDLER_TOO_LONG</div>
+<div class="txt">Result string too long while formatting Ermes message #%u.</div>
+</section>
+<section id="BM4002"><a name="BM4002"></a>
+<h2>4002</h2>
+<div class="sym">ERROR: EM_MSGHANDLER_STRING_ADDR</div>
+<div class="txt">Error while formatting Ermes message #%u - string parameter points to illegal address.</div>
+</section>
+<section id="BM4003"><a name="BM4003"></a>
+<h2>4003</h2>
+<div class="sym">ERROR: EM_MSGHANDLER_BAD_ARGC</div>
+<div class="txt">Error while formatting Ermes message #%u - illegal character in arguments.</div>
+</section>
+<section id="BM4004"><a name="BM4004"></a>
+<h2>4004</h2>
+<div class="sym">ERROR: EM_MSGHANDLER_NO_BGET</div>
+<div class="txt">Unable to find Ermes message #%u while formatting Ermes message #%u.</div>
+</section>
+<section id="BM4005"><a name="BM4005"></a>
+<h2>4005</h2>
+<div class="sym">ERROR: EM_MSGHANDLER_SYNTAX</div>
+<div class="txt">Syntax error in Ermes message #%u.</div>
+</section>
+<section id="BM4006"><a name="BM4006"></a>
+<h2>4006</h2>
+<div class="sym">ERROR: EM_MSGHANDLER_SOFTERR</div>
+<div class="txt">Illegal transition while parsing Ermes message #%u.</div>
+</section>
+<section id="BM4007"><a name="BM4007"></a>
+<h2>4007</h2>
+<div class="sym">ERROR: EM_MSGHANDLER_BAD_CHAR</div>
+<div class="txt">Illegal character in Ermes message #%u.</div>
+</section>
+<section id="BM4008"><a name="BM4008"></a>
+<h2>4008</h2>
+<div class="sym">ERROR: EM_MSGHANDLER_FMT_LONG</div>
+<div class="txt">Conversion specification string too long for Ermes message #%u.</div>
+</section>
+<section id="BM4009"><a name="BM4009"></a>
+<h2>4009</h2>
+<div class="sym">ERROR: EM_EMF_NOT_FOUND</div>
+<div class="txt">The message key %ld was not found.</div>
+</section>
+<section id="BM4010"><a name="BM4010"></a>
+<h2>4010</h2>
+<div class="sym">ERROR: EM_EMF_OPEN_FAIL</div>
+<div class="txt">Unable to open Ermes message file.\n Path: %s</div>
+</section>
+<section id="BM4011"><a name="BM4011"></a>
+<h2>4011</h2>
+<div class="sym">ERROR: EM_EMF_ERMES_ERR</div>
+<div class="txt">Ermes error,\n key: %ld,\n error: %d.</div>
+</section>
+<section id="BM4012"><a name="BM4012"></a>
+<h2>4012</h2>
+<div class="sym">ERROR: EM_EMF_INCON</div>
+<div class="txt">The Ermes message file is inconsistent, it must be rebuilt.\f\ Detail: %ld %ld %d %d %d %ld</div>
+</section>
+<section id="BM4013"><a name="BM4013"></a>
+<h2>4013</h2>
+<div class="sym">ERROR: EM_EMF_IOACCESS</div>
+<div class="txt">I/O error accessing Ermes message file.
+Type: %s Offset: %ld errno: %d</div>
+</section>
+<section id="BM4014"><a name="BM4014"></a>
+<h2>4014</h2>
+<div class="sym">ERROR: EM_EMF_RPC_FAILED</div>
+<div class="txt">RPC connection to geSyslogd failed.
+error: %d
+errno: %d
+cf_stat: %d
+re_status: %d</div>
+</section>
+<section id="BM4015"><a name="BM4015"></a>
+<h2>4015</h2>
+<div class="sym">ERROR: EM_EMF_ASSERT_FAIL</div>
+<div class="txt">Assertion failed: process: %.80s file: %s line: %d</div>
+</section>
+<section id="BM4016"><a name="BM4016"></a>
+<h2>4016</h2>
+<div class="sym">ERROR: EM_GSD_LSEEK_LOC</div>
+<div class="txt">Unable to lseek() to requested offset in GE System Log.
+Offset: %d
+Filename: %s
+Errno: %d</div>
+</section>
+<section id="BM4017"><a name="BM4017"></a>
+<h2>4017</h2>
+<div class="sym">ERROR: EM_GSD_READ</div>
+<div class="txt">Unable to read() requested bytes from GE System Log.
+Number of bytes: %d
+Offset: %d
+Filename: %s
+Errno: %d</div>
+</section>
+<section id="BM4018"><a name="BM4018"></a>
+<h2>4018</h2>
+<div class="sym">ERROR: EM_GSD_WRITE</div>
+<div class="txt">Unable to write() requested bytes to GE System Log.
+Number of bytes: %d
+Offset: %d
+Filename: %s
+Errno: %d</div>
+</section>
+<section id="BM4019"><a name="BM4019"></a>
+<h2>4019</h2>
+<div class="sym">ERROR: EM_GSD_LSEEK_END</div>
+<div class="txt">Unable to lseek() to the end of the GE System Log.
+Filename: %s
+Errno: %d</div>
+</section>
+<section id="BM4020"><a name="BM4020"></a>
+<h2>4020</h2>
+<div class="sym">ERROR: EM_GSD_FTRUNCATE</div>
+<div class="txt">Unable to truncate the GE System Log.
+Requested file size: %d
+Filename: %s
+Errno: %d</div>
+</section>
+<section id="BM4021"><a name="BM4021"></a>
+<h2>4021</h2>
+<div class="sym">ERROR: EM_GSD_OPEN</div>
+<div class="txt">Unable to open the GE System Log.
+Filename: %s
+Errno: %d</div>
+</section>
+<section id="BM4022"><a name="BM4022"></a>
+<h2>4022</h2>
+<div class="sym">ERROR: EM_GSD_CLOSE</div>
+<div class="txt">Unable to close the GE System Log.
+Filename: %s
+Errno: %d</div>
+</section>
+<section id="BM4023"><a name="BM4023"></a>
+<h2>4023</h2>
+<div class="sym">ERROR: EM_GSD_RENAME</div>
+<div class="txt">Unable to rename the GE System Log.
+Old path name: %s
+New path name: %s
+Errno: %d</div>
+</section>
+<section id="BM4024"><a name="BM4024"></a>
+<h2>4024</h2>
+<div class="sym">ERROR: EM_GSD_PART_HEAD</div>
+<div class="txt">GE System Log consists only of a partial header record.
+Current size of file: %d
+Filename: %s</div>
+</section>
+<section id="BM4025"><a name="BM4025"></a>
+<h2>4025</h2>
+<div class="sym">ERROR: EM_GSD_SLOG_NOTRDY</div>
+<div class="txt">GE System Log not prepared for adding messages.
+Filename: %s
+Current size: %d</div>
+</section>
+<section id="BM4026"><a name="BM4026"></a>
+<h2>4026</h2>
+<div class="sym">ERROR: EM_GSD_CORRUPTED</div>
+<div class="txt">An error was found in the GE System Log. The GE System Log file was renamed and then a new log was created.
+Error: %d near offset: %d
+Original filename: %s
+Renamed filename: %s</div>
+</section>
+<section id="BM4027"><a name="BM4027"></a>
+<h2>4027</h2>
+<div class="sym">ERROR: EM_GSD_NOTHING_PRUNED</div>
+<div class="txt">Nothing was pruned from the GE System Log.
+Cutoff time: %.24s
+Current size: %d Requested maximum number of hours of history after pruning: %d
+Requested maximum file size after pruning: %d Kbytes
+Filename: %s</div>
+</section>
+<section id="BM4028"><a name="BM4028"></a>
+<h2>4028</h2>
+<div class="sym">ERROR: EM_GSD_PRUNED</div>
+<div class="txt">The GE System Log was pruned. The history appearing before the cutoff point has been removed.
+Cutoff point offset: %d
+Cutoff time: %.24s
+Original file size: %d
+Current size: %d
+Maximum hours: %d
+Maximum size: %d Kbytes
+Filename: %s</div>
+</section>
+<section id="BM4029"><a name="BM4029"></a>
+<h2>4029</h2>
+<div class="sym">ERROR: EM_GSD_WHY_GET_HERE</div>
+<div class="txt">This code was not expected to be executed.</div>
+</section>
+<section id="BM4030"><a name="BM4030"></a>
+<h2>4030</h2>
+<div class="sym">ERROR: EM_GSD_CANT_REPLY_RPC</div>
+<div class="txt">Unable to reply to RPC call.</div>
+</section>
+<section id="BM4031"><a name="BM4031"></a>
+<h2>4031</h2>
+<div class="sym">ERROR: EM_GSD_NO_CREATE_SVR</div>
+<div class="txt">Unable to create an RPC server.</div>
+</section>
+<section id="BM4032"><a name="BM4032"></a>
+<h2>4032</h2>
+<div class="sym">ERROR: EM_GSD_NO_REGISTER</div>
+<div class="txt">Unable to register GESYSLOG_PROG/GESYSLOG_VERS service.</div>
+</section>
+<section id="BM4033"><a name="BM4033"></a>
+<h2>4033</h2>
+<div class="sym">ERROR: EM_GSD_NEW_CREATE</div>
+<div class="txt">A new GE System Log was just created.
+Filename: %s</div>
+</section>
+<section id="BM4034"><a name="BM4034"></a>
+<h2>4034</h2>
+<div class="sym">ERROR: EM_GSD_ILLEGAL_CHAR</div>
+<div class="txt">An illegal character was changed to a blank in the preceding error message.
+Original character: %x (hex)
+Offset in message: %d</div>
+</section>
+<section id="BM4035"><a name="BM4035"></a>
+<h2>4035</h2>
+<div class="sym">ERROR: EM_GSD_ENDFILE_TRUNC</div>
+<div class="txt">The end of the GE System log was truncated because a partial message was detected.
+Original log size: %d bytes
+Size after truncation: %d bytes</div>
+</section>
+<section id="BM4036"><a name="BM4036"></a>
+<h2>4036</h2>
+<div class="sym">ERROR: EM_GSD_SLOG_FULL</div>
+<div class="txt">The GE System Log is full, unable to add message.
+File: %s Run \storelog\&quot; to free up disk space.&quot;</div>
+</section>
+<section id="BM4037"><a name="BM4037"></a>
+<h2>4037</h2>
+<div class="sym">ERROR: EM_GSD_MNOT_APPEND</div>
+<div class="txt">Unable to append message to GE System Log.
+File: %s
+Errno: %d</div>
+</section>
+<section id="BM4038"><a name="BM4038"></a>
+<h2>4038</h2>
+<div class="sym">ERROR: EM_GSD_MALLOC_FAIL</div>
+<div class="txt">Unable to allocate space for an RPC structure within the GE Syslog daemon.
+Structure type: %d</div>
+</section>
+<section id="BM4039"><a name="BM4039"></a>
+<h2>4039</h2>
+<div class="sym">ERROR: EM_GSD_MXHRS_RANGE</div>
+<div class="txt">The prunedLogTime value from the host configuration file is out of range.
+Value specified: %u hours
+Value used: %u hours</div>
+</section>
+<section id="BM4040"><a name="BM4040"></a>
+<h2>4040</h2>
+<div class="sym">ERROR: EM_GSD_MXSZ_RANGE</div>
+<div class="txt">The prunedLogSize value from the host configuration file is out of range.
+Value specified: %uk bytes
+Value used: %uk bytes</div>
+</section>
+<section id="BM4041"><a name="BM4041"></a>
+<h2>4041</h2>
+<div class="sym">ERROR: EM_GSD_MSG_PACK_BIG</div>
+<div class="txt">Text from message transport packet too large.</div>
+</section>
+<section id="BM4042"><a name="BM4042"></a>
+<h2>4042</h2>
+<div class="sym">ERROR: EM_GSD_NOSET_STATUSSEM</div>
+<div class="txt">Unable to set status semaphore.
+Semaphore Id: %xh Error #%d</div>
+</section>
+<section id="BM4043"><a name="BM4043"></a>
+<h2>4043</h2>
+<div class="sym">ERROR: EM_GSD_SEMGET_STATUS</div>
+<div class="txt">Unable to connect to status semaphore. Error #%d</div>
+</section>
+<section id="BM4044"><a name="BM4044"></a>
+<h2>4044</h2>
+<div class="sym">ERROR: EM_GSD_NOOPEN_LOG</div>
+<div class="txt">Unable to open GE System Log.
+File: %s
+Errno: %d</div>
+</section>
+<section id="BM4045"><a name="BM4045"></a>
+<h2>4045</h2>
+<div class="sym">ERROR: EM_GSD_SIG_RECEIVED</div>
+<div class="txt">Signal %d has been received a total of %d times.</div>
+</section>
+<section id="BM4046"><a name="BM4046"></a>
+<h2>4046</h2>
+<div class="sym">ERROR: EM_SLA_LSEEK</div>
+<div class="txt">lseek failed:
+file: %s
+offset: %lu
+errno: %d Unable to access the message log. To access the log, you must shut down and re-boot the system.</div>
+</section>
+<section id="BM4047"><a name="BM4047"></a>
+<h2>4047</h2>
+<div class="sym">ERROR: EM_SLA_READ</div>
+<div class="txt">read failed:
+file: %s
+offset: %lu
+size: %d
+errno: %d Unable to access the message log. To access the log, you must shut down and re-boot the system.</div>
+</section>
+<section id="BM4048"><a name="BM4048"></a>
+<h2>4048</h2>
+<div class="sym">ERROR: EM_SLA_OPEN</div>
+<div class="txt">Unable to open system log
+file: %s
+errno: %d Unable to access the message log. To access the log, you must shut down and re-boot the system.</div>
+</section>
+<section id="BM4049"><a name="BM4049"></a>
+<h2>4049</h2>
+<div class="sym">ERROR: EM_SLA_SOFTWARE</div>
+<div class="txt">Software Error. Exit product and re-boot the system to clear the error.</div>
+</section>
+<section id="BM4050"><a name="BM4050"></a>
+<h2>4050</h2>
+<div class="sym">ERROR: EM_SLA_NO_RECS</div>
+<div class="txt">Unable to find any messages matching viewing level criteria.</div>
+</section>
+<section id="BM4051"><a name="BM4051"></a>
+<h2>4051</h2>
+<div class="sym">ERROR: EM_SLA_CLOSE</div>
+<div class="txt">Unable to close system log file: %s errno = %d.</div>
+</section>
+<section id="BM4052"><a name="BM4052"></a>
+<h2>4052</h2>
+<div class="sym">ERROR: EM_SLA_FSTAT</div>
+<div class="txt">fstat failed:
+file: %s
+errno: %d Unable to access the message log. To access the log, you must shut down and re-boot the system.</div>
+</section>
+<section id="BM4053"><a name="BM4053"></a>
+<h2>4053</h2>
+<div class="sym">ERROR: EM_SLA_CRPT_RPC</div>
+<div class="txt">RPC connection to geSyslogd failed, error: %d, errno: %d.</div>
+</section>
+<section id="BM4054"><a name="BM4054"></a>
+<h2>4054</h2>
+<div class="sym">ERROR: EM_SLA_PRUNE_PROGRESS</div>
+<div class="txt">Prune in progress. To access the updated message log, select \Current Messages\&quot; and then select either \&quot;View Log Left\&quot; or \&quot;View Log Right\&quot;.&quot;</div>
+</section>
+<section id="BM4055"><a name="BM4055"></a>
+<h2>4055</h2>
+<div class="sym">ERROR: EM_SLA_LOG_STATE</div>
+<div class="txt">The log being viewed was in an invalid state, which is state: %s. The log may have been renamed due to some other process detecting a problem. To access the updated log, select \Current Messages\&quot; and then either \&quot;View Log Left\&quot; or \&quot;View Log Right\&quot;.&quot;</div>
+</section>
+<section id="BM4056"><a name="BM4056"></a>
+<h2>4056</h2>
+<div class="sym">ERROR: EM_VLG_PRUNE_PROGRESS</div>
+<div class="txt">Prune in progress. To access the updated message log, type \e&lt;enter&gt;\&quot; to exit and then type \&quot;viewLog&lt;enter&gt;\&quot; to re-enter viewLog.&quot;</div>
+</section>
+<section id="BM4057"><a name="BM4057"></a>
+<h2>4057</h2>
+<div class="sym">ERROR: EM_VLG_LOG_STATE</div>
+<div class="txt">The log being viewed was in an invalid state, which is state: %s. The log may have been renamed due to some other process detecting a problem. To access the updated log, type \e&lt;enter&gt;\&quot; to exit and then type \&quot;viewLog&lt;enter&gt;\&quot; to re-enter viewLog.&quot;</div>
+</section>
+</body></html>
