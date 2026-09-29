@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2263000-2263999 (27)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2263000-2263999 (27)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2262000-2262999.html">&larr; 2262000-2262999</a><a href="ermes_2265000-2265999.html">2265000-2265999 &rarr;</a></nav></header>
+<section id="BM2263000"><a name="BM2263000"></a>
+<h2>2263000</h2>
+<div class="sym">ERROR: EM_EMB_SYSTEM_NULL_POINTER</div>
+<div class="txt">Firmware System Error A NULL pointer was detected during runtime.
+Source: %b</div>
+</section>
+<section id="BM2263001"><a name="BM2263001"></a>
+<h2>2263001</h2>
+<div class="sym">ERROR: EM_EMB_SYSTEM_BAD_OBJECT</div>
+<div class="txt">Firmware System Error A bad object was detected during runtime.
+Source: %b Object: 0x%08lx</div>
+</section>
+<section id="BM2263002"><a name="BM2263002"></a>
+<h2>2263002</h2>
+<div class="sym">ERROR: EM_EMB_SYSTEM_DUPLICATE_TYPE</div>
+<div class="txt">Firmware System Error A duplicate object type with different parameters was detected.
+Source: %b
+Type Name: %s</div>
+</section>
+<section id="BM2263003"><a name="BM2263003"></a>
+<h2>2263003</h2>
+<div class="sym">ERROR: EM_EMB_SYSTEM_TYPE_NOT_FOUND</div>
+<div class="txt">Firmware System Error The requested object type was not found.
+Source: %b Type Address: 0x%08lx</div>
+</section>
+<section id="BM2263004"><a name="BM2263004"></a>
+<h2>2263004</h2>
+<div class="sym">ERROR: EM_EMB_SYSTEM_OBJECT_DELETED</div>
+<div class="txt">Object deleted unexpectedly
+Object Type: %s
+Task: %s</div>
+</section>
+<section id="BM2263005"><a name="BM2263005"></a>
+<h2>2263005</h2>
+<div class="sym">ERROR: EM_EMB_SYSTEM_PRIORITY_CHANGE_MISSED</div>
+<div class="txt">Could not find a location to use to change priorities.
+Start Priority: %d
+Requested Priority: %d</div>
+</section>
+<section id="BM2263006"><a name="BM2263006"></a>
+<h2>2263006</h2>
+<div class="sym">ERROR: EM_EMB_SYSTEM_OBJECT_INVALID</div>
+<div class="txt">System object is not valid.
+Object Type: %s
+Task: %s likely firmware problem</div>
+</section>
+<section id="BM2263007"><a name="BM2263007"></a>
+<h2>2263007</h2>
+<div class="sym">ERROR: EM_EMB_SYSTEM_OUT_OF_MEMORY</div>
+<div class="txt">Allocation of memory failed.
+Task: %s likely firmware problem</div>
+</section>
+<section id="BM2263025"><a name="BM2263025"></a>
+<h2>2263025</h2>
+<div class="sym">ERROR: EM_EMB_MEMORY_CHUNK_OUT_OF_MEMORY</div>
+<div class="txt">Firmware System Error Memory chunk is out of memory.
+Source: %b
+Total Size: %ld
+Allocate Size: %ld</div>
+</section>
+<section id="BM2263050"><a name="BM2263050"></a>
+<h2>2263050</h2>
+<div class="sym">ERROR: EM_EMB_ERROR_TOO_MANY_PARAMS</div>
+<div class="txt">Firmware System Error Too many error messages parameters were logged.
+Source: %b
+Ermes: %ld
+Parameters: %ld</div>
+</section>
+<section id="BM2263051"><a name="BM2263051"></a>
+<h2>2263051</h2>
+<div class="sym">ERROR: EM_EMB_ERROR_INVALID_TYPE_MASK</div>
+<div class="txt">Firmware System Error Invalid type mask given while logging an error.
+Source: %b
+Ermes: %ld Type Mask: 0x%08lx</div>
+</section>
+<section id="BM2263052"><a name="BM2263052"></a>
+<h2>2263052</h2>
+<div class="sym">ERROR: EM_EMB_ERROR_QUEUE_OVERFLOW</div>
+<div class="txt">Firmware System Error An error queue overflow occurred, errors may have been missed.
+Source: %b
+Queue Size: %ld</div>
+</section>
+<section id="BM2263053"><a name="BM2263053"></a>
+<h2>2263053</h2>
+<div class="sym">ERROR: EM_EMB_ERROR_LIST_OVERFLOW</div>
+<div class="txt">Firmware System Error An error list overflow occurred, errors may have been missed.
+Source: %b Error List Object: 0x%08lx
+List Size: %ld</div>
+</section>
+<section id="BM2263054"><a name="BM2263054"></a>
+<h2>2263054</h2>
+<div class="sym">ERROR: EM_EMB_ERROR_CALLBACK_FUNC_OVERWRITTEN</div>
+<div class="txt">Firmware System Error The error log callback function has been overwritten.</div>
+</section>
+<section id="BM2263075"><a name="BM2263075"></a>
+<h2>2263075</h2>
+<div class="sym">ERROR: EM_EMB_UART_SW_RX_OVERFLOW</div>
+<div class="txt">UART Communication Error A software receive overflow occurred on a UART link.
+Source: %b
+UART: %s</div>
+</section>
+<section id="BM2263076"><a name="BM2263076"></a>
+<h2>2263076</h2>
+<div class="sym">ERROR: EM_EMB_UART_HW_RX_OVERRUN</div>
+<div class="txt">UART Communication Error A hardware receive overrun occurred on a UART link.
+Source: %b
+UART: %s</div>
+</section>
+<section id="BM2263077"><a name="BM2263077"></a>
+<h2>2263077</h2>
+<div class="sym">ERROR: EM_EMB_UART_FRAMING_ERROR</div>
+<div class="txt">UART Communication Error A framing error was detected on a UART link.
+Source: %b
+UART: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">A framing error can occur if there is a problem with the communication link cable or the connection to the peripherals. Check that the cable is plugged in on both ends.
+A framing error can also occur if a peripheral was power cycled while communicating or if one of the peripherals communicating has an intermittent power supply.</div>
+</section>
+<section id="BM2263078"><a name="BM2263078"></a>
+<h2>2263078</h2>
+<div class="sym">ERROR: EM_EMB_UART_SW_TX_OVERFLOW</div>
+<div class="txt">UART Communication Error A software transmit overflow occurred on a UART link.
+Source: %b
+UART: %s</div>
+</section>
+<section id="BM2263100"><a name="BM2263100"></a>
+<h2>2263100</h2>
+<div class="sym">ERROR: EM_EMB_CAN_TX_QUEUE_OVERFLOW</div>
+<div class="txt">CAN Communication Error An overflow occurred on the CAN transmit queue.
+Source: %b
+Queue Size: %ld</div>
+</section>
+<section id="BM2263101"><a name="BM2263101"></a>
+<h2>2263101</h2>
+<div class="sym">ERROR: EM_EMB_CAN_HW_RX_OVERRUN</div>
+<div class="txt">CAN Communication Error A hardware receive overrun occurred on a CAN link.
+Source: %b</div>
+</section>
+<section id="BM2263102"><a name="BM2263102"></a>
+<h2>2263102</h2>
+<div class="sym">ERROR: EM_EMB_CAN_SW_RX_OVERFLOW</div>
+<div class="txt">CAN Communication Error A software receive overflow occurred on a CAN link.
+Source: %b
+Queue Size: %ld</div>
+</section>
+<section id="BM2263175"><a name="BM2263175"></a>
+<h2>2263175</h2>
+<div class="sym">ERROR: EM_EMB_PIPE_POINTER_ERR</div>
+<div class="txt">PIPE Buffer Corrupted
+Source: %b</div>
+</section>
+<section id="BM2263200"><a name="BM2263200"></a>
+<h2>2263200</h2>
+<div class="sym">ERROR: EM_EMB_TEST</div>
+<div class="txt">Error message test 1.</div>
+</section>
+<section id="BM2263201"><a name="BM2263201"></a>
+<h2>2263201</h2>
+<div class="sym">ERROR: EM_EMB_TEST_I</div>
+<div class="txt">Error message test 2:
+Int: %d</div>
+</section>
+<section id="BM2263202"><a name="BM2263202"></a>
+<h2>2263202</h2>
+<div class="sym">ERROR: EM_EMB_TEST_FS</div>
+<div class="txt">Error message test 3:
+Float: %f
+String: %s</div>
+</section>
+<section id="BM2263203"><a name="BM2263203"></a>
+<h2>2263203</h2>
+<div class="sym">ERROR: EM_EMB_TEST_SIFIFS</div>
+<div class="txt">Error message test 4:
+String: %s
+Int: %d
+Float: %f
+Int: %d
+Float: %f
+String: %s</div>
+</section>
+<section id="BM2263204"><a name="BM2263204"></a>
+<h2>2263204</h2>
+<div class="sym">ERROR: EM_EMB_TEST_SSSSSS</div>
+<div class="txt">Error message test 5:
+String: %s
+String: %s
+String: %s
+String: %s
+String: %s
+String: %s</div>
+</section>
+</body></html>

@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2273000-2273999 (174)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2273000-2273999 (174)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2272000-2272999.html">&larr; 2272000-2272999</a><a href="ermes_2274000-2274999.html">2274000-2274999 &rarr;</a></nav></header>
+<section id="BM2273000"><a name="BM2273000"></a>
+<h2>2273000</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_DEVICE_NOT_PRESENT</div>
+<div class="txt">Coil validation error:
+Coil ID device was not detected on a coil. Coil ID is required for this connector. Please try connecting coil again.
+Connector: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could indicate a bad connection at the coil interface, a bad coil, bad cables to the RF Hub RFCB, or a bad RFCB. Try connecting another coil.
+Run the Coil ID Diagnostic or Coil Datapath Diagnostic to troubleshoot cabling issues and to isolate the coil interface from the coil.</div>
+</section>
+<section id="BM2273001"><a name="BM2273001"></a>
+<h2>2273001</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_SERIAL_CRC</div>
+<div class="txt">Coil ID CRC Error. The CRC on the serial number from the coil id devices did not match successfully. Try plugging in the coil again.
+Connector: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could indicate a bad connection at the coil interface, a bad coil, bad cables to the RF Hub RFCB, or a bad RFCB.
+Try connecting another coil. Run the Coil ID Diagnostic or Coil Datapath Diagnostic to troubleshoot cabling issues and to isolate the coil interface from the coil.</div>
+</section>
+<section id="BM2273002"><a name="BM2273002"></a>
+<h2>2273002</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_COMMAND_CRC_FAILURE</div>
+<div class="txt">Coil validation error:
+A command CRC failure occurred while trying to communicate to a coil ID device.
+Connector: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could indicate a bad connection at the coil interface, a bad coil, bad cables to the RF Hub RFCB, or a bad RFCB.
+Try connecting another coil. Run the Coil ID Diagnostic or Coil Datapath Diagnostic to troubleshoot cabling issues and to isolate the coil interface from the coil.</div>
+</section>
+<section id="BM2273003"><a name="BM2273003"></a>
+<h2>2273003</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_BAD_CRC</div>
+<div class="txt">Coil validation error. Coil ID device is programmed incorrectly or intermittent connection to coil. An incorrect CRC was detected in the coil ID data from the coil.
+Connector: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this happens whenever the coil is plugged in, this is most likely a bad coil.
+If not, this could indicate a bad connection at the coil interface, a bad coil, bad cables to the RF Hub RFCB, or a bad RFCB.
+Try connecting another coil. Run the Coil ID Diagnostic or Coil Datapath Diagnostic to troubleshoot cabling issues and to isolate the coil interface from the coil.</div>
+</section>
+<section id="BM2273004"><a name="BM2273004"></a>
+<h2>2273004</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_INCORRECT_FAMILY_CODE</div>
+<div class="txt">Coil validation error:
+Incorrect family code received from a coil ID device.
+Connector: %b Expected family code: 0x%02X Received family code: 0x%02X</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this happens whenever the coil is plugged in, this is most likely a bad coil.
+If not, this could indicate a bad connection at the coil interface, a bad coil, bad cables to the RF Hub RFCB, or a bad RFCB.
+Try connecting another coil. Run the Coil ID Diagnostic or Coil Datapath Diagnostic to troubleshoot cabling issues and to isolate the coil interface from the coil.</div>
+</section>
+<section id="BM2273005"><a name="BM2273005"></a>
+<h2>2273005</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_REDIRECT_ERROR</div>
+<div class="txt">Coil validation error:
+A coil ID device has been reprogrammed. Reprogrammed coil ID devices are not allowed.
+Connector: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub is able to read the coil ID device in the coil, but the device was reprogrammed. If this problem persists, the coil was probably manufactured incorrectly.</div>
+</section>
+<section id="BM2273006"><a name="BM2273006"></a>
+<h2>2273006</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_MEMORY_BLANK</div>
+<div class="txt">Coil validation error:
+Coil ID device is not programmed.
+Connector: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub is able to read the coil ID device in the coil, but the device was not programmed. If this problem persists, the coil was probably manufactured incorrectly.</div>
+</section>
+<section id="BM2273007"><a name="BM2273007"></a>
+<h2>2273007</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_PAGE_LENGTH_INVALID</div>
+<div class="txt">Coil validation error:
+Coil ID device is programmed incorrectly. The memory page length is invalid.
+Connector: %b
+Length: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub is able to read the coil ID device in the coil, but the device is programmed incorrectly. If this problem persists, the coil was probably manufactured incorrectly.</div>
+</section>
+<section id="BM2273008"><a name="BM2273008"></a>
+<h2>2273008</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_MEMORY_CRC_FAILURE</div>
+<div class="txt">Coil validation error:
+Coil ID device is programmed incorrectly. A CRC failure occurred while reading device memory.
+Connector: %b Expected CRC: 0x%02X%02X Received CRC: 0x%02X%02X</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub is able to read the coil ID device in the coil, but the device is programmed incorrectly. If this problem persists, the coil was probably manufactured incorrectly.</div>
+</section>
+<section id="BM2273009"><a name="BM2273009"></a>
+<h2>2273009</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_READ_TIMEOUT</div>
+<div class="txt">Coil validation error:
+Coil ID read took too long. A TPS Reset may be necessary.
+Connector: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could indicate a bad connection at the coil interface, a bad coil, bad cables to the RF Hub RFCB, or a bad RFCB.
+Try connecting another coil. Run the Coil ID Diagnostic or Coil Datapath Diagnostic to troubleshoot cabling issues and to isolate the coil interface from the coil.</div>
+</section>
+<section id="BM2273010"><a name="BM2273010"></a>
+<h2>2273010</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_SHORT</div>
+<div class="txt">Coil communication error:
+Coil interface detects a short on one-wire bus. Check coil connection.
+Connector: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could indicate a bad connection at the coil interface, a bad coil, bad cables to the RF Hub RFCB, or a bad RFCB.
+Try connecting another coil. Run the Coil ID Diagnostic or Coil Datapath Diagnostic to troubleshoot cabling issues and to isolate the coil interface from the coil.</div>
+</section>
+<section id="BM2273011"><a name="BM2273011"></a>
+<h2>2273011</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_BAD_STATE</div>
+<div class="txt">Coil communication error:
+Coil interface in bad state. A TPS Reset may be necessary.
+Connector: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal software error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2273012"><a name="BM2273012"></a>
+<h2>2273012</h2>
+<div class="sym">ERROR: EM_RFHUB_TOO_MANY_COILS</div>
+<div class="txt">Coil connector problem:
+Too many coils connected to this port. Disconnect extra coil.
+Connector: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">Too many multidrop coil IDs were detected. The number of coil connections at the port is not supported.</div>
+</section>
+<section id="BM2273013"><a name="BM2273013"></a>
+<h2>2273013</h2>
+<div class="sym">ERROR: EM_MCRV_ONE_WIRE_READ_FAILURE</div>
+<div class="txt">MCRv Coil one wire read error:
+MCRv Coil one wire operation failed in search_rom.
+Returned number: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">An issue with the 1-wire line from the MCRv tool to the RFCB was detected.
+Use the Coil Datapath Diagnostic to isolate to the hardware that is causing the problem.</div>
+</section>
+<section id="BM2273014"><a name="BM2273014"></a>
+<h2>2273014</h2>
+<div class="sym">ERROR: EM_MCRV_MUX_SELECT_FAILURE</div>
+<div class="txt">Coil Datapath Diagnostic Coil MUX select error:
+more than one MUX select signal asserted during walking ones test. Returned: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">In Coil Datapath Diagnostic MUX test, five MUX select lines will be tested (four Mux select lines for Port A), and only one MUX select line will be active at a given time. A case has occurred where more than one MUX select lines are active at one time. This error may indicate a bad MCRv tool, an issue with a control cable in the cable chain, or a problem with the RFCB. Try a different MCRv tool, check continuity on control cables in the cable chain, and replace the RFCB to troubleshoot.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273015"><a name="BM2273015"></a>
+<h2>2273015</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_DISCONNECTED</div>
+<div class="txt">Coil disconnected while scanning or running calibrations.
+Connector: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">This message is expected during TPS reset, some diagnostics, and scanning if a coil is disconnected.
+If the issue persists, this could indicate a bad connection at the coil interface, a bad coil, bad cables to the RF Hub RFCB, or a bad RFCB.
+Run the Coil ID Diagnostic or Coil Datapath Diagnostic to troubleshoot cabling issues and to isolate the coil interface from the coil.</div>
+</section>
+<section id="BM2273016"><a name="BM2273016"></a>
+<h2>2273016</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_CONNECTED</div>
+<div class="txt">Coil connected while scanning or running calibrations.
+Connector: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">This message is expected during TPS reset, some diagnostics, and scanning if a coil is connected.
+If the issue persists, this could indicate a bad connection at the coil interface, a bad coil, bad cables to the RF Hub RFCB, or a bad RFCB.
+Run the Coil ID Diagnostic or Coil Datapath Diagnostic to troubleshoot cabling issues and to isolate the coil interface from the coil.</div>
+</section>
+<section id="BM2273017"><a name="BM2273017"></a>
+<h2>2273017</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_SHUTDOWN_PREVENT</div>
+<div class="txt">RF Hub shutdown was aborted because a coil ID operation was in progress.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This message is expected during TPS reset, some diagnostics, and scanning if a coil is connected.
+If the issue persists, this could indicate a bad connection at the coil interface, a bad coil, bad cables to the RF Hub RFCB, or a bad RFCB.
+Run the Coil ID Diagnostic or Coil Datapath Diagnostic to troubleshoot cabling issues and to isolate the coil interface from the coil.</div>
+</section>
+<section id="BM2273018"><a name="BM2273018"></a>
+<h2>2273018</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_INTERMITTENT_NOT_PRESENT</div>
+<div class="txt">An intermittent Coil ID connection was detected between the coil and the connector. Please try connecting coil again.
+Connector: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">This failure could indicate a bad connection at the coil interface, a bad coil, bad cables to the RF Hub RFCB, or a bad RFCB. Try connecting another coil.
+Run the Coil ID Diagnostic or Coil Datapath Diagnostic to troubleshoot cabling issues and to isolate the coil interface from the coil.</div>
+</section>
+<section id="BM2273019"><a name="BM2273019"></a>
+<h2>2273019</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_INCONSISTENT_NUM_COILS</div>
+<div class="txt">Coil validation error:
+Multiple checks for Coil ID devices detected inconsistent number of devices. Please try connecting coil again.
+Connector: %b
+First check: %d devices
+Second check: %d devices</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could indicate a bad connection at the coil interface, a bad coil, bad cables to the RF Hub RFCB, or a bad RFCB. Try connecting another coil.
+Run the Coil ID Diagnostic or Coil Datapath Diagnostic to troubleshoot cabling issues and to isolate the coil interface from the coil.</div>
+</section>
+<section id="BM2273020"><a name="BM2273020"></a>
+<h2>2273020</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_ECHO_NOT_RECEIVED</div>
+<div class="txt">Coil validation error:
+Coil ID command echo not received.
+Connector: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">When communicating with the Coil ID device, the RF Hub expects certain commands to be echoed back to it. This error indicates that one of those echos was not received, or that it was received incorrectly.
+This could indicate a bad connection at the coil interface, a bad coil, bad cables to the RF Hub RFCB, or a bad RFCB. Try connecting another coil.
+Run the Coil ID Diagnostic or Coil Datapath Diagnostic to troubleshoot cabling issues and to isolate the coil interface from the coil.</div>
+</section>
+<section id="BM2273021"><a name="BM2273021"></a>
+<h2>2273021</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_HARDWARE_TIMEOUT</div>
+<div class="txt">Coil communication error:
+RF Hub hardware required for reading Coil ID didn&#x27;t respond in the expected time. Please try connecting coil again.
+Connector: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this problem persists, it may be a problem with the RF Hub hardware.
+If not, this could indicate a bad connection at the coil interface, a bad coil, bad cables to the RF Hub RFCB, or a bad RFCB. Try connecting another coil.
+Run the Coil ID Diagnostic or Coil Datapath Diagnostic to troubleshoot cabling issues and to isolate the coil interface from the coil.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273022"><a name="BM2273022"></a>
+<h2>2273022</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_UNKNOWN_ERROR</div>
+<div class="txt">Rf Hub Firmware Error:
+An unknown error occurred. A TPS Reset may be necessary.
+Connector: %b
+Parameter 1: %d
+Parameter 2: %d
+Parameter 3: %d
+Parameter 4: %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2273023"><a name="BM2273023"></a>
+<h2>2273023</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_UNKNOWN_ONEWIRE_ERROR</div>
+<div class="txt">Rf Hub Firmware Error:
+An unknown error occurred. A TPS Reset may be necessary.
+Connector: %b 1-wire error: %d
+Parameter 1: %d
+Parameter 2: %d
+Parameter 3: %d
+Parameter 4: %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2273024"><a name="BM2273024"></a>
+<h2>2273024</h2>
+<div class="sym">ERROR: EM_RFHUB_UNEXPECTED_LED_STATE</div>
+<div class="txt">RF Hub Firmware Error. A TPS Reset may be necessary. Unexpected port state while updating associated LED.
+Connector: %s
+State: %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2273025"><a name="BM2273025"></a>
+<h2>2273025</h2>
+<div class="sym">ERROR: EM_RFHUB_NO_PORTS_FOR_LED</div>
+<div class="txt">RF Hub Firmware Error. A TPS Reset may be necessary. LED update requested, but no ports associated with it.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2273026"><a name="BM2273026"></a>
+<h2>2273026</h2>
+<div class="sym">ERROR: EM_RFHUB_TOO_MANY_PORTS_FOR_LED</div>
+<div class="txt">RF Hub Firmware Error. A TPS Reset may be necessary. Too many ports associated with an LED. (Max %d)</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2273027"><a name="BM2273027"></a>
+<h2>2273027</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_LED_UNKNOWN_ERROR</div>
+<div class="txt">RF Hub Firmware Error:
+An unknown error occurred. A TPS Reset may be necessary.
+LED error: %d
+Parameter 1: %d
+Parameter 2: %d
+Parameter 3: %d
+Parameter 4: %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2273028"><a name="BM2273028"></a>
+<h2>2273028</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_MEMORY_BLANK_NON_EXT</div>
+<div class="txt">Coil validation error:
+Coil ID device is not programmed or intermittent connection to coil.
+Connector: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub is able to read the coil ID device in the coil, but the device contents appear to be blank. If this problem persists, the coil was probably manufactured incorrectly. This error may also be caused by an intermittent connection to the coil.
+Try connecting another coil. Run the Coil ID Diagnostic or Coil Datapath Diagnostic to troubleshoot cabling issues and to isolate the coil interface from the coil.</div>
+</section>
+<section id="BM2273029"><a name="BM2273029"></a>
+<h2>2273029</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_ID_PAGE_LENGTH_INVALID_NON_EXT</div>
+<div class="txt">Coil validation error:
+Coil ID device is programmed incorrectly or intermittent connection to coil. The memory page length is invalid.
+Connector: %b
+Length: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub is able to read the coil ID device in the coil, but the device contents appear to be incorrect. If this problem persists, the coil was probably manufactured incorrectly. This error may also be caused by an intermittent connection to the coil.
+Try connecting another coil. Run the Coil ID Diagnostic or Coil Datapath Diagnostic to troubleshoot cabling issues and to isolate the coil interface from the coil.</div>
+</section>
+<section id="BM2273200"><a name="BM2273200"></a>
+<h2>2273200</h2>
+<div class="sym">ERROR: EM_RF_HUB_SERIAL_LINK_WRITE_PARAM</div>
+<div class="txt">Firmware Failure. An invalid serial write was attempted on the RF Hub RFCB to a remote board.
+Board: %b Address: 0x%lx
+Size: %ld
+Data: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal software error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2273201"><a name="BM2273201"></a>
+<h2>2273201</h2>
+<div class="sym">ERROR: EM_RF_HUB_SERIAL_LINK_WRITE_VERIFY</div>
+<div class="txt">Hardware Failure. A RF Hub RFCB serial write to a remote board failed to verify.
+Board: %b Start Address: 0x%lx
+Size: %ld Failed Address: 0x%lx Failed Data: 0x%lx, Expected: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could indicate an issue with the RFCB to RFSB or MCDB connection across the RF Hub backplane.
+Take out the RFCB and the board indicated and check for bent pins on the backplane. Try reseating both boards.
+If reseating the boards does not work, replace the boards or the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Switch Board</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273202"><a name="BM2273202"></a>
+<h2>2273202</h2>
+<div class="sym">ERROR: EM_RF_HUB_SERIAL_LINK_READ_PARAM</div>
+<div class="txt">Firmware Failure. An invalid serial read was attempted on the RF Hub RFCB to a remote board.
+Board: %b Address: 0x%lx
+Size: %ld
+Data: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal software error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2273203"><a name="BM2273203"></a>
+<h2>2273203</h2>
+<div class="sym">ERROR: EM_RF_HUB_SERIAL_LINK_TIMEOUT</div>
+<div class="txt">Hardware Failure. A RF Hub RFCB serial operation to a remote board timed out.
+Board: %b
+Write: %ld Address: 0x%lx
+Size: %ld Current Address: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could indicate an issue with the RFCB to RFSB or MCDB connection across the RF Hub backplane.
+If this is accompanied by RF Hub power failure errors, a power loss is the most likely cause, and should be investigated first.
+Take out the RFCB and the board indicated and check for bent pins on the backplane. Try reseating both boards.
+If reseating the boards does not work, replace the boards or the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Switch Board</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Power Distribution Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273204"><a name="BM2273204"></a>
+<h2>2273204</h2>
+<div class="sym">ERROR: EM_RF_HUB_SERIAL_LINK_SEM_ERROR</div>
+<div class="txt">Firmware Failure. A RF Hub RFCB serial operation failed because of a semaphore error.
+Board: %b Address: 0x%lx
+Size: %ld
+Result: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal software error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2273205"><a name="BM2273205"></a>
+<h2>2273205</h2>
+<div class="sym">ERROR: EM_RF_HUB_SERIAL_LINK_ISR_NOT_COMPLETE</div>
+<div class="txt">Firmware Failure. A RF Hub RFCB serial operation to a remote board failed because the ISR failed to complete.
+Board: %b
+Write: %ld Address: 0x%lx
+Size: %ld Current Address: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal software error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2273206"><a name="BM2273206"></a>
+<h2>2273206</h2>
+<div class="sym">ERROR: EM_RF_HUB_SERIAL_LINK_HW_ERROR</div>
+<div class="txt">Hardware Failure. A RF Hub RFCB serial operation to a remote board failed with a communication error.
+Board: %b
+Write: %ld Address: 0x%lx
+Size: %ld Current Address: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could indicate an issue with the RFCB to RFSB or MCDB connection across the RF Hub backplane.
+If this is accompanied by RF Hub power failure errors, a power loss is the most likely cause, and should be investigated first.
+Take out the RFCB and the board indicated and check for bent pins on the backplane. Try reseating both boards.
+If reseating the boards does not work, replace the boards or the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Switch Board</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Power Distribution Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273207"><a name="BM2273207"></a>
+<h2>2273207</h2>
+<div class="sym">ERROR: EM_RFHUB_HART_READ_START_FAILED</div>
+<div class="txt">Hardware Failure. The RF Hub RFCB was unable to start a HART read request. A TPS Reset may be necessary.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273208"><a name="BM2273208"></a>
+<h2>2273208</h2>
+<div class="sym">ERROR: EM_RFHUB_HART_READ_FAILED</div>
+<div class="txt">Hardware Failure. The RF Hub RFCB HART read failed to complete. A TPS Reset may be necessary.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273209"><a name="BM2273209"></a>
+<h2>2273209</h2>
+<div class="sym">ERROR: EM_RFHUB_HART_BAD_ID</div>
+<div class="txt">Hardware Failure. The RF Hub detected an invalid HART ID.
+Board: %b
+HART ID: %08lx%08lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could indicate an issue with the RFCB to RFSB, MCDB, PDB MNS upconverter, cable to RFCB or connection across the RF Hub backplane.
+Invalid HART ID will not impact ability to perform clinical scans. If reported board is MNS component or body coil, then it likely refers to ID circuit on that component. Take out the RFCB and the board indicated and check for bent pins on the backplane. Try reseating both boards.
+If reseating the boards does not work, replace the boards or the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Switch Board</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Power Distribution Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273210"><a name="BM2273210"></a>
+<h2>2273210</h2>
+<div class="sym">ERROR: EM_RFHUB_HART_CHANGED</div>
+<div class="txt">Hardware Failure. The RF Hub detected a HART ID changed after startup.
+Board: %b
+Previous HART ID: %08lx%08lx
+New HART ID: %08lx%08lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could indicate a RF Hub board was hotswapped. Do not hotswap RF Hub boards.</div>
+</section>
+<section id="BM2273211"><a name="BM2273211"></a>
+<h2>2273211</h2>
+<div class="sym">ERROR: EM_RF_HUB_WAKEUP_NO_REASON</div>
+<div class="txt">The RF Hub stopped scanning or loopback but did not indicate the reason for the stop. This should not affect further scanning.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This should only be seen during development and shouldn&#x27;t cause any issues, except for improper error reporting.</div>
+</section>
+<section id="BM2273212"><a name="BM2273212"></a>
+<h2>2273212</h2>
+<div class="sym">ERROR: EM_RF_HUB_WAKEUP_INHIBIT_NOT_SET</div>
+<div class="txt">Hardware Failure. The RF Hub RFCB hardware did not set inhibit automatically after scanning stopped as expected. This message is logged only once per reset.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could indicate a problem with the clock circuit on the RFCB hardware. Replace the RFCB to troubleshoot.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273213"><a name="BM2273213"></a>
+<h2>2273213</h2>
+<div class="sym">ERROR: EM_RF_HUB_SHUTDOWN_FIBER_TIMEOUT</div>
+<div class="txt">Communication Failure. The RF Hub timed out waiting for the SCP and CFB to remove the RF Hub fiber optics from the CAN bus.
+Time from shutdown request: %d ms</div>
+<div class="lbl">Extended Error:</div><div class="txt">This should only happen when there are intermittant issues with the SCP, CFB, or RF Hub RFCB.
+If this is happening more often, it could indicate an issue with the CAN fiber optic cables between the CFB and the RF Hub RFCB, or the CAN cables between the SCP and the CFB. Check for other CAN errors in the log.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li><li>RF Hub Control Board</li><li>CAN Fiber Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2273214"><a name="BM2273214"></a>
+<h2>2273214</h2>
+<div class="sym">ERROR: EM_RF_HUB_PRE_SHUTDOWN_BANK_CHANGE_ALL</div>
+<div class="txt">Communication Failure. The RF Hub detected that the general and/or R1 banks selected on all boards was changed unexpectedly during prep.
+Setup Banks (General, Gain): %ld, %ld Detected Banks (General, Gain): %ld, %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">All bank indices selected were the same, but did not match the prescription. This is likely due to a RRX to RF Hub communication problem.
+Run the RF Hub - Receiver Datapath Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Backplane</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273215"><a name="BM2273215"></a>
+<h2>2273215</h2>
+<div class="sym">ERROR: EM_RF_HUB_PRE_SHUTDOWN_BANK_CHANGE</div>
+<div class="txt">Communication Failure. The RF Hub detected that the bank was changed unexpectedly during prep.
+Board: %s Setup Banks (General, Gain): %ld, %ld Detected Banks (General, Gain): %ld, %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">The general and/or R1 bank index selected on this board did not match the prescription. This is probably due to a RF Hub backplane or board problem.
+Run the RF Hub - Receiver Datapath Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Backplane</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Switch Board</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273216"><a name="BM2273216"></a>
+<h2>2273216</h2>
+<div class="sym">ERROR: EM_RF_HUB_WAKEUP_UNUSED_BANK_ALL</div>
+<div class="txt">Communication Failure. The RF Hub detected that the general and/or R1 banks selected on all boards was changed unexpectedly during scan to an invalid index.
+Detected Banks (General, Gain): %ld, %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">All bank indices selected were the same, and are pointing to an unused bank. Note that the bank indices in the error message are the current banks at the time that the RF Hub reported the fault and are not necessarily the bank indices that caused the fault. This is likely due to a RRX to RF Hub communication problem.
+Run the RF Hub - Receiver Datapath Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Backplane</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273217"><a name="BM2273217"></a>
+<h2>2273217</h2>
+<div class="sym">ERROR: EM_RF_HUB_WAKEUP_UNUSED_BANK</div>
+<div class="txt">Communication Failure. The RF Hub detected that the bank selected during scan is invalid.
+Board: %s Detected Banks (General, Gain): %ld, %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">The general and/or R1 bank index selected on this board is invalid (pointing to an unused bank). This is likely due to a RRX to RF Hub communication problem. Note that the bank indices in the error message are the current banks selected at the time that the RF Hub reported the fault and are not necessarily the bank indices that caused the fault.
+Run the RF Hub - Receiver Datapath Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Backplane</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Switch Board</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273218"><a name="BM2273218"></a>
+<h2>2273218</h2>
+<div class="sym">ERROR: EM_RFHUB_REROUTE_ONEWIRE_SEARCH_ERROR</div>
+<div class="txt">The RF Hub detected an error searching for devices on the HART ID bus.
+Error: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the HART ID cable connected to the reroute box and the body coil. The one-wire search error will not impact ability to perform clinical scans.
+Systems with an RFSBv or RFSB2 switch board in RF Hub Slots 1 (and 2, in case of 32 ch systems), will not have a Reroute Box. In such systems, this message is applicable to the devices which connected to the same one-wire bus. The Reroute box (if present), Preamp Combiner (if present), DTRSW (if present) and Body coil HART ID devices share a single one-wire bus controlled by the RF Hub. This error message is logged when the one-wire bus is shorted or when an invalid HART ID is received by the RF Hub. Check for bent pins at each connector in this path and test for one-wire bus short circuits within the cables. Refer to the system cabling diagrams. Run the RF Hub Board Level Diagnostic to retry the HART ID search.</div>
+</section>
+<section id="BM2273219"><a name="BM2273219"></a>
+<h2>2273219</h2>
+<div class="sym">ERROR: EM_RFHUB_REROUTE_ONEWIRE_READ_ERROR</div>
+<div class="txt">The RF Hub detected an error reading the HART ID bus. Device address: 0x%08lx%08lx.
+Error: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the HART ID cable connected to the RFCB board. The one-wire read error will not impact ability to perform clinical scans. The error could indicate an issue with the RFCB, cable or HART ID device.
+Systems with an RFSBv or RFSB2 switch board in RF Hub Slots 1 (and 2, in case of 32 ch systems), will not have a Reroute Box. In such systems, this message is applicable to Preamp Combiner (if present), DTRSW (if present) or the Body Coil HART ID.</div>
+</section>
+<section id="BM2273220"><a name="BM2273220"></a>
+<h2>2273220</h2>
+<div class="sym">ERROR: EM_RFHUB_REROUTE_ONEWIRE_FILE_ERROR</div>
+<div class="txt">The RF Hub detected an error with the HART ID file(s). See the error log for more details. Device address: 0x%08lx%08lx.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the HART ID device programming and the HART cable connection. The HART ID file error will not impact ability to perform clinical scans. The error likely refers to ID circuit on that component.
+Systems with an RFSBv or RFSB2 switch board in RF Hub Slots 1 (and 2, in case of 32 ch systems), will not have a Reroute Box. In such systems, this message is applicable to Preamp Combiner (if present), DTRSW (if present) or the Body Coil HART ID.</div>
+</section>
+<section id="BM2273221"><a name="BM2273221"></a>
+<h2>2273221</h2>
+<div class="sym">ERROR: EM_RFHUB_REROUTE_ONEWIRE_PARSE_ERROR</div>
+<div class="txt">The RF Hub detected an error parsing the HART ID files.
+Could not parse token: %s. Device address: 0x%08lx%08lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the HART ID device programming and the HART cable connection. The parse error will not impact ability to perform clinical scans. The error likely refers to ID circuit on that component.
+Systems with an RFSBv or RFSB2 switch board in RF Hub Slots 1 (and 2, in case of 32 ch systems), will not have a Reroute Box. In such systems, this message is applicable to Preamp Combiner (if present), DTRSW (if present) or the Body Coil HART ID.</div>
+</section>
+<section id="BM2273222"><a name="BM2273222"></a>
+<h2>2273222</h2>
+<div class="sym">ERROR: EM_RFHUB_REROUTE_ONEWIRE_UNKNOWN_BAC</div>
+<div class="txt">The RF Hub could not determine the HART ID board type from the board acronymn in the one wire file read from the reroute box HART ID bus.
+Board Acronymn Read: %s. Device address: 0x%08lx%08lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the HART ID device programming and the HART cable connection. Invalid HART ID will not impact ability to perform clinical scans. The error likely refers to ID circuit on that component.
+Systems with an RFSBv or RFSB2 switch board in RF Hub Slots 1 (and 2, in case of 32 ch systems), will not have a Reroute Box. In such systems, this message is applicable to Preamp Combiner (if present), DTRSW (if present) or the Body Coil HART ID.</div>
+</section>
+<section id="BM2273223"><a name="BM2273223"></a>
+<h2>2273223</h2>
+<div class="sym">ERROR: EM_RFHUB_TABLE_ONEWIRE_TOO_MANY_DEVS</div>
+<div class="txt">The RF Hub detected too many devices on the Table/MUX HART ID bus.
+Number of devices detected: %ld.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the HART ID device and programming</div>
+</section>
+<section id="BM2273224"><a name="BM2273224"></a>
+<h2>2273224</h2>
+<div class="sym">ERROR: EM_RFHUB_TABLE_ONEWIRE_SEARCH_ERROR</div>
+<div class="txt">The RF Hub detected an error searching for devices on the Table HART ID bus.
+Error: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Electrical Table HART ID bus runs from the RF Hub, through the reroute box and the docking connector, to the HART ID device connected to the electrical table. This error message is logged when the one wire bus is shorted or when an invalid HART ID is received by the RF Hub. This error will not impact ability to perform clinical scans. Check for bent pins at each connector in this path and test for one-wire bus short circuits within the cables. Refer to the system cabling diagrams. Run the RF Hub Board Level Diagnostic with the table electrically docked to retry the HART ID search.</div>
+</section>
+<section id="BM2273225"><a name="BM2273225"></a>
+<h2>2273225</h2>
+<div class="sym">ERROR: EM_RFHUB_TABLE_ONEWIRE_READ_ERROR</div>
+<div class="txt">The RF Hub detected an error reading the Table HART ID file. Device address: 0x%08lx%08lx.
+Error: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the HART ID cable connected to the dock and the dock connection. The HART ID read error will not impact ability to perform clinical scans. The error likely refers to ID circuit on that component. The error could indicate an issue with the RFCB, cable or HART ID device.</div>
+</section>
+<section id="BM2273226"><a name="BM2273226"></a>
+<h2>2273226</h2>
+<div class="sym">ERROR: EM_RFHUB_TABLE_ONEWIRE_FILE_ERROR</div>
+<div class="txt">The RF Hub detected an error with the table HART ID file. See the error log for more details. Device address: 0x%08lx%08lx.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the HART ID device programming The HART ID file error will not impact ability to perform clinical scans. The error likely refers to ID circuit on that component.</div>
+</section>
+<section id="BM2273227"><a name="BM2273227"></a>
+<h2>2273227</h2>
+<div class="sym">ERROR: EM_RFHUB_TABLE_ONEWIRE_PARSE_ERROR</div>
+<div class="txt">The RF Hub detected an error parsing the table HART ID files.
+Could not parse token: %s. Device address: 0x%08lx%08lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the HART ID device programming The parse error will not impact ability to perform clinical scans. The error likely refers to ID circuit on that component.</div>
+</section>
+<section id="BM2273228"><a name="BM2273228"></a>
+<h2>2273228</h2>
+<div class="sym">ERROR: EM_RFHUB_TABLE_ONEWIRE_UNKNOWN_BAC</div>
+<div class="txt">The RF Hub could not determine the HART ID board type from the board acronymn in the one wire file read from the table HART ID bus.
+Board Acronymn Read: %s. Device address: 0x%08lx%08lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the HART ID device and programming Invalid HART ID will not impact ability to perform clinical scans. The error likely refers to ID circuit on that component.</div>
+</section>
+<section id="BM2273229"><a name="BM2273229"></a>
+<h2>2273229</h2>
+<div class="sym">ERROR: EM_RFHUB_HARTFILE_NO_FILES</div>
+<div class="txt">The remote HART ID device at address 0x%08x%08x that the RF Hub read does not have any files in its root directory.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the HART ID device programming The HART read error will not impact ability to perform clinical scans. The error likely refers to ID circuit on that component.</div>
+</section>
+<section id="BM2273230"><a name="BM2273230"></a>
+<h2>2273230</h2>
+<div class="sym">ERROR: EM_RFHUB_HARTFILE_ROOT_BAD</div>
+<div class="txt">The remote HART ID device at address 0x%08x%08x that the RF Hub read has not been formatted.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the HART ID device programming The HART read error will not impact ability to perform clinical scans. The error likely refers to ID circuit on that component.</div>
+</section>
+<section id="BM2273231"><a name="BM2273231"></a>
+<h2>2273231</h2>
+<div class="sym">ERROR: EM_RFHUB_HARTFILE_PAGE_LEN_BAD</div>
+<div class="txt">The remote HART ID device at address 0x%08x%08x that the RF Hub read has an invalid page length.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the HART ID device programming The HART read error will not impact ability to perform clinical scans. The error likely refers to ID circuit on that component.</div>
+</section>
+<section id="BM2273232"><a name="BM2273232"></a>
+<h2>2273232</h2>
+<div class="sym">ERROR: EM_RFHUB_SHUTDOWN_FAIL_TABLE_HART_READING</div>
+<div class="txt">The RF Hub shutdown failed because the RF Hub has not finished reading the Table/PA MUX HART ID(s)</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub needs a short time to read the Table (and PA MUX, if present) HART ID when the table is docked. If shutdown continually fails due to this reason, check the coil interface paths for the ports in the table. If these signals are noisy, the RF Hub will continually re-read the HART ID(s).</div>
+</section>
+<section id="BM2273233"><a name="BM2273233"></a>
+<h2>2273233</h2>
+<div class="sym">ERROR: EM_RFHUB_REROUTE_ONEWIRE_NO_DEVS</div>
+<div class="txt">The Reroute Box, Body Coil, Preamp Combiner or DTRSW HART ID devices were not detected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub reads the HART ID devices on the 1-wire bus. Check the Reroute Box (if present), Preamp Combiner (if present), DTRSW (if present) and Body Coil HART ID devices. Invalid HART ID will not impact ability to perform clinical scans. The error likely refers to ID circuit on that component. The error could indicate an issue with the RFCB, cable or HART ID device.
+Systems with an RFSBv or RFSB2 switch board in RF Hub Slots 1 (and 2, in case of 32 ch systems), will not have a Reroute Box. In such systems, this message is only applicable to Preamp Combiner (if present), DTRSW (if present) or the Body Coil HART ID.</div>
+</section>
+<section id="BM2273234"><a name="BM2273234"></a>
+<h2>2273234</h2>
+<div class="sym">ERROR: EM_RFHUB_TABLE_ONEWIRE_NO_DEVS</div>
+<div class="txt">The Electrical Table HART ID device was not detected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub reads the HART ID device on the 1-wire bus. Check the Electrical Table HART ID device. Invalid HART ID will not impact ability to perform clinical scans. If reported board is MNS component or body coil, then it likely refers to ID circuit on that component. Invalid ID could indicate an issue with the RFCB.</div>
+</section>
+<section id="BM2273235"><a name="BM2273235"></a>
+<h2>2273235</h2>
+<div class="sym">ERROR: EM_RFHUB_UNEXPECTED_MSG</div>
+<div class="txt">%s on the RF Hub received an unexpected message %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2273500"><a name="BM2273500"></a>
+<h2>2273500</h2>
+<div class="sym">ERROR: EM_RFHUB_INHIBIT_CABLE_DISCONNECT</div>
+<div class="txt">The RF Hub detected that the inhibit side of the unblank / inhibit cable is disconnected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the Unblank / Inhibit cable on the RF Hub (RFCB J10) is connected to the PEN wall, and on the other side to the Driver Module.
+If both this message and the unblank side message are seen, it is likely that the cable is disconnected at the RF Hub or PEN wall. This could also mean that the Unblank (RFCB J10) and Reroute Box / Table ID (RFCB J8) cables are swapped at the RF Hub.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>Driver Module</li></ol>
+</section>
+<section id="BM2273501"><a name="BM2273501"></a>
+<h2>2273501</h2>
+<div class="sym">ERROR: EM_RFHUB_INHIBIT_CABLE_INTERMITTANT</div>
+<div class="txt">The RF Hub detected that the inhibit cable connection is intermittant.</div>
+</section>
+<section id="BM2273502"><a name="BM2273502"></a>
+<h2>2273502</h2>
+<div class="sym">ERROR: EM_RFHUB_TRANSMIT_SWITCH_CABLE_DISCONNECT</div>
+<div class="txt">The RF Hub detected that the transmit switch cable is disconnected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the transmit switch cable is connected from the transmit switches to the RF Hub (RFCB J9).
+This could also be caused by the transmit switch cable being plugged into the debug port on the RF Hub (RFCB J12), which is the same gender.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273503"><a name="BM2273503"></a>
+<h2>2273503</h2>
+<div class="sym">ERROR: EM_RFHUB_TRANSMIT_SWITCH_CABLE_INTERMITTANT</div>
+<div class="txt">The RF Hub detected that the transmit switch cable connection is intermittant.</div>
+</section>
+<section id="BM2273504"><a name="BM2273504"></a>
+<h2>2273504</h2>
+<div class="sym">ERROR: EM_RFHUB_RFSB_RRX_ROUTE_ERROR</div>
+<div class="txt">Switch board in the RF Hub reports a RRx route error.
+Switch Board: %d (1-8)</div>
+</section>
+<section id="BM2273505"><a name="BM2273505"></a>
+<h2>2273505</h2>
+<div class="sym">ERROR: EM_RFHUB_RFSB_RRX_GAIN_ERROR</div>
+<div class="txt">Switch board in the RF Hub reports a RRx gain error.
+Switch Board: %d (1-8)</div>
+</section>
+<section id="BM2273506"><a name="BM2273506"></a>
+<h2>2273506</h2>
+<div class="sym">ERROR: EM_RFHUB_RFSB_5VD_POWER_FAULT</div>
+<div class="txt">Switch board in the RF Hub reports 5 V Digital Power fault.
+Switch Board: %d (1-8)</div>
+</section>
+<section id="BM2273507"><a name="BM2273507"></a>
+<h2>2273507</h2>
+<div class="sym">ERROR: EM_RFHUB_RFSB_5VA_POWER_FAULT</div>
+<div class="txt">Switch board in the RF Hub reports 5 V Analog Power fault.
+Switch Board: %d (1-8)</div>
+</section>
+<section id="BM2273508"><a name="BM2273508"></a>
+<h2>2273508</h2>
+<div class="sym">ERROR: EM_RFHUB_RFSB_6V_POWER_FAULT</div>
+<div class="txt">Switch board in the RF Hub reports 6 V Power fault.
+Switch Board: %d (1-8)</div>
+</section>
+<section id="BM2273509"><a name="BM2273509"></a>
+<h2>2273509</h2>
+<div class="sym">ERROR: EM_RFHUB_RFSB_5NV_POWER_FAULT</div>
+<div class="txt">Switch board in the RF Hub reports -5 V Power fault.
+Switch Board: %d (1-8)</div>
+</section>
+<section id="BM2273510"><a name="BM2273510"></a>
+<h2>2273510</h2>
+<div class="sym">ERROR: EM_RFHUB_RFSB_3V3_POWER_FAULT</div>
+<div class="txt">Switch board in the RF Hub reports 3.3 V Power fault.
+Switch Board: %d (1-8)</div>
+</section>
+<section id="BM2273511"><a name="BM2273511"></a>
+<h2>2273511</h2>
+<div class="sym">ERROR: EM_RFHUB_RFSB_SERIAL_ADDR_PARITY</div>
+<div class="txt">Switch board in the RF Hub reports an address parity error on the backplane serial.
+Switch Board: %d (1-8)</div>
+</section>
+<section id="BM2273512"><a name="BM2273512"></a>
+<h2>2273512</h2>
+<div class="sym">ERROR: EM_RFHUB_RFSB_SERIAL_WR_DATA_PARITY</div>
+<div class="txt">Switch board in the RF Hub reports an write data parity error on the backplane serial.
+Switch Board: %d (1-8)</div>
+</section>
+<section id="BM2273513"><a name="BM2273513"></a>
+<h2>2273513</h2>
+<div class="sym">ERROR: EM_RFHUB_RFSB_SERIAL_LOAD_DATA_FAULT</div>
+<div class="txt">Switch board in the RF Hub reports a load data fault on the backplane serial.
+Switch Board: %d (1-8)</div>
+</section>
+<section id="BM2273514"><a name="BM2273514"></a>
+<h2>2273514</h2>
+<div class="sym">ERROR: EM_RFHUB_RFSB_SERIAL_TIME_CHECK_FAULT</div>
+<div class="txt">Switch board in the RF Hub reports a time check fault on the backplane serial.
+Switch Board: %d (1-8)</div>
+</section>
+<section id="BM2273515"><a name="BM2273515"></a>
+<h2>2273515</h2>
+<div class="sym">ERROR: EM_RFHUB_RFCB_5VD_POWER_FAULT</div>
+<div class="txt">RF Hub control board 5 V Digital Power failure.</div>
+</section>
+<section id="BM2273516"><a name="BM2273516"></a>
+<h2>2273516</h2>
+<div class="sym">ERROR: EM_RFHUB_RFCB_3V_POWER_FAULT</div>
+<div class="txt">RF Hub control board 3.3 V Digital Power failure.</div>
+</section>
+<section id="BM2273517"><a name="BM2273517"></a>
+<h2>2273517</h2>
+<div class="sym">ERROR: EM_RFHUB_RFCB_1V_POWER_FAULT</div>
+<div class="txt">RF Hub control board 1.2 V Digital Power failure.</div>
+</section>
+<section id="BM2273518"><a name="BM2273518"></a>
+<h2>2273518</h2>
+<div class="sym">ERROR: EM_RFHUB_RFCB_5V_REF_POWER_FAULT</div>
+<div class="txt">RF Hub control board 5 V Reference Power failure.</div>
+</section>
+<section id="BM2273519"><a name="BM2273519"></a>
+<h2>2273519</h2>
+<div class="sym">ERROR: EM_RFHUB_RFCB_10VA_POWER_FAULT</div>
+<div class="txt">RF Hub control board 10 V Analog Power failure.</div>
+</section>
+<section id="BM2273520"><a name="BM2273520"></a>
+<h2>2273520</h2>
+<div class="sym">ERROR: EM_RFHUB_RFCB_10NVA_POWER_FAULT</div>
+<div class="txt">RF Hub control board -10 V Analog Power failure.</div>
+</section>
+<section id="BM2273521"><a name="BM2273521"></a>
+<h2>2273521</h2>
+<div class="sym">ERROR: EM_RFHUB_RFCB_15VA_POWER_FAULT</div>
+<div class="txt">RF Hub control board 15 V Analog Power failure.</div>
+</section>
+<section id="BM2273522"><a name="BM2273522"></a>
+<h2>2273522</h2>
+<div class="sym">ERROR: EM_RFHUB_RFCB_15NVA_POWER_FAULT</div>
+<div class="txt">RF Hub control board -15 V Analog Power failure.</div>
+</section>
+<section id="BM2273523"><a name="BM2273523"></a>
+<h2>2273523</h2>
+<div class="sym">ERROR: EM_RFHUB_RFCB_LOOPBACK_FAULT</div>
+<div class="txt">RF Hub control board loopback signal detect failure.</div>
+</section>
+<section id="BM2273524"><a name="BM2273524"></a>
+<h2>2273524</h2>
+<div class="sym">ERROR: EM_RFHUB_RFCB_LO_FAULT</div>
+<div class="txt">RF Hub control board LO signal detect failure.</div>
+</section>
+<section id="BM2273525"><a name="BM2273525"></a>
+<h2>2273525</h2>
+<div class="sym">ERROR: EM_RFHUB_HW_BANK_FAULT</div>
+<div class="txt">A bank fault was detected by the RF Hub during setup. Probable hardware fault.</div>
+</section>
+<section id="BM2273526"><a name="BM2273526"></a>
+<h2>2273526</h2>
+<div class="sym">ERROR: EM_RFHUB_APP_BANK_FAULT</div>
+<div class="txt">A bank fault was detected by the RF Hub while scanning. Probable PSD fault.</div>
+</section>
+<section id="BM2273527"><a name="BM2273527"></a>
+<h2>2273527</h2>
+<div class="sym">ERROR: EM_RFHUB_SHUTDOWN_PREVENTED</div>
+<div class="txt">The RF Hub failed to shutdown because a fault or other event was indicated. Prevent Shutdown Reason register: 0x%04x</div>
+<div class="lbl">Extended Error:</div><div class="txt">This message is intended for engineering use. Relevant errors should be logged before or after this indicating what the cause of the RF Hub failure is.</div>
+</section>
+<section id="BM2273528"><a name="BM2273528"></a>
+<h2>2273528</h2>
+<div class="sym">ERROR: EM_RFHUB_UNBLANK_CABLE_DISCONNECT</div>
+<div class="txt">The RF Hub detected that the unblank side of the unblank / inhibit cable is disconnected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the Unblank / Inhibit cable on the RF Hub (RFCB J10) is connected to the PEN wall, and on the other side to the Exciter.
+If both this message and the inhibit side message are seen, it is likely that the cable is disconnected at the RF Hub or PEN wall. This could also mean that the Unblank (RFCB J10) and Reroute Box / Table ID (RFCB J8) cables are swapped at the RF Hub.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>NB DTx Module</li></ol>
+</section>
+<section id="BM2273529"><a name="BM2273529"></a>
+<h2>2273529</h2>
+<div class="sym">ERROR: EM_RFHUB_COIL_LED_CABLE_DISCONNECT</div>
+<div class="txt">The RF Hub detected that the coil LED cable is disconnected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the coil LED cable is connected between the RF Hub RFCB and the table interface box.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273530"><a name="BM2273530"></a>
+<h2>2273530</h2>
+<div class="sym">ERROR: EM_RFHUB_LO_CABLE_DISCONNECT</div>
+<div class="txt">The RF Hub detected that the NB LO cable is disconnected or that the NB Exciter power is off.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the RF Hub RFCB LO to PEN wall to NB Exciter cable connections. This also gets logged when the NB Exciter power is off or cycled. Run the RF Calib and DTX Board Level Diagnostics.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>NB DTx Module</li></ol>
+</section>
+<section id="BM2273531"><a name="BM2273531"></a>
+<h2>2273531</h2>
+<div class="sym">ERROR: EM_RFHUB_LO_CABLE_FAULT</div>
+<div class="txt">The RF Hub detected that the NB LO cable power is bad, only one side was detected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the RF Hub RFCB LO to PEN wall to NB Exciter cable connections. This could indicate a board or cable problem. Run the RF Calib and DTX Board Level Diagnostics.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>NB DTx Module</li></ol>
+</section>
+<section id="BM2273532"><a name="BM2273532"></a>
+<h2>2273532</h2>
+<div class="sym">ERROR: EM_RFHUB_LB_CABLE_DISCONNECT</div>
+<div class="txt">The RF Hub detected that the NB loopback cable is disconnected or that the NB Exciter power is off.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the RF Hub RFCB loopback to PEN wall to NB Exciter cable connections. This also gets logged when the NB Exciter power is off or cycled. Run the RF Calib and DTX Board Level Diagnostics.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>NB DTx Module</li></ol>
+</section>
+<section id="BM2273533"><a name="BM2273533"></a>
+<h2>2273533</h2>
+<div class="sym">ERROR: EM_RFHUB_BB_CONNECT_DEBOUNCE_GLITCH</div>
+<div class="txt">The RF Hub detected a momentary change in the MNS Upconverter cable detect.
+Status: %s
+Debounce time: %ld.%09ld s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the RF Hub RFCB to MNS Upconverter cable connection is good. Power off the RF Hub before disconnecting or reconnecting any cables.
+This could indicate a problem with that cable. This could also be logged if hotplugging the cable into the RF Hub or MNS Upconverter. Do not hotplug cables.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>MNS Upconverter</li></ol>
+</section>
+<section id="BM2273534"><a name="BM2273534"></a>
+<h2>2273534</h2>
+<div class="sym">ERROR: EM_RFHUB_BB_LO_CABLE_DETECT</div>
+<div class="txt">The RF Hub detected that the MNS Exciter to MNS Upconverter LO cable is disconnected or that the MNS Exciter power is off.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the MNS Upconverter LO to PEN wall to MNS Exciter cable connections. This also gets logged when the MNS Exciter power is off or cycled.
+This could also be caused by a bad cable or cable connection from the MNS Upconverter to the RF Hub RFCB. Make sure to turn off RF Hub power before connecting or disconnecting the MNS upconverter cable. Do not hotplug cables.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>BB DTx Module</li><li>MNS Upconverter</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273535"><a name="BM2273535"></a>
+<h2>2273535</h2>
+<div class="sym">ERROR: EM_RFHUB_BB_LB_CABLE_DETECT</div>
+<div class="txt">The RF Hub detected that the MNS Exciter to MNS Upconverter loopback cable is disconnected or that the MNS Exciter power is off.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the MNS Upconverter loopback to PEN wall to MNS Exciter cable connections. This also gets logged when the MNS Exciter power is off or cycled.
+This could also be caused by a bad cable or cable connection from the MNS Upconverter to the RF Hub RFCB. Make sure to turn off RF Hub power before connecting or disconnecting the MNS upconverter cable. Do not hotplug cables.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>BB DTx Module</li><li>MNS Upconverter</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273536"><a name="BM2273536"></a>
+<h2>2273536</h2>
+<div class="sym">ERROR: EM_RFHUB_RRX_LOOP_BITS_STUCK</div>
+<div class="txt">The RF Hub&#x27;s RRx cable drive or detect signals are stuck high Top connectors stuck: 0x%x Bottom connectors stuck: 0x%x.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub control board detected RRx cable loop bits high when none of the cable loops were being driven. There is a problem with the cable drive or the detection circuit.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Control Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273537"><a name="BM2273537"></a>
+<h2>2273537</h2>
+<div class="sym">ERROR: EM_RFHUB_RRX_CABLE_DISCONNECTED_TOP</div>
+<div class="txt">The RF Hub detected a disconnected RRx cable at slot %d, top connector (J%d).</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub detected a disconnected RRx cable. Check the connection and re-seat the cable. If this error persists, the RRx, RF Hub control board, RF Hub chassis, or coaxial cable may need replacement.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Control Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273538"><a name="BM2273538"></a>
+<h2>2273538</h2>
+<div class="sym">ERROR: EM_RFHUB_RRX_CABLE_DISCONNECTED_BOT</div>
+<div class="txt">The RF Hub detected a disconnected RRx cable at slot %d, bottom connector (J%d).</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub detected a disconnected RRx cable. Check the connection and re-seat the cable. If this error persists, the RRx, RF Hub control board, RF Hub chassis, or coaxial cable may need replacement.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Control Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273539"><a name="BM2273539"></a>
+<h2>2273539</h2>
+<div class="sym">ERROR: EM_RFHUB_RRX_CABLE_CONNECTED_TOP</div>
+<div class="txt">The RF Hub detected a connected RRx cable at slot %d, top connector (J%d).</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub detected that a RRx cable was reconnected to the RF Hub. This is an informational message and does not indicate any error. If the cable was not recently reconnected, this message could indicate an intermittent failure in the cable loop circuit, possibly due to noise induced on the path.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Control Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273540"><a name="BM2273540"></a>
+<h2>2273540</h2>
+<div class="sym">ERROR: EM_RFHUB_RRX_CABLE_CONNECTED_BOT</div>
+<div class="txt">The RF Hub detected a connected RRx cable at slot %d, bottom connector (J%d).</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub detected that a RRx cable was reconnected to the RF Hub. This is an informational message and does not indicate any error. If the cable was not recently reconnected, this message could indicate an intermittent failure in the cable loop circuit, possibly due to noise induced on the path.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Control Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273541"><a name="BM2273541"></a>
+<h2>2273541</h2>
+<div class="sym">ERROR: EM_RFHUB_RRX_CABLE_CONN_UNUSED_TOP</div>
+<div class="txt">The RF Hub detected a RRx cable connected to unused slot %d, top connector (J%d).</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub detected that a RRx cable was reconnected to a RF Hub receive slot that is not used for this system configuration. This message does not indicate any hardware failure unless the cable was not recently connected to the specified slot. If the cable was not recently reconnected, this message could indicate an intermittent failure in the RF Hub backplane or control board loop detection circuit.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273542"><a name="BM2273542"></a>
+<h2>2273542</h2>
+<div class="sym">ERROR: EM_RFHUB_RRX_CABLE_CONN_UNUSED_BOT</div>
+<div class="txt">The RF Hub detected a RRx cable connected to unused slot %d, bottom connector (J%d).</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub detected that a RRx cable was reconnected to a RF Hub receive slot that is not used for this system configuration. This message does not indicate any hardware failure unless the cable was not recently connected to the specified slot. If the cable was not recently reconnected, this message could indicate an intermittent failure in the RF Hub backplane or control board loop detection circuit.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273543"><a name="BM2273543"></a>
+<h2>2273543</h2>
+<div class="sym">ERROR: EM_RFHUB_RRX_CABLE_MISMATCH</div>
+<div class="txt">The RF Hub detected a RRx connector slot mismatch. The RRx connected to the top connector at slot %d (J%d) is also connected to the bottom connector at slot %d (J%d).</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub detected a RRx with cables connected to different receive slots on the RF Hub chassis. This message does not indicate any hardware failure. Check the cable connections and match a single RRx&#x27;s cables to the same receive slot.</div>
+</section>
+<section id="BM2273544"><a name="BM2273544"></a>
+<h2>2273544</h2>
+<div class="sym">ERROR: EM_RFHUB_RRX_CABLE_PAIR_MISSING_TOP</div>
+<div class="txt">The RF Hub detected that the RRx connected to the bottom connector of slot %d (J%d) does not have its other cable connected to the RF Hub.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub detected a RRx with only one of its cables connected to the RF Hub. Check the connection and re-seat the cables. If this error persists, the RRx, RF Hub control board, RF Hub chassis, or coaxial cable may need replacement.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Control Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273545"><a name="BM2273545"></a>
+<h2>2273545</h2>
+<div class="sym">ERROR: EM_RFHUB_RRX_CABLE_PAIR_MISSING_BOT</div>
+<div class="txt">The RF Hub detected that the RRx connected to the top connector of slot %d (J%d) does not have its other cable connected to the RF Hub.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub detected a RRx with only one of its cables connected to the RF Hub. Check the connection and re-seat the cables. If this error persists, the RRx, RF Hub control board, RF Hub chassis, or coaxial cable may need replacement.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Control Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273546"><a name="BM2273546"></a>
+<h2>2273546</h2>
+<div class="sym">ERROR: EM_RFHUB_RFCB_RRX_POWER_ERROR</div>
+<div class="txt">The RF Hub control board detected a RRx power error. Latched RRx fault bitmap: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub detected RRx(s) that are reporting power errors. The power errors were latched in a bitmap of receivers reporting faults. The least significant bit corresponds to RRX-1. The RRx may need to be replaced. If all RRxs are reporting power faults, the TDM may need to be replaced. This error could also be caused by scan induced RF noise on the RRX to RF Hub cable, or a defective RF Hub control board or backplane</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>Transient Detection Module</li><li>RF Hub Control Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273547"><a name="BM2273547"></a>
+<h2>2273547</h2>
+<div class="sym">ERROR: EM_RFHUB_RFCB_RRX_CLOCK_ERROR</div>
+<div class="txt">The RF Hub control board detected a RRx clock error. Latched RRx fault bitmap: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub detected RRx(s) that are reporting clock errors. The clock errors were latched in a bitmap of receivers reporting faults. The least significant bit corresponds to RRX-1. The RRx may need to be replaced. If all RRxs are reporting clock faults, the TDM or DTX may need to be replaced. This error could also be caused by scan induced RF noise on the RRX to RF Hub cable, or a defective RF Hub control board or backplane</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>Transient Detection Module</li><li>NB DTx Module</li><li>RF Hub Control Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273548"><a name="BM2273548"></a>
+<h2>2273548</h2>
+<div class="sym">ERROR: EM_RFHUB_STARTUP_POWER_GOOD_PDB</div>
+<div class="txt">RF Hub Hardware Failure. The RF Hub RFCB read from the PDB that analog power is good before power is enabled. TPS reset and scanning will fail until this is fixed.
+Common: %s
+RFCB: %s%s
+MCDB: %s%s
+RFSB: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RFCB only turns on analog power to the PDB after startup checks are run. If analog power is detected before this, it means that either the RFCB, PDB, or Backplane is faulty.
+Remove the RFCB and PDB and check for bent pins.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Power Distribution Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273549"><a name="BM2273549"></a>
+<h2>2273549</h2>
+<div class="sym">ERROR: EM_RFHUB_STARTUP_POWER_GOOD_BOARD</div>
+<div class="txt">RF Hub Hardware Failure. The RF Hub detected that analog power is good before power is enabled on the following board. TPS reset and scanning will fail until this is fixed.
+Board: %b
+Power: %s%s%s%s%s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RFCB only turns on analog power to the PDB after startup checks are run. If analog power is detected before this, it means that either the RFCB, PDB, RFSB, MCDB, or Backplane is faulty.
+Remove the RFCB, PDB, and the board indicated, and check for bent pins.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Power Distribution Board</li><li>RF Hub Switch Board</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273550"><a name="BM2273550"></a>
+<h2>2273550</h2>
+<div class="sym">ERROR: EM_RFHUB_POWER_BAD_PDB</div>
+<div class="txt">RF Hub Power Failure. The RF Hub RFCB read that the PDB is reporting power failures for the following power distributions.
+Common: %s
+RFCB: %s%s
+MCDB: %s%s
+RFSB: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Power good signals from the PDB to the RFCB indicated the power is bad for the supplies in the error message.
+Check for SRPS power errors. If the SRPS is supplying power correctly, and this issue keeps occuring, it could indicate a bad RFCB, PDB, or RF Hub backplane.
+Remove the RFCB and PDB and check for bent pins on the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Scan Room PS</li><li>RF Hub Control Board</li><li>RF Hub Power Distribution Board</li></ol>
+</section>
+<section id="BM2273551"><a name="BM2273551"></a>
+<h2>2273551</h2>
+<div class="sym">ERROR: EM_RFHUB_POWER_BAD_BOARD</div>
+<div class="txt">RF Hub Power Failure. The RF Hub detected a power failure on the following board.
+Board: %b
+Power: %s%s%s%s%s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check for SRPS power errors. If the SRPS is supplying power correctly, and this issue keeps occuring, it could indicate a bad RFCB, RFSB, MCDB, PDB, or RF Hub backplane.
+Remove the PDB and the board indicated and check for bent pins on the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Scan Room PS</li><li>RF Hub Control Board</li><li>RF Hub Power Distribution Board</li><li>RF Hub Switch Board</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273552"><a name="BM2273552"></a>
+<h2>2273552</h2>
+<div class="sym">ERROR: EM_RFHUB_POWER_BAD_BB_CONVERTER</div>
+<div class="txt">MNS Upconverter / RF Hub Power Failure. The RF Hub RFCB detected that the MNS Upconverter power failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check for SRPS, RFCB, or PDB power failures in the log. Investigate those first.
+If this is the only error and it keeps occuring, check for a bad RFCB to MNS Upconverter cable or connection. This could indicate a bad RFCB or MNS Upconverter also. Make sure to turn off RF Hub power before connecting or disconnecting the MNS upconverter cable. Do not hotplug cables.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>MNS Upconverter</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273553"><a name="BM2273553"></a>
+<h2>2273553</h2>
+<div class="sym">ERROR: EM_RFHUB_POWER_GOOD</div>
+<div class="txt">All RF Hub power has recovered.</div>
+<div class="lbl">Extended Error:</div><div class="txt">All RF Hub power is required to be stable for some time before this message is logged.</div>
+</section>
+<section id="BM2273554"><a name="BM2273554"></a>
+<h2>2273554</h2>
+<div class="sym">ERROR: EM_RFHUB_TRANSIENT_SIGNAL</div>
+<div class="txt">RF Hub Transient Signal Detected. The RF Hub detected a transient signal that may be caused by noise interference if this occurred while scanning.
+Detected by: %b
+Signal: %s%s%s</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this issue is causing scan failures, try replacing the board indicated in the message. Also try tracing signals that are over cable connections. This could indicate a noisy or unshielded cable. Signals internal to the RF Hub could indicate a bent pin on the backplane.</div>
+</section>
+<section id="BM2273555"><a name="BM2273555"></a>
+<h2>2273555</h2>
+<div class="sym">ERROR: EM_RFHUB_TRANSIENT_SIGNAL_REMOTE_SOURCE</div>
+<div class="txt">RF Hub Transient Signal Detected. The RF Hub detected a transient signal that may be caused by noise interference if this occurred while scanning.
+Detected by: %b
+Originated from: %b (%b)
+Signal: %s%s%s</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this issue is causing scan failures, try replacing the boards indicated in the message. Also try tracing signals that are over cable connections. This could indicate a noisy or unshielded cable. Signals internal to the RF Hub could indicate a bent pin on the backplane.</div>
+</section>
+<section id="BM2273556"><a name="BM2273556"></a>
+<h2>2273556</h2>
+<div class="sym">ERROR: EM_RFHUB_BOARD_DETECT_CONNECT</div>
+<div class="txt">RF Hub Board Connected. The RF Hub detected that a board was plugged in with power on. This message is only logged once per reset.
+Board: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">This message is logged when a board is hotswapped. Do not hotswap.
+This could also indicate a bad board, RFCB, or backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Switch Board</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273557"><a name="BM2273557"></a>
+<h2>2273557</h2>
+<div class="sym">ERROR: EM_RFHUB_BOARD_DETECT_DISCONNECT</div>
+<div class="txt">RF Hub Board Disconnected. The RF Hub detected that a board was removed with power on. This message is only logged once per reset.
+Board: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">This message is logged when a board is hotswapped. Do not hotswap.
+This could also indicate a bad board, RFCB, or backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Switch Board</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273558"><a name="BM2273558"></a>
+<h2>2273558</h2>
+<div class="sym">ERROR: EM_RFHUB_RFSB_SERIAL_ADDRESS_PARITY</div>
+<div class="txt">RF Hub RFSB Serial Fault. A RF Hub RFSB detected a serial address parity fault. This message is only logged once per reset.
+Board: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RFSB detected that the backplane serial link from the RFCB is not working.
+Take out the RFCB and RFSB indicated and check for bent pins on the backplane. Try reseating both boards.
+If reseating the boards does not work, replace the boards or the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Switch Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273559"><a name="BM2273559"></a>
+<h2>2273559</h2>
+<div class="sym">ERROR: EM_RFHUB_RFSB_SERIAL_DATA_PARITY</div>
+<div class="txt">RF Hub RFSB Serial Fault. A RF Hub RFSB detected a serial data parity fault. This message is only logged once per reset.
+Board: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RFSB detected that the backplane serial link from the RFCB is not working.
+Take out the RFCB and RFSB indicated and check for bent pins on the backplane. Try reseating both boards.
+If reseating the boards does not work, replace the boards or the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Switch Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273560"><a name="BM2273560"></a>
+<h2>2273560</h2>
+<div class="sym">ERROR: EM_RFHUB_RFSB_SERIAL_LOAD_DATA</div>
+<div class="txt">RF Hub RFSB Serial Fault. A RF Hub RFSB detected a serial load data fault. This message is only logged once per reset.
+Board: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RFSB detected that the backplane serial link from the RFCB is not working.
+Take out the RFCB and RFSB indicated and check for bent pins on the backplane. Try reseating both boards.
+If reseating the boards does not work, replace the boards or the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Switch Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273561"><a name="BM2273561"></a>
+<h2>2273561</h2>
+<div class="sym">ERROR: EM_RFHUB_RFSB_SERIAL_TIME_CHECK</div>
+<div class="txt">RF Hub RFSB Serial Fault. A RF Hub RFSB detected a serial time check fault. This message is only logged once per reset.
+Board: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RFSB detected that the backplane serial link from the RFCB is not working.
+Take out the RFCB and RFSB indicated and check for bent pins on the backplane. Try reseating both boards.
+If reseating the boards does not work, replace the boards or the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Switch Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273562"><a name="BM2273562"></a>
+<h2>2273562</h2>
+<div class="sym">ERROR: EM_RFHUB_MCDB_SERIAL_ADDRESS_PARITY</div>
+<div class="txt">RF Hub MCDB Serial Fault. A RF Hub MCDB detected a serial address parity fault. This message is only logged once per reset.
+Board: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">The MCDB detected that the backplane serial link from the RFCB is not working.
+Take out the RFCB and MCDB indicated and check for bent pins on the backplane. Try reseating both boards.
+If reseating the boards does not work, replace the boards or the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273563"><a name="BM2273563"></a>
+<h2>2273563</h2>
+<div class="sym">ERROR: EM_RFHUB_MCDB_SERIAL_DATA_PARITY</div>
+<div class="txt">RF Hub MCDB Serial Fault. A RF Hub MCDB detected a serial data parity fault. This message is only logged once per reset.
+Board: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">The MCDB detected that the backplane serial link from the RFCB is not working.
+Take out the RFCB and MCDB indicated and check for bent pins on the backplane. Try reseating both boards.
+If reseating the boards does not work, replace the boards or the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273564"><a name="BM2273564"></a>
+<h2>2273564</h2>
+<div class="sym">ERROR: EM_RFHUB_MCDB_SERIAL_LOAD_DATA</div>
+<div class="txt">RF Hub MCDB Serial Fault. A RF Hub MCDB detected a serial load data fault. This message is only logged once per reset.
+Board: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">The MCDB detected that the backplane serial link from the RFCB is not working.
+Take out the RFCB and MCDB indicated and check for bent pins on the backplane. Try reseating both boards.
+If reseating the boards does not work, replace the boards or the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273565"><a name="BM2273565"></a>
+<h2>2273565</h2>
+<div class="sym">ERROR: EM_RFHUB_MCDB_SERIAL_TIME_CHECK</div>
+<div class="txt">RF Hub MCDB Serial Fault. A RF Hub MCDB detected a serial time check fault. This message is only logged once per reset.
+Board: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">The MCDB detected that the backplane serial link from the RFCB is not working.
+Take out the RFCB and MCDB indicated and check for bent pins on the backplane. Try reseating both boards.
+If reseating the boards does not work, replace the boards or the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273566"><a name="BM2273566"></a>
+<h2>2273566</h2>
+<div class="sym">ERROR: EM_RFHUB_REROUTE_CABLE_DISCONNECT</div>
+<div class="txt">Warning: The RF Hub detected that the Reroute Box / Body Coil / Preamp Combiner/ DTRSW HART ID cable is disconnected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the Reroute Box / Body Coil / Preamp Combiner/ DTRSW HART ID cable is connected to the RF Hub (RFCB J8) and that the cable is connected to the Reroute Box (if present) and to the body coil/ Preamp Combiner/DTRSW.
+This could also mean that this cable and the Unblank / Inhibit cable (RFCB J10) are swapped at the RF Hub.
+Systems with an RFSBv or RFSB2 switch board in RF Hub Slots 1 (and 2, in case of 32 ch systems), will not have a Reroute Box. In such systems, this message is only applicable to Preamp Combiner (if present), DTRSW (if present) or the Body Coil HART ID.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273567"><a name="BM2273567"></a>
+<h2>2273567</h2>
+<div class="sym">ERROR: EM_RFHUB_DOCK_CABLE_DISCONNECT</div>
+<div class="txt">Warning: The RF Hub detected that the Table/PA Mux HART ID cable is disconnected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the Reroute Box HART ID cable disconnect message is also seen, that cable needs to be connected for this path to work.
+If that connection from the RF Hub RFCB J8 to Reroute Box is good, then check that the Reroute Box to Table Dock cable connection is good.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273800"><a name="BM2273800"></a>
+<h2>2273800</h2>
+<div class="sym">ERROR: EM_RFHUB_TEMP_FAULTED</div>
+<div class="txt">The RF Hub temperature has faulted. Scanning is inhibited.\b\ Scanning will be allowed when the RF Hub temperature has recovered. Look in error log for detailed fault information.</div>
+</section>
+<section id="BM2273801"><a name="BM2273801"></a>
+<h2>2273801</h2>
+<div class="sym">ERROR: EM_RFHUB_TEMP_RECOVERED</div>
+<div class="txt">The RF Hub temperature has returned to normal.\b\ Scanning is allowed.</div>
+</section>
+<section id="BM2273802"><a name="BM2273802"></a>
+<h2>2273802</h2>
+<div class="sym">ERROR: EM_RFHUB_MODULE_TEMP_FAULT</div>
+<div class="txt">RF Hub bias module temperature too high. Check that RF Hub air flow is OK.
+Temperature Limit: %ld C
+Bias Module Temperature: %ld C
+Board: %b
+Bias Module: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the air flow to the RF Hub is OK. Air should constantly flow. Confirm air lines at the blower are not swapped. Check that the scan room temperature is within spec. If this fault persists, and other temperatures are OK, try replacing the board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2273803"><a name="BM2273803"></a>
+<h2>2273803</h2>
+<div class="sym">ERROR: EM_RFHUB_RFCB_TEMP_FAULT</div>
+<div class="txt">RF Hub RFCB temperature too high. Check that RF Hub air flow is OK.
+Temperature Limit: %ld C
+RFCB Temperature: %ld C</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the air flow to the RF Hub is OK. Air should constantly flow. Confirm air lines at the blower are not swapped. Check that the scan room temperature is within spec. If this fault persists, and other temperatures are OK, try replacing the RFCB.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273804"><a name="BM2273804"></a>
+<h2>2273804</h2>
+<div class="sym">ERROR: EM_RFHUB_PDB_TEMP_FAULT</div>
+<div class="txt">RF Hub PDB temperature too high. Check that RF Hub air flow is OK.
+Temperature Limit: %ld C
+PDB Temperature: %ld C</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the air flow to the RF Hub is OK. Air should constantly flow. Confirm air lines at the blower are not swapped. Check that the scan room temperature is within spec. If this fault persists, and other temperatures are OK, try replacing the PDB or RFCB.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Power Distribution Board</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273805"><a name="BM2273805"></a>
+<h2>2273805</h2>
+<div class="sym">ERROR: EM_RFHUB_MODULE_TEMP_FAULT_SPURIOUS</div>
+<div class="txt">Spurious fault detected on a RF Hub bias module temperature sensor. Check that RF Hub air flow is OK.
+Temperature Limit: %ld C
+Bias Module Temperature: %ld C
+Board: %b
+Bias Module: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">This fault means that the temperature comparator indicated a fault, but the temperature reading was OK. This could indicate noise on the board or a faulty board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2273806"><a name="BM2273806"></a>
+<h2>2273806</h2>
+<div class="sym">ERROR: EM_RFHUB_RFCB_TEMP_FAULT_SPURIOUS</div>
+<div class="txt">Spurious fault detected on the RF Hub RFCB temperature sensor. Check that RF Hub air flow is OK.
+Temperature Limit: %ld C
+RFCB Temperature: %ld C</div>
+<div class="lbl">Extended Error:</div><div class="txt">This fault means that the temperature comparator indicated a fault, but the temperature reading was OK. This could indicate noise on the RFCB or a faulty board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273807"><a name="BM2273807"></a>
+<h2>2273807</h2>
+<div class="sym">ERROR: EM_RFHUB_PDB_TEMP_FAULT_SPURIOUS</div>
+<div class="txt">Spurious fault detected on the RF Hub PDB temperature sensor. Check that RF Hub air flow is OK.
+Temperature Limit: %ld C
+PDB Temperature: %ld C</div>
+<div class="lbl">Extended Error:</div><div class="txt">This fault means that the temperature comparator indicated a fault, but the temperature reading was OK. This could indicate noise on the RFCB or PDB, or a faulty board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Power Distribution Board</li></ol>
+</section>
+<section id="BM2273808"><a name="BM2273808"></a>
+<h2>2273808</h2>
+<div class="sym">ERROR: EM_RFHUB_TEMP_ADC_RESET_TIMEOUT</div>
+<div class="txt">Hardware Failure. RF Hub FPGA failed to complete the temperature ADC reset in time.
+Board: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273809"><a name="BM2273809"></a>
+<h2>2273809</h2>
+<div class="sym">ERROR: EM_RFHUB_TEMP_DAC_WRITE_TIMEOUT</div>
+<div class="txt">Hardware Failure. RF Hub FPGA failed to complete the temperature DAC write in time.
+Board: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273810"><a name="BM2273810"></a>
+<h2>2273810</h2>
+<div class="sym">ERROR: EM_RF_HUB_SETUP_STROBE_DISCONNECTED</div>
+<div class="txt">Hardware Failure. The scan setup to the RF Hub failed because the RRx 1 to RF Hub strobe (STRB) fiber optic cable is disconnected. Check the strobe output at RRx 1 and the fiber optic cable output at the RF Hub.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273811"><a name="BM2273811"></a>
+<h2>2273811</h2>
+<div class="sym">ERROR: EM_RF_HUB_SETUP_STROBE_NOT_LATCHED</div>
+<div class="txt">Hardware Failure. The scan setup to the RF Hub failed. The RF Hub did not detect any strobe on the RRx 1 to RF Hub strobe (STRB) fiber optic cable, even though it appears it is connected.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273812"><a name="BM2273812"></a>
+<h2>2273812</h2>
+<div class="sym">ERROR: EM_RF_HUB_SETUP_BANK_INDEX_RFCB_FAILED</div>
+<div class="txt">Scan Setup Failure. A TPS Reset may be necessary. The scan setup through RRx 1 to the RF Hub failed. Check that the IRF to RRx 1 link is active.
+RF/Bias Index: Sent: 0x%x, Received: 0x%x R1 Index: Sent: 0x%x, Received: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The SCP tried to command the RRx through the IRF and dual fiber DVMR link. Run RF Hub - Receiver Datapath and RRX Board Level Diagnostics.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Dual Fiber Cable</li><li>RRx Module</li><li>IRF Board</li><li>SCP Board</li></ol>
+</section>
+<section id="BM2273813"><a name="BM2273813"></a>
+<h2>2273813</h2>
+<div class="sym">ERROR: EM_RF_HUB_SETUP_BANK_INDEX_ALL_REMOTE_FAILED</div>
+<div class="txt">Hardware Failure. The scan setup from the RF Hub RFCB to all RFSBs and MCDBs failed.
+RF/Bias Index: Sent: 0x%x, Received: 0x%x R1 Index: Sent: 0x%x, Received: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The LUT indicies sent through the RRx to the RF Hub RFCB were OK, but they were incorrect on all RFSBs and MCDBs. This is likely a RFCB issue.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273814"><a name="BM2273814"></a>
+<h2>2273814</h2>
+<div class="sym">ERROR: EM_RF_HUB_SETUP_BANK_INDEX_REMOTE_FAILED</div>
+<div class="txt">Hardware Failure. The scan setup from the RF Hub RFCB to a RFSB or MCDB failed.
+Board: %b RF/Bias Index: Sent: 0x%x, Received: 0x%x R1 Index: Sent: 0x%x, Received: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The LUT indicies sent through the RRx to the RF Hub RFCB were OK, but they were incorrect on a single MCDB or RFSB. This could be an issue with the RFCB, the board indicated, or the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Switch Board</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273815"><a name="BM2273815"></a>
+<h2>2273815</h2>
+<div class="sym">ERROR: EM_RF_HUB_SETUP_LO_SIGNAL_RFCB_FAILED</div>
+<div class="txt">Hardware Failure. The RF Hub RFCB detected that the NB LO signal from the NB Exciter is bad.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The cable detect on this cable has already passed, indicating that the cable is connected on both ends. So this should only be seen if there is a faulty cable, RFCB, or NB Exciter. Run the DTX Board Level Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>NB DTx Module</li></ol>
+</section>
+<section id="BM2273816"><a name="BM2273816"></a>
+<h2>2273816</h2>
+<div class="sym">ERROR: EM_RF_HUB_SETUP_LO_SIGNAL_ALL_REMOTE_FAILED</div>
+<div class="txt">Hardware Failure. The NB LO signal from the RF Hub RFCB to all RFSBs is bad. The RFCB indicated the NB LO signal from the NB Exciter was good.</div>
+<div class="lbl">Extended Error:</div><div class="txt">All RFSBs indicated that the NB LO signal was bad. This is likely a faulty RFCB.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273817"><a name="BM2273817"></a>
+<h2>2273817</h2>
+<div class="sym">ERROR: EM_RF_HUB_SETUP_LO_SIGNAL_REMOTE_FAILED</div>
+<div class="txt">Hardware Failure. The NB LO signal from the RF Hub RFCB to a RFSB is bad. The RFCB indicated the NB LO signal from the NB Exciter was good and that the NB LO signal on another RFSB was good.
+Board: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">A single RFSB indicated that the NB LO signal was bad. This could be a faulty RFCB, RFSB, or bad pin on the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Switch Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273818"><a name="BM2273818"></a>
+<h2>2273818</h2>
+<div class="sym">ERROR: EM_RF_HUB_RFSB_ROUTE_BANK_SETUP_FAILURE</div>
+<div class="txt">Scan setup check failed. The RF Hub detected that the hardware failed scan setup. The RFSB routing for the scan was not set correctly by the hardware.
+Board: %b
+Bank: %ld Route Read: 0x%x, Expected: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2273819"><a name="BM2273819"></a>
+<h2>2273819</h2>
+<div class="sym">ERROR: EM_RF_HUB_RFSB_GAIN_BANK_SETUP_FAILURE</div>
+<div class="txt">Scan setup check failed. The RF Hub detected that the hardware failed scan setup. The RFSB gain (R1) for the scan was not set correctly by the hardware.
+Board: %b
+Bank: %ld R1 Read: 0x%x 0x%x, Expected: 0x%x 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2273820"><a name="BM2273820"></a>
+<h2>2273820</h2>
+<div class="sym">ERROR: EM_RF_HUB_PRE_SHUTDOWN_BANK_CHANGE_UNUSED_ERMES</div>
+<div class="txt">Communication Failure. The RF Hub detected that the bank was changed unexpectedly during prep.
+Setup Banks (General, Gain): %ld, %ld Detected Banks (General, Gain): %ld, %ld</div>
+</section>
+<section id="BM2273821"><a name="BM2273821"></a>
+<h2>2273821</h2>
+<div class="sym">ERROR: EM_RF_HUB_PRE_SHUTDOWN_STROBE_CHANGE</div>
+<div class="txt">Communication Failure. The RF Hub detected that the strobe (STRB) fiber changed unexpectedly during prep. The banks were not changed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error can happen when the system software changes banks when it is not supposed to.
+If this issue persists, this could indicate a bad strobe fiber cable, RFCB, or RRx 1. Run the RF Hub - Receiver Datapath Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RRx Module</li></ol>
+</section>
+<section id="BM2273822"><a name="BM2273822"></a>
+<h2>2273822</h2>
+<div class="sym">ERROR: EM_RF_HUB_SETUP_BB_LO_SIGNAL_FAILED</div>
+<div class="txt">Hardware Failure. The RF Hub detected through the MNS Upconverter that the LO signal from the MNS Exciter is bad.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The cable detect on this cable has already passed, so this should only be seen if there is a faulty cable, MNS Upconverter, or MNS Exciter.
+This could also indicate a bad cable or connection from the MNS Upconverter to the RFCB. Make sure to turn off RF Hub power before connecting or disconnecting the MNS upconverter cable. Do not hotplug cables. Run the DTX Board Level Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>BB DTx Module</li><li>MNS Upconverter</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273823"><a name="BM2273823"></a>
+<h2>2273823</h2>
+<div class="sym">ERROR: EM_RF_HUB_SETUP_RX_UNBLANK_RFCB_FAILED</div>
+<div class="txt">Hardware Failure. The RF Hub RFCB detected that the receive unblank signal from the RRx 1 is bad.
+Commanded: %ld, Received: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">The receive unblank was toggled from the SCP through the RRx 1 to the RF Hub RFCB. The RFCB read a different value than expected.
+This could indicate a bad RRx 1 to RF Hub cable, RRx 1, RFCB, or RF Hub backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>RF Hub Control Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273824"><a name="BM2273824"></a>
+<h2>2273824</h2>
+<div class="sym">ERROR: EM_RF_HUB_SETUP_RX_UNBLANK_ALL_REMOTE_FAILED</div>
+<div class="txt">Hardware Failure. The receive unblank from the RF Hub RFCB to all RFSBs is bad. The RFCB indicated the receive unblank from the RRx 1 was good.
+Commanded: %ld, Received: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is most likely an issue with the RFCB.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273825"><a name="BM2273825"></a>
+<h2>2273825</h2>
+<div class="sym">ERROR: EM_RF_HUB_SETUP_RX_UNBLANK_REMOTE_FAILED</div>
+<div class="txt">Hardware Failure. The receive unblank from the RF Hub RFCB to a RFSB is bad. The RFCB indicated the receive unblank from the RRx 1 was good and that the receive unblank on another RFSB was good.
+Board: %b
+Commanded: %ld, Received: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be an issue with the RFCB, the RFSB, or a bad pin on the RF Hub backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Switch Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273826"><a name="BM2273826"></a>
+<h2>2273826</h2>
+<div class="sym">ERROR: EM_RF_HUB_SETUP_LO_SIGNAL_RFCB_FAILED_BB_SWAP</div>
+<div class="txt">Hardware Failure. The RF Hub RFCB detected that the NB LO signal from the NB Exciter is bad. This could indicate that the NB and MNS LO lines are swapped at the Exciters, PEN panel, or at the RF Hub / MNS Upconverter.</div>
+</section>
+<section id="BM2273827"><a name="BM2273827"></a>
+<h2>2273827</h2>
+<div class="sym">ERROR: EM_RF_HUB_RFCB_MCDB_TEMP_FAULT_SPURIOUS</div>
+<div class="txt">Spurious fault detected on the RF Hub MCDB to RFCB temperature fault line.
+Board: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be caused by noise from scanning. Check the shielding on cables going into the RFCB.
+This could indicate a problem with the RFCB, MCDB, or a bad pin on the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273828"><a name="BM2273828"></a>
+<h2>2273828</h2>
+<div class="sym">ERROR: EM_RF_HUB_RFCB_NO_MCDB_TEMP_FAULT_SPURIOUS</div>
+<div class="txt">Spurious fault detected on the RF Hub MCDB to RFCB temperature fault line, from a MCDB slot that is not present.
+Board Slot: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could be caused by noise from scanning. Check the shielding on cables going into the RFCB.
+This could indicate a problem with the RFCB or a bad pin on the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273829"><a name="BM2273829"></a>
+<h2>2273829</h2>
+<div class="sym">ERROR: EM_RF_HUB_TEMP_FAULT_SHUTDOWN</div>
+<div class="txt">RF Hub Temperature Fault Detected The RF Hub detected a temperature fault that prevented operation. A more detailed error should be logged after this.</div>
+</section>
+<section id="BM2273830"><a name="BM2273830"></a>
+<h2>2273830</h2>
+<div class="sym">ERROR: EM_RF_HUB_TEMP_FAULT_WAKEUP</div>
+<div class="txt">RF Hub Temperature Fault Detected The RF Hub detected a temperature fault that stopped operation. A more detailed error should be logged after this.</div>
+</section>
+<section id="BM2273831"><a name="BM2273831"></a>
+<h2>2273831</h2>
+<div class="sym">ERROR: EM_RFHUB_MODULE_TEMP_MIN_FAULT</div>
+<div class="txt">RF Hub bias module temperature too low.
+Temperature Limit: %ld C
+Bias Module Temperature: %ld C
+Board: %b
+Bias Module: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">The board indicated failed the low limit on the temperature check. Confirm that the air cooling line for the RF Hub is attached to the correct port on the blower module. If scan room temperature is within spec, this could indicate a bad board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2273832"><a name="BM2273832"></a>
+<h2>2273832</h2>
+<div class="sym">ERROR: EM_RFHUB_RFCB_TEMP_MIN_FAULT</div>
+<div class="txt">RF Hub RFCB temperature too low.
+Temperature Limit: %ld C
+RFCB Temperature: %ld C</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RFCB failed the low limit on the temperature check. Confirm that the air cooling line for the RF Hub is attached to the correct port on the blower module. If scan room temperature is within spec, this could indicate a bad RFCB.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273833"><a name="BM2273833"></a>
+<h2>2273833</h2>
+<div class="sym">ERROR: EM_RFHUB_PDB_TEMP_MIN_FAULT</div>
+<div class="txt">RF Hub PDB temperature too low.
+Temperature Limit: %ld C
+PDB Temperature: %ld C</div>
+<div class="lbl">Extended Error:</div><div class="txt">The PDB failed the low limit on the temperature check. Confirm that the air cooling line for the RF Hub is attached to the correct port on the blower module. If scan room temperature is within spec, this could indicate a bad RFCB, PDB, or RF Hub backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Power Distribution Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273834"><a name="BM2273834"></a>
+<h2>2273834</h2>
+<div class="sym">ERROR: EM_RF_HUB_TEMP_MCDB_COMPARATOR_FAILURE</div>
+<div class="txt">RF Hub Hardware Failure. The RF Hub MCDB detected a failure in the temperature checking hardware. A comparator value did not read back within range.
+Board: %b
+Comparator Temperature Set: %ld C
+Comparator Temperature Read: %ld C, %ld C</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is most likely a bad MCDB.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2273835"><a name="BM2273835"></a>
+<h2>2273835</h2>
+<div class="sym">ERROR: EM_RF_HUB_TEMP_CHECK_FAIL_LOW</div>
+<div class="txt">RF Hub Hardware Failure. A RF Hub temperature sensor was not able to fault.
+Sensor: %b, %ld
+Board with circuit: %b
+Board with sensor: %b
+Temperature: %ld C
+Temperature checked: %ld C</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could indicate a problem with the boards in the error. If the board with the circuit is different than the board with the sensor, this could also be a problem with a bad pin on the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Power Distribution Board</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273836"><a name="BM2273836"></a>
+<h2>2273836</h2>
+<div class="sym">ERROR: EM_RF_HUB_TEMP_CHECK_FAIL_HIGH</div>
+<div class="txt">RF Hub Hardware Failure. A RF Hub temperature sensor could not be taken out of fault.
+Sensor: %b, %ld
+Board with circuit: %b
+Board with sensor: %b
+Temperature: %ld C
+Temperature checked: %ld C</div>
+<div class="lbl">Extended Error:</div><div class="txt">This could indicate a problem with the boards in the error. If the board with the circuit is different than the board with the sensor, this could also be a problem with a bad pin on the backplane.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Power Distribution Board</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Backplane</li></ol>
+</section>
+<section id="BM2273837"><a name="BM2273837"></a>
+<h2>2273837</h2>
+<div class="sym">ERROR: EM_RFHUB_MODULE_TEMP_WARN</div>
+<div class="txt">WARNING: RF Hub bias module temperature is high. Scanning is allowed until the fault limit is reached. Check that RF Hub air flow is OK.
+Temperature Warning Limit: %ld C
+Bias Module Temperature: %ld C
+Board: %b
+Bias Module: %ld</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the air flow to the RF Hub is OK. Air should constantly flow. Confirm air lines at the blower are not swapped. Check that the scan room temperature is within spec.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2273838"><a name="BM2273838"></a>
+<h2>2273838</h2>
+<div class="sym">ERROR: EM_RFHUB_RFCB_TEMP_WARN</div>
+<div class="txt">WARNING: RF Hub RFCB temperature is high. Scanning is allowed until the fault limit is reached. Check that RF Hub air flow is OK.
+Temperature Warning Limit: %ld C
+RFCB Temperature: %ld C</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the air flow to the RF Hub is OK. Air should constantly flow. Confirm air lines at the blower are not swapped. Check that the scan room temperature is within spec.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2273839"><a name="BM2273839"></a>
+<h2>2273839</h2>
+<div class="sym">ERROR: EM_RFHUB_PDB_TEMP_WARN</div>
+<div class="txt">WARNING: RF Hub PDB temperature is high. Scanning is allowed until the fault limit is reached. Check that RF Hub air flow is OK.
+Temperature Warning Limit: %ld C
+PDB Temperature: %ld C</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the air flow to the RF Hub is OK. Air should constantly flow. Confirm air lines at the blower are not swapped. Check that the scan room temperature is within spec.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Power Distribution Board</li><li>RF Hub Control Board</li></ol>
+</section>
+</body></html>

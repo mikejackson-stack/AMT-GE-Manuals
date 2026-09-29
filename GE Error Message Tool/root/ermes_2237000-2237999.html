@@ -1,0 +1,2958 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2237000-2237999 (465)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2237000-2237999 (465)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2236000-2236999.html">&larr; 2236000-2236999</a><a href="ermes_2238000-2238999.html">2238000-2238999 &rarr;</a></nav></header>
+<section id="BM2237116"><a name="BM2237116"></a>
+<h2>2237116</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_UNEXPECTED_INTR</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: an unexpected interrupt occurred.
+Errmes in Progress: %04x
+Exception Stack Frame Status: %04x
+Exception Stack Frame PC: %08x
+Exception Stack Frame Vector Offset: %08x</div>
+</section>
+<section id="BM2237117"><a name="BM2237117"></a>
+<h2>2237117</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_UNEXPECTED_INTR_BUS</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: An unexpected bus fault interrupt occurred. (Exception Stack Frame = ESF)
+Errmes in Progress: %04x
+ESF Status: %04x
+ESF PC: %08x
+ESF Vector Offset: %04x
+ESF Fault Address: %08x</div>
+</section>
+<section id="BM2237118"><a name="BM2237118"></a>
+<h2>2237118</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_EPROM_CHECKSUM</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: EPROM TEST -- EPROM Checksum error.</div>
+</section>
+<section id="BM2237119"><a name="BM2237119"></a>
+<h2>2237119</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_DRAM_PATTERN</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: DRAM TEST -- Dynamic RAM Pattern Test failed.
+Address: %08x
+Expected: %08x
+Written: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237120"><a name="BM2237120"></a>
+<h2>2237120</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_DRAM_REFRESH</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: DRAM TEST -- Dynamic RAM Refresh Test failed.
+Address: %08x
+Expected: %08x
+Written: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237121"><a name="BM2237121"></a>
+<h2>2237121</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_DRAM_ADDR</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: DRAM TEST -- Dynamic RAM Address Test failed.
+Address: %08x
+Expected: %08x
+Written: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237122"><a name="BM2237122"></a>
+<h2>2237122</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_SRAM_PATTERN</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: SRAM TEST -- Static RAM Pattern Test failed.
+Address: %08x
+Expected: %08x
+Written: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237123"><a name="BM2237123"></a>
+<h2>2237123</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_SRAM_ADDR</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: SRAM TEST -- Static RAM Address Test failed.
+Address: %08x
+Expected: %08x
+Written: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237124"><a name="BM2237124"></a>
+<h2>2237124</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_VECTOR_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Interrupt Vector Register pattern test failed.
+Written: %02x
+Expected: %02x
+Actual: %02x</div>
+</section>
+<section id="BM2237125"><a name="BM2237125"></a>
+<h2>2237125</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_IRQ_REGA</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer A Interrupt Control Register pattern&lt;12&gt;test failed.
+Written: %02x
+Expected: %02x
+Actual: %02x</div>
+</section>
+<section id="BM2237126"><a name="BM2237126"></a>
+<h2>2237126</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_IRQ_REGB</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer B Interrupt Control Register pattern&lt;12&gt;test failed.
+Written: %02x
+Expected: %02x
+Actual: %02x</div>
+</section>
+<section id="BM2237127"><a name="BM2237127"></a>
+<h2>2237127</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_IRQ_REGC</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer C Interrupt Control Register pattern&lt;12&gt;test failed.
+Written: %02x
+Expected: %02x
+Actual: %02x</div>
+</section>
+<section id="BM2237128"><a name="BM2237128"></a>
+<h2>2237128</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_IRQ_REGD</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer D Interrupt Control Register pattern&lt;12&gt;test failed.
+Written: %02x
+Expected: %02x
+Actual: %02x</div>
+</section>
+<section id="BM2237129"><a name="BM2237129"></a>
+<h2>2237129</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_DRAM_IRQ_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC DRAM Interrupt Control Register pattern&lt;12&gt;test failed.
+Written: %02x
+Expected: %02x
+Actual: %02x</div>
+</section>
+<section id="BM2237130"><a name="BM2237130"></a>
+<h2>2237130</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_SCC_IRQ_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC SCC Interrupt Control Register pattern&lt;12&gt;test failed.
+Written: %02x
+Expected: %02x
+Actual: %02x</div>
+</section>
+<section id="BM2237131"><a name="BM2237131"></a>
+<h2>2237131</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_ABORT_IRQ_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC ABORT Interrupt Control Register pattern&lt;12&gt;test failed.
+Written: %02x
+Expected: %02x
+Actual: %02x</div>
+</section>
+<section id="BM2237132"><a name="BM2237132"></a>
+<h2>2237132</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_SCSI_ERR_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC SCSI Interrupt Control Register pattern&lt;12&gt;test failed.
+Written: %02x
+Expected: %02x
+Actual: %02x</div>
+</section>
+<section id="BM2237133"><a name="BM2237133"></a>
+<h2>2237133</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_CMP_REGA</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer A Data Compare Register pattern&lt;12&gt;test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237134"><a name="BM2237134"></a>
+<h2>2237134</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_CMP_REGB</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer B Data Compare Register pattern&lt;12&gt;test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237135"><a name="BM2237135"></a>
+<h2>2237135</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_CMP_REGC</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer C Data Compare Register pattern&lt;12&gt;test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237136"><a name="BM2237136"></a>
+<h2>2237136</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_CMP_REGD</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer D Data Compare Register pattern&lt;12&gt;test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237137"><a name="BM2237137"></a>
+<h2>2237137</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_CNT_REGA</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer A Data Count Register pattern&lt;12&gt;test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237138"><a name="BM2237138"></a>
+<h2>2237138</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_CNT_REGB</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer B Data Count Register pattern&lt;12&gt;test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237139"><a name="BM2237139"></a>
+<h2>2237139</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_CNT_REGC</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer C Data Count Register pattern&lt;12&gt;test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237140"><a name="BM2237140"></a>
+<h2>2237140</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_CNT_REGD</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer D Data Count Register pattern&lt;12&gt;test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237141"><a name="BM2237141"></a>
+<h2>2237141</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_LINEAR_A</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer A failed the linearity test. Timer&lt;12&gt;not monotonically increasing.
+Previous Count: %08x
+Current Count: %08x</div>
+</section>
+<section id="BM2237142"><a name="BM2237142"></a>
+<h2>2237142</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_LINEAR_B</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer B failed the linearity test. Timer&lt;12&gt;not monotonically increasing.
+Previous Count: %08x
+Current Count: %08x</div>
+</section>
+<section id="BM2237143"><a name="BM2237143"></a>
+<h2>2237143</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_LINEAR_C</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer C failed the linearity test. Timer&lt;12&gt;not monotonically increasing.
+Previous Count: %08x
+Current Count: %08x</div>
+</section>
+<section id="BM2237144"><a name="BM2237144"></a>
+<h2>2237144</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_LINEAR_D</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer D failed the linearity test. Timer&lt;12&gt;not monotonically increasing.
+Previous Count: %08x
+Current Count: %08x</div>
+</section>
+<section id="BM2237145"><a name="BM2237145"></a>
+<h2>2237145</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_A_NOINT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer A failed to interrupt.
+Expected Interrupt Level: %02x
+Expected Interrupt Vector Number: %02x
+MC IPRA: %02x</div>
+</section>
+<section id="BM2237146"><a name="BM2237146"></a>
+<h2>2237146</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_B_NOINT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer B failed to interrupt.
+Expected Interrupt Level: %02x
+Expected Interrupt Vector Number: %02x
+MC IPRA: %02x</div>
+</section>
+<section id="BM2237147"><a name="BM2237147"></a>
+<h2>2237147</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_C_NOINT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer C failed to interrupt.
+Expected Interrupt Level: %02x
+Expected Interrupt Vector Number: %02x
+MC IPRA: %02x</div>
+</section>
+<section id="BM2237148"><a name="BM2237148"></a>
+<h2>2237148</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_D_NOINT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timer D failed to interrupt.
+Expected Interrupt Level: %02x
+Expected Interrupt Vector Number: %02x
+MC IPRA: %02x</div>
+</section>
+<section id="BM2237149"><a name="BM2237149"></a>
+<h2>2237149</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_AB_INTCNT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timers A and B failed to interrupt the&lt;12&gt;CPU at consistent intervals.
+Timer A Interrupt Count: %04x
+Timer B Interrupt Count: %04x</div>
+</section>
+<section id="BM2237150"><a name="BM2237150"></a>
+<h2>2237150</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MC_TIMER_CD_INTCNT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MC TEST -- MC Timers C and D failed to interrupt the&lt;12&gt;CPU at consistent intervals.
+Timer A Interrupt Count: %04x
+Timer B Interrupt Count: %04x</div>
+</section>
+<section id="BM2237151"><a name="BM2237151"></a>
+<h2>2237151</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_VSAR1_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME VSAR1 Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237152"><a name="BM2237152"></a>
+<h2>2237152</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_VSAR2_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME VSAR2 Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237153"><a name="BM2237153"></a>
+<h2>2237153</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_VSATR1_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME VSATR1 Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237154"><a name="BM2237154"></a>
+<h2>2237154</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_VSATR2_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME VSATR2 Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237155"><a name="BM2237155"></a>
+<h2>2237155</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_LBSAR1_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME LBSAR1 Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237156"><a name="BM2237156"></a>
+<h2>2237156</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_LBSAR2_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME LBSAR2 Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237157"><a name="BM2237157"></a>
+<h2>2237157</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_LBSAR3_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME LBSAR3 Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237158"><a name="BM2237158"></a>
+<h2>2237158</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_LBSAR4_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME LBSAR4 Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237159"><a name="BM2237159"></a>
+<h2>2237159</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_LBSATR1_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME LBSATR1 Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237160"><a name="BM2237160"></a>
+<h2>2237160</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_DMACLBAC_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME DMACLBAC Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237161"><a name="BM2237161"></a>
+<h2>2237161</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_DMACVAC_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME DMACVAC Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237162"><a name="BM2237162"></a>
+<h2>2237162</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_DMACBC_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME DMACBC Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237163"><a name="BM2237163"></a>
+<h2>2237163</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_TAC_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME TAC Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237164"><a name="BM2237164"></a>
+<h2>2237164</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_TTCOMP1_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME TTCOMP1 Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237165"><a name="BM2237165"></a>
+<h2>2237165</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_TTCOUNT1_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME TTCOUNT1 Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237166"><a name="BM2237166"></a>
+<h2>2237166</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_TTCOMP2_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME TTCOMP2 Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237167"><a name="BM2237167"></a>
+<h2>2237167</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_TTCOUNT2_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME TTCOUNT2 Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237168"><a name="BM2237168"></a>
+<h2>2237168</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_ILR1_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME ILR1 Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237169"><a name="BM2237169"></a>
+<h2>2237169</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_ILR2_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME ILR2 Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237170"><a name="BM2237170"></a>
+<h2>2237170</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_ILR3_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME ILR3 Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237171"><a name="BM2237171"></a>
+<h2>2237171</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_ILR4_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME ILR4 Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237172"><a name="BM2237172"></a>
+<h2>2237172</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_LBIER_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME LBIER Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237173"><a name="BM2237173"></a>
+<h2>2237173</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_IOCR_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME IOCR Register pattern test failed.
+Written: %08x
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237174"><a name="BM2237174"></a>
+<h2>2237174</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_GPR0H_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME GPR0H Register pattern test failed.
+Written: %02x
+Expected: %02x
+Actual: %02x</div>
+</section>
+<section id="BM2237175"><a name="BM2237175"></a>
+<h2>2237175</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_GPR1H_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME GPR1H Register pattern test failed.
+Written: %02x
+Expected: %02x
+Actual: %02x</div>
+</section>
+<section id="BM2237176"><a name="BM2237176"></a>
+<h2>2237176</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_GPR2H_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME GPR2H Register pattern test failed.
+Written: %02x
+Expected: %02x
+Actual: %02x</div>
+</section>
+<section id="BM2237177"><a name="BM2237177"></a>
+<h2>2237177</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_GPR3H_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME GPR3H Register pattern test failed.
+Written: %02x
+Expected: %02x
+Actual: %02x</div>
+</section>
+<section id="BM2237178"><a name="BM2237178"></a>
+<h2>2237178</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_GPR4H_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME GPR4H Register pattern test failed.
+Written: %02x
+Expected: %02x
+Actual: %02x</div>
+</section>
+<section id="BM2237179"><a name="BM2237179"></a>
+<h2>2237179</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_GPR5H_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME GPR5H Register pattern test failed.
+Written: %02x
+Expected: %02x
+Actual: %02x</div>
+</section>
+<section id="BM2237180"><a name="BM2237180"></a>
+<h2>2237180</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_TIMER_LINEAR_A</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Timer A failed the linearity test. Timer&lt;12&gt;not monotonically increasing.
+Previous Count: %08x
+Current Count: %08x</div>
+</section>
+<section id="BM2237181"><a name="BM2237181"></a>
+<h2>2237181</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_TIMER_LINEAR_B</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Timer B failed the linearity test. Timer&lt;12&gt;not monotonically increasing.
+Previous Count: %08x
+Current Count: %08x</div>
+</section>
+<section id="BM2237182"><a name="BM2237182"></a>
+<h2>2237182</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_TIMER_A_NOINT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Timer A failed to interrupt.
+Expected Interrupt Level: %02x
+Expected Interrupt Vector Number: %02x
+MC IPRA: %02x</div>
+</section>
+<section id="BM2237183"><a name="BM2237183"></a>
+<h2>2237183</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_TIMER_B_NOINT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Timer B failed to interrupt.
+Expected Interrupt Level: %02x
+Expected Interrupt Vector Number: %02x
+MC IPRA: %02x</div>
+</section>
+<section id="BM2237184"><a name="BM2237184"></a>
+<h2>2237184</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_TIMER_AB_INTCNT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Timers A and B failed to interrupt the&lt;12&gt;CPU at consistent intervals.
+Timer A Interrupt Count: %04x
+Timer B Interrupt Count: %04x</div>
+</section>
+<section id="BM2237185"><a name="BM2237185"></a>
+<h2>2237185</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_SWI0_NOSTAT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Software Interrupt 0 test is in an unexpected state.
+Interrupt count expected: %04x
+Interrupt count found: %04x
+Interrupt flag expected: %08x
+Interrupt flag found: %08x</div>
+</section>
+<section id="BM2237186"><a name="BM2237186"></a>
+<h2>2237186</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_SWI1_NOSTAT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Software Interrupt 1 test is in an unexpected state.
+Interrupt count expected: %04x
+Interrupt count found: %04x
+Interrupt flag expected: %08x
+Interrupt flag found: %08x</div>
+</section>
+<section id="BM2237187"><a name="BM2237187"></a>
+<h2>2237187</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_SWI2_NOSTAT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Software Interrupt 2 test is in an unexpected state.
+Interrupt count expected: %04x
+Interrupt count found: %04x
+Interrupt flag expected: %08x
+Interrupt flag found: %08x</div>
+</section>
+<section id="BM2237188"><a name="BM2237188"></a>
+<h2>2237188</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_SWI3_NOSTAT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Software Interrupt 3 test is in an unexpected state.
+Interrupt count expected: %04x
+Interrupt count found: %04x
+Interrupt flag expected: %08x
+Interrupt flag found: %08x</div>
+</section>
+<section id="BM2237189"><a name="BM2237189"></a>
+<h2>2237189</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_SWI4_NOSTAT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Software Interrupt 4 test is in an unexpected state.
+Interrupt count expected: %04x
+Interrupt count found: %04x
+Interrupt flag expected: %08x
+Interrupt flag found: %08x</div>
+</section>
+<section id="BM2237190"><a name="BM2237190"></a>
+<h2>2237190</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_SWI5_NOSTAT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Software Interrupt 5 test is in an unexpected state.
+Interrupt count expected: %04x
+Interrupt count found: %04x
+Interrupt flag expected: %08x
+Interrupt flag found: %08x</div>
+</section>
+<section id="BM2237191"><a name="BM2237191"></a>
+<h2>2237191</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_SWI6_NOSTAT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Software Interrupt 6 test is in an unexpected state.
+Interrupt count expected: %04x
+Interrupt count found: %04x
+Interrupt flag expected: %08x
+Interrupt flag found: %08x</div>
+</section>
+<section id="BM2237192"><a name="BM2237192"></a>
+<h2>2237192</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_SWI7_NOSTAT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Software Interrupt 7 test is in an unexpected state.
+Interrupt count expected: %04x
+Interrupt count found: %04x
+Interrupt flag expected: %08x
+Interrupt flag found: %08x</div>
+</section>
+<section id="BM2237193"><a name="BM2237193"></a>
+<h2>2237193</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_SWI0_NOINT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Software Interrupt 0 test did not cause interrupt.
+Interrupt count expected: %04x
+Interrupt count found: %04x
+Interrupt flag expected: %08x
+Interrupt flag found: %08x</div>
+</section>
+<section id="BM2237194"><a name="BM2237194"></a>
+<h2>2237194</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_SWI1_NOINT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Software Interrupt 1 test did not cause interrupt.
+Interrupt count expected: %04x
+Interrupt count found: %04x
+Interrupt flag expected: %08x
+Interrupt flag found: %08x</div>
+</section>
+<section id="BM2237195"><a name="BM2237195"></a>
+<h2>2237195</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_SWI2_NOINT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Software Interrupt 2 test did not cause interrupt.
+Interrupt count expected: %04x
+Interrupt count found: %04x
+Interrupt flag expected: %08x
+Interrupt flag found: %08x</div>
+</section>
+<section id="BM2237196"><a name="BM2237196"></a>
+<h2>2237196</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_SWI3_NOINT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Software Interrupt 3 test did not cause interrupt.
+Interrupt count expected: %04x
+Interrupt count found: %04x
+Interrupt flag expected: %08x
+Interrupt flag found: %08x</div>
+</section>
+<section id="BM2237197"><a name="BM2237197"></a>
+<h2>2237197</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_SWI4_NOINT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Software Interrupt 4 test did not cause interrupt.
+Interrupt count expected: %04x
+Interrupt count found: %04x
+Interrupt flag expected: %08x
+Interrupt flag found: %08x</div>
+</section>
+<section id="BM2237198"><a name="BM2237198"></a>
+<h2>2237198</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_SWI5_NOINT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Software Interrupt 5 test did not cause interrupt.
+Interrupt count expected: %04x
+Interrupt count found: %04x
+Interrupt flag expected: %08x
+Interrupt flag found: %08x</div>
+</section>
+<section id="BM2237199"><a name="BM2237199"></a>
+<h2>2237199</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_SWI6_NOINT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Software Interrupt 6 test did not cause interrupt.
+Interrupt count expected: %04x
+Interrupt count found: %04x
+Interrupt flag expected: %08x
+Interrupt flag found: %08x</div>
+</section>
+<section id="BM2237200"><a name="BM2237200"></a>
+<h2>2237200</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_VME_SWI7_NOINT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: VME TEST -- VME Software Interrupt 7 test did not cause interrupt.
+Interrupt count expected: %04x
+Interrupt count found: %04x
+Interrupt flag expected: %08x
+Interrupt flag found: %08x</div>
+</section>
+<section id="BM2237201"><a name="BM2237201"></a>
+<h2>2237201</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_FPP_INSTALLED</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: FPP TEST -- The Floating-Point Coprocessor is not installed.</div>
+</section>
+<section id="BM2237202"><a name="BM2237202"></a>
+<h2>2237202</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_FPP_DATA_REG</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: FPP TEST -- Floating-Point Coprocessor data register sliding-one pattern test failed.</div>
+</section>
+<section id="BM2237203"><a name="BM2237203"></a>
+<h2>2237203</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_FPP_MPY</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: FPP TEST -- The Floating-Point Coprocessor multiplication instruction test failed.</div>
+</section>
+<section id="BM2237204"><a name="BM2237204"></a>
+<h2>2237204</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_FPP_ADD</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: FPP TEST -- The Floating-Point Coprocessor addition&lt;12&gt;instruction test failed.</div>
+</section>
+<section id="BM2237205"><a name="BM2237205"></a>
+<h2>2237205</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_FPP_SUB</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: FPP TEST -- The Floating-Point Coprocessor subtraction instruction test failed.</div>
+</section>
+<section id="BM2237206"><a name="BM2237206"></a>
+<h2>2237206</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_REAL_TIME_CLK_ERR</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: REAL-TIME CLOCK TEST -- The clock value did not change in a reasonable amount of time.</div>
+</section>
+<section id="BM2237207"><a name="BM2237207"></a>
+<h2>2237207</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_REAL_TIME_CLK_BAT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: REAL-TIME CLOCK TEST -- Low backup battery power. wrote: 0x%02x expected: 0x%02x read back: 0x%02x</div>
+</section>
+<section id="BM2237208"><a name="BM2237208"></a>
+<h2>2237208</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_IPG_TEST</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: INTER-PROCESSOR TEST -- IPG was not found in short I/O space. Inter-Processor Test will not be attempted.</div>
+</section>
+<section id="BM2237209"><a name="BM2237209"></a>
+<h2>2237209</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_IPG_IACK_ERR</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: INTER-PROCESSOR TEST -- IACK chain missing. Check IACK jumpers or missing boards between IPG and CPU board.</div>
+</section>
+<section id="BM2237210"><a name="BM2237210"></a>
+<h2>2237210</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_IPG_NOT_PRESENT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR - INTER-PROCESSOR TEST IPG failed to set the flag to start Synch test. Check CPU VME bus access or IPG.</div>
+</section>
+<section id="BM2237211"><a name="BM2237211"></a>
+<h2>2237211</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_IPHS_TIMEOUT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: INTER-PROCESSOR TEST -- Failed to receive the IPG synchronization flag.
+Expected: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237212"><a name="BM2237212"></a>
+<h2>2237212</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_IPGDPR_PAT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: IPG DPR TEST -- Pattern Test failed.
+Address: %08x
+Expected: %08x
+Written: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237213"><a name="BM2237213"></a>
+<h2>2237213</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_IPGDPR_ADRS</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: IPG DPR TEST -- Address Test failed.
+Address: %08x
+Expected: %08x
+Written: %08x
+Actual: %08x</div>
+</section>
+<section id="BM2237214"><a name="BM2237214"></a>
+<h2>2237214</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_IPG_INT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: IPG DPR TEST -- Failed to receive interrupt.</div>
+</section>
+<section id="BM2237215"><a name="BM2237215"></a>
+<h2>2237215</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_IPG_SPUR_INT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: INTER-PROCESSOR TEST -- Spurious interrupt received.</div>
+</section>
+<section id="BM2237216"><a name="BM2237216"></a>
+<h2>2237216</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MPCC_RX_CHAR_CHA</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MPCC SERIAL CONTROLLER TEST -- Channel A receive character ready flag [Read Register 0, Bit 0] was not set as expected.
+SCCA RR0: %02x
+SCCA RR1: %02x
+SCCA RR3: %02x</div>
+</section>
+<section id="BM2237217"><a name="BM2237217"></a>
+<h2>2237217</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MPCC_RX_CHAR_CHB</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MPCC SERIAL CONTROLLER TEST -- Channel B receive character ready flag [Read Register 0, Bit 1] was not set as expected.
+SCCB RR0: %02x
+SCCB RR1: %02x
+SCCB RR3: %02x</div>
+</section>
+<section id="BM2237218"><a name="BM2237218"></a>
+<h2>2237218</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MPCC_A_RX_INTR</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MPCC SERIAL CTLR TEST -- Receive interrupt did not occur on MPCC chip channel A.
+Expected Int Level: %02x
+Expected Int Vector No.: %02x
+SCCA RR0: %02x
+SCCA RR1: %02x
+SCCA RR3: %02x</div>
+</section>
+<section id="BM2237219"><a name="BM2237219"></a>
+<h2>2237219</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MPCC_B_RX_INTR</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MPCC SERIAL CTLR TEST -- Receive interrupt did not occur on MPCC chip channel B.
+Expected Int Level: %02x
+Expected Int Vector No.: %02x
+SCCB RR0: %02x
+SCCB RR1: %02x
+SCCA RR3: %02x</div>
+</section>
+<section id="BM2237220"><a name="BM2237220"></a>
+<h2>2237220</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MPCC_A_TX_BUF_ETY</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MPCC SERIAL CONTROLLER TEST -- TX buffer was not empty after waiting 2 MS on MPCC chip Channel A.
+SCCA RR0: %02x
+SCCA RR3: %02x</div>
+</section>
+<section id="BM2237221"><a name="BM2237221"></a>
+<h2>2237221</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MPCC_B_TX_BUF_ETY</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MPCC SERIAL CONTROLLER TEST -- TX buffer was not empty after waiting 2 MS on MPCC chip Channel B.
+SCCB RR0: %02x
+SCCB RR3: %02x</div>
+</section>
+<section id="BM2237222"><a name="BM2237222"></a>
+<h2>2237222</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MPCC_A_TX_LOAD</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MPCC SERIAL CONTROLLER TEST -- TX-Buffer-Empty-Flag not clear after 5 writes to MPCC Channel A.
+SCCA RR0: %02x
+SCCA RR3: %02x</div>
+</section>
+<section id="BM2237223"><a name="BM2237223"></a>
+<h2>2237223</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MPCC_B_TX_LOAD</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MPCC SERIAL CONTROLLER TEST -- TX-Buffer-Empty-Flag not clear after 5 writes to MPCC Channel B.
+SCCB RR0: %02x
+SCCB RR3: %02x</div>
+</section>
+<section id="BM2237224"><a name="BM2237224"></a>
+<h2>2237224</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MPCC_A_TX_INIT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MPCC SERIAL CONTROLLER TEST -- TX buffer was not empty after setup of MPCC chip Channel A.
+SCCA RR0: %02x
+SCCA RR3: %02x</div>
+</section>
+<section id="BM2237225"><a name="BM2237225"></a>
+<h2>2237225</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MPCC_B_TX_INIT</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MPCC SERIAL CONTROLLER TEST -- TX buffer was not empty after setup of MPCC chip Channel B.
+SCCB RR0: %02x
+SCCB RR3: %02x</div>
+</section>
+<section id="BM2237226"><a name="BM2237226"></a>
+<h2>2237226</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MPCC_A_LOOPBACK</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MPCC SERIAL CONTROLLER TEST -- Data transmitted was not the same as the data received on MPCC chip Channel A.
+Transmitted: %02x
+Received: %02x</div>
+</section>
+<section id="BM2237227"><a name="BM2237227"></a>
+<h2>2237227</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MPCC_B_LOOPBACK</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MPCC SERIAL CONTROLLER TEST -- Data transmitted was not the same as the data received on MPCC chip Channel B.
+Transmitted: %02x
+Received: %02x</div>
+</section>
+<section id="BM2237228"><a name="BM2237228"></a>
+<h2>2237228</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MPCC_A_TX_INTR</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MPCC SERIAL CONTROLLER TEST -- Transmit interrupt did not occur on MPCC chip Channel A.
+Expected Interrupt Level: %02x
+Expected Interrupt Vector Number: %02x
+SCCA RR0: %02x
+SCCA RR3: %02x</div>
+</section>
+<section id="BM2237229"><a name="BM2237229"></a>
+<h2>2237229</h2>
+<div class="sym">ERROR: EM_DIAG_TPS040_MPCC_B_TX_INTR</div>
+<div class="txt">TPS CPU BOARD POWER-UP ERROR: MPCC SERIAL CONTROLLER TEST -- Transmit interrupt did not occur on MPCC chip Channel B.
+Expected Interrupt Level: %02x
+Expected Interrupt Vector Number: %02x
+SCCB RR0: %02x
+SCCB RR3: %02x</div>
+</section>
+<section id="BM2237256"><a name="BM2237256"></a>
+<h2>2237256</h2>
+<div class="sym">ERROR: EM_SEM_CREATE_ERROR</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - SEMAPHORE ERROR Failed while creating semaphore to inhibit multiple invocations of CERD boot.</div>
+</section>
+<section id="BM2237257"><a name="BM2237257"></a>
+<h2>2237257</h2>
+<div class="sym">ERROR: EM_SEM_TAKE_ERROR</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - SEMAPHORE NOT AVAILABLE Failed while taking semaphore associated with CERD boot software. Semaphore is taken by some other task on TPS side (i.e. CERD boot already started by another task).</div>
+</section>
+<section id="BM2237258"><a name="BM2237258"></a>
+<h2>2237258</h2>
+<div class="sym">ERROR: EM_FILE_OPEN_ERROR</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - FILE OPEN ERROR File open of the following file failed on the TPS CPU. Verify that the file is present and has read permission. If so, possible TPS CPU or BIT3 hardware problem.
+File: %s%s%s</div>
+</section>
+<section id="BM2237259"><a name="BM2237259"></a>
+<h2>2237259</h2>
+<div class="sym">ERROR: EM_FILE_READ_ERROR</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - FILE READ ERROR File read of the following file failed on the TPS CPU. Verify that the file is present and has read permission. If so, possible TPS CPU or BIT3 hardware problem.
+File: %s%s%s</div>
+</section>
+<section id="BM2237260"><a name="BM2237260"></a>
+<h2>2237260</h2>
+<div class="sym">ERROR: EM_FILE_SEEK_ERROR</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - FILE SEEK ERROR File seek of the following file failed on the TPS CPU. Verify that the file is present and has read permission. If so, possible TPS CPU or BIT3 hardware problem.
+File: %s%s%s</div>
+</section>
+<section id="BM2237261"><a name="BM2237261"></a>
+<h2>2237261</h2>
+<div class="sym">ERROR: EM_INVALID_SELECTION</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - INTERNAL SOFTWARE ERROR Invalid option selected. The selection is out of range. Status: %d</div>
+</section>
+<section id="BM2237262"><a name="BM2237262"></a>
+<h2>2237262</h2>
+<div class="sym">ERROR: EM_FILE_NAME_MISSING</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - FILE NAME REQUIRED FOR THIS OPTION File name parameter is missing (NULL) in the input parameter list of CERD boot. File name is required for this option of CERD boot.</div>
+</section>
+<section id="BM2237263"><a name="BM2237263"></a>
+<h2>2237263</h2>
+<div class="sym">ERROR: EM_FILE_STAT_ERROR</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - FILE STAT ERROR Encountered error while getting the status information of a file to be downloaded to CERD. Check that the file exists.
+File: %s%s%s</div>
+</section>
+<section id="BM2237264"><a name="BM2237264"></a>
+<h2>2237264</h2>
+<div class="sym">ERROR: EM_MALLOC_ERROR</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - MEMORY ALLOCATION ERROR Encountered error while allocating TPS memory.
+Requested buffer size: %d bytes
+Error code: %d</div>
+</section>
+<section id="BM2237265"><a name="BM2237265"></a>
+<h2>2237265</h2>
+<div class="sym">ERROR: EM_FILE_LENGTH_MISMATCH</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - FILE LENGTH MISMATCH Actual file length of the input file does not match the file length information in the header of the file.
+File: %s%s%s
+File length: %d bytes
+File length specified in header field: %d bytes</div>
+</section>
+<section id="BM2237266"><a name="BM2237266"></a>
+<h2>2237266</h2>
+<div class="sym">ERROR: EM_FILE_CHKSUM_MISMATCH</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - CHECKSUM MISMATCH The checksum of the following file does not match the stated checksum in the file header.
+File: %s%s%s
+Computed checksum: %08xH
+Stated checksum in file header: %08xH</div>
+</section>
+<section id="BM2237267"><a name="BM2237267"></a>
+<h2>2237267</h2>
+<div class="sym">ERROR: EM_BOOT_TERM_INVOKED</div>
+<div class="txt">CERD BOOT ERROR - CERD BOOT TERMINAL IN USE The CERD indicates that the CERD Boot Terminal is in use, so the CERD boot process was not completed. When finished using the boot terminal, please perform a TPS Reset to boot the CERD.</div>
+</section>
+<section id="BM2237268"><a name="BM2237268"></a>
+<h2>2237268</h2>
+<div class="sym">ERROR: EM_BOOT_ERROR</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - BOOT PROCESS INCOMPLETE CERD boot process is incomplete. CERD failed to respond during the boot. %b
+Status: %d</div>
+</section>
+<section id="BM2237269"><a name="BM2237269"></a>
+<h2>2237269</h2>
+<div class="sym">ERROR: EM_BOOT_RESTART</div>
+<div class="txt">To restart the CERD boot process, reset the TPS.</div>
+</section>
+<section id="BM2237270"><a name="BM2237270"></a>
+<h2>2237270</h2>
+<div class="sym">ERROR: EM_FLASH_CHKSUM_FAIL</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - CHECKSUM MISMATCH Checksums of the Flash file in the CERD and the file present on the disk do not agree. The disk file will be loaded to Flash memory.
+CERD Flash checksum: %08xH
+Disk file checksum: %08xH</div>
+</section>
+<section id="BM2237271"><a name="BM2237271"></a>
+<h2>2237271</h2>
+<div class="sym">ERROR: EM_ID_TO_FILE_NAME</div>
+<div class="txt">0=CAP Boot Module, 1=ASC Powerup Diags, 2=ASC Boot diags, 3=LCA file</div>
+</section>
+<section id="BM2237272"><a name="BM2237272"></a>
+<h2>2237272</h2>
+<div class="sym">ERROR: EM_BOOT_CAP_ASC_ERROR</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - BOOT ERRORS ON CERD CERD boot software on CAP/ASC had errors.
+First error : %d.</div>
+</section>
+<section id="BM2237273"><a name="BM2237273"></a>
+<h2>2237273</h2>
+<div class="sym">ERROR: EM_RESPONSE_NOT_RECEIVED</div>
+<div class="txt">CERD BOOT ERROR CERD boot software on TPS timed out while waiting for a response from the CAP. IT MAY BE NECESSARY TO CYCLE POWER ON THE ISE CHASSIS TO CLEAR THIS CONDITION.
+timeout duration = %d</div>
+</section>
+<section id="BM2237274"><a name="BM2237274"></a>
+<h2>2237274</h2>
+<div class="sym">ERROR: EM_STATUS_NOT_RECEIVED</div>
+<div class="txt">CERD BOOT COMMUNICATION ERROR CERD boot software on TPS timed out while waiting for status from the CAP. IT MAY BE NECESSARY TO CYCLE POWER ON THE ISE CHASSIS TO CLEAR THIS CONDITION.</div>
+</section>
+<section id="BM2237275"><a name="BM2237275"></a>
+<h2>2237275</h2>
+<div class="sym">ERROR: EM_CERD_INT_ERROR</div>
+<div class="txt">CERD BOOT FAILURE The CERD failed to respond with a CERD to TPS interrupt after being reset by the TPS during the CERD boot process. IT MAY BE NECESSARY TO CYCLE POWER ON THE ISE CHASSIS TO CLEAR THIS CONDITION.</div>
+</section>
+<section id="BM2237276"><a name="BM2237276"></a>
+<h2>2237276</h2>
+<div class="sym">ERROR: EM_CERD_BOARD_STUCK</div>
+<div class="txt">CERD BOOT ERROR No response from the CERD. It appears that the CERD may have been reset while reprogramming FLASH. IT MAY BE NECESSARY TO CYCLE POWER ON THE ISE CHASSIS TO CLEAR THIS CONDITION.</div>
+</section>
+<section id="BM2237277"><a name="BM2237277"></a>
+<h2>2237277</h2>
+<div class="sym">ERROR: EM_CERD_INDV_CHKSUM_ERR</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - INDIVIDUAL CHECKSUM MISMATCH Checksum of %d (%b) file present in Flash memory does not match the checksum of the file present on the disk.
+Flash file checksum: %08xH
+Disk file checksum: %08xH</div>
+</section>
+<section id="BM2237278"><a name="BM2237278"></a>
+<h2>2237278</h2>
+<div class="sym">ERROR: EM_CERD_CMD_NO_RESPONSE</div>
+<div class="txt">CERD BOOT ERROR - UNEXPECTED RESPONSE FROM CAP The CAP&#x27;s response to a TPS CERD Boot command is unknown. A valid response was not received for command %d from TPS to CAP.
+unknown response : %d</div>
+</section>
+<section id="BM2237279"><a name="BM2237279"></a>
+<h2>2237279</h2>
+<div class="sym">ERROR: EM_SEM_BUSY_ERR</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - DPR HARDWARE SEMAPHORE TIME OUT Time out occurred while waiting for hardware semaphore. Hardware Semaphore was not available from TPS side. Selected semaphore is %d and the waiting time was %d sec.</div>
+</section>
+<section id="BM2237280"><a name="BM2237280"></a>
+<h2>2237280</h2>
+<div class="sym">ERROR: EM_SEM_GIVE_ERROR</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - SEMAPHORE RELEASE ERROR Failed while releasing software semaphore associated with CERD boot.
+Error status: %d</div>
+</section>
+<section id="BM2237281"><a name="BM2237281"></a>
+<h2>2237281</h2>
+<div class="sym">ERROR: EM_REQ_FILE_ERROR</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - REQUESTED FILE NOT PRESENT CERD boot was invoked to load %d (%b). The file is not present in the \ combined file hence the download failed. Check the combined file and the \ destination-id field of cx_init() function.</div>
+</section>
+<section id="BM2237282"><a name="BM2237282"></a>
+<h2>2237282</h2>
+<div class="sym">ERROR: EM_REQ_FILE_DATA_ERR</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - FILE DOESN&#x27;T HAVE DATA CERD boot was invoked to load %d (%b). The file does not have data in the \ combined file hence the download failed. Check the combined file and the \ destination-id field of cx_init() function.</div>
+</section>
+<section id="BM2237283"><a name="BM2237283"></a>
+<h2>2237283</h2>
+<div class="sym">ERROR: EM_ISR_INSTALL_ERR</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - ISR INSTALL ERROR Encountered error while installing Interrupt Service Routine for the CAP -&gt; TPS interrupt. Error code: %d</div>
+</section>
+<section id="BM2237284"><a name="BM2237284"></a>
+<h2>2237284</h2>
+<div class="sym">ERROR: EM_CERD_NOT_PRESENT</div>
+<div class="txt">CERD DRIVER ERROR - ON TPS - CERD BOARD NOT PRESENT CERD board is not present in the system. If the board is present, edit the /w/MRconfig.cfg file and reset TPS.</div>
+</section>
+<section id="BM2237285"><a name="BM2237285"></a>
+<h2>2237285</h2>
+<div class="sym">ERROR: EM_CERD_BOOT_ERR</div>
+<div class="txt">CERD BOOT FAILURE Unable to load software to the CERD board. The CERD is not initialized.</div>
+</section>
+<section id="BM2237286"><a name="BM2237286"></a>
+<h2>2237286</h2>
+<div class="sym">ERROR: EM_CERD_FLASH_DNLD_FAIL</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - FLASH MEMORY CHECKSUM ERROR A new Flash memory file was downloaded to CAP and the CERD board was reset so that the new Flash memory file will be used during CERD boot. %b</div>
+</section>
+<section id="BM2237287"><a name="BM2237287"></a>
+<h2>2237287</h2>
+<div class="sym">ERROR: EM_CERD_FLASH_DNLD_FAIL_EXT</div>
+<div class="txt">CAP boot software finds that the new file fails in the checksum test. Flash file on disk may be the source of problem.</div>
+</section>
+<section id="BM2237288"><a name="BM2237288"></a>
+<h2>2237288</h2>
+<div class="sym">ERROR: EM_XFER_CHKSUM_ERROR</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - CHECKSUM ERROR The checksum of the data transferred to CAP does not match the checksum in the file header of the transferred file.
+Computed data checksum: %08xH
+File header checksum: %08xH</div>
+</section>
+<section id="BM2237289"><a name="BM2237289"></a>
+<h2>2237289</h2>
+<div class="sym">ERROR: EM_CMD_REG_NON_ZERO</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - COMMAND REGISTER NON ZERO The previous command was not read/cleared by CAP boot software. Possible software error or CAP may have hung up.
+Previous command: %d
+Present command: %d.</div>
+</section>
+<section id="BM2237290"><a name="BM2237290"></a>
+<h2>2237290</h2>
+<div class="sym">ERROR: EM_BLK_CHKSUM_ERR</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - CHECKSUM ERROR Failed while transferring file from TPS to CAP. There was a checksum error in one of the data blocks transferred to CAP.</div>
+</section>
+<section id="BM2237291"><a name="BM2237291"></a>
+<h2>2237291</h2>
+<div class="sym">ERROR: EM_DATA_ALIGN_ERR</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - DATA ALIGNMENT ERROR Encountered error while transferring a block of data from TPS to CAP. Data block is not long word aligned.</div>
+</section>
+<section id="BM2237292"><a name="BM2237292"></a>
+<h2>2237292</h2>
+<div class="sym">ERROR: EM_FLASH_PRGM_FAIL</div>
+<div class="txt">CERD BOOT ERROR - ON TPS - FLASH MEMORY PROGRAMMING ERROR New Flash memory file was transferred to CAP, but there was a failure detected while erasing/programming the Flash device.</div>
+</section>
+<section id="BM2237293"><a name="BM2237293"></a>
+<h2>2237293</h2>
+<div class="sym">ERROR: EM_FLASH_NEW_FILE</div>
+<div class="txt">CERD BOOT STATUS - ON TPS - NEW FLASH MEMORY FILE LOADED New Flash memory file was transferred from the file system to CERD and the file was programmed successfully into Flash memory on CERD.</div>
+</section>
+<section id="BM2237294"><a name="BM2237294"></a>
+<h2>2237294</h2>
+<div class="sym">ERROR: EM_FLASH_NEW_TIMESTAMP</div>
+<div class="txt">CERD BOOT STATUS - ON TPS - NEW FLASH MEMORY FOUND The time stamp of the Flash memory file loaded in CERD is different from the time stamp of the Flash file present on the disk. The new disk file will be transferred to CERD.</div>
+</section>
+<section id="BM2237295"><a name="BM2237295"></a>
+<h2>2237295</h2>
+<div class="sym">ERROR: EM_FLASH_REPROGRAM_IN_PROGRESS</div>
+<div class="txt">Reprogramming CERD Flash Memory (takes 3 to 4 minutes)\b</div>
+</section>
+<section id="BM2237296"><a name="BM2237296"></a>
+<h2>2237296</h2>
+<div class="sym">ERROR: EM_CXSETCMD_SEMERR</div>
+<div class="txt">CERD BOOT ERROR TPS was unable to obtain the CERD DPR Hardware semaphore to send CERD Boot command %d to the CERD.</div>
+</section>
+<section id="BM2237297"><a name="BM2237297"></a>
+<h2>2237297</h2>
+<div class="sym">ERROR: EM_CXSETCMD_WAITERR</div>
+<div class="txt">CERD BOOT ERROR The CERD did not respond to a boot command in the allotted time.
+CERD command : %d
+response time : %d</div>
+</section>
+<section id="BM2237316"><a name="BM2237316"></a>
+<h2>2237316</h2>
+<div class="sym">ERROR: EM_CERD_INIT_TIMEOUT</div>
+<div class="txt">CERD INIT ERROR - No Response from CAP. The TPS CPU reset the CERD and downloaded the CAP diags file to the CERD but timed out while waiting for the CAP to respond. FRU(s): CERD Digital Bd</div>
+</section>
+<section id="BM2237317"><a name="BM2237317"></a>
+<h2>2237317</h2>
+<div class="sym">ERROR: EM_CERD_RESPONSE_TIMEOUT</div>
+<div class="txt">CERD EXEC ERROR: No Response from CAP. The TPS CPU has timed out while waiting for the CAP to respond to a previous command. The CAP Task ID that failed to respond is %d. FRU(s): CERD Digital Bd</div>
+</section>
+<section id="BM2237318"><a name="BM2237318"></a>
+<h2>2237318</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_CAP_SEM_TOUT</div>
+<div class="txt">CERD Diags : VIC function test failure.(from CAP processor) CAP could not obtain the semaphore.
+Timeout count : %08H _____________ : %08H _____________ : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237319"><a name="BM2237319"></a>
+<h2>2237319</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_CAP_CMD_TOUT</div>
+<div class="txt">CERD Diags : VIC function test failure.(from CAP processor) CAP did not receive a new command packet from TPS.
+Timeout count : %08H _____________ : %08H _____________ : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237320"><a name="BM2237320"></a>
+<h2>2237320</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_CAP_CMD_ERR</div>
+<div class="txt">CERD Diags : VIC function test failure.(from CAP processor) CAP received a wrong command packet from TPS.
+Address : %08H
+Expected : %08H
+Actual : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237321"><a name="BM2237321"></a>
+<h2>2237321</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_TPS_SEM_TOUT</div>
+<div class="txt">CERD Diags : VIC function test failure.(from TPS processor) TPS could not obtain the semaphore.
+Timeout count : %08H _____________ : %08H _____________ : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237322"><a name="BM2237322"></a>
+<h2>2237322</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_TPS_STS_TOUT</div>
+<div class="txt">CERD Diags : VIC function test failure.(from TPS processor) TPS did not receive a new status packet from CAP.
+Timeout count : %08H _____________ : %08H _____________ : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237323"><a name="BM2237323"></a>
+<h2>2237323</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_TPS_STS_ERR</div>
+<div class="txt">CERD Diags : VIC function test failure.(from TPS processor) TPS received a wrong status packet from CAP.
+received Test number : %08H
+received Sub number : %08H
+received Status : %08H
+received message[0] : %08H
+received message[1] : %08H</div>
+</section>
+<section id="BM2237324"><a name="BM2237324"></a>
+<h2>2237324</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_CAP_COMM_PAT</div>
+<div class="txt">CERD Diags : VIC function test failure.(from CAP processor) CAP detected a pattern test failure in communication area test.
+Address : %08H
+Expected : %08H
+Actual : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237325"><a name="BM2237325"></a>
+<h2>2237325</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_CAP_COMM_ADR</div>
+<div class="txt">CERD Diags : VIC function test failure.(from CAP processor) CAP detected an address test failure in communication area test.
+Address : %08H
+Expected : %08H
+Actual : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237326"><a name="BM2237326"></a>
+<h2>2237326</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_TPS_COMM_TOUT</div>
+<div class="txt">CERD Diags : VIC function test failure.(from TPS processor) TPS could not obtain synchronization with CAP.
+Timeout count : %08H _____________ : %08H _____________ : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237327"><a name="BM2237327"></a>
+<h2>2237327</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_TPS_COMM_TPS_PAT</div>
+<div class="txt">CERD Diags : VIC function test failure.(from TPS processor) TPS detected a pattern test(by TPS only) failure in communication area test.
+Address : %08H
+Expected : %08H
+Actual : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237328"><a name="BM2237328"></a>
+<h2>2237328</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_TPS_COMM_TPS_ADR</div>
+<div class="txt">CERD Diags : VIC function test failure.(from TPS processor) TPS detected an address test(by TPS only) failure in communication area test.
+Address : %08H
+Expected : %08H
+Actual : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237329"><a name="BM2237329"></a>
+<h2>2237329</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_TPS_COMM_TPS_WALK</div>
+<div class="txt">CERD Diags : VIC function test failure.(from TPS processor) TPS detected a walking 1s/0s test(by TPS only) failure in communication area test.
+Address : %08H
+Expected : %08H
+Actual : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237330"><a name="BM2237330"></a>
+<h2>2237330</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_TPS_COMM_PAT</div>
+<div class="txt">CERD Diags : VIC function test failure.(from TPS processor) TPS detected a pattern test failure in communication area test.
+Address : %08H
+Expected : %08H
+Actual : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237331"><a name="BM2237331"></a>
+<h2>2237331</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_TPS_COMM_ADR</div>
+<div class="txt">CERD Diags : VIC function test failure.(from TPS processor) TPS detected an address test failure in communication area test.
+Address : %08H
+Expected : %08H
+Actual : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237332"><a name="BM2237332"></a>
+<h2>2237332</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_CAP_SEM_ERR</div>
+<div class="txt">CERD Diags : VIC function test failure.(from CAP processor) CAP detected a semaphore test failure.
+Address : %08H
+Expected : %08H
+Actual : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237333"><a name="BM2237333"></a>
+<h2>2237333</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_TPS_SEM_ERR</div>
+<div class="txt">CERD Diags : VIC function test failure.(from TPS processor) TPS detected a semaphore test failure.
+Address : %08H
+Expected : %08H
+Actual : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237334"><a name="BM2237334"></a>
+<h2>2237334</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_TPS_DPR_PAT</div>
+<div class="txt">CERD Diags : VIC function test failure.(from TPS processor) TPS detected a pattern test failure in DPR TPS test.
+Address : %08H
+Expected : %08H
+Actual : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237335"><a name="BM2237335"></a>
+<h2>2237335</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_TPS_DPR_ADR</div>
+<div class="txt">CERD Diags : VIC function test failure.(from TPS processor) TPS detected an address test failure in DPR TPS test.
+Address : %08H
+Expected : %08H
+Actual : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237336"><a name="BM2237336"></a>
+<h2>2237336</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_TPS_DPR_WALK</div>
+<div class="txt">CERD Diags : VIC function test failure.(from TPS processor) TPS detected a walking 1s/0s test failure in DPR TPS test.
+Address : %08H
+Expected : %08H
+Actual : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237337"><a name="BM2237337"></a>
+<h2>2237337</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_CAP_HAM_PAT</div>
+<div class="txt">CERD Diags : VIC function test failure.(from CAP processor) CAP detected a pattern test failure in DPR hammer test.
+Address : %08H
+Expected : %08H
+Actual : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237338"><a name="BM2237338"></a>
+<h2>2237338</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_CAP_HAM_ADR</div>
+<div class="txt">CERD Diags : VIC function test failure.(from CAP processor) CAP detected an address test failure in DPR hammer test.
+Address : %08H
+Expected : %08H
+Actual : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237339"><a name="BM2237339"></a>
+<h2>2237339</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_TPS_HAM_PAT</div>
+<div class="txt">CERD Diags : VIC function test failure.(from TPS processor) TPS detected a pattern test failure in DPR hammer test.
+Address : %08H
+Expected : %08H
+Actual : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237340"><a name="BM2237340"></a>
+<h2>2237340</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_TPS_HAM_ADR</div>
+<div class="txt">CERD Diags : VIC function test failure.(from TPS processor) TPS detected an address test failure in DPR hammer test.
+Address : %08H
+Expected : %08H
+Actual : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237341"><a name="BM2237341"></a>
+<h2>2237341</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_CAP_VIC_TOUT</div>
+<div class="txt">CERD Diags : VIC function test failure.(from CAP processor) CAP could not obtain the VIC local bus.
+Timeout count : %08H _____________ : %08H _____________ : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237342"><a name="BM2237342"></a>
+<h2>2237342</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_TPS_DPR_VIC</div>
+<div class="txt">CERD Diags : VIC function test failure.(from TPS processor) TPS detected an address test failure in DPR VIC test.
+Address : %08H
+Expected : %08H
+Actual : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237343"><a name="BM2237343"></a>
+<h2>2237343</h2>
+<div class="sym">ERROR: EM_TPS_DIAG_VIC_TPS_INT_TOUT</div>
+<div class="txt">CERD Diags : VIC function test failure.(from TPS processor) TPS could not detect the interrupt from CAP in interrupt test.
+Timeout count : %08H _____________ : %08H _____________ : %08H
+Test number : %08H
+Sub number : %08H</div>
+</section>
+<section id="BM2237376"><a name="BM2237376"></a>
+<h2>2237376</h2>
+<div class="sym">ERROR: EM_DIAG_MC_CONFIGSYS_ERR</div>
+<div class="txt">MEDCAM Diags Initialization Failure Call to sys_configmc failed. MEDCAM config file prod.conf may be incorrect, or TPS reset may be required.</div>
+</section>
+<section id="BM2237377"><a name="BM2237377"></a>
+<h2>2237377</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MALLOCERR</div>
+<div class="txt">MEDCAM Diags Initialization Failure Error attempting to allocate memory on TPS CPU board. May be caused by memory leakage (software problem). Reset TPS and try again.</div>
+</section>
+<section id="BM2237378"><a name="BM2237378"></a>
+<h2>2237378</h2>
+<div class="sym">ERROR: EM_DIAG_MC_UNEXPECTED_ERR</div>
+<div class="txt">MEDCAM Diags Initialization Failure The function sys_dmc returned unknown error code %d. The error messages associated with MEDCAM diags may need to be updated.</div>
+</section>
+<section id="BM2237379"><a name="BM2237379"></a>
+<h2>2237379</h2>
+<div class="sym">ERROR: EM_DIAG_MC_LOG_OPEN_WRITE</div>
+<div class="txt">MEDCAM Diags Initialization Failure Unable to open or write to the file dmc.log in /usr/g/service/log. Check that the file is present and has read/write permission.</div>
+</section>
+<section id="BM2237380"><a name="BM2237380"></a>
+<h2>2237380</h2>
+<div class="sym">ERROR: EM_DIAG_MC_LOG_READ</div>
+<div class="txt">MEDCAM Diags Initialization Failure Unable to read the file dmc.log in /usr/g/service/log. Check that the file is present and has read/write permission.</div>
+</section>
+<section id="BM2237381"><a name="BM2237381"></a>
+<h2>2237381</h2>
+<div class="sym">ERROR: EM_DIAG_MC_DELETE</div>
+<div class="txt">MEDCAM Diags Initialization Failure Unable to delete the file dmc.log in /usr/g/service/log. Check that the file is present and has read/write permission.</div>
+</section>
+<section id="BM2237382"><a name="BM2237382"></a>
+<h2>2237382</h2>
+<div class="sym">ERROR: EM_DIAG_MC_OS_CONFIG</div>
+<div class="txt">MEDCAM Diags Initialization Failure Unable to receive system configuration from the driver. Possible software problem.</div>
+</section>
+<section id="BM2237383"><a name="BM2237383"></a>
+<h2>2237383</h2>
+<div class="sym">ERROR: EM_DIAG_MC_LIST_MGR</div>
+<div class="txt">MEDCAM Diags Initialization Failure Dmc list manager error. Possible software problem.</div>
+</section>
+<section id="BM2237384"><a name="BM2237384"></a>
+<h2>2237384</h2>
+<div class="sym">ERROR: EM_DIAG_MC_NO_CES_FOUND</div>
+<div class="txt">MEDCAM Diags Initialization Failure Unable to find CEs to test. The MEDCAM board must have at least one CE processor installed to run diags.</div>
+</section>
+<section id="BM2237385"><a name="BM2237385"></a>
+<h2>2237385</h2>
+<div class="sym">ERROR: EM_DIAG_MC_CE_OPEN</div>
+<div class="txt">MEDCAM Diags Initialization Failure Unable to open the MEDCAM CE processor.</div>
+</section>
+<section id="BM2237386"><a name="BM2237386"></a>
+<h2>2237386</h2>
+<div class="sym">ERROR: EM_DIAG_MC_CE_MAPPING</div>
+<div class="txt">MEDCAM Diags Initialization Failure CE memory mapping error.</div>
+</section>
+<section id="BM2237387"><a name="BM2237387"></a>
+<h2>2237387</h2>
+<div class="sym">ERROR: EM_DIAG_MC_DATATEST</div>
+<div class="txt">MEDCAM Diags CE Memory Failure The TPS-based test of the CE memory failed the data test. CE memory failure indicated.</div>
+</section>
+<section id="BM2237388"><a name="BM2237388"></a>
+<h2>2237388</h2>
+<div class="sym">ERROR: EM_DIAG_MC_ADDRTEST</div>
+<div class="txt">MEDCAM Diags CE Memory Failure The TPS-based test of the CE memory failed the address test. CE memory failure indicated.</div>
+</section>
+<section id="BM2237389"><a name="BM2237389"></a>
+<h2>2237389</h2>
+<div class="sym">ERROR: EM_DIAG_MC_CELLTEST</div>
+<div class="txt">MEDCAM Diags CE Memory Failure The TPS-based test of the CE memory failed the cell test. CE memory failure indicated.</div>
+</section>
+<section id="BM2237390"><a name="BM2237390"></a>
+<h2>2237390</h2>
+<div class="sym">ERROR: EM_DIAG_MC_LOADING</div>
+<div class="txt">MEDCAM Diags Initialization Failure Unable to load a CE for board level diags. Check that the files dmcexec.860 and dmcexec.ppc are present in directory /usr/g/bin and that each has read/execute permission.</div>
+</section>
+<section id="BM2237391"><a name="BM2237391"></a>
+<h2>2237391</h2>
+<div class="sym">ERROR: EM_DIAG_MC_SYM_LOOKUP</div>
+<div class="txt">MEDCAM Diags Initialization Failure Unable to look up a symbol. Probable software error.</div>
+</section>
+<section id="BM2237392"><a name="BM2237392"></a>
+<h2>2237392</h2>
+<div class="sym">ERROR: EM_DIAG_MC_CE_START</div>
+<div class="txt">MEDCAM Diags Initialization Failure Unable to start a CE. Possible CE processor failure.</div>
+</section>
+<section id="BM2237393"><a name="BM2237393"></a>
+<h2>2237393</h2>
+<div class="sym">ERROR: EM_DIAG_MC_GET_CONFIG</div>
+<div class="txt">MEDCAM Diags Initialization Failure Unable to configure a CE. Possible software error or CE processor failure.</div>
+</section>
+<section id="BM2237394"><a name="BM2237394"></a>
+<h2>2237394</h2>
+<div class="sym">ERROR: EM_DIAG_MC_CLR_STATUS</div>
+<div class="txt">MEDCAM Diags Initialization Failure Unable to clear a CE&#x27;s status. Possible software error or CE processor failure.</div>
+</section>
+<section id="BM2237395"><a name="BM2237395"></a>
+<h2>2237395</h2>
+<div class="sym">ERROR: EM_DIAG_MC_START_TESTING</div>
+<div class="txt">MEDCAM Diags Initialization Failure Unable to run a test on a CE. Possible software error or CE processor failure.</div>
+</section>
+<section id="BM2237396"><a name="BM2237396"></a>
+<h2>2237396</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MCPRINTF</div>
+<div class="txt">MEDCAM Diags Initialization Failure Unable to perform a remote print operation from a CE. Possible software error or CE processor failure.</div>
+</section>
+<section id="BM2237397"><a name="BM2237397"></a>
+<h2>2237397</h2>
+<div class="sym">ERROR: EM_DIAG_MC_INVALID_STATUS</div>
+<div class="txt">MEDCAM Diags Initialization Failure Invalid status on a CE. Possible software error or CE processor failure.</div>
+</section>
+<section id="BM2237398"><a name="BM2237398"></a>
+<h2>2237398</h2>
+<div class="sym">ERROR: EM_DIAG_MC_VME_BCAST</div>
+<div class="txt">MEDCAM Diags VME Broadcast Test Failure CE processor or broadcast circuitry failure indicated.</div>
+</section>
+<section id="BM2237399"><a name="BM2237399"></a>
+<h2>2237399</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MEMORY_ECC_PENDING</div>
+<div class="txt">MEDCAM Diags Local CE Memory Test Failure An ECC error was pending before the test began. CE processor failure indicated.</div>
+</section>
+<section id="BM2237400"><a name="BM2237400"></a>
+<h2>2237400</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MEMORY_ECC_INTESTING</div>
+<div class="txt">MEDCAM Diags Local CE Memory Test Failure An ECC error occurred in testing. CE processor failure indicated.</div>
+</section>
+<section id="BM2237401"><a name="BM2237401"></a>
+<h2>2237401</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MEMORY_MISCOMPARE_L32DATABUS</div>
+<div class="txt">MEDCAM Diags Local CE Memory Test Failure A data miscompare occurred in the low 32 bits of the data bus. CE memory failure indicated.</div>
+</section>
+<section id="BM2237402"><a name="BM2237402"></a>
+<h2>2237402</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MEMORY_MISCOMPARE_H32DATABUS</div>
+<div class="txt">MEDCAM Diags Local CE Memory Test Failure A data miscompare occurred in the high 32 bits of the data bus. CE memory failure indicated.</div>
+</section>
+<section id="BM2237403"><a name="BM2237403"></a>
+<h2>2237403</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MEMORY_MISCOMPARE_L16ADDRBUS</div>
+<div class="txt">MEDCAM Diags Local CE Memory Test Failure A data miscompare occurred in the low 16 bits of the address bus. CE memory failure indicated.</div>
+</section>
+<section id="BM2237404"><a name="BM2237404"></a>
+<h2>2237404</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MEMORY_MISCOMPARE_H16ADDRBUS</div>
+<div class="txt">MEDCAM Diags Local CE Memory Test Failure A data miscompare occurred in the high 16 bits of the address bus. CE memory failure indicated.</div>
+</section>
+<section id="BM2237405"><a name="BM2237405"></a>
+<h2>2237405</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MEMORY_ADDR_DATAMISCOMPARE</div>
+<div class="txt">MEDCAM Diags Local CE Memory Test Failure A data miscompare occurred during the address test. CE memory failure indicated.</div>
+</section>
+<section id="BM2237406"><a name="BM2237406"></a>
+<h2>2237406</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MEMORY_KNAIZAKADDR_L32</div>
+<div class="txt">MEDCAM Diags Local CE Memory Test Failure Knaizak Address test : a data miscompare occurred in the low 32 bits of the data bus. CE memory failure indicated.</div>
+</section>
+<section id="BM2237407"><a name="BM2237407"></a>
+<h2>2237407</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MEMORY_KNAIZAKADDR_H32</div>
+<div class="txt">MEDCAM Diags Local CE Memory Test Failure Knaizak Address test : a data miscompare occurred in the high 32 bits of the data bus. CE memory failure indicated.</div>
+</section>
+<section id="BM2237408"><a name="BM2237408"></a>
+<h2>2237408</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MEMORY_BYTESELECT_8BIT</div>
+<div class="txt">MEDCAM Diags Local CE Memory Test Failure Byte Select test : an 8-bit memory error occurred. CE memory failure indicated.</div>
+</section>
+<section id="BM2237409"><a name="BM2237409"></a>
+<h2>2237409</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MEMORY_BYTESELECT_16BIT</div>
+<div class="txt">MEDCAM Diags Local CE Memory Test Failure Byte Select test : an 16-bit memory error occurred. CE memory failure indicated.</div>
+</section>
+<section id="BM2237410"><a name="BM2237410"></a>
+<h2>2237410</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MEMORY_BYTESELECT_32BIT</div>
+<div class="txt">MEDCAM Diags Local CE Memory Test Failure Byte Select test : an 32-bit memory error occurred. CE memory failure indicated.</div>
+</section>
+<section id="BM2237411"><a name="BM2237411"></a>
+<h2>2237411</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MEMORY_DATACELL_FW</div>
+<div class="txt">MEDCAM Diags Local CE Memory Test Failure Data Cell test : a data compare error occurred. CE memory failure indicated.</div>
+</section>
+<section id="BM2237412"><a name="BM2237412"></a>
+<h2>2237412</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MEMORY_DATACELL_INV</div>
+<div class="txt">MEDCAM Diags Local CE Memory Test Failure Data Cell test : an inverse data compare error occurred. CE processor or memory failure indicated.</div>
+</section>
+<section id="BM2237413"><a name="BM2237413"></a>
+<h2>2237413</h2>
+<div class="sym">ERROR: EM_DIAG_MC_FFT_CHECKSUM</div>
+<div class="txt">MEDCAM Diags Local CE FFT Test Failure An FFT checksum error occurred. CE processor or memory failure indicated.</div>
+</section>
+<section id="BM2237414"><a name="BM2237414"></a>
+<h2>2237414</h2>
+<div class="sym">ERROR: EM_DIAG_MC_INTERRUPT_DEBUG</div>
+<div class="txt">MEDCAM Diags Local CE Interrupt Test Failure A debug interrupt was not asserted. CE processor failure indicated.</div>
+</section>
+<section id="BM2237415"><a name="BM2237415"></a>
+<h2>2237415</h2>
+<div class="sym">ERROR: EM_DIAG_MC_TIMER_NOT_COUNTDOWN</div>
+<div class="txt">MEDCAM Diags Local CE Timer Test Failure The timer did not count down. CE processor failure indicated.</div>
+</section>
+<section id="BM2237416"><a name="BM2237416"></a>
+<h2>2237416</h2>
+<div class="sym">ERROR: EM_DIAG_MC_TIMER_NOT_CLEAR_INTERRUPT</div>
+<div class="txt">MEDCAM Diags Local CE Timer Test Failure Reading the Clear Timer Interrupt register did not clear the timer interrupt. CE processor failure indicated.</div>
+</section>
+<section id="BM2237417"><a name="BM2237417"></a>
+<h2>2237417</h2>
+<div class="sym">ERROR: EM_DIAG_MC_TIMER_NOT_GENERATE_INTERRUPT</div>
+<div class="txt">MEDCAM Diags Local CE Timer Test Failure The timer did not generate an interrupt when the counter reached zero. CE processor failure indicated.</div>
+</section>
+<section id="BM2237418"><a name="BM2237418"></a>
+<h2>2237418</h2>
+<div class="sym">ERROR: EM_DIAG_MC_FIFO_MBOXCOUNTER_NOT_CLEARED</div>
+<div class="txt">MEDCAM Diags Local CE FIFO Test Failure The Mailbox Counter register could not be cleared. CE processor failure indicated.</div>
+</section>
+<section id="BM2237419"><a name="BM2237419"></a>
+<h2>2237419</h2>
+<div class="sym">ERROR: EM_DIAG_MC_FIFO_MBOXINT_NOT_CLEARED</div>
+<div class="txt">MEDCAM Diags Local CE FIFO Test Failure The mailbox interrupt was not cleared. CE processor failure indicated.</div>
+</section>
+<section id="BM2237420"><a name="BM2237420"></a>
+<h2>2237420</h2>
+<div class="sym">ERROR: EM_DIAG_MC_FIFO_4KMBOXCOUNTER_NOT_INCREMENT</div>
+<div class="txt">MEDCAM Diags Local CE FIFO Test Failure 4Kbyte mailbox : the Mailbox Counter register did not increment when the first mailbox location was written. CE processor failure indicated.</div>
+</section>
+<section id="BM2237421"><a name="BM2237421"></a>
+<h2>2237421</h2>
+<div class="sym">ERROR: EM_DIAG_MC_FIFO_MBOXINT_NOT_SET</div>
+<div class="txt">MEDCAM Diags Local CE FIFO Test Failure The mailbox interrupt was not set when it should have been. CE processor failure indicated.</div>
+</section>
+<section id="BM2237422"><a name="BM2237422"></a>
+<h2>2237422</h2>
+<div class="sym">ERROR: EM_DIAG_MC_FIFO_4KMBOXCOUNTER_NOT_COUNTUP</div>
+<div class="txt">MEDCAM Diags Local CE FIFO Test Failure 4Kbyte mailbox : the Mailbox Counter register did not count up correctly to the last mailbox location before wrapping. CE processor failure indicated.</div>
+</section>
+<section id="BM2237423"><a name="BM2237423"></a>
+<h2>2237423</h2>
+<div class="sym">ERROR: EM_DIAG_MC_FIFO_4KMBOXCOUNTER_NOT_WRAP</div>
+<div class="txt">MEDCAM Diags Local CE FIFO Test Failure 4Kbyte mailbox : the Mailbox Counter register did not wrap correctly when the last mailbox location was written. CE processor failure indicated.</div>
+</section>
+<section id="BM2237424"><a name="BM2237424"></a>
+<h2>2237424</h2>
+<div class="sym">ERROR: EM_DIAG_MC_FIFO_32KMBOXCOUNTER_NOT_INCREMENT</div>
+<div class="txt">MEDCAM Diags Local CE FIFO Test Failure 32Kbyte mailbox : the Mailbox Counter register did not increment when the first mailbox location was written. CE processor failure indicated.</div>
+</section>
+<section id="BM2237425"><a name="BM2237425"></a>
+<h2>2237425</h2>
+<div class="sym">ERROR: EM_DIAG_MC_FIFO_32KMBOXCOUNTER_NOT_COUNTUP</div>
+<div class="txt">MEDCAM Diags Local CE FIFO Test Failure 32Kbyte mailbox : the Mailbox Counter register did not count up correctly to the last mailbox location before wrapping. CE processor failure indicated.</div>
+</section>
+<section id="BM2237426"><a name="BM2237426"></a>
+<h2>2237426</h2>
+<div class="sym">ERROR: EM_DIAG_MC_FIFO_32KMBOXCOUNTER_NOT_WRAP</div>
+<div class="txt">MEDCAM Diags Local CE FIFO Test Failure 32Kbyte mailbox : the Mailbox Counter register did not wrap correctly when the last mailbox location was written. CE processor failure indicated.</div>
+</section>
+<section id="BM2237427"><a name="BM2237427"></a>
+<h2>2237427</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860XBAR_DATA</div>
+<div class="txt">MEDCAM Diags Crossbar Test Failure A data error occurred when probing the Xbar. MEDCAM Xbar failure indicated.</div>
+</section>
+<section id="BM2237428"><a name="BM2237428"></a>
+<h2>2237428</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860XBAR_PROBE</div>
+<div class="txt">MEDCAM Diags Crossbar Test Failure A Xbar probe did not find a configured device. MEDCAM Xbar failure indicated.</div>
+</section>
+<section id="BM2237429"><a name="BM2237429"></a>
+<h2>2237429</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860XBAR_MISCOMPARE_L16ADDRBUS</div>
+<div class="txt">MEDCAM Diags Crossbar Test Failure A data miscompare occurred in the low 16 bits of the address bus. MEDCAM Xbar failure indicated.</div>
+</section>
+<section id="BM2237430"><a name="BM2237430"></a>
+<h2>2237430</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860XBAR_MISCOMPARE_H16ADDRBUS</div>
+<div class="txt">MEDCAM Diags Crossbar Test Failure A data miscompare occurred in the high 16 (or fewer) bits of the address bus. MEDCAM Xbar failure indicated.</div>
+</section>
+<section id="BM2237431"><a name="BM2237431"></a>
+<h2>2237431</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860XBAR_ADDR_DATAMISCOMPARE</div>
+<div class="txt">MEDCAM Diags Crossbar Test Failure Address of Address test : a data miscompare occurred. MEDCAM Xbar failure indicated.</div>
+</section>
+<section id="BM2237432"><a name="BM2237432"></a>
+<h2>2237432</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860XBAR_KNAIZAKADDR_L32</div>
+<div class="txt">MEDCAM Diags Crossbar Test Failure Knaizak Address test : a data miscompare occurred in the low 32 data bits. MEDCAM Xbar failure indicated.</div>
+</section>
+<section id="BM2237433"><a name="BM2237433"></a>
+<h2>2237433</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860XBAR_KNAIZAKADDR_H32</div>
+<div class="txt">MEDCAM Diags Crossbar Test Failure Knaizak Address test : a data miscompare occurred in the high 32 data bits. MEDCAM Xbar failure indicated.</div>
+</section>
+<section id="BM2237434"><a name="BM2237434"></a>
+<h2>2237434</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860XBAR_BYTESELECT_8BIT</div>
+<div class="txt">MEDCAM Diags Crossbar Test Failure Byte Select test : an 8-bit error occurred. MEDCAM Xbar failure indicated.</div>
+</section>
+<section id="BM2237435"><a name="BM2237435"></a>
+<h2>2237435</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860XBAR_BYTESELECT_16BIT</div>
+<div class="txt">MEDCAM Diags Crossbar Test Failure Byte Select test : an 16-bit error occurred. MEDCAM Xbar failure indicated.</div>
+</section>
+<section id="BM2237436"><a name="BM2237436"></a>
+<h2>2237436</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860XBAR_BYTESELECT_32BIT</div>
+<div class="txt">MEDCAM Diags Crossbar Test Failure Byte Select test : an 32-bit error occurred. MEDCAM Xbar failure indicated.</div>
+</section>
+<section id="BM2237437"><a name="BM2237437"></a>
+<h2>2237437</h2>
+<div class="sym">ERROR: EM_DIAG_MC_DMA_XBAR</div>
+<div class="txt">MEDCAM Diags Crossbar Test Failure A data miscompare occurred. MEDCAM Xbar failure indicated.</div>
+</section>
+<section id="BM2237438"><a name="BM2237438"></a>
+<h2>2237438</h2>
+<div class="sym">ERROR: EM_DIAG_MC_BC_FAILED_BROADCAST</div>
+<div class="txt">MEDCAM Diags Broadcast Test Failure Failed to receive a broadcast from another CE. MEDCAM broadcast circuitry failure indicated.</div>
+</section>
+<section id="BM2237439"><a name="BM2237439"></a>
+<h2>2237439</h2>
+<div class="sym">ERROR: EM_DIAG_MC_BC_FAILED_INIT</div>
+<div class="txt">MEDCAM Diags Broadcast Test Failure Failed to receive the proper initialization status from another CE. MEDCAM broadcast circuitry failure indicated.</div>
+</section>
+<section id="BM2237440"><a name="BM2237440"></a>
+<h2>2237440</h2>
+<div class="sym">ERROR: EM_DIAG_MC_BC_TIMEOUT</div>
+<div class="txt">MEDCAM Diags Broadcast Test Failure A time-out error occurred while waiting for a broadcast start command. MEDCAM broadcast circuitry failure indicated.</div>
+</section>
+<section id="BM2237441"><a name="BM2237441"></a>
+<h2>2237441</h2>
+<div class="sym">ERROR: EM_DIAG_MC_BC_INCORRECT_DATA</div>
+<div class="txt">MEDCAM Diags Broadcast Test Failure The data broadcast to a CE was not correct. MEDCAM broadcast circuitry failure indicated.</div>
+</section>
+<section id="BM2237442"><a name="BM2237442"></a>
+<h2>2237442</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860VME_DATAMISCOMPARE_8</div>
+<div class="txt">MEDCAM Diags VME Master Test Failure A data miscompare occurred in 8-bit data. MEDCAM VME interface or TPS CPU memory failure indicated.</div>
+</section>
+<section id="BM2237443"><a name="BM2237443"></a>
+<h2>2237443</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860VME_DATAMISCOMPARE_16</div>
+<div class="txt">MEDCAM Diags VME Master Test Failure A data miscompare occurred in 16-bit data. MEDCAM VME interface or TPS CPU memory failure indicated.</div>
+</section>
+<section id="BM2237444"><a name="BM2237444"></a>
+<h2>2237444</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860VME_DATAMISCOMPARE_32</div>
+<div class="txt">MEDCAM Diags VME Master Test Failure A data miscompare occurred in 32-bit data. MEDCAM VME interface or TPS CPU memory failure indicated.</div>
+</section>
+<section id="BM2237445"><a name="BM2237445"></a>
+<h2>2237445</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860VME_DATAMISCOMPARE_HI64</div>
+<div class="txt">MEDCAM Diags VME Master Test Failure A data miscompare occurred in the high 32 bits of 64-bit data. MEDCAM VME interface or TPS CPU memory failure indicated.</div>
+</section>
+<section id="BM2237446"><a name="BM2237446"></a>
+<h2>2237446</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860VME_DATAMISCOMPARE_LO64</div>
+<div class="txt">MEDCAM Diags VME Master Test Failure A data miscompare occurred in the low 32 bits of 64-bit data. MEDCAM VME interface or TPS CPU memory failure indicated.</div>
+</section>
+<section id="BM2237447"><a name="BM2237447"></a>
+<h2>2237447</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860VME_UNABLE_VMEINT</div>
+<div class="txt">MEDCAM Diags VME Master Test Failure The i860 was unable to assert a VME interrupt. MEDCAM CE processor or VME interface failure indicated.</div>
+</section>
+<section id="BM2237448"><a name="BM2237448"></a>
+<h2>2237448</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860VME_VMEINT_TIMEOUT</div>
+<div class="txt">MEDCAM Diags VME Master Test Failure A VME interrupt time-out occurred while waiting for IACK. MEDCAM CE processor or VME interface failure indicated.</div>
+</section>
+<section id="BM2237449"><a name="BM2237449"></a>
+<h2>2237449</h2>
+<div class="sym">ERROR: EM_DIAG_MC_DMAVME_MISCOMPARE_D16NONBLOCK</div>
+<div class="txt">MEDCAM Diags VME Master Test Failure A data miscompare occurred during VME D16 nonblock transfers. MEDCAM VME interface or TPS CPU memory failure indicated.</div>
+</section>
+<section id="BM2237450"><a name="BM2237450"></a>
+<h2>2237450</h2>
+<div class="sym">ERROR: EM_DIAG_MC_DMAVME_MISCOMPARE_D32NONBLOCK</div>
+<div class="txt">MEDCAM Diags VME Master Test Failure A data miscompare occurred during VME D32 nonblock transfers. MEDCAM VME interface or TPS CPU memory failure indicated.</div>
+</section>
+<section id="BM2237451"><a name="BM2237451"></a>
+<h2>2237451</h2>
+<div class="sym">ERROR: EM_DIAG_MC_DMAVME_MISCOMPARE_D32BLOCK</div>
+<div class="txt">MEDCAM Diags VME Master Test Failure A data miscompare occurred during VME D32 block transfers. MEDCAM VME interface or TPS CPU memory failure indicated.</div>
+</section>
+<section id="BM2237452"><a name="BM2237452"></a>
+<h2>2237452</h2>
+<div class="sym">ERROR: EM_DIAG_MC_DMAVME_MISCOMPARE_D64BLOCK</div>
+<div class="txt">MEDCAM Diags VME Master Test Failure A data miscompare occurred during VME D64 block transfers. MEDCAM VME interface or TPS CPU memory failure indicated.</div>
+</section>
+<section id="BM2237453"><a name="BM2237453"></a>
+<h2>2237453</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860VSB_DATAMISCOMPARE_8</div>
+<div class="txt">MEDCAM Diags VSB Master Test Failure A data miscompare occurred in 8-bit data. MEDCAM VSB interface failure indicated.</div>
+</section>
+<section id="BM2237454"><a name="BM2237454"></a>
+<h2>2237454</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860VSB_DATAMISCOMPARE_16</div>
+<div class="txt">MEDCAM Diags VSB Master Test Failure A data miscompare occurred in 16-bit data. MEDCAM VSB interface failure indicated.</div>
+</section>
+<section id="BM2237455"><a name="BM2237455"></a>
+<h2>2237455</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860VSB_DATAMISCOMPARE_32</div>
+<div class="txt">MEDCAM Diags VSB Master Test Failure A data miscompare occurred in 32-bit data. MEDCAM VSB interface failure indicated.</div>
+</section>
+<section id="BM2237456"><a name="BM2237456"></a>
+<h2>2237456</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860VSB_DATAMISCOMPARE_HI64</div>
+<div class="txt">MEDCAM Diags VSB Master Test Failure A data miscompare occurred in the high 32-bits of 64-bit data. MEDCAM VSB interface failure indicated.</div>
+</section>
+<section id="BM2237457"><a name="BM2237457"></a>
+<h2>2237457</h2>
+<div class="sym">ERROR: EM_DIAG_MC_I860VSB_DATAMISCOMPARE_LO64</div>
+<div class="txt">MEDCAM Diags VSB Master Test Failure A data miscompare occurred in the low 32-bits of 64-bit data. MEDCAM VSB interface failure indicated.</div>
+</section>
+<section id="BM2237458"><a name="BM2237458"></a>
+<h2>2237458</h2>
+<div class="sym">ERROR: EM_DIAG_MC_DMAVSB_DATAMISCOMPARE_8</div>
+<div class="txt">MEDCAM Diags VSB Master Test Failure A data miscompare occurred in 8-bit data. MEDCAM VSB interface failure indicated.</div>
+</section>
+<section id="BM2237459"><a name="BM2237459"></a>
+<h2>2237459</h2>
+<div class="sym">ERROR: EM_DIAG_MC_DMAVSB_DATAMISCOMPARE_16</div>
+<div class="txt">MEDCAM Diags VSB Master Test Failure A data miscompare occurred in 16-bit data. MEDCAM VSB interface failure indicated.</div>
+</section>
+<section id="BM2237460"><a name="BM2237460"></a>
+<h2>2237460</h2>
+<div class="sym">ERROR: EM_DIAG_MC_DMAVSB_DATAMISCOMPARE_32</div>
+<div class="txt">MEDCAM Diags VSB Master Test Failure A data miscompare occurred in 32-bit data. MEDCAM VSB interface failure indicated.</div>
+</section>
+<section id="BM2237461"><a name="BM2237461"></a>
+<h2>2237461</h2>
+<div class="sym">ERROR: EM_DIAG_MC_DMAVSB_DATAMISCOMPARE_64</div>
+<div class="txt">MEDCAM Diags VSB Master Test Failure A data miscompare occurred in 64-bit data. MEDCAM VSB interface failure indicated.</div>
+</section>
+<section id="BM2237462"><a name="BM2237462"></a>
+<h2>2237462</h2>
+<div class="sym">ERROR: EM_DIAG_MC_LOCK_INCORRECT_LOCKCOUNT</div>
+<div class="txt">MEDCAM Diags Interlink Test Failure The lock count value was not correct. MEDCAM failure indicated.</div>
+</section>
+<section id="BM2237463"><a name="BM2237463"></a>
+<h2>2237463</h2>
+<div class="sym">ERROR: EM_DIAG_MC_LOCK_MASTER_TIMEOUT_SLAVEREADY</div>
+<div class="txt">MEDCAM Diags Interlink Test Failure The master timed out while waiting for the slave to become ready. MEDCAM failure indicated.</div>
+</section>
+<section id="BM2237464"><a name="BM2237464"></a>
+<h2>2237464</h2>
+<div class="sym">ERROR: EM_DIAG_MC_LOCK_MASTER_TIMEOUT_SLAVEFINISH</div>
+<div class="txt">MEDCAM Diags Interlink Test Failure The master timed out while waiting for the slave to finish. MEDCAM failure indicated.</div>
+</section>
+<section id="BM2237465"><a name="BM2237465"></a>
+<h2>2237465</h2>
+<div class="sym">ERROR: EM_DIAG_MC_ASYNC_LOCAL_MEMORY</div>
+<div class="txt">MEDCAM Diags Asynchronous Test Failure A local memory error occurred. MEDCAM failure indicated.</div>
+</section>
+<section id="BM2237466"><a name="BM2237466"></a>
+<h2>2237466</h2>
+<div class="sym">ERROR: EM_DIAG_MC_ASYNC_PRIMARY_VME</div>
+<div class="txt">MEDCAM Diags Asynchronous Test Failure An error occurred while transmitting to the primary VME buffer. MEDCAM failure indicated.</div>
+</section>
+<section id="BM2237467"><a name="BM2237467"></a>
+<h2>2237467</h2>
+<div class="sym">ERROR: EM_DIAG_MC_ASYNC_PRIMARY_VSB</div>
+<div class="txt">MEDCAM Diags Asynchronous Test Failure An error occurred while transmitting to the primary VSB buffer. MEDCAM failure indicated.</div>
+</section>
+<section id="BM2237468"><a name="BM2237468"></a>
+<h2>2237468</h2>
+<div class="sym">ERROR: EM_DIAG_MC_ASYNC_PRIMARY_ILK</div>
+<div class="txt">MEDCAM Diags Asynchronous Test Failure An error occurred while transmitting to the primary Interlink buffer. MEDCAM failure indicated.</div>
+</section>
+<section id="BM2237469"><a name="BM2237469"></a>
+<h2>2237469</h2>
+<div class="sym">ERROR: EM_DIAG_MC_ASYNC_ALTERNATE_VME</div>
+<div class="txt">MEDCAM Diags Asynchronous Test Failure An error occurred while transmitting to the alternate VME buffer. MEDCAM failure indicated.</div>
+</section>
+<section id="BM2237470"><a name="BM2237470"></a>
+<h2>2237470</h2>
+<div class="sym">ERROR: EM_DIAG_MC_ASYNC_ALTERNATE_VSB</div>
+<div class="txt">MEDCAM Diags Asynchronous Test Failure An error occurred while transmitting to the alternate VSB buffer. MEDCAM failure indicated.</div>
+</section>
+<section id="BM2237471"><a name="BM2237471"></a>
+<h2>2237471</h2>
+<div class="sym">ERROR: EM_DIAG_MC_ASYNC_ALTERNATE_ILK</div>
+<div class="txt">MEDCAM Diags Asynchronous Test Failure An error occurred while transmitting to the alternate Interlink buffer. MEDCAM failure indicated.</div>
+</section>
+<section id="BM2237472"><a name="BM2237472"></a>
+<h2>2237472</h2>
+<div class="sym">ERROR: EM_DIAG_MC_ASYNC_ILK_TO_VME</div>
+<div class="txt">MEDCAM Diags Asynchronous Test Failure An error occurred while transmitting from Interlink to VMEbus. MEDCAM failure indicated.</div>
+</section>
+<section id="BM2237473"><a name="BM2237473"></a>
+<h2>2237473</h2>
+<div class="sym">ERROR: EM_DIAG_MC_ASYNC_VME_TO_ILK</div>
+<div class="txt">MEDCAM Diags Asynchronous Test Failure An error occurred while transmitting from VMEbus to Interlink. MEDCAM failure indicated.</div>
+</section>
+<section id="BM2237474"><a name="BM2237474"></a>
+<h2>2237474</h2>
+<div class="sym">ERROR: EM_DIAG_MC_ASYNC_VSB_TO_VME</div>
+<div class="txt">MEDCAM Diags Asynchronous Test Failure An error occurred while transmitting from VSB to VMEbus. MEDCAM failure indicated.</div>
+</section>
+<section id="BM2237475"><a name="BM2237475"></a>
+<h2>2237475</h2>
+<div class="sym">ERROR: EM_DIAG_MC_ASYNC_VME_TO_VSB</div>
+<div class="txt">MEDCAM Diags Asynchronous Test Failure An error occurred while transmitting from VMEbus to VSB. MEDCAM failure indicated.</div>
+</section>
+<section id="BM2237476"><a name="BM2237476"></a>
+<h2>2237476</h2>
+<div class="sym">ERROR: EM_DIAG_MC_RINT_REGISTER_DATA</div>
+<div class="txt">MEDCAM Diags Daughtercard RIN-T Test Failure A register data test error occurred. MEDCAM Daughtercard failure indicated.</div>
+</section>
+<section id="BM2237477"><a name="BM2237477"></a>
+<h2>2237477</h2>
+<div class="sym">ERROR: EM_DIAG_MC_RINT_REGISTER_ADDR</div>
+<div class="txt">MEDCAM Diags Daughtercard RIN-T Test Failure A register address test error occurred. MEDCAM Daughtercard failure indicated.</div>
+</section>
+<section id="BM2237478"><a name="BM2237478"></a>
+<h2>2237478</h2>
+<div class="sym">ERROR: EM_DIAG_MC_RINT_INTERRUPT</div>
+<div class="txt">MEDCAM Diags Daughtercard RIN-T Test Failure Interrupt error(an interrupt did not occur, a bad vector was encountered, etc.). MEDCAM Daughtercard failure indicated.</div>
+</section>
+<section id="BM2237479"><a name="BM2237479"></a>
+<h2>2237479</h2>
+<div class="sym">ERROR: EM_DIAG_MC_RINT_MISCOMPARE_TARGETBUFFER</div>
+<div class="txt">MEDCAM Diags Daughtercard RIN-T Test Failure A miscompare occurred in the target buffer. MEDCAM Daughtercard failure indicated.</div>
+</section>
+<section id="BM2237480"><a name="BM2237480"></a>
+<h2>2237480</h2>
+<div class="sym">ERROR: EM_DIAG_MC_RINT_DATA_TRANSMISSION</div>
+<div class="txt">MEDCAM Diags Daughtercard RIN-T Test Failure A data transmission was not successful. MEDCAM Daughtercard failure indicated.</div>
+</section>
+<section id="BM2237481"><a name="BM2237481"></a>
+<h2>2237481</h2>
+<div class="sym">ERROR: EM_DIAG_MC_RINT_CES_NOT_RECEIVE_MESSAGE</div>
+<div class="txt">MEDCAM Diags Daughtercard RIN-T Test Failure Secondary CEs did not receive a message to start testing. MEDCAM Daughtercard failure indicated.</div>
+</section>
+<section id="BM2237482"><a name="BM2237482"></a>
+<h2>2237482</h2>
+<div class="sym">ERROR: EM_DIAG_MC_RINT_CABLE_HANDSHAKE_SIGNAL</div>
+<div class="txt">MEDCAM Diags Daughtercard RIN-T Test Failure An error occurred while testing the cable handshake signal. MEDCAM Daughtercard failure indicated.</div>
+</section>
+<section id="BM2237483"><a name="BM2237483"></a>
+<h2>2237483</h2>
+<div class="sym">ERROR: EM_DIAG_MC_RINT_RECEIVER_FAILED_SIGNAL</div>
+<div class="txt">MEDCAM Diags Daughtercard RIN-T Test Failure The receiver failed to signal the transmitter to start a data transfer. MEDCAM Daughtercard failure indicated.</div>
+</section>
+<section id="BM2237484"><a name="BM2237484"></a>
+<h2>2237484</h2>
+<div class="sym">ERROR: EM_DIAG_MC_RINT_RECEIVER_TIMEDOUT</div>
+<div class="txt">MEDCAM Diags Daughtercard RIN-T Test Failure The receiver timed out while waiting for a data transfer to complete. MEDCAM Daughtercard failure indicated.</div>
+</section>
+<section id="BM2237485"><a name="BM2237485"></a>
+<h2>2237485</h2>
+<div class="sym">ERROR: EM_DIAG_MC_RINT_TGTBUF_MISCOMPARE_AFTERINT</div>
+<div class="txt">MEDCAM Diags Daughtercard RIN-T Test Failure A target buffer miscompare occurred after receiving a data transfer complete interrupt. MEDCAM Daughtercard failure indicated.</div>
+</section>
+<section id="BM2237486"><a name="BM2237486"></a>
+<h2>2237486</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MOD_DMA_STATUS</div>
+<div class="txt">MEDCAM Diags Bulk Mem Daughtercard Test Failure A remote DMA status error occurred. MEDCAM Bulk Memory Daughtercard failure indicated.</div>
+</section>
+<section id="BM2237487"><a name="BM2237487"></a>
+<h2>2237487</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MOD_DMA_DATA</div>
+<div class="txt">MEDCAM Diags Bulk Mem Daughtercard Test Failure A remote DMA data miscompare error occurred. MEDCAM Bulk Memory Daughtercard failure indicated.</div>
+</section>
+<section id="BM2237488"><a name="BM2237488"></a>
+<h2>2237488</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MOD_PARITY</div>
+<div class="txt">MEDCAM Diags Bulk Mem Daughtercard Test Failure A remote parity error occurred. MEDCAM Bulk Memory Daughtercard failure indicated.</div>
+</section>
+<section id="BM2237489"><a name="BM2237489"></a>
+<h2>2237489</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MOD_ADDR</div>
+<div class="txt">MEDCAM Diags Bulk Mem Daughtercard Test Failure Address of Address test : a data miscompare occurred. MEDCAM Bulk Memory Daughtercard failure indicated.</div>
+</section>
+<section id="BM2237490"><a name="BM2237490"></a>
+<h2>2237490</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MOD_KNAIZAKADDR_L32</div>
+<div class="txt">MEDCAM Diags Bulk Mem Daughtercard Test Failure Knaizak address test : a miscompare occurred in the low 32 data bits. MEDCAM Bulk Memory Daughtercard failure indicated.</div>
+</section>
+<section id="BM2237491"><a name="BM2237491"></a>
+<h2>2237491</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MOD_KNAIZAKADDR_H32</div>
+<div class="txt">MEDCAM Diags Bulk Mem Daughtercard Test Failure Knaizak address test : a miscompare occurred in the high 32 data bits. MEDCAM Bulk Memory Daughtercard failure indicated.</div>
+</section>
+<section id="BM2237492"><a name="BM2237492"></a>
+<h2>2237492</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MOD_WALKING_1S</div>
+<div class="txt">MEDCAM Diags - Walking 1s Test Error The MEDCAM Bulk Memory failed the walking 1s test. See /usr/g/service/log/dmc.log for further error information.</div>
+</section>
+<section id="BM2237493"><a name="BM2237493"></a>
+<h2>2237493</h2>
+<div class="sym">ERROR: EM_DIAG_MC_MOD_WALKING_0S</div>
+<div class="txt">MEDCAM Diags - Walking 0s Test Error The MEDCAM Bulk Memory failed the walking 0s test. See /usr/g/service/log/dmc.log for further error information.</div>
+</section>
+<section id="BM2237496"><a name="BM2237496"></a>
+<h2>2237496</h2>
+<div class="sym">ERROR: EM_ISEDP_CPU_MALLOC_NOSPACE</div>
+<div class="txt">ISE DATAPATH DIAGS EXEC FAILURE DP exec could not allocate TPS CPU memory. DP diags were aborted before tests were run. CPU memory may be too fragmented. Reset TPS and try again.</div>
+</section>
+<section id="BM2237497"><a name="BM2237497"></a>
+<h2>2237497</h2>
+<div class="sym">ERROR: EM_ISEDP_INCTASK_SPAWN</div>
+<div class="txt">ISE DATAPATH DIAGS EXEC FAILURE DP exec could not spawn a task to increment the progress counter. Testing continued but the host may detect a non-incremented counter.</div>
+</section>
+<section id="BM2237498"><a name="BM2237498"></a>
+<h2>2237498</h2>
+<div class="sym">ERROR: EM_ISEDP_INCTASK_DELETE</div>
+<div class="txt">ISE DATAPATH DIAGS EXEC FAILURE DP exec could not delete the task to increment the\ progress counter after datapath testing was completed. Please Reset TPS and try again.</div>
+</section>
+<section id="BM2237499"><a name="BM2237499"></a>
+<h2>2237499</h2>
+<div class="sym">ERROR: EM_ISEDP_CPU_MALLOC_BAD_CHAR</div>
+<div class="txt">ISE DATAPATH DIAGS SOFTWARE ERROR. A TPS dp test function is calling dp_malloc_cpu with an \ invalid buffer selection character.</div>
+</section>
+<section id="BM2237500"><a name="BM2237500"></a>
+<h2>2237500</h2>
+<div class="sym">ERROR: EM_ISEDP_HOST_TEST_SETUP</div>
+<div class="txt">ISE DATAPATH DIAGS EXEC FAILURE The following host-run test could not be set up by the TPS:
+command word bit : %08xH Refer to the error which follows this message in the log for the reason for the failure.</div>
+</section>
+<section id="BM2237501"><a name="BM2237501"></a>
+<h2>2237501</h2>
+<div class="sym">ERROR: EM_ISEDP_IPG_TEST_SETUP</div>
+<div class="txt">ISE DATAPATH DIAGS EXEC FAILURE The following IPG-dependent test could not be run:
+command word bit : %08xH Refer to the error which follows this message in the log for the reason for the failure.</div>
+</section>
+<section id="BM2237502"><a name="BM2237502"></a>
+<h2>2237502</h2>
+<div class="sym">ERROR: EM_ISEDP_IPG_WATCHDOG</div>
+<div class="txt">IPG DATAPATH WATCHDOG FAILURE. The TPS dp exec detected an IPG watchdog timeout. Processing on the IPG board may have stopped or the IPG software may not be updating the counter often enough.</div>
+</section>
+<section id="BM2237503"><a name="BM2237503"></a>
+<h2>2237503</h2>
+<div class="sym">ERROR: EM_ISEDP_SUBTEST_TERMINATED</div>
+<div class="txt">ISE DATAPATH DIAGS TEST STOPPED Datapath test dp_test%02d stopped itself due to unrecoverable errors.</div>
+</section>
+<section id="BM2237504"><a name="BM2237504"></a>
+<h2>2237504</h2>
+<div class="sym">ERROR: EM_ISEDP_QUE_PEND</div>
+<div class="txt">ISE DATAPATH DIAGS EXEC FAILURE DP exec failed to pend on datapath message queue. Please Reset TPS and try again.
+vxWorks status: %08xH</div>
+</section>
+<section id="BM2237505"><a name="BM2237505"></a>
+<h2>2237505</h2>
+<div class="sym">ERROR: EM_ISEDP_SUBTEST_SPAWN</div>
+<div class="txt">ISE DATAPATH DIAGS EXEC FAILURE The datapath exec could not spawn a task to run dp_test%02d. Please Reset TPS and try again.</div>
+</section>
+<section id="BM2237506"><a name="BM2237506"></a>
+<h2>2237506</h2>
+<div class="sym">ERROR: EM_ISEDP_HOST_SEND</div>
+<div class="txt">HOST DATAPATH INITIALIZATION FAILED. The TPS dp exec could not send a packet to the host. \ The selected host-run tests were not run. Reset TPS and try again.</div>
+</section>
+<section id="BM2237507"><a name="BM2237507"></a>
+<h2>2237507</h2>
+<div class="sym">ERROR: EM_ISEDP_IPG_LOOKUP_LDR</div>
+<div class="txt">IPG DATAPATH INITIALIZATION FAILED. The TPS could not communicate with the IPG loader daemon. %b \ An IPG must be in the chassis to run the selected IPG dependent \ tests. If an IPG is present, try datapath again or run IPG diags.</div>
+</section>
+<section id="BM2237508"><a name="BM2237508"></a>
+<h2>2237508</h2>
+<div class="sym">ERROR: EM_ISEDP_IPG_LDR_SEND</div>
+<div class="txt">IPG DATAPATH INITIALIZATION FAILED. The TPS dp exec could not send a packet to the IPG loader daemon. %b The selected IPG dependent tests were not run. Reset TPS and try again.</div>
+</section>
+<section id="BM2237509"><a name="BM2237509"></a>
+<h2>2237509</h2>
+<div class="sym">ERROR: EM_ISEDP_IPG_LOOKUP_DIAG</div>
+<div class="txt">IPG DATAPATH INITIALIZATION FAILED. The TPS dp exec could not communicate with the IPG dp exec. The IPG diags file was loaded but did not define its NMRID. %b The \ selected IPG dependent tests were not run. Reset TPS and try again.</div>
+</section>
+<section id="BM2237510"><a name="BM2237510"></a>
+<h2>2237510</h2>
+<div class="sym">ERROR: EM_ISEDP_IPG_TEST_SEND</div>
+<div class="txt">IPG DATAPATH INITIALIZATION FAILED. The TPS dp exec could not send a packet to the IPG diags exec. %b The selected IPG dependent tests were not run. Reset TPS and try again.</div>
+</section>
+<section id="BM2237511"><a name="BM2237511"></a>
+<h2>2237511</h2>
+<div class="sym">ERROR: EM_ISEDP_IPG_RECEIVE_RSP</div>
+<div class="txt">ISE DATAPATH DIAGS FAILURE IPG diags failed to return a response packet to the TPS. %b \ IPG dependent tests were not run.</div>
+</section>
+<section id="BM2237512"><a name="BM2237512"></a>
+<h2>2237512</h2>
+<div class="sym">ERROR: EM_ISEDP_WRONG_OPCODE_RCVD</div>
+<div class="txt">ISE DATAPATH - NETWORK ERROR DETECTED TPS diags received a pkt with an unexpected opcode from the IPG. \ Another pkt was received as a workaround. This message is logged \ to help isolate this network problem.
+opcode expected : %d
+opcode received : %d</div>
+</section>
+<section id="BM2237513"><a name="BM2237513"></a>
+<h2>2237513</h2>
+<div class="sym">ERROR: EM_ISEDP_SECOND_RSP_OP</div>
+<div class="txt">ISE DATAPATH - NETWORK ERROR DETECTED TPS diags did not get the desired opcode in the second pkt either. \ IPG dependent tests were not run.
+Invalid opcode : %d</div>
+</section>
+<section id="BM2237514"><a name="BM2237514"></a>
+<h2>2237514</h2>
+<div class="sym">ERROR: EM_ISEDP_SECOND_RSP_REC</div>
+<div class="txt">ISE DATAPATH - NETWORK ERROR DETECTED The cm_rec call for the second pkt failed. IPG dependent tests were \ not run.
+cm_rec status returned : %d</div>
+</section>
+<section id="BM2237515"><a name="BM2237515"></a>
+<h2>2237515</h2>
+<div class="sym">ERROR: EM_ISEDP_QUE_CREATE</div>
+<div class="txt">ISE DATAPATH DIAGS EXEC FAILURE DP exec could not create a message queue.
+Error status returned by vxWorks : %08xH Any TPS-based dp tests selected were not run. Please Reset TPS and try again.</div>
+</section>
+<section id="BM2237516"><a name="BM2237516"></a>
+<h2>2237516</h2>
+<div class="sym">ERROR: EM_ISEDP_IPG_STOP_SEND</div>
+<div class="txt">IPG DATAPATH FAILURE. The TPS dp exec could not send the stop packet to the IPG diags exec. %b IPG test results could not be logged.</div>
+</section>
+<section id="BM2237517"><a name="BM2237517"></a>
+<h2>2237517</h2>
+<div class="sym">ERROR: EM_ISEDP_IPG_RECEIVE_RES</div>
+<div class="txt">ISE DATAPATH DIAGS FAILURE IPG diags failed to return its error packet to the TPS. %b \ IPG test results could not be logged.</div>
+</section>
+<section id="BM2237518"><a name="BM2237518"></a>
+<h2>2237518</h2>
+<div class="sym">ERROR: EM_ISEDP_SECOND_RES_OP</div>
+<div class="txt">ISE DATAPATH - NETWORK ERROR DETECTED TPS diags did not get the desired opcode in the second pkt either. \ IPG test results could not be logged.
+Invalid opcode : %d</div>
+</section>
+<section id="BM2237519"><a name="BM2237519"></a>
+<h2>2237519</h2>
+<div class="sym">ERROR: EM_ISEDP_SECOND_RES_REC</div>
+<div class="txt">ISE DATAPATH - NETWORK ERROR DETECTED The cm_rec call for the second pkt failed. IPG test results could not be logged.
+cm_rec status returned : %d</div>
+</section>
+<section id="BM2237520"><a name="BM2237520"></a>
+<h2>2237520</h2>
+<div class="sym">ERROR: EM_ISEDP_EXTRA_PKT</div>
+<div class="txt">ISE DATAPATH - NETWORK ERROR DETECTED An extra cm_rec call returned successfully after the desired IPG pkt \ was received. Diags should run OK; this message is logged to help \ isolate this problem.
+previous valid opcode : %d
+opcode in extra pkt : %d</div>
+</section>
+<section id="BM2237521"><a name="BM2237521"></a>
+<h2>2237521</h2>
+<div class="sym">ERROR: EM_ISEDP_040_MEDCAM_MEM_PAT</div>
+<div class="txt">ISE DP: TPS 040 CPU-MEDCAM/SBAM Mem Test Failure. The data pattern test failed.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): TPS CPU, MEDCAM/SBAM</div>
+</section>
+<section id="BM2237522"><a name="BM2237522"></a>
+<h2>2237522</h2>
+<div class="sym">ERROR: EM_ISEDP_040_MEDCAM_MEM_ADR</div>
+<div class="txt">ISE DP: TPS 040 CPU-MEDCAM/SBAM Mem Test Failure. The address pattern test failed.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): TPS CPU, MEDCAM/SBAM</div>
+</section>
+<section id="BM2237523"><a name="BM2237523"></a>
+<h2>2237523</h2>
+<div class="sym">ERROR: EM_ISEDP_040_D64_DMA</div>
+<div class="txt">ISE DP: TPS CPU DMA error. A data error occurred during a TPS CPU 64-bit blockmode DMA transfer. The target buffer is MEDCAM MOD board memory.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): TPS CPU, MEDCAM</div>
+</section>
+<section id="BM2237524"><a name="BM2237524"></a>
+<h2>2237524</h2>
+<div class="sym">ERROR: EM_ISEDP_040_D32_DMA</div>
+<div class="txt">ISE DP: TPS CPU DMA error. A data error occurred during a TPS CPU 32-bit blockmode DMA transfer. The target buffer is MEDCAM/SBAM MOD board memory.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): TPS CPU, MEDCAM/SBAM</div>
+</section>
+<section id="BM2237525"><a name="BM2237525"></a>
+<h2>2237525</h2>
+<div class="sym">ERROR: EM_ISEDP_040_D32_DMA_NB</div>
+<div class="txt">ISE DP: TPS CPU DMA error. A data error occurred during a TPS CPU 32-bit nonblockmode DMA transfer. The target buffer is MEDCAM/SBAM MOD board memory.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): TPS CPU, MEDCAM/SBAM</div>
+</section>
+<section id="BM2237526"><a name="BM2237526"></a>
+<h2>2237526</h2>
+<div class="sym">ERROR: EM_ISEDP_040_DMA_WR_ERROR</div>
+<div class="txt">ISE DP: TPS CPU DMA error. The 040 DMA transfer from CPU memory to MEDCAM/SBAM memory did not complete and returned the following DMA error status.
+Status = %d FRU(s): TPS CPU, MEDCAM/SBAM</div>
+</section>
+<section id="BM2237527"><a name="BM2237527"></a>
+<h2>2237527</h2>
+<div class="sym">ERROR: EM_ISEDP_040_DMA_RD_ERROR</div>
+<div class="txt">ISE DP: TPS CPU DMA error. The 040 DMA transfer from MEDCAM/SBAM memory to CPU memory did not complete and returned the following DMA error status.
+Status = %d FRU(s): TPS CPU, MEDCAM/SBAM</div>
+</section>
+<section id="BM2237528"><a name="BM2237528"></a>
+<h2>2237528</h2>
+<div class="sym">ERROR: EM_ISEDP_040_CERD_MEM_PAT</div>
+<div class="txt">ISE DP: TPS 040 CPU-CERD Mem &amp; Ints Test Failure. The data pattern test of CERD DPR failed.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): TPS CPU, CERD Digital Board</div>
+</section>
+<section id="BM2237529"><a name="BM2237529"></a>
+<h2>2237529</h2>
+<div class="sym">ERROR: EM_ISEDP_040_CERD_MEM_ADR</div>
+<div class="txt">ISE DP: TPS 040 CPU-CERD Mem &amp; Ints Test Failure. The address pattern test of CERD DPR failed.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): TPS CPU, CERD Digital Board</div>
+</section>
+<section id="BM2237530"><a name="BM2237530"></a>
+<h2>2237530</h2>
+<div class="sym">ERROR: EM_ISEDP_INTCONNECT_FAIL</div>
+<div class="txt">ISE DP: Interrupt Connect Failure. An error occurred while trying to attach an interrupt handler to Vector %d. FRU(s): TPS CPU</div>
+</section>
+<section id="BM2237531"><a name="BM2237531"></a>
+<h2>2237531</h2>
+<div class="sym">ERROR: EM_ISEDP_NO_CERD_INT</div>
+<div class="txt">ISE DP: TPS 040 CPU-CERD Mem &amp; Ints Test Failure. The CERD was commanded to generate a burst of VME Interrupts at Vector %d but not all of the interrupts were detected. # of ints expected: %d # of ints received: %d FRU(s): TPS CPU, CERD Digital Board</div>
+</section>
+<section id="BM2237532"><a name="BM2237532"></a>
+<h2>2237532</h2>
+<div class="sym">ERROR: EM_ISEDP_040_IPG_MEM_PAT</div>
+<div class="txt">ISE DP: TPS 040 CPU-IPG Mem Test Failure. The data pattern test failed.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): TPS CPU, IPG</div>
+</section>
+<section id="BM2237533"><a name="BM2237533"></a>
+<h2>2237533</h2>
+<div class="sym">ERROR: EM_ISEDP_040_IPG_MEM_ADR</div>
+<div class="txt">ISE DP: TPS 040 CPU-IPG Mem Test Failure. The address pattern test failed.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): TPS CPU, IPG</div>
+</section>
+<section id="BM2237534"><a name="BM2237534"></a>
+<h2>2237534</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_SETUP_FAILED</div>
+<div class="txt">ISE DP: SSP Bus Test Failure. The CAP setup for the SSP Bus datapath test returned an error. The test will continue but is likely to fail. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2237535"><a name="BM2237535"></a>
+<h2>2237535</h2>
+<div class="sym">ERROR: EM_ISEDP_RF_TEST_SETUP_FAILED</div>
+<div class="txt">ISE DP: RF Bus Test Failure. The CAP setup for the RF Bus datapath test returned an error. The test will continue but is likely to fail. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2237536"><a name="BM2237536"></a>
+<h2>2237536</h2>
+<div class="sym">ERROR: EM_ISEDP_B0_TEST_SETUP_FAILED</div>
+<div class="txt">ISE DP: B0 Compensation Test Failure. The CAP setup for the B0 Compensation datapath test returned an error. The test will continue but is likely to fail. FRU(s): CERD Digital Board</div>
+</section>
+<section id="BM2237537"><a name="BM2237537"></a>
+<h2>2237537</h2>
+<div class="sym">ERROR: EM_ISEDP_VSB_DATA_ERR_MODE1</div>
+<div class="txt">ISE DP: VSB Bus Test Failure. A data error occurred during CAP to MEDCAM/SBAM blockmode transfer. The data was verified by the TPS CPU.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH
+Pkg size: %08xH FRU(s): CERD Digital Board, MEDCAM/SBAM</div>
+</section>
+<section id="BM2237538"><a name="BM2237538"></a>
+<h2>2237538</h2>
+<div class="sym">ERROR: EM_ISEDP_VSB_DATA_ERR_MODE3</div>
+<div class="txt">ISE DP: VSB Bus Test Failure. A data error occurred during CAP to MEDCAM/SBAM blockmode memory fill. The data was verified by the TPS CPU.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH
+Pkg size: %08xH FRU(s): CERD Digital Board, MEDCAM/SBAM</div>
+</section>
+<section id="BM2237539"><a name="BM2237539"></a>
+<h2>2237539</h2>
+<div class="sym">ERROR: EM_ISEDP_VSB_DATA_ERR_MODE4</div>
+<div class="txt">ISE DP: VSB Bus Test Failure. A data error occurred during a CAP to MEDCAM/SBAM NON-blockmode transfer. The data was verified by the TPS CPU.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH
+Pkg size: %08xH FRU(s): CERD Digital Board, MEDCAM/SBAM</div>
+</section>
+<section id="BM2237540"><a name="BM2237540"></a>
+<h2>2237540</h2>
+<div class="sym">ERROR: EM_ISEDP_MEDCAM_DMA_TIMEOUT</div>
+<div class="txt">ISE DP: MEDCAM/SBAM DMA timeout. A timeout occurred after %d seconds while waiting for a MEDCAM/SBAM DMA transfer to complete. The target buffer is TPS CPU memory. FRU(s): TPS CPU, MEDCAM/SBAM</div>
+</section>
+<section id="BM2237541"><a name="BM2237541"></a>
+<h2>2237541</h2>
+<div class="sym">ERROR: EM_ISEDP_MEDCAM_D64_DMA</div>
+<div class="txt">ISE DP: MEDCAM DMA error. A data error occurred during a MEDCAM 64-bit blockmode DMA transfer. The target buffer is TPS CPU memory.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): TPS CPU, MEDCAM</div>
+</section>
+<section id="BM2237542"><a name="BM2237542"></a>
+<h2>2237542</h2>
+<div class="sym">ERROR: EM_ISEDP_MEDCAM_D32_DMA</div>
+<div class="txt">ISE DP: MEDCAM DMA error. A data error occurred during a MEDCAM 32-bit blockmode DMA transfer. The target buffer is TPS CPU memory.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): TPS CPU, MEDCAM</div>
+</section>
+<section id="BM2237543"><a name="BM2237543"></a>
+<h2>2237543</h2>
+<div class="sym">ERROR: EM_ISEDP_MEDCAM_D32_DMA_NB</div>
+<div class="txt">ISE DP: MEDCAM DMA error. A data error occurred during a MEDCAM 32-bit nonblockmode DMA transfer. The target buffer is TPS CPU memory.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): TPS CPU, MEDCAM</div>
+</section>
+<section id="BM2237544"><a name="BM2237544"></a>
+<h2>2237544</h2>
+<div class="sym">ERROR: EM_ISEDP_FRX_XD_BAD_LOCAL_BD1</div>
+<div class="txt">ISE DP: Fast Receiver error. The Fast Rcvr could be started via the SSP bus but failed to start via the VME bus. Possible causes: Bad Fast Rcvr Local Module.</div>
+</section>
+<section id="BM2237545"><a name="BM2237545"></a>
+<h2>2237545</h2>
+<div class="sym">ERROR: EM_ISEDP_FRX_XD_BAD_LOCAL_BD2</div>
+<div class="txt">ISE DP: Fast Receiver error. The Fast Rcvr datapath test passed when set up via the SSP bus but failed when set up via the VME bus. Possible causes: Bad Fast Rcvr Local Module.</div>
+</section>
+<section id="BM2237546"><a name="BM2237546"></a>
+<h2>2237546</h2>
+<div class="sym">ERROR: EM_ISEDP_FRX_XD_BAD_REMOTE_BD</div>
+<div class="txt">ISE DP: Fast Receiver error. The Fast Rcvr datapath test passed when data was generated by the Local Module but failed when generated by the Remote Module. Possible causes:
+Bad Fast Rcvr Remote Module, bad cables between Local and Remote Modules.</div>
+</section>
+<section id="BM2237547"><a name="BM2237547"></a>
+<h2>2237547</h2>
+<div class="sym">ERROR: EM_ISEDP_FRX_XD_BAD_SSP_INTFC</div>
+<div class="txt">ISE DP: Fast Receiver error. The VME portion of the Fast Rcvr datapath test passed but the SSP part of the test has failed. Possible causes: Bad SSP interface on Local Module, bad SSP bus, or bad IPG Bd. Run SSP datapath test.</div>
+</section>
+<section id="BM2237548"><a name="BM2237548"></a>
+<h2>2237548</h2>
+<div class="sym">ERROR: EM_ISEDP_FRX_NOT_INSTALLED</div>
+<div class="txt">ISE DP: Fast Receiver error. The Fast Receiver Local Module is not detected in the TPS chassis. The board may not be installed correctly or may not be functioning. Fast Receiver datapath tests have been canceled.</div>
+</section>
+<section id="BM2237616"><a name="BM2237616"></a>
+<h2>2237616</h2>
+<div class="sym">ERROR: EM_TC_CHK_BAM_MSIZE</div>
+<div class="txt">SYSTEM CONFIG FILE ERROR The total TPS memory size shown in the /w/config/MRconfig.cfg file does not agree with the actual size found in the chassis. The actual size will be used.
+expected (shown in file) : %d M
+actual (found in chassis) : %d M</div>
+</section>
+<section id="BM2237617"><a name="BM2237617"></a>
+<h2>2237617</h2>
+<div class="sym">ERROR: EM_TC_CHK_RCV_COUNT</div>
+<div class="txt">TPS CONFIGURATION ERROR Number of RECEIVER bds found does not agree with the \ MRconfig.cfg file. Edit the file or check the chassis. \ - possibly missing XCVRCLK from Exciter. \ check 20Mhz clock on backplane.
+expected # of bds : %d
+actual # of bds : %d</div>
+</section>
+<section id="BM2237618"><a name="BM2237618"></a>
+<h2>2237618</h2>
+<div class="sym">ERROR: EM_TC_CHK_AP_COUNT</div>
+<div class="txt">TPS CONFIGURATION ERROR Total number of AP boards found does not agree with \ the data in /w/config/MRconfig.cfg file. \ Edit the file or check the TPS chassis.
+expected (shown in file) : %d
+actual (found in chassis): %d</div>
+</section>
+<section id="BM2237619"><a name="BM2237619"></a>
+<h2>2237619</h2>
+<div class="sym">ERROR: EM_TC_CHK_AP_MSIZE</div>
+<div class="txt">TPS CONFIGURATION ERROR AP memory size in /w/config/MRconfig.cfg file \ does not agree with actual size. \ Edit the file or check the TPS chassis.
+AP board number: %d
+expected size (shown in file) in Mb : %d
+actual size (found in chassis) in Mb : %d</div>
+</section>
+<section id="BM2237620"><a name="BM2237620"></a>
+<h2>2237620</h2>
+<div class="sym">ERROR: EM_TC_STAGE_OPEN</div>
+<div class="txt">TPS CONFIGURATION ERROR TPS software was unable to open the /w/config/tardis_stage file. Check that the file is present. If it is, check the /etc/vxhosts file, which may be missing or corrupted.</div>
+</section>
+<section id="BM2237621"><a name="BM2237621"></a>
+<h2>2237621</h2>
+<div class="sym">ERROR: EM_TC_INIT_CONFIG</div>
+<div class="txt">TPS CONFIGURATION ERROR The TPS config data structure could not be created and attempts to access it will fail. Check the log for other messages relating to the MRconfig.cfg file or TPS CPU memory.</div>
+</section>
+<section id="BM2237622"><a name="BM2237622"></a>
+<h2>2237622</h2>
+<div class="sym">ERROR: EM_TC_UNINIT_CONFIG_ACCESS</div>
+<div class="txt">TPS SOFTWARE ERROR TPS config file drivers were called to access uninitialized TPS \ configuration data; tc_init_config must be called first.</div>
+</section>
+<section id="BM2237623"><a name="BM2237623"></a>
+<h2>2237623</h2>
+<div class="sym">ERROR: EM_TC_INVALID_PKTPTR</div>
+<div class="txt">TPS SOFTWARE ERROR An invalid pointer was passed to the tc_report_err function.
+Pointer: %08x
+vxWorks error code: %08x</div>
+</section>
+<section id="BM2237624"><a name="BM2237624"></a>
+<h2>2237624</h2>
+<div class="sym">ERROR: EM_TC_INVALID_VMEADDR</div>
+<div class="txt">TPS SOFTWARE ERROR The function tc_get_localaddr was called to convert an invalid vme \ address to a local address. Addresses requested for conversion must \ be valid CPU, BAM or AP addresses.</div>
+</section>
+<section id="BM2237625"><a name="BM2237625"></a>
+<h2>2237625</h2>
+<div class="sym">ERROR: EM_TC_INVALID_LOCALADDR</div>
+<div class="txt">TPS SOFTWARE ERROR The function tc_get_vmeaddr was called to convert an invalid local \ address to a address. Addresses requested for conversion must \ be valid CPU, BAM or AP addresses. \ Invalid local address : %08x</div>
+</section>
+<section id="BM2237626"><a name="BM2237626"></a>
+<h2>2237626</h2>
+<div class="sym">ERROR: EM_TC_BAD_ARRAY_PROC_NUMBER</div>
+<div class="txt">TPS SOFTWARE ERROR The TPS config file drivers were called with an invalid Array Processor \ board number. Valid board numbers are 0 and 1.
+Invalid board number: %d</div>
+</section>
+<section id="BM2237627"><a name="BM2237627"></a>
+<h2>2237627</h2>
+<div class="sym">ERROR: EM_TC_BAD_BAM_BOARD_NUMBER</div>
+<div class="txt">TPS SOFTWARE ERROR The TPS config file drivers were called with an invalid TPS Memory \ board number. Valid board numbers are 0 through 3.
+Invalid board number: %d</div>
+</section>
+<section id="BM2237628"><a name="BM2237628"></a>
+<h2>2237628</h2>
+<div class="sym">ERROR: EM_TC_BAD_RCV_BOARD_NUMBER</div>
+<div class="txt">TPS SOFTWARE ERROR The TPS config file drivers were called with an invalid Receiver \ board number. Valid board numbers are 0 through 3.
+Invalid board number: %d</div>
+</section>
+<section id="BM2237629"><a name="BM2237629"></a>
+<h2>2237629</h2>
+<div class="sym">ERROR: EM_TC_INVALID_BAMBSC</div>
+<div class="txt">TPS CONFIGURATION ERROR TPS Chassis Check detected an invalid DIP switch setting on a \ TPS memory board. The Board Size Code on the DIP switch \ must be 5 or less.
+TPS memory board number: %d
+Invalid BSC setting: %08x</div>
+</section>
+<section id="BM2237630"><a name="BM2237630"></a>
+<h2>2237630</h2>
+<div class="sym">ERROR: EM_TC_AUTOSIZE_BAM</div>
+<div class="txt">TPS CONFIGURATION ERROR TPS Chassis Check failed to autosize TPS memory board %d. \ This board will be marked all bad. Run TPS memory diags on the board.</div>
+</section>
+<section id="BM2237631"><a name="BM2237631"></a>
+<h2>2237631</h2>
+<div class="sym">ERROR: EM_TC_AUTOSIZE_AP</div>
+<div class="txt">TPS CONFIGURATION ERROR TPS Chassis Check failed to autosize AP board %d. \ 2 Mb will be used for that board&#x27;s memory size. \ Run AP diags on the board.</div>
+</section>
+<section id="BM2237632"><a name="BM2237632"></a>
+<h2>2237632</h2>
+<div class="sym">ERROR: EM_TC_CHK_BAM_BSC</div>
+<div class="txt">TPS CONFIGURATION ERROR The Board Size Code indicated in the DIP switch on TPS Memory board %d \ does not reflect the board&#x27;s actual memory size. Reset the DIP switch.
+BSC setting is : %08x
+BSC setting should be : %08x</div>
+</section>
+<section id="BM2237633"><a name="BM2237633"></a>
+<h2>2237633</h2>
+<div class="sym">ERROR: EM_TC_APTCB_INIT</div>
+<div class="txt">TPS CONFIGURATION ERROR Unable to initialize the AP task control block. \ Reset TPS and try again.</div>
+</section>
+<section id="BM2237634"><a name="BM2237634"></a>
+<h2>2237634</h2>
+<div class="sym">ERROR: EM_TC_CREATE_TPS_CONFIG</div>
+<div class="txt">TPS CONFIGURATION ERROR Unable to write the contents of the TPS config data structure \ to /w/config/BAM_status. Reset TPS and try again.</div>
+</section>
+<section id="BM2237635"><a name="BM2237635"></a>
+<h2>2237635</h2>
+<div class="sym">ERROR: EM_TC_UNINIT_TPS_CONFIG</div>
+<div class="txt">TPS SOFTWARE ERROR A call was made to tc_dump_file but the TPS config data structure \ is not initialized; tc_init_config or tc_diags_config must be \ called first.</div>
+</section>
+<section id="BM2237636"><a name="BM2237636"></a>
+<h2>2237636</h2>
+<div class="sym">ERROR: EM_TC_RUN_BAM_DIAGS</div>
+<div class="txt">TPS chassis power has been cycled and the /w/config/TPS_config.lst file \ has been updated. If boards were changed, running diagnostics is recommended.</div>
+</section>
+<section id="BM2237637"><a name="BM2237637"></a>
+<h2>2237637</h2>
+<div class="sym">ERROR: EM_DRIV_BINARY_FILE_OPEN</div>
+<div class="txt">BINARY FILE ERROR TPS binary file drivers failed to open a standard binary file. \ Verify that the file is present then Reset TPS and try again.
+filename : %s%s%s%s</div>
+</section>
+<section id="BM2237638"><a name="BM2237638"></a>
+<h2>2237638</h2>
+<div class="sym">ERROR: EM_DRIV_BINARY_FILE_READ</div>
+<div class="txt">BINARY FILE ERROR TPS binary file drivers failed to read a standard binary file. \ The file may be corrupted. Reset TPS and try again.
+filename : %s%s%s%s</div>
+</section>
+<section id="BM2237639"><a name="BM2237639"></a>
+<h2>2237639</h2>
+<div class="sym">ERROR: EM_DRIV_BINARY_FILE_CREATE</div>
+<div class="txt">BINARY FILE ERROR TPS binary file drivers failed to create a standard binary file. \ The file may be corrupted. Reset TPS and try again.
+filename : %s%s%s%s</div>
+</section>
+<section id="BM2237640"><a name="BM2237640"></a>
+<h2>2237640</h2>
+<div class="sym">ERROR: EM_DRIV_BINARY_FILE_WRITE</div>
+<div class="txt">BINARY FILE ERROR TPS binary file drivers failed to write to a standard binary file. \ The file may be corrupted. Reset TPS and try again.
+filename : %s%s%s%s</div>
+</section>
+<section id="BM2237641"><a name="BM2237641"></a>
+<h2>2237641</h2>
+<div class="sym">ERROR: EM_DRIV_BINARY_FILE_SEEK</div>
+<div class="txt">BINARY FILE ERROR TPS binary file drivers failed to seek data in a standard binary file. \ The file may be corrupted. Reset TPS and try again.
+filename : %s%s%s%s</div>
+</section>
+<section id="BM2237642"><a name="BM2237642"></a>
+<h2>2237642</h2>
+<div class="sym">ERROR: EM_DRIV_BINARY_FILE_HDRCHKSUM</div>
+<div class="txt">BINARY FILE ERROR TPS binary file drivers failed header checksum verification. \ The file may be corrupted. Reset TPS and try again.
+filename : %s%s%s%s</div>
+</section>
+<section id="BM2237643"><a name="BM2237643"></a>
+<h2>2237643</h2>
+<div class="sym">ERROR: EM_DRIV_BINARY_FILE_HDRLEN</div>
+<div class="txt">BINARY FILE ERROR TPS binary file drivers - Header length is not a multiple of 4. \ Internal software error.
+filename : %s%s%s%s</div>
+</section>
+<section id="BM2237644"><a name="BM2237644"></a>
+<h2>2237644</h2>
+<div class="sym">ERROR: EM_DRIV_BINARY_FILE_REVISION</div>
+<div class="txt">BINARY FILE ERROR TPS binary file drivers - Incorrect revision number. \ Internal software error.
+filename : %s%s%s%s</div>
+</section>
+<section id="BM2237645"><a name="BM2237645"></a>
+<h2>2237645</h2>
+<div class="sym">ERROR: EM_DRIV_BINARY_FILE_MAGICNUM</div>
+<div class="txt">BINARY FILE ERROR TPS binary file drivers - Incorrect magic number. \ Internal software error.
+filename : %s%s%s%s</div>
+</section>
+<section id="BM2237646"><a name="BM2237646"></a>
+<h2>2237646</h2>
+<div class="sym">ERROR: EM_DRIV_BINARY_FILE_MALLOC</div>
+<div class="txt">BINARY FILE ERROR TPS binary file drivers failed to allocate file buffer space. \ CPU memory may be too segmented. Reset TPS and try again.
+filename : %s%s%s%s</div>
+</section>
+<section id="BM2237647"><a name="BM2237647"></a>
+<h2>2237647</h2>
+<div class="sym">ERROR: EM_DRIV_BINARY_FILE_INVALID_ERR</div>
+<div class="txt">BINARY FILE ERROR TPS binary file drivers - bf_replace_ermes was called with an \ invalid BF error code in the designated packet. \ Internal software error.</div>
+</section>
+<section id="BM2237648"><a name="BM2237648"></a>
+<h2>2237648</h2>
+<div class="sym">ERROR: EM_TC_SCFG_MALLOC</div>
+<div class="txt">SYSTEM CONFIG READ ERROR Unable to allocate IPG CPU space to read MRconfig.cfg data. \ CPU memory may be too fragmented. Please Reset TPS \ and repeat the test.</div>
+</section>
+<section id="BM2237649"><a name="BM2237649"></a>
+<h2>2237649</h2>
+<div class="sym">ERROR: EM_TC_SCFG_OPEN</div>
+<div class="txt">TPS CONFIGURATION ERROR TPS software is unable to open the /w/config/MRconfig.cfg file. Verify that the file is present. If it is, the /etc/vxhosts file may be missing or corrupted.</div>
+</section>
+<section id="BM2237650"><a name="BM2237650"></a>
+<h2>2237650</h2>
+<div class="sym">ERROR: EM_TC_SCFG_RESOURCE_NOT_FOUND</div>
+<div class="txt">SYSTEM CONFIG FILE ERROR The resource %s was not found in the /w/config/MRconfig.cfg file.</div>
+</section>
+<section id="BM2237651"><a name="BM2237651"></a>
+<h2>2237651</h2>
+<div class="sym">ERROR: EM_TC_SCFG_INVALID_RESOURCE_VALUE</div>
+<div class="txt">SYSTEM CONFIG FILE ERROR The value for the resource %s found in the /w/config/MRconfig.cfg file is not valid.
+invalid value read : %d</div>
+</section>
+<section id="BM2237652"><a name="BM2237652"></a>
+<h2>2237652</h2>
+<div class="sym">ERROR: EM_TC_TPSHW_STAGED</div>
+<div class="txt">The file /w/config/tardis_stage indicates that the %s is being staged.</div>
+</section>
+<section id="BM2237653"><a name="BM2237653"></a>
+<h2>2237653</h2>
+<div class="sym">ERROR: EM_TC_EX_NO_BROADBAND</div>
+<div class="txt">TPS CONFIGURATION ERROR Broadband exciter, shown in /w/config/MRconfig.cfg file, \ is not found in chassis. Please check the exciter or change the MRconfig.cfg file to match the hardware</div>
+</section>
+<section id="BM2237654"><a name="BM2237654"></a>
+<h2>2237654</h2>
+<div class="sym">ERROR: EM_TC_CERD_PRESENT</div>
+<div class="txt">TPS CONFIGURATION ERROR The CERDpresent value in the MRconfig.cfg file is incorrect. \ A CERD board is present in the TPS chassis. Please update the \ config file to match the installed hardware.</div>
+</section>
+<section id="BM2237655"><a name="BM2237655"></a>
+<h2>2237655</h2>
+<div class="sym">ERROR: EM_TC_CERD_NOT_PRESENT</div>
+<div class="txt">TPS CONFIGURATION ERROR The CERD board is not detected in the chassis. The board may not be installed correctly or may not be functioning.</div>
+</section>
+<section id="BM2237656"><a name="BM2237656"></a>
+<h2>2237656</h2>
+<div class="sym">ERROR: EM_TC_NUM_CERD_RCVRS</div>
+<div class="txt">TPS CONFIGURATION ERROR The number of receiver modules installed on the CERD does not agree \ with numCERDrcvrs shown in the MRconfig file. Check the board \ or update the file to match the installed hardware.
+installed : %d
+shown in file : %d</div>
+</section>
+<section id="BM2237657"><a name="BM2237657"></a>
+<h2>2237657</h2>
+<div class="sym">ERROR: EM_TC_CERD_FLDSTR</div>
+<div class="txt">TPS CONFIGURATION ERROR The field strength indicated on the CERD board does not agree with the value claimed in the MRconfig file. Check the board or update the file to match the installed hardware.
+installed : %d
+shown in file : %d</div>
+</section>
+<section id="BM2237658"><a name="BM2237658"></a>
+<h2>2237658</h2>
+<div class="sym">ERROR: EM_TC_FRX_NOT_INSTALLED</div>
+<div class="txt">TPS CONFIGURATION ERROR The Fast Receiver Local Module is not detected in the TPS chassis. The board may not be installed correctly or may not be functioning.</div>
+</section>
+<section id="BM2237659"><a name="BM2237659"></a>
+<h2>2237659</h2>
+<div class="sym">ERROR: EM_TC_CERD_CONFIG_ERROR</div>
+<div class="txt">TPS CONFIGURATION ERROR The CERD board installed is not the type in MRconfig.cfg file. Please update the file to match the installed hardware.
+installed : %d
+shown in file : %d</div>
+</section>
+<section id="BM2237676"><a name="BM2237676"></a>
+<h2>2237676</h2>
+<div class="sym">ERROR: EM_DIAG_DE_MONITOR_SPAWN</div>
+<div class="txt">TPS diags exec was unable to spawn the diagnostics monitor task. Reset TPS and try again.</div>
+</section>
+<section id="BM2237677"><a name="BM2237677"></a>
+<h2>2237677</h2>
+<div class="sym">ERROR: EM_DIAG_DE_MONITOR_DELETE</div>
+<div class="txt">TPS diags exec was unable to delete the diagnostics monitor task. Reset TPS and try again.</div>
+</section>
+<section id="BM2237678"><a name="BM2237678"></a>
+<h2>2237678</h2>
+<div class="sym">ERROR: EM_DIAG_DE_DTSK_SPAWN</div>
+<div class="txt">TPS diags exec was unable to spawn the diagnostics task. Reset TPS and try again.</div>
+</section>
+<section id="BM2237679"><a name="BM2237679"></a>
+<h2>2237679</h2>
+<div class="sym">ERROR: EM_DIAG_DE_DTSK_INQUIRY</div>
+<div class="txt">TPS diags exec failed diags task status check. Reset TPS and try again.</div>
+</section>
+<section id="BM2237680"><a name="BM2237680"></a>
+<h2>2237680</h2>
+<div class="sym">ERROR: EM_DIAG_DE_QUE_CREATE</div>
+<div class="txt">TPS diags exec was unable to create the exec message queue. Reset TPS and try again.</div>
+</section>
+<section id="BM2237681"><a name="BM2237681"></a>
+<h2>2237681</h2>
+<div class="sym">ERROR: EM_DIAG_DE_QUE_PEND</div>
+<div class="txt">TPS diags exec failed to pend on the message queue. Reset TPS and try again.</div>
+</section>
+<section id="BM2237682"><a name="BM2237682"></a>
+<h2>2237682</h2>
+<div class="sym">ERROR: EM_DIAG_DE_DTSK_QPOST</div>
+<div class="txt">TPS diags exec was unable to post the end message. Reset TPS and try again.</div>
+</section>
+<section id="BM2237683"><a name="BM2237683"></a>
+<h2>2237683</h2>
+<div class="sym">ERROR: EM_DIAG_DE_INVALID_CWORD</div>
+<div class="txt">TPS diags exec received an invalid command word from the Host.
+Internal software error. command word : %08x</div>
+</section>
+<section id="BM2237684"><a name="BM2237684"></a>
+<h2>2237684</h2>
+<div class="sym">ERROR: EM_DIAG_DE_CM_LOOKUP_EMUL</div>
+<div class="txt">TPS diags exec failed cm lookup emulation call.</div>
+</section>
+<section id="BM2237685"><a name="BM2237685"></a>
+<h2>2237685</h2>
+<div class="sym">ERROR: EM_DIAG_DE_CM_SEND_EMUL</div>
+<div class="txt">TPS diags exec failed cm send emulation call.</div>
+</section>
+<section id="BM2237686"><a name="BM2237686"></a>
+<h2>2237686</h2>
+<div class="sym">ERROR: EM_DIAG_DE_CM_DEFINE_EMUL</div>
+<div class="txt">TPS diags exec failed cm define emulation call.</div>
+</section>
+<section id="BM2237687"><a name="BM2237687"></a>
+<h2>2237687</h2>
+<div class="sym">ERROR: EM_DIAG_DE_CM_DEFINE</div>
+<div class="txt">TPS diags exec was unable to define its NMRID. Network failure. Reset TPS and try again.
+vxWorks error code: %08x</div>
+</section>
+<section id="BM2237688"><a name="BM2237688"></a>
+<h2>2237688</h2>
+<div class="sym">ERROR: EM_DIAG_DE_CM_LOOKUP</div>
+<div class="txt">TPS diags exec was unable to look up an NMRID. Network failure. Reset TPS and try again.
+vxWorks error code: %08x</div>
+</section>
+<section id="BM2237689"><a name="BM2237689"></a>
+<h2>2237689</h2>
+<div class="sym">ERROR: EM_DIAG_DE_CM_SEND</div>
+<div class="txt">TPS diags exec was unable to send a packet. Network failure. Reset TPS and try again.
+vxWorks error code: %08x</div>
+</section>
+<section id="BM2237690"><a name="BM2237690"></a>
+<h2>2237690</h2>
+<div class="sym">ERROR: EM_DIAG_DE_CM_RECEIVE</div>
+<div class="txt">TPS diags exec failed to receive a packet. Network failure. Reset TPS and try again.
+vxWorks error code: %08x</div>
+</section>
+<section id="BM2237691"><a name="BM2237691"></a>
+<h2>2237691</h2>
+<div class="sym">ERROR: EM_DIAG_DE_INVALID_PKTPTR</div>
+<div class="txt">TPS DIAGS SOFTWARE ERROR The TPS diags function de_report_err is being called with an invalid \ message handler packet pointer.
+Pointer: %08x
+vxWorks error code: %08x</div>
+</section>
+<section id="BM2237692"><a name="BM2237692"></a>
+<h2>2237692</h2>
+<div class="sym">ERROR: EM_DIAG_DE_DIAGS_STARTED</div>
+<div class="txt">DIAGS STATUS MESSAGE TPS diags exec has begun execution of the %s Diagnostics. (command word received = %08x H ; Loop mode = %d)</div>
+</section>
+<section id="BM2237693"><a name="BM2237693"></a>
+<h2>2237693</h2>
+<div class="sym">ERROR: EM_DIAG_DE_STAGE_OPEN</div>
+<div class="txt">TPS BOARD LEVEL DIAGS FAILURE The TPS diags exec was unable to open the /w/config/tardis_stage file. \ Diagnostics were not run. The file may be non-existent or corrupted, \ or a network problem may exist.</div>
+</section>
+<section id="BM2237694"><a name="BM2237694"></a>
+<h2>2237694</h2>
+<div class="sym">ERROR: EM_DIAG_DE_STAGE_INIT</div>
+<div class="txt">TPS BOARD LEVEL DIAGS SOFTWARE ERROR The TPS diags function de_check_stage was called before a successful \ call to tc_init_stage. TPS stage information is not available.</div>
+</section>
+<section id="BM2237695"><a name="BM2237695"></a>
+<h2>2237695</h2>
+<div class="sym">ERROR: EM_DIAG_DE_BAD_STAGE_LETTER</div>
+<div class="txt">TPS BOARD LEVEL DIAGS SOFTWARE ERROR The TPS diags function de_check_stage was called with a letter that \ was found in the tardis_stage file, but whose meaning isn&#x27;t known to the \ function. The function needs to be updated.
+stage letter : %c</div>
+</section>
+<section id="BM2237696"><a name="BM2237696"></a>
+<h2>2237696</h2>
+<div class="sym">ERROR: EM_DIAG_DE_TPSHW_STAGED</div>
+<div class="txt">TPS DIAGS STAGING MESSAGE The file /w/config/tardis_stage indicates that the %s is being staged. \ Diagnostics are not run on staged hardware. If the %s is present, \ please edit the tardis_stage file to enable %s diags.</div>
+</section>
+<section id="BM2237697"><a name="BM2237697"></a>
+<h2>2237697</h2>
+<div class="sym">ERROR: EM_DIAG_DE_MEM_LEAKAGE</div>
+<div class="txt">TPS diags exec has detected significant leakage in TPS CPU memory, \ and actions have been taken to cause a reset of TPS/IPG to reclaim \ memory. This is a known software condition and should cause no problems.</div>
+</section>
+<section id="BM2237698"><a name="BM2237698"></a>
+<h2>2237698</h2>
+<div class="sym">ERROR: EM_DIAG_DE_XPTN_FMT0</div>
+<div class="txt">TPS CPU Format 0 (4-word) exception occurred. %b diags were running at the time.
+Task ID: %08xH
+Vector: %08xH
+Program counter: %08xH</div>
+</section>
+<section id="BM2237699"><a name="BM2237699"></a>
+<h2>2237699</h2>
+<div class="sym">ERROR: EM_DIAG_DE_XPTN_FMT1</div>
+<div class="txt">TPS CPU Format 1 (Throwaway 4-word) exception occurred. %b diags were running at the time.
+Task ID: %08xH
+Vector: %08xH
+Program counter: %08xH</div>
+</section>
+<section id="BM2237700"><a name="BM2237700"></a>
+<h2>2237700</h2>
+<div class="sym">ERROR: EM_DIAG_DE_XPTN_FMT2</div>
+<div class="txt">TPS CPU Format 2 (6-word) exception occurred. %b diags were running at the time.
+Task ID: %08xH
+Vector: %08xH
+Access address: %08xH</div>
+</section>
+<section id="BM2237701"><a name="BM2237701"></a>
+<h2>2237701</h2>
+<div class="sym">ERROR: EM_DIAG_DE_XPTN_FMT3</div>
+<div class="txt">TPS CPU Format 3 (floating point) exception occurred. %b diags were running at the time.
+Task ID: %08xH
+Vector: %08xH
+Effective address: %08xH</div>
+</section>
+<section id="BM2237702"><a name="BM2237702"></a>
+<h2>2237702</h2>
+<div class="sym">ERROR: EM_DIAG_DE_XPTN_FMT7</div>
+<div class="txt">TPS CPU Format 7 (bus error) exception occurred. %b diags were running at the time.
+Task ID: %08xH
+Vector: %08xH
+Fault address: %08xH (%b)</div>
+</section>
+<section id="BM2237703"><a name="BM2237703"></a>
+<h2>2237703</h2>
+<div class="sym">ERROR: EM_DIAG_DE_XPTN_FMT9</div>
+<div class="txt">TPS CPU Format 9 (coprocessor mid-instruction) exception occurred. %b diags were running at the time.
+Task ID: %08xH
+Vector: %08xH
+Access address: %08xH</div>
+</section>
+<section id="BM2237704"><a name="BM2237704"></a>
+<h2>2237704</h2>
+<div class="sym">ERROR: EM_DIAG_DE_XPTN_FMT10</div>
+<div class="txt">TPS CPU Format 10 (short bus cycle) exception occurred. %b diags were running at the time.
+Task ID: %08xH
+Vector: %08xH
+Fault address: %08xH (%b)</div>
+</section>
+<section id="BM2237705"><a name="BM2237705"></a>
+<h2>2237705</h2>
+<div class="sym">ERROR: EM_DIAG_DE_XPTN_FMT11</div>
+<div class="txt">TPS CPU Format 11 (long bus cycle) exception occurred. %b diags were running at the time.
+Task ID: %08xH
+Vector: %08xH
+Fault address: %08xH (%b)</div>
+</section>
+<section id="BM2237706"><a name="BM2237706"></a>
+<h2>2237706</h2>
+<div class="sym">ERROR: EM_DIAG_DE_ASYNC_INTR</div>
+<div class="txt">TPS CPU Asynchronous format exception occurred. %b diags were running at the time.
+Task ID: %08xH (0 indicates asynchronous)
+Vector: %08xH</div>
+</section>
+<section id="BM2237707"><a name="BM2237707"></a>
+<h2>2237707</h2>
+<div class="sym">ERROR: EM_DIAG_DE_XPTN_FMT_DECODE</div>
+<div class="txt">An invalid TPS CPU Format exception occurred. %b diags were running at the time.
+Task ID: %08xH
+Vector: %08xH
+Invalid Stack Frame Format: %d</div>
+</section>
+<section id="BM2237708"><a name="BM2237708"></a>
+<h2>2237708</h2>
+<div class="sym">ERROR: EM_DIAG_DE_MEDCAM_GROUP</div>
+<div class="txt">MEDCAM/SBAM board level</div>
+</section>
+<section id="BM2237709"><a name="BM2237709"></a>
+<h2>2237709</h2>
+<div class="sym">ERROR: EM_DIAG_DE_DATAPATH_GROUP</div>
+<div class="txt">ISE Datapath</div>
+</section>
+<section id="BM2237710"><a name="BM2237710"></a>
+<h2>2237710</h2>
+<div class="sym">ERROR: EM_DIAG_DE_CERD_GROUP</div>
+<div class="txt">CERD board level</div>
+</section>
+<section id="BM2237711"><a name="BM2237711"></a>
+<h2>2237711</h2>
+<div class="sym">ERROR: EM_DIAG_DE_TPS_ADDR</div>
+<div class="txt">a TPS CPU board address</div>
+</section>
+<section id="BM2237712"><a name="BM2237712"></a>
+<h2>2237712</h2>
+<div class="sym">ERROR: EM_DIAG_DE_IPG_ADDR</div>
+<div class="txt">an IPG board address</div>
+</section>
+<section id="BM2237713"><a name="BM2237713"></a>
+<h2>2237713</h2>
+<div class="sym">ERROR: EM_DIAG_DE_CERD_ADDR_A24</div>
+<div class="txt">a CERD board address, A24 access</div>
+</section>
+<section id="BM2237714"><a name="BM2237714"></a>
+<h2>2237714</h2>
+<div class="sym">ERROR: EM_DIAG_DE_CERD_ADDR_A32</div>
+<div class="txt">a CERD board address, A32 access</div>
+</section>
+<section id="BM2237715"><a name="BM2237715"></a>
+<h2>2237715</h2>
+<div class="sym">ERROR: EM_DIAG_DE_MEDCAM_ADDR</div>
+<div class="txt">a MEDCAM/SBAM board address</div>
+</section>
+<section id="BM2237716"><a name="BM2237716"></a>
+<h2>2237716</h2>
+<div class="sym">ERROR: EM_DIAG_DE_FAST_RCV_ADDR</div>
+<div class="txt">a Fast Receiver address</div>
+</section>
+<section id="BM2237717"><a name="BM2237717"></a>
+<h2>2237717</h2>
+<div class="sym">ERROR: EM_DIAG_DE_UNDEFINED_ADDR</div>
+<div class="txt">not specific to any VME board</div>
+</section>
+<section id="BM2237896"><a name="BM2237896"></a>
+<h2>2237896</h2>
+<div class="sym">ERROR: EM_ISEDP_IPG_040_MEM_PAT</div>
+<div class="txt">ISE DP: IPG-TPS 040 Mem Test Failure. The data pattern test failed.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): IPG, TPS CPU</div>
+</section>
+<section id="BM2237897"><a name="BM2237897"></a>
+<h2>2237897</h2>
+<div class="sym">ERROR: EM_ISEDP_IPG_040_MEM_ADR</div>
+<div class="txt">ISE DP: IPG-TPS 040 Mem Test Failure. The address pattern test failed.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): IPG, TPS CPU</div>
+</section>
+<section id="BM2237898"><a name="BM2237898"></a>
+<h2>2237898</h2>
+<div class="sym">ERROR: EM_ISEDP_IPG_MEDCAM_MEM_PAT</div>
+<div class="txt">ISE DP: IPG-MEDCAM Mem Test Failure. The data pattern test failed.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): IPG, MEDCAM</div>
+</section>
+<section id="BM2237899"><a name="BM2237899"></a>
+<h2>2237899</h2>
+<div class="sym">ERROR: EM_ISEDP_IPG_MEDCAM_MEM_ADR</div>
+<div class="txt">ISE DP: IPG-MEDCAM Mem Test Failure. The address pattern test failed.
+VME addr: %08xH
+Data exp: %08xH
+Data read: %08xH FRU(s): IPG, MEDCAM</div>
+</section>
+<section id="BM2237900"><a name="BM2237900"></a>
+<h2>2237900</h2>
+<div class="sym">ERROR: EM_ISEDP_SSP_TEST_NO_EOS_INTERRUPT</div>
+<div class="txt">ISE DP: SSP Bus Test Failure. The LCA&#x27;s may have failed to play out all SSP bus data since an EOS interrupt was not received after %d seconds. FRU(s): IPG</div>
+</section>
+<section id="BM2237901"><a name="BM2237901"></a>
+<h2>2237901</h2>
+<div class="sym">ERROR: EM_ISEDP_RF_TEST_NO_EOS_INTERRUPT</div>
+<div class="txt">ISE DP: RF Bus Test Failure. The LCA&#x27;s may have failed to play out all RF bus data since an EOS interrupt was not received after %d seconds. FRU(s): IPG</div>
+</section>
+<section id="BM2237902"><a name="BM2237902"></a>
+<h2>2237902</h2>
+<div class="sym">ERROR: EM_ISEDP_XDBM_TEST_NO_EOS_INTERRUPT</div>
+<div class="txt">ISE DP: XD Bus Monitor Test Failure. The LCA&#x27;s may have failed to play out the SSP start packet since an EOS interrupt was not received after %d seconds. FRU(s): IPG</div>
+</section>
+<section id="BM2237903"><a name="BM2237903"></a>
+<h2>2237903</h2>
+<div class="sym">ERROR: EM_ISEDP_XDBM_FIFOFULL</div>
+<div class="txt">ISE DP: SPU XD Bus Monitor Test Failure. The SPU XD bus monitor FIFO overflowed.
+RCVR address: %d
+XD Monitor mode: %c (A=all, E=even, O=odd) FRU(s): CERD Digital Board, IPG</div>
+</section>
+<section id="BM2237904"><a name="BM2237904"></a>
+<h2>2237904</h2>
+<div class="sym">ERROR: EM_ISEDP_XDBM_NOBLOCKS</div>
+<div class="txt">ISE DP: SPU XD Bus Monitor Test Failure. No data was received in the SPU XD bus monitor FIFO.
+RCVR address: %d
+XD Monitor mode: %c (A=all, E=even, O=odd) FRU(s): CERD Digital Board, IPG</div>
+</section>
+<section id="BM2237905"><a name="BM2237905"></a>
+<h2>2237905</h2>
+<div class="sym">ERROR: EM_ISEDP_XDBM_BLOCKCOUNT</div>
+<div class="txt">ISE DP: SPU XD Bus Monitor Test Failure. The SPU XD bus monitor FIFO received less data than expected.
+Expected: %d blocks
+Received: %d blocks
+RCVR address: %d
+XD Monitor mode: %c (A=all, E=even, O=odd) FRU(s): CERD Digital Board, IPG</div>
+</section>
+<section id="BM2237906"><a name="BM2237906"></a>
+<h2>2237906</h2>
+<div class="sym">ERROR: EM_ISEDP_XDBM_DATAERROR</div>
+<div class="txt">ISE DP: SPU XD Bus Monitor Test Failure. The SPU XD bus monitor failed the data integrity test.
+Data Exp: %08xH
+Data Rd: %08xH
+RCVR address: %d
+XD Monitor mode: %c (A=all, E=even, O=odd) FRU(s): CERD Digital Board, IPG</div>
+</section>
+<section id="BM2237907"><a name="BM2237907"></a>
+<h2>2237907</h2>
+<div class="sym">ERROR: EM_ISEDP_FRX_TEST_NO_EOS_INTERRUPT</div>
+<div class="txt">ISE DP: Fast Receiver XD Bus Test Failure. The LCA&#x27;s may have failed to play out all SSP bus data since an EOS interrupt was not received after %d seconds. FRU(s): IPG</div>
+</section>
+<section id="BM2237946"><a name="BM2237946"></a>
+<h2>2237946</h2>
+<div class="sym">ERROR: EM_BIT3_DRIVER_OPEN_FAIL</div>
+<div class="txt">BIT3 Diags - Failed to open BIT3 device: %s. Check that correct driver exists. Check driver permissions. BIT3 Diags may not be available for this model hardware.</div>
+</section>
+<section id="BM2237947"><a name="BM2237947"></a>
+<h2>2237947</h2>
+<div class="sym">ERROR: EM_BIT3_NO_SOURCE_BUFFER</div>
+<div class="txt">BIT3 Diags - Memory allocation error. The Host CPU was unable to allocate a %d byte source buffer. The tests will not be run.
+Unix error code: %d</div>
+</section>
+<section id="BM2237948"><a name="BM2237948"></a>
+<h2>2237948</h2>
+<div class="sym">ERROR: EM_BIT3_NO_DEST_BUFFER</div>
+<div class="txt">BIT3 Diags - Memory allocation error. The Host CPU was unable to allocate a %d byte destination buffer. The tests will not be run.
+Unix error code: %d</div>
+</section>
+<section id="BM2237949"><a name="BM2237949"></a>
+<h2>2237949</h2>
+<div class="sym">ERROR: EM_BIT3_INVALID_LOOPBACK_TYPE</div>
+<div class="txt">BIT3 Diags - Invalid loopback test selection. An invalid loopback test selection was made. This is a programming error that needs to be fixed.</div>
+</section>
+<section id="BM2237950"><a name="BM2237950"></a>
+<h2>2237950</h2>
+<div class="sym">ERROR: EM_BIT3_LL_IOCTL_FAILED</div>
+<div class="txt">BIT3 Diags - Local loopback test failure. Cannot communicate with Local BIT3 hardware. FRU(s): Local BIT3 Bd.
+Unix error code: %d</div>
+</section>
+<section id="BM2237951"><a name="BM2237951"></a>
+<h2>2237951</h2>
+<div class="sym">ERROR: EM_BIT3_RL_IOCTL_FAILED</div>
+<div class="txt">BIT3 Diags - Remote loopback test failure. Cannot communicate with Remote BIT3 hardware. FRU(s): Remote BIT3 Bd. or cable.
+Unix error code: %d</div>
+</section>
+<section id="BM2237952"><a name="BM2237952"></a>
+<h2>2237952</h2>
+<div class="sym">ERROR: EM_BIT3_LL_PATTERN_FAILED</div>
+<div class="txt">BIT3 Diags - Local loopback failure. A data error was detected.
+Data exp: %08xH
+Data read: %08xH
+Index: %d FRU(s): Local BIT3 Board.</div>
+</section>
+<section id="BM2237953"><a name="BM2237953"></a>
+<h2>2237953</h2>
+<div class="sym">ERROR: EM_BIT3_RL_PATTERN_FAILED</div>
+<div class="txt">BIT3 Diags - Remote loopback failure. A data error was detected.
+Data exp: %08xH
+Data read: %08xH
+Index: %d FRU(s): Remote Bd, Local Bd, or cable.</div>
+</section>
+<section id="BM2237996"><a name="BM2237996"></a>
+<h2>2237996</h2>
+<div class="sym">ERROR: EM_DIAG_RESETTING</div>
+<div class="txt">Resetting TPS and downloading diags.</div>
+</section>
+<section id="BM2237997"><a name="BM2237997"></a>
+<h2>2237997</h2>
+<div class="sym">ERROR: EM_DIAG_TPS_MRMAIL_SEND_FAILURE</div>
+<div class="txt">MR Mail send from the host diags process to the %s failed. Unable to run the requested diags. Possible TPS/IPG failure or software problem.</div>
+</section>
+<section id="BM2237998"><a name="BM2237998"></a>
+<h2>2237998</h2>
+<div class="sym">ERROR: EM_DIAG_HPC_MRMAIL_SEND_FAILURE</div>
+<div class="txt">MR Mail send from the host diags process to IPG applications (HPC) failed following TPS reset at the beginning of SLE execution. Unable to run SLEs. Possible error during TPS/IPG apps init, or network mail problem.</div>
+</section>
+<section id="BM2237999"><a name="BM2237999"></a>
+<h2>2237999</h2>
+<div class="sym">ERROR: EM_DIAG_EMPTY_DIAGS_RESULTS_PKT</div>
+<div class="txt">The diags results packet from the %s was empty. The results of the diags could not be reported. Corrupted mail packet indicates a possible network communication or software problem.</div>
+</section>
+</body></html>

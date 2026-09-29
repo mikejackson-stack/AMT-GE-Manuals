@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2221000-2221999 (188)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2221000-2221999 (188)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2220000-2220999.html">&larr; 2220000-2220999</a><a href="ermes_2222000-2222999.html">2222000-2222999 &rarr;</a></nav></header>
+<section id="BM2221131"><a name="BM2221131"></a>
+<h2>2221131</h2>
+<div class="sym">ERROR: EM_TX_SYNC_GAIN_TIMEOUT</div>
+<div class="txt">TPS XCVR DRIVER - INTERNAL SOFTWARE ERROR timed out waiting for SSP unlock packet to set \ transmit attenuation, receive gain, and barrel shift.</div>
+</section>
+<section id="BM2221132"><a name="BM2221132"></a>
+<h2>2221132</h2>
+<div class="sym">ERROR: EM_TX_SYNC_FS_TIMEOUT</div>
+<div class="txt">TPS XCVR DRIVER - INTERNAL SOFTWARE ERROR timeout waiting for SSP unlock packet before setting filter select.</div>
+</section>
+<section id="BM2221133"><a name="BM2221133"></a>
+<h2>2221133</h2>
+<div class="sym">ERROR: EM_DIAG_TX_32BIT_FLAG</div>
+<div class="txt">TPS XCVR DIAGNOSTICS - INTERNAL SOFTWARE ERROR invalid cluster number in control word.
+N/A: %04xH%04xH control word: %08xH</div>
+</section>
+<section id="BM2221134"><a name="BM2221134"></a>
+<h2>2221134</h2>
+<div class="sym">ERROR: EM_EX_NO_BOARD</div>
+<div class="txt">The Exciter board is not present, according to the TPS software. Check if the b board is present and properly seated.</div>
+</section>
+<section id="BM2221135"><a name="BM2221135"></a>
+<h2>2221135</h2>
+<div class="sym">ERROR: EM_EX_CENTER_FREQ</div>
+<div class="txt">TPS EXCITER DRIVERS - INTERNAL SOFTWARE ERROR Invalid center frequency selected.
+Center frequency: %d Hz</div>
+</section>
+<section id="BM2221136"><a name="BM2221136"></a>
+<h2>2221136</h2>
+<div class="sym">ERROR: EM_EX_SLICE_FREQ</div>
+<div class="txt">TPS EXCITER DRIVERS - INTERNAL SOFTWARE ERROR Invalid Slice Frequency selected.
+slice frequency: %d Hz</div>
+</section>
+<section id="BM2221137"><a name="BM2221137"></a>
+<h2>2221137</h2>
+<div class="sym">ERROR: EM_EX_ATTEN</div>
+<div class="txt">TPS EXCITER DRIVERS - INTERNAL SOFTWARE ERROR Invalid coarse/fine transmit attenuation selected.
+attenuation: %d</div>
+</section>
+<section id="BM2221138"><a name="BM2221138"></a>
+<h2>2221138</h2>
+<div class="sym">ERROR: EM_DRIV_EX_NO_BROADBAND</div>
+<div class="txt">TPS EXCITER DRIVERS - INTERNAL SOFTWARE/CONFIGURATION ERROR Attempted to select broadband when hardware status \ indicates broadband module local oscillator not present.
+Status Register Address: %08xH Register Contents: %02xH</div>
+</section>
+<section id="BM2221139"><a name="BM2221139"></a>
+<h2>2221139</h2>
+<div class="sym">ERROR: EM_DIAG_EX_UNBLANK</div>
+<div class="txt">TPS EXCITER UNBLANK TEST FAILURE - Attenuation with unblank enabled is below specifications. Note: attenuation values are given in 1/100th dB.
+minimum attenuation: %d actual: %d NOTE: Receiver %02d used in this test.</div>
+</section>
+<section id="BM2221140"><a name="BM2221140"></a>
+<h2>2221140</h2>
+<div class="sym">ERROR: EM_EX_COARSE_TUNE</div>
+<div class="txt">TPS EXCITER DRIVERS - INTERNAL SOFTWARE ERROR
+Invalid coarse tune frequency specified: %d Hz</div>
+</section>
+<section id="BM2221141"><a name="BM2221141"></a>
+<h2>2221141</h2>
+<div class="sym">ERROR: EM_DIAG_EX_REG</div>
+<div class="txt">TPS EXCITER REGISTER TEST FAILURE - Value read back does not match value written.
+address of register: %08xH
+expected: %02xH actual: %02xH</div>
+</section>
+<section id="BM2221142"><a name="BM2221142"></a>
+<h2>2221142</h2>
+<div class="sym">ERROR: EM_DIAG_EX_LO_NB</div>
+<div class="txt">TPS EXCITER LO1/LO2 (LO3/LO4) TEST FAILED Check Narrowband module, power supply and fuses, and other \ connections. NOTE: RF connection in receiver could cause \ problem, run test with front panel connector unplugged.
+expected status: %xH actual: %xH</div>
+</section>
+<section id="BM2221143"><a name="BM2221143"></a>
+<h2>2221143</h2>
+<div class="sym">ERROR: EM_DIAG_EX_LO_BB</div>
+<div class="txt">TPS EXCITER LO3/LO4 TEST FAILURE - Check Broadband module, power supply and fuses, and other \ RF module connections.
+expected status: %02xH actual status: %02xH</div>
+</section>
+<section id="BM2221144"><a name="BM2221144"></a>
+<h2>2221144</h2>
+<div class="sym">ERROR: EM_DIAG_EX_OUTPUT_BLANK</div>
+<div class="txt">TPS EXCITER OUTPUT TEST FAILURE - Disabling Exciter Unblank does not turn off the TONE PRESENT \ indicator. Check Narrowband module and connections.
+Expected status register contents: %02xH actual: %02xH</div>
+</section>
+<section id="BM2221145"><a name="BM2221145"></a>
+<h2>2221145</h2>
+<div class="sym">ERROR: EM_DIAG_EX_OUTPUT_ATTEN</div>
+<div class="txt">TPS EXCITER OUTPUT TEST FAILURE - Setting Attenuator to maximum does not turn off TONE. \ Check Narrowband module and connections.
+Attenuator - Coarse [0]/Fine [1]:%08d
+Expected Status reg contents: %02xH actual: %02xH</div>
+</section>
+<section id="BM2221146"><a name="BM2221146"></a>
+<h2>2221146</h2>
+<div class="sym">ERROR: EM_DIAG_EX_TONE</div>
+<div class="txt">TPS EXCITER DIAGNOSTICS - CANNOT GENERATE TONE PRESENT Check Narrowband module, power supplies and connections.
+Expected Status register contents: %02xH actual: %02xH</div>
+</section>
+<section id="BM2221147"><a name="BM2221147"></a>
+<h2>2221147</h2>
+<div class="sym">ERROR: EM_DIAG_EX_SIMPLE_ATTEN</div>
+<div class="txt">TPS EXCITER ATTEN (ATTENUATOR) TEST FAILURE - Cannot turn off Tone Present Indicator with attenuation.
+Expected Status register contents: %02xH actual: %02xH</div>
+</section>
+<section id="BM2221148"><a name="BM2221148"></a>
+<h2>2221148</h2>
+<div class="sym">ERROR: EM_DIAG_EX_RF_MOD_UNBLANK</div>
+<div class="txt">TPS EXCITER UNBLANK TEST - Failed to blank RF Modulator. Check Narrowband module, \ power supplies and connections.
+Expected Status register contents: %02xH actual: %02xH</div>
+</section>
+<section id="BM2221149"><a name="BM2221149"></a>
+<h2>2221149</h2>
+<div class="sym">ERROR: EM_DIAG_EX_SYNTH_LUT</div>
+<div class="txt">TPS EXCITER SYNTH (SYNTHESIZER) TEST Synthesizer Look-Up-Table Test failure
+exciter address: %08xH table entry position: %08xH
+expected output: %08xH actual output: %08xH</div>
+</section>
+<section id="BM2221150"><a name="BM2221150"></a>
+<h2>2221150</h2>
+<div class="sym">ERROR: EM_DIAG_EX_SYNTH_CANC</div>
+<div class="txt">TPS EXCITER SYNTH (SYNTHESIZER) TEST Synthesizer Cancellation test failure
+loop count: %08xH expected output: %08xH
+actual output: %08xH</div>
+</section>
+<section id="BM2221151"><a name="BM2221151"></a>
+<h2>2221151</h2>
+<div class="sym">ERROR: EM_DIAG_EX_SYNTH_PAT</div>
+<div class="txt">TPS EXCITER SYNTH (SYNTHESIZER) TEST Synthesizer Pattern Test Failure
+input pattern: %08xH expected output: %08xH
+actual output: %08xH</div>
+</section>
+<section id="BM2221152"><a name="BM2221152"></a>
+<h2>2221152</h2>
+<div class="sym">ERROR: EM_DIAG_EX_OUTPUT_RHO</div>
+<div class="txt">TPS EXCITER OUTPUT TEST FAILURE - Setting RHO to 60% of maximum does not turn off the TONE \ PRESENT indicator. Check Narrowband module and connections.
+Expected Status register contents: %02xH actual: %02xH</div>
+</section>
+<section id="BM2221153"><a name="BM2221153"></a>
+<h2>2221153</h2>
+<div class="sym">ERROR: EM_TX_SET_ASYNC</div>
+<div class="txt">TPS TRANSCEIVER DRIVERS - INTERNAL SOFTWARE ERROR - Attempt (by software) to enable SSP Asynchronous mode. This mode is no longer supported by hardware.</div>
+</section>
+<section id="BM2221154"><a name="BM2221154"></a>
+<h2>2221154</h2>
+<div class="sym">ERROR: EM_EX_SSP_DRIV</div>
+<div class="txt">TPS EXCITER DRIVERS - INTERNAL SOFTWARE ERROR - Attempt to call an exciter SSP function... SSP drive mode is no longer supported by hardware!</div>
+</section>
+<section id="BM2221155"><a name="BM2221155"></a>
+<h2>2221155</h2>
+<div class="sym">ERROR: EM_DIAG_TX_RF_SIGNAL</div>
+<div class="txt">TPS TRANSCEIVER DRIVERS - FAILED TO GENERATE RF SIGNAL - Signal strength at receiver A/D input (with exciter at \ full scale output) is below minimum. Check the RF loopback \ signal path.
+Receiver: %2d Minimum: %d Actual: %d</div>
+</section>
+<section id="BM2221156"><a name="BM2221156"></a>
+<h2>2221156</h2>
+<div class="sym">ERROR: EM_DIAG_EX_STAGE</div>
+<div class="txt">TPS EXCITER DIAGNOSTICS - CONFIGURATION FILE STAGING MESSAGE Cannot run diagnostics when hardware is emulated. Check the /w/config/tardis_stage file for exciter emulation status.</div>
+</section>
+<section id="BM2221157"><a name="BM2221157"></a>
+<h2>2221157</h2>
+<div class="sym">ERROR: EM_DRIV_RX_BASE</div>
+<div class="txt">TPS Receiver driver error message : an invalid receiver board has been \ selected or the selected board is not present or properly seated.
+board number: %d</div>
+</section>
+<section id="BM2221158"><a name="BM2221158"></a>
+<h2>2221158</h2>
+<div class="sym">ERROR: EM_DRIV_RX_LD_FIL</div>
+<div class="txt">TPS RECEIVER DRIVER - INTERNAL SOFTWARE ERROR Digital Signal Processor firmware loader error:
+Invalid processor specified to load code to.
+Receiver base address: %08xH</div>
+</section>
+<section id="BM2221159"><a name="BM2221159"></a>
+<h2>2221159</h2>
+<div class="sym">ERROR: EM_DRIV_RX_RF_SELECT</div>
+<div class="txt">TPS SOFTWARE ERROR - The TPS Receiver driver function rx_sel_coil was called with an invalid coil selection. Valid values are 0 (Test), 1 (Head), 2 (Aux), or 3 (Body). The calling software must be corrected.
+Rcvr bd number : %d
+Invalid coil value : %d</div>
+</section>
+<section id="BM2221160"><a name="BM2221160"></a>
+<h2>2221160</h2>
+<div class="sym">ERROR: EM_DRIV_RX_FILT_SELECT</div>
+<div class="txt">TPS RECEIVER DRIVER - INTERNAL SOFTWARE ERROR Invalid Filter or filter file selected.
+selected: %04d</div>
+</section>
+<section id="BM2221161"><a name="BM2221161"></a>
+<h2>2221161</h2>
+<div class="sym">ERROR: EM_DRIV_RX_BBL_SHIFT</div>
+<div class="txt">TPS RECEIVER DRIVER - INTERNAL SOFTWARE ERROR Invalid Barrel Shift specified.
+board number: %d desired shift: %d</div>
+</section>
+<section id="BM2221162"><a name="BM2221162"></a>
+<h2>2221162</h2>
+<div class="sym">ERROR: EM_DRIV_RX_RF_COMMAND</div>
+<div class="txt">TPS RECEIVER DRIVER - INTERNAL SOFTWARE ERROR Invalid gain value specified.
+board number: %d gain selected: %d</div>
+</section>
+<section id="BM2221163"><a name="BM2221163"></a>
+<h2>2221163</h2>
+<div class="sym">ERROR: EM_DRIV_RX_TRISTATE</div>
+<div class="txt">TPS RECEIVER DRIVER - FILTER TRISTATE ACKNOWLEDGE ERROR Digital Signal Processors failed to acknowledge \ tristate enable/release command.
+board number: %d filter status register: %02xH</div>
+</section>
+<section id="BM2221164"><a name="BM2221164"></a>
+<h2>2221164</h2>
+<div class="sym">ERROR: EM_DIAG_XDBUS_TEST</div>
+<div class="txt">TPS RECEIVER XD BUS TEST FAILURE Value in TPS Memory does not match expected. Hardware used: I &amp; Q processors to XD Bus to DAB to VSB to Memory.
+TPS memory addr: %08xH
+Expected: %08xH DAB status: %08xH
+Actual: %08xH Receiver Status: %02xH</div>
+</section>
+<section id="BM2221165"><a name="BM2221165"></a>
+<h2>2221165</h2>
+<div class="sym">ERROR: EM_DIAG_XDBUS_STAT</div>
+<div class="txt">TPS RECEIVER XD BUS TEST FAILURE Data Acquisition Board status register indicates \ an error before (failed to clear) or during the XD bus data test.
+DAB status contents: %08xH Digital Filter Status contents: %02xH</div>
+</section>
+<section id="BM2221166"><a name="BM2221166"></a>
+<h2>2221166</h2>
+<div class="sym">ERROR: EM_DIAG_RX_STAGE</div>
+<div class="txt">TPS XCVR DIAGNOSTICS - CONFIGURATION FILE STAGING MESSAGE Cannot run Receiver diagnostics when hardware is emulated. Check the /w/config/tardis_stage file for receiver board status.</div>
+</section>
+<section id="BM2221167"><a name="BM2221167"></a>
+<h2>2221167</h2>
+<div class="sym">ERROR: EM_DIAG_RX_NO_BOARD</div>
+<div class="txt">TPS XCVR DIAGNOSTICS - CONFIGURATION FILE ERROR - Receiver Board(s) specified for test is (are) not present. board selected (4 = all boards): %03d command word: %08xH Check the /w/config/tardis_stage and /w/config/MRconfig.cfg files.</div>
+</section>
+<section id="BM2221168"><a name="BM2221168"></a>
+<h2>2221168</h2>
+<div class="sym">ERROR: EM_DIAG_RX_REG</div>
+<div class="txt">TPS RECEIVER REGISTER TEST FAILURE - Value read back from register does not match value written.
+Receiver board: %d register address: %08xH
+written: %02xH expected: %02xH actual: %02xH</div>
+</section>
+<section id="BM2221169"><a name="BM2221169"></a>
+<h2>2221169</h2>
+<div class="sym">ERROR: EM_DIAG_RX_LO_BIT</div>
+<div class="txt">TPS RECEIVER LO&#x27;S TEST FAILURE - Unable to properly set/clear Local Oscillator on receiver. NOTE: Check exciter and receiver narrowband modules and loopback \ circuitry. Run Exciter LO test.
+Receiver board: %03d expected status: %02xH actual: %02xH</div>
+</section>
+<section id="BM2221170"><a name="BM2221170"></a>
+<h2>2221170</h2>
+<div class="sym">ERROR: EM_DIAG_XDBUS_BAM_PAR</div>
+<div class="txt">TPS RECEIVER XD BUS TEST FAILURE - VSB parity error occurred during test. Hardware used: Receiver to XD bus to DAB to VSB Bus to Memory.
+Memory Board with problem: %d Parity Error Address: %08xH
+DAB status: %08xH Receiver status: %02xH</div>
+</section>
+<section id="BM2221171"><a name="BM2221171"></a>
+<h2>2221171</h2>
+<div class="sym">ERROR: EM_DIAG_RX_TRISTATE_TST</div>
+<div class="txt">TPS RECEIVER TRISTATE TEST FAILURE - access to processor RAM does not agree with processor status.
+board: %03d RAM address offset: %08xH
+value written: %08xH expected value:%08xH actual: %08xH</div>
+</section>
+<section id="BM2221172"><a name="BM2221172"></a>
+<h2>2221172</h2>
+<div class="sym">ERROR: EM_DIAG_RX_VME_RAM_PATTERN</div>
+<div class="txt">TPS RECEIVER RAM TEST FAILURE - VME to receiver processor RAM Pattern test failed to read back\ pattern written.
+board number: %d Failed Processor (Pre=1,I=2,Q=3): %d
+address: %08xH expected: %08xH actual: %08xH</div>
+</section>
+<section id="BM2221173"><a name="BM2221173"></a>
+<h2>2221173</h2>
+<div class="sym">ERROR: EM_DIAG_RX_VME_RAM_ADRS</div>
+<div class="txt">TPS RECEIVER RAM TEST FAILURE - VME to receiver processor RAM Address test failed to read back\ pattern written.
+board number: %d Failed Processor (Pre=1,I=2,Q=3): %d
+address: %08xH expected: %08xH actual: %08xH</div>
+</section>
+<section id="BM2221174"><a name="BM2221174"></a>
+<h2>2221174</h2>
+<div class="sym">ERROR: EM_DIAG_RX_ATOD_OVRRNG</div>
+<div class="txt">TPS RECEIVER A/D OVRG TEST FAILURE - Analog to Digital converter overrange flag failure
+board number: %d status register address: %08xH
+value expected: %02xH actual value read: %02xH</div>
+</section>
+<section id="BM2221175"><a name="BM2221175"></a>
+<h2>2221175</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DAB_OVERRUN</div>
+<div class="txt">TPS RECEIVER XD OVRUN TEST FAILURE - XD Bus Overrun flag did not get set upon forced overrun. NOTE: requires DAB polling of receivers to work.
+board number: %d status register address: %08xH
+expected: %02xH actual value read: %02xH</div>
+</section>
+<section id="BM2221176"><a name="BM2221176"></a>
+<h2>2221176</h2>
+<div class="sym">ERROR: EM_RX_XD_START</div>
+<div class="txt">TPS RECEIVER XD BUS TEST - INTERNAL SOFTWARE ERROR - Selected %d boards to run in board level tests (only allow one).</div>
+</section>
+<section id="BM2221177"><a name="BM2221177"></a>
+<h2>2221177</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED43</div>
+<div class="txt">Transceiver Diagnostics - Internal Software Error This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221178"><a name="BM2221178"></a>
+<h2>2221178</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED44</div>
+<div class="txt">Transceiver Diagnostics - Internal Software Error This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221179"><a name="BM2221179"></a>
+<h2>2221179</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED45</div>
+<div class="txt">Transceiver Diagnostics - Internal Software Error This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221180"><a name="BM2221180"></a>
+<h2>2221180</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED46</div>
+<div class="txt">Transceiver Diagnostics - Internal Software Error This errmes number is no longer defined .</div>
+</section>
+<section id="BM2221181"><a name="BM2221181"></a>
+<h2>2221181</h2>
+<div class="sym">ERROR: EM_DRIV_EX_JUMPER</div>
+<div class="txt">TRANSCEIVER DRIVERS - EXCITER JUMPER ERROR Exciter Status register indicates that the board is jumpered in a 4.x \ configuration. Jumper JP12 should be in position A.
+Status contents: %x Value of bit which should be set: %x</div>
+</section>
+<section id="BM2221182"><a name="BM2221182"></a>
+<h2>2221182</h2>
+<div class="sym">ERROR: EM_DRIV_RX_CALIBRATION</div>
+<div class="txt">TPS RECEIVER CALIBRATION FAILED - Gain values measured are not within specs.
+Gain setting (dB): %d Note: measured values given are in 1/100th dB.
+Tolerance:%08d actual:%08d
+receiver number:%2d</div>
+</section>
+<section id="BM2221183"><a name="BM2221183"></a>
+<h2>2221183</h2>
+<div class="sym">ERROR: EM_DRIV_EX_CALIBRATION</div>
+<div class="txt">TPS EXCITER CALIBRATION FAILED - Error in the coarse attenuation setting of: %d dB cannot \ be compensated for by the fine attenuator (using default \ compensation values)...image quality may be affected. Check the coarse attenuators.</div>
+</section>
+<section id="BM2221184"><a name="BM2221184"></a>
+<h2>2221184</h2>
+<div class="sym">ERROR: EM_DIAG_RX_UNBLANK</div>
+<div class="txt">TPS RECEIVER UNBLANK TEST FAILURE - Gain with unblank disabled (input blanked) exceeds specifications. Check \ narrowband module, power supplies and connections. Receiver Board %d Note: values are in 1/100th dB.
+maximum gain:%08d actual gain:%08d</div>
+</section>
+<section id="BM2221185"><a name="BM2221185"></a>
+<h2>2221185</h2>
+<div class="sym">ERROR: EM_DRIV_RX_CAL0</div>
+<div class="txt">TPS RECEIVER CALIBRATION ERROR - Measured gain at %2d dB relative to receiver 0 is not within \ specification of %2d dB.
+Actual value (in 1/100th dB units): %d
+receiver number: %d Total number of calibration failures: %2d</div>
+</section>
+<section id="BM2221186"><a name="BM2221186"></a>
+<h2>2221186</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED2</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221187"><a name="BM2221187"></a>
+<h2>2221187</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED3</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221188"><a name="BM2221188"></a>
+<h2>2221188</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED4</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221189"><a name="BM2221189"></a>
+<h2>2221189</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED5</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221190"><a name="BM2221190"></a>
+<h2>2221190</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED6</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221191"><a name="BM2221191"></a>
+<h2>2221191</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED7</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221192"><a name="BM2221192"></a>
+<h2>2221192</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED8</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221193"><a name="BM2221193"></a>
+<h2>2221193</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED9</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221194"><a name="BM2221194"></a>
+<h2>2221194</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED10</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221195"><a name="BM2221195"></a>
+<h2>2221195</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED11</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221196"><a name="BM2221196"></a>
+<h2>2221196</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED12</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221197"><a name="BM2221197"></a>
+<h2>2221197</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED13</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221198"><a name="BM2221198"></a>
+<h2>2221198</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED14</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221199"><a name="BM2221199"></a>
+<h2>2221199</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED15</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221200"><a name="BM2221200"></a>
+<h2>2221200</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED16</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221201"><a name="BM2221201"></a>
+<h2>2221201</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED17</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221202"><a name="BM2221202"></a>
+<h2>2221202</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED18</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221203"><a name="BM2221203"></a>
+<h2>2221203</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED19</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221204"><a name="BM2221204"></a>
+<h2>2221204</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED20</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221205"><a name="BM2221205"></a>
+<h2>2221205</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED21</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221206"><a name="BM2221206"></a>
+<h2>2221206</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED22</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221207"><a name="BM2221207"></a>
+<h2>2221207</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED23</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221208"><a name="BM2221208"></a>
+<h2>2221208</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED24</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221209"><a name="BM2221209"></a>
+<h2>2221209</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED25</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221210"><a name="BM2221210"></a>
+<h2>2221210</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED26</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221211"><a name="BM2221211"></a>
+<h2>2221211</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED27</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221212"><a name="BM2221212"></a>
+<h2>2221212</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED28</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221213"><a name="BM2221213"></a>
+<h2>2221213</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED29</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221214"><a name="BM2221214"></a>
+<h2>2221214</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED30</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221215"><a name="BM2221215"></a>
+<h2>2221215</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED31</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221216"><a name="BM2221216"></a>
+<h2>2221216</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED32</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221217"><a name="BM2221217"></a>
+<h2>2221217</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED33</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221218"><a name="BM2221218"></a>
+<h2>2221218</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED34</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221219"><a name="BM2221219"></a>
+<h2>2221219</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED35</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221220"><a name="BM2221220"></a>
+<h2>2221220</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED36</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221221"><a name="BM2221221"></a>
+<h2>2221221</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED37</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221222"><a name="BM2221222"></a>
+<h2>2221222</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED38</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221223"><a name="BM2221223"></a>
+<h2>2221223</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED39</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221224"><a name="BM2221224"></a>
+<h2>2221224</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED40</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221225"><a name="BM2221225"></a>
+<h2>2221225</h2>
+<div class="sym">ERROR: EM_RX_NO_LONGER_USED41</div>
+<div class="txt">TPS TRANSCEIVER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221226"><a name="BM2221226"></a>
+<h2>2221226</h2>
+<div class="sym">ERROR: EM_DRIV_CAL_LO</div>
+<div class="txt">TPS TRANSCEIVER DRIVER - CALIBRATION FAILURE - Unable to detect Local Oscillators on Receiver. Check exciter and \ receiver narrowband modules and loopback circuitry (splitter).
+Receiver board: %d expected status: %02xH actual status: %02xH</div>
+</section>
+<section id="BM2221227"><a name="BM2221227"></a>
+<h2>2221227</h2>
+<div class="sym">ERROR: EM_DIAG_NO_LONGER_USED1</div>
+<div class="txt">TPS EXCITER DIAGNOSTICS - INTERNAL SOFTWARE ERROR - This errmes number is no longer defined.</div>
+</section>
+<section id="BM2221228"><a name="BM2221228"></a>
+<h2>2221228</h2>
+<div class="sym">ERROR: EM_DIAG_EX_OUTPUT_LPBAK</div>
+<div class="txt">TPS EXCITER OUTPUT TEST FAILURE Disabling Exciter Loopback does not turn off TONE PRESENT. Check exciter narrowband module and connections.
+Expected Status register contents: %02xH actual: %02xH</div>
+</section>
+<section id="BM2221229"><a name="BM2221229"></a>
+<h2>2221229</h2>
+<div class="sym">ERROR: EM_DRIV_RX_CALNOSIG</div>
+<div class="txt">TPS RECEIVER CALIBRATION FAILED A receiver gain value of zero was measured during calibration. \ Check fuse F3 in the 18V power supply in the TPS chassis. If the fuse \ is OK, check the attachment of the power supply line to the backplane.</div>
+</section>
+<section id="BM2221230"><a name="BM2221230"></a>
+<h2>2221230</h2>
+<div class="sym">ERROR: EM_DIAG_XDBUS_DAB_NOSTART</div>
+<div class="txt">TPS RECEIVER XD BUS TEST FAILURE The Data Acquisition Board status register indicates the XD bus data transfer did NOT start.
+DAB status: %08xH
+Receiver status: %02xH</div>
+</section>
+<section id="BM2221231"><a name="BM2221231"></a>
+<h2>2221231</h2>
+<div class="sym">ERROR: EM_DIAG_XDBUS_DAB_NOEND</div>
+<div class="txt">TPS RECEIVER XD BUS TEST FAILURE The Data Acquisition Board status register indicates the XD bus data transfer started but did NOT finish.
+DAB status: %08xH
+Receiver status: %02xH</div>
+</section>
+<section id="BM2221232"><a name="BM2221232"></a>
+<h2>2221232</h2>
+<div class="sym">ERROR: EM_RX_WLK1_ERROR</div>
+<div class="txt">TPS RECEIVER RAM TEST FAILURE - Failed while running walking ones test on VME address space
+of Receiver. First Failed Memory Address: %08xH
+Receiver board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Pattern Expected: %04xH Pattern Received: %04xH</div>
+</section>
+<section id="BM2221233"><a name="BM2221233"></a>
+<h2>2221233</h2>
+<div class="sym">ERROR: EM_RX_WLK0_ERROR</div>
+<div class="txt">TPS RECEIVER RAM TEST FAILURE - Failed while running walking zeros test on VME address space
+of Receiver. First Failed Memory Address: %08xH
+Receiver board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Pattern Expected: %04xH Pattern Received: %04xH</div>
+</section>
+<section id="BM2221234"><a name="BM2221234"></a>
+<h2>2221234</h2>
+<div class="sym">ERROR: EM_RX_EX_CALIBRATION</div>
+<div class="txt">TPS TRANSCEIVER CALIBRATION FAILURE Unable to detect Local Oscillators on Exciter and Receiver %b Make sure that splitter box between receiver and exciter is properly mounted.</div>
+</section>
+<section id="BM2221235"><a name="BM2221235"></a>
+<h2>2221235</h2>
+<div class="sym">ERROR: EM_RX_EX_CALIBRATION_EXT</div>
+<div class="txt">Check for possible mismatch between the actual field strengths of transceiver (exciter and receiver) and fieldStrength entry in MRconfig.cfg file.</div>
+</section>
+<section id="BM2221236"><a name="BM2221236"></a>
+<h2>2221236</h2>
+<div class="sym">ERROR: EM_RX_CALIBRATION</div>
+<div class="txt">TPS TRANSCEIVER CALIBRATION FAILURE Unable to detect Local Oscillator on Receiver. Check exciter and receiver narrowband modules and loopback circuitry (splitter).
+Receiver board: %d Expected status: %02xH Actual status: %02xH</div>
+</section>
+<section id="BM2221237"><a name="BM2221237"></a>
+<h2>2221237</h2>
+<div class="sym">ERROR: EM_EX_CALIBRATION</div>
+<div class="txt">TPS TRANSCEIVER CALIBRATION FAILURE Unable to detect Local Oscillator on Exciter. Check Narrowband module, power supply and fuses. %b \ Expected status: %02xH Actual status: %02xH</div>
+</section>
+<section id="BM2221238"><a name="BM2221238"></a>
+<h2>2221238</h2>
+<div class="sym">ERROR: EM_EX_CALIBRATION_EXT</div>
+<div class="txt">NOTE: RF connection to receiver could cause problem, run test with the loopback circuitry (splitter) unplugged.</div>
+</section>
+<section id="BM2221239"><a name="BM2221239"></a>
+<h2>2221239</h2>
+<div class="sym">ERROR: EM_DIAG_XDBUS_BAMNOISE</div>
+<div class="txt">TPS Datapath XD Bus Test Message : TPS BAM Crosstalk Anomaly Detected. This message is logged for internal troubleshooting purposes only. This anomaly does NOT affect image quality and does NOT call for any \ board replacement. BAM address %08xH</div>
+</section>
+<section id="BM2221240"><a name="BM2221240"></a>
+<h2>2221240</h2>
+<div class="sym">ERROR: EM_DRIV_RX_NO_BROADBAND</div>
+<div class="txt">TPS TX DRIVERS - CONFIGURATION ERROR No broadband module detected in receiver 0. Please check receiver 0, \ /w/config/MRconfig.cfg file, or splitter box and make the corrective action.</div>
+</section>
+<section id="BM2221241"><a name="BM2221241"></a>
+<h2>2221241</h2>
+<div class="sym">ERROR: EM_DRIV_RX_INVALID_BIAS</div>
+<div class="txt">TPS SOFTWARE ERROR - The TPS Receiver driver function rx_sel_bias was called with an invalid bias selection. The calling software must be corrected.
+Rcvr bd number : %d
+Invalid bias selected : %d</div>
+</section>
+<section id="BM2221242"><a name="BM2221242"></a>
+<h2>2221242</h2>
+<div class="sym">ERROR: EM_DIAG_EX_OUTPUT_FREQ</div>
+<div class="txt">TPS EXCITER OUTPUT TEST FAILURE Setting Invalid Center Frequency does not turn off TONE PRESENT. Check exciter narrowband module.
+Center Frequency: %d
+Expected Status register contents: %02xH actual: %02xH</div>
+</section>
+<section id="BM2221243"><a name="BM2221243"></a>
+<h2>2221243</h2>
+<div class="sym">ERROR: EM_DIAG_EX_OLD_EXCITER</div>
+<div class="txt">TPS EXCITER SYNTHESIZER TEST FAILURE The synthesizer look-up table test failed. The data received indicates that the exciter may be an older (5.4) model, or else is jumpered in the 5.4 position.</div>
+</section>
+<section id="BM2221806"><a name="BM2221806"></a>
+<h2>2221806</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_NOT_USED1</div>
+<div class="txt">TPS RECEIVER FILTERS - INTERNAL SOFTWARE ERROR - This error message no longer in use! Please inform Diagnostics Team of the problem.</div>
+</section>
+<section id="BM2221807"><a name="BM2221807"></a>
+<h2>2221807</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_RAM</div>
+<div class="txt">TPS RECEIVER FILTERS - RAM TEST FAILURE - Value written by processor to RAM did not match pattern read back.
+Receiver board: %d Failed Processor (Pre=1,I=2,Q=3): %d Failed Memory (Program=1,Data=2): %d Address: %08xH
+Pattern Expected: %08xH</div>
+</section>
+<section id="BM2221808"><a name="BM2221808"></a>
+<h2>2221808</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_BIO</div>
+<div class="txt">TPS RECEIVER FILTERS - BIO TEST FAILURE - One of input signals to BIO not functioning correctly.\ Probable cause - BIO Select PAL or FIFO
+Receiver board: %d Failed Processor (Pre=1,I=2,Q=3): %d</div>
+</section>
+<section id="BM2221809"><a name="BM2221809"></a>
+<h2>2221809</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_FSR</div>
+<div class="txt">TPS RECEIVER FILTERS - FILTER SELECT REGISTER TEST FAILURE - Pattern read by processor from filter select register does not match \ expected value.
+Receiver board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Pattern Received: %08xH Pattern Expected:%08xH</div>
+</section>
+<section id="BM2221810"><a name="BM2221810"></a>
+<h2>2221810</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_TIM</div>
+<div class="txt">TPS RECEIVER FILTERS - PROCESSOR TIMING TEST FAILURE - Comparison between A/D Interrupt clock and preprocessor clock is \ out of specifications.
+Receiver Board: %d Count Received: %d Expected: (%d or %d)</div>
+</section>
+<section id="BM2221811"><a name="BM2221811"></a>
+<h2>2221811</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_AD</div>
+<div class="txt">TPS RECEIVER FILTERS - A/D TIMING TEST - Time between A/D interrupts is out of specifications.
+Receiver Board: %d Failed Processor (Pre=1): %d Expected Count Range: 78-82
+Count 1 Received: %d Count 2 Received: %d</div>
+</section>
+<section id="BM2221812"><a name="BM2221812"></a>
+<h2>2221812</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_TAG</div>
+<div class="txt">TPS RECEIVER FILTERS - TAGBIT TEST FAILURE - Processor failed to detect tagbit.
+Receiver Board: %d Failed Processor (I=2,Q=3): %d Failed Tagbit Interrupt (INT0=1,INT1=2): %d</div>
+</section>
+<section id="BM2221813"><a name="BM2221813"></a>
+<h2>2221813</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_FIFO</div>
+<div class="txt">TPS RECEIVER FILTERS - FIFO TEST FAILURE - Pattern read by processor does not match expected.
+Receiver: %d Proc. (Pre=1,I=2,Q=3): %d Failure Type: %d NOTE: if Proc is Pre, type 1 = I, 2 = Q, 3 = both otherwise: 1 = missing data, 2 = bad pattern.</div>
+</section>
+<section id="BM2221814"><a name="BM2221814"></a>
+<h2>2221814</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_TSTIN</div>
+<div class="txt">TPS RECEIVER FILTERS - TEST INPUT TEST FAILURE - Pattern read by processor from test input does not match pattern written.
+Receiver board: %d Processor (Pre=1,I=2,Q=3): %d Input (I=1, Q=2, Both=3): %d Pattern Received: %08xH Expected: %08xH</div>
+</section>
+<section id="BM2221815"><a name="BM2221815"></a>
+<h2>2221815</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_OVR</div>
+<div class="txt">TPS RECEIVER XD OVRUN - PROCESSOR DID NOT SET EXTERNAL FLAG One of the processors did not set its external flag acknowledging completion\ of the test. XD overrun may have not been forced.
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d</div>
+</section>
+<section id="BM2221816"><a name="BM2221816"></a>
+<h2>2221816</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_NOMATCH</div>
+<div class="txt">TPS RECEIVER FILTERS - INTERNAL SOFTWARE ERROR Test number in error report does not correspond to known tests.
+Rcvr Bd: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Test num: %d</div>
+</section>
+<section id="BM2221817"><a name="BM2221817"></a>
+<h2>2221817</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_XF_INT</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - PROCESSOR DID NOT SET EXTERNAL FLAG Processor flag failed to set external flag as expected.
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Flag value expected: %08xH Flag value received: %08xH</div>
+</section>
+<section id="BM2221818"><a name="BM2221818"></a>
+<h2>2221818</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_XF_RAM</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - PROCESSOR DID NOT SET EXTERNAL FLAG Processor flag failed to respond properly during RAM test.
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Flag value expected: %08xH Flag value received: %08xH</div>
+</section>
+<section id="BM2221819"><a name="BM2221819"></a>
+<h2>2221819</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_XF_BIO</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - PROCESSOR DID NOT SET EXTERNAL FLAG Processor failed to respond properly during BIO Test
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Flag value expected: %08xH Flag value received: %08xH</div>
+</section>
+<section id="BM2221820"><a name="BM2221820"></a>
+<h2>2221820</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_XF_FSR</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - PROCESSOR DID NOT SET EXTERNAL FLAG Processor failed to respond properly during Filter Select Register Test
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Flag value expected: %08xH Flag value received: %08xH</div>
+</section>
+<section id="BM2221821"><a name="BM2221821"></a>
+<h2>2221821</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_XF_TIM</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - PROCESSOR DID NOT SET EXTERNAL FLAG Processor failed to respond properly during processor timing test
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Flag value expected: %08xH Flag value received: %08xH</div>
+</section>
+<section id="BM2221822"><a name="BM2221822"></a>
+<h2>2221822</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_XF_AD</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - PROCESSOR DID NOT SET EXTERNAL FLAG Processor failed to respond properly during A/D timing test
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Flag value expected: %08xH Flag value received: %08xH</div>
+</section>
+<section id="BM2221823"><a name="BM2221823"></a>
+<h2>2221823</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_XF_TAG</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - PROCESSOR DID NOT SET EXTERNAL FLAG Processor failed to respond properly during tagbit test
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Flag value expected: %08xH Flag value received: %08xH</div>
+</section>
+<section id="BM2221824"><a name="BM2221824"></a>
+<h2>2221824</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_XF_FIFO</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - PROCESSOR DID NOT SET EXTERNAL FLAG Processor failed to respond properly during FIFO test
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Flag value expected: %08xH Flag value received: %08xH</div>
+</section>
+<section id="BM2221825"><a name="BM2221825"></a>
+<h2>2221825</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_XF_TSTIN</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - PROCESSOR DID NOT SET EXTERNAL FLAG Processor failed to respond properly during Test Input test
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Flag value expected: %08xH Flag value received: %08xH</div>
+</section>
+<section id="BM2221826"><a name="BM2221826"></a>
+<h2>2221826</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_XF_OVR</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - PROCESSOR DID NOT SET EXTERNAL FLAG Processor failed to respond properly during XD bus overrun test
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Flag value expected: %08xH Flag value received: %08xH</div>
+</section>
+<section id="BM2221827"><a name="BM2221827"></a>
+<h2>2221827</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_NOT_USED2</div>
+<div class="txt">TPS RECEIVER FILTERS - INTERNAL SOFTWARE ERROR - This error message no longer in use! Please inform Diagnostics Team of the problem.</div>
+</section>
+<section id="BM2221828"><a name="BM2221828"></a>
+<h2>2221828</h2>
+<div class="sym">ERROR: EM_RX_DF_IQ_PREPROC</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - Preprocessor forced I/Q processor into error state.
+Receiver Board: %d Failed Processor (I=2,Q=3): %d</div>
+</section>
+<section id="BM2221829"><a name="BM2221829"></a>
+<h2>2221829</h2>
+<div class="sym">ERROR: EM_RX_DF_IQ_MULTINITA</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - Unexpected initialization command from Preprocessor.
+Receiver Board: %d Failed Processor (I=2,Q=3): %d</div>
+</section>
+<section id="BM2221830"><a name="BM2221830"></a>
+<h2>2221830</h2>
+<div class="sym">ERROR: EM_RX_DF_IQ_MULTINITB</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - Unexpected initialization command from Preprocessor.
+Receiver Board: %d Failed Processor (I=2,Q=3): %d</div>
+</section>
+<section id="BM2221831"><a name="BM2221831"></a>
+<h2>2221831</h2>
+<div class="sym">ERROR: EM_RX_DF_IQ_MULTINITC</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - Unexpected initialization command from Preprocessor.
+Receiver Board: %d Failed Processor (I=2,Q=3): %d</div>
+</section>
+<section id="BM2221832"><a name="BM2221832"></a>
+<h2>2221832</h2>
+<div class="sym">ERROR: EM_RX_DF_IQ_SYNC1</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - I/Q processor out of sync - INT1 received, INT0 expected.
+Receiver Board: %d Failed Processor (I=2,Q=3): %d</div>
+</section>
+<section id="BM2221833"><a name="BM2221833"></a>
+<h2>2221833</h2>
+<div class="sym">ERROR: EM_RX_DF_IQ_SYNC0A</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - I/Q processor out of sync - INT0 received, INT1 expected.
+Receiver Board: %d Failed Processor (I=2,Q=3): %d</div>
+</section>
+<section id="BM2221834"><a name="BM2221834"></a>
+<h2>2221834</h2>
+<div class="sym">ERROR: EM_RX_DF_IQ_SYNC0B</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - I/Q processor out of sync - INT0 received, INT1 expected.
+Receiver Board: %d Failed Processor (I=2,Q=3): %d</div>
+</section>
+<section id="BM2221835"><a name="BM2221835"></a>
+<h2>2221835</h2>
+<div class="sym">ERROR: EM_RX_DF_IQ_NOINIT</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - No initialization word received after reset.
+Receiver Board: %d Failed Processor (I=2,Q=3): %d</div>
+</section>
+<section id="BM2221836"><a name="BM2221836"></a>
+<h2>2221836</h2>
+<div class="sym">ERROR: EM_RX_DF_IQ_NOINTR1</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - No interrupt (INT1) has accompanied initialization word.
+Receiver Board: %d Failed Processor (I=2,Q=3): %d</div>
+</section>
+<section id="BM2221837"><a name="BM2221837"></a>
+<h2>2221837</h2>
+<div class="sym">ERROR: EM_RX_DF_IQ_NOINTR2</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - No interrupt (INT1) has accompanied Filter Select word.
+Receiver Board: %d Failed Processor (I=2,Q=3): %d</div>
+</section>
+<section id="BM2221838"><a name="BM2221838"></a>
+<h2>2221838</h2>
+<div class="sym">ERROR: EM_RX_DF_IQ_EXTRAINIT</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - Unexpected interrupt has accompanied Barrel Shift.
+Receiver Board: %d Failed Processor (I=2,Q=3): %d</div>
+</section>
+<section id="BM2221839"><a name="BM2221839"></a>
+<h2>2221839</h2>
+<div class="sym">ERROR: EM_RX_DF_IQ_NOMATCH</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - INTERNAL SOFTWARE ERROR - Error number in report does not match known errors.
+Receiver Board: %d Failed Processor (I=2,Q=3): %d</div>
+</section>
+<section id="BM2221840"><a name="BM2221840"></a>
+<h2>2221840</h2>
+<div class="sym">ERROR: EM_RX_DF_PRE_Q_OVRFLW</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - Preprocessor Internal queue overflow.
+Receiver Board: %d Preprocessor failure</div>
+</section>
+<section id="BM2221841"><a name="BM2221841"></a>
+<h2>2221841</h2>
+<div class="sym">ERROR: EM_RX_DF_PRE_DATA_ACQ_INT</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - Data Acquisition Interrupted before completion.
+Receiver Board: %d Preprocessor failure</div>
+</section>
+<section id="BM2221842"><a name="BM2221842"></a>
+<h2>2221842</h2>
+<div class="sym">ERROR: EM_RX_DF_PRE_NO_FS</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - No Filter Selected before first frame.
+Receiver Board: %d Preprocessor failure</div>
+</section>
+<section id="BM2221843"><a name="BM2221843"></a>
+<h2>2221843</h2>
+<div class="sym">ERROR: EM_RX_DF_CAL_MISMATCH</div>
+<div class="txt">TPS TRANSCEIVER CALIBRATION - INTERNAL SOFTWARE ERROR - Test number mismatch, Calibration Test was not run on the receiver.
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Expected: %d Actual: %d</div>
+</section>
+<section id="BM2221844"><a name="BM2221844"></a>
+<h2>2221844</h2>
+<div class="sym">ERROR: EM_RX_DF_PRE_FRAME_BOUNDARY</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - Frame Boundary not found.
+Receiver Board: %d Preprocessor failure</div>
+</section>
+<section id="BM2221845"><a name="BM2221845"></a>
+<h2>2221845</h2>
+<div class="sym">ERROR: EM_RX_DF_PRE_ILLEGAL_OVERLAP</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - Preprocessor Queue Not Empty when non-queued acquisition initiated.
+Receiver Board: %d Preprocessor failure</div>
+</section>
+<section id="BM2221846"><a name="BM2221846"></a>
+<h2>2221846</h2>
+<div class="sym">ERROR: EM_RX_DF_PRE_I_FIFO_OVRRUN</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - I FIFO Data Overrun.
+Receiver Board: %d Preprocessor failure</div>
+</section>
+<section id="BM2221847"><a name="BM2221847"></a>
+<h2>2221847</h2>
+<div class="sym">ERROR: EM_RX_DF_PRE_Q_FIFO_OVRRUN</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - Q FIFO Data Overrun.
+Receiver Board: %d Preprocessor failure</div>
+</section>
+<section id="BM2221848"><a name="BM2221848"></a>
+<h2>2221848</h2>
+<div class="sym">ERROR: EM_RX_DF_PRE_NOMATCH</div>
+<div class="txt">TPS RECEIVER FILTER RUN TIME ERROR - INTERNAL SOFTWARE ERROR - Error number in report does not match known errors.
+Receiver Board: %d Preprocessor failure</div>
+</section>
+<section id="BM2221849"><a name="BM2221849"></a>
+<h2>2221849</h2>
+<div class="sym">ERROR: EM_RX_DF_INT_MISMATCH</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - INTERNAL SOFTWARE ERROR - Test number mismatch, Interrupt Test was not run on the receiver.
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Expected: %d Actual: %d</div>
+</section>
+<section id="BM2221850"><a name="BM2221850"></a>
+<h2>2221850</h2>
+<div class="sym">ERROR: EM_RX_DF_RAM_MISMATCH</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - INTERNAL SOFTWARE ERROR - Test number mismatch, RAM Test was not run on the receiver.
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Expected: %d Actual: %d</div>
+</section>
+<section id="BM2221851"><a name="BM2221851"></a>
+<h2>2221851</h2>
+<div class="sym">ERROR: EM_RX_DF_BIO_MISMATCH</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - INTERNAL SOFTWARE ERROR - Test number mismatch, BIO Test was not run on the receiver.
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Expected: %d Actual: %d</div>
+</section>
+<section id="BM2221852"><a name="BM2221852"></a>
+<h2>2221852</h2>
+<div class="sym">ERROR: EM_RX_DF_FSR_MISMATCH</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - INTERNAL SOFTWARE ERROR - Test number mismatch, FSR Test was not run on the receiver.
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Expected: %d Actual: %d</div>
+</section>
+<section id="BM2221853"><a name="BM2221853"></a>
+<h2>2221853</h2>
+<div class="sym">ERROR: EM_RX_DF_TIM_MISMATCH</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - INTERNAL SOFTWARE ERROR - Test number mismatch, TIM Test was not run on the receiver.
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Expected: %d Actual: %d</div>
+</section>
+<section id="BM2221854"><a name="BM2221854"></a>
+<h2>2221854</h2>
+<div class="sym">ERROR: EM_RX_DF_AD_MISMATCH</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - INTERNAL SOFTWARE ERROR - Test number mismatch, A/D Timing Test was not run on the receiver.
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Expected: %d Actual: %d</div>
+</section>
+<section id="BM2221855"><a name="BM2221855"></a>
+<h2>2221855</h2>
+<div class="sym">ERROR: EM_RX_DF_TAG_MISMATCH</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - INTERNAL SOFTWARE ERROR - Test number mismatch, Tagbit Test was not run on the receiver.
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Expected: %d Actual: %d</div>
+</section>
+<section id="BM2221856"><a name="BM2221856"></a>
+<h2>2221856</h2>
+<div class="sym">ERROR: EM_RX_DF_FIFO_MISMATCH</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - INTERNAL SOFTWARE ERROR - Test number mismatch, FIFO Test was not run on the receiver.
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Expected: %d Actual: %d</div>
+</section>
+<section id="BM2221857"><a name="BM2221857"></a>
+<h2>2221857</h2>
+<div class="sym">ERROR: EM_RX_DF_TESTIN_MISMATCH</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - INTERNAL SOFTWARE ERROR - Test number mismatch, Test Input Test was not run on the receiver.
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Expected: %d Actual: %d</div>
+</section>
+<section id="BM2221858"><a name="BM2221858"></a>
+<h2>2221858</h2>
+<div class="sym">ERROR: EM_RX_DF_OVR_MISMATCH</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - INTERNAL SOFTWARE ERROR - Test number mismatch, XD Overrun Test was not run on the receiver.
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Expected: %d Actual: %d</div>
+</section>
+<section id="BM2221859"><a name="BM2221859"></a>
+<h2>2221859</h2>
+<div class="sym">ERROR: EM_RX_DF_BAD_TESTNUM</div>
+<div class="txt">TPS RECEIVER FILTERS - INTERNAL SOFTWARE ERROR - Test number in report does not match any expected values.
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Expected: %d Actual: %d</div>
+</section>
+<section id="BM2221860"><a name="BM2221860"></a>
+<h2>2221860</h2>
+<div class="sym">ERROR: EM_RX_DF_ADOVR_MISMATCH</div>
+<div class="txt">TPS RECEIVER FILTERS TEST - INTERNAL SOFTWARE ERROR - Test number mismatch, A/D overrange Test was not run on the receiver.
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Expected: %d Actual: %d</div>
+</section>
+<section id="BM2221861"><a name="BM2221861"></a>
+<h2>2221861</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_XF_ADOVR</div>
+<div class="txt">TPS RECEIVER A/D OVRG TEST - PROCESSOR DID NOT SET EXTERNAL FLAG Processor failed to respond properly during A/D Overrange test
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Flag value expected: %08xH Flag value received: %08xH</div>
+</section>
+<section id="BM2221862"><a name="BM2221862"></a>
+<h2>2221862</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_ADOVR</div>
+<div class="txt">TPS RECEIVER A/D OVRG TEST FAILURE - Filter Diagnostics - A/D Overrange Detection Logic Test
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d</div>
+</section>
+<section id="BM2221863"><a name="BM2221863"></a>
+<h2>2221863</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_APP_FILT_NUM</div>
+<div class="txt">TPS RECEIVER FIRMWARE TEST - INTERNAL SOFTWARE ERROR -
+Illegal filter number selected: %d</div>
+</section>
+<section id="BM2221864"><a name="BM2221864"></a>
+<h2>2221864</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_APP_MALLOC</div>
+<div class="txt">TPS RECEIVER FIRMWARE TEST - INTERNAL SOFTWARE ERROR - Attempt to allocate temporary CPU memory buffer failed.</div>
+</section>
+<section id="BM2221865"><a name="BM2221865"></a>
+<h2>2221865</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_APP_FAIL</div>
+<div class="txt">TPS RECEIVER FILTER TEST FAILURE - Filter output did not match expected value. NOTE: uses receiver, XD bus, DAB, VSB and TPS Memory.
+Board: %d Failed channel (I = 1, Q = 2): %d
+Coefficient index: %08xH expected: %08xH received: %08xH</div>
+</section>
+<section id="BM2221866"><a name="BM2221866"></a>
+<h2>2221866</h2>
+<div class="sym">ERROR: EM_DRIV_TX_DF_XF_TXCAL</div>
+<div class="txt">TPS TRANSCEIVER CALIBRATION - PROCESSOR DID NOT SET EXTERNAL FLAG Processor failed to respond properly during calibration.
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Flag value expected: %08xH Flag value received: %08xH</div>
+</section>
+<section id="BM2221867"><a name="BM2221867"></a>
+<h2>2221867</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_CALIB</div>
+<div class="txt">TPS RECEIVER FILTERS - INTERNAL SOFTWARE ERROR - Digital filter calibration test error. The input signal was \ higher than expected.
+Receiver Board: %d Failed Processor (Pre=1,I=2,Q=3): %d
+Test num: %d</div>
+</section>
+<section id="BM2221868"><a name="BM2221868"></a>
+<h2>2221868</h2>
+<div class="sym">ERROR: EM_DIAG_RX_DF_TIM_OUTRANGE</div>
+<div class="txt">TPS RECEIVER FILTERS - INTERNAL SOFTWARE ERROR - Error occurred while setting the auxiliary clock rate in vxworks call sysAuxClkRateSet, tick rate or timer not settable.</div>
+</section>
+<section id="BM2221966"><a name="BM2221966"></a>
+<h2>2221966</h2>
+<div class="sym">ERROR: EM_FRX_DRIV_INVALID_ANALOG_LPF</div>
+<div class="txt">FAST RECEIVER DRIVER ERROR Invalid Analog Lowpass filter %d specified. Please reset TPS!</div>
+</section>
+<section id="BM2221967"><a name="BM2221967"></a>
+<h2>2221967</h2>
+<div class="sym">ERROR: EM_FRX_DRIV_INVALID_MODE</div>
+<div class="txt">FAST RECEIVER DRIVER ERROR Invalid Fast Receiver Mode %d specified. Please reset TPS!</div>
+</section>
+<section id="BM2221968"><a name="BM2221968"></a>
+<h2>2221968</h2>
+<div class="sym">ERROR: EM_FRX_DRIV_INVALID_SAMPLE_PTS</div>
+<div class="txt">FAST RECEIVER DRIVER ERROR Invalid Number of Sample Points %d specified. Please reset TPS!</div>
+</section>
+<section id="BM2221969"><a name="BM2221969"></a>
+<h2>2221969</h2>
+<div class="sym">ERROR: EM_FRX_DRIV_INVALID_SAMPLE_PERIOD</div>
+<div class="txt">FAST RECEIVER DRIVER ERROR Invalid Sample Period %d specified. Please reset TPS!</div>
+</section>
+<section id="BM2221970"><a name="BM2221970"></a>
+<h2>2221970</h2>
+<div class="sym">ERROR: EM_FRX_DRIV_INVALID_PROG_DELAY</div>
+<div class="txt">FAST RECEIVER DRIVER ERROR Invalid Programmable Delay %d specified. Please reset TPS!</div>
+</section>
+<section id="BM2221971"><a name="BM2221971"></a>
+<h2>2221971</h2>
+<div class="sym">ERROR: EM_FRX_DIAG_ILLEGAL_DIAG_MODE</div>
+<div class="txt">FAST RECEIVER DIAGS ERROR - Illegal Diags Mode %d was selected. Internal software error.</div>
+</section>
+<section id="BM2221972"><a name="BM2221972"></a>
+<h2>2221972</h2>
+<div class="sym">ERROR: EM_FRX_DIAG_NO_SOA</div>
+<div class="txt">FAST RECEIVER DIAGS ERROR - No DAB Start of Acquisition interrupt was detected, acquisition timed out. DAB or Fast Receiver problem.</div>
+</section>
+<section id="BM2221973"><a name="BM2221973"></a>
+<h2>2221973</h2>
+<div class="sym">ERROR: EM_FRX_DIAG_NO_EOA</div>
+<div class="txt">FAST RECEIVER DIAGS ERROR - No DAB End of Acquisition interrupt was detected, acquisition timed out. DAB or Fast Receiver problem.</div>
+</section>
+<section id="BM2221974"><a name="BM2221974"></a>
+<h2>2221974</h2>
+<div class="sym">ERROR: EM_FRX_DIAG_ERROR_INT</div>
+<div class="txt">FAST RECEIVER DIAGS ERROR - The DAB ERROR interrupt occurred during Fast Receiver testing. Please execute DAB diagnostics.</div>
+</section>
+<section id="BM2221975"><a name="BM2221975"></a>
+<h2>2221975</h2>
+<div class="sym">ERROR: EM_FRX_DIAG_CHECKSUM_ERROR</div>
+<div class="txt">FAST RECEIVER DIAGS ERROR - Checksum calculation failed in loopback test. Expected data was 0x%x found was 0x%x.</div>
+</section>
+<section id="BM2221976"><a name="BM2221976"></a>
+<h2>2221976</h2>
+<div class="sym">ERROR: EM_FRX_DIAG_NO_FASTRCVR</div>
+<div class="txt">FAST RECEIVER DIAGS CONFIG ERROR Fast Receiver diags were selected but a Fast Receiver could not be detected in the system. Please check the Fast Receiver connections if it is installed.</div>
+</section>
+<section id="BM2221977"><a name="BM2221977"></a>
+<h2>2221977</h2>
+<div class="sym">ERROR: EM_FRX_DIAG_PWRSPLY_BAD</div>
+<div class="txt">FAST RECEIVER DIAGS ERROR - The Analog Power supply does not meet specification. Please check power supply voltage levels.</div>
+</section>
+</body></html>

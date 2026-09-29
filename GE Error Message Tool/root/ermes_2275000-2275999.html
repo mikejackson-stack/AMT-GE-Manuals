@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2275000-2275999 (115)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2275000-2275999 (115)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2274000-2274999.html">&larr; 2274000-2274999</a><a href="ermes_2276000-2276999.html">2276000-2276999 &rarr;</a></nav></header>
+<section id="BM2275200"><a name="BM2275200"></a>
+<h2>2275200</h2>
+<div class="sym">ERROR: EM_AGP_PSE_SYNC_FIFO_ERROR</div>
+<div class="txt">Sequencer error: %s output FIFO became empty.
+Output FIFO level is: %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE Sequencer output FIFO became empty while playing out a sequence. Possible cause is a PSD programming error. Replace PSE board if problem persists with other PSDs.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275201"><a name="BM2275201"></a>
+<h2>2275201</h2>
+<div class="sym">ERROR: EM_PSE_ISI_OVERRUN</div>
+<div class="txt">Sequencer error: ISI (intrasequence interrupt) overrun.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE signaled an ISI overrun. Possible cause is a PSD programming error. Replace PSE board if problem persists with other PSDs.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275202"><a name="BM2275202"></a>
+<h2>2275202</h2>
+<div class="sym">ERROR: EM_PSE_C2H_SEQ_FAILED_STARTUP</div>
+<div class="txt">Sequencer error: Sequencer %d did not start.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE Sequencer failed to start. Cycle power to CAM chassis. Perform TPS Reset. Replace PSE board if problem persists.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275203"><a name="BM2275203"></a>
+<h2>2275203</h2>
+<div class="sym">ERROR: EM_PSE_INVALID_IMM_UPDATE</div>
+<div class="txt">Sequencer driver received an invalid immediate update request.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Internal SW error. PSE sequencer driver received an invalid immediate update request from PSD. A research PSD may have a programming error.</div>
+</section>
+<section id="BM2275204"><a name="BM2275204"></a>
+<h2>2275204</h2>
+<div class="sym">ERROR: EM_PSE_SEQ_LOAD_HAMMER_TEST</div>
+<div class="txt">Sequencer error: Failed to load sequencer hammer test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE hammer test PSD file named /usr/g/bin/srfhammertest.o may be missing.</div>
+</section>
+<section id="BM2275205"><a name="BM2275205"></a>
+<h2>2275205</h2>
+<div class="sym">ERROR: EM_PSE_SEQ_START_HAMMER_TEST</div>
+<div class="txt">Sequencer error: Failed to start sequencer hammer test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE hammer test PSD failed to start.</div>
+</section>
+<section id="BM2275206"><a name="BM2275206"></a>
+<h2>2275206</h2>
+<div class="sym">ERROR: EM_PSE_SEQ_NO_BOARDS</div>
+<div class="txt">Sequencer error: No sequencer board is detected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that SRF/TRF or PSE board is in slot 10 of the CAM chassis. Cycle power to CAM chassis. Perform TPS Reset. Replace SRF/TRF or PSE board if problem persists.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>TRF Board</li><li>PSE Board</li></ol>
+</section>
+<section id="BM2275207"><a name="BM2275207"></a>
+<h2>2275207</h2>
+<div class="sym">ERROR: EM_PSE_60HZ_LINE_TRIGGER_MISSING</div>
+<div class="txt">Sequencer error: Missing line trigger.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that line trigger source cable is plugged into J7 of PSE board. Test for 6.3VAC RMS +/-10% on line trigger source cable. Replace PSE board if 6.3VAC present on line trigger source cable.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275208"><a name="BM2275208"></a>
+<h2>2275208</h2>
+<div class="sym">ERROR: EM_PSE_PSEIO_SEQ_BUS_CHECK_SUM_ERR</div>
+<div class="txt">Sequencer error: Sequence bus checksum error at PSEIO.
+Error counter is: %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSEIO board reported sequence bus checksum error. Verify that all CAM chassis boards are in correct slots and properly seated. Verify that CAM chassis backplane has no bent pins or physical damage. Cycle power to CAM chassis. Perform TPS Reset. Replace PSEIO board if problem persists.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE I/O Board</li></ol>
+</section>
+<section id="BM2275209"><a name="BM2275209"></a>
+<h2>2275209</h2>
+<div class="sym">ERROR: EM_PSE_IRF_SEQ_BUS_CHECK_SUM_ERR</div>
+<div class="txt">Sequencer error: Sequence bus checksum error.
+Error counter is: %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">IXG board reported sequence bus checksum error. Verify that all CAM chassis boards are in correct slots and properly seated. Verify that CAM chassis backplane has no bent pins or physical damage. Cycle power to CAM chassis. Perform TPS Reset. Replace PSE board if problem persists.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275210"><a name="BM2275210"></a>
+<h2>2275210</h2>
+<div class="sym">ERROR: EM_PSE_C2H_SEQ_STOPPED_ERR</div>
+<div class="txt">Sequencer error: Sequencer is not responding.
+Count is: %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE sequencer is not responding. Cycle power to CAM chassis. Perform TPS Reset. Replace PSE board if problem persists.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275211"><a name="BM2275211"></a>
+<h2>2275211</h2>
+<div class="sym">ERROR: EM_PSE_WARP_DEAD_ERR</div>
+<div class="txt">Sequencer error: WARP is not updating heart beat.
+This will fail TPS Reset. Heart beat is: %d. Please perform TPS Reset to recover.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE WARP is not updating heart beat. Cycle power to CAM chassis. Perform TPS Reset. Replace PSE board if problem persists.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275212"><a name="BM2275212"></a>
+<h2>2275212</h2>
+<div class="sym">ERROR: EM_PSE_WARP_DATA_FLOW_ERR</div>
+<div class="txt">Sequencer error: WARP data flow error. Please perform TPS Reset to recover. Count is %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE board reported data flow error between WARP DSP and FPGA WARP interface. Cycle power to CAM chassis. Perform TPS Reset. Replace PSE board if problem persists.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275213"><a name="BM2275213"></a>
+<h2>2275213</h2>
+<div class="sym">ERROR: EM_PSE_SPU_DEAD_ERR</div>
+<div class="txt">Sequencer error: SPU is not updating heart beat.
+This will fail TPS Reset. Heart beat is: %d. Please perform TPS Reset to recover.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE SPU is not updating heart beat. Cycle power to CAM chassis. Perform TPS Reset. Replace PSE board if problem persists.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275214"><a name="BM2275214"></a>
+<h2>2275214</h2>
+<div class="sym">ERROR: EM_PSE_HRMZR_PLL_LOST_LOCK_ERR</div>
+<div class="txt">Harmonizer FPGA PLL lost lock. This may be normal during TPS Reset.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE logic detected a clock disruption. Cycle power to CAM chassis. Perform TPS Reset. Replace PSE board if problem persists.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275215"><a name="BM2275215"></a>
+<h2>2275215</h2>
+<div class="sym">ERROR: EM_PSE_DDR2_PLL_LOST_LOCK_ERR</div>
+<div class="txt">Sequencer DDR2 PLL lost lock. This may be normal during TPS Reset.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE logic detected a clock disruption. Cycle power to CAM chassis. Perform TPS Reset. Replace PSE board if problem persists.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275216"><a name="BM2275216"></a>
+<h2>2275216</h2>
+<div class="sym">ERROR: EM_PSE_ISI_UPDATE</div>
+<div class="txt">PSE driver detected an ISI waveform update: channel=%d, address=%x. Application (PSD) developer should make sure ISI update does not overlap with PGEN queued updates. This is not an error.</div>
+</section>
+<section id="BM2275217"><a name="BM2275217"></a>
+<h2>2275217</h2>
+<div class="sym">ERROR: EM_PSE_WARP_LOADING</div>
+<div class="txt">Sequencer error: WARP has exceeded 80 percent of its 16us processing cycle. Count is %d. This is only a warning message.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE WARP CPU load has exceeded 80% of its 16us processing cycle. B0 ECC or B0 drift calibration file may be corrupted. Check the overloading count in WARP trace file at /export/home/service/log/warp. If the count is less than 5, image quality may not be affected. Otherwise, check the content of the grafidy calibration file. Execute Grafidy to create a new B0 ECC file. Run PSE BLD.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275218"><a name="BM2275218"></a>
+<h2>2275218</h2>
+<div class="sym">ERROR: EM_PSE_WARP_ROTATION_OVERRANGE</div>
+<div class="txt">WARP detected gradient rotation overrange on %s axis. Count is %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE WARP detected gradient overrange after rotation. It happend %d times during latest scan. Check the host or PSD rotation. matrix input to WARP, the xfull,yfull,zfull setting, and look for the gradient error.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275219"><a name="BM2275219"></a>
+<h2>2275219</h2>
+<div class="sym">ERROR: EM_PSE_WARP_GRADIENT_OVERRANGE</div>
+<div class="txt">WARP detected gradient output overrange on %s axis. Count is %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE WARP detected gradient output overrange. Check the host or PSD rotation matrix input to WARP, check the xfull,yfull,zfull setting, and look for the gradient errors.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275220"><a name="BM2275220"></a>
+<h2>2275220</h2>
+<div class="sym">ERROR: EM_PSE_WARP_B0_OVERRANGE</div>
+<div class="txt">WARP detected B0 output overrange. Count is %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE WARP detected B0 output overrange. Check the B0 ECC and B0 drift coefficients. Check the gradient data and rotation matrix.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275221"><a name="BM2275221"></a>
+<h2>2275221</h2>
+<div class="sym">ERROR: EM_PSE_WARP_B0DRIFT_TERM_ERR</div>
+<div class="txt">WARP B0 drift coefficients do not match with expectation. Expected %d, observed %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE WARP detected wrong B0 drift term. Either number of term mismatch, or the scaling factor (third column) greater than 10^(-11) Check the B0 drift coefficients. Re-run Grafidy tool. @FRU=PSE&quot;</div>
+</section>
+<section id="BM2275222"><a name="BM2275222"></a>
+<h2>2275222</h2>
+<div class="sym">ERROR: EM_PSE_WARP_B0DRIFT_ACCESS_FAIL</div>
+<div class="txt">WARP b0 drift coefficient file error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE WARP b0 drift coefficient file does not exist, or failed to open, read or close. Re-run Grafidy tool.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275223"><a name="BM2275223"></a>
+<h2>2275223</h2>
+<div class="sym">ERROR: EM_PSE_WARP_B0DRIFT_CLOCK_CHANGE</div>
+<div class="txt">WARP b0 drift detects the CLOCK changed %d seconds. Positive value means clock advanced. Negative value means clock backwards. This is only a warning. This will not stop scan.</div>
+</section>
+<section id="BM2275224"><a name="BM2275224"></a>
+<h2>2275224</h2>
+<div class="sym">ERROR: EM_PSE_IRF3_PRESENT_ERR</div>
+<div class="txt">IRF3 board present when IXG board is required. This will fail TPS Reset.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE board requires an IXG board to be present in CAM chassis. Existing combination of IRF3 and PSE is invalid. Replace IRF3 board in CAM chassis with IXG board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IXG Board</li></ol>
+</section>
+<section id="BM2275300"><a name="BM2275300"></a>
+<h2>2275300</h2>
+<div class="sym">ERROR: EM_IXG_PREDIAG_FAILED_ETHERNET</div>
+<div class="txt">IXG board has no Ethernet connection. TPS Reset will fail. Failure code = 0x%08lX.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that an Ethernet cable connects IXG with Ethernet switch. Disconnect and remove any non-product hardware connected to Ethernet switch. Replace IXG board if problem persists after System Restart.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IXG Board</li></ol>
+</section>
+<section id="BM2275301"><a name="BM2275301"></a>
+<h2>2275301</h2>
+<div class="sym">ERROR: EM_IXG_PREDIAG_FAILED_SAFE</div>
+<div class="txt">IXG board did not boot properly. TPS Reset will fail. Failure code = 0x%08lX.</div>
+<div class="lbl">Extended Error:</div><div class="txt">IXG board is in Secondary Mode. Files in /tftpboot/xg2 named ixgApp.piff, ixgAppHW.piff, and ixgAppBoot.piff may be missing. Reinstall software if any of these files are missing. Replace IXG board if problem persists after checking files.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IXG Board</li></ol>
+</section>
+<section id="BM2275302"><a name="BM2275302"></a>
+<h2>2275302</h2>
+<div class="sym">ERROR: EM_IXG_PREDIAG_FAILED_PCI</div>
+<div class="txt">IXG board did not boot properly on PCI bus. TPS Reset will fail. Failure code = 0x%08lX.</div>
+<div class="lbl">Extended Error:</div><div class="txt">IXG board failed PCI restoration. Check for a valid board combination in CAM chassis. Verify that all CAM chassis boards are in correct slots and properly seated. Verify that CAM chassis backplane has no bent pins or physical damage. Replace IXG board if problem persists after checking CAM chassis configuration.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IXG Board</li></ol>
+</section>
+<section id="BM2275303"><a name="BM2275303"></a>
+<h2>2275303</h2>
+<div class="sym">ERROR: EM_PSE_PREDIAG_FAILED_SAFE</div>
+<div class="txt">PSE board did not boot properly. TPS Reset will fail. Failure code = 0x%08lX.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE board is in Secondary Mode. Remove BOOT_LOCK jumper at JP5 if it is installed. Files in /usr/g/bin named pseApp.piff, pseAppHW.piff, and pseAppBoot.piff may be missing. Reinstall software if any of these files are missing. Replace PSE board if problem persists after checking jumper and files.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275304"><a name="BM2275304"></a>
+<h2>2275304</h2>
+<div class="sym">ERROR: EM_PSE_PREDIAG_FAILED_PCI</div>
+<div class="txt">PSE board did not boot properly on PCI bus. TPS Reset will fail. Failure code = 0x%08lX.</div>
+<div class="lbl">Extended Error:</div><div class="txt">PSE board failed PCI restoration. Check for a valid board combination in CAM chassis. Verify that all CAM chassis boards are in correct slots and properly seated. Verify that CAM chassis backplane has no bent pins or physical damage. Replace PSE board if problem persists after checking CAM chassis configuration.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275305"><a name="BM2275305"></a>
+<h2>2275305</h2>
+<div class="sym">ERROR: EM_PSE_SELF_TESTS_FAILED</div>
+<div class="txt">PSE board failed self tests. TPS Reset will fail. Failure code = 0x%08lX.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that PSE board is in slot 10 of the CAM chassis. Verify that all CAM chassis boards are in correct slots and properly seated. Verify that CAM chassis backplane has no bent pins or physical damage. Cycle power to CAM chassis. Perform TPS Reset. Replace PSE board if problem persists.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275306"><a name="BM2275306"></a>
+<h2>2275306</h2>
+<div class="sym">ERROR: EM_PSE_BLD_PSE_NOT_PRESENT</div>
+<div class="txt">PSE board level diagnostics aborted. PSE board is not present.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that PSE board is in slot 10 of the CAM chassis. Verify that all CAM chassis boards are in correct slots and properly seated. Verify that CAM chassis backplane has no bent pins or physical damage. Cycle power to CAM chassis. Perform TPS Reset. Replace PSE board if problem persists.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275307"><a name="BM2275307"></a>
+<h2>2275307</h2>
+<div class="sym">ERROR: EM_PSE_BLD_TESTS_FAILED_PSE</div>
+<div class="txt">PSE board failed board level diagnostics. Failure code = 0x%08lX.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that PSE board is in slot 10 of the CAM chassis. Verify that Exciter has power. Execute Exciter diagnostics. Verify that all CAM chassis boards are in correct slots and properly seated. Verify that CAM chassis backplane has no bent pins or physical damage. Cycle power to CAM chassis. Perform TPS Reset. Replace PSE board if problem persists.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275308"><a name="BM2275308"></a>
+<h2>2275308</h2>
+<div class="sym">ERROR: EM_PSE_BLD_TESTS_FAILED_PSEIO</div>
+<div class="txt">PSEIO board failed board level diagnostics. Failure code = 0x%08lX.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that PSEIO board is in slot 10 on the rear of CAM chassis. Verify that CAM chassis backplane has no bent pins or physical damage. Cycle power to CAM chassis. Perform TPS Reset. Replace PSE and PSEIO boards if problem persists.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE I/O Board</li><li>PSE Board</li></ol>
+</section>
+<section id="BM2275309"><a name="BM2275309"></a>
+<h2>2275309</h2>
+<div class="sym">ERROR: EM_PSE_BLD_PSE_SERIAL_FAILED</div>
+<div class="txt">PSE board serial number checksum test failed. Serial number read = 0x%08lX%08lX.</div>
+</section>
+<section id="BM2275310"><a name="BM2275310"></a>
+<h2>2275310</h2>
+<div class="sym">ERROR: EM_PSE_BLD_PSEIO_SERIAL_FAILED</div>
+<div class="txt">PSEIO board serial number checksum test failed. Serial number read = 0x%08lX%08lX.</div>
+</section>
+<section id="BM2275311"><a name="BM2275311"></a>
+<h2>2275311</h2>
+<div class="sym">ERROR: EM_PSE_BLD_REGISTER_WRITE_FAILED</div>
+<div class="txt">PSE board FPGA register write verification test failed.</div>
+</section>
+<section id="BM2275312"><a name="BM2275312"></a>
+<h2>2275312</h2>
+<div class="sym">ERROR: EM_PSE_BLD_AGP_INTERRUPT_FAILED</div>
+<div class="txt">PSE board to AGP interrupt test failed.</div>
+</section>
+<section id="BM2275313"><a name="BM2275313"></a>
+<h2>2275313</h2>
+<div class="sym">ERROR: EM_PSE_BLD_SCRATCHPAD_REGISTER_FAILED</div>
+<div class="txt">PSE board CPLD scratchpad register test failed.</div>
+</section>
+<section id="BM2275314"><a name="BM2275314"></a>
+<h2>2275314</h2>
+<div class="sym">ERROR: EM_PSE_BLD_SPU_IRAM_FAILED</div>
+<div class="txt">PSE board SPU IRAM test failed.</div>
+</section>
+<section id="BM2275315"><a name="BM2275315"></a>
+<h2>2275315</h2>
+<div class="sym">ERROR: EM_PSE_BLD_WARP_IRAM_FAILED</div>
+<div class="txt">PSE board WARP IRAM test failed.</div>
+</section>
+<section id="BM2275316"><a name="BM2275316"></a>
+<h2>2275316</h2>
+<div class="sym">ERROR: EM_PSE_BLD_NIOS_SDRAM_FAILED</div>
+<div class="txt">PSE board Nios DDR2 SDRAM test failed.</div>
+</section>
+<section id="BM2275317"><a name="BM2275317"></a>
+<h2>2275317</h2>
+<div class="sym">ERROR: EM_PSE_BLD_SPU_SDRAM_PCI_FAILED</div>
+<div class="txt">PSE board SPU DDR2 SDRAM from PCI test failed.</div>
+</section>
+<section id="BM2275318"><a name="BM2275318"></a>
+<h2>2275318</h2>
+<div class="sym">ERROR: EM_PSE_BLD_RF_SDRAM_FAILED</div>
+<div class="txt">PSE board RF sequencer DDR2 SDRAM test failed.</div>
+</section>
+<section id="BM2275319"><a name="BM2275319"></a>
+<h2>2275319</h2>
+<div class="sym">ERROR: EM_PSE_BLD_SSPGRAD_SDRAM_FAILED</div>
+<div class="txt">PSE board SSP/Gradient sequencer DDR2 SDRAM test failed.</div>
+</section>
+<section id="BM2275320"><a name="BM2275320"></a>
+<h2>2275320</h2>
+<div class="sym">ERROR: EM_PSE_BLD_RF_CONTROL_RAM_FAILED</div>
+<div class="txt">PSE board RF sequencer control RAM test failed.</div>
+</section>
+<section id="BM2275321"><a name="BM2275321"></a>
+<h2>2275321</h2>
+<div class="sym">ERROR: EM_PSE_BLD_SSPGRAD_CONTROL_RAM_FAILED</div>
+<div class="txt">PSE board SSP/Gradient sequencer control RAM test failed.</div>
+</section>
+<section id="BM2275322"><a name="BM2275322"></a>
+<h2>2275322</h2>
+<div class="sym">ERROR: EM_PSE_BLD_SPU_WARP_SELF_FAILED</div>
+<div class="txt">PSE board SPU and WARP self tests failed.</div>
+</section>
+<section id="BM2275323"><a name="BM2275323"></a>
+<h2>2275323</h2>
+<div class="sym">ERROR: EM_PSE_BLD_WARP_LOOPBACK_FAILED</div>
+<div class="txt">PSE board WARP corrected data loopback test failed.</div>
+</section>
+<section id="BM2275324"><a name="BM2275324"></a>
+<h2>2275324</h2>
+<div class="sym">ERROR: EM_PSE_BLD_SPU_SDRAM_DSP_FAILED</div>
+<div class="txt">PSE board SPU DDR2 SDRAM from DSP test failed.</div>
+</section>
+<section id="BM2275325"><a name="BM2275325"></a>
+<h2>2275325</h2>
+<div class="sym">ERROR: EM_PSE_BLD_SPU_CARDIAC_TRIGGER_FAILED</div>
+<div class="txt">PSE board SPU internal cardiac trigger test failed.</div>
+</section>
+<section id="BM2275326"><a name="BM2275326"></a>
+<h2>2275326</h2>
+<div class="sym">ERROR: EM_PSE_BLD_SPU_RESPIRATORY_TRIGGER_FAILED</div>
+<div class="txt">PSE board SPU internal respiratory trigger test failed.</div>
+</section>
+<section id="BM2275327"><a name="BM2275327"></a>
+<h2>2275327</h2>
+<div class="sym">ERROR: EM_PSE_BLD_SPU_PAC_LOOPBACK_FAILED</div>
+<div class="txt">PSE board SPU PAC data loopback test failed.</div>
+</section>
+<section id="BM2275328"><a name="BM2275328"></a>
+<h2>2275328</h2>
+<div class="sym">ERROR: EM_PSE_BLD_SPU_WAVEFORM_LOOPBACK_FAILED</div>
+<div class="txt">PSE board SPU waveform serial interface loopback test failed.</div>
+</section>
+<section id="BM2275329"><a name="BM2275329"></a>
+<h2>2275329</h2>
+<div class="sym">ERROR: EM_PSE_SELF_LINE_TRIGGER_PRESENT_FAILED</div>
+<div class="txt">PSE board does not detect line trigger. TPS Reset will fail. System will not be able to scan.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that PSE board is in slot 10 of the CAM chassis. Verify that line trigger cable is connected to PSE J7. Verify that line trigger signal measures 6.3 VAC RMS +/-10% on center conductor of cable. Inspect line trigger cable for defects. Reset resettable fuse labeled &#x27;CAM SYNC RESET&#x27; on front of PDU. Check PDU if voltage is low or missing. Cycle power to CAM chassis. Perform TPS Reset. Replace PSE board if line trigger voltage is good and problem persists.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275330"><a name="BM2275330"></a>
+<h2>2275330</h2>
+<div class="sym">ERROR: EM_PSE_BLD_LINE_TRIGGER_PRESENT_FAILED</div>
+<div class="txt">PSE board does not detect line trigger. PSE BLD will fail. System will not be able to perform scans using line trigger.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that PSE board is in slot 10 of the CAM chassis. Verify that line trigger cable is connected to PSE J7. Verify that line trigger signal measures 6.3 VAC RMS +/-10% on center conductor of cable. Inspect line trigger cable for defects. Reset resettable fuse labeled &#x27;CAM SYNC RESET&#x27; on front of PDU. Check PDU if voltage is low or missing. Cycle power to CAM chassis. Perform TPS Reset. Replace PSE board if line trigger voltage is good and problem persists.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>PSE Board</li></ol>
+</section>
+<section id="BM2275600"><a name="BM2275600"></a>
+<h2>2275600</h2>
+<div class="sym">ERROR: EM_RF_HUB_EMUL</div>
+<div class="txt">RF Hub is emulated, RF receive is disabled.\b\ The RF Hub is emulated in the mgd_stage file. Remove emulation flag and perform a TPS Reset to enable.</div>
+<div class="lbl">Extended Error:</div><div class="txt">To unemulate the RF Hub, make sure that &#x27;J&#x27;, &#x27;f&#x27;, &#x27;c&#x27;, and &#x27;r&#x27;, are removed from the mgd_stage file. Then TPS Reset.</div>
+</section>
+<section id="BM2275601"><a name="BM2275601"></a>
+<h2>2275601</h2>
+<div class="sym">ERROR: EM_RF_HUB_DEV_MODE_WARNING</div>
+<div class="txt">RF Hub is in engineering mode, some checks disabled.\b\ The emulation override option key is present. Some RF Hub checks are disabled to allow running in an engineering environment. This includes board revision checks and some cable detects.</div>
+</section>
+<section id="BM2275602"><a name="BM2275602"></a>
+<h2>2275602</h2>
+<div class="sym">ERROR: EM_RF_HUB_COIL_ID_EMUL_MC_OPEN_DISABLED</div>
+<div class="txt">Coil ID is emulated, multicoil bias open faults disabled.\b\ Coil ID is emulated in the mgd_stage file. The RF Hub has disabled multicoil bias open circuit faults to allow engineering mode operation.</div>
+<div class="lbl">Extended Error:</div><div class="txt">When Coil ID is emulated, the RF Hub disables multicoil bias open circuit fault checking and asserts the inhibit signal for protection. To unemulate coil ID, remove the &#x27;c&#x27; from the mgd_stage file and TPS reset.</div>
+</section>
+<section id="BM2275610"><a name="BM2275610"></a>
+<h2>2275610</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONFIG_INIT</div>
+<div class="txt">Programming Failure. A TPS reset may be necessary. The RF Hub configuration failed to initialize.
+Config Object: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal software error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2275611"><a name="BM2275611"></a>
+<h2>2275611</h2>
+<div class="sym">ERROR: EM_RF_HUB_ENDIAN_INVALID</div>
+<div class="txt">Communication Failure. A TPS reset may be necessary. The SCP received corrupted data from the RF Hub.
+Endian: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is an internal software error. If this persists, submit a complaint.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2275612"><a name="BM2275612"></a>
+<h2>2275612</h2>
+<div class="sym">ERROR: EM_RF_HUB_STARTUP_HW_FAILURE</div>
+<div class="txt">RF Hub Hardware Failure. A problem with the RF Hub hardware was detected. TPS reset and scanning will fail until the problem is fixed. Check for previous errors in the error log for more information.</div>
+<div class="lbl">Extended Error:</div><div class="txt">See the error log for the detailed hardware error. Can also run the RF Hub Board Level Diagnostic to troubleshoot.</div>
+</section>
+<section id="BM2275613"><a name="BM2275613"></a>
+<h2>2275613</h2>
+<div class="sym">ERROR: EM_RF_HUB_BOARD_REV_FAILURE</div>
+<div class="txt">Hardware Failure. The RF Hub detected a device with a board revision that is not allowed. TPS reset and scanning will fail until the board is replaced.
+Device: %b
+Revision: %d
+Expected Revision: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">Replace the board with one that is at the expected revision or greater.</div>
+</section>
+<section id="BM2275614"><a name="BM2275614"></a>
+<h2>2275614</h2>
+<div class="sym">ERROR: EM_RF_HUB_CPLD_REV_FAILURE</div>
+<div class="txt">RF Hub Hardware Failure. A RF Hub board was detected with a CPLD revision that is not allowed. TPS reset and scanning will fail until the board is replaced.
+Board: %b
+CPLD Revision: %d
+Expected CPLD Revision: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">Replace the board with one that is at the expected CPLD revision or greater.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2275615"><a name="BM2275615"></a>
+<h2>2275615</h2>
+<div class="sym">ERROR: EM_RF_HUB_ALL_FIELD_STRENGTH_FAILURE</div>
+<div class="txt">Configuration Failure. The system field strength configured is different than the RF Hub hardware. TPS reset and scanning will fail until the configuration is fixed.
+RF Hub Field Strength: %s
+System Field Strength: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the system field strength in guided install. If it is correct, check the field strength of the RF Hub RFSBs and RFCB and replace as necessary to match the system configured field strength. If the field strength is incorrect in guided install, change it to the correct field strength and TPS Reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li><li>RF Hub Control Board</li><li>RF Hub Switch Board</li></ol>
+</section>
+<section id="BM2275616"><a name="BM2275616"></a>
+<h2>2275616</h2>
+<div class="sym">ERROR: EM_RF_HUB_BOARD_FIELD_STRENGTH_FAILURE</div>
+<div class="txt">Configuration Failure. The RF Hub detected a device with a field strength different than the system. TPS reset and scanning will fail until the configuration is fixed.
+Device: %b
+Device Field Strength: %s
+System Field Strength: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the field strength of the board and replace as necessary, then TPS reset. If the board field strength is correct, check the system field strength in guided install.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Switch Board</li><li>Software</li></ol>
+</section>
+<section id="BM2275617"><a name="BM2275617"></a>
+<h2>2275617</h2>
+<div class="sym">ERROR: EM_RF_HUB_SYSTEM_CONFIG_FAILURE</div>
+<div class="txt">Configuration Failure. The system channel configuration is different than the RF Hub hardware. TPS reset and scanning will fail until the configuration is fixed.
+RF Hub Configuration: %d Channels
+System Configuration: %d Channels</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the system channel count in guided install and correct as necessary. If the system configuration was correct, change the RF Hub RFSB and MCDB board population as necessary to match the system configuration. TPS reset to recover.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li><li>RF Hub Switch Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2275618"><a name="BM2275618"></a>
+<h2>2275618</h2>
+<div class="sym">ERROR: EM_RF_HUB_MISSING_BOARD_SYSTEM_CONFIG_FAILURE</div>
+<div class="txt">Configuration Failure. The RF Hub is missing a board needed for this system configuration. TPS reset and scanning will fail until this is fixed.
+System Configuration: %d Channels Missing Board Locations:
+%b %b %b %b %b %b %b %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the system configuration is correct, install the missing boards and TPS reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li><li>RF Hub Switch Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2275619"><a name="BM2275619"></a>
+<h2>2275619</h2>
+<div class="sym">ERROR: EM_RF_HUB_EXTRA_BOARD_SYSTEM_CONFIG_FAILURE</div>
+<div class="txt">Configuration Failure. The RF Hub has more boards than are needed for this system configuration. TPS reset and scanning will fail until fixed.
+System Configuration: %d Channels Extra Board Locations:
+%b %b %b %b %b %b %b %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the system configuration is correct, remove the extra boards and TPS reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li><li>RF Hub Switch Board</li><li>RF Hub Multi-Coil Driver Board</li></ol>
+</section>
+<section id="BM2275620"><a name="BM2275620"></a>
+<h2>2275620</h2>
+<div class="sym">ERROR: EM_RF_HUB_USED_BIAS_MODULE_FAILURE</div>
+<div class="txt">RF Hub Hardware Failure. Bias modules needed for this system configuration are missing. TPS reset and scanning will fail until the board is replaced or system configuration is fixed.
+Board: %b Detected Modules: 0x%x Used: 0x%x Missing: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the channel count in guided install and correct as necessary. If guided install is correct, replace the board with one that supports the system channel count. Confirm that socketed modules on the boards are firmly seated. TPS reset to recover.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li><li>RF Hub Multi-Coil Driver Board</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2275621"><a name="BM2275621"></a>
+<h2>2275621</h2>
+<div class="sym">ERROR: EM_RF_HUB_BB_CHECK_HW_FAILURE</div>
+<div class="txt">MNS Upconverter Hardware Failure. A problem with the MNS Upconverter hardware was detected. TPS reset and scanning will fail until the problem is fixed. Check for previous errors in the error log for more information.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>MNS Upconverter</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2275622"><a name="BM2275622"></a>
+<h2>2275622</h2>
+<div class="sym">ERROR: EM_RF_HUB_RFSBV_AND_RFSB_DETECTED</div>
+<div class="txt">RFSBv and RFSB switch boards were detected in the system. %d RFSB board(s) and %d RFSBv board(s) were detected. This is an invalid configuration and will cause TPS reset to fail</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the channel count in guided install and whether reroute box is present in the system. If reroute box is present, install the correct number of RFSBs. If reroute box is absent, install the correct number of RFSBv boards.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Switch Board</li><li>Software</li></ol>
+</section>
+<section id="BM2275623"><a name="BM2275623"></a>
+<h2>2275623</h2>
+<div class="sym">ERROR: EM_RF_HUB_RFSBV_INVALID_CONFIG</div>
+<div class="txt">Invalid number of RFSBv boards detected. %d RFSBv boards were detected in the system. The RFSBv board supports only up to 32-channels.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the system is configured for more than 32 Channels in guided install, replace the RFSBv boards with RFSB or RFSB2 boards and connect the reroute box if necessary.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Switch Board</li><li>Software</li></ol>
+</section>
+<section id="BM2275624"><a name="BM2275624"></a>
+<h2>2275624</h2>
+<div class="sym">ERROR: EM_RF_HUB_INVALID_SWITCHBOARD_COMBINATION</div>
+<div class="txt">The system detected an invalid combination of RF switchboard types.
+System configuration: %d Channels
+Number of RFSB boards detected: %d
+Number of RFSBv boards detected: %d
+Number of RFSB2 boards detected: %d.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Switch Board</li><li>Software</li></ol>
+</section>
+<section id="BM2275625"><a name="BM2275625"></a>
+<h2>2275625</h2>
+<div class="sym">ERROR: EM_RF_HUB_UNSUPPORTED_RFSBV_CONFIG_DETECTED</div>
+<div class="txt">The system detected RFSBv boards, but RFSBv boards cannot support the number of configured channels.
+System configuration: %d Channels
+Number of RFSBv boards detected: %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Switch Board</li><li>Software</li></ol>
+</section>
+<section id="BM2275626"><a name="BM2275626"></a>
+<h2>2275626</h2>
+<div class="sym">ERROR: EM_RF_HUB_UNSUPPORTED_RFSB2_CONFIG_DETECTED</div>
+<div class="txt">The system detected RFSB2 board(s), but RFSB2 board(s) cannot support the number of configured channels.
+System configuration: %d Channels
+Number of RFSB2 boards detected: %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Switch Board</li><li>Software</li></ol>
+</section>
+<section id="BM2275627"><a name="BM2275627"></a>
+<h2>2275627</h2>
+<div class="sym">ERROR: EM_RF_HUB_GEM_CONFIG_UNSUPPORTED_CHANNEL_COUNT</div>
+<div class="txt">Configuration Failure. The system is configured to with %d channels integrated coil support. This is an unsupported configuration. TPS reset and scanning will fail until the configuration is fixed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the system channel count and LPCA type in guided install and correct as necessary.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2275650"><a name="BM2275650"></a>
+<h2>2275650</h2>
+<div class="sym">ERROR: EM_RF_HUB_LINK_NOT_READY</div>
+<div class="txt">RF Hub link is not ready.</div>
+</section>
+<section id="BM2275651"><a name="BM2275651"></a>
+<h2>2275651</h2>
+<div class="sym">ERROR: EM_RF_HUB_SHUTDOWN_NOT_SETUP</div>
+<div class="txt">RF Hub shutdown not complete</div>
+</section>
+<section id="BM2275652"><a name="BM2275652"></a>
+<h2>2275652</h2>
+<div class="sym">ERROR: EM_RF_HUB_WAKEUP_STOP_SCAN</div>
+<div class="txt">RF Hub detected a fault while scanning.</div>
+</section>
+<section id="BM2275653"><a name="BM2275653"></a>
+<h2>2275653</h2>
+<div class="sym">ERROR: EM_RF_HUB_HARDWARE_NOT_READY</div>
+<div class="txt">RF Hub hardware fault was detected. Detailed messages in error log.</div>
+</section>
+<section id="BM2275654"><a name="BM2275654"></a>
+<h2>2275654</h2>
+<div class="sym">ERROR: EM_RF_HUB_TEMPERATURE_NOT_READY</div>
+<div class="txt">RF Hub is overheated. Detailed messages in error log.</div>
+</section>
+<section id="BM2275655"><a name="BM2275655"></a>
+<h2>2275655</h2>
+<div class="sym">ERROR: EM_RF_HUB_BOARD_COMM_NOT_READY</div>
+<div class="txt">RF Hub internal communication has failed. TPS reset is required.</div>
+</section>
+<section id="BM2275656"><a name="BM2275656"></a>
+<h2>2275656</h2>
+<div class="sym">ERROR: EM_RF_HUB_STARTUP_HARDWARE_NOT_READY</div>
+<div class="txt">RF Hub hardware failure was detected. Detailed message in error log.</div>
+</section>
+<section id="BM2275657"><a name="BM2275657"></a>
+<h2>2275657</h2>
+<div class="sym">ERROR: EM_RF_HUB_STARTUP_HARDWARE_CONFIG_NOT_READY</div>
+<div class="txt">RF Hub hardware configuration is invalid. Detailed message in error log.</div>
+</section>
+<section id="BM2275658"><a name="BM2275658"></a>
+<h2>2275658</h2>
+<div class="sym">ERROR: EM_RF_HUB_BB_CHECK_HARDWARE_NOT_READY</div>
+<div class="txt">MNS Upconverter hardware failure was detected. Detailed message in error log.</div>
+</section>
+<section id="BM2275659"><a name="BM2275659"></a>
+<h2>2275659</h2>
+<div class="sym">ERROR: EM_RF_HUB_BB_CHECK_HARDWARE_CONFIG_NOT_READY</div>
+<div class="txt">MNS Upconverter hardware configuration is invalid. Detailed message in error log.</div>
+</section>
+<section id="BM2275660"><a name="BM2275660"></a>
+<h2>2275660</h2>
+<div class="sym">ERROR: EM_RF_HUB_BB_CONNECT_NOT_READY</div>
+<div class="txt">RF Hub to MNS Upconverter connection failure. Detailed message in error log.</div>
+</section>
+<section id="BM2275661"><a name="BM2275661"></a>
+<h2>2275661</h2>
+<div class="sym">ERROR: EM_RF_HUB_HW_CHANGE_NOT_READY</div>
+<div class="txt">TPS Reset is required because RF Hub hardware was changed.</div>
+</section>
+<section id="BM2275662"><a name="BM2275662"></a>
+<h2>2275662</h2>
+<div class="sym">ERROR: EM_RF_HUB_HW_CHANGE</div>
+<div class="txt">TPS Reset is required because RF Hub hardware was changed.\b\ Check HART log for more detail on what hardware has changed since startup.</div>
+<div class="lbl">Extended Error:</div><div class="txt">RF Hub hardware was changed that requires calibration. Check the HART log to see which components changed since startup. TPS Reset to calibrate.</div>
+</section>
+<section id="BM2275663"><a name="BM2275663"></a>
+<h2>2275663</h2>
+<div class="sym">ERROR: EM_RF_HUB_DIAG_NOT_READY</div>
+<div class="txt">TPS Reset is required because RF Hub diagnostics were run.</div>
+</section>
+<section id="BM2275700"><a name="BM2275700"></a>
+<h2>2275700</h2>
+<div class="sym">ERROR: EM_RF_HUB_SHUTDOWN_TIMEOUT_SDO</div>
+<div class="txt">Communication Failure. A TPS reset may be necessary. The RF Hub shutdown communication failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">RF Hub shutdown failed because a communication response timed out. Check the CAN communication cables. Run the RF Hub CFB Loopback Diagnostic and CAN link diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li></ol>
+</section>
+<section id="BM2275701"><a name="BM2275701"></a>
+<h2>2275701</h2>
+<div class="sym">ERROR: EM_RF_HUB_SHUTDOWN_TIMEOUT_CFB_LINK</div>
+<div class="txt">Communication Failure. A TPS reset may be necessary. The RF Hub link shutdown response was not received from the CFB.</div>
+<div class="lbl">Extended Error:</div><div class="txt">RF Hub shutdown failed because the CFB was not able to disable the fiber link. Run the CFB Board Level Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Fiber Board</li></ol>
+</section>
+<section id="BM2275702"><a name="BM2275702"></a>
+<h2>2275702</h2>
+<div class="sym">ERROR: EM_RF_HUB_SHUTDOWN_TIMEOUT_CLOCK</div>
+<div class="txt">The RF Hub failed to shutdown. The clock did not turn off.</div>
+<div class="lbl">Extended Error:</div><div class="txt">RF Hub shutdown failed because its clock did not turn off. Check the error log for more details. Run the RF Hub Shutdown Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Backplane</li><li>RRx Module</li><li>CAN Fiber Board</li></ol>
+</section>
+<section id="BM2275703"><a name="BM2275703"></a>
+<h2>2275703</h2>
+<div class="sym">ERROR: EM_RF_HUB_SHUTDOWN_TIMEOUT_UNKNOWN</div>
+<div class="txt">Programming Failure. A TPS reset may be necessary. The RF Hub shutdown timed out for an unknown reason.
+State: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub shutdown failed for unknown reasons (internal software error). TPS Reset, and submit a complaint if this error continues.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2275704"><a name="BM2275704"></a>
+<h2>2275704</h2>
+<div class="sym">ERROR: EM_RF_HUB_WAKEUP_TIMEOUT_CFB_LINK</div>
+<div class="txt">Communication Failure. A TPS reset may be necessary. The RF Hub link wakeup response was not received from the CFB.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check CAN Communication to the CFB. Run the CFB Board Level Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Fiber Board</li><li>CAN Communication</li></ol>
+</section>
+<section id="BM2275705"><a name="BM2275705"></a>
+<h2>2275705</h2>
+<div class="sym">ERROR: EM_RF_HUB_WAKEUP_TIMEOUT_CLOCK_WARNING</div>
+<div class="txt">Communication Failure. The RF Hub clock was not detected during wakeup when expected. An additional error message will be logged if communication can not be recovered.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The system continued to attempt to recover communication. Check the error log for additional errors. If there are additional errors indicating that the wakeup failed, run the RF Hub Shutdown Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>CAN Fiber Board</li><li>RF Hub Backplane</li><li>RRx Module</li></ol>
+</section>
+<section id="BM2275706"><a name="BM2275706"></a>
+<h2>2275706</h2>
+<div class="sym">ERROR: EM_RF_HUB_WAKEUP_TIMEOUT_POWER_BAD</div>
+<div class="txt">Hardware Failure. The RF Hub failed to wakeup with the RRX reporting that RF Hub power is bad.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check RF Hub power and the RRX to RF Hub cables. Run the RF Hub Main Board Level Diagnostic and the RF Hub - Receiver Datapath Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Power Distribution Board</li><li>RF Hub Backplane</li><li>RRx Module</li></ol>
+</section>
+<section id="BM2275707"><a name="BM2275707"></a>
+<h2>2275707</h2>
+<div class="sym">ERROR: EM_RF_HUB_WAKEUP_TIMEOUT_CLOCK</div>
+<div class="txt">Hardware Failure. The RF Hub failed to wakeup with the RRX reporting that the RF Hub clock was not turned on.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the RRX to RF Hub cables. Run the RF Hub Shutdown Diagnostic and the CFB Board Level Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Hub Control Board</li><li>RF Hub Backplane</li><li>CAN Fiber Board</li><li>RRx Module</li><li>Dual Fiber Cable</li></ol>
+</section>
+<section id="BM2275708"><a name="BM2275708"></a>
+<h2>2275708</h2>
+<div class="sym">ERROR: EM_RF_HUB_WAKEUP_TIMEOUT_COMM_RRX_OK</div>
+<div class="txt">Communication Failure. The RF Hub failed to recover CAN communication on wakeup. The RRX is reporting that RF Hub power is OK and clock is on. Check RF Hub CAN cable connections.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check CAN communication cabling. Run the RF Hub Shutdown Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li><li>CAN Fiber Board</li><li>RF Hub Control Board</li></ol>
+</section>
+<section id="BM2275709"><a name="BM2275709"></a>
+<h2>2275709</h2>
+<div class="sym">ERROR: EM_RF_HUB_WAKEUP_TIMEOUT_COMM_RRX_UNKNOWN</div>
+<div class="txt">Communication Failure. The RF Hub failed to recover CAN communication on wakeup. The SCP lost contact with RRX-1 through the fiber link. Check RF Hub power, clock status, and CAN cable connections.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check RF Hub power from the SRPS and PDB, check the RRX to RF Hub cables, and check the CAN communication cabling. Run the RF Hub Main Board Level Diagnostic, RF Hub Shutdown Diagnostic, and CAN Link Diagnostic</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li><li>RF Hub Control Board</li><li>RF Hub Power Distribution Board</li><li>IRF Board</li><li>Dual Fiber Cable</li><li>RRx Module</li><li>Scan Room PS</li></ol>
+</section>
+<section id="BM2275710"><a name="BM2275710"></a>
+<h2>2275710</h2>
+<div class="sym">ERROR: EM_RF_HUB_WAKEUP_TIMEOUT_UNKNOWN</div>
+<div class="txt">Programming Failure. A TPS reset may be necessary. The RF Hub wakeup timed out for an unknown reason.
+State: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub wakeup failed for unknown reasons (internal software error). TPS Reset, and submit a complaint if this error continues.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2275711"><a name="BM2275711"></a>
+<h2>2275711</h2>
+<div class="sym">ERROR: EM_RF_HUB_RRX_STATUS_UPDATE_FAILED</div>
+<div class="txt">Communication Failure. The SCP lost contact with RRX-1 through the fiber link. Check for other fiber link errors in the log.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the IRF to RRX fibers. Run the RRX Board Level Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Dual Fiber Cable</li><li>IRF Board</li><li>RRx Module</li></ol>
+</section>
+<section id="BM2275712"><a name="BM2275712"></a>
+<h2>2275712</h2>
+<div class="sym">ERROR: EM_RF_HUB_STATUS_REQUEST_TIMEOUT</div>
+<div class="txt">Communication Failure. A TPS reset may be necessary. A RF Hub status request timed out.
+Reason: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check CAN communication cables. Run the CAN Link Diagnostic, CFB Board Level Diagnostic, and RF Hub Can Fiber Loopback Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li></ol>
+</section>
+<section id="BM2275713"><a name="BM2275713"></a>
+<h2>2275713</h2>
+<div class="sym">ERROR: EM_RF_HUB_HART_REQUEST_TIMEOUT</div>
+<div class="txt">Communication Failure. A RF Hub HART request timed out.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check CAN communication cables. Run the CAN Link Diagnostic, CFB Board Level Diagnostic, and RF Hub Can Fiber Loopback Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li></ol>
+</section>
+<section id="BM2275714"><a name="BM2275714"></a>
+<h2>2275714</h2>
+<div class="sym">ERROR: EM_RF_HUB_STARTUP_TIMEOUT_CONFIG</div>
+<div class="txt">Communication Failure. A TPS reset may be necessary. RF Hub startup sequence communication timed out. Reason: Configuration download</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check CAN communication cables. Run the CAN Link Diagnostic, CFB Board Level Diagnostic, and RF Hub Can Fiber Loopback Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li></ol>
+</section>
+<section id="BM2275715"><a name="BM2275715"></a>
+<h2>2275715</h2>
+<div class="sym">ERROR: EM_RF_HUB_STARTUP_TIMEOUT_CONFIG_SEQUENCE</div>
+<div class="txt">Communication Failure. A TPS reset may be necessary. RF Hub startup sequence communication timed out. Reason: Configuration sequence upload</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check CAN communication cables. Run the CAN Link Diagnostic, CFB Board Level Diagnostic, and RF Hub Can Fiber Loopback Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li></ol>
+</section>
+<section id="BM2275716"><a name="BM2275716"></a>
+<h2>2275716</h2>
+<div class="sym">ERROR: EM_RF_HUB_STARTUP_TIMEOUT_STATUS</div>
+<div class="txt">Communication Failure. A TPS reset may be necessary. RF Hub startup sequence communication timed out. Reason: Status upload</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check CAN communication cables. Run the CAN Link Diagnostic, CFB Board Level Diagnostic, and RF Hub Can Fiber Loopback Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li></ol>
+</section>
+<section id="BM2275717"><a name="BM2275717"></a>
+<h2>2275717</h2>
+<div class="sym">ERROR: EM_RF_HUB_STARTUP_TIMEOUT_OPERATIONAL</div>
+<div class="txt">Communication Failure. A TPS reset may be necessary. RF Hub startup sequence communication timed out. Reason: Operational request</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check CAN communication cables. Run the CAN Link Diagnostic, CFB Board Level Diagnostic, and RF Hub Can Fiber Loopback Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li></ol>
+</section>
+<section id="BM2275718"><a name="BM2275718"></a>
+<h2>2275718</h2>
+<div class="sym">ERROR: EM_RF_HUB_STARTUP_TIMEOUT_UNKNOWN</div>
+<div class="txt">Internal Software Failure. A TPS reset may be necessary. RF Hub startup sequence communication timed out with unknown reason. State: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub startup sequence communication failed for unknown reasons (internal software error). TPS Reset, and submit a complaint if this error continues.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2275719"><a name="BM2275719"></a>
+<h2>2275719</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONTROL_TIMEOUT_CLEAR</div>
+<div class="txt">Communication Failure. A TPS reset may be necessary. RF Hub control sequence communication timed out. Reason: Control clear request</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check CAN communication cables. Run the CAN Link Diagnostic, CFB Board Level Diagnostic, and RF Hub Can Fiber Loopback Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li></ol>
+</section>
+<section id="BM2275720"><a name="BM2275720"></a>
+<h2>2275720</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONTROL_TIMEOUT_SET</div>
+<div class="txt">Communication Failure. A TPS reset may be necessary. RF Hub control sequence communication timed out. Reason: Control set request</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check CAN communication cables. Run the CAN Link Diagnostic, CFB Board Level Diagnostic, and RF Hub Can Fiber Loopback Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li></ol>
+</section>
+<section id="BM2275721"><a name="BM2275721"></a>
+<h2>2275721</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONTROL_TIMEOUT_SHUTDOWN</div>
+<div class="txt">Communication Failure. A TPS reset may be necessary. RF Hub control sequence communication timed out. Reason: Control shutdown request</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check CAN communication cables. Run the CAN Link Diagnostic, CFB Board Level Diagnostic, and RF Hub Can Fiber Loopback Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li></ol>
+</section>
+<section id="BM2275722"><a name="BM2275722"></a>
+<h2>2275722</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONTROL_TIMEOUT_UNKNOWN</div>
+<div class="txt">Internal Software Failure. A TPS reset may be necessary. RF Hub control sequence communication timed out with unknown reason. State: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RF Hub control sequence communication failed for unknown reasons (internal software error). TPS Reset, and submit a complaint if this error continues.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2275723"><a name="BM2275723"></a>
+<h2>2275723</h2>
+<div class="sym">ERROR: EM_RF_HUB_CONTROL_TIMEOUT_MONITOR</div>
+<div class="txt">Communication Failure. A TPS reset may be necessary. RF Hub control sequence communication timed out. Reason: Control monitor status</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check CAN communication cables. Run the CAN Link Diagnostic, CFB Board Level Diagnostic, and RF Hub Can Fiber Loopback Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>CAN Communication</li></ol>
+</section>
+</body></html>

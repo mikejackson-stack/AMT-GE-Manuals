@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2247000-2247999 (271)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2247000-2247999 (271)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2246000-2246999.html">&larr; 2246000-2246999</a><a href="ermes_2248000-2248999.html">2248000-2248999 &rarr;</a></nav></header>
+<section id="BM2247100"><a name="BM2247100"></a>
+<h2>2247100</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_NOT_PRESENT_ERR</div>
+<div class="txt">The IRF board was not detected. Testing of this board will be aborted.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error indicates that the IRF board failed to be sensed after a hardware reset. This error can be caused by a missing board, a failure of the IRF PCI interface, a bad backplane, or the failing AGP. If the board is present, try to reseat the board and rerun the test. If other boards are passing their diagnostics, the AGP is probably OK.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>MGD Backplane</li><li>AGP Board</li></ol>
+</section>
+<section id="BM2247101"><a name="BM2247101"></a>
+<h2>2247101</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_REGISTER_INIT_TEST_FAILURE</div>
+<div class="txt">IRF Register initialization test failure. One or more registers were not in the correct state after a reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247102"><a name="BM2247102"></a>
+<h2>2247102</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_REGISTER_WRITE_TEST_FAILURE</div>
+<div class="txt">IRF Register write validation failure. One or more registers failed the read-write test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2247103"><a name="BM2247103"></a>
+<h2>2247103</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_SEMAPHORE_TEST_FAILURE</div>
+<div class="txt">IRF Hardware semaphore validation failure. One or more semaphores failed the validation test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247104"><a name="BM2247104"></a>
+<h2>2247104</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_DMA_TEST_FAILURE</div>
+<div class="txt">IRF failed the DMA verification test. The PLX registers, DMA setup, or DMA transfer failed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247105"><a name="BM2247105"></a>
+<h2>2247105</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_DAB_PKT_FIFO_FAILURE</div>
+<div class="txt">%s in Slot %d failed the DAB Packet FIFO test.
+Failure type: %d (%s) Dynamic Base Address: 0x%lx Board Offset: 0x%lx Expected value: 0x%lx Actual value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247106"><a name="BM2247106"></a>
+<h2>2247106</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_DAB_PKT_FIFO_DATA_FAILURE</div>
+<div class="txt">%s in Slot %d failed the DAB Packet FIFO Read and Write test. %d of %d words failed the read write test. Dynamic Base Address: 0x%lx Board Offset: 0x%lx Bits not Clearable: 0x%lx Bits not Settable: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247107"><a name="BM2247107"></a>
+<h2>2247107</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_CMD_QUE_FAILURE</div>
+<div class="txt">%s in Slot %d failed the Command Queue Test.
+Failure type: %d (%s) Dynamic Base Address: 0x%lx Board Offset: 0x%lx Expected value: 0x%lx Actual value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247108"><a name="BM2247108"></a>
+<h2>2247108</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_CMD_QUE_DATA_FAILURE</div>
+<div class="txt">%s in Slot %d failed the Command Queue Read and Write Test. %d of %d words failed the read write test. Dynamic Base Address: 0x%lx Board Offset: 0x%lx Bits not Clearable: 0x%lx Bits not Settable: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247109"><a name="BM2247109"></a>
+<h2>2247109</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_CMD_QUE_ADDR_FAILURE</div>
+<div class="txt">%s in Slot %d failed the Command Queue ADDR Test. %d of %d words failed. Dynamic Base Address: 0x%lx Board Offset: 0x%lx Expected Value: 0x%lx Actual Value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247110"><a name="BM2247110"></a>
+<h2>2247110</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_BYPASS_FIFO_FAILURE</div>
+<div class="txt">%s in Slot %d failed the Bypass FIFO Test.
+Failure type: %d (%s) Dynamic Base Address: 0x%lx Board Offset: 0x%lx Expected value: 0x%lx Actual value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247111"><a name="BM2247111"></a>
+<h2>2247111</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_BYPASS_FIFO_DATA_FAILURE</div>
+<div class="txt">%s in Slot %d failed the Bypass FIFO Read and Write Test. %d of %d words failed the read write test. Dynamic Base Address: 0x%lx Board Offset: 0x%lx Bits not Clearable: 0x%lx Bits not Settable: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247112"><a name="BM2247112"></a>
+<h2>2247112</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_TX_LUT_ERR</div>
+<div class="txt">Transmit Attenuation LUT Dual Port RAM (DPR) failure. %s in Slot %d failed the memory read and write Test:
+Dynamic Base Address: 0x%lx PCI Failed Address: 0x%lx Value Written: 0x%lx Value Read: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247113"><a name="BM2247113"></a>
+<h2>2247113</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_VIEW_LENGTH_ERR</div>
+<div class="txt">View Length LUT Dual Port RAM (DPR) failure. %s in Slot %d failed the memory read and write Test:
+Dynamic Base Address: 0x%lx PCI Failed Address: 0x%lx Value Written: 0x%lx Value Read: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247114"><a name="BM2247114"></a>
+<h2>2247114</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_RRF_STATUS_ERR</div>
+<div class="txt">Exciter/receiver status memory failure. %s in Slot %d failed the memory read and write Test:
+Dynamic Base Address: 0x%lx PCI Failed Address: 0x%lx Value Written: 0x%lx Value Read: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247115"><a name="BM2247115"></a>
+<h2>2247115</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_TX_ATTEN_TEST_FAILURE</div>
+<div class="txt">IRF Transmit Attenuation LUT validation failure. The memory or associated statuses failed the test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247116"><a name="BM2247116"></a>
+<h2>2247116</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_VIEW_LENTH_TEST_FAILURE</div>
+<div class="txt">IRF View Length LUT validation failure. The memory or associated statuses failed the test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247117"><a name="BM2247117"></a>
+<h2>2247117</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_RRF_STATUS_MEM_TEST_FAILURE</div>
+<div class="txt">IRF Receive/Exciter Status Memory validation failure. The memory or associated statuses failed the test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247118"><a name="BM2247118"></a>
+<h2>2247118</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_BYPASS_FIFO_TEST_FAILURE</div>
+<div class="txt">IRF Bypass FIFO validation failure. The memory or associated statuses failed the test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247119"><a name="BM2247119"></a>
+<h2>2247119</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_DAB_PKT_FIFO_TEST_FAILURE</div>
+<div class="txt">IRF DAB Packet FIFO validation failure. The memory or associated statuses failed the test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247120"><a name="BM2247120"></a>
+<h2>2247120</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_CMD_QUE_TEST_FAILURE</div>
+<div class="txt">IRF Command Queue validation failure. The memory or associated statuses failed the test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247121"><a name="BM2247121"></a>
+<h2>2247121</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_OVT_SHUTDOWN_TIMER_CLR_ERR</div>
+<div class="txt">%s in slot %d has an over temperature timer error. The counter failed to clear after writing a zero. Dynamic Base Addr: 0x%lx Board Offset: 0x%lx
+Expected value: %d
+Actual value: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This problem can be caused by a board or a temperature switch failure.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>Bore Temp Sensor</li></ol>
+</section>
+<section id="BM2247122"><a name="BM2247122"></a>
+<h2>2247122</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_OVT_STATUS_CLR_ERR</div>
+<div class="txt">%s in slot %d has failed the over temperature test. Over temperature alarm/warning failed to reset. Possible causes: board or temperature switch. Dynamic Base Addr: 0x%lx Board Offset: 0x%lx Expected value: 0x%lx Actual value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>Bore Temp Sensor</li></ol>
+</section>
+<section id="BM2247123"><a name="BM2247123"></a>
+<h2>2247123</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_OVT_SHUTDOWN_TIMER_ERR</div>
+<div class="txt">%s in slot %d has an over temperature timer error. The counter failed to increment after enabling the diagnostic test. Dynamic Base Addr: 0x%lx Board Offset: 0x%lx Expected value: &gt; 0x0
+Actual value: %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247124"><a name="BM2247124"></a>
+<h2>2247124</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_OVT_SHUTDOWN_STATUS_SET_ERR</div>
+<div class="txt">%s in slot %d has failed the over temperature shutdown test. The shutdown bit failed to be set in the allotted time. Dynamic Base Addr: 0x%lx Board Offset: 0x%lx Expected value: 0x%lx Actual value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247125"><a name="BM2247125"></a>
+<h2>2247125</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_OVT_ALARM_ISR_STATUS_ERR</div>
+<div class="txt">%s in slot %d has failed the over temperature alarm test. The over temperature alarm ISR failed to be invoked after enabling the diagnostic bit. Dynamic Base Addr: 0x%lx Board Offset: 0x%lx Expected value: 0x%lx Actual value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247126"><a name="BM2247126"></a>
+<h2>2247126</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_OVT_ALARM_STATUS_SET_ERR</div>
+<div class="txt">%s in slot %d has failed the over temperature alarm test. The over temperature alarm failed to be set in the allotted time. Dynamic Base Addr: 0x%lx Board Offset: 0x%lx Expected value: 0x%lx Actual value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247127"><a name="BM2247127"></a>
+<h2>2247127</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_OVER_TEMP_FAILURE</div>
+<div class="txt">IRF over temperature validation failure.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>Bore Temp Sensor</li></ol>
+</section>
+<section id="BM2247128"><a name="BM2247128"></a>
+<h2>2247128</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_OVT_SHUTDOWN_STATUS_CLR_ERR</div>
+<div class="txt">%s in slot %d has failed the over temperature shutdown test. The shutdown bit could not be cleared. Dynamic Base Addr: 0x%lx Board Offset: 0x%lx Expected value: 0x%lx Actual value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247129"><a name="BM2247129"></a>
+<h2>2247129</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_SCRATCH_MEM_ERR</div>
+<div class="txt">Scratch Pad Memory failure. %s in Slot %d failed the memory read and write Test:
+Dynamic Base Address: 0x%lx PCI Failed Address: 0x%lx Value Written: 0x%lx Value Read: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247130"><a name="BM2247130"></a>
+<h2>2247130</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_SCRATCH_MEM_TEST_FAILURE</div>
+<div class="txt">IRF Scratch Pad Memory validation failure. The memory failed the write and read test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247131"><a name="BM2247131"></a>
+<h2>2247131</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_CMD_QUE_LOOPBACK_FAILURE</div>
+<div class="txt">%s in Slot %d failed the Command Queue Loopback Test.
+Failure type: %d (%s) Dynamic Base Address: 0x%lx Board Offset: 0x%lx Expected value: 0x%lx Actual value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247132"><a name="BM2247132"></a>
+<h2>2247132</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_CMD_QUE_LOOPBACK_DATA_FAILURE</div>
+<div class="txt">%s in Slot %d failed the Command Queue Read and Write Test. Dynamic Base Address: 0x%lx Board Offset: 0x%lx Board Offset: 0x%lx Expected value: 0x%lx Actual value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247133"><a name="BM2247133"></a>
+<h2>2247133</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_CHKSUM_FAILURE</div>
+<div class="txt">%s in Slot %d failed the Checksum Test.
+Failure type: %d (%s) Dynamic Base Address: 0x%lx Board Offset: 0x%lx Expected value: 0x%lx Actual value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247134"><a name="BM2247134"></a>
+<h2>2247134</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_CHKSUM_DATA_FAILURE</div>
+<div class="txt">%s in Slot %d failed the Checksum Verification Test. Dynamic Base Address: 0x%lx Board Offset: 0x%lx Board Offset: 0x%lx Expected value: 0x%lx Actual value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247135"><a name="BM2247135"></a>
+<h2>2247135</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_SIGNAL_DETECT_TEST_FAILURE</div>
+<div class="txt">IRF I/O Fiber Optic Signal Detect failure. Make sure that the Gigalink fiber optic connections are securely fastened to the IRF I/O board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>IRF I/O Board</li></ol>
+</section>
+<section id="BM2247136"><a name="BM2247136"></a>
+<h2>2247136</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_SMC_LOOP_TEST_FAILURE</div>
+<div class="txt">IRF I/O SMC Loop Test Failure.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>IRF I/O Board</li></ol>
+</section>
+<section id="BM2247137"><a name="BM2247137"></a>
+<h2>2247137</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_DABOUT_LOOP_TEST_FAILURE</div>
+<div class="txt">IRF I/O DABOUT Loop Test Failure.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>IRF I/O Board</li></ol>
+</section>
+<section id="BM2247138"><a name="BM2247138"></a>
+<h2>2247138</h2>
+<div class="sym">ERROR: EM_DIAG_SMC_DATA_FAILURE</div>
+<div class="txt">IRF I/O SMC Test Data Mismatch. Expected = 0x%x. Received = 0x%x.</div>
+</section>
+<section id="BM2247139"><a name="BM2247139"></a>
+<h2>2247139</h2>
+<div class="sym">ERROR: EM_DIAG_DABOUT_DATA_FAILURE</div>
+<div class="txt">IRF I/O DABOUT Test Data Mismatch. Expected = 0x%x. Received = 0x%x.</div>
+</section>
+<section id="BM2247140"><a name="BM2247140"></a>
+<h2>2247140</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_SERIAL_NUM_FAILURE</div>
+<div class="txt">The serial number CRC check failed during the IRF BLD on the %s Board. Serial Number: 0x%8.8lx%8.8lx Serial Number CRC: 0x%x Calculated CRC: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The serial number read from hardware does not match the CRC calculated by software. The board mentioned in the primary error message may need to be replaced.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>IRF I/O Board</li></ol>
+</section>
+<section id="BM2247141"><a name="BM2247141"></a>
+<h2>2247141</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_OVT_WARN_ISR_STATUS_ERR</div>
+<div class="txt">%s in slot %d has failed the over temperature warning test. The over temperature warning ISR failed to be invoked after enabling the diagnostic bit. Dyn. Base Addr: 0x%lx Board Offset: 0x%lx Expected value: 0x%lx Actual value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247142"><a name="BM2247142"></a>
+<h2>2247142</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_OVT_WARN_STATUS_SET_ERR</div>
+<div class="txt">%s in slot %d has failed the over temperature warning test. The over temperature warning failed to be set in the allotted time. Dynamic Base Addr: 0x%lx Board Offset: 0x%lx Expected value: 0x%lx Actual value: 0x%lx</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247143"><a name="BM2247143"></a>
+<h2>2247143</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_CHKSUM_TEST_FAILURE</div>
+<div class="txt">IRF checksum validation failure. The memory or associated statuses failed the test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247144"><a name="BM2247144"></a>
+<h2>2247144</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_BAD_PARAMETER</div>
+<div class="txt">The IRF driver function %s was called with a bad parameter value. Bad parm = %d This is a software error.</div>
+</section>
+<section id="BM2247145"><a name="BM2247145"></a>
+<h2>2247145</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_BAD_EXCITER_SELECTION</div>
+<div class="txt">The IRF driver function %s was called with an illegal exciter selection mask. Mask = 0x%02X This is a software error.</div>
+</section>
+<section id="BM2247146"><a name="BM2247146"></a>
+<h2>2247146</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_MASTER_EXCITER_ONLY</div>
+<div class="txt">The IRF driver function %s was called requesting that the slave exciter do an operation that only the master exciter can perform. This is a software error.</div>
+</section>
+<section id="BM2247147"><a name="BM2247147"></a>
+<h2>2247147</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_BAD_CENTER_FREQ</div>
+<div class="txt">The IRF driver function %s was requested to set a center frequency that the installed exciters
+can not handle. Exciter=%d, freq=%dHz.</div>
+</section>
+<section id="BM2247148"><a name="BM2247148"></a>
+<h2>2247148</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_CENTER_FREQ_ERROR</div>
+<div class="txt">An unexpected error occurred when setting exciter center freq.
+Function = %s\ Freq = %d, CoarseFreq = %d, FineFreq = %d, RhoDds = %d</div>
+</section>
+<section id="BM2247149"><a name="BM2247149"></a>
+<h2>2247149</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_FIELD_STRENGTH_ERROR</div>
+<div class="txt">This system is configured to a magnet field strength that the IRF board driver is not compatible with.
+Function = %s, FieldStrength = %d</div>
+</section>
+<section id="BM2247150"><a name="BM2247150"></a>
+<h2>2247150</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_RRF_TIMEOUT</div>
+<div class="txt">The IRF driver function %s timed out when waiting for the RRF chassis to respond to a request. This may happen occasionally during a scan. Device Mask = 0x%X If this occurs often you may have RRF chassis communication problem.</div>
+</section>
+<section id="BM2247151"><a name="BM2247151"></a>
+<h2>2247151</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_EXCITER_CONFIRM_ERROR</div>
+<div class="txt">The IRF driver function %s failed to write a new control value to the RRF.
+Exciter=%d, Written Value = %d, Returned Value = %d If this occurs often you may have RRF chassis communication problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>IRF I/O Board</li><li>RRF-DIF Board</li><li>Exciter Board</li><li>GigaLink Fiber Cable</li></ol>
+</section>
+<section id="BM2247152"><a name="BM2247152"></a>
+<h2>2247152</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_RRF_SIMULATION_MODE</div>
+<div class="txt">Warning: The IRF board driver is in simulation mode. IRF will not try to control the RRF chassis. This condition is for product development only. You can not perform real scans when in this mode.</div>
+</section>
+<section id="BM2247153"><a name="BM2247153"></a>
+<h2>2247153</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_NO_RRF_FOUND</div>
+<div class="txt">RF SUBSYSTEM NOT RESPONDING The RRF chassis is not communicating to the MGD chassis. Try TPS Reset. If this problem repeats, call service. Scanning will not be possible. Verify that the RRF chassis is powered on.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check for the GB0 LED on the IRF board in the MGD chassis. The GB0 LED is for RRF channels 1-8. The GB1 LED is for channels 9-16. A fiber cable must connect the DIF board in RRF chassis front slot 10 to the IRFIO board in the rear of the MGD chassis. The top 6 DIF LEDs should be on.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>IRF I/O Board</li><li>RRF-DIF Board</li><li>Exciter Board</li><li>GigaLink Fiber Cable</li></ol>
+</section>
+<section id="BM2247154"><a name="BM2247154"></a>
+<h2>2247154</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_RECEIVER_CONFIRM_ERROR</div>
+<div class="txt">The IRF driver function %s failed to write a new control value to the RRF.
+Channel=%d, Written Value = %d, Returned Value = %d If this occurs often you may have RRF chassis communication problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>IRF I/O Board</li><li>RRF-DIF Board</li><li>Exciter Board</li><li>GigaLink Fiber Cable</li></ol>
+</section>
+<section id="BM2247155"><a name="BM2247155"></a>
+<h2>2247155</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_IS8_SHOULD_BE_16CH_ERROR</div>
+<div class="txt">ONLY 8 OF 16 RF RECEIVER CHANNELS PRESENT This system is configured for 16 RF Receiver channels but channels 9-16 in the RRF chassis are not responding. 16 channel scans will not be possible. 1 to 8 channel scans might work.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the GB0 and GB1 LEDs on the IRF board in the MGD chassis. The GB0 LED is for RRF channels 1-8. The GB1 LED is for channels 9-16. A fiber cable must connect the 2nd DIF board in RRF chassis front slot 1 to the GB1 connector on the front of the IRF board in the MGD chassis. The top 6 LEDs on the 2nd DIF board should be on.
+Make sure that the option key configuration matches the hardware configuration. If this system does not have the hardware installed that is needed for 16 channel scans, the 16 channel option key should not be installed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>RRF-DIF Board</li><li>GigaLink Fiber Cable</li></ol>
+</section>
+<section id="BM2247156"><a name="BM2247156"></a>
+<h2>2247156</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_IRF2_NOT_DETECTED_ERR</div>
+<div class="txt">The APS did not detect the IRF2 board in the MGD chassis. The system will not function without this board. This could also indicate a bad AGP, APS or Bridge Board, please check for other error messages.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error indicates that the IRF board failed to be sensed after a hardware reset. This error can be caused by a missing board, a bad backplane, or a bad APS or AGP. This system is not compatible with the original IRF board. If the board is present, try to reseat the board and rerun the test. If other boards are pass their BLD diagnostics, the AGP and APS are probably OK.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>MGD Backplane</li><li>APS Board</li><li>AGP Board</li></ol>
+</section>
+<section id="BM2247157"><a name="BM2247157"></a>
+<h2>2247157</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_MASTER_EX_NOT_DETECTED_ERR</div>
+<div class="txt">The Master Exciter in the RRF chassis (rear, slot 7) was not detected. The system will not function without this board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The master exciter provides the main clock for the RRF chassis and the IRF board. Verify that the board is powered and that its LO DETECT LED is on. If this is a 16 channel system, verify that the two fiber cables on the two DIF boards are not switched with each other.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>Exciter Board</li><li>RRF-DIF Board</li><li>GigaLink Fiber Cable</li></ol>
+</section>
+<section id="BM2247158"><a name="BM2247158"></a>
+<h2>2247158</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_FIBER_CABLES_REVERSED_ERR</div>
+<div class="txt">The fiber cables connecting the MGD and RRF chassis are reversed. Swap the fiber cables connected to the 1st and 2nd DIF boards in the RRF chassis.</div>
+</section>
+<section id="BM2247159"><a name="BM2247159"></a>
+<h2>2247159</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_SINE_LUT_LOAD_FAIL_ERR</div>
+<div class="txt">The Sine Wave Table on the DIF board in RRF chassis (front, slot 10) did not load correctly. This will prevent proper Exciter output. Try TPS_reset. Run RRF diagnostics. Reported from %s (%X) (%X) (%d)</div>
+<div class="lbl">Extended Error:</div><div class="txt">At reset the DIF board loads a Sine wave table from an internal EPROM. The DIF did not load the EPROM into Ram correctly. The exciter will not be able to output the correct waveforms if the Sine LUT does not contain the correct data.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247160"><a name="BM2247160"></a>
+<h2>2247160</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_GB0_NOT_READY_ERR</div>
+<div class="txt">RRF FIBER CABLE LINK NOT READY The fiber link between the RRF and MGD chassis is not in a ready state after hardware initialization. This will prevent the MGD from controlling the RRF chassis. Try TPS_reset. Run RRF diagnostics.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The MGD does not like the signal coming over the fiber cable connected from the IRF_IO board in the back of the MGD chassis to the DIF board in slot 10 in the front of the RRF chassis.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li><li>GigaLink Fiber Cable</li><li>IRF I/O Board</li><li>IRF Board</li></ol>
+</section>
+<section id="BM2247161"><a name="BM2247161"></a>
+<h2>2247161</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_UTNS_CONFIRM_ERROR</div>
+<div class="txt">UTNS WRITE CONFIRM ERROR The IRF driver function %s failed to write a new control value to the UTNS in the RRF chassis.
+Channel=%d, Written Value = %d, Returned Value = %d If this occurs often you may have RRF chassis communication problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The APS wrote a value to a UTNS board then did not read the same value back. The problem may be on the UTNS board, the DIF board, or the backplane pins of the RRF chassis.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>IRF I/O Board</li><li>RRF-DIF Board</li><li>UTNS Board</li><li>GigaLink Fiber Cable</li></ol>
+</section>
+<section id="BM2247162"><a name="BM2247162"></a>
+<h2>2247162</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_DIF_CONFIRM_ERROR</div>
+<div class="txt">RF-DIF WRITE CONFIRM ERROR The IRF driver function %s failed to write a new control value to the DIF in the RRF chassis.
+Channel=%d, Written Value = %d, Returned Value = %d If this occurs often you may have RRF chassis communication problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The APS wrote a value to a DIF board then did not read the same value back.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>IRF I/O Board</li><li>RRF-DIF Board</li><li>UTNS Board</li><li>GigaLink Fiber Cable</li></ol>
+</section>
+<section id="BM2247163"><a name="BM2247163"></a>
+<h2>2247163</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_GB1_NOT_READY_ERR</div>
+<div class="txt">RRF FIBER CABLE LINK NOT READY The fiber link between the 2nd RRF_DIF and MGD chassis is not in a ready state after hardware initialization. This will prevent the MGD from controlling the RRF chassis. This cable is only used in 16 channels systems.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The MGD does not like the signal coming over the fiber cable connected from the IRF board in the MGD chassis to the DIF board in slot 1 in the front of the RRF chassis.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li><li>GigaLink Fiber Cable</li><li>IRF Board</li></ol>
+</section>
+<section id="BM2247164"><a name="BM2247164"></a>
+<h2>2247164</h2>
+<div class="sym">ERROR: EM_IRF_EXCITER10_FOUND_ERR</div>
+<div class="txt">INCORRECT EXCITER FOUND An Exciter1.0 was found in the RRF chassis. This system requires an Exciter2 for the master and optionally an Exciter1A for the slave.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The broadband Exciter 1.0 is not supported by this system. The Exciter1.0 should have been replaced when this system was upgraded. The Exciter1.0 will not work in a dual exciter system or in a 16 channel system. It may be possible to use an Exciter 1.0 by itself in an 8 channel system until a replacement can be installed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Exciter Board</li></ol>
+</section>
+<section id="BM2247165"><a name="BM2247165"></a>
+<h2>2247165</h2>
+<div class="sym">ERROR: EM_IRF_EXCITER11_MASTER_FOUND_WARN</div>
+<div class="txt">A broadband Exciter1A was found in the master exciter slot of the RRF chassis. This might degrade image quality. Normally, only the Exciter2 is used as a master and Exciter1A is optionally used as a slave.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The broadband Exciter 1A (also known as an Exciter 1.1) should only be used as the slave exciter in a system equipped for MNS. Although the Exciter1A will function as a master, its output signal has more noise than the narrowband Exciter2.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Exciter Board</li></ol>
+</section>
+<section id="BM2247166"><a name="BM2247166"></a>
+<h2>2247166</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_IS16_SHOULD_BE_32CH_ERROR</div>
+<div class="txt">ONLY 16 OF 32 RF RECEIVER CHANNELS PRESENT This system is configured for 32 RF Receiver channels but some or all of the channels in the 2nd RRF chassis are not responding. 32 channel scans will not be possible. 8 or 16 channel scans should work.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the GB0 - GB3 LEDs on the IRF board in the MGD chassis. For a 32 channel system, they all should be on. The GB0 LED is for RRF channels 1-8 which is the fiber on the IRFIO board that MUST be connected to the master DIF board in the 1st RRF chassis. The GB1-3 LEDs are for the fiber connectors on the front edge of the IRF2 board. Those three fibers can be connected in any order but a 32ch system expects to see all three fibers connected and active. This system does not see a connection to one or both DIFs in the 2nd RRF chassis.
+Make sure that the option key configuration matches the hardware configuration. If this system does not have the hardware installed that is needed for 32 channel scans, the 32 channel option key should not be installed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>RRF-DIF Board</li><li>GigaLink Fiber Cable</li></ol>
+</section>
+<section id="BM2247167"><a name="BM2247167"></a>
+<h2>2247167</h2>
+<div class="sym">ERROR: EM_IRF_DRVR_IS8_SHOULD_BE_32CH_ERROR</div>
+<div class="txt">ONLY 8 OF 32 RF RECEIVER CHANNELS PRESENT This system is configured for 32 RF Receiver channels but channels 9-16 are not responding. 32 channel scans will not be possible. 8 channel scans should work.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the GB0 - GB3 LEDs on the IRF board in the MGD chassis. For a 32 channel system, they all should be on. The GB0 LED is for RRF channels 1-8 which is the fiber on the IRFIO board that MUST be connected to the master DIF board in the 1st RRF chassis. The GB1-3 LEDs are for the fiber connectors on the front edge of the IRF2 board. Those three fibers can be connected in any order but a 32ch system expects to see all three fibers connected and active. This system does not see a connection to the 2nd DIF in the 1st RRF chassis.
+Make sure that the option key configuration matches the hardware configuration. If this system does not have the hardware installed that is needed for 32 channel scans, the 32 channel option key should not be installed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>RRF-DIF Board</li><li>GigaLink Fiber Cable</li></ol>
+</section>
+<section id="BM2247168"><a name="BM2247168"></a>
+<h2>2247168</h2>
+<div class="sym">ERROR: EM_IRF_NO_SLAVE_EX_INSTALLED</div>
+<div class="txt">No Broadband Exciter Installed (Called from %s) This system tried to program the broadband slave exciter. The RRF chassis does not have a slave exciter. MNS operation will not be possible.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The system must have a broadband slave Exciter 1A installed before it can perform MNS scans. Verify that a slave exciter is installed in the RRF chassis (rear, slot 9) and that it is the 1A version.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Exciter Board</li></ol>
+</section>
+<section id="BM2247169"><a name="BM2247169"></a>
+<h2>2247169</h2>
+<div class="sym">ERROR: EM_IRF_OLD_20MHZ_DRF_FOUND</div>
+<div class="txt">WARNING: An 20MHz DRF2 board is installed in this system. This is a prototype board that must be replaced with a 40MHz production version of the DRF2 board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li></ol>
+</section>
+<section id="BM2247170"><a name="BM2247170"></a>
+<h2>2247170</h2>
+<div class="sym">ERROR: EM_IRF_WRONG_1ST_MASTER_EXCITER_FOR_32CH</div>
+<div class="txt">This system does not have a master exciter in the 1st RRF chassis that is compatible with 32 channel scans. The system requires an exciter that can drive a clock signal to the 2nd master exciter.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A 32 channel system requires a special master exciter in both RRF chassis. These exciters have an inter-connect cable that allows both exciters to run from the same clock source. The system detected an exciter that does not have this capability. Without this type of exciter, 32-channel scans may be corrupted because the two RRF chassis are not clock synchronized. If this system is not intended to run 32 channel scans, remove the 32 channel option key.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Exciter Board</li></ol>
+</section>
+<section id="BM2247171"><a name="BM2247171"></a>
+<h2>2247171</h2>
+<div class="sym">ERROR: EM_IRF_WRONG_2ND_MASTER_EXCITER_FOR_32CH</div>
+<div class="txt">This system does not have a master exciter in the 2nd RRF chassis that is compatible with 32 channel scans. The system requires an exciter that can receive a clock signal to the 1st master exciter.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A 32 channel system requires a special master exciter in both RRF chassis. These exciters have an inter-connect cable that allows both exciters to run from the same clock source. The system detected an exciter that does not have this capability. Without this type of exciter, 32-channel scans may be corrupted because the two RRF chassis are not clock synchronized. If this system is not intended to run 32 channel scans, remove the 32 channel option key.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Exciter Board</li></ol>
+</section>
+<section id="BM2247172"><a name="BM2247172"></a>
+<h2>2247172</h2>
+<div class="sym">ERROR: EM_IRF_32CH_SYSTEM_WITHOUT_EXCITER_CLK_INTERCONNECT</div>
+<div class="txt">The system did not detect a clock signal running from the 1st master exciter to the 2nd master exciter. A 32 channel system requires that the two RRF chassis run from the same clock source.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the two master exciters are connected by a 9-pin cable that sends a clock signal from the 1st RRF to the 2nd RRF. Without this cable, the two RRF chassis will run on separate clocks that may drift and disrupt any 32 channel scan. The system will work correctly for 8 or 16 channel scans without this cable.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Exciter Board</li></ol>
+</section>
+<section id="BM2247300"><a name="BM2247300"></a>
+<h2>2247300</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_STATUS_FAILURE</div>
+<div class="txt">Diagnostics failed to complete because the check of IRF status Failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check IRF power and backplane pins. Remove and reseat IRF and repeat diags. Try running the IRF diagnostics. If problem persists replace the IRF.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2247301"><a name="BM2247301"></a>
+<h2>2247301</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_IF_STATUS_FAILURE</div>
+<div class="txt">Diagnostics failed to complete because the check of RRF interface Failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check RRF Power and Fiber Optic connection. Make sure 20 MHz clock LED is lit on front of DIF (if not lit check for working Exciter in correct slot). Check IRF I/O power and backplane pins. Remove and reseat IRF I/O board and repeat diags. Check DIF power and backplane pins. Remove and reseat DIF board and repeat diags. Check IRF power and backplane pins. Remove and reseat IRF board and repeat diags. Run IRF Diagnostics.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>GigaLink Fiber Cable</li><li>IRF I/O Board</li><li>RRF-DIF Board</li><li>IRF Board</li><li>Exciter Board</li></ol>
+</section>
+<section id="BM2247302"><a name="BM2247302"></a>
+<h2>2247302</h2>
+<div class="sym">ERROR: EM_DIAG_DIF_STATUS_FAILURE</div>
+<div class="txt">Diagnostics failed to complete because the check of DIF status Failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check DIF LEDs, power, and backplane pins. Remove and reseat DIF board and repeat diagnostics. Try running the IRF diagnostics. If problem persists replace the DIF.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247303"><a name="BM2247303"></a>
+<h2>2247303</h2>
+<div class="sym">ERROR: EM_DIAG_MASTER_EXC_STATUS_FAILURE</div>
+<div class="txt">Diagnostics failed to complete because the status check for Master Exciter Failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check Master Exciter, power, and backplane pins. Remove and reseat Exciter board and repeat diagnostics. Verify that the Master Exciter is in the correct slot. If problem persists replace the Master Exciter.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Exciter Board</li></ol>
+</section>
+<section id="BM2247304"><a name="BM2247304"></a>
+<h2>2247304</h2>
+<div class="sym">ERROR: EM_DIAG_MASTER_EXC_MISSING_FAILURE</div>
+<div class="txt">Diagnostics failed to complete because the check for presence of Master Exciter Failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check Master Exciter, power, and backplane pins. Remove and reseat Exciter board and repeat diagnostics. Verify that the Master Exciter is in the correct slot. If problem persists replace the Master Exciter.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Exciter Board</li></ol>
+</section>
+<section id="BM2247305"><a name="BM2247305"></a>
+<h2>2247305</h2>
+<div class="sym">ERROR: EM_DIAG_RCV_STATUS_FAILURE</div>
+<div class="txt">Diagnostics failed to complete because the check of Receiver status Failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check RRF Receiver power, and backplane pins. Remove and reseat Receiver board and repeat diagnostics. If problem persists replace the Receiver.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Receiver Board</li></ol>
+</section>
+<section id="BM2247306"><a name="BM2247306"></a>
+<h2>2247306</h2>
+<div class="sym">ERROR: EM_DIAG_RCV_MISSING_FAILURE</div>
+<div class="txt">Diagnostics failed to complete because no Receiver modules were detected.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check RRF Receiver power, and backplane pins. Remove and reseat Receiver board and repeat diagnostics. If problem persists replace the Receiver.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Receiver Board</li></ol>
+</section>
+<section id="BM2247307"><a name="BM2247307"></a>
+<h2>2247307</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_INIT_STATUS_FAILURE</div>
+<div class="txt">Diagnostics failed to complete because RRF initialization failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Preceding errors in log may indicate the underlying problem since the RRF initialization touches all of the RRF boards and the IRF. Check RRF Power and Fiber Optic connection. Make sure 20 MHz clock LED is lit on front of DIF (if not lit check for working Exciter in correct slot). Check IRF I/O power and backplane pins. Remove and reseat IRF I/O board and repeat diags. Check Exciter power and backplane pins. Remove and reseat Exciter board and repeat diags. Check DIF power and backplane pins. Remove and reseat DIF board and repeat diags. Check IRF power and backplane pins. Remove and reseat IRF board and repeat diags. Check Receiver power and backplane pins. Remove and reseat Receiver board and repeat diags. Run IRF Diagnostics.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>GigaLink Fiber Cable</li><li>IRF I/O Board</li><li>RRF-DIF Board</li><li>IRF Board</li><li>Exciter Board</li><li>Receiver Board</li></ol>
+</section>
+<section id="BM2247308"><a name="BM2247308"></a>
+<h2>2247308</h2>
+<div class="sym">ERROR: EM_DIAG_DIF_REGISTER_WRITE_TEST_FAILURE</div>
+<div class="txt">DIF failed %s Register verification test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Register Verification test failed on the DIF Board. Most likely a DIF failure. Check DIF power and backplane pins. Remove and reseat DIF board and repeat diagnostics. If problem persists replace the DIF.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247309"><a name="BM2247309"></a>
+<h2>2247309</h2>
+<div class="sym">ERROR: EM_DIAG_DIF_REGISTER_BIT_FAULT</div>
+<div class="txt">%s Exciter DIF failed %s Register write/read/verify test. Ones Failed register mask: 0x%lx Zeroes Failed register mask: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Register Verification test failed on the DIF Board. A bit set in the Ones Failed register mask indicates a failure to set that bit. A bit set in the Zeroes Failed mask indicates a failure to clear that bit.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247310"><a name="BM2247310"></a>
+<h2>2247310</h2>
+<div class="sym">ERROR: EM_DIAG_DIF_REGISTER_CONFIRM_FAULT</div>
+<div class="txt">%s Exciter DIF failed %s Register verification test. Data written to the register was not confirmed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Register Verification test failed on the DIF Board. The test pattern written to the register could not be confirmed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247311"><a name="BM2247311"></a>
+<h2>2247311</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_RHO_DDS_TEST_FAILURE</div>
+<div class="txt">DIF failed Rho %s DDS Sine LUT verification test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RHO DDS failed verification on the DIF Board. Most likely a DIF failure. Check DIF power and backplane pins. Remove and reseat DIF board and repeat diagnostics. If problem persists replace the DIF.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247312"><a name="BM2247312"></a>
+<h2>2247312</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_OMEGA_DDS_TEST_FAILURE</div>
+<div class="txt">DIF failed Omega %s DDS Sine LUT verification test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Omega DDS failed verification on the DIF Board. Most likely a DIF failure. Check DIF power and backplane pins. Remove and reseat DIF board and repeat diagnostics. If problem persists replace the DIF.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247313"><a name="BM2247313"></a>
+<h2>2247313</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_B0_DDS_TEST_FAILURE</div>
+<div class="txt">DIF failed B0 %s DDS Sine LUT verification test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The B0 DDS failed verification on the DIF Board. Most likely a DIF failure. Check DIF power and backplane pins. Remove and reseat DIF board and repeat diagnostics. If problem persists replace the DIF.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247314"><a name="BM2247314"></a>
+<h2>2247314</h2>
+<div class="sym">ERROR: EM_DIAG_EXC_REGISTER_WRITE_TEST_FAILURE</div>
+<div class="txt">%s Exciter failed Register verification test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check Exciter power and backplane pins. Remove and reseat Exciter board and repeat diagnostics. If problem persists replace the Exciter. Note: If 2 exciters, consult primary log to determine which one is at fault.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Exciter Board</li></ol>
+</section>
+<section id="BM2247315"><a name="BM2247315"></a>
+<h2>2247315</h2>
+<div class="sym">ERROR: EM_DIAG_EXC_REGISTER_BIT_FAULT</div>
+<div class="txt">%s Exciter failed %s register write/read/verify test. Ones Failed register mask: 0x%lx Zeroes Failed register mask: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Register Verification test failed on the Exciter Board. A bit set in the Ones Failed register mask indicates a failure to set that bit. A bit set in the Zeroes Failed mask indicates a failure to clear that bit.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Exciter Board</li></ol>
+</section>
+<section id="BM2247316"><a name="BM2247316"></a>
+<h2>2247316</h2>
+<div class="sym">ERROR: EM_DIAG_EXC_REGISTER_CONFIRM_FAULT</div>
+<div class="txt">%s Exciter failed %s Register verification test. Data written to the register was not confirmed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Register Verification test failed on the Exciter Board. The test pattern written to the register could not be confirmed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Exciter Board</li></ol>
+</section>
+<section id="BM2247317"><a name="BM2247317"></a>
+<h2>2247317</h2>
+<div class="sym">ERROR: EM_DIAG_RCV_REGISTER_WRITE_TEST_FAILURE</div>
+<div class="txt">Receiver board failed Register verification test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check RRF Receiver power and backplane pins. Remove and reseat Receiver board and repeat diagnostics. If problem persists replace the Receiver.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Receiver Board</li></ol>
+</section>
+<section id="BM2247318"><a name="BM2247318"></a>
+<h2>2247318</h2>
+<div class="sym">ERROR: EM_DIAG_RCV_BOARD_REGISTER_BIT_FAULT</div>
+<div class="txt">Receiver Board failed %s register write/read/verify test. Ones Failed register mask: 0x%lx Zeroes Failed register mask: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Register Verification test failed on the RRF Receiver Board. A bit set in the Ones Failed register mask indicates a failure to set that bit. A bit set in the Zeroes Failed mask indicates a failure to clear that bit.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Receiver Board</li></ol>
+</section>
+<section id="BM2247319"><a name="BM2247319"></a>
+<h2>2247319</h2>
+<div class="sym">ERROR: EM_DIAG_RCV_BOARD_REGISTER_CONFIRM_FAULT</div>
+<div class="txt">Receiver Board failed %s Register verification test. Data written to the register was not confirmed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Register Verification test failed on the RRF Receiver Board. The test pattern written to the register could not be confirmed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Receiver Board</li></ol>
+</section>
+<section id="BM2247320"><a name="BM2247320"></a>
+<h2>2247320</h2>
+<div class="sym">ERROR: EM_DIAG_RCV_MODULE_REGISTER_WRITE_TEST_FAILURE</div>
+<div class="txt">Receiver module %d failed Register verification test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check RRF Receiver power and backplane pins. Remove and reseat Receiver board and repeat diagnostics. If problem persists replace the Receiver.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Receiver Board</li></ol>
+</section>
+<section id="BM2247321"><a name="BM2247321"></a>
+<h2>2247321</h2>
+<div class="sym">ERROR: EM_DIAG_RCV_MODULE_REGISTER_BIT_FAULT</div>
+<div class="txt">Receiver Module #%d failed %s register write/read/verify test. Ones Failed register mask: 0x%lx Zeroes Failed register mask: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Register Verification test failed on the RRF Receiver Module. A bit set in the Ones Failed register mask indicates a failure to set that bit. A bit set in the Zeroes Failed mask indicates a failure to clear that bit.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Receiver Board</li></ol>
+</section>
+<section id="BM2247322"><a name="BM2247322"></a>
+<h2>2247322</h2>
+<div class="sym">ERROR: EM_DIAG_RCV_MODULE_REGISTER_CONFIRM_FAULT</div>
+<div class="txt">Receiver Module #%d failed %s Register verification test. Data written to the register was not confirmed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Register Verification test failed on the RRF Receiver Module. The test pattern written to the register could not be confirmed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Receiver Board</li></ol>
+</section>
+<section id="BM2247323"><a name="BM2247323"></a>
+<h2>2247323</h2>
+<div class="sym">ERROR: EM_DIAG_UTNS_REGISTER_WRITE_TEST_FAILURE</div>
+<div class="txt">UTNS Register %d failed Register verification test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check UTNS power and backplane pins. Remove and reseat UTNS board and repeat diagnostics. If problem persists replace the UTNS.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>UTNS Board</li></ol>
+</section>
+<section id="BM2247324"><a name="BM2247324"></a>
+<h2>2247324</h2>
+<div class="sym">ERROR: EM_DIAG_UTNS_REGISTER_BIT_FAULT</div>
+<div class="txt">UTNS failed %s register #%d write/read/verify test. Ones Failed register mask: 0x%lx Zeroes Failed register mask: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Register Verification test failed on the UTNS Board. A bit set in the Ones Failed register mask indicates a failure to set that bit. A bit set in the Zeroes Failed mask indicates a failure to clear that bit.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>UTNS Board</li></ol>
+</section>
+<section id="BM2247325"><a name="BM2247325"></a>
+<h2>2247325</h2>
+<div class="sym">ERROR: EM_DIAG_UTNS_REGISTER_CONFIRM_FAULT</div>
+<div class="txt">UTNS failed %s Register #%d verification test. Data written to the register was not confirmed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Register Verification test failed on the UTNS Board. The test pattern written to the register could not be confirmed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>UTNS Board</li></ol>
+</section>
+<section id="BM2247326"><a name="BM2247326"></a>
+<h2>2247326</h2>
+<div class="sym">ERROR: EM_DIAG_UTNS_NOT_PRESENT</div>
+<div class="txt">UTNS board is not present.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify presence of UTNS board. If present, check UTNS power and backplane pins. Remove and reseat UTNS board and repeat diagnostics. If problem persists replace the UTNS.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>UTNS Board</li></ol>
+</section>
+<section id="BM2247327"><a name="BM2247327"></a>
+<h2>2247327</h2>
+<div class="sym">ERROR: EM_DIAG_UTNS_BOARD_REGISTER_BIT_FAULT</div>
+<div class="txt">UTNS board failed %s register write/read/verify test. Ones Failed register mask: 0x%lx Zeroes Failed register mask: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Register Verification test failed on the UTNS Board. A bit set in the Ones Failed register mask indicates a failure to set that bit. A bit set in the Zeroes Failed mask indicates a failure to clear that bit.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>UTNS Board</li></ol>
+</section>
+<section id="BM2247328"><a name="BM2247328"></a>
+<h2>2247328</h2>
+<div class="sym">ERROR: EM_DIAG_UTNS_BOARD_REGISTER_CONFIRM_FAULT</div>
+<div class="txt">UTNS board failed %s Register verification test. Data written to the register was not confirmed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Register Verification test failed on the UTNS Board. The test pattern written to the register could not be confirmed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>UTNS Board</li></ol>
+</section>
+<section id="BM2247329"><a name="BM2247329"></a>
+<h2>2247329</h2>
+<div class="sym">ERROR: EM_DIAG_UTNS_DISCRETE_REGISTER_TEST_FAILURE</div>
+<div class="txt">UTNS failed Discrete Register verification test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check UTNS power and backplane pins. Remove and reseat UTNS board and repeat diagnostics. If problem persists replace the UTNS.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>UTNS Board</li></ol>
+</section>
+<section id="BM2247330"><a name="BM2247330"></a>
+<h2>2247330</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_TEST_FAILURE</div>
+<div class="txt">The RRF Diagnostic Test Failed due to incorrect test parameters.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RRF Diagnostic Test was called without a proper command word to specify which test to run. Make sure a valid test is selected and rerun the diagnostic test.</div>
+</section>
+<section id="BM2247331"><a name="BM2247331"></a>
+<h2>2247331</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_RHO_DDS_INVALID_TEST</div>
+<div class="txt">The RRF RHO DDS test was attempted without choosing either the MASTER or SLAVE Exciter!</div>
+<div class="lbl">Extended Error:</div><div class="txt">There was a software error that caused an attempt to run the RRF RHO DDS test without the proper parameters.</div>
+</section>
+<section id="BM2247332"><a name="BM2247332"></a>
+<h2>2247332</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_RHO_DDS_SINE_LUT_FAILURE</div>
+<div class="txt">Value %d from %s Sine LUT via RHO RF failed to verify. Actual value: 0x%08x Expected value: 0x%08x</div>
+<div class="lbl">Extended Error:</div><div class="txt">A comparison of the actual vs. expected values of the Sine LUT produced a fault. This could be caused by defective hardware or software.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247333"><a name="BM2247333"></a>
+<h2>2247333</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_OMEGA_DDS_INVALID_TEST</div>
+<div class="txt">The RRF OMEGA DDS test was attempted without choosing either the MASTER or SLAVE Exciter!</div>
+<div class="lbl">Extended Error:</div><div class="txt">There was a software error that caused an attempt to run the RRF OMEGA DDS test without the proper parameters.</div>
+</section>
+<section id="BM2247334"><a name="BM2247334"></a>
+<h2>2247334</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_OMEGA_DDS_SINE_LUT_FAILURE</div>
+<div class="txt">Value %d from %s Sine LUT via OMEGA RF failed to verify. Actual value: 0x%08x Expected value: 0x%08x</div>
+<div class="lbl">Extended Error:</div><div class="txt">A comparison of the actual vs. expected values of the Sine LUT produced a fault. This could be caused by defective hardware or software.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247335"><a name="BM2247335"></a>
+<h2>2247335</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_B0_DDS_INVALID_TEST</div>
+<div class="txt">The RRF B0 DDS test was attempted without choosing either the MASTER or SLAVE Exciter!</div>
+<div class="lbl">Extended Error:</div><div class="txt">There was a software error that caused an attempt to run the RRF B0 DDS test without the proper parameters.</div>
+</section>
+<section id="BM2247336"><a name="BM2247336"></a>
+<h2>2247336</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_B0_DDS_SINE_LUT_FAILURE</div>
+<div class="txt">Value %d from %s Sine LUT via B0 RF failed to verify. Actual value: 0x%08x Expected value: 0x%08x</div>
+<div class="lbl">Extended Error:</div><div class="txt">A comparison of the actual vs. expected values of the Sine LUT produced a fault. This could be caused by defective hardware or software.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247337"><a name="BM2247337"></a>
+<h2>2247337</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_DP_NO_TESTS_SELECTED</div>
+<div class="txt">No Tests were selected</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2247338"><a name="BM2247338"></a>
+<h2>2247338</h2>
+<div class="sym">ERROR: EM_DIAG_RCVR_AD_CALIB_TEST_FAILURE</div>
+<div class="txt">Receiver A to D calibration diagnostics failed. Please perform a TPS reset.</div>
+</section>
+<section id="BM2247339"><a name="BM2247339"></a>
+<h2>2247339</h2>
+<div class="sym">ERROR: EM_DIAG_RCVR_GAIN_CALIB_TEST_FAILURE</div>
+<div class="txt">Receiver calibration diagnostics failed. Please perform a TPS reset.</div>
+</section>
+<section id="BM2247340"><a name="BM2247340"></a>
+<h2>2247340</h2>
+<div class="sym">ERROR: EM_DIAG_EXCTR_GAIN_CALIB_TEST_FAILURE</div>
+<div class="txt">Exciter calibration diagnostics failed. Please perform a TPS reset.</div>
+</section>
+<section id="BM2247341"><a name="BM2247341"></a>
+<h2>2247341</h2>
+<div class="sym">ERROR: EM_DIAG_RCVR_AD_OFFSET_CALIB_TEST_FAILURE</div>
+<div class="txt">Receiver ADC Offset calibration diagnostics failed. Please perform a TPS reset.</div>
+</section>
+<section id="BM2247342"><a name="BM2247342"></a>
+<h2>2247342</h2>
+<div class="sym">ERROR: EM_DIAG_RCVR_ANTIALIAS_TEST_FAILURE</div>
+<div class="txt">%s Exciter Anti-alias diagnostics failed. Please perform a TPS reset.</div>
+</section>
+<section id="BM2247343"><a name="BM2247343"></a>
+<h2>2247343</h2>
+<div class="sym">ERROR: EM_DIAG_EX_2_RX_SIGNAL_TEST_FAILURE</div>
+<div class="txt">Exciter to Receiver Signals diagnostic failed.</div>
+</section>
+<section id="BM2247344"><a name="BM2247344"></a>
+<h2>2247344</h2>
+<div class="sym">ERROR: EM_DIAG_EX_BLANK_TEST_FAILURE</div>
+<div class="txt">Exciter Blanking diagnostics failed. Please perform a TPS reset.</div>
+</section>
+<section id="BM2247345"><a name="BM2247345"></a>
+<h2>2247345</h2>
+<div class="sym">ERROR: EM_DIAG_RX_BLANK_TEST_FAILURE</div>
+<div class="txt">Receiver Blanking diagnostics failed. Please perform a TPS reset.</div>
+</section>
+<section id="BM2247346"><a name="BM2247346"></a>
+<h2>2247346</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_TO_RRF_TEST_FAILURE</div>
+<div class="txt">IRF -&gt; RRF diagnostics failed. Please perform a TPS reset.</div>
+</section>
+<section id="BM2247347"><a name="BM2247347"></a>
+<h2>2247347</h2>
+<div class="sym">ERROR: EM_DIAG_ANTIALIAS_INVALID_PARM</div>
+<div class="txt">%s parameter error when calling the Remote RF Anti-Alias datapath test.
+Value = %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is the result of a coding error. Correct the call to the function, rrfantialias().</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2247348"><a name="BM2247348"></a>
+<h2>2247348</h2>
+<div class="sym">ERROR: EM_DIAG_DATAPATHS_MALLOC_FAILED</div>
+<div class="txt">Memory allocation failed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The operating system call to malloc() failed. The system is low on available memory resources. If the problem persists, a TPS reset is required.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2247349"><a name="BM2247349"></a>
+<h2>2247349</h2>
+<div class="sym">ERROR: EM_DIAG_DATAPATHS_SEND_SCAN_SETUP_PKT_FAILED</div>
+<div class="txt">Failed to send the scan setup packet.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is the result of a cm failure. If the problem persists, a TPS reset is required.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2247350"><a name="BM2247350"></a>
+<h2>2247350</h2>
+<div class="sym">ERROR: EM_DIAG_ANTIALIAS_DACQ_FAILED_TO_RESPOND</div>
+<div class="txt">After starting sequence playout, the data acquisition task did not acknowledge that the DRF received the expected data.</div>
+<div class="lbl">Extended Error:</div><div class="txt">After the sequence playout completes, the DRF should receive the test data and set a flag, dc_dataSaved. This flag was not set, indicating there is a data transmission problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2247351"><a name="BM2247351"></a>
+<h2>2247351</h2>
+<div class="sym">ERROR: EM_DIAG_ANTIALIAS_FFT_ERROR</div>
+<div class="txt">A problem occurred why performing an FFT on the received data.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2247352"><a name="BM2247352"></a>
+<h2>2247352</h2>
+<div class="sym">ERROR: EM_DIAG_ANTIALIAS_PASSBAND_EXCEEDS_BOUNDS</div>
+<div class="txt">Anti-Alias Test Failure. Passband ripple bounds of +/- %0.3f db exceeded. Receiver Channel %d Passband Range [%d ... %d) Lower bounds %4d failures Upper bounds %4d failures Min Ampl. %f Ampl. %f Max Ampl. %f</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Receiver Board</li><li>Exciter Board</li><li>STIF Board</li></ol>
+</section>
+<section id="BM2247353"><a name="BM2247353"></a>
+<h2>2247353</h2>
+<div class="sym">ERROR: EM_DIAG_ANTIALIAS_CUTOFF_EXCEEDED</div>
+<div class="txt">Anti-Alias Test Failure. Sample at Passband Edge (cutoff) below allowed Cutoff Ampl.
+Receiver Channel: %d Lower Edge %9.6f %6s [%4d] Upper Edge %9.6f %6s [%4d] Cutoff Ampl. %9.6f (%3.1f db) Ampl. %9.6f</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Receiver Board</li><li>Exciter Board</li><li>STIF Board</li></ol>
+</section>
+<section id="BM2247354"><a name="BM2247354"></a>
+<h2>2247354</h2>
+<div class="sym">ERROR: EM_DIAG_ANTIALIAS_STOPBAND_EXCEEDED</div>
+<div class="txt">Anti-Alias Test Failure. Stopband samples exceed Stopband Ampl. Tol. Receiver Channel %d Pre-stopband %4d failures [0 ... %4d] Post-stopband %4d failures [%4d ... %4d] Stopband Ampl. %9.6f (%3.1f db) Ampl. %9.6f</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Receiver Board</li><li>Exciter Board</li><li>STIF Board</li></ol>
+</section>
+<section id="BM2247355"><a name="BM2247355"></a>
+<h2>2247355</h2>
+<div class="sym">ERROR: EM_DIAG_MUX_INIT_FAILED</div>
+<div class="txt">RRF Datapath diagnostic failed to initialize the RRF MUX board as required for diagnostics.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li><li>MUX Board</li></ol>
+</section>
+<section id="BM2247356"><a name="BM2247356"></a>
+<h2>2247356</h2>
+<div class="sym">ERROR: EM_DIAG_EX2RX_SIGNAL_PRESENT</div>
+<div class="txt">RRF %s datapath signal validation error. The RF OUT and LO signals from the exciter to the receiver are present even though the %s was blanked.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Blanking has failed. Perform a TPS reset and repeat the test. Continued problem indicate a software problem.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2247357"><a name="BM2247357"></a>
+<h2>2247357</h2>
+<div class="sym">ERROR: EM_DIAG_EX2RX_LEAKAGE</div>
+<div class="txt">RRF %s datapath signal validation error. The RF Out and LO signals from the exciter to the receiver indicate signal leakage. %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Signal leakage is caused when RF Out is disabled by the switch on the front panel I/O board. Verify the switch is not in a state whereby the RRF Out signal is disabled. Then, repeat the test. If The test still fails a software problem may exist.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2247358"><a name="BM2247358"></a>
+<h2>2247358</h2>
+<div class="sym">ERROR: EM_DIAG_EX2RX_NO_SIGNAL_RX_NO_LO</div>
+<div class="txt">RRF %s datapath signal validation error. The RF Out signal from the exciter to the receiver is not present. %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Receiver status memory indicates the detection of an LO signal. Check the RF Out cable connection between the exciter(s) and receiver(s). Verify the RRF Out switch on the front panel I/O board is not disabled. Repeat the test. If failures persist, a software problem may exist.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Cables</li><li>Exciter Board</li><li>Receiver Board</li></ol>
+</section>
+<section id="BM2247359"><a name="BM2247359"></a>
+<h2>2247359</h2>
+<div class="sym">ERROR: EM_DIAG_EX2RX_NO_SIGNAL_RX_HAS_LO</div>
+<div class="txt">RRF %s datapath signal validation error. The RF Out and/or LO signals from the exciter to the receiver are not present. %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the RF Out cable connection between the exciter(s) and receiver(s). Check the LO cable connections between the exciter(s) and receiver(s). Verify the RRF Out switch on the front panel I/O board is not disabled. Repeat the test. If failures persist, a software problem may exist.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Cables</li><li>UTNS Board</li><li>Exciter Board</li><li>Receiver Board</li><li>MUX Board</li></ol>
+</section>
+<section id="BM2247360"><a name="BM2247360"></a>
+<h2>2247360</h2>
+<div class="sym">ERROR: EM_DIAG_DATAPATHS_NO_LO_PRESENT</div>
+<div class="txt">Exciter %d does not detect the presence of an LO signal. (0=Master, 1=Slave, 2=Master and/or Slave)</div>
+<div class="lbl">Extended Error:</div><div class="txt">An IRF Driver function read status memory, which indicates the exciter does not have an LO signal. Perform a TPS reset. If the problem persists, check the exciter board indicated in the general error message.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RF Cables</li><li>Exciter Board</li><li>Receiver Board</li></ol>
+</section>
+<section id="BM2247361"><a name="BM2247361"></a>
+<h2>2247361</h2>
+<div class="sym">ERROR: EM_DIAG_DATAPATHS_FOPEN_FAILED</div>
+<div class="txt">Failed to open the file: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check file permissions, directory path existence, and ensure the file is not being viewed</div>
+</section>
+<section id="BM2247362"><a name="BM2247362"></a>
+<h2>2247362</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_STATUS_MEM_FAILURE</div>
+<div class="txt">A RRF BLD experienced a RRF Status Memory Failure when trying to read a serial number from address 0x%x with an error code of %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">There was an error when trying to read the RRF Status Memory. Make sure the data path between the MGD chassis and RRF chassis is operational.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247363"><a name="BM2247363"></a>
+<h2>2247363</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_SERIAL_NUM_FAILURE</div>
+<div class="txt">The serial number CRC check failed during the %s BLD. Serial Number: 0x%8.8lx%8.8lx Serial Number CRC: 0x%x Calculated CRC: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The serial number read from hardware does not match the CRC calculated by software. The board mentioned in the primary error message may need to be replaced.</div>
+</section>
+<section id="BM2247364"><a name="BM2247364"></a>
+<h2>2247364</h2>
+<div class="sym">ERROR: EM_DIAG_TNS_REGISTER_TEST_FAILURE</div>
+<div class="txt">DIF failed TNS Mode Register verification test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check DIF power and backplane pins. Remove and reseat DIF board and repeat diagnostics. If problem persists replace the DIF.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247365"><a name="BM2247365"></a>
+<h2>2247365</h2>
+<div class="sym">ERROR: EM_DIAG_TNS_REGISTER_BIT_FAULT</div>
+<div class="txt">DIF failed %s Register write/read/verify test. Ones Failed register mask: 0x%lx Zeroes Failed register mask: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Register Verification test failed on the DIF Board. A bit set in the Ones Failed register mask indicates a failure to set that bit. A bit set in the Zeroes Failed mask indicates a failure to clear that bit.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247366"><a name="BM2247366"></a>
+<h2>2247366</h2>
+<div class="sym">ERROR: EM_DIAG_DTNS_REGISTER_TEST_FAILURE</div>
+<div class="txt">DIF failed DTNS Register verification test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check DIF power and backplane pins. Remove and reseat DIF board and repeat diagnostics. If problem persists replace the DIF.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247367"><a name="BM2247367"></a>
+<h2>2247367</h2>
+<div class="sym">ERROR: EM_DIAG_DTNS_REGISTER_BIT_FAULT</div>
+<div class="txt">DIF failed %s Register #%d write/read/verify test. Ones Failed register mask: 0x%lx Zeroes Failed register mask: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Register Verification test failed on the DIF Board. A bit set in the Ones Failed register mask indicates a failure to set that bit. A bit set in the Zeroes Failed mask indicates a failure to clear that bit.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247368"><a name="BM2247368"></a>
+<h2>2247368</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_EXT_CLOCK_FAILURE</div>
+<div class="txt">The RRF External Clock test failed due to an unexpected value read from its status registers.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The external clock signal is recovered from the link to the RRF Chassis. An additional error message should describe the actual problem that was detected.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>Exciter Board</li><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247369"><a name="BM2247369"></a>
+<h2>2247369</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_EXT_CLOCK_REG_FAILURE</div>
+<div class="txt">The RRF External Clock test detected a fault while checking its status registers. The cause of the failure is %s.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the Gigalink fiber optic cable connections between the RRF chassis and the MGD chassis. Reset TPS and run diagnostic again to verify.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>Exciter Board</li><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247370"><a name="BM2247370"></a>
+<h2>2247370</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_UTNS_GAIN_TEST_FAILURE</div>
+<div class="txt">UTNS/Receiver Gain test failed. Examine details in previous error message.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>RRF-DIF Board</li><li>UTNS Board</li><li>Receiver Board</li></ol>
+</section>
+<section id="BM2247371"><a name="BM2247371"></a>
+<h2>2247371</h2>
+<div class="sym">ERROR: EM_ERROR_UTNS_GAIN_UPPER</div>
+<div class="txt">UTNS/Receiver Gain diagnostic failed. A gain switching error was detected where the UTNS did not switch properly resulting in higher than expected R1=8 measurements for the following receivers:
+Rx = %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the cables are properly connected between boards on the Remote RF Chassis.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>RRF-DIF Board</li><li>UTNS Board</li><li>Receiver Board</li></ol>
+</section>
+<section id="BM2247372"><a name="BM2247372"></a>
+<h2>2247372</h2>
+<div class="sym">ERROR: EM_ERROR_UTNS_GAIN_LOWER</div>
+<div class="txt">UTNS/Receiver Gain diagnostic failed. A gain switching error was detected where the Receiver board did not switch properly resulting in lower than expected R1=8 measurements for the following receivers:
+Rx = %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the cables are properly connected between boards on the Remote RF Chassis.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>RRF-DIF Board</li><li>UTNS Board</li><li>Receiver Board</li></ol>
+</section>
+<section id="BM2247373"><a name="BM2247373"></a>
+<h2>2247373</h2>
+<div class="sym">ERROR: EM_ERROR_UTNS_GAIN_LEVEL</div>
+<div class="txt">UTNS/Receiver Gain diagnostic failed. Significant energy level differences exist. The following receivers have measurements that exceed the +/- 6.0 db tolerances relative to Receiver 1:
+Rx = %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify the cables are properly connected between boards on the Remote RF Chassis. Energy measurements should be in the thousands range. If energy levels are below 100, the measurement is likely noise, which indicates the cabling is bad for the receiver(s) in question.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>RRF-DIF Board</li><li>UTNS Board</li><li>Receiver Board</li></ol>
+</section>
+<section id="BM2247374"><a name="BM2247374"></a>
+<h2>2247374</h2>
+<div class="sym">ERROR: EM_DIAG_UTNS_STATUS_FAILURE</div>
+<div class="txt">Check UTNS Status failed. UTNS Serial Number could not be read or is invalid. Examine preceding error message.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the error log to see whether errors were reported for other Remote RF boards (Exciter, Receiver, Mux, RRF-DIF). If so, verify power to the Remote RF, boards properly seated, and the Fiber Optic connection. Make sure the 20MHz clock LED on the DIF is lit (if not, make sure the Exciter is in the correct slot).</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>UTNS Board</li><li>RRF-DIF Board</li><li>Exciter Board</li><li>IRF Board</li><li>GigaLink Fiber Cable</li><li>IRF I/O Board</li></ol>
+</section>
+<section id="BM2247375"><a name="BM2247375"></a>
+<h2>2247375</h2>
+<div class="sym">ERROR: EM_DIAG_UTNS3_STATUS_FAILURE</div>
+<div class="txt">Could not find a UTNS 3 board in the RRF chassis. Check that the UTNS board is present and that its a revision 3 or newer board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the error log to see whether errors were reported for other Remote RF boards (Exciter, Receiver, Mux, RRF-DIF). If so, verify power to the Remote RF, boards properly seated, and the Fiber Optic connection. Make sure the 20MHz clock LED on the DIF is lit (if not, make sure the Exciter is in the correct slot).</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>UTNS Board</li><li>RRF-DIF Board</li><li>Exciter Board</li><li>IRF Board</li><li>GigaLink Fiber Cable</li><li>IRF I/O Board</li></ol>
+</section>
+<section id="BM2247376"><a name="BM2247376"></a>
+<h2>2247376</h2>
+<div class="sym">ERROR: EM_DIAG_UTNS3_WR_RD_FAILURE</div>
+<div class="txt">A new value written to a control register on the UTNS board was not returned to the UTNS status memory on the IRF board. Can not tell if the UTNS received the new register value.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the error log to see whether errors were reported for other Remote RF boards (Exciter, Receiver, Mux, RRF-DIF). If so, verify power to the Remote RF, boards properly seated, and the Fiber Optic connection. Make sure the 20MHz clock LED on the DIF is lit (if not, make sure the Exciter is in the correct slot).</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>UTNS Board</li><li>RRF-DIF Board</li><li>Exciter Board</li><li>IRF Board</li><li>GigaLink Fiber Cable</li><li>IRF I/O Board</li></ol>
+</section>
+<section id="BM2247377"><a name="BM2247377"></a>
+<h2>2247377</h2>
+<div class="sym">ERROR: EM_DIAG_UTNS3_GAIN_SETTING_FAILURE</div>
+<div class="txt">Failed to correctly set the High Gain - Low Gain setting on the UTNS receive channels. Expected to see value %02Xh but got %02Xh instead.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Each receiver channel on the UTNS board can be individually set to hi or lo gain. This error indicates that the hi-lo state is not being set correctly on the UTNS for one or more channels.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>UTNS Board</li></ol>
+</section>
+<section id="BM2247378"><a name="BM2247378"></a>
+<h2>2247378</h2>
+<div class="sym">ERROR: EM_DIAG_UTNS3_FALSE_SPIKE_DETECTION</div>
+<div class="txt">The noise spike counters in the RRF chassis incremented during UTNS diagnostics when the UTNS was not injecting large test spikes. The UTNS or DIF boards might be notching the RF signal unnecessarily. %d spikes detected on RF channel %d, expected 0.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The UTNS can chop out a noise spike on the receiver channels when it sees a spike larger than some preset level. This UTNS detected spikes when it should not have seen any spikes. The board could be faulty or perhaps something is injecting noise into the system. Verify that the room door is closed or disconnect the UTNS antennas from the UTNS boards while running this test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>UTNS Board</li><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247379"><a name="BM2247379"></a>
+<h2>2247379</h2>
+<div class="sym">ERROR: EM_DIAG_UTNS3_NO_SPIKE_DETECTION</div>
+<div class="txt">The UTNS board is not detecting a series of test spike signals. The noise spike detector on the UTNS may not be functioning.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The UTNS can chop out a noise spike on the receiver channels when it sees a spike larger than some preset level. This UTNS did not detect the test noise spikes injected into the signal stream. This indicates that this UTNS may be allowing real spikes to degrade images during scans.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>UTNS Board</li><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247380"><a name="BM2247380"></a>
+<h2>2247380</h2>
+<div class="sym">ERROR: EM_DIAG_UTNS_NOTCH</div>
+<div class="txt">The UTNS board did not notch the test spike signals.
+Test Failed: %s: %s. on chan %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The UTNS can chop out a noise spike on the receiver channels when it sees a spike larger than some preset level. This UTNS did not notch the test noise spikes injected into the signal stream. This indicates that this UTNS may be allowing real spikes to degrade images during scans.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>UTNS Board</li><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247381"><a name="BM2247381"></a>
+<h2>2247381</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_UTNS_NOTCH_TEST_FAILURE</div>
+<div class="txt">The UTNS board did not notch the test spike signals.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The UTNS can chop out a noise spike on the receiver channels when it sees a spike larger than some preset level. This UTNS did not notch the test noise spikes injected into the signal stream. This indicates that this UTNS may be allowing real spikes to degrade images during scans.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>UTNS Board</li><li>RRF-DIF Board</li></ol>
+</section>
+<section id="BM2247382"><a name="BM2247382"></a>
+<h2>2247382</h2>
+<div class="sym">ERROR: EM_DIAG_EXCITER_OUTPUT_EXCEEDS_BOUNDS</div>
+<div class="txt">Exciter Output Test Failure. Ripple bounds of +/- %0.3f db exceeded.
+Exciter ID: %d Frequency Range %d Hz +/- 250kHz Lower bounds %4d failures Upper bounds %4d failures Min Ampl. %f Avg. Ampl. %f Max Ampl. %f</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Exciter Board</li><li>Receiver Board</li></ol>
+</section>
+<section id="BM2247383"><a name="BM2247383"></a>
+<h2>2247383</h2>
+<div class="sym">ERROR: EM_RRF_CH2CH_VARIANCE_FAILED</div>
+<div class="txt">Test: &#x27;%s%s&#x27; diagnostic error. The signal&#x27;s channel-to-channel variance exceeded the specification for
+channel: %s.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Review the data in /usr/g/service/datamine. The summary file contains the results used for logging this error. If the file exists, the raw and processed data is available in a corresponding data file whose name contains the test iteration tag.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Receiver Board</li><li>UTNS Board</li><li>MUX Board</li></ol>
+</section>
+<section id="BM2247384"><a name="BM2247384"></a>
+<h2>2247384</h2>
+<div class="sym">ERROR: EM_RRF_DEAD_CHANNEL_FAILED</div>
+<div class="txt">Test: &#x27;%s%s&#x27; diagnostic error. The signal&#x27;s energy level is severely below the what is expected. &#x27;Dead&#x27;
+channels are: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Sys Cab and UTNS Bypass Diag: Dead channels while running these diags indicate a problem with a board in the receive chain (MUX, UTNS, Rx), or cables between the boards. Sixteen bad channels (or eight bad channels in an eight channel system would indicate a problem with the signal source, or problems other than the three receive chain boards. Eight bad channels in a 16 channel system would indicate a bad board. Swapping good boards with suspected boards is an effective way to isolate a problem. Problems with banks of channels (1-4, 5-8, etc) may indicate a problem with a receive When individual bad channels (1,8,9,16) may lead to an improperly seated cable.\n 16 Channel Switch diag: If problems exist when running this diagnostic, the Sys Cab Loopback diag should also be performed. If the Sys Cab loopback test fails too, then there is a likely problem inside the system cabinet. If the Sys Cab Loopback diag passes, there is probably a problem between the Mux and the 16 Channel Switch(inclusive). For the 16 Channel Switch results, a failure of all 16 channels would indicate a problem with the switch itself. The ports or hte oscillators could be bad. To test the oscillators, try running the Multi-Coil Receive II Diagnostic. For 8 channel failures, check the switch, corresponding ports, or specific cables. Look for trends in the failures for the various port tests.\n Multi-Coil Receive II Diagnostic: To isolate problems between the LPCA connectors and the 16 Channel Switch, the Sys Cab and 16 Channel Switch Diags should be executed first. In conjunction with those results, conclusions may be drawn as to whether the problem resides in the signals&#x27; paths.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Receiver Board</li><li>UTNS Board</li><li>MUX Board</li></ol>
+</section>
+<section id="BM2247385"><a name="BM2247385"></a>
+<h2>2247385</h2>
+<div class="sym">ERROR: EM_RRF_EXCESSIVE_NOISE_FAILED</div>
+<div class="txt">Test: &#x27;%s%s&#x27; diagnostic error. The noise energy level is too high for
+channels: %s</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Receiver Board</li><li>UTNS Board</li><li>MUX Board</li></ol>
+</section>
+<section id="BM2247386"><a name="BM2247386"></a>
+<h2>2247386</h2>
+<div class="sym">ERROR: EM_RRF_LOW_SIGNAL_FAILED</div>
+<div class="txt">Test: &#x27;%s%s&#x27; diagnostic error. The signal&#x27;s energy level is marginally below the expected value. The
+channels are: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Sys Cab and UTNS Bypass Diag: Dead channels while running these diags indicate a problem with a board in the receive chain (MUX, UTNS, Rx), or cables between the boards. Sixteen bad channels (or eight bad channels in an eight channel system would indicate a problem with the signal source, or problems other than the three receive chain boards. Eight bad channels in a 16 channel system would indicate a bad board. Swapping good boards with suspected boards is an effective way to isolate a problem. Problems with banks of channels (1-4, 5-8, etc) may indicate a problem with a receive When individual bad channels (1,8,9,16) may lead to an improperly seated cable.\n 16 Channel Switch diag: If problems exist when running this diagnostic, the Sys Cab Loopback diag should also be performed. If the Sys Cab loopback test fails too, then there is a likely problem inside the system cabinet. If the Sys Cab Loopback diag passes, there is probably a problem between the Mux and the 16 Channel Switch(inclusive). For the 16 Channel Switch results, a failure of all 16 channels would indicate a problem with the switch itself. The ports or hte oscillators could be bad. To test the oscillators, try running the Multi-Coil Receive II Diagnostic. For 8 channel failures, check the switch, corresponding ports, or specific cables. Look for trends in the failures for the various port tests.\n Multi-Coil Receive II Diagnostic: To isolate problems between the LPCA connectors and the 16 Channel Switch, the Sys Cab and 16 Channel Switch Diags should be executed first. In conjunction with those results, conclusions may be drawn as to whether the problem resides in the signals&#x27; paths.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Receiver Board</li><li>UTNS Board</li><li>MUX Board</li></ol>
+</section>
+<section id="BM2247387"><a name="BM2247387"></a>
+<h2>2247387</h2>
+<div class="sym">ERROR: EM_RRF_PRE_AMP_FAILED</div>
+<div class="txt">Test: &#x27;%s%s&#x27; diagnostic error. The noise energy level is lower than expected for
+channels: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Because of the pre-amps, a certain noise level is expected. When noise measurements are very low, the most likely cause is the pre-amp for the corresponding channel(s)..</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Receiver Board</li><li>UTNS Board</li><li>MUX Board</li></ol>
+</section>
+<section id="BM2247388"><a name="BM2247388"></a>
+<h2>2247388</h2>
+<div class="sym">ERROR: EM_DIAG_RX_LO_PRESENT_ERR</div>
+<div class="txt">Rx LO Present Error. The LO signal was not detected on the receiver board for the %d channel system:
+%s</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Exciter Board</li></ol>
+</section>
+<section id="BM2247389"><a name="BM2247389"></a>
+<h2>2247389</h2>
+<div class="sym">ERROR: EM_DIAG_NUM_OF_CHANNELS_MISMATCH</div>
+<div class="txt">The number of rx channels detected does not match the expected. Testing is limited to the number of devices detected. Validate that the fiber connection between the RRF and IRF is operational.
+Expected: %d channels
+Actual detected: %d channels</div>
+<div class="lbl">Extended Error:</div><div class="txt">The expected number of channels is determined by the option keys enabling the various number of channels of operation. The actual number of channels is determined by looking at the gigalink connections between the IRF and DIF. Each connections is equal to 8 channels. A mismatch means that one or more of the links are down or the wrong option key has been installed.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRF-DIF Board</li><li>IRF Board</li><li>IRF I/O Board</li><li>GigaLink Fiber Cable</li></ol>
+</section>
+<section id="BM2247390"><a name="BM2247390"></a>
+<h2>2247390</h2>
+<div class="sym">ERROR: EM_DIAG_CANNOT_RUN_COIL_CONNECTED</div>
+<div class="txt">A coil was detected on the legacy, LPCA A, and.or LPCA B ports. This diagnostic cannot be performed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">While the pass/fail version of this diagnostic prohibits execution when a coil is detected, the functional version of this diagnostic provides override controls that allow the diagnostic to be executed when a coil is detected.</div>
+</section>
+<section id="BM2247391"><a name="BM2247391"></a>
+<h2>2247391</h2>
+<div class="sym">ERROR: EM_IS_COIL_CONN_SEND_SLAVE_FAILED</div>
+<div class="txt">Slave API failure: could not execute the function %s(). TPS reset may be necessary.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Examine the error log for other related errors. If other error messages do not resolve the problem, a TPS reset, or host reset may be necessary.
+If the readCoilIdInfo() function has failed, TPS reset and retry the diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2247392"><a name="BM2247392"></a>
+<h2>2247392</h2>
+<div class="sym">ERROR: EM_IS_COIL_CONN_READ_FAILED</div>
+<div class="txt">The function %s() failed to successfully read the coil ID information.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the SRI interface. If the SRI interface appears to be working properly, the shared memory database is a possible problem source. Examine the error log. Lastly, re-execute the diagnostic with the APS and SCP windows open. If problems persist that are related to shared memory, a host reset is required.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2247393"><a name="BM2247393"></a>
+<h2>2247393</h2>
+<div class="sym">ERROR: EM_IS_COIL_CONN_SEMA_NOT_FOUND</div>
+<div class="txt">Could not check the presence of the coil. An error occurred while trying to read the \%s\&quot; shared memory. smNameFind error code = %d&quot;</div>
+<div class="lbl">Extended Error:</div><div class="txt">A significant problem exists when a shard memory resource could not be located using the smNameFind(...) call. Examine the error log for other related errors. Persistent shared memory errors require a host reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2247394"><a name="BM2247394"></a>
+<h2>2247394</h2>
+<div class="sym">ERROR: EM_RRF_EXCESSIVES_SIGNAL_FAILED</div>
+<div class="txt">Test: &#x27;%s%s&#x27; diagnostic error. The signal energy level is too high for
+channels: %s</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Receiver Board</li><li>UTNS Board</li><li>MUX Board</li></ol>
+</section>
+<section id="BM2247395"><a name="BM2247395"></a>
+<h2>2247395</h2>
+<div class="sym">ERROR: EM_DIAG_ANTIALIAS_MEMORY_CORRUPTION</div>
+<div class="txt">APS detected memory corruption while creating output filename \ for the anti-alias test. This is a software issue, not recommended to replace \ hardware for this error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is the result of a coding mistake. Please contact the software team.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2247600"><a name="BM2247600"></a>
+<h2>2247600</h2>
+<div class="sym">ERROR: EM_DIAG_HPI_REGISTER_FAIL</div>
+<div class="txt">HPI Register Verification Test failure. %s %s in Slot %d failed HPI write verify test:
+Dynamic Base Address: 0x%lx Static Register Offset: 0x%lx Bits not Clearable: 0x%lx Bits not Settable: 0x%lx</div>
+</section>
+<section id="BM2247601"><a name="BM2247601"></a>
+<h2>2247601</h2>
+<div class="sym">ERROR: EM_DIAG_WR_REG_TEST_FAIL</div>
+<div class="txt">Register Write Verification Test failure. %s %s in Slot %d failed the write verify test:
+Dynamic Base Address: 0x%lx Static Register Offset: 0x%lx Bits not Clearable: 0x%lx Bits not Settable: 0x%lx</div>
+</section>
+<section id="BM2247602"><a name="BM2247602"></a>
+<h2>2247602</h2>
+<div class="sym">ERROR: EM_DIAG_INIT_REG_TEST_FAIL</div>
+<div class="txt">Register Initial Value Test failure. %s %s in Slot %d failed initial value Test:
+Dynamic Base Address: 0x%lx Static Register Offset: 0x%lx Value Read: 0x%lx Value Expected: 0x%lx</div>
+</section>
+<section id="BM2247603"><a name="BM2247603"></a>
+<h2>2247603</h2>
+<div class="sym">ERROR: EM_DIAG_SEMAPHORE_TEST_ERR</div>
+<div class="txt">%s %s in Slot %d failed the semaphore Test:
+Failure type: %d (%s) Dynamic Base Address: 0x%lx Static Register Offset: 0x%lx Value Read: 0x%lx Value Expected: 0x%lx</div>
+</section>
+<section id="BM2247604"><a name="BM2247604"></a>
+<h2>2247604</h2>
+<div class="sym">ERROR: EM_DIAG_BOARD_NOT_PRESET_ERR</div>
+<div class="txt">The %s board is not present. Testing of this board has been aborted.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated anytime the operating system cannot detect the presence of the board under test. There are several reasons for this:
+1)The board is missing from the system. 2)The PCI interface located on the board is not operational. 3)Backplane connecting the board with the CPU is defective. 4)Bent pins. Check the connector. 5)Board is not seated properly.</div>
+</section>
+<section id="BM2247605"><a name="BM2247605"></a>
+<h2>2247605</h2>
+<div class="sym">ERROR: EM_DIAG_INVALID_PARAM_ERR</div>
+<div class="txt">Diagnostic software error. Invalid test parameter selected.
+Value: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error can be caused by corrupted software or a software error not detected during validation. The error can also point to a failing memory. Rerun the test and verify the problem is consistent. If so, try replacing or swapping the CPU. If problem persists, write a CQA with this error message included.</div>
+</section>
+<section id="BM2247606"><a name="BM2247606"></a>
+<h2>2247606</h2>
+<div class="sym">ERROR: EM_DIAG_HPI_DPR_ERR</div>
+<div class="txt">Dual Port RAM (DPR) failure. %s %s in Slot %d failed the HPI DPR Test:
+Dynamic Base Address: 0x%lx HPI Base Address: 0x%lx DSP failed address: 0x%lx Value Written: 0x%lx Value Read: 0x%lx</div>
+</section>
+<section id="BM2247607"><a name="BM2247607"></a>
+<h2>2247607</h2>
+<div class="sym">ERROR: EM_DIAG_HPI_PRG_MEM_ERR</div>
+<div class="txt">%s %s in Slot %d failed HPI Internal Program Memory Test:
+Dynamic Base Address: 0x%lx HPI Base Address: 0x%lx DSP failed address: 0x%lx Value Written: 0x%lx Value Read: 0x%lx</div>
+</section>
+<section id="BM2247608"><a name="BM2247608"></a>
+<h2>2247608</h2>
+<div class="sym">ERROR: EM_DIAG_HPI_DATA_MEM_ERR</div>
+<div class="txt">%s %s in Slot %d failed HPI Internal Data Memory Test:
+Dynamic Base Address: 0x%lx HPI Base Address: 0x%lx DSP failed address: 0x%lx Value Written: 0x%lx Value Read: 0x%lx</div>
+</section>
+<section id="BM2247609"><a name="BM2247609"></a>
+<h2>2247609</h2>
+<div class="sym">ERROR: EM_DIAG_HPI_SSRAM_ERR</div>
+<div class="txt">%s %s in Slot %d failed HPI External DSP RAM Memory Test:
+Dynamic Base Address: 0x%lx HPI Base Address: 0x%lx DSP failed address: 0x%lx Value Written: 0x%lx Value Read: 0x%lx</div>
+</section>
+<section id="BM2247610"><a name="BM2247610"></a>
+<h2>2247610</h2>
+<div class="sym">ERROR: EM_DIAG_HPI_TRANS_ERR</div>
+<div class="txt">%s DSP %d in Slot %d failed the HPI Transfer Test:
+Failure type: %d (%s) Dynamic Base Address: 0x%lx HPI Register Offset: 0x%lx DSP Address Written: 0x%lx Value Written: 0x%lx Value Read: 0x%lx</div>
+</section>
+<section id="BM2247611"><a name="BM2247611"></a>
+<h2>2247611</h2>
+<div class="sym">ERROR: EM_DIAG_HPI_OPEN_ERROR</div>
+<div class="txt">%s HPI open failure. Connection to the C6x HPI interface is not open. Board may not be present.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This Host Port Interface (HPI) enables direct access to the DSP bus via the PCI interface. This error can indicate the device is in use or can not be found. If problem persists, perform a TPS Reset.</div>
+</section>
+<section id="BM2247612"><a name="BM2247612"></a>
+<h2>2247612</h2>
+<div class="sym">ERROR: EM_DIAG_C6X_SETUP_FAILURE</div>
+<div class="txt">%s %s in Slot %d failed to run due to setup failure.
+Failure type: %d (%s)</div>
+</section>
+<section id="BM2247613"><a name="BM2247613"></a>
+<h2>2247613</h2>
+<div class="sym">ERROR: EM_DIAG_BOARD_REV_ERROR</div>
+<div class="txt">%s in slot %d board revision could not be read. Board may not be present.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated anytime the operating system cannot detect the presence of the board under test. There are several reasons for this:
+1)The board is missing from the system. 2)The PCI interface located on the board is not operational. 3)Backplane connecting the board with the CPU is defective. 4)Bent pins. Check the connector.
+5) Board is not seated properly.</div>
+</section>
+<section id="BM2247614"><a name="BM2247614"></a>
+<h2>2247614</h2>
+<div class="sym">ERROR: EM_DIAG_DMA_NOT_RESIDENT_ERROR</div>
+<div class="txt">%s board does not have a DMA circuit to test. DMA test aborted.</div>
+</section>
+<section id="BM2247615"><a name="BM2247615"></a>
+<h2>2247615</h2>
+<div class="sym">ERROR: EM_DIAG_PLX_REGISTER_ERROR</div>
+<div class="txt">%s PLX in slot %d failed the read write test. Dynamic Base Address: 0x%lx Board Offset: 0x%lx</div>
+</section>
+<section id="BM2247616"><a name="BM2247616"></a>
+<h2>2247616</h2>
+<div class="sym">ERROR: EM_DIAG_DMA_BLOCK_ABORT_ERROR</div>
+<div class="txt">%s DMA in slot %d failed the DMA Block Abort Test.
+Error code: %d
+CPU DMA loc: %d
+Channel: %d CPU Source Mem: 0x%lx
+DMA Brd Loc: %d DMA Brd Mem: 0x%lx</div>
+</section>
+<section id="BM2247617"><a name="BM2247617"></a>
+<h2>2247617</h2>
+<div class="sym">ERROR: EM_DIAG_DMA_BLOCK_ERROR</div>
+<div class="txt">%s DMA in slot %d failed the DMA Block Test.
+Error code: %d
+CPU DMA loc: %d
+Channel: %d CPU Source Mem: 0x%lx
+DMA Brd Loc: %d DMA Brd Mem: 0x%lx</div>
+</section>
+<section id="BM2247618"><a name="BM2247618"></a>
+<h2>2247618</h2>
+<div class="sym">ERROR: EM_DIAG_DMA_SCATTER_GATHER_ERROR</div>
+<div class="txt">%s DMA in slot %d failed the DMA Scatter Gather Test.
+Error code: %d
+CPU DMA loc: %d
+Channel: %d CPU Source Mem: 0x%lx CPU Dest Mem: 0x%lx
+DMA Brd Loc: %d DMA Brd Mem: 0x%lx</div>
+</section>
+<section id="BM2247619"><a name="BM2247619"></a>
+<h2>2247619</h2>
+<div class="sym">ERROR: EM_DIAG_C6X_INIT_REG_TEST_FAIL</div>
+<div class="txt">DSP Register Initial Value Test failure. %s %s %s in Slot %d failed initial value Test via the HPI:
+DSP Base Address: 0x%lx Value Read: 0x%lx Value Expected: 0x%lx</div>
+</section>
+<section id="BM2247620"><a name="BM2247620"></a>
+<h2>2247620</h2>
+<div class="sym">ERROR: EM_DIAG_C6X_REG_TEST_FAIL</div>
+<div class="txt">DSP Register Read and Write Verification Test failure. %s %s %s in Slot %d failed the write verify test via the HPI:
+DSP Base Address: 0x%lx Bits not Clearable: 0x%lx Bits not Settable: 0x%lx</div>
+</section>
+<section id="BM2247621"><a name="BM2247621"></a>
+<h2>2247621</h2>
+<div class="sym">ERROR: EM_DIAG_GET_BASE_ADDR_ERROR</div>
+<div class="txt">Failure occurred getting the base address for the %s board. Board may not be present.
+Base ID: %d
+Base type: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated anytime the operating system cannot detect the presence of the board under test. There are several reasons for this:
+1) The board is missing from the system.
+2) The PCI interface located on the board is not operational.
+3) Backplane connecting the board with the CPU is defective.
+4) Bent pins. Check the connector.
+5) Board is not seated properly.</div>
+</section>
+<section id="BM2247622"><a name="BM2247622"></a>
+<h2>2247622</h2>
+<div class="sym">ERROR: EM_DIAG_GET_BOARD_REV_ERROR</div>
+<div class="txt">Failure occurred getting the board revision for the %s. Board may not be present.
+Board type: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated anytime the operating system cannot detect the presence of the board under test. There are several reasons for this:
+1)The board is missing from the system. 2)The PCI interface located on the board is not operational. 3)Backplane connecting the board with the CPU is defective. 4)Bent pins. Check the connector. 5)Board is not seated properly.</div>
+</section>
+<section id="BM2247623"><a name="BM2247623"></a>
+<h2>2247623</h2>
+<div class="sym">ERROR: EM_DIAG_GET_BOARD_TYPE_ERROR</div>
+<div class="txt">Failure occurred getting the CPU board type for the %s.</div>
+</section>
+<section id="BM2247624"><a name="BM2247624"></a>
+<h2>2247624</h2>
+<div class="sym">ERROR: EM_DIAG_GET_SIGNATURE_ERROR</div>
+<div class="txt">Failure occurred getting the signature for the %s. Board may not be present.
+Board type: %d</div>
+</section>
+<section id="BM2247625"><a name="BM2247625"></a>
+<h2>2247625</h2>
+<div class="sym">ERROR: EM_DIAG_GET_SLOT_NUM_ERROR</div>
+<div class="txt">Failure occurred getting the slot number for the %s. Board may not be present.
+Board type: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated anytime the operating system cannot detect the presence of the board under test. There are several reasons for this:
+1)The board is missing from the system. 2)The PCI interface located on the board is not operational. 3)Backplane connecting the board with the CPU is defective. 4)Bent pins. Check the connector. 5)Board is not seated properly.</div>
+</section>
+<section id="BM2247626"><a name="BM2247626"></a>
+<h2>2247626</h2>
+<div class="sym">ERROR: EM_DIAG_REG_WR_ERROR</div>
+<div class="txt">Register Write Verification failure. %s %s in Slot %d did not contain the correct value after a write. Dynamic Base Address: 0x%lx Static Register Offset: 0x%lx Expected value: 0x%lx Actual value: 0x%lx</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this is the only register that indicates a failure, the problem is most likely on the indicated board. If all the registers are failing, try to reseat the board before replacing it. However, if this problem or a similar problem is being reported by other boards, check the backplane and CPU board.</div>
+</section>
+<section id="BM2247700"><a name="BM2247700"></a>
+<h2>2247700</h2>
+<div class="sym">ERROR: EM_C6X_DIAG_ALU_TEST_ERROR</div>
+<div class="txt">%s DSP%d in Slot %d failed the DSP ALU/Opcode test.
+Expected value: %d
+Actual value: %d</div>
+</section>
+<section id="BM2247701"><a name="BM2247701"></a>
+<h2>2247701</h2>
+<div class="sym">ERROR: EM_C6X_DIAG_DUART_REG_RW_TEST_ERROR</div>
+<div class="txt">%s DSP%d in Slot %d failed the DSP DUART Register read/write test.
+DUART: %d Value written: 0x%lx Value read: 0x%lx</div>
+</section>
+<section id="BM2247702"><a name="BM2247702"></a>
+<h2>2247702</h2>
+<div class="sym">ERROR: EM_C6X_DIAG_DUART_INT_IL_ERROR</div>
+<div class="txt">%s DSP%d in Slot %d failed the DSP DUART interrupt test.
+DUART: %d Value written: 0x%lx Value read: 0x%lx</div>
+</section>
+<section id="BM2247703"><a name="BM2247703"></a>
+<h2>2247703</h2>
+<div class="sym">ERROR: EM_C6X_DIAG_DUART_INTER_LOOPBACK_ERROR</div>
+<div class="txt">%s DSP%d in Slot %d failed the DSP DUART internal loopback test.
+DUART: %d Value written: 0x%lx Value read: 0x%lx</div>
+</section>
+<section id="BM2247704"><a name="BM2247704"></a>
+<h2>2247704</h2>
+<div class="sym">ERROR: EM_C6X_DIAG_DUART_INT_EL_ERROR</div>
+<div class="txt">%s DSP%d in Slot %d failed the DSP DUART external loopback interrupt test.
+DUART: %d Value written: 0x%lx Value read: 0x%lx</div>
+</section>
+<section id="BM2247705"><a name="BM2247705"></a>
+<h2>2247705</h2>
+<div class="sym">ERROR: EM_C6X_DIAG_DUART_EXTERN_LOOPBACK_ERROR</div>
+<div class="txt">%s DSP%d in Slot %d failed the DSP DUART external loopback test.
+DUART: %d Value written: 0x%lx Value read: 0x%lx</div>
+</section>
+<section id="BM2247706"><a name="BM2247706"></a>
+<h2>2247706</h2>
+<div class="sym">ERROR: EM_C6X_DIAG_MEMORY_ERROR</div>
+<div class="txt">%s DSP%d in Slot %d failed the DSP Memory Read Write test. DSP Address: 0x%lx Value written: 0x%lx Value read: 0x%lx</div>
+</section>
+<section id="BM2247707"><a name="BM2247707"></a>
+<h2>2247707</h2>
+<div class="sym">ERROR: EM_C6X_DIAG_INT_ERROR</div>
+<div class="txt">%s DSP%d in Slot %d failed the DSP interrupt verification test. Interrupt %d failed to execute.</div>
+</section>
+<section id="BM2247708"><a name="BM2247708"></a>
+<h2>2247708</h2>
+<div class="sym">ERROR: EM_C6X_DIAG_TIMER_FAILURE</div>
+<div class="txt">%s DSP%d in Slot %d failed the DSP Timer verification test.
+Timer: %d</div>
+</section>
+<section id="BM2247709"><a name="BM2247709"></a>
+<h2>2247709</h2>
+<div class="sym">ERROR: EM_C6X_DIAG_DMA_FAILURE</div>
+<div class="txt">%s DSP%d in Slot %d failed the DSP DMA verification test.
+Source DMA: %d
+Destination DMA: %d Value written: 0x%lx Value read: 0x%lx</div>
+</section>
+<section id="BM2247710"><a name="BM2247710"></a>
+<h2>2247710</h2>
+<div class="sym">ERROR: EM_C6X_DIAG_WARP_SER_FAILURE</div>
+<div class="txt">%s DSP%d in Slot %d failed the WARP Serial verification test.
+Data Segment: %d Expected Value: 0x%x Received Value: 0x%lx
+ISR Count: %d</div>
+</section>
+<section id="BM2247711"><a name="BM2247711"></a>
+<h2>2247711</h2>
+<div class="sym">ERROR: EM_C6X_DIAG_SPU_SER_FAILURE</div>
+<div class="txt">%s DSP%d in Slot %d failed the SPU Serial verification test. Expected Value: 0x%x Received Value: 0x%lx
+ISR Count: %d</div>
+</section>
+<section id="BM2247712"><a name="BM2247712"></a>
+<h2>2247712</h2>
+<div class="sym">ERROR: EM_C6X_DIAG_WRONG_CPU_ERROR</div>
+<div class="txt">%s DSP%d in Slot %d has the wrong CPU.
+Expected value: %d
+Actual value: %d</div>
+</section>
+<section id="BM2247713"><a name="BM2247713"></a>
+<h2>2247713</h2>
+<div class="sym">ERROR: EM_C6X_DIAG_WARP_WMI_SER_FAILURE</div>
+<div class="txt">%s DSP%d in Slot %d failed the WARP WMI Serial verification test. Expected Value: 0x%x Received Value: 0x%lx</div>
+</section>
+<section id="BM2247714"><a name="BM2247714"></a>
+<h2>2247714</h2>
+<div class="sym">ERROR: EM_C6X_DIAG_WARP_WMI_FLOW_FAILURE</div>
+<div class="txt">%s DSP%d in Slot %d failed the WARP WMI Flow Control Verification test.</div>
+</section>
+<section id="BM2247800"><a name="BM2247800"></a>
+<h2>2247800</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_MALLOC_ERR</div>
+<div class="txt">System software error. Error performing a malloc. Reset host and try again.
+Bytes requested: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">Malloc allocates memory for process use. This error can be caused by lack of available memory or a system failure.</div>
+</section>
+<section id="BM2247801"><a name="BM2247801"></a>
+<h2>2247801</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_EMTIMERSET_ERR</div>
+<div class="txt">Operating System software error. Error performing a emTimerSet. Reset host and try again.
+Timeout: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The emTimerSet routine sets a timer to wakeup this process in the event an action does not occur in the allotted time. Error is most likely a software failure.</div>
+</section>
+<section id="BM2247802"><a name="BM2247802"></a>
+<h2>2247802</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_MRMAIL_INIT_ERR</div>
+<div class="txt">Operating System software error. Error performing a mrmail_init. This might indicate that the Host can not talk to the MGD chassis. Reset host and try again.
+NMRID: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The mrmail_init routine initializes communication resources that allow the host to send and receive the MR_mail messages. The host uses these messages to communicate between internal processes and to software components in the MGD chassis. Verify that the MGD chassis is alive and that the ethernet cables and ethernet hub are good.</div>
+</section>
+<section id="BM2247803"><a name="BM2247803"></a>
+<h2>2247803</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_MRMAILNOTIFY_ERR</div>
+<div class="txt">Operating System software error. Error performing a mrmailNotify. Reset host and try again.
+Event: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The mrmailNotify routine enables the process to receive mrmail from other processes. Error is most likely a software failure.</div>
+</section>
+<section id="BM2247804"><a name="BM2247804"></a>
+<h2>2247804</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_MRMAIL_SEND_ERR</div>
+<div class="txt">Operating System software error. Error performing a mrmail_send.
+Dest: %s
+Code: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The mrmail_send routine sends a message to other processes and hosts. Error is most likely a software failure.</div>
+</section>
+<section id="BM2247805"><a name="BM2247805"></a>
+<h2>2247805</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_WEB_CMD_ERR</div>
+<div class="txt">System software error. Unknown UIF command was received from the browser.
+Command: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error can be caused by a bad network or corrupted software.</div>
+</section>
+<section id="BM2247806"><a name="BM2247806"></a>
+<h2>2247806</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_TEST_CONFIG_ABORT_ERR</div>
+<div class="txt">The present system configuration does not support the %s diagnostic test. Test will not be executed.
+HW Config list: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated if the selected test can not be run on any of the operating CPU&#x27;s. For instance, an error is generated if a test can only be run on the SCP and the SCP is not responding. With in the actual error message is a field called HW Config list. This list contains all the nodes that have responded to a diagnostic query. Check the list for a missing controller and confirm that the hardware has completed its reset and the diagnostic code has loaded.</div>
+</section>
+<section id="BM2247807"><a name="BM2247807"></a>
+<h2>2247807</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_SOCKET_DISCONNECT_ERR</div>
+<div class="txt">The socket connection with the %d node has failed. Closing socket and retrying communications.
+fd: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated if the socket connection between the host and a node fails. This could be caused by a reset, ethernet failure, or software error.</div>
+</section>
+<section id="BM2247808"><a name="BM2247808"></a>
+<h2>2247808</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_WEB_TEST_SOCKET_ERR</div>
+<div class="txt">The socket connection with the browser has failed during a test. All testing will be aborted.
+fd: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error can be caused by an abnormal termination of the browser. Rerun the test and try again.</div>
+</section>
+<section id="BM2247809"><a name="BM2247809"></a>
+<h2>2247809</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_EMSIGNALNOTIFY_ERR</div>
+<div class="txt">Operating System software error. Error performing an emSignalNotify. Reset host and try again.
+Signal: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The emSignalNotify routine registers a UNIX signal with the Event Manager. Without this routine, the process will not handle UNIX signals correctly. Error is most likely a software failure.</div>
+</section>
+<section id="BM2247810"><a name="BM2247810"></a>
+<h2>2247810</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_MRMAILEVENTNOTIFY_ERR</div>
+<div class="txt">Operating System software error. Error performing a mrmailEventNotify. Reset host and try again.
+Event: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The mrmailEventNotify routine enables the process to receive events from other processes. Error is most likely a software failure.</div>
+</section>
+<section id="BM2247811"><a name="BM2247811"></a>
+<h2>2247811</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_FORK_ERR</div>
+<div class="txt">Operating System software error. Error performing a fork of the %s process. This will be retried when diagnostics are rerun.</div>
+</section>
+<section id="BM2247812"><a name="BM2247812"></a>
+<h2>2247812</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_EXEC_ERR</div>
+<div class="txt">Operating System software error. Error performing an exec of the %s process. This will be retried when diagnostics are rerun.</div>
+<div class="lbl">Extended Error:</div><div class="txt">A system exec call causes a new processes to be executed on the host. This failure can be caused by the previous execution of the process being hung.</div>
+</section>
+<section id="BM2247813"><a name="BM2247813"></a>
+<h2>2247813</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_EMUSEREVENTQ_ERR</div>
+<div class="txt">Operating System software error. Error performing an emUserEventQ. Reset host and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The emUserEventQ routine enables the process to execute routines associated with a system event. The failure of this call prevents the processes from performing the necessary operations based on event received.</div>
+</section>
+<section id="BM2247814"><a name="BM2247814"></a>
+<h2>2247814</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_DC_READ_SOCK_CLOSE_ERR</div>
+<div class="txt">Diagnostic Communications (DC) error. Error when reading socket connection. An automatic attempt will be made to recover.
+File descriptor: %d
+Object: %s
+Error code: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is usually generated if the device on the other end of the socket is no longer preset. This can occur if a reset occurred or the system crashed. Sockets are used to communicate between processes or between hosts.</div>
+</section>
+<section id="BM2247815"><a name="BM2247815"></a>
+<h2>2247815</h2>
+<div class="sym">ERROR: EM_DIAG_DHI_CONNECTION_ERR</div>
+<div class="txt">The Diagnostic Coordinator failed to connect to Diagnostic Host Interface (DHI). This error prevents diagnostics from being executed during scanning and prevents automatic resets before scanning.</div>
+</section>
+<section id="BM2247816"><a name="BM2247816"></a>
+<h2>2247816</h2>
+<div class="sym">ERROR: EM_DIAG_EXEC_CONNECTION_LOST_ERR</div>
+<div class="txt">The socket connection between the Diagnostic Coordinator and Executive has been lost. Process is exiting. Rerun any test to clear this error.
+Error code: %d</div>
+</section>
+<section id="BM2247817"><a name="BM2247817"></a>
+<h2>2247817</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_NODE_RESPONSE_TMO_ERR</div>
+<div class="txt">The %s failed to respond in the allotted time. Testing will be aborted. Perform a TPS reset if problem persists.
+State: %s
+Time out: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">A message time out can be caused by many types of failures: Loss of communications, node reset, software hang, ect.. Verify that the node is still alive by pinging it or rerunning the test.</div>
+</section>
+<section id="BM2247818"><a name="BM2247818"></a>
+<h2>2247818</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_EMUSEREVENTNOTIFY_ERR</div>
+<div class="txt">Operating System software error. Error performing an emUserEventNotify. Reset host and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The emUserEventNotify routine enables the process to execute routines associated with a system event. The failure of this call prevents the processes from performing the necessary operations based on event received.</div>
+</section>
+<section id="BM2247819"><a name="BM2247819"></a>
+<h2>2247819</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_DHI_RESP_TMO_ERR</div>
+<div class="txt">The Diagnostic Host Interface (DHI) failed to respond in the allotted time. This error can prevent diagnostics from running if the system is scanning! Reset host and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This process links the system to the diagnostic environment. System events such as scanning, resets, and reset completes will no longer be received as long as this error is present.</div>
+</section>
+<section id="BM2247820"><a name="BM2247820"></a>
+<h2>2247820</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_INVALID_RX_ERR</div>
+<div class="txt">The Diagnostic Coordinator has received an invalid Test Prescription. Please try selecting another test. If problem persists, reload the diagnostic software. One or more files have been corrupted.
+Invalid string: %s</div>
+</section>
+<section id="BM2247821"><a name="BM2247821"></a>
+<h2>2247821</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_INVALID_UPDATE_TEST_NUMBER_ERR</div>
+<div class="txt">The Diagnostic Coordinator has received an invalid Test number when processing a test update. All testing on the %s will be aborted. Please try selecting another test. If problem persists, perform a TPS reset.
+Test number: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated any time a test update packet is received with an undefined test number. The error prevents the successful update of the test information which could cause a infinit loop to occur. The problem is most likely do to a software or memory failure.</div>
+</section>
+<section id="BM2247822"><a name="BM2247822"></a>
+<h2>2247822</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_TEST_TMO_ERR</div>
+<div class="txt">The %s diagnostic test in the %s failed to respond in the allotted time. This test will be aborted. Perform a TPS reset if problem persists.
+Time out: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">A message time out can be caused by many types of failures: Loss of communications, node reset, software hang, ect.. Verify that the node is still alive by pinging it or rerunning the test.</div>
+</section>
+<section id="BM2247823"><a name="BM2247823"></a>
+<h2>2247823</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_RCVD_OWN_MSG_ERR</div>
+<div class="txt">The Diagnostic Coordinator has received a message that was sent to another host process. The socket will be closed to prevent an infinit loop form occurring. Perform a TPS reset if problem persists.
+To obj ID: %d
+Msg code: %d
+FD: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated any time a message is sent to another host process and is received by the process sending the message. The error indicates that the socket used to send the message is not correctly connected or the database which identifies the socket has been corrupted. In ether case, the problem is a isolated to software or memory failure.</div>
+</section>
+<section id="BM2247824"><a name="BM2247824"></a>
+<h2>2247824</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_TEST_CFG_FILE_RD_ERR</div>
+<div class="txt">The %s file has been corrupted. Diagnostics testing may be disabled.
+Test name: %s
+Missing parameters: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error indicates that one or more files used to control the configuration of the diagnostic environment has been corrupted. This may require a load from cold to fix if a host reset does not clear the problem.</div>
+</section>
+<section id="BM2247825"><a name="BM2247825"></a>
+<h2>2247825</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_TEST_CFG_FILE_OPEN_ERR</div>
+<div class="txt">The %s file could not be opened for reading. Diagnostics testing may be disabled.
+Error code: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error can be generated for the following reasons:
+1) File is missing or has been renamed.
+2) File does not have read access.
+3) System error in reading the file In any event, the error can be fixed by replacing the file.</div>
+</section>
+<section id="BM2247826"><a name="BM2247826"></a>
+<h2>2247826</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_GETCFG_ERR</div>
+<div class="txt">Error reading the configuration file. Diagnostics testing may be disabled.
+Parameter: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error can be generated for the following reasons:
+1) File is missing or has been renamed.
+2) File does not have read access.
+3) Parameter is missing from the file.
+4) File was corrupted.
+5) System error in reading the file In any event, the error can be fixed by replacing the file.</div>
+</section>
+<section id="BM2247827"><a name="BM2247827"></a>
+<h2>2247827</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_NON_PROP_ACCESS_ERR</div>
+<div class="txt">Access to the %s test has been denied. This test has not been enabled for nonproprietary use.</div>
+</section>
+<section id="BM2247828"><a name="BM2247828"></a>
+<h2>2247828</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_PROP_ACCESS_ERR</div>
+<div class="txt">Access to the %s test has been denied. This test has not been enabled for proprietary use.</div>
+</section>
+<section id="BM2247829"><a name="BM2247829"></a>
+<h2>2247829</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_REMOTE_ACCESS_ERR</div>
+<div class="txt">Access to the %s test has been denied. This test has not been enabled for remote use.</div>
+</section>
+<section id="BM2247830"><a name="BM2247830"></a>
+<h2>2247830</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_INVALID_PARAM_WEB_ERR</div>
+<div class="txt">Error parsing a message from the UIF. Message is being ignored.
+Command: %s
+Parameter: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated anytime an invalid message is received from the user interface. The Diagnostic Coordinator could not dnecode it. This error can be caused be a faulty communications connection, corrupted code, or the UIF needs to be reset the browser.</div>
+</section>
+<section id="BM2247831"><a name="BM2247831"></a>
+<h2>2247831</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_POPUP_WEB_SEND_ERR</div>
+<div class="txt">Error sending popup request to the web.
+fd: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated anytime an error is detected sending a popup request. This can be due to a socket failure between the Diagnostic Coordinator and the browser.</div>
+</section>
+<section id="BM2247832"><a name="BM2247832"></a>
+<h2>2247832</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_HOSTNAME_LOCAL_IP_CONV_ERR</div>
+<div class="txt">Error converting the host name into a host address for %s. Diagnostic access by this host will NOT be handled correctly. Check host file for entry. Errno: (%d) %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The gethostbyname() routine could not find the IP address for the given host name. This will cause the Diagnostic Coordinator to process any request from this host as a remote access. In most cases, this should be no problem. However, there are tests which will be inhibited by this error. Check the host file in the etc directory for this entry.</div>
+</section>
+<section id="BM2247833"><a name="BM2247833"></a>
+<h2>2247833</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_LOCAL_IP_LIST_ERR</div>
+<div class="txt">Local host names contained in the configuration file contained one or more errors. Replaces file and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated anytime the list of local host names contained in the diagCoord.cfg file is incorrect. This will cause the Diagnostic Coordinator to process all requests as though they were remote accesses. In most cases, this should be no problem. However, there are tests which will be inhibited by this error.</div>
+</section>
+<section id="BM2247834"><a name="BM2247834"></a>
+<h2>2247834</h2>
+<div class="sym">ERROR: EM_DIAG_PLAT_ACCESS_GETSOCKNAME_ERR</div>
+<div class="txt">Operating system software error. The getsockname routine failed for fd %d. Perform a reset to correct the problem. Errno: (%d) %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">The getsockname() routine is an OS call which converts a socket descriptor into an address. This will cause the Diagnostic Coordinator to process all requests as though they were remote accesses. In most cases, this should be no problem. However, there are tests which will be inhibited by this error.</div>
+</section>
+<section id="BM2247835"><a name="BM2247835"></a>
+<h2>2247835</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_CFG_TEST_CFG_ERR</div>
+<div class="txt">The Diagnostic Coordinator configuration file contains an invalid Test Configuration file name. Replace the diagCoord.cfg file and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated anytime the file name contains one or more errors. This error will cause all diagnostic tests to be aborted.</div>
+</section>
+<section id="BM2247836"><a name="BM2247836"></a>
+<h2>2247836</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_RX_TOO_MANY_PARAMS_ERR</div>
+<div class="txt">The Diagnostic Coordinator has received a test prescription that has too many parameters to process. Please try selecting another test. If problem persists, reload the diagnostic software. One or more files have been corrupted.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated anytime the Rx string received has more parameters then can be stored. This problem should not have occurred unless one of the following has occurred:
+1) Communication corruption between the browser and Diagnostic Coordinator.
+2) HTML screen has been altered or the file has been corrupted.
+3) Diagnostic Coordinator code is corrupted.</div>
+</section>
+<section id="BM2247837"><a name="BM2247837"></a>
+<h2>2247837</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_RX_TOO_MANY_TESTS_ERR</div>
+<div class="txt">The Diagnostic Coordinator has received a test prescription that has too many tests to process. Please try selecting less tests. If problem persists, reload the diagnostic software. One or more files have been corrupted.
+Test type: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated anytime the Rx string received has more tests then can be processed. Selecting less tests will enable the prescription to be processed unless a file has been corrupted.</div>
+</section>
+<section id="BM2247838"><a name="BM2247838"></a>
+<h2>2247838</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_SECURITY_KEY_UTIL_FILE_MISSING_ERR</div>
+<div class="txt">The Diagnostic Coordinator can not find the utility %s to determine if the service key is installed in the system, only the non-proprietary tests will allowed to run!</div>
+</section>
+<section id="BM2247839"><a name="BM2247839"></a>
+<h2>2247839</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_SECURITY_KEY_INVALID</div>
+<div class="txt">The service key is present, but it&#x27;s state could not be determined. The system defaults to non-proprietry mode.</div>
+</section>
+<section id="BM2247840"><a name="BM2247840"></a>
+<h2>2247840</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_SECURITY_KEY_FAILURE</div>
+<div class="txt">A failure occurred in executing chk_servKey(). Reason unknown. The system defaults to non-proprietry mode.</div>
+</section>
+<section id="BM2247841"><a name="BM2247841"></a>
+<h2>2247841</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_SECURITY_KEY_EXPIRED</div>
+<div class="txt">The service key is present, but expired. The system defaults to non-proprietry mode.</div>
+</section>
+<section id="BM2247842"><a name="BM2247842"></a>
+<h2>2247842</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_SECURITY_KEY_HOSTMISMATCH</div>
+<div class="txt">The customer service key is present, but the key&#x27;s ID does not match this host. The system defaults to non-proprietry mode.</div>
+</section>
+<section id="BM2247843"><a name="BM2247843"></a>
+<h2>2247843</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_CONNECTION_ERR</div>
+<div class="txt">The Diagnostic Host Interface (DHI) failed to connect to Diagnostic Coordinator. This error prevents diagnostics from being executed during scanning and prevents automatic resets before scanning.</div>
+</section>
+<section id="BM2247844"><a name="BM2247844"></a>
+<h2>2247844</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_POPUP_FILE_ERR</div>
+<div class="txt">The Diagnostic Coordinator failed to open the overnight test start popup.
+System call: %s
+Command: %s</div>
+</section>
+<section id="BM2247845"><a name="BM2247845"></a>
+<h2>2247845</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_POPUP_FILE_MODE_ERR</div>
+<div class="txt">The popups file has the wrong permissions. The overnight popup could not be displayed.
+File: %s
+Permissions: %o
+Minimum: %o</div>
+</section>
+<section id="BM2247846"><a name="BM2247846"></a>
+<h2>2247846</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_OVN_EXECUTE_ERR</div>
+<div class="txt">The scheduled overnight test could not be executed.
+Error: %s</div>
+</section>
+<section id="BM2247847"><a name="BM2247847"></a>
+<h2>2247847</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_OPTION_KEY_READ_ERR</div>
+<div class="txt">The Diagnostic Coordinator failed to read the sytem option keys. The error can be generated by a failure of the %s command
+or a failure to read the file generated: %s</div>
+</section>
+<section id="BM2247848"><a name="BM2247848"></a>
+<h2>2247848</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_RENAME_HIST_FILE_ERR</div>
+<div class="txt">The Diagnostic Coordinator could not open the history file for write and read. The file has been renamed and a new one created.
+Original file name: %s
+New file name: %s</div>
+</section>
+<section id="BM2247849"><a name="BM2247849"></a>
+<h2>2247849</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_HIST_FILE_ERR</div>
+<div class="txt">The Diagnostic Coordinator could not open the history file for write and read. The file is locked. All diagnostic history information will be lost. Please check file for access permissions. File should be set to 0666.
+File name: %s</div>
+</section>
+<section id="BM2247850"><a name="BM2247850"></a>
+<h2>2247850</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_FILE_OPEN_ERR</div>
+<div class="txt">The Diagnostic Coordinator could not open a file for %s access. Please check file for access permissions.
+File name: %s
+Errno: %d</div>
+</section>
+<section id="BM2247851"><a name="BM2247851"></a>
+<h2>2247851</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_XML_FILE_PARSE_ERR</div>
+<div class="txt">Software error: XML file error. The following error was encountered when parsing an XML file:
+File: %s
+Line: %d
+Tag: %s
+Attr: %s
+Error: %s</div>
+</section>
+<section id="BM2247852"><a name="BM2247852"></a>
+<h2>2247852</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_XML_VALUE_ERR</div>
+<div class="txt">Software error: XML file error. The following value was out of range:
+File: %s
+Line: %d
+Tag: %s
+Attr: %s
+Act: %d Lower limit: %d Upper Limit: %d</div>
+</section>
+<section id="BM2247853"><a name="BM2247853"></a>
+<h2>2247853</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_XML_STR_VALUE_ERR</div>
+<div class="txt">Software error: XML file error. The following value was out of range:
+File: %s
+Line: %d
+Tag: %s
+Attr: %s
+Act: %s
+Exp: %s</div>
+</section>
+<section id="BM2247854"><a name="BM2247854"></a>
+<h2>2247854</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_XML_MAX_ENTRIES_ERR</div>
+<div class="txt">Software error: XML file error. The maxinum number of entries have been reached:
+File: %s
+Line: %d
+Tag: %s
+Maximun number: %d</div>
+</section>
+<section id="BM2247855"><a name="BM2247855"></a>
+<h2>2247855</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_CORRUPTED_FILE_ERR</div>
+<div class="txt">Software error:
+The file listed below was found corrupted and could not be repaired. All data in this file was lost.
+File name: %s</div>
+</section>
+<section id="BM2247856"><a name="BM2247856"></a>
+<h2>2247856</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_PROG_ID_ERR</div>
+<div class="txt">Software error: Progonostic logging error. The data for ID %s could not be found in the configuration file. Data was discarded.</div>
+</section>
+<section id="BM2247857"><a name="BM2247857"></a>
+<h2>2247857</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_PROG_DATA_SIZE_ERR</div>
+<div class="txt">Software error: Progonostic logging error. The data packet for ID %s is less than specified in configuration file.
+Number of bytes sent: %d</div>
+</section>
+<section id="BM2247858"><a name="BM2247858"></a>
+<h2>2247858</h2>
+<div class="sym">ERROR: EM_DIAG_ENV_MON_CONNECTION_ERR</div>
+<div class="txt">The Diagnostic Coordinator failed to connect to Environment Monitor Process. This error prevents diagnostics from receiving critical service information. Try a TPS reset or host reboot to fix this issue.</div>
+</section>
+<section id="BM2247859"><a name="BM2247859"></a>
+<h2>2247859</h2>
+<div class="sym">ERROR: EM_DIAG_COORD_ERR_STRING_HAS_TOO_MANY_PARAMS_ERR</div>
+<div class="txt">The Diagnostic Coordinator has received a error message that has too many parameters to process. The error message will not be able to be logged. This is an internal software error.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated anytime the error string received has more parameters then can be stored. This problem requires a change to the diagnostic software.</div>
+</section>
+</body></html>

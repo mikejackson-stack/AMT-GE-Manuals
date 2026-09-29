@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2244000-2244999 (157)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2244000-2244999 (157)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2243000-2243999.html">&larr; 2243000-2243999</a><a href="ermes_2245000-2245999.html">2245000-2245999 &rarr;</a></nav></header>
+<section id="BM2244501"><a name="BM2244501"></a>
+<h2>2244501</h2>
+<div class="sym">ERROR: EM_GP_UNDEF_INTERRUPT</div>
+<div class="txt">Internal GP software error. Invalid interrupt.
+Interrupt: %d If the GP software is running okay ( the GP Board LED is blinking with a period of 5 seconds ), then this is a software bug; write a CQA.</div>
+</section>
+<section id="BM2244502"><a name="BM2244502"></a>
+<h2>2244502</h2>
+<div class="sym">ERROR: EM_GP_INVALID_TP</div>
+<div class="txt">Internal GP software error. Invalid selection for a test point.
+Test Point Selected: %d If the GP software is running okay ( the GP Board LED is blinking with a period of 5 seconds ), then this is a software bug; write a CQA.</div>
+</section>
+<section id="BM2244540"><a name="BM2244540"></a>
+<h2>2244540</h2>
+<div class="sym">ERROR: EM_GP_INVALID_AXIS</div>
+<div class="txt">Internal GP software error. Number of axis is not between %d and %d.
+Axis Selected: %d If you are using a tool like SHMOD or a debugger, you requested invalid information. If no tools were being run, there is a bug in the software; write a CQA.</div>
+</section>
+<section id="BM2244544"><a name="BM2244544"></a>
+<h2>2244544</h2>
+<div class="sym">ERROR: EM_GP_GRAM_TUNE_VERIFY</div>
+<div class="txt">The GP was unsuccessful loading/verifying GP digital tuning values for the %c Axis. Possible causes: GP board.</div>
+</section>
+<section id="BM2244545"><a name="BM2244545"></a>
+<h2>2244545</h2>
+<div class="sym">ERROR: EM_GP_UNKNOWN_SYS_TYPE</div>
+<div class="txt">The GP could not successfully identify the gradient amplifier type via the SGA Power Supply VBUS signal. The value should be in the 375-850V range for 8915 Amplifiers and in the 249-355V range for 8905 Amplifiers.
+SGA Power Supply VBUS = %dV.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Diagnostics will default to 8905 Amplifiers and may produce inaccurate error messages if 8915 Amplifiers are really present.</div>
+</section>
+<section id="BM2244570"><a name="BM2244570"></a>
+<h2>2244570</h2>
+<div class="sym">ERROR: EM_GP_SGA_FAILED_READY</div>
+<div class="txt">The %c Axis gradient amplifier failed to go to Ready when commanded. Please perform a TPS reset and try again. If the problem persists, please call service engineer.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the G_ENABLE test point on J2(front of SGA/HFA)is high(5V), the problem is likely in the gradient amplifier or power supply. Swap Gradient Amplifier Control Board with that of another axis to isolate Gradient Amplifier vs. Gradient Amplifier Control Board. If the G_ENABLE test point is low, check the cable between GP and the Gradient Amplifier, or replace the GP.</div>
+</section>
+<section id="BM2244571"><a name="BM2244571"></a>
+<h2>2244571</h2>
+<div class="sym">ERROR: EM_GP_SGA_CABLE_OFF_FAULT</div>
+<div class="txt">The GP is reporting a Gradient Amplifier %c Axis Cable Off Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the cable between GP and the Gradient Amplifier, or swap cables with another axis to isolate a cable, GP or Gradient Amplifier failure.</div>
+</section>
+<section id="BM2244572"><a name="BM2244572"></a>
+<h2>2244572</h2>
+<div class="sym">ERROR: EM_GP_SGA_POWER_OFF_FAULT</div>
+<div class="txt">The GP is reporting a Gradient Amplifier %c Axis Power Off Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the 208V line cable is fully seated between the Gradient Amplifier and PDU. If no LEDs are lit on the front of the Gradient Amplifier, swap 208V line cables with another axis, or swap Gradient Control Boards with another axis. If fault persists and does not follow cable or Control Board, replace the Gradient Amplifier.</div>
+</section>
+<section id="BM2244573"><a name="BM2244573"></a>
+<h2>2244573</h2>
+<div class="sym">ERROR: EM_GP_SGA_WF_PSUV_FAULT</div>
+<div class="txt">The GP reported a Gradient Amplifier %c Axis Internal Wiring Fault or Control Undervoltage.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Swap Gradient Amplifier Control Boards with another axis. Replace the Control Board if the fault follows. Else, replace the Gradient Amplifier.</div>
+</section>
+<section id="BM2244574"><a name="BM2244574"></a>
+<h2>2244574</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244574</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244575"><a name="BM2244575"></a>
+<h2>2244575</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244575</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244576"><a name="BM2244576"></a>
+<h2>2244576</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244576</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244577"><a name="BM2244577"></a>
+<h2>2244577</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244577</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244578"><a name="BM2244578"></a>
+<h2>2244578</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244578</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244579"><a name="BM2244579"></a>
+<h2>2244579</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244579</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244580"><a name="BM2244580"></a>
+<h2>2244580</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244580</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244581"><a name="BM2244581"></a>
+<h2>2244581</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244581</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244582"><a name="BM2244582"></a>
+<h2>2244582</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244582</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244583"><a name="BM2244583"></a>
+<h2>2244583</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244583</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244584"><a name="BM2244584"></a>
+<h2>2244584</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244584</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244585"><a name="BM2244585"></a>
+<h2>2244585</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244585</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244586"><a name="BM2244586"></a>
+<h2>2244586</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244586</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244587"><a name="BM2244587"></a>
+<h2>2244587</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244587</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244588"><a name="BM2244588"></a>
+<h2>2244588</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244588</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244589"><a name="BM2244589"></a>
+<h2>2244589</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244589</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244590"><a name="BM2244590"></a>
+<h2>2244590</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244590</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244591"><a name="BM2244591"></a>
+<h2>2244591</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244591</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244592"><a name="BM2244592"></a>
+<h2>2244592</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244592</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244593"><a name="BM2244593"></a>
+<h2>2244593</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244593</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244594"><a name="BM2244594"></a>
+<h2>2244594</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244594</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244595"><a name="BM2244595"></a>
+<h2>2244595</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244595</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244596"><a name="BM2244596"></a>
+<h2>2244596</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244596</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244597"><a name="BM2244597"></a>
+<h2>2244597</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244597</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244598"><a name="BM2244598"></a>
+<h2>2244598</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244598</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244599"><a name="BM2244599"></a>
+<h2>2244599</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244599</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244600"><a name="BM2244600"></a>
+<h2>2244600</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244600</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244601"><a name="BM2244601"></a>
+<h2>2244601</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244601</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244602"><a name="BM2244602"></a>
+<h2>2244602</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244602</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244603"><a name="BM2244603"></a>
+<h2>2244603</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244603</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244604"><a name="BM2244604"></a>
+<h2>2244604</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244604</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244605"><a name="BM2244605"></a>
+<h2>2244605</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244605</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244606"><a name="BM2244606"></a>
+<h2>2244606</h2>
+<div class="sym">ERROR: EM_GP_SGAPS_OT_SPECIAL_RECV</div>
+<div class="txt">The GP reported multiple SGA Power Supply Overtemperature Faults.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that cabinet fan is functioning properly, rear door is closed and sealed and that no filler panels have been removed from the front of the cabinet. Proper cooling requires a vaccum to pull air through the Gradient Amplifiers, Power Supply, and GP. If fault persists on specific PSDs, write a PQR. If fault persists on many or all PSDs, replace SGA Power Supply. TPS Reset is required to recover from this fault.</div>
+</section>
+<section id="BM2244607"><a name="BM2244607"></a>
+<h2>2244607</h2>
+<div class="sym">ERROR: EM_GP_SGAPS_UV_SPECIAL_RECV</div>
+<div class="txt">The GP reported mutiple SGA Power Supply UnderVoltage Faults.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Look at the SGAPS UV LEDs on the front of the module to determine which axis caused the fault. If the BUS_UV LED is lit, check the 420V input to the SGA Power Supply from the PDU. If the UV_X,Y,Z LED is lit, swap military connectors to the Gradient Amplifiers to isolate Gradient Amplifier vs. SGA Power Supply. TPS Reset is required to recover from this fault.</div>
+</section>
+<section id="BM2244608"><a name="BM2244608"></a>
+<h2>2244608</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244608</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244609"><a name="BM2244609"></a>
+<h2>2244609</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244609</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244610"><a name="BM2244610"></a>
+<h2>2244610</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244610</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244611"><a name="BM2244611"></a>
+<h2>2244611</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244611</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244612"><a name="BM2244612"></a>
+<h2>2244612</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244612</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244613"><a name="BM2244613"></a>
+<h2>2244613</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244613</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244614"><a name="BM2244614"></a>
+<h2>2244614</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244614</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244615"><a name="BM2244615"></a>
+<h2>2244615</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244615</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244616"><a name="BM2244616"></a>
+<h2>2244616</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244616</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244617"><a name="BM2244617"></a>
+<h2>2244617</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244617</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244618"><a name="BM2244618"></a>
+<h2>2244618</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244618</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244619"><a name="BM2244619"></a>
+<h2>2244619</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244619</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244620"><a name="BM2244620"></a>
+<h2>2244620</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244620</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244621"><a name="BM2244621"></a>
+<h2>2244621</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244621</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244622"><a name="BM2244622"></a>
+<h2>2244622</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244622</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244623"><a name="BM2244623"></a>
+<h2>2244623</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244623</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244624"><a name="BM2244624"></a>
+<h2>2244624</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244624</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244625"><a name="BM2244625"></a>
+<h2>2244625</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244625</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244626"><a name="BM2244626"></a>
+<h2>2244626</h2>
+<div class="sym">ERROR: EM_OBSOLETE_GP_2244626</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244627"><a name="BM2244627"></a>
+<h2>2244627</h2>
+<div class="sym">ERROR: EM_GP_NO_SET_ADC</div>
+<div class="txt">Internal GP software error. Unavailable signal for selection on ADC Multiplexor %d. If this error is seen in the field, please write a CQA.
+Desired Multiplexor Signal: %d</div>
+</section>
+<section id="BM2244628"><a name="BM2244628"></a>
+<h2>2244628</h2>
+<div class="sym">ERROR: EM_GP_GSC_TRM_LEAK</div>
+<div class="txt"><i>(no message text in the tool)</i></div>
+</section>
+<section id="BM2244629"><a name="BM2244629"></a>
+<h2>2244629</h2>
+<div class="sym">ERROR: EM_GRAD_MASTER_NODE_ID</div>
+<div class="txt">Master Gradient</div>
+</section>
+<section id="BM2244630"><a name="BM2244630"></a>
+<h2>2244630</h2>
+<div class="sym">ERROR: EM_GRAD_SLAVE_NODE_ID</div>
+<div class="txt">Slave Gradient</div>
+</section>
+<section id="BM2244645"><a name="BM2244645"></a>
+<h2>2244645</h2>
+<div class="sym">ERROR: EM_GP_GSC_NOT_RESPONDING</div>
+<div class="txt">The GSC stopped responding to the Gradient Processor (GP). Verify that the GSC is powered up and the serial communication cable is attached. If this does not work, try cycling GSC power.</div>
+</section>
+<section id="BM2244646"><a name="BM2244646"></a>
+<h2>2244646</h2>
+<div class="sym">ERROR: EM_GP_GSC_ALL_IN_WRONG_POSITION</div>
+<div class="txt">The GSC reported that all three gradient axes were in the wrong position. If recovery is not successful, please try a TPS reset.</div>
+</section>
+<section id="BM2244647"><a name="BM2244647"></a>
+<h2>2244647</h2>
+<div class="sym">ERROR: EM_GP_GSC_AXIS_IN_WRONG_POSITION</div>
+<div class="txt">The GSC reported that the gradient %c axis was in the wrong position. If recovery is not successful, please try a TPS reset.</div>
+</section>
+<section id="BM2244648"><a name="BM2244648"></a>
+<h2>2244648</h2>
+<div class="sym">ERROR: EM_GP_GSC_WHOLE_SWITCH_PROBLEM</div>
+<div class="txt">The GSC reported a problem with the Whole switch on the %c axis. If the problem persists, please call a service engineer.</div>
+</section>
+<section id="BM2244649"><a name="BM2244649"></a>
+<h2>2244649</h2>
+<div class="sym">ERROR: EM_GP_GSC_ZOOM_SWITCH_PROBLEM</div>
+<div class="txt">The GSC reported a problem with the Zoom switch on the %c axis. If the problem persists, please call a service engineer.</div>
+</section>
+<section id="BM2244650"><a name="BM2244650"></a>
+<h2>2244650</h2>
+<div class="sym">ERROR: EM_GP_GSC_COMMAND_WHILE_SWITCHING</div>
+<div class="txt">An additional switch command was received while the GSC was switching. If this message is persistent, call a field engineer.</div>
+</section>
+<section id="BM2244651"><a name="BM2244651"></a>
+<h2>2244651</h2>
+<div class="sym">ERROR: EM_GP_GSC_DETECTED_BUT_NOT_EXPECTED</div>
+<div class="txt">GradModes field in /w/config/MRconfig.cfg is empty, but the GSC was detected. Check the MRconfig.cfg file, and TPS Reset.</div>
+</section>
+<section id="BM2244652"><a name="BM2244652"></a>
+<h2>2244652</h2>
+<div class="sym">ERROR: EM_GP_GSC_EXPECTED_BUT_NOT_DETECTED</div>
+<div class="txt">The GradModes field in /w/config/MRconfig.cfg is set, but the GSC was not detected. Check GSC RS232 connection or MRconfig.cfg file, and TPS Reset if necessary.</div>
+</section>
+<section id="BM2244653"><a name="BM2244653"></a>
+<h2>2244653</h2>
+<div class="sym">ERROR: EM_GP_GSC_RESET</div>
+<div class="txt">The GSC indicated a CPU reset during normal operation. TPS reset may be necessary. If this error is persistent, check the GSC for loose or dirty internal power connections. Check communication connections.</div>
+</section>
+<section id="BM2244654"><a name="BM2244654"></a>
+<h2>2244654</h2>
+<div class="sym">ERROR: EM_GP_GSC_SWITCH_COMMAND_BUT_NO_TRM</div>
+<div class="txt">Internal software error: The GP received a switch command, but the system is not configured as a TRM system.</div>
+</section>
+<section id="BM2244655"><a name="BM2244655"></a>
+<h2>2244655</h2>
+<div class="sym">ERROR: EM_GP_GSC_ALARM_RECEIVED</div>
+<div class="txt">Gradient Switch Fault Detected. Scan will be paused.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please restart the scan (continuing the scan might cause image quality issues). If the fault persists,replace the Gradient Switch</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Gradient Switch</li></ol>
+</section>
+<section id="BM2244656"><a name="BM2244656"></a>
+<h2>2244656</h2>
+<div class="sym">ERROR: EM_GP_GSC_ILLEGAL_COMMAND</div>
+<div class="txt">The GP received an invalid command from the GSC. Be sure all axes are set to either WHOLE or ZOOM.</div>
+</section>
+<section id="BM2244657"><a name="BM2244657"></a>
+<h2>2244657</h2>
+<div class="sym">ERROR: EM_GP_GSC_RETRY_COMMAND</div>
+<div class="txt">The GP did not receive a response from the GSC and will retry the communications attempt to recover. This is retry attempt number %d</div>
+</section>
+<section id="BM2244658"><a name="BM2244658"></a>
+<h2>2244658</h2>
+<div class="sym">ERROR: EM_GP_GSC_NOT_RESPONDING_RETRYING</div>
+<div class="txt">The GSC stopped responding to the Gradient Processor (GP). Retrying communications to attempt recovery. Scan should continue successfully.</div>
+</section>
+<section id="BM2244700"><a name="BM2244700"></a>
+<h2>2244700</h2>
+<div class="sym">ERROR: EM_GRAD_FLASH_ERASE_FAILURE</div>
+<div class="txt">A block erase error occurred when the GP FLASH device was being erased. Gradient application code was not programmed. Please perform a TPS reset and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this problem persists, replace the GP. Note: Do not attempt to power-cycle the GP during the FLASH download process.</div>
+</section>
+<section id="BM2244701"><a name="BM2244701"></a>
+<h2>2244701</h2>
+<div class="sym">ERROR: EM_GRAD_FLASH_ERASE_SEQ_FAILURE</div>
+<div class="txt">A command sequence error occurred when the FLASH device was being erased. Gradient application code was not programmed. Please perform a TPS reset and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this problem persists, replace the GP. Note: Do not attempt to power-cycle the GP during the FLASH download process.</div>
+</section>
+<section id="BM2244702"><a name="BM2244702"></a>
+<h2>2244702</h2>
+<div class="sym">ERROR: EM_GRAD_FLASH_ERASE_TIMEOUT</div>
+<div class="txt">A timeout occurred waiting for the flash device to be erased. Gradient application code was not programmed. Please perform a TPS reset and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this problem persists, replace the GP. Note: Do not attempt to power-cycle the GP during the FLASH download process.</div>
+</section>
+<section id="BM2244703"><a name="BM2244703"></a>
+<h2>2244703</h2>
+<div class="sym">ERROR: EM_GRAD_FLASH_ERASE_VPP_FAILURE</div>
+<div class="txt">An error occurred when the FLASH device was being erased. The Vpp programming voltage was not present. Gradient application code was not programmed. Please perform a TPS Reset &amp; try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this problem persists, replace the GP. Note: Do not attempt to power-cycle the GP during the FLASH download process.</div>
+</section>
+<section id="BM2244704"><a name="BM2244704"></a>
+<h2>2244704</h2>
+<div class="sym">ERROR: EM_GRAD_FLASH_WRITE_FAILURE</div>
+<div class="txt">An error occurred when the FLASH device was being programmed. Gradient application code was not successfully programmed. Please perform a TPS Reset and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this problem persists, replace the GP. Note: Do not attempt to power-cycle the GP during the FLASH download process.</div>
+</section>
+<section id="BM2244705"><a name="BM2244705"></a>
+<h2>2244705</h2>
+<div class="sym">ERROR: EM_GRAD_FLASH_WRITE_TIMEOUT</div>
+<div class="txt">Gradient Hardware Error. A timeout occurred waiting for a byte to be programmed in a flash memory device. Gradient application code was not programmed. Please perform a TPS Reset and try again.</div>
+</section>
+<section id="BM2244706"><a name="BM2244706"></a>
+<h2>2244706</h2>
+<div class="sym">ERROR: EM_GRAD_FLASH_WRITE_VPP_FAILURE</div>
+<div class="txt">An error occurred when the FLASH device was being programmed. The Vpp programming voltage was not present. Gradient application code was not successfully programmed. Please TPS Reset and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this problem persists, replace the GP. Note: Do not attempt to power-cycle the GP during the FLASH download process.</div>
+</section>
+<section id="BM2244707"><a name="BM2244707"></a>
+<h2>2244707</h2>
+<div class="sym">ERROR: EM_GRAD_FLASH_LOCKED_FAILURE</div>
+<div class="txt">An error occurred when the flash device was being unlocked for programming. The Gradient application code was not successfully programmed. Please TPS Reset and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this problem persists, replace the GP. Note: Do not attempt to power-cycle the GP during the FLASH download process.</div>
+</section>
+<section id="BM2244720"><a name="BM2244720"></a>
+<h2>2244720</h2>
+<div class="sym">ERROR: EM_GP_DSP2_FAULT</div>
+<div class="txt">DSP2 on the GP did not respond to the last interrupt request (Handshake Error). Please perform a TPS Reset and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check placement of fiber optic clock cable and X,Y,Z data fibers between the STIF and GP(look for swapped fibers between clock and x/y/z data fibers). If the problem persists, replace the GP.</div>
+</section>
+<section id="BM2244721"><a name="BM2244721"></a>
+<h2>2244721</h2>
+<div class="sym">ERROR: EM_GP_TPS_RESET</div>
+<div class="txt">Gradient error detected. See previous errors. Please TPS reset.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error indicates a failed attempt to recover from a GP FPGA Code Not Present Error, or GP DSP2 Handshake Error. If this problem persists, replace the GP.</div>
+</section>
+<section id="BM2244722"><a name="BM2244722"></a>
+<h2>2244722</h2>
+<div class="sym">ERROR: EM_GP_SGAPS_READY_SPECIAL_RECV</div>
+<div class="txt">The GP reported more than one SGA Power Supply Not Ready Fault. Please perform a TPS reset.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the ENABLE test point on J2 (front of SGAPS) is high(5V), the problem is likely in the SGA Power Supply. If the ENABLE test point is low check the cable between the GP and Power Supply, or replace the GP.</div>
+</section>
+<section id="BM2244723"><a name="BM2244723"></a>
+<h2>2244723</h2>
+<div class="sym">ERROR: EM_GP_ONE_ZONE_FAULT</div>
+<div class="txt">The GP reported a %c Axis One Zone Fault. Run Gradient Driver Tests to isolate the FRU. If Tests pass, see Troubleshooting Manual.</div>
+</section>
+<section id="BM2244724"><a name="BM2244724"></a>
+<h2>2244724</h2>
+<div class="sym">ERROR: EM_GP_FPGA_CODE_NOT_PRESENT_ERROR</div>
+<div class="txt">Valid Code was not detected on the GP FPGA. Host will attempt to redownload FPGA code to the GP.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this problem persists, replace the GP.</div>
+</section>
+<section id="BM2244725"><a name="BM2244725"></a>
+<h2>2244725</h2>
+<div class="sym">ERROR: EM_HANDSHAKE_ERROR_DETECTED_RESET</div>
+<div class="txt">DSP2 Failure detected on the GP3 board. Resetting the board to attempt to autorecover. If recovery is unsuccessful, TPS Reset will fail.</div>
+</section>
+<section id="BM2244726"><a name="BM2244726"></a>
+<h2>2244726</h2>
+<div class="sym">ERROR: EM_GP_JTAG_JUMPERS_NOT_CORRECT</div>
+<div class="txt">GP FPGA code cannot be updated by host. GP may still function if FPGA has no errors.</div>
+<div class="lbl">Extended Error:</div><div class="txt">DSP1 could not access EPC2 device(s) via JTAG. Change the 3 JTAG jumpers in the middle of the board to the SYS position. Check that both EPC2 devices are fully inserted. If this problem persists, replace the GP.</div>
+</section>
+<section id="BM2244727"><a name="BM2244727"></a>
+<h2>2244727</h2>
+<div class="sym">ERROR: EM_GP_SLAVE_FAULT</div>
+<div class="txt">The GP reported a Master/Slave Fault. Run Gradient Driver Tests to isolate the FRU. Check cabling between gradient cabinets.</div>
+</section>
+<section id="BM2244728"><a name="BM2244728"></a>
+<h2>2244728</h2>
+<div class="sym">ERROR: EM_GP_SLAVE_FAULT_SPECIAL_RECV</div>
+<div class="txt">The GP reported more than 3 Master/Slave Faults Refer to prior fault message. Power cycle Amplifier POWER breaker on the PDU to recover from this condition.</div>
+</section>
+<section id="BM2244800"><a name="BM2244800"></a>
+<h2>2244800</h2>
+<div class="sym">ERROR: EM_GP_RATEFEEDBACK_WRITE_FAIL_FAULT</div>
+<div class="txt">An error occurred when writing to the GP3 rate feedback register. Please perform a TPS Reset and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the problem persists, replace the GP.</div>
+</section>
+<section id="BM2244801"><a name="BM2244801"></a>
+<h2>2244801</h2>
+<div class="sym">ERROR: EM_GP_RCOIL_WRITE_FAIL_FAULT</div>
+<div class="txt">An error occurred when writing to the GP3 RCOIL register. Please perform a TPS Reset and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the problem persists, replace the GP.</div>
+</section>
+<section id="BM2244802"><a name="BM2244802"></a>
+<h2>2244802</h2>
+<div class="sym">ERROR: EM_GP_LOOPGAIN_WRITE_FAIL_FAULT</div>
+<div class="txt">An error occurred when writing to the GP3 Loopgain register. Please perform a TPS Reset and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the problem persists, replace the GP.</div>
+</section>
+<section id="BM2244803"><a name="BM2244803"></a>
+<h2>2244803</h2>
+<div class="sym">ERROR: EM_GP_LDIDT_ROLLOFF_WRITE_FAIL_FAULT</div>
+<div class="txt">An error occurred when writing to the GP3 Rolloff register. Please perform a TPS Reset and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the problem persists, replace the GP.</div>
+</section>
+<section id="BM2244804"><a name="BM2244804"></a>
+<h2>2244804</h2>
+<div class="sym">ERROR: EM_GP_LDIDT_HFGAIN_WRITE_FAIL_FAULT</div>
+<div class="txt">An error occurrred when writing to the GP3 HFGain register. Please perform a TPS Reset and try again.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the problem persists, replace the GP.</div>
+</section>
+<section id="BM2244830"><a name="BM2244830"></a>
+<h2>2244830</h2>
+<div class="sym">ERROR: EM_GP_FAILURE_TO_SET_LOCAL_SYSTEM_MODE_REG</div>
+<div class="txt">The GP reported an error when writing to the Local/System mode register. Please perform a TPS Reset.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the problem persists, replace the GP.</div>
+</section>
+<section id="BM2244831"><a name="BM2244831"></a>
+<h2>2244831</h2>
+<div class="sym">ERROR: EM_GP_FAILURE_TO_SET_DUAL_MODE_REG</div>
+<div class="txt">An error occurred when writing to the Dual Mode register. Please TPS Reset and try again. If the problem persists change GP board.</div>
+</section>
+<section id="BM2244840"><a name="BM2244840"></a>
+<h2>2244840</h2>
+<div class="sym">ERROR: EM_GP_SLAVE_DETECTED_WITH_NO_MASTER</div>
+<div class="txt">Slave Gradient Detected with No Master GP.</div>
+</section>
+<section id="BM2244841"><a name="BM2244841"></a>
+<h2>2244841</h2>
+<div class="sym">ERROR: EM_GP_SLAVE_DETECTED_WITH_SINGLE_HFD</div>
+<div class="txt">Gradient configuration error occurred. The GP hardware is configured as a slave.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reposition the jumper J13 on the GP Control Board near rear connector J14, the perform a TPS Reset.</div>
+</section>
+<section id="BM2244842"><a name="BM2244842"></a>
+<h2>2244842</h2>
+<div class="sym">ERROR: EM_GP_SGAPS_OC_SPECIAL_RECV</div>
+<div class="txt">The GP reported mutiple SGA Power Supply Overcurrent Faults.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Look at SGA PS OC LEDs on the front of the module to determine which axis caused the fault. If the Primary OC LED is lit, replace the SGA Power Supply. If a secondary OC LED is lit, swap military connectors to the Gradient Amplifiers to isolate Gradient Amplifier vs. SGA Power Supply. For more information, open the Common Service Desktop and go to Service Docs - Peripherals - Gradient Electronics 2244590 Extended Help.</div>
+</section>
+<section id="BM2244843"><a name="BM2244843"></a>
+<h2>2244843</h2>
+<div class="sym">ERROR: EM_GP_SGAPS_OV_SPECIAL_RECV</div>
+<div class="txt">The GP reported multiple SGA Power Supply Overvoltage Faults.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Look at the SGAPS OV LEDs on the front of the module to determine which axis caused the fault. If the BUS_OV LED is lit, check the 420V input to the SGA Power Supply from the PDU. If the OV_X,Y,Z LED is lit, swap military connectors to the Gradient Amplifiers to isolate Gradient Amplifier vs. SGA Power Supply. For more information, open the Common Service Desktop and go to Service Docs - Peripherals - Gradient Electronics
+- 2244591 Extended Help. TPS Reset is required to recover from this fault.</div>
+</section>
+<section id="BM2244844"><a name="BM2244844"></a>
+<h2>2244844</h2>
+<div class="sym">ERROR: EM_GP_DCOFFSET_RANGE</div>
+<div class="txt">Digital DC Offset value on %c Axis
+is out of range. Actual=%d; Limits=%d to %d. Please rerun DCOffset Calibration.</div>
+</section>
+<section id="BM2244845"><a name="BM2244845"></a>
+<h2>2244845</h2>
+<div class="sym">ERROR: EM_GP_SGA_IDIST_SPECIAL_RECV</div>
+<div class="txt">The GP reported mutliple Gradient Amplifier %c Axis Current Distortion Faults.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is a generic fault message indicating that the Gradient Amplifiers are not accurately following the current command from the IPG/SRF. If other faults occurred concurrently, they will provide useful information to assist with troubleshooting. Else, swap the control cable between the GP and the failing Gradient Amplifier with the Gradient Amplifier on another axis (swap one end of the cable only). If the fault moves, replace the Gradient Amplifier or Gradient Amplifier Control Board (board can be swapped with another axis to isolate), or check the gradient coil. If the fault does not move, replace the GP.</div>
+</section>
+<section id="BM2244846"><a name="BM2244846"></a>
+<h2>2244846</h2>
+<div class="sym">ERROR: EM_GP_SGA_IDIST_SPECIAL_RECV_IN_READY</div>
+<div class="txt">The GP reported multiple Gradient Amplifier %c Axis Current Distortion Faults.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is a generic fault message indicating that the Gradient Amplifiers are not accurately following the current command from the IPG/SRF. If this fault appears only after resuming a paused scan check the PSD. If the fault persists on all scans, swap the control cable between the GP and the failing Gradient Amplifier with the Gradient Amplifier on another axis (swap one end of the cable only). If the fault moves, replace the Gradient Amplifier or Gradient Amplifier Control Board (board can be swapped with another axis to isolate), or check the gradient coil. If the fault does not move, replace the GP.</div>
+</section>
+<section id="BM2244847"><a name="BM2244847"></a>
+<h2>2244847</h2>
+<div class="sym">ERROR: EM_GP_SGA_WF_PSUV_FAULT_IN_READY</div>
+<div class="txt">The GP reported a Gradient Amplifier %c Axis Internal Wiring Fault or Control Undervoltage.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this is not a hard fault&quot;, I.e., the system will scan in some cases but not others, seek assistance from the GE Online Center. If the fault persists on all scans, swap Gradient Amplifier Control Boards with another axis. Replace the Control Board if the fault follows. Else replace the Gradient Amplifier.&quot;</div>
+</section>
+<section id="BM2244848"><a name="BM2244848"></a>
+<h2>2244848</h2>
+<div class="sym">ERROR: EM_GP_SGA_OC_FAULT</div>
+<div class="txt">The GP is reporting a Gradient Amplifier %c Axis OverCurrent Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check grafidy coefficients. Check the gradient output cabling to the Coil for shorts. Else, replace the Gradient Amplifier.</div>
+</section>
+<section id="BM2244849"><a name="BM2244849"></a>
+<h2>2244849</h2>
+<div class="sym">ERROR: EM_GP_SGA_OV_FAULT</div>
+<div class="txt">The GP is reporting a Gradient Amplifier %c Axis OverVoltage Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this fault is intermittent, first rule out PSD-related problems by changing the FOV or oblique angle. If faults continue to occur, and if there is no Overvoltage fault reported on the SGA Power Supply, then replace the Gradient Amplifier.</div>
+</section>
+<section id="BM2244850"><a name="BM2244850"></a>
+<h2>2244850</h2>
+<div class="sym">ERROR: EM_GP_SGA_UV_FAULT</div>
+<div class="txt">The GP is reporting a Gradient Amplifier %c Axis UnderVoltage Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Recovery attempt to follow.</div>
+</section>
+<section id="BM2244851"><a name="BM2244851"></a>
+<h2>2244851</h2>
+<div class="sym">ERROR: EM_GP_SGA_IDIST_FAULT</div>
+<div class="txt">The GP is reporting a Gradient Amplifier %c Axis Current Distortion Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This is a generic fault message indicating that the Gradient Amplifiers are not accurately following the current command from the IPG/SRF. If other faults occurred concurrently, they will provide useful information to assist with troubleshooting. Else, swap the control cable between the GP and the failing Gradient Amplifier with the Gradient Amplifier on another axis (swap one end of the cable only). If the fault moves, replace the Gradient Amplifier or Gradient Amplifier Control Board (board can be swapped with another axis to isolate), or check the gradient coil. If the fault does not move, check the PSD or replace the GP.</div>
+</section>
+<section id="BM2244852"><a name="BM2244852"></a>
+<h2>2244852</h2>
+<div class="sym">ERROR: EM_GP_X_SGA_ROLLOVER_FAULT</div>
+<div class="txt">X Axis Gradient Data Rollover Occurred.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please check MRconfig.cfg file to determine the amplifier type, 8915-ACGD, 8916-HFD. ACGD MESSAGE: Application of the Digital DC Offset compensation caused the gradient data to exceed the full-scale range. Check DC Offset calibration and grafidy calibration. Else, write a PQR. HFD MESSAGE: Application of the Digital DC Offset compensation caused the gradient data to exceed the full-scale range. Check DC Offset calibration. Else, write a PQR.</div>
+</section>
+<section id="BM2244853"><a name="BM2244853"></a>
+<h2>2244853</h2>
+<div class="sym">ERROR: EM_GP_Y_SGA_ROLLOVER_FAULT</div>
+<div class="txt">Y Axis Gradient Data Rollover Occurred.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please check MRconfig.cfg file to determine the amplifier type, 8915-ACGD, 8916-HFD. ACGD MESSAGE: Application of the Digital DC Offset compensation caused the gradient data to exceed the full-scale range. Check DC Offset calibration and grafidy calibration. Else, write a PQR. HFD MESSAGE: Application of the Digital DC Offset compensation caused the gradient data to exceed the full-scale range. Check DC Offset calibration. Else, write a PQR.</div>
+</section>
+<section id="BM2244854"><a name="BM2244854"></a>
+<h2>2244854</h2>
+<div class="sym">ERROR: EM_GP_Z_SGA_ROLLOVER_FAULT</div>
+<div class="txt">Z Axis Gradient Data Rollover Occurred.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please check MRconfig.cfg file to determine the amplifier type, 8915-ACGD, 8916-HFD. ACGD MESSAGE: Application of the Digital DC Offset compensation caused the gradient data to exceed the full-scale range. Check DC Offset calibration and grafidy calibration. Else, write a PQR. HFD MESSAGE: Application of the Digital DC Offset compensation caused the gradient data to exceed the full-scale range. Check DC Offset calibration. Else, write a PQR.</div>
+</section>
+<section id="BM2244855"><a name="BM2244855"></a>
+<h2>2244855</h2>
+<div class="sym">ERROR: EM_GP_SGAPS_READY_FAULT</div>
+<div class="txt">The SGA Power Supply failed to go to Ready when commanded, or came out of Ready.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Recovery attempts will follow.</div>
+</section>
+<section id="BM2244856"><a name="BM2244856"></a>
+<h2>2244856</h2>
+<div class="sym">ERROR: EM_GP_SGAPS_CABLE_OFF_FAULT</div>
+<div class="txt">The GP is reporting a SGA Power Supply Cable Off Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the cable between the GP and the SGA Power Supply. Else, replace the Cable, the GP or the Power Supply.</div>
+</section>
+<section id="BM2244857"><a name="BM2244857"></a>
+<h2>2244857</h2>
+<div class="sym">ERROR: EM_GP_SGAPS_POWER_OFF_FAULT</div>
+<div class="txt">The GP is reporting SGA Power Supply Power Off Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Please check MRconfig.cfg file to determine the amplifier type, 8915-ACGD, 8916-HFD. ACGD MESSAGE: Check the ACGD Power (or ACGD 420V Power) breaker on the PDU. If breaker is tripped, replace the SGA Power Supply. Notice: Do not attempt to reset the breaker! Press the EMO Reset Button on the PDU. Check J2 on the rear of the PDU for continuity between pins 7 and 8. Check phase rotation by confirming that the gradient fan is rotating correctly, or that the Phase OK&quot; light is lit for newer PDUs. Else, replace the SGA Power Supply. HFD MESSAGE: Check the ACGD 420V Power breaker on the PDU. If breaker is tripped, replace the SGA Power Supply. Notice: Do not attempt to reset the breaker! Press the EMO Reset Button on the PDU. Check J2 on the rear of the PDU for continuity between pins 7 and 8. Check the &quot;Phase OK&quot; light on the front of the PDU. Else, replace the SGA Power Supply.&quot;</div>
+</section>
+<section id="BM2244858"><a name="BM2244858"></a>
+<h2>2244858</h2>
+<div class="sym">ERROR: EM_GP_SGAPS_WF_PSUV_FAULT</div>
+<div class="txt">The GP is reporting SGA Power Supply Internal Wiring Fault or Control Undervoltage.</div>
+<div class="lbl">Extended Error:</div><div class="txt">To rule out incoming power problems, check 420V inputs with a power line monitor. Else, replace the SGA Power Supply.</div>
+</section>
+<section id="BM2244859"><a name="BM2244859"></a>
+<h2>2244859</h2>
+<div class="sym">ERROR: EM_GP_SGAPS_OT_FAULT</div>
+<div class="txt">The GP is reporting a SGA Power Supply OverTemperature Fault. System will wait five minutes before attempting recovery.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that cabinet fan is functioning properly, rear door is closed and sealed and that no filler panels have been removed from the front of the cabinet. Proper cooling requires a vaccum to pull air through the Gradient Amplifiers, Power Supply, and GP. Low Equipment Room air temperature can also cause this fault. Verify Equipment Room temperature is not below recommended limit. If fault persists on specific PSDs, write a PQR. If fault persists on many or all PSDs, replace SGA Power Supply.</div>
+</section>
+<section id="BM2244860"><a name="BM2244860"></a>
+<h2>2244860</h2>
+<div class="sym">ERROR: EM_GP_SGAPS_OC_FAULT</div>
+<div class="txt">The GP is reporting a SGA Power Supply OverCurrent Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this fault is intermittent, temporarily remove jumper J1 on the SGA Power Supply Control Board to prevent automatic recovery. When the fault recurs, look at SGAPS OC LEDs on the front to determine which axis caused the fault. If the primary OC LED is lit replace SGA Power Supply. If a secondary OC LED is lit, swap military connectors to the Gradient Amplifiers to isolate Gradient Amplifier vs. SGA Power Supply. For more information, open the Common Service Desktop and go to Service Docs - Peripherals - Gradient Electronics 2244590 Extended Help.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Gradient Power Supply</li><li>Gradient Amp</li></ol>
+</section>
+<section id="BM2244861"><a name="BM2244861"></a>
+<h2>2244861</h2>
+<div class="sym">ERROR: EM_GP_SGAPS_OV_FAULT</div>
+<div class="txt">The GP is reporting a SGA Power Supply Over Voltage Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this fault is intermittent, first rule out PSD-related problems by changing the FOV or oblique angle. If faults continue to occur, temporarily remove jumper J1 on the SGA Power Supply Control Board to prevent automatic recovery. On the next fault condition, look at the SGAPS OV LEDs on the front of the module to determine which axis caused the fault. If the BUS_OV LED is lit, check the 420V input to the SGA Power Supply from the PDU. If the OV_X,Y,Z LED is lit, swap military connectors to the Gradient Amplifiers to isolate Gradient Amplifier vs. SGA Power Supply. For more information, open the Common Service Desktop and go to Service Docs - Peripherals - Gradient Electonics
+- 2244591 Extended Help.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Gradient Power Supply</li><li>Gradient Amp</li></ol>
+</section>
+<section id="BM2244862"><a name="BM2244862"></a>
+<h2>2244862</h2>
+<div class="sym">ERROR: EM_GP_SGAPS_UV_FAULT</div>
+<div class="txt">The GP is reporting a SGA Power Supply Under Voltage Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Look at the SGAPS UV LEDs on the front of the module to determine which axis caused the fault. If the BUS_UV LED is lit, check the 420V input to the SGA Power Supply from the PDU. If the UV_X,Y,Z LED is lit, swap military connectors to the Gradient Amplifiers to isolate Gradient Amplifier vs. SGA Power Supply.</div>
+</section>
+<section id="BM2244863"><a name="BM2244863"></a>
+<h2>2244863</h2>
+<div class="sym">ERROR: EM_GP_SGA_FAILED_STANDBY</div>
+<div class="txt">The %c Axis gradient amplifier failed to go to Standby when commanded.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If G_ENABLE test point on J2 (front of SGA/HFA)is low(0V), the problem is likely in the Gradient Amplifier. Swap Gradient Amplifier Control Board with that of another axis to isolate Gradient Amplifier vs. Gradient Amplifier Control Board. If the G_ENABLE test point is high, check the cable between GP and the Gradient Amplifier, or replace the GP.</div>
+</section>
+<section id="BM2244864"><a name="BM2244864"></a>
+<h2>2244864</h2>
+<div class="sym">ERROR: EM_GP_X_FAILED_RECOVERY</div>
+<div class="txt">X Axis gradient error detected; recovery in progress.</div>
+</section>
+<section id="BM2244865"><a name="BM2244865"></a>
+<h2>2244865</h2>
+<div class="sym">ERROR: EM_GP_Y_FAILED_RECOVERY</div>
+<div class="txt">Y Axis gradient error detected; recovery in progress.</div>
+</section>
+<section id="BM2244866"><a name="BM2244866"></a>
+<h2>2244866</h2>
+<div class="sym">ERROR: EM_GP_Z_FAILED_RECOVERY</div>
+<div class="txt">Z Axis gradient error detected; recovery in progress.</div>
+</section>
+<section id="BM2244867"><a name="BM2244867"></a>
+<h2>2244867</h2>
+<div class="sym">ERROR: EM_GP_RECOVERY_DONE</div>
+<div class="txt">The gradient system on the %c axis recovered successfully. There are no faults at the present time.</div>
+</section>
+<section id="BM2244868"><a name="BM2244868"></a>
+<h2>2244868</h2>
+<div class="sym">ERROR: EM_GP_SGA_WF_PSUV_SPECIAL_RECV</div>
+<div class="txt">The GP reported multiple Gradient Amplifier %c Axis Internal Wiring Faults or Control Undervoltages.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Swap Gradient Amplifiers Control Boards with another axis. Replace the Control Board if the fault follows. Else replace the Gradient Amplifier.</div>
+</section>
+<section id="BM2244869"><a name="BM2244869"></a>
+<h2>2244869</h2>
+<div class="sym">ERROR: EM_GP_SGA_OT_SPECIAL_RECV</div>
+<div class="txt">The GP reported multiple %c Axis OverTemperature Faults.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the cabinet fan is functioning properly, rear door is closed and sealed, and that no filler panels have been removed from the front of the cabinet. Proper cooling requires a vaccum to pull air through the Gradient Amplifiers, Power Supply, and GP. If fault persists on specific PSDs write a PQR. If fault persists on many or all PSDs, replace Gradient Amplifier. TPS Reset is required to recover from this fault.</div>
+</section>
+<section id="BM2244870"><a name="BM2244870"></a>
+<h2>2244870</h2>
+<div class="sym">ERROR: EM_GP_SGA_WF_PSUV_SPECIAL_RECV_IN_READY</div>
+<div class="txt">The GP reported multiple Gradient Amplifier %c Axis Internal Wiring Faults or Control Undervoltages.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this is not a hard fault&quot;,I.e.,the system will scan in some cases but not others, seek assistance from the GE Online Center. If the fault persists on all scans, swap Gradient Amplifier Control Boards with another axis. Replace the Control Board if the fault follows. Else replace the Gradient Amplifier.&quot;</div>
+</section>
+<section id="BM2244871"><a name="BM2244871"></a>
+<h2>2244871</h2>
+<div class="sym">ERROR: EM_GP_SGA_OV_SPECIAL_RECV</div>
+<div class="txt">The GP reported multiple Gradient Amplifier %c Axis OverVoltage Faults.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If an Overvoltage fault is not also reported on the SGA Power Supply, replace the Gradient Amplifier. Else replace the SGA Power Supply. TPS reset is required to recover from this fault.</div>
+</section>
+<section id="BM2244872"><a name="BM2244872"></a>
+<h2>2244872</h2>
+<div class="sym">ERROR: EM_GP_SGA_OC_SPECIAL_RECV</div>
+<div class="txt">The GP reported multiple Gradient Amplifier %c Axis OverCurrent Fault.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check grafidy coefficients. Check the gradient output cabling to the Coil for shorts. Else, replace the Gradient Amplifier. TPS reset is required to recover from this fault.</div>
+</section>
+<section id="BM2244873"><a name="BM2244873"></a>
+<h2>2244873</h2>
+<div class="sym">ERROR: EM_GP_SGA_UV_SPECIAL_RECV</div>
+<div class="txt">The GP reported multiple Gradient Amplifier %c Axis UnderVoltage Faults.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Replace the Gradient Amplifier. TPS Reset is required to recover from this fault.</div>
+</section>
+<section id="BM2244874"><a name="BM2244874"></a>
+<h2>2244874</h2>
+<div class="sym">ERROR: EM_GP_SGAPS_WF_PSUV_SPECIAL_RECV</div>
+<div class="txt">The GP reported multiple SGA Power Supply Internal Wiring Faults or Control Undervoltages.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reseat the internal SGAPS connectors. To rule out incoming power problems, check 420V inputs with a power line monitor. Else, replace the SGA Power Supply.</div>
+</section>
+<section id="BM2244875"><a name="BM2244875"></a>
+<h2>2244875</h2>
+<div class="sym">ERROR: EM_GP_GSC_NO_FAULT</div>
+<div class="txt">Ignore This message - Text of EM_GP_GSC_NO_FAULT</div>
+</section>
+<section id="BM2244876"><a name="BM2244876"></a>
+<h2>2244876</h2>
+<div class="sym">ERROR: EM_GP_GSC_THERMO_SWITCH_FAULT</div>
+<div class="txt">Thermo-switch of GSC opened. Please check that the thermo-sensor cable from the gradient to the GSC is connected.</div>
+</section>
+<section id="BM2244877"><a name="BM2244877"></a>
+<h2>2244877</h2>
+<div class="sym">ERROR: EM_GP_GSC_RECEIVED_INVALID_COMMAND</div>
+<div class="txt">GSC received invalid command from GP. Check RS-232 communication cable between GP debug port and the GSC and check if power LED on front panel of GSC is lit.</div>
+</section>
+<section id="BM2244878"><a name="BM2244878"></a>
+<h2>2244878</h2>
+<div class="sym">ERROR: EM_GP_GSC_PLUS_15V_FAULT</div>
+<div class="txt">GSC +15V Supply Fault. Please check power supply to GSC.</div>
+</section>
+<section id="BM2244879"><a name="BM2244879"></a>
+<h2>2244879</h2>
+<div class="sym">ERROR: EM_GP_GSC_MINUS_15V_FAULT</div>
+<div class="txt">GSC -15V Supply Fault. Please check power supply to GSC.</div>
+</section>
+<section id="BM2244880"><a name="BM2244880"></a>
+<h2>2244880</h2>
+<div class="sym">ERROR: EM_GP_GSC_WB_SWITCH_PROBLEM</div>
+<div class="txt">GSC has problem with Whole Body in axis: %c. If the problem persists, please call service engineer.</div>
+</section>
+<section id="BM2244881"><a name="BM2244881"></a>
+<h2>2244881</h2>
+<div class="sym">ERROR: EM_GP_GSC_SG_SWITCH_PROBLEM</div>
+<div class="txt">GSC has problem with Zoom in axis: %c. If the problem persists, please call service engineer.</div>
+</section>
+<section id="BM2244882"><a name="BM2244882"></a>
+<h2>2244882</h2>
+<div class="sym">ERROR: EM_GP_GSC_NOT_RESP</div>
+<div class="txt">GSC is not responding to GP commands. Check RS-232 communication cable between GP and GSC and check if power LED on front panel of GSC is lit.</div>
+</section>
+<section id="BM2244883"><a name="BM2244883"></a>
+<h2>2244883</h2>
+<div class="sym">ERROR: EM_GP_GSC_SCR_OVER_TEMP</div>
+<div class="txt">GSC detected Gradient coil over-temperature on the %c axis. Check protocol, gradient temperature connection, &amp; gradient water cooling.</div>
+</section>
+<section id="BM2244884"><a name="BM2244884"></a>
+<h2>2244884</h2>
+<div class="sym">ERROR: EM_GP_GSC_COMMAND_NOT_PERFORMED</div>
+<div class="txt">GSC did not perform the GP command. See previous error messages for explanation.</div>
+</section>
+<section id="BM2244885"><a name="BM2244885"></a>
+<h2>2244885</h2>
+<div class="sym">ERROR: EM_GP_GSC_STATUS_NOT_EQUAL_TO_COMMAND</div>
+<div class="txt">GSC returned status not equal to command on axis: %c. Possible causes: Cable problem or contactor(s) did not switch.</div>
+</section>
+<section id="BM2244886"><a name="BM2244886"></a>
+<h2>2244886</h2>
+<div class="sym">ERROR: EM_GP_GSC_DURING_SELF_TEST</div>
+<div class="txt">Internal software problem: a switch command was received by GSC while being in self test mode. Write a CQA.</div>
+</section>
+<section id="BM2244887"><a name="BM2244887"></a>
+<h2>2244887</h2>
+<div class="sym">ERROR: EM_GP_GSC_DURING_SWITCH</div>
+<div class="txt">Internal software problem: a switch command was received by GSC while executing another switch command. Write a CQA.</div>
+</section>
+<section id="BM2244888"><a name="BM2244888"></a>
+<h2>2244888</h2>
+<div class="sym">ERROR: EM_GP_GSC_ALARM</div>
+<div class="txt">Alarm received from gradient switch. Check if power LED on front panel of GSC is lit.</div>
+</section>
+<section id="BM2244889"><a name="BM2244889"></a>
+<h2>2244889</h2>
+<div class="sym">ERROR: EM_GP_GSC_SCR_SHORTED</div>
+<div class="txt">SCR (Silicon Controlled Rectifier) shorted at GSC on the %c axis. If the problem continues, please call service engineer.</div>
+</section>
+<section id="BM2244890"><a name="BM2244890"></a>
+<h2>2244890</h2>
+<div class="sym">ERROR: EM_GP_GSC_DETECTED_BUT_NOT_TRM</div>
+<div class="txt">GradModes field in /w/config/MRconfig.cfg is empty, but the GSC was detected. Check GSC RS232 connection or MRconfig.cfg file, and TPS Reset.</div>
+</section>
+<section id="BM2244891"><a name="BM2244891"></a>
+<h2>2244891</h2>
+<div class="sym">ERROR: EM_GP_GSC_TRM_BUT_NOT_DETECTED</div>
+<div class="txt">GradModes field in /w/config/MRconfig.cfg is set, but the GSC was not detected. Check GSC RS232 connection or MRconfig.cfg file, and TPS Reset.</div>
+</section>
+<section id="BM2244897"><a name="BM2244897"></a>
+<h2>2244897</h2>
+<div class="sym">ERROR: EM_GP_SGA_OT_FAULT</div>
+<div class="txt">The GP is reporting a %c Axis OverTemperature Fault. System will wait 5 minutes before attempting recovery.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check that the cabinet fan is functioning properly, rear door is closed and sealed, and that no filler panels have been removed from the front of the cabinet. Proper cooling requires a vaccum to pull air through the Gradient Amplifiers, Power Supply, and GP. If fault persists on specific PSDs write a PQR. If fault persists on many or all PSDs, replace Gradient Amplifier.</div>
+</section>
+</body></html>

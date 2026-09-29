@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2253000-2253999 (187)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2253000-2253999 (187)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2252000-2252999.html">&larr; 2252000-2252999</a><a href="ermes_2254000-2254999.html">2254000-2254999 &rarr;</a></nav></header>
+<section id="BM2253500"><a name="BM2253500"></a>
+<h2>2253500</h2>
+<div class="sym">ERROR: EM_DIAG_AP_BOARD_NOT_FOUND</div>
+<div class="txt">The system failed to find AP Board #1. The diag test had to be aborted. Check if an AP board is present and properly connected to backplane.</div>
+<div class="lbl">Extended Error:</div><div class="txt">AP Board was not found at boot time. If AP Board is present, re-seating the AP may correct this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AP Board</li></ol>
+</section>
+<section id="BM2253501"><a name="BM2253501"></a>
+<h2>2253501</h2>
+<div class="sym">ERROR: EM_DIAG_AP_BOARD2_NOT_FOUND</div>
+<div class="txt">Second AP Board was not found. Test will continue, this could be due to system configuration. Check if second AP board is present and properly connected to backplane.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Second AP Board was not found at boot time. If second AP Board is present, re-seating the AP in slot 3 may correct this condition. Also check configuration jumpers on 2nd AP board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AP Board</li></ol>
+</section>
+<section id="BM2253502"><a name="BM2253502"></a>
+<h2>2253502</h2>
+<div class="sym">ERROR: EM_DIAG_AP_MEMORY_ALLOCATION_FAILURE</div>
+<div class="txt">Test failed to allocate memory on the AP board. Test will be aborted. Perform a TPS Reset to correct the problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">AP memory is required for transferring test data. Re-seating the AP board(s) may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AP Board</li></ol>
+</section>
+<section id="BM2253503"><a name="BM2253503"></a>
+<h2>2253503</h2>
+<div class="sym">ERROR: EM_DIAG_AP_MEMORY_DEALLOCATION_FAILURE</div>
+<div class="txt">Test failed to free memory on the AP board. Test will be aborted. Perform a TPS Reset to correct the problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">AP memory is required for transferring test data. Problem is most probably due to a software error.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AP Board</li></ol>
+</section>
+<section id="BM2253504"><a name="BM2253504"></a>
+<h2>2253504</h2>
+<div class="sym">ERROR: EM_DIAG_AP_LOCAL_DP_FAILED</div>
+<div class="txt">APS failed to read and write the correct data to AP memory. Perform a TPS Reset and reseat AP board(s) if problem persists.
+Offset=%p, Expected value=%08X, Actual value=%08X</div>
+<div class="lbl">Extended Error:</div><div class="txt">The APS did not get the expected test data back from AP memory. Re-seating the AP board(s) may correct this condition. If problem persists then replace single AP Board. If dual AP then configure to single AP and run diag again to isolate failure. If this doesn&#x27;t help then reconfigure APS to AGP, swap board locations, and run diag again.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AP Board</li><li>APS Board</li></ol>
+</section>
+<section id="BM2253505"><a name="BM2253505"></a>
+<h2>2253505</h2>
+<div class="sym">ERROR: EM_DIAG_AP_REMOTE_DP_FAILED</div>
+<div class="txt">AP CPU failed to read and write the correct data in AP memory. Perform a TPS Reset and reseat AP board(s) if problem persists.
+Offset=%p, Expected value=%08X, Actual value=%08X</div>
+<div class="lbl">Extended Error:</div><div class="txt">The AP did write the expected test data into memory shared with APS. Re-seating the AP board(s) may correct this condition. If problem persists then replace single AP Board. If dual AP then configure to single AP and run diag again to isolate failure. If this doesn&#x27;t help then reconfigure APS to AGP, swap board locations, and run diag again.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AP Board</li><li>APS Board</li></ol>
+</section>
+<section id="BM2253506"><a name="BM2253506"></a>
+<h2>2253506</h2>
+<div class="sym">ERROR: EM_DIAG_BAM_ALLOCATION_FAILURE</div>
+<div class="txt">Test failed to allocate BAM block. The diag test had to be aborted. Perform a TPS Reset to correct the problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">BAM is required for sharing data between AP Board and APS or System Host. Re-seating the AP may help this condition. If problem persists then replace single AP Board. If dual AP then configure to single AP and run diag again to isolate failure.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AP Board</li></ol>
+</section>
+<section id="BM2253507"><a name="BM2253507"></a>
+<h2>2253507</h2>
+<div class="sym">ERROR: EM_DIAG_BAM_DEALLOCATION_FAILURE</div>
+<div class="txt">Test failed to free BAM. The diag test had to be aborted. Perform a TPS Reset to correct the problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">BAM is required for sharing data between AP Board and APS or System Host. Re-seating the AP may help this condition. If problem persists then replace single AP Board. If dual AP then configure to single AP and run diag again to isolate failure.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AP Board</li></ol>
+</section>
+<section id="BM2253508"><a name="BM2253508"></a>
+<h2>2253508</h2>
+<div class="sym">ERROR: EM_DIAG_RAW_DATA_FILE_NOT_FOUND</div>
+<div class="txt">Test failed to find raw data file, %s. Test will be aborted. This data file must be restored to the hard disk before running this test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reloading software on the Host hard disk should correct this problem.</div>
+</section>
+<section id="BM2253509"><a name="BM2253509"></a>
+<h2>2253509</h2>
+<div class="sym">ERROR: EM_DIAG_PROCESSED_DATA_FILE_NOT_FOUND</div>
+<div class="txt">Test failed to find processed data file, %s. The diag test had to be aborted. This data file must be restored to the hard disk before running this test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Reloading software on the Host hard disk should correct this problem.</div>
+</section>
+<section id="BM2253510"><a name="BM2253510"></a>
+<h2>2253510</h2>
+<div class="sym">ERROR: EM_DIAG_APS_MEMORY_ALLOCATION_FAILURE</div>
+<div class="txt">Test failed to allocate APS memory block. The diag test had to be aborted. Perform a TPS Reset to correct the problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">APS memory is required for use as a buffer in the test. Problem is most probably due to a software error. If problem persists then try reconfiguring APS to AGP and swapping board locations. If this doesn&#x27;t help then replace single AP Board or, if dual AP, configure to single AP and run diag again to isolate failure.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>APS Board</li></ol>
+</section>
+<section id="BM2253511"><a name="BM2253511"></a>
+<h2>2253511</h2>
+<div class="sym">ERROR: EM_DIAG_APS_MEMORY_DEALLOCATION_FAILURE</div>
+<div class="txt">Test failed to free APS memory. The diag test had to be aborted. Perform a TPS Reset to correct the problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">APS memory is required for buffer use in the test. Problem is most probably due to an OS or software error.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>APS Board</li></ol>
+</section>
+<section id="BM2253512"><a name="BM2253512"></a>
+<h2>2253512</h2>
+<div class="sym">ERROR: EM_DIAG_BAM_WRITE_FAILURE</div>
+<div class="txt">Test failed to write to BAM block. The diag test had to be aborted. Perform a TPS Reset to correct the problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">BAM is required for sharing data between AP Board and APS or System Host. Problem is most probably due to a software error. If problem persists then replace single AP Board. If dual AP then configure to single AP and run diag again to isolate failure.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AP Board</li></ol>
+</section>
+<section id="BM2253513"><a name="BM2253513"></a>
+<h2>2253513</h2>
+<div class="sym">ERROR: EM_DIAG_BAM_READ_FAILURE</div>
+<div class="txt">Test failed to read from BAM. The diag test had to be aborted. Perform a TPS Reset to correct the problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">BAM is required for sharing data between AP Board and APS or System Host. Problem is most probably due to a software error. If problem persists then replace single AP Board. If dual AP then configure to single AP and run diag again to isolate failure.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AP Board</li></ol>
+</section>
+<section id="BM2253514"><a name="BM2253514"></a>
+<h2>2253514</h2>
+<div class="sym">ERROR: EM_DIAG_AP_RECON_TEST_FAILED</div>
+<div class="txt">AP Failed to pass the image reconstruction test. Perform a TPS Reset and reset AP board(s) if problem persists.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The AP calculated the wrong result when processing test image data. Re-seating the AP board(s) the on-board daughter cards may correct this condition. Run AP memory tests.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AP Board</li></ol>
+</section>
+<section id="BM2253515"><a name="BM2253515"></a>
+<h2>2253515</h2>
+<div class="sym">ERROR: EM_DIAG_AP_WAITING</div>
+<div class="txt">This is a reserved fault. Possible Software Error.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>APS Board</li></ol>
+</section>
+<section id="BM2253516"><a name="BM2253516"></a>
+<h2>2253516</h2>
+<div class="sym">ERROR: EM_DIAG_AP_TEST_TIMEOUT</div>
+<div class="txt">The AP did not complete the diagnostic or did not complete it fast enough. Perform a TPS Reset or reseat APS an AP boards if problem persists.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The AP may not be responding or may be running very slowly. If problem persists then replace single AP Board or, if dual AP, configure to single AP and run diag again to isolate failure to a single AP board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>APS Board</li><li>AP Board</li></ol>
+</section>
+<section id="BM2253517"><a name="BM2253517"></a>
+<h2>2253517</h2>
+<div class="sym">ERROR: EM_DIAG_AP_MEM_AMOUNT</div>
+<div class="txt">The system did not find the right amount of AP memory. Only %d Meg was found when there should be %d Meg. This indicates that some AP board memory is not working.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Perform a TPS Reset and run the test again. If the problem persists, then one or more of the AP boards may be faulty. Try reseating boards and verify that each is in the correct slot. If the problem persists then replace single AP. If this is a dual AP system, reconfigure to a single AP system and run test again to isolate failure to one of the AP boards. This test can not tell which AP board is bad.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AP Board</li></ol>
+</section>
+<section id="BM2253518"><a name="BM2253518"></a>
+<h2>2253518</h2>
+<div class="sym">ERROR: EM_DIAG_AP_CPU_COUNT</div>
+<div class="txt">The system did not find the right number of CPUs on the AP boards. Only %d CPUs were found when there should be %d. This indicates that one of the AP boards may be partially defective.</div>
+<div class="lbl">Extended Error:</div><div class="txt">There should be 4 CPUs on each AP board. If there are two AP boards, this test can&#x27;t tell which board is defective. Try reseating boards and verify each is in correct slot. If problem persists then replace single AP Board. If dual AP then configure to single AP and run diag again to isolate failure.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AP Board</li></ol>
+</section>
+<section id="BM2253519"><a name="BM2253519"></a>
+<h2>2253519</h2>
+<div class="sym">ERROR: EM_DIAG_AP_MEM_FAIL</div>
+<div class="txt">The system found bad BAM memory in the AP board(s). The bad spot starts at %d Meg from the beginning of AP BAM memory.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the bad spot is below 852 Meg then try replacing AP board 1 If the bad spot is above 852 Meg try replacing AP board 2.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AP Board</li></ol>
+</section>
+<section id="BM2253520"><a name="BM2253520"></a>
+<h2>2253520</h2>
+<div class="sym">ERROR: EM_DIAG_AP_MEM_ADDR_FAIL</div>
+<div class="txt">The system found overlapping memory in the AP board(s). The bad spot starts at %d Meg from the beginning of AP BAM memory.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If the bad spot is below 852 Meg then try replacing AP board 1 If the bad spot is above 852 Meg try replacing AP board 2.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AP Board</li></ol>
+</section>
+<section id="BM2253521"><a name="BM2253521"></a>
+<h2>2253521</h2>
+<div class="sym">ERROR: EM_DIAG_AP_PCI_MEM_FAIL</div>
+<div class="txt">The system found bad PCI mapped memory in the AP board(s). The bad spot starts at %d bytes from the beginning of AP PCI mapped memory.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This test can not tell which AP board contains the bad memory. Try reseating boards and verify each is in correct slot. If problem persists then replace single AP Board. If dual AP then configure to single AP and run diag again to isolate failure.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AP Board</li></ol>
+</section>
+<section id="BM2253522"><a name="BM2253522"></a>
+<h2>2253522</h2>
+<div class="sym">ERROR: EM_DIAG_AP_PCI_MEM_ADDR_FAIL</div>
+<div class="txt">The system found overlapping PCI mapped memory in the AP board(s). The bad spot starts at %d bytes from the beginning of AP PCI mapped memory.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This test can not tell which AP board contains the bad memory. Try reseating boards and verify each is in correct slot. If problem persists then replace single AP Board. If dual AP then configure to single AP and run diag again to isolate failure.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AP Board</li></ol>
+</section>
+<section id="BM2253523"><a name="BM2253523"></a>
+<h2>2253523</h2>
+<div class="sym">ERROR: EM_DIAG_AP_WRONG_TEST</div>
+<div class="txt">You selected the one board AP memory test but the system has detected a dual AP configuration. Please run the Dual Board AP memory test instead. %d AP CPUs were found. %d Meg of AP memory was found.</div>
+</section>
+<section id="BM2253550"><a name="BM2253550"></a>
+<h2>2253550</h2>
+<div class="sym">ERROR: EM_DIAG_DP_INIT_COMM_FAILURE</div>
+<div class="txt">Datapath test failed to initialize CM communications with other tasks. Test will be aborted. Perform a TPS Reset to correct the problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">CM is the Communications Manager, which handles communications Re-seating the SCP, AGP, APS, or Bridge boards may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>AGP Board</li><li>APS Board</li><li>Bridge Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253551"><a name="BM2253551"></a>
+<h2>2253551</h2>
+<div class="sym">ERROR: EM_DIAG_DP_CLEANUP_COMM_FAILURE</div>
+<div class="txt">Datapath test failed to delete a CM mailbox. Perform a TPS Reset to correct the problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">CM is the Communications Manager, which handles communications between system tasks. Re-seating the SCP, AGP, APS, or Bridge boards may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>AGP Board</li><li>APS Board</li><li>Bridge Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253552"><a name="BM2253552"></a>
+<h2>2253552</h2>
+<div class="sym">ERROR: EM_DIAG_DP_OS_COMM_FAILURE</div>
+<div class="txt">Datapath test failed to obtain a board address. Test will be aborted. Perform a TPS Reset to correct the problem.
+Addr type: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">Re-seating the SCP, AGP, APS, or Bridge boards may help this condition. This failure is caused by the OS not being able to identify the CPU in which the test is being executed on. This can occur if a problem exists with the PCI interface.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>AGP Board</li><li>APS Board</li><li>Bridge Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253553"><a name="BM2253553"></a>
+<h2>2253553</h2>
+<div class="sym">ERROR: EM_DIAG_DP_MSG_SEND_FAILURE</div>
+<div class="txt">The cm_send() system call failed. Datapath test failed to send a message to another task. Testing will be aborted. Perform a TPS Reset to correct the problem.
+To NMRID: %s
+OP code: %d
+Error: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">If this error is more persists after a TPS Reset, it may either be due to a software problem, or a problem with the hardware. Re-seating the SCP, AGP, APS, or Bridge boards may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AGP Board</li><li>APS Board</li><li>Bridge Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253554"><a name="BM2253554"></a>
+<h2>2253554</h2>
+<div class="sym">ERROR: EM_DIAG_DP_SRF_INIT_FAILURE</div>
+<div class="txt">Datapath test failed to initialize the SRF(or PSE) board. Test will be aborted. Perform a TPS Reset to correct the problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error may be just a one time failure, correctable by a system TPS Reset. This problem may also be caused if the necessary PSD is not present on the system disk.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>PSE Board</li><li>AGP Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253555"><a name="BM2253555"></a>
+<h2>2253555</h2>
+<div class="sym">ERROR: EM_DIAG_DP_SRF_START_SEQ_FAILURE</div>
+<div class="txt">Datapath test failed to start sequence playout on the SRF(or PSE) board. Test will be aborted.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error may be just a one time failure, correctable by a system TPS Reset. If the application PSD&#x27;s play out OK, then the diagnostic PSD is probably corrupted on the system disk.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>PSE Board</li><li>AGP Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253556"><a name="BM2253556"></a>
+<h2>2253556</h2>
+<div class="sym">ERROR: EM_DIAG_DP_SRF_RESTORE_FAILURE</div>
+<div class="txt">Datapath test failed to restore the SRF(or PSE) board after completion of the test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>PSE Board</li><li>AGP Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253557"><a name="BM2253557"></a>
+<h2>2253557</h2>
+<div class="sym">ERROR: EM_DIAG_DP_DRF_INIT_FAILURE</div>
+<div class="txt">Datapath test failed to initialize the DRF board. Test will be aborted. Perform a TPS Reset to correct the problem.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error may be just a one time failure, correctable by a system TPS Reset. This problem may also be caused by a hardware communication failure between the AGP and APS boards. Re-seating the AGP or APS boards may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li><li>AGP Board</li><li>APS Board</li><li>Bridge Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253558"><a name="BM2253558"></a>
+<h2>2253558</h2>
+<div class="sym">ERROR: EM_DIAG_DP_DRF_RESTORE_FAILURE</div>
+<div class="txt">Datapath test failed to restore the DRF after completion of the test.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>DRF Board</li><li>AGP Board</li><li>APS Board</li><li>Bridge Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253559"><a name="BM2253559"></a>
+<h2>2253559</h2>
+<div class="sym">ERROR: EM_DIAG_DP_RETREIVE_DRF_DATA_FAILURE</div>
+<div class="txt">Datapath test failed to retrieve the test data from the DRF for verification.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error may occur because of a failure in the datapath tested, or because of a hardware communication failure between boards. Re-seating the boards within the tested datapath may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>PSE Board</li><li>IRF Board</li><li>IRF I/O Board</li><li>DRF Board</li><li>AGP Board</li><li>APS Board</li><li>Bridge Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253560"><a name="BM2253560"></a>
+<h2>2253560</h2>
+<div class="sym">ERROR: EM_DIAG_DP_RETREIVE_IRF_DATA_FAILURE</div>
+<div class="txt">Datapath test failed to retrieve the test data from the IRF for verification.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error may occur because of a failure in the datapath tested, or because of a hardware communication failure between boards. Re-seating the boards within the tested datapath may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>PSE Board</li><li>IRF Board</li><li>IRF I/O Board</li><li>AGP Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253561"><a name="BM2253561"></a>
+<h2>2253561</h2>
+<div class="sym">ERROR: EM_DIAG_DP_RETREIVE_SRF_DATA_FAILURE</div>
+<div class="txt">Datapath test failed to retrieve the test data from the SRF(or PSE) board for verification.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error may occur because of a failure in the datapath tested, or because of a hardware communication failure between boards. Re-seating the boards within the tested datapath may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>PSE Board</li><li>AGP Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253562"><a name="BM2253562"></a>
+<h2>2253562</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_DRF_DP_DATA_LOST_FAILURE</div>
+<div class="txt">Datapath test detected lost data.
+Expected word count: %d
+Actual word count: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error may occur because of a failure in the datapath tested, or because of a hardware communication failure between boards. Re-seating the boards within the tested datapath may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>IRF I/O Board</li><li>DRF Board</li><li>AGP Board</li><li>APS Board</li><li>Bridge Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253563"><a name="BM2253563"></a>
+<h2>2253563</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_IRF_IO_DP_DATA_LOST_FAILURE</div>
+<div class="txt">Datapath test detected lost data.
+Expected word count: %d
+Actual word count: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error may occur because of a failure in the datapath tested, or because of a hardware communication failure between boards. Re-seating the boards within the tested datapath may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>IRF I/O Board</li><li>AGP Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253564"><a name="BM2253564"></a>
+<h2>2253564</h2>
+<div class="sym">ERROR: EM_DIAG_RRF_DRF_DP_DATA_LOST_FAILURE</div>
+<div class="txt">Selected test detected lost data.
+Expected word count: %d
+Actual word count: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error may occur because of a failure in the datapath tested, or because of a hardware communication failure between boards. Re-seating the boards within the tested datapath may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>IRF I/O Board</li><li>DRF Board</li><li>APS Board</li><li>AGP Board</li><li>Bridge Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253565"><a name="BM2253565"></a>
+<h2>2253565</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_DRF_DP_DATA_LOST_FAILURE</div>
+<div class="txt">Datapath test detected lost data.
+Expected word count: %d
+Actual word count: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error may occur because of a failure in the datapath tested, or because of a hardware communication failure between boards. Re-seating the boards within the tested datapath may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>IRF Board</li><li>DRF Board</li><li>AGP Board</li><li>APS Board</li><li>Bridge Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253566"><a name="BM2253566"></a>
+<h2>2253566</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_IRF_DP_DATA_LOST_FAILURE</div>
+<div class="txt">SRF-&gt;IRF Datapath test detected lost data.
+Expected word count: %d
+Actual word count: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This test attempts to send data from the SRF to the IRF over the the data transfer and then the APS verifies that the IRF received the expected data. If no data was transferred, there may be a communications breakdown between the APS and AGP or could be a fault on the SRF or IRF. If some data was transferred, the fault probably is in the IRF, SRF, or If some data was transferred, the fault probably is in the IRF, SRF, or the backplane that connects them.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>IRF Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253567"><a name="BM2253567"></a>
+<h2>2253567</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_TRF_DP_DATA_LOST_FAILURE</div>
+<div class="txt">Datapath test detected lost data.
+Expected word count: %d
+Actual word count: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error may occur because of a failure in the datapath tested, or because of a hardware communication failure between boards. Re-seating the boards within the tested datapath may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>TRF Board</li><li>AGP Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253568"><a name="BM2253568"></a>
+<h2>2253568</h2>
+<div class="sym">ERROR: EM_DIAG_DP_BAD_VALUES_FAILURE_WITH_DATA</div>
+<div class="txt">Datapath test detected bad data values.
+Expected: %4X, Actual: %4X
+Expected: %4X, Actual: %4X
+Expected: %4X, Actual: %4X
+Expected: %4X, Actual: %4X
+Expected: %4X, Actual: %4X</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error may occur because of a failure in the datapath tested, or because of a hardware communication failure between boards. Re-seating the boards within the tested datapath may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>IRF I/O Board</li><li>SRF Board</li><li>PSE Board</li><li>DRF Board</li><li>AGP Board</li><li>APS Board</li><li>Bridge Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253569"><a name="BM2253569"></a>
+<h2>2253569</h2>
+<div class="sym">ERROR: EM_DIAG_DP_STUCK_BITS_FAILURE_WITH_DATA</div>
+<div class="txt">Datapath test detected apparent stuck bits.
+Stuck bit pattern: %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Try running this test a number of times with the largest data pattern selected. If the problem persist, then the bit(s) are really stuck. Re-seating the boards within the tested datapath may help this condition. Check for bent/broken pins in the backplane connectors, or solder shorts on any boards within the datapath</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>IRF I/O Board</li><li>SRF Board</li><li>PSE Board</li><li>DRF Board</li><li>AGP Board</li><li>APS Board</li><li>Bridge Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253570"><a name="BM2253570"></a>
+<h2>2253570</h2>
+<div class="sym">ERROR: EM_DIAG_DP_FILE_OPEN_FAILURE</div>
+<div class="txt">Datapath test could not open a file on the system disk to save data.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IT MGD Board</li><li>APS Board</li></ol>
+</section>
+<section id="BM2253571"><a name="BM2253571"></a>
+<h2>2253571</h2>
+<div class="sym">ERROR: EM_DIAG_DP_IRF_REG_WRITE_FAILURE</div>
+<div class="txt">Datapath test failed writing to IRF board register. Register: 0x%x Value: 0x%x</div>
+<div class="lbl">Extended Error:</div><div class="txt">Try running the Register Test(s) from the IRF Board Level Diagnostics to confirm that the register is really failing. Re-seating the IRF board may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>AGP Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253572"><a name="BM2253572"></a>
+<h2>2253572</h2>
+<div class="sym">ERROR: EM_DIAG_DP_IRF_REG_READ_FAILURE</div>
+<div class="txt">Datapath test failed to read an IRF board register.
+Register: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">Try running the Register Test(s) from the IRF Board Level Diagnostics to confirm that the register is really failing. Re-seating the IRF board may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>AGP Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253573"><a name="BM2253573"></a>
+<h2>2253573</h2>
+<div class="sym">ERROR: EM_DIAG_DP_IRF_RRF_LINK_STATBILIZE_FAILURE</div>
+<div class="txt">IRF to RRF link failed to stabilize after the IRF Clock Select was switched. Value: 0x%08x Expected bits: 0x%08x (%s)</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error may be just a one time failure, correctable by a system TPS Reset. This problem may also be caused by a hardware failure with this link.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>IRF I/O Board</li></ol>
+</section>
+<section id="BM2253574"><a name="BM2253574"></a>
+<h2>2253574</h2>
+<div class="sym">ERROR: EM_DIAG_DP_RRF_INITIALIZE_FAILURE</div>
+<div class="txt">RRF re-initialization failed after running test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check to make sure the fiber optic link between he RRF chassis and IRF I/O board is working properly. Also try performing a TPS Reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF I/O Board</li><li>IRF Board</li></ol>
+</section>
+<section id="BM2253575"><a name="BM2253575"></a>
+<h2>2253575</h2>
+<div class="sym">ERROR: EM_DIAG_DP_SRF_REG_WRITE_FAILURE</div>
+<div class="txt">Datapath test failed writing to IRF board register.
+Register: %d
+Value: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">Try running the Register Test(s) from the SRF Board Level Diagnostics to confirm that the register is really failing. Re-seating the SRF board may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>PSE Board</li><li>AGP Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253576"><a name="BM2253576"></a>
+<h2>2253576</h2>
+<div class="sym">ERROR: EM_DIAG_DP_CLK_SEL_TO_RRF_FAILED_MISSING_RRF</div>
+<div class="txt">Datapath test failed to switch clock source to recovered clock. Remote RRF not present (RRF Init not done) %-20d0x%08x RRF Init Bit %0x08x</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2253577"><a name="BM2253577"></a>
+<h2>2253577</h2>
+<div class="sym">ERROR: EM_DIAG_DP_CLK_SEL_TO_RRF_FAILED_IN_LOOPBACK</div>
+<div class="txt">Datapath test failed to switch clock source to recovered clock. Remote RF is in loopback %-30d0x%08x RRF Link Loopback Enable Bit %0x08x</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2253578"><a name="BM2253578"></a>
+<h2>2253578</h2>
+<div class="sym">ERROR: EM_DIAG_DP_CANNOT_CHANGE_TO_LOOPBACK_USING_RECVRD_CLK</div>
+<div class="txt">Datapath test failed to switch Remote RF to loopback. The clock source is the recovered clock. Before switching to loopback, the clock source must be the local oscillator.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Placing the Remote RF in loopback while the clock source is set to the recovered clock, results in the loss of a clock signal. The state of the IRF board becomes unpredictable. Prior to changing the Remote RF to loopback, the clock source must be changed to the local oscillator.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2253579"><a name="BM2253579"></a>
+<h2>2253579</h2>
+<div class="sym">ERROR: EM_DIAG_DP_IRF_GET_32NPFM_RESOURCE_BASE_ADDR_FAILED</div>
+<div class="txt">Datapath test failed to get the base address of the IRF board&#x27;s 32 bit non-prefetchable memory.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Acquiring the base address for a board&#x27;s memory space requires calling the system resource API function, getLocalResourceBase(). A call to this function failed, which indicates the O/S did not recognize the presence of the IRF board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li><li>IRF Board</li></ol>
+</section>
+<section id="BM2253580"><a name="BM2253580"></a>
+<h2>2253580</h2>
+<div class="sym">ERROR: EM_PEARL_ADDR_WINDOW_DP_ALLOC_FAILED</div>
+<div class="txt">Bridge Datapath Diagnostic - Address Window test failed. Slave processor failed to allocate the requested block of memory.
+Master Proc = %s
+Slave Proc = %s
+Block size = %08ld bytes</div>
+<div class="lbl">Extended Error:</div><div class="txt">The operating system failed to allocate the necessary block of memory which indicates available memory is low. Perform a TPS Reset. Posible root causes:
+1. Memory leaks
+2. Inadequate system memory sizing
+3. Excessive memory requested by diagnostic</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2253581"><a name="BM2253581"></a>
+<h2>2253581</h2>
+<div class="sym">ERROR: EM_PEARL_ADDR_WINDOW_DP_READBACK_FAILED</div>
+<div class="txt">Bridge Datapath Diagnostic - Address Window test failed the. memory write/read/verify operation.
+Master Proc = %s
+Slave Proc = %s
+Block Size = %08ld words
+Total Err = %08ld single/multi bit(%08ld / %08ld) 2nd Read Err = %08ld Bad Bits = 0x%08x</div>
+<div class="lbl">Extended Error:</div><div class="txt">The &#x27;single/multi bit&#x27; values indicate the number of the single bit and multi-bit errors encountered. The &#x27;Bad Bits&#x27; value indicates the bits that failed to be read back successfully. When a read error occurs, a second read operation is done. Secondary read errors are summed in the &#x27;2nd Read Err&#x27; value. Secondary read errors indicate possible write operation failures or bad memory addresses. Root cause: indeterminate</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AGP Board</li><li>APS Board</li><li>Bridge Board</li></ol>
+</section>
+<section id="BM2253582"><a name="BM2253582"></a>
+<h2>2253582</h2>
+<div class="sym">ERROR: EM_PEARL_DOORBELL_DP_FAILED_ACK_OF_INT_CLEAR</div>
+<div class="txt">Bridge Datapath Diagnostic - Doorbell Interrupt test failed when the master processor failed to acknowledge the interrupt was cleared by the slave processor.
+Master Proc = %s
+Slave Proc = %s Doorbells = 0x%08x
+Poll Attempts = %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The interrupt was issued to the slave processor side of the Bridge module. An ISR on the slave processor should have been called when the doorbell was issued and then detected by the slave processor. The ISR clears the corresponding doorbell interrupt. Meanwhile, the master processor is polling the doorbell interrupt&#x27;s status bit, checking for a cleared interrupt. After several polling attempts, the master processor failed to detect the interrupt was cleared, resulting in an error. Fault isolation is as follows:
+Using a bus analyzer, verify the interrupt was issued by the master processor to the slave processor&#x27;s doorbell on the Bridge module. Using a bus analyzer on the slave side of the Bridge module, verify the doorbell asserted an interrupt on the slave-side PCI bus. Also, verify the slave processor cleared the interrupt. Lastly, verify the master processor repeatedly polled the Bridge module for the cleared interrupt bit. A failure at any point will assist in fault generation (processor, communications/connectivity, or Bridge).</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AGP Board</li><li>APS Board</li><li>Bridge Board</li></ol>
+</section>
+<section id="BM2253583"><a name="BM2253583"></a>
+<h2>2253583</h2>
+<div class="sym">ERROR: EM_PEARL_DP_FAILED_TO_COMPLETE_SLAVECMD</div>
+<div class="txt">Bridge Datapath Diagnostic failed. The master processor failed to verify a function running on the slave processor successfully completed.
+Master Proc = %s
+Slave Proc = %s
+Function = %s
+Poll Attempts = %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Requests to execute functions on the slave processor are initiated by the master processor using a &#x27;slave command&#x27; interface. When called, an interface function that initiates remote execution only verifies that the function exists on the slave processor and that it can be executed. Provided those conditions are satisfied, execution of the function on the slave processor begins. The master processor verifies the function on the slave processor is done by polling the interface. This error is generated after several polling attempts failed to verify the issued command completed execution on the slave processor. Possible causes (1) issued command is still running, (2) issued command is in an endless loop,
+(3) race conditions within the interface due to multiple commands being issued, or (4) problem with interface used to issued commands to the slave processor.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2253584"><a name="BM2253584"></a>
+<h2>2253584</h2>
+<div class="sym">ERROR: EM_PEARL_DP_AGP_TO_PEARL_COMMS_FAILED</div>
+<div class="txt">An error was detected between the AGP and Bridge board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that the Brdige board is present and connected properly.</div>
+</section>
+<section id="BM2253585"><a name="BM2253585"></a>
+<h2>2253585</h2>
+<div class="sym">ERROR: EM_PEARL_DP_MASTER_CANNOT_FINDPEARL</div>
+<div class="txt">Bridge Datapath Diagnostic failed. The master processor cannot find the Bridge board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Function findPearl() failed Verify that the AGP and APS processors initialize properly. If the AGP processor does not initialize properly, the Bridge module is held in TPS reset and the APS processor will not detect the presence of the Bridge module. If the processors initialize properly, this error indicates the processor could not detect the presence of the Bridge module. Attempt the following and then retest: (1) reseat the Bridge and processor boards;
+(2) swap the processor boards to identify whether the problem &#x27;follows&#x27; the processor; (3) replace the Bridge module; and (4) look for communications problems.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Bridge Board</li><li>AGP Board</li><li>APS Board</li></ol>
+</section>
+<section id="BM2253586"><a name="BM2253586"></a>
+<h2>2253586</h2>
+<div class="sym">ERROR: EM_PEARL_DP_MASTER_CANNOT_GET_PEARL_CSR_BASE</div>
+<div class="txt">Bridge Datapath Diagnostic failed. The master processor initiating the diagnostic cannot determine the Bridge board&#x27;s CSR registers&#x27; base memory address.
+Master Processor = %s
+Slave Processor = %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that the AGP and APS processors initialize properly. The AGP processor receives memory map information from the APS. If the APS did not initialize properly, the AGP will not be able to get the Bridge module&#x27;s control/status registers&#x27; base address. If both boards initialize properly, an error in the board support package (BSP) software exists.</div>
+</section>
+<section id="BM2253587"><a name="BM2253587"></a>
+<h2>2253587</h2>
+<div class="sym">ERROR: EM_PEARL_DP_MASTER_NOT_AGP_OR_APS</div>
+<div class="txt">Bridge Datapath Diagnostic failed. The master processor, which initiates the Bridge board diagnostics, cannot identify itself as the AGP or APS processor.
+Master Processor = %s
+Slave Processor = %s
+Bus Number = %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">Bridge datapath diagnostics require that the processor initiating the diagnostics can identify itself, then identify the test scenario. The findPearl() function returns the processor&#x27;s bus number (among other things). The bus number is searched for in a test scenarios table, tblPearlModuleScenario[]. If the bus number is not found, a problem exists.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2253588"><a name="BM2253588"></a>
+<h2>2253588</h2>
+<div class="sym">ERROR: EM_PEARL_DP_SLAVE_CANNOT_GET_PEARL_CSR_BASE</div>
+<div class="txt">Bridge Datapath Diagnostic - Doorbell Interrupt test failed. The slave processor cannot determine the Bridge board&#x27;s CSR registers&#x27; base address.
+Master Proc = %s
+Slave Proc = %s
+CSR Resource = %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">An error in the board support package (BSP) software exists.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2253589"><a name="BM2253589"></a>
+<h2>2253589</h2>
+<div class="sym">ERROR: EM_PEARL_DP_MASTER_CANNOT_GET_SLAVE_LOCAL_MEM_BASE</div>
+<div class="txt">Bridge Datapath Diagnostic - Address Window test failed. The master processor cannot determine the base address of the slave processor&#x27;s local memory.
+Master Processor = %s
+Slave Processor = %s
+Resource Number = %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The element enSlaveProcLocalMemResource from the test scenarios table, tblPearlModuleScenario[], for a given scenario, specifies the resource that correlates to the slave processor&#x27;s local memory. The board support function, getLocalResourceBase(), failed to acquire the base address for the given resource value.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2253590"><a name="BM2253590"></a>
+<h2>2253590</h2>
+<div class="sym">ERROR: EM_PEARL_DP_TEST_PATTERN_EXCEEDS_TEST_DEFS_ARRAY_BOUNDS</div>
+<div class="txt">Bridge Datapath Diagnostic failed. Coding error. Test pattern exceeds bounds.
+Master Proc = %s
+Slave Proc = %s
+Requested Test Pattern = %d ( 0 &lt;= tp &lt;= %d )</div>
+<div class="lbl">Extended Error:</div><div class="txt">The Bridge datapath diagnostics contains a table of test parameters indexed by the n32testPattern parameter. The value of the testPattern would result in a data access error.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2253591"><a name="BM2253591"></a>
+<h2>2253591</h2>
+<div class="sym">ERROR: EM_PEARL_DP_REGISTER_DATA_BUS_TEST_FAILED</div>
+<div class="txt">Bridge Datapath Diagnostic - Data Bus test failed to write/read/verify the scratchpad registers.
+Master Proc = %s
+Slave Proc = %s Failed Tests = 0x%04x Scratchpad Regs = 0x%04x Bad Bits Set/TPS Reset = 0x%08x / 0x%08x</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>AGP Board</li><li>APS Board</li><li>Bridge Board</li></ol>
+</section>
+<section id="BM2253592"><a name="BM2253592"></a>
+<h2>2253592</h2>
+<div class="sym">ERROR: EM_PEARL_DP_APS_TO_PEARL_COMMS_FAILED</div>
+<div class="txt">An error was detected between the APS and Bridge board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that the Brdige board is present and connected properly.</div>
+</section>
+<section id="BM2253593"><a name="BM2253593"></a>
+<h2>2253593</h2>
+<div class="sym">ERROR: EM_DIAG_DP_CM_DEFINE_ERR</div>
+<div class="txt">The cm_define() system call failed. Test will be aborted. Perform a TPS Reset to correct the problem.
+NMRID: %s
+Status: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The cm_define() routine enables the diagnostic test to define its unique ID for sending and receiving messages. The problem is most likely a software or a SCP database failure.</div>
+</section>
+<section id="BM2253594"><a name="BM2253594"></a>
+<h2>2253594</h2>
+<div class="sym">ERROR: EM_DIAG_DP_CM_LOOKUP_ERR</div>
+<div class="txt">The cm_lookup() system call failed. Test will be aborted. Perform a TPS Reset to correct the problem.
+NMRID: %s
+Error: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">The cm_lookup() routine checks the CM database for a unique ID which matches the string given. The value returned is a unique port number for sending and receiving messages. The failure of this call prevents the sending of messages to other processors.</div>
+</section>
+<section id="BM2253595"><a name="BM2253595"></a>
+<h2>2253595</h2>
+<div class="sym">ERROR: EM_DIAG_DP_CM_DELETE_ERR</div>
+<div class="txt">The cm_delete() system call failed. A TPS Reset may be needed to correct the problem.
+NMRID: %s
+Error: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">The cm_delete() routine removes the entry in the CM table so that further entries can be made. This error may cause other tests to fail.</div>
+</section>
+<section id="BM2253596"><a name="BM2253596"></a>
+<h2>2253596</h2>
+<div class="sym">ERROR: EM_DIAG_DP_CM_REC_ERR</div>
+<div class="txt">The cm_rec() system call failed. A TPS Reset may be needed to correct the problem.
+Error: %b</div>
+<div class="lbl">Extended Error:</div><div class="txt">The cm_rec() routine receives messages from other nodes. This error can be caused by the failure of the other node to send a message or a communications database failure.</div>
+</section>
+<section id="BM2253597"><a name="BM2253597"></a>
+<h2>2253597</h2>
+<div class="sym">ERROR: EM_DIAG_DP_BAD_VALUES_FAILURE</div>
+<div class="txt">Datapath test detected bad data values.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error may occur because of a failure in the datapath tested, or because of a hardware communication failure between boards. Re-seating the boards within the tested datapath may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>IRF I/O Board</li><li>SRF Board</li><li>PSE Board</li><li>DRF Board</li><li>AGP Board</li><li>APS Board</li><li>Bridge Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253598"><a name="BM2253598"></a>
+<h2>2253598</h2>
+<div class="sym">ERROR: EM_DIAG_DP_STUCK_BITS_FAILURE</div>
+<div class="txt">Datapath test detected apparent stuck bits.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Try running this test a number of times with the largest data pattern selected. If the problem persist, then the bit(s) are really stuck. Re-seating the boards within the tested datapath may help this condition. Check for bent/broken pins in the backplane connectors, or solder shorts on any boards within the datapath</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>IRF I/O Board</li><li>SRF Board</li><li>PSE Board</li><li>DRF Board</li><li>AGP Board</li><li>APS Board</li><li>Bridge Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253599"><a name="BM2253599"></a>
+<h2>2253599</h2>
+<div class="sym">ERROR: EM_DIAG_DP_CM_REC_INVALID_MSG</div>
+<div class="txt">Multiple invalid cm messages have been received. This problem is most likely a software problem. Try the test again. If the problem persists, Perform a TPS Reset.
+Last OP Code: %d
+Exp Op Code: %d</div>
+</section>
+<section id="BM2253600"><a name="BM2253600"></a>
+<h2>2253600</h2>
+<div class="sym">ERROR: EM_DIAG_DP_RSP_PLAYOUT_TMO</div>
+<div class="txt">Timeout waiting for RSP playout to become active. This problem is most likely a software problem. Try the test again. If the problem persists, Perform a TPS Reset.</div>
+</section>
+<section id="BM2253601"><a name="BM2253601"></a>
+<h2>2253601</h2>
+<div class="sym">ERROR: EM_DIAG_DP_BAD_STATUS_RESPONSE_ERR</div>
+<div class="txt">The application required to execute this test has returned a error status. See the error log for more information. If the problem persists, Perform a TPS Reset.
+NMRID:%s
+Opcode:%d
+Status:%d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error is generated when a response packet indicates that a request for a particular operation has failed. The application code that is responsible for executing this request should log an error indicating why this occurred. In some cases, this can indicate that the software is in a bad state and may need a TPS Reset.</div>
+</section>
+<section id="BM2253602"><a name="BM2253602"></a>
+<h2>2253602</h2>
+<div class="sym">ERROR: EM_DIAG_DP_DAQ_INIT_TMO</div>
+<div class="txt">A timeout occurred waiting for the Data Acquisition Controller to initialize. This test will be aborted. If the problem persists, Perform a TPS Reset.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This diagnostic test utilizes the Data Acquisition Controller used by applications. Without this process, no data can be retrieved from the DRF. Further testing must be aborted. Check the error log for additional information to why this task failed.</div>
+</section>
+<section id="BM2253603"><a name="BM2253603"></a>
+<h2>2253603</h2>
+<div class="sym">ERROR: EM_DIAG_DP_IRF_BYPASS_FIFO_NUM_OF_WORDS_ERR_WITH_DATA</div>
+<div class="txt">The number of words read from the IRF Bypass FIFO was incorrect.
+Expected word count: %d
+Actual word count: %d
+Last address read: %d
+FIFO size: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error may occur because of a failure in the datapath tested, or because of a hardware communication failure between boards. Re-seating the boards within the tested datapath may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>PSE Board</li><li>IRF Board</li><li>IRF I/O Board</li><li>AGP Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253604"><a name="BM2253604"></a>
+<h2>2253604</h2>
+<div class="sym">ERROR: EM_DIAG_DP_IRF_BYPASS_FIFO_NUM_OF_WORDS_ERR</div>
+<div class="txt">The number of words read from the IRF Bypass FIFO was incorrect.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error may occur because of a failure in the datapath tested, or because of a hardware communication failure between boards. Re-seating the boards within the tested datapath may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>PSE Board</li><li>IRF Board</li><li>IRF I/O Board</li><li>AGP Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253605"><a name="BM2253605"></a>
+<h2>2253605</h2>
+<div class="sym">ERROR: EM_DIAG_DP_SEQ_COMPLETE_TMO_ERR</div>
+<div class="txt">Timeout waiting for the SRF(or PSE) sequence to complete. Perform a TPS Reset if problem persists.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error occurred while waiting for the SRF(or PSE) sequence to complete. This can occur if the sequencer failed, a software error occurred, or the interrupt service routine failed to be invoked on the SRF(or PSE).</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li><li>SRF Board</li><li>PSE Board</li></ol>
+</section>
+<section id="BM2253606"><a name="BM2253606"></a>
+<h2>2253606</h2>
+<div class="sym">ERROR: EM_DIAG_NO_IRFIO_DETECTED</div>
+<div class="txt">IRF IO Board was NOT Detected. Test will be Aborted.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error occurred while initializing the test. This can occur if the IRF IO board is not present, IRF board not present, or the serial number chip failure on the IRF IO board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>IRF I/O Board</li></ol>
+</section>
+<section id="BM2253607"><a name="BM2253607"></a>
+<h2>2253607</h2>
+<div class="sym">ERROR: EM_PEARL_DP_SLAVE_CSR_BASE_ADDR_FAILED</div>
+<div class="txt">The slave processor&#x27;s call to get the local base CSR address failed during a doorbell interrupt test with a return code of %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error was logged by the slave processor during a Bridge DP doorbell interrupt test. Check the return code for more detail. An error should also be logged by the master processor.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2253608"><a name="BM2253608"></a>
+<h2>2253608</h2>
+<div class="sym">ERROR: EM_PEARL_DP_SLAVE_FAILED_INT_CONNECT</div>
+<div class="txt">A function invoked on the slave processor returned a failure when trying to connect a function to an interrupt handler.
+Master Proc = %s
+Slave Proc = %s
+Function = %s</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error was logged by the master processor during a Bridge DP doorbell interrupt test. The master detected that the slave processor was unable to connect a new function to the doorbell interrupt handler.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2253609"><a name="BM2253609"></a>
+<h2>2253609</h2>
+<div class="sym">ERROR: EM_PEARL_DP_MEM_ALLOC_FAILED</div>
+<div class="txt">The slave processor was unable to allocate enough memory to run the Address Window portion of the Bridge DP diagnostic test. Amount requested: 0x%x variables of size %d.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This function was sent by the master processor to allocate memory for the Address Window test on the slave processor. An error should also be logged by the master processor. Possible causes are memory leaks or other software problems.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2253610"><a name="BM2253610"></a>
+<h2>2253610</h2>
+<div class="sym">ERROR: EM_PEARL_DP_SLAVE_INT_CONNECT_FAILED</div>
+<div class="txt">The slave processor was unable to connect a new function to a doorbell interrupt for the Bridge DP diagnostic test. Failed status: 0x%x.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This function was sent by the master processor to connect a test function to a Bridge doorbell interrupt on the slave processor. An error should also be logged by the master processor.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2253611"><a name="BM2253611"></a>
+<h2>2253611</h2>
+<div class="sym">ERROR: EM_DIAG_DP_IRF_NOT_DETECTED</div>
+<div class="txt">IRF Board is not detected or the board is not responding, the test can not continue.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li></ol>
+</section>
+<section id="BM2253612"><a name="BM2253612"></a>
+<h2>2253612</h2>
+<div class="sym">ERROR: EM_DIAG_DP_SYMBOL_LOOKUP_FAILED</div>
+<div class="txt">The routine %s() can not be found in the system&#x27;s symbol table It is probably caused by a failed TPS Reset, make sure the code aps.o is the installed in the system and perform another TPS Reset.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Firmware</li></ol>
+</section>
+<section id="BM2253613"><a name="BM2253613"></a>
+<h2>2253613</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_AP_DP_DATA_MISMATCH_ERR</div>
+<div class="txt">Datapath test detected unexpected data in sequence %d.
+APS local Address: %X
+Expected Data: %X
+Actual Data: %X</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error may occur because of a failure in the datapath tested, or because of a hardware communication failure between boards. Re-seating the boards within the tested datapath may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF Board</li><li>SRF Board</li><li>AGP Board</li><li>APS Board</li></ol>
+</section>
+<section id="BM2253614"><a name="BM2253614"></a>
+<h2>2253614</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_RRF_CHECKSUM_ERRORS</div>
+<div class="txt">Diags detected checksum errors on the IRF&lt;-&gt;RRF data link GB%d. Irf-&gt;Rrf chksum errs: %d, Irf-&gt;Rrf missed counts: %d Rrf-&gt;Irf chksum errs: %d, Rrf-&gt;Irf missed counts: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">The IRF and RRF count the number of packet errors at occur on the fiber link between MGD and RRF. A small number of errors is not bad. A large number generally indicates a bad fiber cable.</div>
+</section>
+<section id="BM2253615"><a name="BM2253615"></a>
+<h2>2253615</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_RRF_WR_ERRORS</div>
+<div class="txt">Diags detected register write/read verify errors between the IRF and RRF. Error counts: UTNS: %d, Exciter: %d, Receiver: %d, RrfDif: %d out of %d write commands.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This test wrote 1000&#x27;s of register commands to the boards in the RRF chassis. After each write command sent from the IRF to a register in the RRF, the RRF sends the new register contents back to IRF. The value written should match the value returned. A large number of errors indicates that the IRF does not have proper control of the RRF.</div>
+</section>
+<section id="BM2253616"><a name="BM2253616"></a>
+<h2>2253616</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_DRF_DP_DATA_WRONG_FAILURE</div>
+<div class="txt">Datapath test detected bad data.
+Error word count: %d
+Failed Channel: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This error may occur because of a failure in the datapath tested, or because of a hardware communication failure between boards. Re-seating the boards within the tested datapath may help this condition.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>IRF Board</li><li>DRF Board</li><li>AGP Board</li><li>APS Board</li><li>Bridge Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253617"><a name="BM2253617"></a>
+<h2>2253617</h2>
+<div class="sym">ERROR: EM_DIAG_RIFDIF_CAN_FAIL</div>
+<div class="txt">RRF Diag halted because CAN msg from SCP to RRF-DIF could not be sent. Verify that the SCP to RRF-DIF CAN link is functioning. This diag can not complete if the SCP to RRF-DIF CAN link is not working.</div>
+</section>
+<section id="BM2253618"><a name="BM2253618"></a>
+<h2>2253618</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_IRF_BAD_DATA</div>
+<div class="txt">SRF(or PSE)-&gt;IRF Datapath test detected bad data. First bad value 0x%08X, Expected 0x%08X</div>
+<div class="lbl">Extended Error:</div><div class="txt">This test verifies that the SRF(or PSE) can send data to the IRF(or IXG) over the sequence bus on the MGD backplane. This bus connects the SRF(or PSE), IRF(or IXG), and STIF(or PSEIO) boards. This test will fail if the SRF(or PSE) can not send a 32-bit parallel signal to the IRF(or IXG). The STIF(or PSEIO) is not tested by this diag but a fault on the STIF(or PSEIO) can also make this diag fail.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>PSE Board</li><li>IRF Board</li><li>STIF Board</li><li>PSE I/O Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253619"><a name="BM2253619"></a>
+<h2>2253619</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_IRF_SEQ_CHKSUM_BAD</div>
+<div class="txt">SRF(or PSE)-&gt;IRF(or IXG) Datapath test detected a checksum error on the sequence bus. Data on this bus is being corrupted by one of the devices hooked to the bus.</div>
+<div class="lbl">Extended Error:</div><div class="txt">During this test, data was sent by the SRF(or PSE) to the 32-bit sequence bus on the MDG backplane, past the STIF(or PSEIO) board, and into the IRF board. The IRF detected that the data was corrupt. This might be caused by a bad board or a bad backplane. You can isolate the effect of the STIF(or PSEIO) board by removing that board (power down first) and running the SRF(or PSE)-IRF(or IXG) diag again. The system will not run without the STIF(or PSEIO) board but the SRF(or PSE)-IRF(or IXG) diag can be run. If the test passes without the STIF(or PSEIO) the STIF(or PSEIO) is defective. Otherwise, the problem is in the SRF(or PSE), IRF(or IXG), or backplane. Check for bent packplane pins. Re-seating the IRF(or IXG)/SRF(or PSE)/STIF(or PSEIO) might help.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>PSE Board</li><li>PSE I/O Board</li><li>IRF Board</li><li>IXG Board</li><li>STIF Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253620"><a name="BM2253620"></a>
+<h2>2253620</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_IRF_DP_DATA_LOST_FAILURE_2</div>
+<div class="txt">SRF(or PSE)-&gt;IRF(or IXG) Datapath test detected lost data.
+Expected word count: %d
+Actual word count: %d</div>
+<div class="lbl">Extended Error:</div><div class="txt">This test attempts to send data from the SRF(or PSE) to the IRF(or IXG) over the sequence bus on the MGD backplane. The AGP starts the data transfer and then verifies that the IRF(or IXG) received the expected data. This problem can be caused by a faulty SRF(or PSE), IRF(or IXG), or the backplane that connects them.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>PSE Board</li><li>IRF Board</li><li>IXG Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253621"><a name="BM2253621"></a>
+<h2>2253621</h2>
+<div class="sym">ERROR: EM_DIAG_SRF_IRF_DP_BAD_ADDRESSES</div>
+<div class="txt">SRF(or PSE)-&gt;IRF(or IXG) Datapath test detected bad data on the sequence bus.
+Expected address: %02Xh
+Actual address: %02Xh</div>
+<div class="lbl">Extended Error:</div><div class="txt">This test verifies that the expected seqence on data appears on the sequence bus of the MGD chassis. The SRF(or PSE) should repeatedly send a particular sequence of data to the IRF(or IXG) board. This diag will fail if the AGP does not detect the expected data sequence. This problem can be caused by a faulty SRF(or PSE), IRF(or IXG), or the backplane that connects them.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SRF Board</li><li>PSE Board</li><li>IRF Board</li><li>IXG Board</li><li>MGD Backplane</li></ol>
+</section>
+<section id="BM2253622"><a name="BM2253622"></a>
+<h2>2253622</h2>
+<div class="sym">ERROR: EM_DIAG_TNS_DP_FILE_OPEN_ERROR</div>
+<div class="txt">Abandoned error msg.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Software</li></ol>
+</section>
+<section id="BM2253623"><a name="BM2253623"></a>
+<h2>2253623</h2>
+<div class="sym">ERROR: EM_DIAG_TNS_DP_SETUP_FAILED</div>
+<div class="txt">Abandoned error msg.</div>
+</section>
+<section id="BM2253624"><a name="BM2253624"></a>
+<h2>2253624</h2>
+<div class="sym">ERROR: EM_DIAG_TNS_DP_NOISE_INJECT_ERROR</div>
+<div class="txt">The TNS diagnostic failed to inject the test transient noise spikes. Possible causes could be faulty Receiver (not commanding noise spikes) or the TDM not generating the noise levels.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Most likely the TDM module is not generating the noise spikes when requested. Replace the TDM and try again.</div>
+</section>
+<section id="BM2253625"><a name="BM2253625"></a>
+<h2>2253625</h2>
+<div class="sym">ERROR: EM_DIAG_TNS_DP_NOTCH_THRESHOLD_SET_ERROR</div>
+<div class="txt">The TNS diagnostic failed to set the TNS notch Threshold. This could be caused due to a communication error between the IRF3 and the RRX.</div>
+<div class="lbl">Extended Error:</div><div class="txt">IRF3 is having problems writing to the RRX register or the RRX, please re-seat the IRF3 board and check the connections from the IRF3 to the RRX.</div>
+</section>
+<section id="BM2253626"><a name="BM2253626"></a>
+<h2>2253626</h2>
+<div class="sym">ERROR: EM_DIAG_TNS_DP_DATA_ERROR</div>
+<div class="txt">Abandoned error msg.</div>
+</section>
+<section id="BM2253627"><a name="BM2253627"></a>
+<h2>2253627</h2>
+<div class="sym">ERROR: EM_DIAG_TNS_DP_RFHUB_LOOPBACK_WARNING</div>
+<div class="txt">Abandoned error msg.</div>
+</section>
+<section id="BM2253628"><a name="BM2253628"></a>
+<h2>2253628</h2>
+<div class="sym">ERROR: EM_DIAG_TNS_DP_RFHUB_LOOPBACK_ERROR</div>
+<div class="txt">Abandoned error msg.</div>
+</section>
+<section id="BM2253629"><a name="BM2253629"></a>
+<h2>2253629</h2>
+<div class="sym">ERROR: EM_DIAG_TNS_DP_RFHUB_ERRORS</div>
+<div class="txt">The TNS Datapath diagnostic was aborted because of cable or power supply errors. Check this log for cable or power supply error messages.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Errors have just been logged about disconnected cables or bad power supplies. Find these error messages and repair the indicated problem before attempting to run the TNS diagnostic again.</div>
+</section>
+<section id="BM2253630"><a name="BM2253630"></a>
+<h2>2253630</h2>
+<div class="sym">ERROR: EM_DIAG_TNS_DP_CASE_1_ERROR</div>
+<div class="txt">The TNS diag could not generate notch requests from the TDM. RRX-%d tested.</div>
+<div class="lbl">Extended Error:</div><div class="txt">RRX-1 controls the TDM. The diag should have caused the TDM to generate notch requests but none were seen by the RRX. The problem could be in the TDM, the RRX, or the cables that connect the TDM to the RRX modules.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Transient Detection Module</li><li>RRx Module</li></ol>
+</section>
+<section id="BM2253631"><a name="BM2253631"></a>
+<h2>2253631</h2>
+<div class="sym">ERROR: EM_DIAG_TNS_DP_NOTCH_ERROR</div>
+<div class="txt">TNS diag found notches in RRX-%d view data when not expected. The RRX hardware could not prevent analog notching.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The TNS diagnostic detected notches when not expected. The RRX notching circuits were disabled but they notched anyway.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li></ol>
+</section>
+<section id="BM2253632"><a name="BM2253632"></a>
+<h2>2253632</h2>
+<div class="sym">ERROR: EM_DIAG_TNS_DP_NO_NOTCH_ERROR</div>
+<div class="txt">TNS diag did not see notches in the RRX-%d sample data. The RRX was commanded to notch the analog data stream but that did not happen.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The first RRX commanded the TDM to generate notch requests. All of the RRX should have notched their sample data. If none of the RRX passed this test, examine the first RRX and the TDM. If only RRX-2-8 failed this test, examine those RRX and the cables that connect them to the TDM.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li><li>Transient Detection Module</li></ol>
+</section>
+<section id="BM2253633"><a name="BM2253633"></a>
+<h2>2253633</h2>
+<div class="sym">ERROR: EM_DIAG_IRF_RRF_LINK_ERRORS</div>
+<div class="txt">Link errors were detected on IRF&lt;-&gt;RRF data link GB%d.
+RX signal ready loss : %d (1 = Yes, 0 = No)
+Irf Error Frame : %d (1 = Yes, 0 = No)
+RRF Error Frame : %d (1 = Yes, 0 = No)</div>
+<div class="lbl">Extended Error:</div><div class="txt">The IRF and RRF monitor the data frames sent over each of the fiber cables. Bad data frames could cause loss of sample data or loss of control of the RRF boards. Check for unseated fiber cables, damaged fiber cables, then consider replacing the IRF2 or DIF board.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>IRF I/O Board</li><li>RRF-DIF Board</li><li>GigaLink Fiber Cable</li><li>IRF Board</li></ol>
+</section>
+<section id="BM2253634"><a name="BM2253634"></a>
+<h2>2253634</h2>
+<div class="sym">ERROR: EM_DIAG_TNS_DP_DTNS_ERROR</div>
+<div class="txt">TNS diag did not see DTNS notches in the RRX-%d sample data. The RRX was commanded to notch the digital data stream but that did not happen.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The first RRX commanded the TDM to generate notch requests. All of the RRX should have inserted zero into the sample data. If none of the RRX passed this test, examine the first RRX and the TDM. If only RRX-2-8 failed this test, examine those RRX and the cables that connect them to the TDM.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li></ol>
+</section>
+<section id="BM2253635"><a name="BM2253635"></a>
+<h2>2253635</h2>
+<div class="sym">ERROR: EM_DIAG_TNS_DP_HI_THRESHOLD_ERROR</div>
+<div class="txt">TNS diag could not prevent notching by raising the notching threshold. RRX-1 set a high notching threshold but TDM generated notch requests anyway.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This might be caused by the RRX not controlling the TDM correctly or by the notching circuits in the TDM being out of spec.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Transient Detection Module</li><li>RRx Module</li></ol>
+</section>
+<section id="BM2253636"><a name="BM2253636"></a>
+<h2>2253636</h2>
+<div class="sym">ERROR: EM_DIAG_TNS_DP_SPIKE_DISABLE_ERROR</div>
+<div class="txt">TNS diag could not prevent notching by disabling test spikes from the TDM. The TDM may be stuck in diagnostic mode or there may be excessive RF noise in the screen room. Ensure the room door is closed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">This part of the test runs with the in-room TNS antenna active. Keep the room door closed while running this diag. If the test fails with the door closed, try disconnecting the TNS antenna. If you get this error message with the antenna disconnected, replace the TDM.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Transient Detection Module</li></ol>
+</section>
+<section id="BM2253637"><a name="BM2253637"></a>
+<h2>2253637</h2>
+<div class="sym">ERROR: EM_DIAG_TNS_SAW_INVIEW_COUNTS_ERROR</div>
+<div class="txt">TNS diag found that RRX-%d counted in-view only notches when not in a view. The RRX&#x27;s notch counter is not discriminating between notches that occur during a view or outside of a view.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RRX can be commanded to only count notches that happen while sampling data (in-view) or counting notches all at any time. The in-view only count mode is not working.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li></ol>
+</section>
+<section id="BM2253638"><a name="BM2253638"></a>
+<h2>2253638</h2>
+<div class="sym">ERROR: EM_DIAG_TNS_NO_INVIEW_COUNTS_ERROR</div>
+<div class="txt">TNS diag found that RRX-%d did not count in-view only notches when in a view. The RRX&#x27;s notch counter is not discriminating between notches that occur during a view or outside of a view.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The RRX can be commanded to only count notches that happen while sampling data (in-view) or counting notches all at any time. The in-view only count mode is not working.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>RRx Module</li></ol>
+</section>
+<section id="BM2253800"><a name="BM2253800"></a>
+<h2>2253800</h2>
+<div class="sym">ERROR: EM_DIAG_MDS_BAD_OPCODE</div>
+<div class="txt">MDS LINK The SCP received a MDS error packet with an opcode that it does not recognize and cannot process.
+Opcode: %02xH
+Periph Addr: %xH (0=GP, 1=SSM)</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check MDS optic cable for problems such as kinks and loose connectors.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>STIF Board</li><li>SSM</li><li>GP Module</li><li>MDS Fiber Optic Cable</li></ol>
+</section>
+<section id="BM2253801"><a name="BM2253801"></a>
+<h2>2253801</h2>
+<div class="sym">ERROR: EM_DIAG_MDS_LINK_ERROR</div>
+<div class="txt">MDS LINK The MDS Link test was not able to finish due to link failures. Only %d of %d data packets (%d bytes each) were transmitted and received with no errors. Rerun the MDS link diags.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check MDS optic cable for problems such as kinks and loose connectors.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>STIF Board</li><li>SSM</li><li>GP Module</li></ol>
+</section>
+<section id="BM2253802"><a name="BM2253802"></a>
+<h2>2253802</h2>
+<div class="sym">ERROR: EM_DIAG_MDS_GAP_NO_BROKE</div>
+<div class="txt">MDS LINK The Gradient Processor(GP) in the ACGD has failed to timeout and send a MDS BROKE packet to the STIF. Cycle power on the GP and re-run MDS link diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>STIF Board</li><li>SSM</li><li>GP Module</li></ol>
+</section>
+<section id="BM2253803"><a name="BM2253803"></a>
+<h2>2253803</h2>
+<div class="sym">ERROR: EM_DIAG_MDS_GAP_NO_QUIET</div>
+<div class="txt">MDS LINK The Gradient Processor(GP) in the ACGD is still sending MDS BROKE packets to the STIF even though the MDS link appears to be good and the GP is being frequently accessed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">MDS data between SCP, STIF, and GP may be intermittent.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>STIF Board</li><li>SSM</li><li>GP Module</li></ol>
+</section>
+<section id="BM2253804"><a name="BM2253804"></a>
+<h2>2253804</h2>
+<div class="sym">ERROR: EM_DIAG_MDS_DATA_NOT_RECOG</div>
+<div class="txt">MDS LINK The SCP was expecting an error packet and instead received the following packet which is NOT an error packet.
+Pkt header: %02xH
+Pkt opcode: %02xH</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>STIF Board</li><li>SSM</li><li>GP Module</li></ol>
+</section>
+<section id="BM2253805"><a name="BM2253805"></a>
+<h2>2253805</h2>
+<div class="sym">ERROR: EM_DIAG_MDS_BAD_ADDRESS</div>
+<div class="txt">MDS LINK A Bad Address packet was received from the MDS link. Check the MDS peripheral address DIP switches on all MDS peripherals.
+Peripheral Address received: %xH</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>STIF Board</li><li>SSM CPD Board</li><li>GP Module</li></ol>
+</section>
+<section id="BM2253806"><a name="BM2253806"></a>
+<h2>2253806</h2>
+<div class="sym">ERROR: EM_DIAG_MDS_SSM_SCP_BREAK</div>
+<div class="txt">MDS LINK A break was found in the MDS link between the System Support Module (SSM) and the STIF in the MGD chassis. Check the SSM, and the STIF, and the plastic fiber cable that runs between them.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check MDS fiber optic cable for problems such as kinks and loose connectors. Bursts of red light from the SSM should be visible at the MDS fiber optic cable connector.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>STIF Board</li><li>SSM CPD Board</li><li>MDS Fiber Optic Cable</li></ol>
+</section>
+<section id="BM2253807"><a name="BM2253807"></a>
+<h2>2253807</h2>
+<div class="sym">ERROR: EM_DIAG_MDS_SCP_GRAD_BREAK</div>
+<div class="txt">MDS LINK A break was found in the MDS link between the STIF in the MGD chassis and the Gradient Processor(GP) in the ACGD cabinet. Check the GP, and the STIF, and the plastic fiber cable that runs between them.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check MDS fiber optic cable for problems such as kinks and loose connectors. Bursts of red light from the STIF should be visible at the MDS fiber optic cable connector while running the MDS Link Diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>STIF Board</li><li>GP Module</li><li>MDS Fiber Optic Cable</li></ol>
+</section>
+<section id="BM2253808"><a name="BM2253808"></a>
+<h2>2253808</h2>
+<div class="sym">ERROR: EM_DIAG_MDS_GRAD_SSM_BREAK</div>
+<div class="txt">MDS LINK A break was found in the MDS link between the Gradient Processor(GP) and the System Support Module(SSM). Check the GP, and the SSM, and the plastic fiber cable that runs between them.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check MDS fiber optic cable for problems such as kinks and loose connectors. Bursts of red light from the GP should be visible at the MDS fiber optic cable connector.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM</li><li>GP Module</li><li>MDS Fiber Optic Cable</li></ol>
+</section>
+<section id="BM2253809"><a name="BM2253809"></a>
+<h2>2253809</h2>
+<div class="sym">ERROR: EM_DIAG_MDS_OVERFLOW_ERR</div>
+<div class="txt">MDS LINK ERROR MDS receive buffer overflows have occurred on the SCP. A 2nd data byte was received before the SCP could read the previous byte. SCP may be running slow or may be receiving too much data.
+overflow errors: %d
+bytes xmitted: %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>STIF Board</li><li>SSM CPD Board</li><li>GP Module</li></ol>
+</section>
+<section id="BM2253810"><a name="BM2253810"></a>
+<h2>2253810</h2>
+<div class="sym">ERROR: EM_DIAG_MDS_FRAME_ERR</div>
+<div class="txt">MDS LINK ERROR Clock framing errors have occurred on the MDS link. The STOP bit of a received byte did not occur or occurred late. Check all boards that interface directly to the MDS Link
+framing errors: %d
+bytes xmitted: %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>STIF Board</li><li>SSM CPD Board</li><li>GP Module</li></ol>
+</section>
+<section id="BM2253811"><a name="BM2253811"></a>
+<h2>2253811</h2>
+<div class="sym">ERROR: EM_DIAG_RF_AMP_STATE_INCORRECT</div>
+<div class="txt">RF Amplifier State Transition Fault. The RF Amplifier was commanded to standby, but its status indicates it is neither transitioning or in standby. Status: 0x%02X</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM</li><li>RFI</li></ol>
+</section>
+<section id="BM2253812"><a name="BM2253812"></a>
+<h2>2253812</h2>
+<div class="sym">ERROR: EM_DIAG_RF_AMP_TYPE_INCORRECT</div>
+<div class="txt">RF Amplifier Type Mismatch. The RF Amplifier type detected in the system does not agree with the RFampType selected in the MRconfig.cfg file. Please check RfampType listed in MRconfig.cfg file.
+Type Read: %d
+Type in MRconfig.cfg: %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM</li></ol>
+</section>
+<section id="BM2253813"><a name="BM2253813"></a>
+<h2>2253813</h2>
+<div class="sym">ERROR: EM_DIAG_RF_AMP_TYPE_UNKNOWN</div>
+<div class="txt">RF Amplifier Type Unknown. The RF Amplifier type detected in the system does not match any currently known RF Amplifier types. Please check the RF Amplifier and communication cables to the RF Amplifier. Type Read: 0x%02X</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li><li>RFI</li></ol>
+</section>
+<section id="BM2253814"><a name="BM2253814"></a>
+<h2>2253814</h2>
+<div class="sym">ERROR: EM_DIAG_SPECRF_NOT_PRESENT</div>
+<div class="txt">SPECTRO RF AMPLIFIER INTERFACE BOARD The System Support Module(SSM) was unable to communicate with the \ Spectro RF Amplifier Interface Board. Check that the Spectro MNS I/F module is connected to the SSM and powered up.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li><li>RFI</li></ol>
+</section>
+<section id="BM2253815"><a name="BM2253815"></a>
+<h2>2253815</h2>
+<div class="sym">ERROR: EM_DIAG_RF_CTRL_REG_ERR</div>
+<div class="txt">SPECTRO RF AMPLIFIER INTERFACE BOARD Command Register error.
+Register address: %xH
+Data written: %xH
+Data read: %xH
+Data expected: %xH</div>
+<div class="lbl">Extended Error:</div><div class="txt">Probable problem in the SSM.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li></ol>
+</section>
+<section id="BM2253816"><a name="BM2253816"></a>
+<h2>2253816</h2>
+<div class="sym">ERROR: EM_DIAG_RF_CONF_REG_ERR</div>
+<div class="txt">SPECTRO RF AMPLIFIER INTERFACE BOARD Configuration Register error.
+Register address: %xH
+Data written: %xH
+Data read: %xH
+Data expected: %xH</div>
+<div class="lbl">Extended Error:</div><div class="txt">Probable problem in the SSM.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li></ol>
+</section>
+<section id="BM2253817"><a name="BM2253817"></a>
+<h2>2253817</h2>
+<div class="sym">ERROR: EM_DIAG_RF_BRD_NOT_PRESENT</div>
+<div class="txt">RF AMPLIFIER INTERFACE BOARD The RF MDS Peripheral was unable to communicate with the RF Amplifier Interface Board. Check that the RF Amplifier is connected to the SSM and is powered up.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li></ol>
+</section>
+<section id="BM2253818"><a name="BM2253818"></a>
+<h2>2253818</h2>
+<div class="sym">ERROR: EM_DIAG_GAP_DIAGS_NOT_RUN</div>
+<div class="txt">GP NOT RESPONDING The GP is not responding to commands via the MDS link so no Gradient Tests have been attempted. Cycle power to the GP, perform a TPS Reset and try again.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>STIF Board</li><li>SSM</li><li>GP Module</li></ol>
+</section>
+<section id="BM2253819"><a name="BM2253819"></a>
+<h2>2253819</h2>
+<div class="sym">ERROR: EM_DIAG_GAP_DIAGS_TIMEOUT</div>
+<div class="txt">GRADIENT DRIVER TESTS TIMEOUT ERROR The GP has been instructed to run the Gradient Tests but it has failed to return any test results. Perform a TPS Reset and try again. Cycle power on the GP if necessary.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Run the MDS Link &amp; Polling test from diagnostics page.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>GP Module</li></ol>
+</section>
+<section id="BM2253820"><a name="BM2253820"></a>
+<h2>2253820</h2>
+<div class="sym">ERROR: EM_DIAG_DIGTUNE_UPDATE_ERROR</div>
+<div class="txt">GDT - DIGITAL TUNING VALUES UPDATE ERROR MDS link errors occurred while loading the Digital Tuning values into the GP. The selected diagnostic(s), as a result, cannot be run as a result. Run MDS Link diagnostics.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>STIF Board</li><li>SSM CPD Board</li><li>GP Module</li></ol>
+</section>
+<section id="BM2253821"><a name="BM2253821"></a>
+<h2>2253821</h2>
+<div class="sym">ERROR: EM_DIAG_DIGTUNE_FILE_ERROR</div>
+<div class="txt">GDT - DIGITAL TUNING VALUES UPDATE ERROR Error reading the Gradient Tuning parameters file %s. The file may be corrupted. The test has been aborted.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Verify that the tuning parameters file is in the /usr/g/caldir directory and verify that the file is in the correct format. If not, enter and then exit Grafidy program and run DC Offset Adjust.</div>
+</section>
+<section id="BM2253822"><a name="BM2253822"></a>
+<h2>2253822</h2>
+<div class="sym">ERROR: EM_DIAG_MDS_SEND_ERR</div>
+<div class="txt">MDS LINK The MGD could not send a packet to one of the MDS peripherals. Because of this, the diagnostic currently running was halted. Run MDS Link diagnostics.
+Periph Addr: %d Status code %d</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>STIF Board</li><li>SSM CPD Board</li><li>GP Module</li></ol>
+</section>
+<section id="BM2253823"><a name="BM2253823"></a>
+<h2>2253823</h2>
+<div class="sym">ERROR: EM_DIAG_TRDYN_NOT_PRESENT</div>
+<div class="txt">CPD Failure in SSM chassis The SSM_CPD was unable to communicate with its with the TR/DD Board/Pin Switch controls.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li></ol>
+</section>
+<section id="BM2253824"><a name="BM2253824"></a>
+<h2>2253824</h2>
+<div class="sym">ERROR: EM_DIAG_TR_COIL_CONF_ERR</div>
+<div class="txt">CPD Failure in SSM chassis Coil Configuration Register error \ Check the SSM CPD Board.
+Register address: %xH
+Data written: %xH
+Data read: %xH
+Data expected: %xH</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li></ol>
+</section>
+<section id="BM2253825"><a name="BM2253825"></a>
+<h2>2253825</h2>
+<div class="sym">ERROR: EM_DIAG_TR_CMD_REG_ERR</div>
+<div class="txt">CPD Board Failure in SSM chassis Command Register error. \ Check the SSM CPD Board.
+Register address: %xH
+Data read: %xH
+Expected result: %xH</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li></ol>
+</section>
+<section id="BM2253826"><a name="BM2253826"></a>
+<h2>2253826</h2>
+<div class="sym">ERROR: EM_DIAG_TR_FLT_DIS_ERR</div>
+<div class="txt">TR/DD Failure in SSM chassis Fault Reporting Disable Register error. \ Check the SSM CPD Board.
+Register address: %xH
+Data written: %xH
+Data read: %xH
+Data expected: %xH</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li></ol>
+</section>
+<section id="BM2253827"><a name="BM2253827"></a>
+<h2>2253827</h2>
+<div class="sym">ERROR: EM_DIAG_TR_FLT_RST_ERR</div>
+<div class="txt">TR/DD Failure in SSM chassis Status register unable to be reset. \ Check the SSM CPD Board.
+Register address: %xH
+Data read: %xH
+Expected result: %xH</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li></ol>
+</section>
+<section id="BM2253828"><a name="BM2253828"></a>
+<h2>2253828</h2>
+<div class="sym">ERROR: EM_DIAG_TR_REG_RST_ERR</div>
+<div class="txt">TR/DD Failure in SSM chassis Coil Configuration Register or Fault \ Reporting Disable Register unable to be reset. Check the SSM CPD Board.
+Register address: %xH
+Data read: %xH
+Expected result: %xH</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li></ol>
+</section>
+<section id="BM2253829"><a name="BM2253829"></a>
+<h2>2253829</h2>
+<div class="sym">ERROR: EM_DIAG_TR_JP2_SERV_POS</div>
+<div class="txt">TR/DD Failure in SSM chassis The service mode switch(s) on the front panel of the SSM are in the wrong position. Configure the switches for normal operation.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM</li></ol>
+</section>
+<section id="BM2253830"><a name="BM2253830"></a>
+<h2>2253830</h2>
+<div class="sym">ERROR: EM_DIAG_TR_POS15V_ERR</div>
+<div class="txt">DYNAMIC DISABLE IN SSM CHASSIS +15V Switching Power Supply failure.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM IPS Module</li></ol>
+</section>
+<section id="BM2253831"><a name="BM2253831"></a>
+<h2>2253831</h2>
+<div class="sym">ERROR: EM_DIAG_TR_NEG15V_ERR</div>
+<div class="txt">DYNAMIC DISABLE IN SSM CHASSIS -15V Switching Power Supply failure.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM IPS Module</li></ol>
+</section>
+<section id="BM2253832"><a name="BM2253832"></a>
+<h2>2253832</h2>
+<div class="sym">ERROR: EM_DIAG_TR_POS400V_ERR</div>
+<div class="txt">DYNAMIC DISABLE IN SSM CHASSIS High Voltage Power Supply failure.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM IPS Module</li></ol>
+</section>
+<section id="BM2253833"><a name="BM2253833"></a>
+<h2>2253833</h2>
+<div class="sym">ERROR: EM_DIAG_TR_MCB_OPT_FLT</div>
+<div class="txt">Multicoil option fault in SSM chassis Multi-Coil option not selected by bit 05 \ of the Command Register. Check the CPD Board inside the SSM
+Register address: %xH
+Data read: %xH
+Expected result: %xH</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li></ol>
+</section>
+<section id="BM2253834"><a name="BM2253834"></a>
+<h2>2253834</h2>
+<div class="sym">ERROR: EM_DIAG_MCB_DIODE_REG</div>
+<div class="txt">MULTI-COIL DRIVER FAULT in SSM chassis Unable to reset Diode Fault Register. \ Check the CPD Board inside the SSM.
+Register address: %xH
+Data read: %xH
+Expected result: %xH</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li></ol>
+</section>
+<section id="BM2253835"><a name="BM2253835"></a>
+<h2>2253835</h2>
+<div class="sym">ERROR: EM_DIAG_MCB_PORTEN_ERR</div>
+<div class="txt">MULTI-COIL DRIVER FAULT in SSM chassis Port Enable Register error. \ Check the CPD Board inside the SSM.
+Register address: %xH
+Data written: %xH
+Data read: %xH
+Data expected: %xH</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li></ol>
+</section>
+<section id="BM2253836"><a name="BM2253836"></a>
+<h2>2253836</h2>
+<div class="sym">ERROR: EM_DIAG_MCB_PRT_EN_RST</div>
+<div class="txt">MULTI-COIL DRIVER FAULT in SSM chassis Unable to reset Port Enable Register. \ Check the CPD Board inside the SSM.
+Register address: %xH
+Data read: %xH
+Expected result: %xH</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li></ol>
+</section>
+<section id="BM2253837"><a name="BM2253837"></a>
+<h2>2253837</h2>
+<div class="sym">ERROR: EM_DIAG_PM_RESP_ERR</div>
+<div class="txt">POWER MONITOR - SSM INTERFACE The Power Monitor circuit on the SSM_CPD did not echo the data sent to it from the main SSM processor. Check the SSM and the Power Monitor.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li><li>SSM APM Board</li></ol>
+</section>
+<section id="BM2253838"><a name="BM2253838"></a>
+<h2>2253838</h2>
+<div class="sym">ERROR: EM_DIAG_PM_TIMEOUT</div>
+<div class="txt">POWER MONITOR - SSM INTERFACE The System Support Module(SSM) timed out while waiting for a response from its Power Monitor circuits. Check the SSM_CPD.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li><li>SSM APM Board</li></ol>
+</section>
+<section id="BM2253839"><a name="BM2253839"></a>
+<h2>2253839</h2>
+<div class="sym">ERROR: EM_DIAG_PM_RESP_TIMEOUT</div>
+<div class="txt">POWER MONITOR ERROR The SCP did not receive a response from the System Support Module (SSM) after sending Power Monitor Data to the SSM. Check the SSM.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li><li>SSM APM Board</li></ol>
+</section>
+<section id="BM2253840"><a name="BM2253840"></a>
+<h2>2253840</h2>
+<div class="sym">ERROR: EM_DIAG_PM_BAD_CHECKSUM</div>
+<div class="txt">POWER MONITOR ERROR An error was found in the data sent to the System Support Module (SSM) to program the Power Monitor. Check the MDS link and the SSM.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li><li>SSM APM Board</li></ol>
+</section>
+<section id="BM2253841"><a name="BM2253841"></a>
+<h2>2253841</h2>
+<div class="sym">ERROR: EM_DIAG_PM_CHKSUM_FAIL</div>
+<div class="txt">POWER MONITOR ERROR Data with an incorrect checksum was sent to the Power Monitor, but the Power Monitor responded with data OK status. Check the System Support Module(SSM).</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li><li>SSM APM Board</li></ol>
+</section>
+<section id="BM2253842"><a name="BM2253842"></a>
+<h2>2253842</h2>
+<div class="sym">ERROR: EM_DIAG_WRONG_PWR_MON</div>
+<div class="txt">MDS Diags - Power Monitor Test The Power Monitor connected to the System Support Module(SSM) is not the same field strength as indicated in the MRconfig.cfg file. Check the SSM power monitor field strength setting.</div>
+</section>
+<section id="BM2253843"><a name="BM2253843"></a>
+<h2>2253843</h2>
+<div class="sym">ERROR: EM_DIAG_WRONG_PM_V6</div>
+<div class="txt">MDS Diags - Power Monitor Test The Power Monitor connected to the System Support Module (SSM) is not the same field strength as indicated in the MRconfig.cfg file. Check the SSM power monitor field strength setting.</div>
+</section>
+<section id="BM2253844"><a name="BM2253844"></a>
+<h2>2253844</h2>
+<div class="sym">ERROR: EM_DIAG_PM_INVALID_RESP</div>
+<div class="txt">POWER MONITOR ERROR The SCP has received an invalid response code from the
+Power Monitor. Response code = %02xH. Check the System Support Module (SSM).</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SSM CPD Board</li><li>SSM APM Board</li></ol>
+</section>
+<section id="BM2253845"><a name="BM2253845"></a>
+<h2>2253845</h2>
+<div class="sym">ERROR: EM_DIAG_GP_NOT_READY</div>
+<div class="txt">GRADIENT NOT RESPONDING Gradient MDS Peripheral is not responding to commands via the MDS link. Other diags errors may be logged as a result. Possible causes: MDS link broke, Gradient MDS Peripheral Board, or Gradient MDS Peripheral Power Supply.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>GP Module</li></ol>
+</section>
+<section id="BM2253846"><a name="BM2253846"></a>
+<h2>2253846</h2>
+<div class="sym">ERROR: EM_DIAG_GP_CONFIG_CONFLICT</div>
+<div class="txt">GRADIENT DRIVER TESTS CONFIGURATION CONFLICT Try running operation again. If problem persists verify that the gradientAmp field in the /w/config/MRconfig.cfg file is correct. Look for other error entries from the GP.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The GP type identifier reported by the GP did not match the value configured into the MRconfig.cfg file. The GP may have incorrectly identified its amps due to a isolated voltage bus fluctuation. If the gradientAmp field in MRconfig.cfg is correct and this error is occurs again, then investigate the gradient amps for problems.</div>
+</section>
+<section id="BM2253847"><a name="BM2253847"></a>
+<h2>2253847</h2>
+<div class="sym">ERROR: EM_DIAG_WRONG_GRAD_DEVICE</div>
+<div class="txt">GRADIENT DRIVER TYPE CONFLICT The Gradient Processor (GP) responded with a type ID that is not compatible with this system. The test has been aborted. verify that the right type of GP is installed. Reported type = %d.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>GP Module</li></ol>
+</section>
+<section id="BM2253848"><a name="BM2253848"></a>
+<h2>2253848</h2>
+<div class="sym">ERROR: EM_DIAG_DIGTUNE_NO_FILE</div>
+<div class="txt">GDT - DIGITAL TUNING VALUES UPDATE ERROR The system could not open the %s file. Please restore the file or run Grafidy to create it. The selected diagnostic(s) cannot be run as a result.</div>
+</section>
+<section id="BM2253849"><a name="BM2253849"></a>
+<h2>2253849</h2>
+<div class="sym">ERROR: EM_GRAD_LINK_HAMMER_SW_ERR</div>
+<div class="txt">Gradient Link Hammer test failed. The SCP had a software error while running this test.
+Msg is: %s Please try again.</div>
+</section>
+<section id="BM2253850"><a name="BM2253850"></a>
+<h2>2253850</h2>
+<div class="sym">ERROR: EM_GRAD_LINK_HAMMER_BAD_DATA</div>
+<div class="txt">Gradient Link Hammer test failed. The GP received an invalid %c axis data value via the gradient data link.
+Data Exp = %08xH or %08xH
+Data Rd = %08xH Check the gradient data and clock fiber optic cable connections</div>
+</section>
+<section id="BM2253851"><a name="BM2253851"></a>
+<h2>2253851</h2>
+<div class="sym">ERROR: EM_DIAG_ID_GP_MISSING_FRAME_ERROR</div>
+<div class="txt">GP Framing Error/Clock Stop Test Failure. The GP failed to detect a Framing error during each pass of this test.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the gradient data and clock fiber optic cable connections</div>
+</section>
+<section id="BM2253852"><a name="BM2253852"></a>
+<h2>2253852</h2>
+<div class="sym">ERROR: EM_DIAG_ID_GP_MISSING_CLOCK_STOP</div>
+<div class="txt">GP FE/Clk Stop Test Failed GP failed to detect a Clock Stop error. NOTE : This test is only valid if run by itself immediately after TPS Reset! HW issue affects this test only. If this test is run with other GP tests, ignore this failure!</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check the gradient data and clock fiber optic cable connections</div>
+</section>
+<section id="BM2253853"><a name="BM2253853"></a>
+<h2>2253853</h2>
+<div class="sym">ERROR: EM_GP_TOLERANCE_FILE_OPEN_ERR</div>
+<div class="txt">GDT TEST TOLERANCE UPDATE ERROR Could not open the following tolerance file. Check that the file exists. No test tolerance updates have occurred.
+File: %s</div>
+</section>
+<section id="BM2253854"><a name="BM2253854"></a>
+<h2>2253854</h2>
+<div class="sym">ERROR: EM_GP_TOLERANCE_NO_TABLE_START</div>
+<div class="txt">GDT TEST TOLERANCE UPDATE ERROR The tolerance [START] keyword is missing from the following tolerance file. Fix the file and run selected diags again.
+File: %s</div>
+</section>
+<section id="BM2253855"><a name="BM2253855"></a>
+<h2>2253855</h2>
+<div class="sym">ERROR: EM_GP_INVALID_TOLERANCE_NUM</div>
+<div class="txt">GDT TEST TOLERANCE UPDATE ERROR The tolerance file contains an invalid tolerance number field. Fix the file and run selected diags again.
+File: %s
+Tolerance number: %d (valid range is %d to %d)</div>
+</section>
+<section id="BM2253856"><a name="BM2253856"></a>
+<h2>2253856</h2>
+<div class="sym">ERROR: EM_GP_DUPLICATE_TOLERANCE</div>
+<div class="txt">GDT TEST TOLERANCE UPDATE ERROR The tolerance file contains a duplicate tolerance number field. Fix the file and run selected diags again.
+File: %s
+Tolerance number: %d</div>
+</section>
+<section id="BM2253857"><a name="BM2253857"></a>
+<h2>2253857</h2>
+<div class="sym">ERROR: EM_GP_TOLERANCE_BAD_ENTRY</div>
+<div class="txt">GDT TEST TOLERANCE UPDATE ERROR The tolerance file contains an invalid tolerance entry that could not be processed. Fix the file and run selected diags again.
+File: %s
+Line number in file: %d</div>
+</section>
+<section id="BM2253858"><a name="BM2253858"></a>
+<h2>2253858</h2>
+<div class="sym">ERROR: EM_DIAG_TOLERANCE_UPDATE_ERROR</div>
+<div class="txt">GRADIENT DRIVER TESTS - TEST TOLERANCE UPDATE ERROR An error occurred while updating test tolerances. Only %d of %d new test tolerances where updated. GP diags will be attempted, but false errors may be logged as a result.</div>
+</section>
+<section id="BM2253859"><a name="BM2253859"></a>
+<h2>2253859</h2>
+<div class="sym">ERROR: EM_MDS_INIT_FAILURE</div>
+<div class="txt">FAILURE TO SWITCH MDS DRIVERS TO DIAGNOSTIC MODEn The currently running diagnostic could not switch the MDS driver from applications mode to diagnostic mode. The current diag test had to be aborted.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Try TPS reset. Try running the MDS link &amp; Polling test or the MDS STIF Loopback test</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>STIF Board</li></ol>
+</section>
+<section id="BM2253860"><a name="BM2253860"></a>
+<h2>2253860</h2>
+<div class="sym">ERROR: EM_MDS_GRAD_INVALID_COIL_SELECTION</div>
+<div class="txt">ATTEMPTED TO TEST ZOOM FEATURE ON A NON-TRM SYSTEMn You selected a TRM-only test on a non-TwinRoom system. Only TRM systems have a ZOOM coil. All systems have a WHOLE body coil.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Get some rest and then try again.</div>
+</section>
+<section id="BM2253861"><a name="BM2253861"></a>
+<h2>2253861</h2>
+<div class="sym">ERROR: EM_MDS_GRAD_GSC_COMM_TEST_FAILURE</div>
+<div class="txt">THE GRADIENT GSC FAILED ITS COMMUNICATION TEST\n The GP can not talk to the GSC. (The big gradient relay box) The GP can not switch from WHOLE to ZOOM without the GSC.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The GSC hooks to the GP by a 9 pin ribbon cable hooked to the front of the GP chassis. Check that cable and check that the GSC has power.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>GP Module</li><li>Gradient Switch</li></ol>
+</section>
+<section id="BM2253862"><a name="BM2253862"></a>
+<h2>2253862</h2>
+<div class="sym">ERROR: EM_MDS_GRAD_GSC_SWITCH_TEST_FAILURE</div>
+<div class="txt">THE GRADIENT GSC FAILED ITS SWITCHING TEST\n The GSC has failed its relay switching test. The GSC may be defective. The GP can not switch from WHOLE to ZOOM without the GSC working.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The GSC hooks to the GP by a 9 pin ribbon cable hooked to the front of the GP chassis. Check that cable and check that the GSC has power.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>GP Module</li><li>Gradient Switch</li></ol>
+</section>
+<section id="BM2253863"><a name="BM2253863"></a>
+<h2>2253863</h2>
+<div class="sym">ERROR: EM_MDS_GRAD_UNKNOWN_GRAD_TYPE</div>
+<div class="txt">THE GP IS RESPONDING WITH UNKNOWN_GP_TYPE\n The GP can not tell if its in an ACGD or ACGD-Lite system. This is usually caused by a grad amp error condition. Check for grad amp system log errors. The diag test will try to proceed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">The GP is in this condition because:
+1.) The grad amps are powered off. 2.) The grad amps are in an error state. 3.) The grad amps are disconnected from the GP. 4.) The GP is not loaded with application code. Check for and correct any grad amp related messages in the system log.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>Gradient Amp</li><li>Gradient Power Supply</li><li>GP Module</li></ol>
+</section>
+<section id="BM2253864"><a name="BM2253864"></a>
+<h2>2253864</h2>
+<div class="sym">ERROR: EM_DIAG_GAP_CAN_DIAGS_NOT_RUN</div>
+<div class="txt">GP NOT RESPONDING The GP is not responding to commands via the CAN link so no Gradient Tests have been attempted. Cycle power to the GP, perform a TPS Reset and try again.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>GP Module</li></ol>
+</section>
+<section id="BM2253865"><a name="BM2253865"></a>
+<h2>2253865</h2>
+<div class="sym">ERROR: EM_DIAG_GAP_CAN_DIAGS_TIMEOUT</div>
+<div class="txt">GRADIENT DRIVER TESTS TIMEOUT ERROR The GP has been instructed to run the Gradient Tests but it has failed to return any test results. Perform a TPS Reset and try again. Cycle power on the GP if necessary.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Run the Can Link test from diagnostics page.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>GP Module</li></ol>
+</section>
+<section id="BM2253866"><a name="BM2253866"></a>
+<h2>2253866</h2>
+<div class="sym">ERROR: EM_DIAG_MDS_SSM_NO_BROKE</div>
+<div class="txt">MDS LINK The System Support Module (SSM) has failed to timeout and send a MDS BROKE packet to the STIF. Cycle power on the SSM and re-run MDS link diagnostic.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>STIF Board</li><li>SSM</li></ol>
+</section>
+<section id="BM2253867"><a name="BM2253867"></a>
+<h2>2253867</h2>
+<div class="sym">ERROR: EM_DIAG_MDS_SSM_NO_QUIET</div>
+<div class="txt">MDS LINK The System Support Module (SSM) is still sending MDS BROKE packets to the STIF even though the MDS link appears to be good and the SSM is being frequently accessed.</div>
+<div class="lbl">Extended Error:</div><div class="txt">MDS data between SCP, STIF, and SSM may be intermittent.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>STIF Board</li><li>SSM</li></ol>
+</section>
+<section id="BM2253868"><a name="BM2253868"></a>
+<h2>2253868</h2>
+<div class="sym">ERROR: EM_DIAG_MDS_GRAD_PACTL_BREAK</div>
+<div class="txt">MDS LINK A break was found in the MDS link between the Gradient Processor(GP) and the PACTL. Check the GP, the PACTL, and the plastic fiber cable that runs between them.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check MDS fiber optic cable for problems such as kinks and loose connectors. Bursts of red light from the GP should be visible at the MDS fiber optic cable connector.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>GP Module</li><li>MDS Fiber Optic Cable</li></ol>
+</section>
+<section id="BM2253869"><a name="BM2253869"></a>
+<h2>2253869</h2>
+<div class="sym">ERROR: EM_DIAG_MDS_PACTL_RFCTL_BREAK</div>
+<div class="txt">MDS LINK A break was found in the MDS link between the PACTL and the RFCTL on the CTLXD board. Check the PACTL, the RFCTL, and the plastic fiber cable that runs between them.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check MDS fiber optic cable for problems such as kinks and loose connectors. Bursts of red light from the PACTL should be visible at the MDS fiber optic cable connector.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>MDS Fiber Optic Cable</li></ol>
+</section>
+<section id="BM2253870"><a name="BM2253870"></a>
+<h2>2253870</h2>
+<div class="sym">ERROR: EM_DIAG_MDS_RFCTL_SCP_BREAK</div>
+<div class="txt">MDS LINK A break was found in the MDS link between the RFCTL on the CTLXD board and the STIF in the MGD chassis. Check the RFCTL, the STIF, and the plastic fiber cable that runs between them.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check MDS fiber optic cable for problems such as kinks and loose connectors. Bursts of red light from the RFCTL should be visible at the MDS fiber optic cable connector.</div>
+<div class="lbl">Possible cause(s) (most to least probable):</div><ol><li>SCP Board</li><li>STIF Board</li><li>MDS Fiber Optic Cable</li></ol>
+</section>
+<section id="BM2253900"><a name="BM2253900"></a>
+<h2>2253900</h2>
+<div class="sym">ERROR: EM_GP_FID_TEST_FILE_OPEN_ERR</div>
+<div class="txt">FILE ACCESS ERROR Could not open the following file. Check that the file exists. The test was unable to update the file with the test results.
+File: %s Error code: 0x%x</div>
+</section>
+<section id="BM2253901"><a name="BM2253901"></a>
+<h2>2253901</h2>
+<div class="sym">ERROR: EM_GP_FID_TEST_FILE_WRITE_ERR</div>
+<div class="txt">FILE ACCESS ERROR Could not write the following file. Check that the file exists. The test was unable to update the file with the test results.
+File: %s Error code: 0x%x</div>
+</section>
+<section id="BM2253902"><a name="BM2253902"></a>
+<h2>2253902</h2>
+<div class="sym">ERROR: EM_GRAD_LINK_FRAME_CLK_SW_ERR</div>
+<div class="txt">Gradient Frame Err/Clk Stop test failed. The SCP had a software error while running this test.
+Msg is: %s Please try again.</div>
+</section>
+</body></html>

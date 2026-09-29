@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Error codes 2251000-2251999 (21)</title><style>body{font-family:Arial,Helvetica,sans-serif;max-width:900px;margin:0 auto;padding:12px;color:#111;line-height:1.4}header{border-bottom:2px solid #c00;margin-bottom:12px}.meta{font-size:.8rem;color:#555}section{border-bottom:1px solid #ccc;padding:10px 0}h2{margin:0;font-size:1.15rem;color:#b00}.sym{font-weight:bold;font-family:monospace}.txt{white-space:pre-wrap}.lbl{font-weight:bold;margin-top:6px}nav a{margin-right:12px}ol{margin:4px 0 0 20px;padding:0}</style></head><body>
+<header><h1 style="font-size:1.3rem">Error codes 2251000-2251999 (21)</h1><div class="meta">GE MR Error Message Tool &middot; Proprietary to General Electric &middot; Last Update 03:54:22 09/24/2011 UTC &middot; converted for the AMT field KB from the original FrontPage HTML (text unchanged).</div><nav><a href="../index.html">All code blocks</a><a href="ermes_2250000-2250999.html">&larr; 2250000-2250999</a><a href="ermes_2252000-2252999.html">2252000-2252999 &rarr;</a></nav></header>
+<section id="BM2251001"><a name="BM2251001"></a>
+<h2>2251001</h2>
+<div class="sym">ERROR: EM_GIP_INVALID_UPDATE_MODE</div>
+<div class="txt">Internal GIP software error. Invalid selection for an update mode.
+Update Mode Selected: %d SCP software specified an undefined mode in a MDS packet. If the MDS link connection is good, this is a software bug; write a CQA.</div>
+</section>
+<section id="BM2251002"><a name="BM2251002"></a>
+<h2>2251002</h2>
+<div class="sym">ERROR: EM_GIP_UNDEF_MDS_OPCODE</div>
+<div class="txt">Internal GIP software error. Invalid MDS opcode.
+Undefined Opcode: %d The GIP received an undefined opcode from a SCP MDS packet. If GIP and SCP software are from the same tape build and the MDS link is good, this is a software bug; write a CQA.</div>
+</section>
+<section id="BM2251005"><a name="BM2251005"></a>
+<h2>2251005</h2>
+<div class="sym">ERROR: EM_GIP_BAD_PS_LEVEL</div>
+<div class="txt">Internal GIP software error. Invalid selection for miniGRAM Power Supply Level. SCP specified an undefined value in a MDS packet. If the MDS link connection is good, this is a software bug; write a CQA.</div>
+</section>
+<section id="BM2251038"><a name="BM2251038"></a>
+<h2>2251038</h2>
+<div class="sym">ERROR: EM_GIP_CLOCK_STOP</div>
+<div class="txt">Hardware Error - No Gradient Clock.\b\ A gradient clock stop occurred. The GIP stopped receiving the gradient clock from the STIF. Check the connection between STIF Board and GIP Board. Check the STIF, SRF, &amp; GIP Boards. Run fiber optic diagnostics.</div>
+</section>
+<section id="BM2251053"><a name="BM2251053"></a>
+<h2>2251053</h2>
+<div class="sym">ERROR: EM_GIP_AMP_DATA_FRAMING</div>
+<div class="txt">Hardware Error - Gradient data framing error.\b\ The GIP reported a data framing error. Check the fiber optic clock cable between the Systems Cabinet and GIP. Check the STIF, SRF, and GIP Boards. Run fiber optic diagnostics.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Run fiberoptic diagnostics and gradient data link test.</div>
+</section>
+<section id="BM2251060"><a name="BM2251060"></a>
+<h2>2251060</h2>
+<div class="sym">ERROR: EM_GIP_X_MGRAM_OVRANGE_FAULT</div>
+<div class="txt">X Axis Gradient Data Overrange Occurred.\b\ The GIP detected an error in the incoming High Speed Data from the STIF/SRF. Swap fiber optics at the Systems Cabinet. Run fiber optic diagnostics.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If simultaneously reported framing error, then you should troubleshoot the framing error not this overrange error. If no framing error, this error could be caused by faulty data generation hardware on the STIF/SRF, or faulty data receive hardware on the GIP. If swapping data lines at the Systems Cabinet causes the fault to change axes then suspect the STIF/SRF. Run gradient data link diagnostic to confirm overrange error.</div>
+</section>
+<section id="BM2251061"><a name="BM2251061"></a>
+<h2>2251061</h2>
+<div class="sym">ERROR: EM_GIP_Y_MGRAM_OVRANGE_FAULT</div>
+<div class="txt">Y Axis Gradient Data Overrange Occurred.\b\ The GIP detected an error in the incoming High Speed Data from the STIF/SRF. Swap fiber optics at the Systems Cabinet. Run fiber optic diagnostics.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If simultaneously reported framing error, then you should troubleshoot the framing error not this overrange error. If no framing error, this error could be caused by faulty data generation hardware on the STIF/SRF, or faulty data receive hardware on the GIP. If swapping data lines at the Systems Cabinet causes the fault to change axes then suspect the STIF/SRF. Run gradient data link diagnostic to confirm overrange error.</div>
+</section>
+<section id="BM2251062"><a name="BM2251062"></a>
+<h2>2251062</h2>
+<div class="sym">ERROR: EM_GIP_Z_MGRAM_OVRANGE_FAULT</div>
+<div class="txt">Z Axis Gradient Data Overrange Occurred.\b\ The GIP detected an error in the incoming High Speed Data from the STIF/SRF. Swap fiber optics at the Systems Cabinet. Run fiber optic diagnostics.</div>
+<div class="lbl">Extended Error:</div><div class="txt">If simultaneously reported framing error, then you should troubleshoot the framing error not this overrange error. If no framing error, this error could be caused by faulty data generation hardware on the STIF/SRF, or faulty data receive hardware on the GIP. If swapping data lines at the Systems Cabinet causes the fault to change axes then suspect the STIF/SRF. Run gradient data link diagnostic to confirm overrange error.</div>
+</section>
+<section id="BM2251170"><a name="BM2251170"></a>
+<h2>2251170</h2>
+<div class="sym">ERROR: EM_GIP_NO_PS_LEVEL_STDBY</div>
+<div class="txt">SCP attempted to command the %c gradient axis to Standby before sending a GIP_CONFIG packet to the GIP.</div>
+</section>
+<section id="BM2251171"><a name="BM2251171"></a>
+<h2>2251171</h2>
+<div class="sym">ERROR: EM_GIP_NO_PS_LEVEL_RDY</div>
+<div class="txt">SCP attempted to command the %c gradient axis to Standby before sending a GIP_CONFIG packet to the GIP.</div>
+</section>
+<section id="BM2251516"><a name="BM2251516"></a>
+<h2>2251516</h2>
+<div class="sym">ERROR: EM_SGDT_NO_TESTS_SELECTED</div>
+<div class="txt">GRADIENT DRIVER TESTS - Internal GIP Software Error. The Gradient Driver Tests command word was empty. SCP software specified an empty command word in a MDS packet. If the MDS link connection is good, this is a software bug; write a CQA.</div>
+</section>
+<section id="BM2251582"><a name="BM2251582"></a>
+<h2>2251582</h2>
+<div class="sym">ERROR: EM_SGDT_MGRAM_OVRANGE_FAULT</div>
+<div class="txt">GRADIENT DRIVER TESTS - %c Axis Fault Occurred. %c Axis Gradient Data Overrange Occurred. The GIP detected an error in the incoming High Speed Data from the STIF. Swap fiber optics at the Systems Cabinet. Run fiber optic diagnostics. %b</div>
+</section>
+<section id="BM2251725"><a name="BM2251725"></a>
+<h2>2251725</h2>
+<div class="sym">ERROR: EM_SGDT_DYN_INVALID_NPTS_SAMPLE</div>
+<div class="txt">GRADIENT DRIVER TESTS - Internal GIP software error. Invalid selection for sample points.
+Number Pts Selected: %d SCP software specified an undefined mode in a MDS packet. If the MDS link connection is good, this is a software bug; write a CQA.</div>
+</section>
+<section id="BM2251726"><a name="BM2251726"></a>
+<h2>2251726</h2>
+<div class="sym">ERROR: EM_SGDT_DYN_INVALID_NPTS_RISE</div>
+<div class="txt">GRADIENT DRIVER TESTS - Internal GIP software error. Invalid selection for number of rise points.
+Rise Pts Selected: %d SCP software specified an undefined mode in a MDS packet. If MDS link connection is good, this is a software bug; write a CQA.</div>
+</section>
+<section id="BM2251727"><a name="BM2251727"></a>
+<h2>2251727</h2>
+<div class="sym">ERROR: EM_SGDT_DYN_INVALID_NPTS_PLATEAU</div>
+<div class="txt">GRADIENT DRIVER TESTS - Internal GIP software error. Invalid selection for plateau points.
+Plateau Pts Selected: %d SCP software specified an undefined mode in a MDS packet. If the MDS link connection is good, this is a software bug; write a CQA.</div>
+</section>
+<section id="BM2251728"><a name="BM2251728"></a>
+<h2>2251728</h2>
+<div class="sym">ERROR: EM_SGDT_DYN_INVALID_OFFSET_START</div>
+<div class="txt">GRADIENT DRIVER TESTS - Internal GIP software error. Invalid selection for start offset.
+Offset Start Selected: %d SCP software specified an undefined mode in a MDS packet. If the MDS link connection is good, this is a software bug; write a CQA.</div>
+</section>
+<section id="BM2251760"><a name="BM2251760"></a>
+<h2>2251760</h2>
+<div class="sym">ERROR: EM_SGDT_DYN_VCNTRL_FLATLINE</div>
+<div class="txt">GRADIENT DRIVER TESTS - Dynamic Test failed on %c Axis. VCNTRL data does not follow the input waveform. Possible causes: Fiber Optic cable between GIP and STIF, or the GIP Board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check GRAM Tuning first, if it fails then suspect gradient hardware and troubleshoot after putting defaults in for short time constant eddy currents. Swap miniGRAM and GPM data cables at GIP reports problem on same axis, replace the GIP. If not then swap load cables at the back of miniGRAM&#x27;s. If problem followed axes next isolate between miniGRAM and GPM (in main bd, PPBM and output shelf order). Then turn off power to gradient cabinet and disconnect GRAM output cables. Then check load resistance across terminals of the BRM (0.2 ohms); from terminal of load to ground (&gt;1K ohms); and terminal of each axis to other axes (&gt;1K ohms). Lastly GPM Power Supply. Note: use the disconnection and drive one axis at a time information in previous message</div>
+</section>
+<section id="BM2251762"><a name="BM2251762"></a>
+<h2>2251762</h2>
+<div class="sym">ERROR: EM_SGDT_DYN_IERROR_FLATLINE</div>
+<div class="txt">GRADIENT DRIVER TESTS - Dynamic Test failed on %c Axis. IERROR data does not follow the input waveform. Possible causes: Fiber Optic cable between GIP and STIF, or the GIP Board.</div>
+<div class="lbl">Extended Error:</div><div class="txt">Check GRAM Tuning first, if it fails then suspect gradient hardware and troubleshoot after putting defaults in for short time constant eddy currents. Swap miniGRAM and GPM data cables at GIP reports problem on same axis, replace the GIP. If not then swap load cables at the back of miniGRAM&#x27;s. If problem followed axes next isolate between miniGRAM and GPM (in main bd, PPBM and output shelf order). Then turn off power to gradient cabinet and disconnect GRAM output cables. Then check load resistance across terminals of the BRM (0.2 ohms); from terminal of load to ground (&gt;1K ohms); and terminal of each axis to other axes (&gt;1K ohms). Lastly GPM Power Supply. Note: use the disconnection and drive one axis at a time information in previous message</div>
+</section>
+<section id="BM2251834"><a name="BM2251834"></a>
+<h2>2251834</h2>
+<div class="sym">ERROR: EM_SGDT_LCOIL_INVALID_NPTS_SAMPLE</div>
+<div class="txt">GRADIENT DRIVER TESTS - Internal GIP software error. Invalid selection for LCoil sample points.
+Number Selected: %d SCP software specified an undefined mode in a MDS packet. If the MDS link connection is good, this is a software bug; write a CQA.</div>
+</section>
+<section id="BM2251835"><a name="BM2251835"></a>
+<h2>2251835</h2>
+<div class="sym">ERROR: EM_SGDT_LCOIL_INVALID_NPTS_RISE</div>
+<div class="txt">GRADIENT DRIVER TESTS - Internal GIP software error. Invalid selection for number of LCoil rise pts.
+Pts Selected: %d SCP software specified an undefined mode in a MDS packet. If MDS link connection is good, this is a software bug; write a CQA.</div>
+</section>
+<section id="BM2251836"><a name="BM2251836"></a>
+<h2>2251836</h2>
+<div class="sym">ERROR: EM_SGDT_LCOIL_INVALID_NPTS_PLATEAU</div>
+<div class="txt">GRADIENT DRIVER TESTS - Internal GIP software error. Invalid selection for LCoil plateau pts.
+Pts Selected: %d SCP software specified an undefined mode in a MDS packet. If the MDS link connection is good, this is a software bug; write a CQA.</div>
+</section>
+</body></html>
