@@ -1,0 +1,3180 @@
+FORM ENG-305
+
+ELLIS & WATTS
+BATAVIA, OH 45103
+
+DOCUMENT NO,
+
+_ENG-457
+
+REVISION
+
+2 September 20, 2007)
+6-(Februarye 26--2067-2-Febraary 40,2005) -
+
+ISSUE NO.
+
+TITLE:
+
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL FOR MODEL LTL-4
+GRADIENT WATER HEAT EXCHANGER
+
+PREPARED BY:
+
+Core A Q ol
+
+2Q)io/0S
+
+CATHY &. ROUNDTREE
+
+TR
+iifj2
+id
+
+Q.A. APPROVAL:
+
+bi Led
+cowRSCHERTLER
+
+| Yue,fe z
+
+/
+
+DATE
+
+THIS DOCUMENT/DRAWING IS THE PROPERTY OF ELLIS
+& WATTS INTERNATIONAL, INC. AND IS PROPRIETARY.
+
+IT SHALL NOT BE DUPLICATED OR REPRODUCED WITH-_
+
+DOCUMENT NO.
+
+OUT THE WRITTEN CONSENT OF E&W OR USED IN ANY
+
+MANNER DETRIMENTAL TO THE INTERESTS OF E&W
+AND THAT IT SHALL BE RETURNED TO ELLIS WATTS
+INTERNATIONAL, INC. UPON DEMAND
+
+PAGE
+
+1
+
+ENG-457
+
+REV. | PAGE
+
+CHANGE RECORD
+
+PREP. |ENG. | QA.
+BY
+
+0
+
+1
+
+APPVL.|
+
+APPVL]
+
+All
+
+Original document released.
+
+(See gover sheet)
+
+5,7
+
+Add information on power cable
+
+BAA
+
+KDD
+
+RRS
+
+6-12
+
+Add French and Spanish translations of
+
+01/26/99}
+
+01/26/99]
+
+01/26/99
+
+warnings
+
+2
+
+3
+
+5,7
+
+Add GEMS PDU as exclusive power source
+
+BAA
+
+KDD
+
+RJR
+
+9
+
+Add reset procedure for time-delay relay
+
+02/09/99!
+
+02/09/99|
+
+02/09/99
+
+10
+
+Add low flow and cabinet access interlocks
+
+11
+
+Add over-ride of cabinet access interlock
+
+1
+
+Add G.E. part number.
+
+BAA
+
+KDD
+
+TIK
+
+3
+
+Revise Table of Contents.
+
+05/26/99]
+
+05/26/99]
+
+05/26/99
+
+4,5,7,
+
+Add SI Units.
+
+8,9,11
+12,14,19
+
+4
+
+Revise cooling capacity (Paragraph I).
+Add factory set-point temperature. (Para. 1).
+Add pump dead-head pressure (Paragraph I).
+
+Add wet and shipping weights (Paragraph 1).
+5
+
+Revise maximum power requirement (Para. I).
+Add features (Paragraph I).
+Add min. facility supply pressure (Para. I).
+Revise input voltage (Paragraph I).
+Add electrical connector (Paragraph I).
+
+6
+
+Add statement on installation of cabinet top (Paragraph 2-1).
+Add warming about magnetic field (Para. 2-1).
+
+' Add installation requirements (Para. 2-2).
+7
+
+Add warning about ethylene glycol (Paragraph 2-3).
+
+8
+
+Add regulations compliance statement (Paragraph 2-3).
+
+8,11
+
+Add statement on switches (Para. 2-4 & 3-2).
+
+11
+
+Revise flow capacity, thermal capacity, maximum ambient
+
+Revise fluid connection labels (Para. 2-3).
+
+temperature (Para. 3-3).
+11,12,13
+
+Add description to electrical and control design and components
+
+13
+
+Revise schedule for coolant level preventative maintenance
+
+(Para. 3-3).
+(Para. 4-2).
+
+Add schedule for strainer preventative maintenance (Para. 4-2).
+14
+
+Add setpoints for controls and interlocks
+
+15
+
+Expand troubleshooting guidelines (Para 4-5).
+
+(Patagraph 4-4).
+Revise replacement parts list (Para. 4-6).
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL | ENG-457
+FOR MODEL LTL-4 GRADIENT WATER HEAT EXCHANGER
+
+PAGE | REV.
+
+2
+
+9
+
+REV. | PAGE
+
+CHANGE RECORD
+
+PREP. | ENG. |. QA.
+BY
+
+4
+
+APPVL.}
+
+APPVL.
+
+4,7,9
+
+Add reference to Unit Assembly
+
+BAA
+
+KDD
+
+SEC
+
+17,23
+
+Drawing, T2583-0201.
+
+6/8/99
+
+| 6/8/99
+
+6/8/99
+
+6
+
+Add specifications for fuse for control
+
+9
+
+Add to description of removal of cabinet top.
+
+10
+
+Add location of air purge hose assembly.
+
+15
+
+Add procedure for setting temperature
+
+transformer.
+
+controller and control valve.
+16
+
+Correct temperature controller output
+voltage.
+
+5
+
+21
+
+Correct transformer part number.
+
+22
+
+Add fuse block and fuse.
+
+4,7,9
+17,23
+
+Change drawing number of Unit Assembly
+Drawing.
+
+4,9
+
+Change drawing number of Wiring Schematic.
+
+BAA
+KDD
+RRS
+11/16/99 | 11/16/99 | 11/16/99
+
+11,12,13
+
+15,18,19
+20,22,23
+
+16
+
+Correct control voltage for temperature
+controller and flow control valve.
+
+22
+
+Change part numbers and quantites of quick
+disconnect assemblies.
+
+6
+
+7
+
+8
+
+9
+
+App
+
+1
+
+Added drawings to the document
+
+CAR
+
+Added Proprietary Statement to cover page
+
+GAZ
+
+RRS
+
+12/17/03 | 12/17/03)
+
+2/17/03
+
+CAR
+
+ERS
+
+TJH
+
+2/10/05 | 2/10/05
+
+2/10/05
+
+5
+
+Added power cord length requirement
+
+CAR
+
+JKS
+
+RRS
+
+4-22
+
+Corrected mis-numbered pages
+
+3/9/07
+
+| 3/9/07
+
+3/9/07
+
+9,12
+
+Added power switch to procedure
+
+17,18
+
+Added 4-7 Removal Process for Mobiles
+
+JAD
+
+rf: py
+
+122/07)"
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+at
+
+Kyl | qizal ef
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+FOR MODEL LTL-4 GRADIENT WATER HEAT EXCHANGER
+
+| ENG-457
+
+PAGE |
+
+3
+
+REV.
+
+9.
+
+TABLE OF CONTENTS
+
+PAGE
+I.
+
+TABLE OF PARTICULARSuuu... ccesessccccssesscsscccccscsssscsssesecccsgssssssssssacsecessessceeeuesececescusessssccacessuusescssseeseesessessaeaces 5
+
+II.
+
+INSTALLATION.......
+
+Ii.
+
+sees
+
+saceeeesessossscvecaaaceceseusssocessesasaacaceneceusecesccesoseanacccanccccssccesssasssccensessscesecsssssssseces 7
+
+2-1
+
+PREOPERATIONAL CHECK ..........cccsccccscsssssssccccssesssssccsccccecesensnnnaceaseceecessenenscossessecseccccscceceneesasssseesos 7
+
+2-2
+
+INSTALLATION ...00.....ccccccccccccesesccesscscsscncscsscasceevncescnnascceccesccesecsnsceceseesersncecntcceccccesecsccccceeseesescceceesceseene 8
+
+2-3
+
+CONNECTIONS ......cccccccsccccssscscscsscssccoccccecccessnaanacesatecscccceseaeseeaaescccaseaeecaseseccaccacaesessecsseceeaqacanecesecseseesees 8
+
+2-4
+
+INITIAL FILLING00 ccccccccceccsccscccecsasessscaaccecesecsnssssaaccesessseseesescceeeeeseaeesece
+
+see
+
+9
+
+OPERATION ou... .cecccccccceesccccccsceseessncccascccsesssnccaaccceccsecccscccnscessasessocencececsesesscseaecaseceseccencacccecesseseccsccescgeacessssceeceeeae 12
+
+IV.
+
+3-1
+
+STARTING wooc ccc ceccccccccccccccsccccsssssesecsesescssssscesscsescessseseescassececsssecesssausasseseueseuscssaesecsecsscessscensseeseseeans 12
+
+3-2
+
+STOPPING.......
+
+3-3
+
+THEORY OF OPERATION. 20.0.0... ccccccccccccsessccccccecesssssnsccccccesecnsssssscccesccesscecssececeecsvaccussaccucesenesusceasenees 12
+
+MAINTENANCE ............
+
+.
+
+dadceecscecdcacceaccsasecaccecsssesssseesesssetescececeeceeceresessecceceees 12
+
+vaseeccsccccecccccscccesevccevevcesccceasececcosssecanaccuansaessecssneceensussetecsteesensessessesesecscseeeseseseseseeses 14
+
+4-1
+
+GENERAL... ccccsccccccccsesescssccssssccsccsscecccseccscsseseesscucesesecsacsecscesesstsustnscssasersssacenacceeeesessseeasseeacessaensseeaeness 14
+
+42
+
+PREVENTATIVE MAINTENANCE ..u...c.ccccccccccccceccssscscccnssssessssssessssssccscsssssensenseesssseseessssasesssesensesses 15
+
+4-3
+
+SPECIAL TOOLS wiiccccccccccsssccccccsccsscsceececccscccssccerscesssevescacecsscsssssscssessesescessessacscsvaessasssenssscsevsassesesessceans 15
+
+4-4
+
+CONTROL AND INTERLOCK SETPOINTS0... iicccc ccc cececcsesscceceessssssesssessssssassecsaccesssasessscsesessenee 15
+
+4-5
+
+TROUBLESHOOTING .........cceeeccccsccsceccsccececcecccccecscccsssscceeessccacsscsssescarcceccesseessessencecesssssaeccsussssssseesaseaeens 17
+
+4-6
+
+REPAIR AND REPLACEMENT PARTS000... ceecceccesccsscosccnssocesssccccsscesussssccsccsssssesaseccessssesonscsersrs 17
+
+4-7
+
+REMOVAL PROCESS FOR MOBILES .0....ecececcssscssccccscesccccessscesecessecccessssaessenscscssessesevssssscsssscesusacens 17
+
+Iv-1
+[V-2
+Tv-3
+
+CONTROL AND INTERLOCK SETPOINTS100... ccceeccccseccscececccuccsssccceserccneenssceesesseseressecesssscaeeess 16
+TROUBLESHOOTING...0uuuu... ee eccecccccccccccecsscccesssecccessccccesenscecsscsccececccccceeceasseserecererssssecsecsenersecceecsacsees 19
+REPLACEMENT PARTSwou cece c cece
+cccecccesceccsscssceessscscccsoccccceessssscescecoessenessessssccsccccsecesevceeesesscessceenene 21
+
+TABLES
+
+APPENDIX DRAWINGS .......cccccccccccccsesccccessccccesecccceseccecsecsecccescaccesenecccsaccacccbecsnecsssceseceucncccecececesecencessececeeesseasenceeeecetseee 23
+T2583-0101
+
+INTERFACE CONTROL DRAWING, LTL-4
+
+T2583-0201-01
+
+UNIT ASSEMBLY, LTL-4
+
+T2583-1201
+
+PIPING SCHEMATIC, LTL-4
+
+T2583-1202-01
+
+WIRING SCHEMATIC, LTL-4
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+FOR MODEL LTL-4 GRADIENT WATER HEAT EXCHANGER
+
+ENG-457
+
+PAGE
+
+REV.
+
+4
+
+9
+
+I.
+
+TABLE OF PARTICULARS
+
+COOLING CAPACITY
+
+4.5 KW, MAX.
+
+GRADIENT COIL COOLANT SUPPLY
+
+55-77°F (13-25°C)
+
+TEMPERATURE
+
+FACTORY SETPOINT
+
+64°F (18°C)
+
+FREQUENCY
+
+50-60 HZ
+
+COIL COOLANT FLOW RATE
+
+3.0 GPM (11 L/MIN.) MAX. @ 50 HZ, 3.5
+
+GPM (13L/MIN.) MAX. @ 60 HZ MAX.
+COIL COOLANT OUTLET PRESSURE
+
+20-60 PSIG (140-410 KPA) NORMAL
+OPERATION
+
+75 PSIG (520 KPA), MAX., PUMP DEADHEAD
+
+RESERVOIR CAPACITY
+
+1 GALLON (3.8 L)
+
+OPERATING AMBIENT
+
+50-113°F (10-45°C)
+
+COIL COOLANT
+
+35% ETHYLENE GLYCOL/65% DEIONIZED
+WATER BY VOLUME
+
+CHILLED FACILITY COOLANT
+
+50% ETHYLENE GLYCOL/50% DEIONIZED
+WATER BY WEIGHT
+
+TEMPERATURE CONTROL
+
+FACILITY COOLANT THROTTLING
+
+PUMP
+
+CENTRIFUGAL, SINGLE STAGE, PLASTIC
+
+COIL COOLANT/CHILLED FACILITY
+
+STAINLESS STEEL, BRAZED PLATE
+
+COOLANT HEAT EXCHANGER
+COIL COOLANT CIRCUIT MATERIAL
+
+PLASTIC, STAINLESS STEEL, COPPER
+
+CHILLED FACILITY COOLANT CIRCUIT
+
+PLASTIC, STAINLESS STEEL, COPPER
+
+MATERIAL
+‘PUMP INLET STRAINER
+
+STAINLESS STEEL, 40 MESH
+
+RESERVOIR MATERIAL
+
+POLYETHYLENE
+
+HOUSING AND BRACKETS
+
+ALUMINUM.
+
+METAL FINISH
+
+POWDER COAT
+
+TEMPERATURE CONTROL VALVE
+
+2-WAY BALL
+
+WEIGHT
+
+86 LBS (39 KGS) (DRY, NET SHIPPING)
+98 LBS. (44 KGS) (WET)
+140 LBS (64 KGS) (ESTIMATED GROSS
+
+SHIPPING)
+
+SIZE
+
+15" (380 MM) W X 17" (430 MM) L X 19" (480
+MM) H WITH ISOLATOR FEET
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+FOR MODEL LTL4 GRADIENT WATER HEAT EXCHANGER
+
+ENG-457
+
+PAGE
+
+REV.
+
+5
+
+9
+
+_ ELECTRICAL
+
+POWER SOURCEEXCLUSIVE)
+
+PDU IN GEMS MRI SYSTEM, DEDICATED
+CIRCUIT BREAKER
+- 110/115VAC, 15A,
+1PH, 50-60Hz
+
+MAXIMUM POWER
+
+1000 VA
+
+PUMP MOTOR
+
+1.0 HP (750 W)
+
+MOTOR PROTECTION
+
+THERMAL, 250°F (120°C) MAX. TRIP
+
+POWER CABLE (BY OTHERS)
+
+3 CONDUCTOR, 12 AWG, TYPE SO, FT4
+FLAMMABILITY, WITH A 3-PIN,
+
+TWIST-
+
+LOCK, SOCKET CONNECTOR, MINIMUM
+
+LENGTH OF 4 FT., MAXIMUM LENGTH OF
+10 FT.
+
+FUSE, CONTROL TRANSFORMER,
+
+1 AMP, 125 VAC OR GREATER, "SLOW-
+
+PRIMARY SIDE, "HIGH" LEAD
+
+BLOW"-APPROX. 1 SECOND AT 3.5 AMPS
+
+COOLANT SUPPLY TEMPERATURE CONTROL
+COOLANT SUPPLY TEMPERATURE READOUT
+
+LOW COOLANT LEVEL INTERLOCK
+LOW FLOW COOLANT INTERLOCK
+HIGH-TEMPERATURE COOLANT INTERLOCK
+
+CABINET SAFETY INTERLOCK.
+POWER INDICATOR LIGHT
+
+SYSTEMREQUIREMENTS _
+
+:
+
+SUPPLIED TO THE LTL4 |
+
+FACILITYCHILLED COOLANT:
+COMPOSITION
+
+505% ETHYLENE GLYCOL/50+5% WATER
+BY WEIGHT
+
+FLOW RATE
+
+3.3+0.3 GPM (12+ 1 L/MIN.)
+
+PRESSURE DROP INTERNAL TO
+
+8 PSID @ 3.0 GPM
+
+LTL4
+
+(55 KPA @ 11 L/MIN.)
+
+INLET TEMPERATURE
+
+52°F (11°C) , MAX.
+
+INLET PRESSURE
+
+20 PSIG (140 KPA), MIN.,
+50 PSIG (340 KPA), MAX.
+
+FLUID CONNECTIONS
+
+BARBS FOR 1/2" (13 MM) ID HOSE
+
+POWER:
+VOLTAGE
+
+110 VAC + 10%
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+FOR MODEL LTL~-4 GRADIENT WATER HEAT EXCHANGER
+
+ENG-457
+
+PAGE
+
+REV.
+
+6
+
+9
+
+_ SYSTEM REQUIREMENTS
+
+oo
+
+_ SUPPLIED TO THE LTL-4
+
+CURRENT
+
+12.5 A STEADY STATE AT 110 VAC, 60 HZ
+75 A, IN-RUSH AT 110 VAC, 60 HZ
+
+i.
+
+FREQUENCY
+PHASE
+
+50 OR 60 HZ
+1
+
+CONNECTION ON CABINET
+
+HUBBELL 4716 C
+
+INSTALLATION
+2-1
+
+PREOPERATIONAL CHECK
+
+No special unpacking or handling procedures are required.
+
+Normal careful handling will prevent
+
+marring of the finish or damage to the electrical and fluid connections.
+
+Remove cabinet top and
+
+inspect system for dirt and loose wires. Inspect all components for dirt and loose packing materials.
+Refer to Ellis & Watts (E&W) Unit Assembly Drawing, T2583-0201-01.
+temperature controller and the pump/motor mount.
+
+Check particularly the
+
+Dirt and foreign matter can cause electrical
+
+shorting in the controller.
+Check all electrical connections for loose wires.
+
+All wires shall be inspected for frayed or worn
+
+insulation. If any wires are found defective, they shall be replaced.
+
+The cabinet top must be installed on the Model LTL-4 Gradient Water Heat Exchanger before it is
+delivered to the customer.
+WARNING
+RISK OF ELECTRIC SHOCK.
+
+DEATH.
+
+CAN CAUSE INJURY OR
+
+DISCONNECT ALL REMOTE ELECTRIC POWER
+
+SUPPLIES BEFORE SERVICING.
+AVERTISSEMENT
+
+RISQUE DE
+
+CHOC
+
+BLESSURES
+
+OU
+
+ALIMENTATIONS
+
+ELECTRIQUE POUVANT PROVOQUER DES
+
+LA
+
+MORT.
+
+DEBRANCHER
+
+ELECTRIQUES
+
+TOUTES
+
+EXTERNES
+
+LES
+
+AVANT
+
+L'ENTRETIEN.
+
+ADVERTENCIA
+RIESGO DE CHOQUE ELECTRICO.
+
+PUEDE CAUSAR LESIONES O
+
+LA MUERTE; DESCONECTAR TODO SUMINISTRO REMOTO DE
+ENERGIA
+
+ELECTRICA
+
+ANTES
+
+DE
+
+REALIZAR
+
+LABORES
+
+DE
+
+MANTENIMIENTO.
+WARNING
+
+CONTAINS FERROUS MATERIAL.
+
+PERSONAL INJURY COULD
+
+RESULT DUE TO STRONG ATTRACTION TO MAGNET.
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+FOR MODEL LTL-4 GRADIENT WATER HEAT EXCHANGER
+
+| ENG-457
+
+PAGE
+7
+
+REV.
+
+AVERTISSEMENT
+
+CONTIENT
+
+UNE
+
+MATIERE
+
+FERREUSE.
+
+|
+
+UNE
+
+BLESSURE
+
+CORPORELLE POURRAIT ETRE PROVOQUEE PAR LA FORTE
+ATTRACTION MAGNETIQUE.
+
+ADVERTENCIA
+
+CONTIENE MATERIAL FERROSO.
+
+LA FUERTO ATRACCION AL
+
+IMAN PODRIA CAUSAR LESIONES PERSONALES.
+
+2-2
+
+INSTALLATION
+The Model LTL-4 Gradient Water Heat Exchanger (GWHX) is designed to sit on its four, vibration-
+
+dampening, support feet. It should not be suspended by its top cover on vertical sides. The GWHX
+must be prevented from moving or tipping; one method is to band it to a vertical wall.
+Ventilation air flow must not be restricted from passing through the cabinet louvers.
+
+One set of
+
+louvers on one side of the cabinet must be completely unblocked with no obstructions within 18
+inches (460 mm) from the louvered side. The opposite set of louvers may be positioned against a
+SOLID vertical wall; however the louvers should not be placed against a soft (e.g., carpeted) vertical
+wall that might conform to the shape of the louvers and totally block air flow.
+2-3
+
+CONNECTIONS
+WARNING
+CHILLED COOLANT MUST BE SUPPLIED TO THE LTL-4 AT ALL
+
+TIMES
+
+THE
+
+GRADIENT
+
+COGLING
+
+WATER
+
+COIL
+
+PUMP
+
+IS
+
+OPERATING TO INSURE THAT THE PLASTIC HOSES ARE NOT
+
+OVER-HEATED BY PUMP HEAT OR HEAT FROM THE GRADIENT
+COIL.
+
+AVERTISSEMENT
+DU
+
+LIQUIDE
+
+DE
+
+REFROIDISSEMENT
+
+REFROIDI
+
+DOIT
+
+ETRE
+
+FOURNI A LT-4 EN TOUT TEMPS LORSQUE LA POMPE A BOBINE
+
+DE GRADATION D'EAU DE REFOIDISSEMENT FONCTIONNE, AFIN
+D'ASSURER QUE LES TUYAUX DE PLASTIQUE NE SOIENT PAS
+SURCHAUFFES PAR LA CHALEUR DE LA POMPE OU PAR LA
+CHALEUR PROVENANT DE LA BOBINE DE GRADATION.
+ADVERTENCIA
+SE DEBERA SUMINISTRAR REFRIGERANTE ENFRIADO AL LTL-4
+SIEMPRE
+
+QUE LA BOMBA DEL
+
+ENFRIAMIENTO
+ASEGURARSE
+
+ESCALONADO
+
+QUE
+
+LAS
+
+SERPENTIN
+
+ESTE
+
+MANGUERAS
+
+DE
+
+AGUA PARA
+
+FUNCIONANDO
+PLASTICAS
+
+PARA
+NO
+
+SE
+
+SOBRECALIENTEN DEBIDO AL CALOR DE LA BOMBA O AL
+CALOR DEL SERPENTIN DE GRADIENTE.
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+FOR MODEL LTL-4 GRADIENT WATER HEAT EXCHANGER.
+
+ENG-457
+
+PAGE
+
+REV.
+
+8
+
+9
+
+WARNING
+CONTAINS
+
+ETHYLENE
+
+SWALLOWED.
+
+GLYCOL.
+
+CAUSES EYE
+
+HARMFUL
+
+IRRITATION.
+
+FATAL
+
+IF
+
+PROLONGED
+
+OR
+
+OR
+
+REPEATED BREATHING OF MIST OR VAPOR HARMFUL.
+AVERTISSEMENT
+
+CONTIENT DE L'ETHYLENEGLYCOL. NOCIF OU FATAL EN CAS
+D'ABSORPTION.
+
+PROVOQUE L'IRRITATION
+
+OCULAIRE.
+
+UNE
+
+INHALATION PROLONGEE OU REPETEE DE LA BUEE OU VAPEUR
+EST DOMMAGEABLE.
+ADVERTENCIA
+CONTIENE ETILENGLICOL.
+
+PRODUCE
+
+IRRITACION
+
+NOCIVO O FATAL SI SE INGIERE.
+
+DE
+
+LOS
+
+OJOS.
+
+LA
+
+INHALACION
+
+PROLONGADA O REPETIDA DE VAHO O VAPOR ES NOCIVA.
+
+Position the GWHX in its permanent location. The Model LTL-4 GWHX shall be used only as part
+of the General Electric Medical Systems (GEMS) Magnetic Resonance Imaging System. The unit
+shall be powered through the GEMS Power Distribution Unit (PDU).
+
+It is powered from a
+
+transformer secondary side; a dedicated, 15A, circuit breaker is used for the GWHX. All electrical
+
+connections must comply with all regulations in force at the location of operation.
+Fluid line connections must be made to the GWHX inlet and outlet ports before the unit is filled.
+
+The chilled facility coolant inlet and outlet ports are 1/2" (13 mm) hose barb connections, labeled as
+"FACILITY CHILLED WATER RETURN" and "SUPPLY", respectively.
+provided to the GWHX through the "RETURN" connection.
+
+Facility coolant is
+
+The gradient cooling water coil
+
+(GCWC) connections are 1/2" (13 mm) hose barb connections, labelled as "COIL SUPPLY" and
+"RETURN".
+
+(See Ellis
+
+& Watts [E&W] Interface Control Drawing T2583-0101.) Check that all
+
+fluid lines in the complete system are tight. Any leakage will cause loss of pressure which will lower
+effectiveness of the system and cause failure.
+Electrical power is supplied through the three-pin, twist-lock, socket connector. The power cable is
+a three-conductor, 12 AWG, Type SO cable with a FT4 flammability rating. The cable is supplied
+by others and must comply with all regulations in force at the location of operation and as listed in
+Electrical Requirements Table on page 6. Use the grounding stud to properly ground the GWHX.
+ON/OFF switching of the unit must be provided by the user external to the GWHX. (Refer to the
+Interface Control Drawing and the Wiring Schematic, E&W Drawings T2583-0101 and T25831202-01, respectively.)
+2-4
+
+INITIAL FELLING
+
+This procedure outlines the steps for initially filling the Gradient Cooling Water Coil (GCWC) loop
+
+of the Gradient Water Heat Exchanger (GWHX). The procedure applies regardless of whether or
+not the gradient coil already contains coolant. Refer to Section 3-3 regarding the operation of the
+level switch, high-temperature limit thermostat, cabinet interlock switch and flow-switch.
+interlock switches must be closed to operate the pump.
+T2583-0201-01, for location of components.
+
+These
+
+Refer to E&W Unit Assembly Drawing,
+
+Note particularly that removing the cabinet top
+
+interrupts operation by opening the cabinet interlock switch. During filling and other maintenance,
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+FOR MODEL LTL-4 GRADIENT WATER HEAT EXCHANGER
+
+ENG-457
+
+PAGE
+
+REV.
+
+9
+
+9
+
+the switch may be overridden by depressing the switch plunger. This may be accomplished using a
+weight, c-clamp, etc.
+1.
+
+Remove the entire cabinet top, by removing four Phillips-head screws in each of two sides
+of the unit (eight screws, total).
+Refer to Drawing T2583-0201-01.
+
+2.
+
+Insure that the GCWC loop and the chilled facility coolant supply loop external to the
+GWHX contain no leaks or open vents.
+
+3.
+
+Supply chilled coolant to the GCWC, insuring all air is purged from the lines.
+WARNING
+
+CHILLED COOLANT MUST BE SUPPLIED TO THE LTL-4 AT ALL
+
+TIMES THAT THE GCWC PUMP IS OPERATING TO INSURE THAT
+THE PLASTIC HOSES ARE NOT OVER-HEATED BY PUMP HEAT OR
+
+HEAT FROM THE GRADIENT COIL.
+AVERTISSEMENT
+DU
+
+LIQUIDE
+
+DE
+
+REFROIDISSEMENT
+
+REFROIDI
+
+DOIT
+
+ETRE
+
+FOURNI A LT-4 EN TOUT TEMPS LORSQUE LA POMPE A BOBINE
+
+DE GRADATION D'EAU DE REFOIDISSEMENT FONCTIONNE, AFIN
+D'ASSURER QUE LES TUYAUX DE PLASTIQUE NE SOTENT PAS
+SURCHAUFFES PAR LA CHALEUR DE LA POMPE OU PAR LA
+CHALEUR PROVENANT DE LA BOBINE DE GRADATION.
+ADVERTENCIA
+SE DEBERA SUMINISTRAR REFRIGERANTE ENFRIADO AL LTL-4
+SIEMPRE
+
+QUE
+
+LA BOMBA DEL
+
+ENFRIAMIENTO
+ASEGURARSE
+
+ESCALONADO
+
+QUE
+
+LAS
+
+SERPENTIN DE
+
+ESTE
+
+MANGUERAS
+
+AGUA PARA
+
+FUNCIONANDO
+PLASTICAS
+
+PARA
+NO
+
+SE
+
+SOBRECALIENTEN DEBIDO AL CALOR DE LA BOMBA O
+
+AL
+
+CALOR DEL SERPENTIN DE GRADIENTE.
+4.
+
+Fill the GWHX reservoir to within 1.5 to 2 inches (38 to 51 mm) from its top, so that the
+level in the reservoir is above the pump discharge connection.
+
+5.
+
+Connect the air purge hose assembly supplied with the GWHX to the access valve at the
+
+pump discharge. Secure the opposite end of the purge hose in the reservoir. The air purge
+hose assembly is stored inside the cabinet, attached using a Velcro strap.
+6.
+7.
+
+Start the GCWC pump by applying power to the unit.
+Observe the pump suction hose between the reservoir connection and the pump suction
+connection. Ifa
+
+large air slug(s) is observed in the hose and the coolant does not appear to
+
+be flowing, disconnect power to the GWHX (pump), immediately.
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+FOR MODEL LTL~-4 GRADIENT WATER HEAT EXCHANGER
+
+ENG-457
+
+PAGE
+
+REV.
+
+10
+
+9
+
+WARNING
+
+EXTENDED
+
+OPERATION
+
+OF
+
+THE
+
+PUMP
+
+WITHOUT
+
+PROPER
+
+COOLANT FLOW TO THE PUMP MAY DAMAGE THE PUMP.
+AVERTISSEMENT
+LE
+
+FONCTIONNEMENT
+
+PROLONGE
+
+DE
+
+LA
+
+POMPE
+
+SANS
+
+CIRCULATION ADEQUATE DE LIQUIDE DE REFROIDISSEMENT
+EN DIRECTION DE LA POMPE PEUT ENDOMMAGER LA POMPE.
+ADVERTENCIA
+
+LA OPERACION PROLONGADA DE LA BOMBA SIN EL FLUJO
+ADECUADO
+
+DE
+
+REFRIGERANTE
+
+HACIA
+
+LA
+
+BOMBA
+
+PODRIA
+
+DANAR LA BOMBA.
+
+8.
+
+Observe the coolant level in the reservoir. If necessary, add coolant to maintain the level
+above the pump discharge connection.
+
+However, do not fill the reservoir above 1.5 to 2
+
+inches (38 to 51 mm) below the top of the reservoir.
+9.
+
+Allow time for any air slugs in the suction hose to migrate into the pump, so the suction
+hose is completely filled with coolant.
+
+10.
+
+11.
+
+After an additional 10 seconds, re-apply power to operate the pump.
+
+Repeat Steps 7 through 10 to purge the air from the GCWC
+
+loop through the air purge
+
+hose. Depending on the volume of the loop, ten to fifty iterations may be required. Some
+coolant will be pumped through the air purge hose along with the air slugs into the
+reservoir. Note that the coolant level in the reservoir drops as air is purged from the loop.
+12.
+
+After noticeable air slugs have been purged from the loop, operate the pump for an
+
+additional 10 minutes with the air purge hose connected.
+13.
+
+Shut-off power to the GWHX.
+
+14.
+
+Remove the air purge hose assembly. Install the access valve cap and the reservoir cap.
+
+15.
+
+Install the cabinet top.
+
+16.
+
+Re-start the GWHX and observe the coolant level in the reservoir.
+
+If necessary, add or
+
+remove coolant through the access panel in the housing top until the final coolant level is
+approximately at the midpoint between the "ADD" and "FULL" lines.
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+FOR MODEL LTL-4 GRADIENT WATER HEAT EXCHANGER
+
+{| ENG-457
+
+PAGE |} REV.
+
+11
+
+9
+
+Ii.
+
+OPERATION
+3-1
+
+STARTING
+
+To start the GWHX, simply make the proper power connection to the power socket and turn the
+power switch on. Refer to E&W Drawing T2583-1202-01, Wiring Schematic.
+If the GWHX is automatically stopped by the built-in interlock for coil coolant low-flow, a time-
+
+delay relay must be reset before the unit can be re-started.
+
+The reset is accomplished by: 1)
+
+removing and re-installing the cabinet top to exercise the cabinet access interlock switch, or 2) unplugging and plugging-in the electrical inlet plug.
+Upon initial start-up, use a properly calibrated flow meter to check the fluid flow rate of the GCWC
+coolant and the chilled facility coolant.
+
+Note that the flow-rate of the chilled coolant will be
+
+restricted by the two-way control valve if full capacity is not being called-for.
+WARNING
+
+THE
+
+PUMP IS A CENTRIFUGAL PUMP.
+
+IF THE
+
+OUTLET IS
+
+EXCESSIVELY RESTRICTED, THE OUTLET PRESSURE CAN RISE
+TO DAMAGING PRESSURE.
+
+AVERTISSEMENT
+CETTE UNITE EST UNE POMPE CENTRIFUGE. SI LA SORTIE EST
+EXCESSIVEMENT
+
+OBSTRUEE, LA PRESSION DE
+
+SORTIE PEUT
+
+S'ELEVER A UN NIVEAU DOMMAGEABLE.
+ADVERTENCIA
+
+LA BOMBA ES UNA BOMBA CENTRIFUGA.
+
+SI SE RESTRINGE LA
+
+DESCARGA DE MANERA EXCESIVA, LA PRESION DE DESCARGA
+PUEDE ELEVARSE HASTA UN NIVEL DANINO.
+
+3-2
+
+STOPPING
+The GWHX is stopped by either disconnecting the power cable at the socket connector or by
+
+shutting-off the power remotely. If the cabinet top is removed, the safety interlock switch will also
+stop the unit.
+3-3
+
+THEORY OF OPERATION
+The GWHX is a system designed as a liquid-to-liquid heat transfer system. The system consists of a
+
+supply system for ethylene glycol coolant to the GCWC, reservoir and a heat exchanger cooled by a
+chilled ethylene glycol/water mixture.
+
+The system circulates a minimum of 3 GPM (11 l/min) of
+
+GCWC coolant at a maximum system outlet pressure of 60 PSIG (410 KPa) at 60 Hz and at a
+minimum outlet temperature of 55°F (13°C) while operating in an ambient temperature up to 113°F
+(45°C).
+
+The GCWC coolant is circulated through a gradient coil, where it absorbs a maximum of
+
+15,400 Btu/hr (4.5 kw), generated by the equipment. The fluid then returns to the heat exchanger,
+where heat is transferred to the chilled facility coolant.
+
+ELLIS & WATTS INTERNATIONAL, INC.
+BATAVIA, OHIO 45103
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+DOCUMENT NO.
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+FOR MODEL LTL-4 GRADIENT WATER HEAT EXCHANGER
+
+ENG-457
+
+PAGE | REV.
+12
+
+9
+
+The fluid circuits are shown schematically in the E&W Piping Schematic, Drawing T2583-1201.
+Coolant returning from the gradient coil enters the GWHX through the "CODL RETURN"
+connection.
+
+A standpipe-type reservoir is included to accommodate thermal expansion, provide a
+
+readily-accessible fill port and enable purging of air from the system. The pump takes coolant, by
+
+suction, from the
+strainer.
+
+"RETURN" connection and discharges into the heat exchanger through a 40-mesh
+
+Hot gradient coolant is therefore supplied from the pump to the heat exchanger and cold
+
+gradient water is returned from the heat exchanger. Heat is transferred in the heat exchanger to the
+
+chilled facility coolant flowing through the heat exchanger.
+The electrical design is shown in the E&W Wiring Schematic, Drawing T2583-1202-01.
+
+Power
+
+(110 VAC + 10%/1 phase/50-60 Hz/12.5 A) is supplied via a three-pin, twist-lock, socket connector.
+Power is distributed through a terminal block. Full voltage is supplied to the pump motor, through a
+contactor (closed when the coil is energized).
+
+The contactor coil is wired in series with a level
+
+switch, located in the reservoir, a high-temperature limit thermostat, a cabinet access interlock and a
+coil coolant flow switch. Thus, the pump stops if the pump or pump motor overheats, a low-level or
+low flow condition occurs or the cabinet top is removed. A 110 VAC/24 VAC transformer supplies
+power to the control circuit for the temperature controller, temperature display and two-way ball
+valve actuator.
+The temperature of the coolant supplied to the GCWC is controlled by modulating the chilled
+facility coolant flow rate. A positive temperature coefficient, silicon sensor senses the actual coolant
+supply temperature. The operator dials-in the desired coolant supply temperature. The temperature
+control module compares the set-point and actual coolant supply temperatures. Using proportional
+plus integral logic, the controller supplies a 2-10 VDC signal to the actuator on the two-way, control,
+
+ball valve. The two-way valve adjusts to pass more chilled coolant through the heat exchanger if the
+actual temperature is greater than the set-point temperature and less chilled coolant through the heat
+exchanger if the actual temperature is less than the set-point temperature. The actual temperature is
+shown continuously on the temperature display module.
+
+A push button enables the set-point
+
+temperature to be displayed. Voltage and power requirements for the controller, display and actuator
+are shown on the Wiring Schematic, Drawing T2583-1202-01.
+The green neon, power indicator lamp (IL) on the side of the cabinet is lighted when voltage is
+applied to the line-side contacts of the motor contactor (K1), to the primary side of the control
+transformer (T1) and across the following components which are wired in series: reservoir level
+
+switch (LS), high-temperature limit thermostat (TH), cabinet interlock switch (IS), flow switch (FS)
+and coil of the motor contactor (K1).
+The level switch (LS) is located in the reservoir (R) for the coil coolant.
+
+It is positioned at
+
+approximately the one-third full level. If the coolant level drops below this level (for example, due
+to a leak in the coil coolant circuit), the level switch opens. This interrupts power to the coil of the
+motor contactor (K1), opens the contacts and stops the pump motor (P/M) to prevent the pump from
+
+overheating.
+The high-temperature limit thermostat (TH) is fastened to the copper tee at the outlet of the brazed-
+
+plate heat exchanger (HX) for the coil coolant.
+
+The thermostat protects the pump (P/M) from
+
+overheating by opening if the coil coolant temperature rises above 100°F (38°C). This would occur
+if facility coolant flow is interrupted or its temperature increases significantly from approximately
+52°F (11°C) to 85°F (29°C). The thermostat closes when cooled below 80°F (27°C) to enable the
+unit to again operate.
+
+The cabinet interlock switch (IS) is a safety feature for personnel. When the cabinet top is removed,
+the switch opens and interrupts power to the coil of the pump motor contactor (K1). This causes the
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+FOR MODEL LTL4 GRADIENT WATER HEAT EXCHANGER
+
+ENG-457
+
+PAGE
+13
+
+pumps (P/M) to stop until the cabinet top is replaced.
+
+During servicing, the switch may be over-
+
+ridden by depressing the switch plunger using a weight, c-clamp, etc.
+The flow switch (FS) is located in the coil coolant circuit, upstream of the pump (P/M) and reservoir
+(R). Its purpose is to protect the pump from overheating if coil coolant is interrupted (for example,
+
+by a leak in the coil coolant circuit). If coolant flow decreases below one gpm (3.8 1/min), the switch
+opens to interrupt power to the coil of the motor contactor (K1). This opens the contacts and stops
+the pump motor (P/M).
+
+To enable the pump to operate at initial start-up when no coil coolant is
+
+flowing, a time delay relay (TDR) is wired in parallel with the flow switch.
+
+It provides a closed
+
+electrical circuit “around” the flow switch until the pump can operate for a sufficient time to establish
+coolant flow greater than one gpm (3.8 I/min.). The relay is adjustable and is factory-set to remain
+closed for about 30 seconds. After 30 seconds, coolant flow is established through the flow switch to
+
+close it, the time delay relay opens and the pump continues to operate. If the flow switch opens at
+any time and stops operation of the unit, the time delay relay must be reset by cycling power to it,
+before operation can be resumed.
+
+Power to the relay can be cycled by any one of the following
+
+methods:
+1) Dis-connect and re-connect the main power plug (P/S).
+2) Removing and installing the cabinet top, i.e., cycle the cabinet interlock switch (IS).
+IV.
+
+MAINTENANCE
+
+WARNING
+
+RISK OF ELECTRIC SHOCK.
+
+CAN CAUSE INJURY OR DEATH.
+
+DISCONNECT ALL REMOTE ELECTRIC POWER SUPPLIES BEFORE
+SERVICING.
+AVERTISSEMENT
+
+RISQUE
+
+DE CHOC ELECTRIQUE POUVANT PROVOQUER DES
+
+BLESSURES
+
+OU
+
+ALIMENTATIONS
+
+LA
+
+MORT.
+
+DEBRANCHER
+
+ELECTRIQUES
+
+TOUTES
+
+EXTERNES
+
+LES
+
+AVANT
+
+L'ENTRETIEN.
+ADVERTENCTA
+
+RIESGO DE CHOQUE ELECTRICO.
+
+PUEDE CAUSAR LESIONES O
+
+LA MUERTE; DESCONECTAR TODO SUMINISTRO REMOTO DE
+
+ENERGIA
+
+ELECTRICA
+
+ANTES
+
+DE
+
+REALIZAR
+
+LABORES
+
+DE
+
+MANTENIMIENTO.
+4-1
+
+GENERAL
+
+The GWHX is designed to require a minimum amount of maintenance. To imsure that the system is
+
+ready for operation at all times, it should be inspected periodically and systematically so that
+potential problems may be discovered and corrected before they cause serious damage or failure.
+Problems discovered during operation of the system shall be noted for future correction, to be made
+
+as soon as operation is ceased.
+
+Stop operation immediately if a deficiency is noted which would
+
+damage the equipment if operation were continued.
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+FOR MODEL LTL-4 GRADIENT WATER HEAT EXCHANGER
+
+| ENG-457
+
+PAGE | REV.
+
+14
+
+9
+
+During maintenance, with the cabinet top removed, the cabinet access interlock switch may be over-
+
+ridden to enable the equipment to operate. Operation is achieved by depressing the switch plunger
+using a weight, c-clamp, etc.
+PREVENTATIVE MAINTENANCE
+
+The frequency of preventative, periodic checks may be determined based on actual experience in the
+operating environment.
+The coolant level in the reservoir should be checked at three-month intervals. The strainer for the
+coil coolant should be checked for cleanliness at three-month intervals during normal operation. If
+the coolant loop is opened or the possibility of coolant contamination exists, the unit should be
+operated for one hour and the strainer should then be checked. No lubrication is required on this
+system.
+
+SPECIAL TOOLS
+
+No special tools are required.
+
+Normal tools kept by experienced heat exchanger equipment
+
+mechanics are sufficient.
+4-4
+
+CONTROL AND INTERLOCK SETPOINTS
+
+The setpoints given in Table IV-1 are provided for the control components and interlocks to aid in
+troubleshooting the unit.
+
+In addition, test point voltages are shown on the Ellis & Watts Wiring
+
+Schematic, Drawing T2583-1202-01.
+For the' temperature controller, the temperature setpoint is adjusted via the labeled rotary knob
+located on the outside face of the controller.
+
+The throttle range, operation mode jumpers, integral
+
+control DIP switches and minimum output voltage are set inside the controller.
+
+The inside can be
+
+accessed by removing the front of the controller, by removing one Phillips-head screw in each of the
+four comers of the controller front face.
+The throttle range is set using the rotary knob labelled "THROT RANGE."
+
+The operation mode
+
+jumpers are set at Position J1 on the circuit board. For direct action, each of the two jumpers should
+
+be oriented horizontally (across the circuit board). If necessary, pull the jumpers directly out of the
+circuit board, rotate 90° in either direction and re-insert into the circuit board. The DIP switches are
+four labeled slide switches, clustered together on the circuit board. The mmimum output voltage is
+set using the rotary knob labeled "MIN OUTPUT." At the main terminal board (see E&W Drawing
+T2583-1202-01), connect a voltmeter across "V" and "C".
+
+Then, rotate the knob until 2 VDC is
+
+displayed at the voltmeter.
+
+For the control valve for facility water, rotation position and range are set on the outside face of the
+actuator cover, using a flat-head screw driver.
+
+Rotation position refers to the direction of valve
+
+rotation with increasing control voltage supplied to the actuator by the temperature controller.
+
+Its
+
+setting should be "L". Rotation range limits the amount of valve travel and should be set at "100%".
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+FOR MODEL LTL-4 GRADIENT WATER HEAT EXCHANGER
+
+ENG-457
+
+PAGE
+
+REV.
+
+15
+
+9
+
+TABLE IV-1
+CONTROL AND INTERLOCK SETPOINTS
+
+COMPONENT AND PARAMETER
+
+SETPOINT
+
+Temperature Controller
+Temperature Setpoint
+
+18°C (64°F)
+
+Throttle Range
+
+13°F (7°C)
+
+Operation Mode Jumpers
+
+Direct Action
+
+Integral Control DIP Switches
+
+1
+2
+3
+4
+
+Off
+Off
+Off
+On
+
+Minimum Output Voltage
+
+0 VDC
+
+Flow Control Valve (Facility Water)
+Range
+
+Closed (0% Cooling)
+
+0 VDC
+
+Open (100% Cooling)
+
+10 VDC
+
+Rotation
+
+Position
+Range
+
+L
+100%
+
+Time Delay Relay
+
+Delay Time
+
+30 sec.
+
+Flow Switch
+Flow Required For Closed Switch
+
+> 1 gpm (3.8 l/min.)
+
+Thermostat, High-Temperature Limit
+Open On Temperature Rise
+
+100+7°F (38+4°C)
+
+Close on Temperature Fall
+
+80+7°F (27+4°C)
+
+Cabinet Interlock Switch
+Closed
+
+Plunger Depressed
+
+Reservoir Level Switch
+
+Closed
+
+Float Horizontal
+
+Pump Motor
+Thermal Overload Trip Temperature
+
+250°F (120°C), Max.
+
+Pump
+
+Capacity
+
+3 gpm @ 60 psig
+@60 Hz (11 I/min.
+@ 410 KPa @ 60 Hz),
+2.5 gpm @ 40 psig
+@ 50 Hz (9.5 min.
+@ 280 KPa @ 50 Hz)
+
+Dead-head Pressure
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+75 psig (520 KPa)
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL | ENG-457
+
+FOR MODEL LTL-4 GRADIENT WATER HEAT EXCHANGER
+
+PAGE |
+16
+
+REV.
+9
+
+4-5
+
+TROUBLESHOOTING
+
+A troubleshooting guide is provided in Table IV-2 to aid in identifying and correcting problems.
+4-6
+
+REPAIR AND REPLACEMENT PARTS
+
+Due to the simplicity of construction of the GWHX, all of the major components are considered
+replaceable rather than repairable.
+
+Refer to Table IV-3 for the major components of the heat
+
+exchanger which may require replacement. Refer to the Unit Assembly Drawing, T2583-0201-01,
+for the location of these components. Ordinarily, replacement of a component shall take place only
+when found faulty through the use of the troubleshooting procedures found in Table IV-2.
+4-7
+
+REMOVAL PROCESS FOR MOBILES
+The LTLA chiller weighs 84 Ibs (40kgs). The Hi-Jack Lifting Fixture must be used if one person is to
+replace the LTL4 chiller. The Hi-Jack Lifting Fixture is available from the GE Tools Depot. There is
+no part number for this device, it is known as the Hi-Jack, model Ai. Alternative method to using the
+Hi-Jack is to use 2 persons to remove the LTL4 chiller from the mobile belly compartment.
+1)
+
+Turn off power to the LTL4 chiller at the PDU.
+
+2)
+
+Turn off power to the Main Mobile Chiller.
+
+3)
+
+There are two shut-off valves that are in series with the LTL4 chiller Input and Output from the
+Main Mobile Chiller. Tun the two valves to the “closed” position.
+
+4)
+
+Remove the power cord from the LTLA Chiller
+
+5)
+
+Remove four waterlines from the LTLA Chiller.
+
+6)
+
+With the LTL4 chiller free, position the chiller to be removed. See Picture 1.
+
+7)
+
+Ifthe Hi-Jack Lifting Tool is not available, use 2 persons to remove the LTLA Chiller from the
+
+8)
+
+Position the Hi-Jack lifting fixture near the LTL4 Chiller. See Picture 2.
+
+Mobile belly compartment.
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+
+FOR MODEL LTL-4 GRADIENT WATER HEAT EXCHANGER
+
+ENG-457
+
+PAGE
+
+REV.
+
+17
+
+9
+
+9)
+
+Carefully move the LTL4 Chiller from the Belly compartment of the Mobile onto the Hi-Jack.
+
+10) When the LTL4 Chiller is completely removed from the Belly compartment, lower the Hi-Jack as
+this will increase stability when moving the Hi-Jack.
+
+11) Remove failed LTL4 Chiller from the Hi-Jack, and place the new LTL4 Chiller onto the Hi-Jack.
+12) Re-instail the replacement LTL4 chiller into the mobile by reversing the steps in the mentioned
+procedure.
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+
+FOR MODEL LTL-4 GRADIENT WATER HEAT EXCHANGER
+
+ENG-457
+
+PAGE |
+
+18
+
+REV.
+
+9
+
+TABLE IV-2
+TROUBLESHOOTING
+
+| TROUBLE =
+
+| PROBABLE CAUSE
+
+1. Low GCWC coolant flow
+
+a. Check coolant level in reservoir.
+
+a. Low coolant supply
+
+Refill, ifnecessary. Check Probable
+Cause c.
+
+b. Constriction in system
+
+b. Check all coolant lines and heat
+exchanger for blockage and remove.
+c. Check all coolant lines for leaks
+
+c. Leak in system
+
+and repair.
+
+d. Check pump and motor and
+
+d. Pump/motor malfunction
+
+replace, if necessary.
+
+e. Low voltage or frequency
+
+e. Check power and wiring and
+repair.
+
+f. No power to pump motor
+
+£ Check operation of contacts in
+motor contactor. Replace contactor,
+if necessary.
+Check for power to coil in motor
+contactor. Ifno voltage, check
+operation of reservoir level switch,
+high-temperature thermostat, cabinet
+
+access switch, flow switch and time
+delay relay. Electrically isolate each
+
+component and verify its open/close
+operation. Refer to Wiring
+
+Schematic, E&W Drawing T25831202-01. Replace, if necessary.
+2. High GCWC coolant temperature
+
+a. Low coolant flow
+
+a. See Trouble Item 1.
+
+b. Low chilled facility coolant flow
+
+b. Check and repair lines for leaks,
+lines for blockage, operation of twoway control valve, operation of
+chilled coolant pump.
+
+c. High facility coolant temperature
+
+c. Check facility coolant return
+temperature. Repair chiller, if
+necessary.
+
+d. Temperature control system
+malfunction
+
+d. Check controller, sensor and valve
+actuator for correct settings. Refer to
+
+Table IV-1. Check components for
+correct input voltage. Refer to
+Wiring Schematic E&W Drawing
+T2583-1202-01. Vary temperature
+
+setpoint at controller while
+monitoring control signal at actuator
+and observing motion of valve. If
+control signal does not change or is
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+FOR MODEL LTL-4 GRADIENT WATER HEAT EXCHANGER
+
+ENG-457
+
+PAGE
+
+19
+
+TROUBLE ©
+
+=
+
+——..... | PROBABLECAUSE
+
+_|
+
+REMEDY
+-
+
+erratic, replace controller. If actuator
+
+does not respond to correct control
+signal, replace actuator.
+3. No flow from pump
+
+a. No power to unit
+
+a. Check power and wiring; repair or
+replace.
+
+b. No power to pump motor
+
+b. Check operation of contacts in
+motor contactor. Replace contactor,
+if necessary.
+
+Check for power to coil in motor
+contactor. If no voltage, check
+operation of reservoir level switch,
+high-temperature thermostat, cabinet
+access switch, flow switch and time
+delay relay. Electrically isolate each
+component and verify its open/close
+operation. Refer to Wiring
+Schematic, E&W Drawing T25831202-01. Replace, if necessary.
+
+c. Check motor and pump, and
+c. Pump/motor malfunction
+4. Excessive power draw
+
+a. Short in wiring
+
+replace, if necessary.
+a. Check wiring; repair or replace.
+Refer to Wiring Schematic, E&W
+Drawing T2583-1202-01.
+
+5. Low GCWC coolant pressure
+
+a. Pump/motor malfunction
+
+a. Check motor and pump, and
+replace, if necessary.
+
+b. Low power to system
+
+b. Check power and wiring; repair or
+replace.
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+FOR MODEL LTL-4 GRADIENT WATER HEAT EXCHANGER
+
+ENG-457
+
+PAGE |
+
+20
+
+REV.
+
+TABLE IV-3
+REPLACEMENT PARTS
+
+Contactor
+
+K1
+
+T2590-216
+
+1
+
+Controller with sensor, temperature
+
+TC,TS
+
+T2517-64
+
+1
+
+Pump/Motor set
+
+P/M
+
+T2583-101
+
+1
+
+Heat Exchanger
+
+HX
+
+T2590-105
+
+1
+
+Reservoir
+
+R
+
+T2590-104
+
+1
+
+BV,VA
+
+T2583-120
+
+1
+
+Strainer
+
+SI
+
+T2583-124
+
+1
+
+Tnlet, electrical, twist-lock
+
+P/S
+
+T2583-201
+
+1
+
+Display, temperature
+
+TD
+
+'T2583-202
+
+1
+
+Transformer
+
+Tl
+
+J1476-201
+
+1
+
+Switch, level
+
+LS
+
+T2583-205
+
+1
+
+Terminal block
+
+TB1
+
+29-28-182
+
+6
+
+Access valve
+
+vi
+
+T2583-122
+
+1
+
+Tubing, 1/2-inch (13-mm) inside diameter
+
+_-
+
+T2583-103
+
+10 ft. (3050
+
+Valve with actuator
+
+mm)
+Tubing, 3/4-inch (19-mm) inside diameter
+
+--
+
+T2583-125
+
+2.5 fi.
+
+(760 mm)
+
+Thermostat, high-temp. limit
+
+TH
+
+T2590-106
+
+1
+
+Switch, interlock
+
+IS
+
+T2590-214
+
+1
+
+Switch; flow
+
+FS
+
+T2590-201
+
+1
+
+Relay, time delay
+
+TDR
+
+T2590-202,203
+
+1
+
+Light, power indicator
+
+IL
+
+T2590-215
+
+1
+
+Sensor, temperature
+
+TS
+
+T2517-64-01
+
+1
+
+Actuator, valve
+
+VA
+
+T2583-120-01
+
+1
+
+Cap, reservoir
+
+CR
+
+T2590-104-01
+
+1
+
+Assembly, hose, air purge
+
+--
+
+T2583-141
+
+1
+
+Cap, access valve
+
+CA
+
+T2583-122-01
+
+1
+
+Fuse block
+
+Fl
+
+J1476-202
+
+1
+
+Fuse
+
+Fl
+
+J1476-203
+
+1
+
+Plug with hose barb
+
+--
+
+T2590-111
+
+2
+
+Socket with bulkhead and hose barb
+
+--
+
+T2590-112
+
+2
+
+_
+
+T2590-114
+
+1
+
+Assembly, quick-disconnect
+Facility chilled water
+
+Coil coolant
+Supply: Plug with bulkhead and
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL | ENG-457
+FOR MODEL LTL-4 GRADIENT WATER HEAT EXCHANGER
+
+PAGE | REV.
+21
+
+9
+
+DESIGNATOR(1)
+=
+
+hose barb
+Return: Plug with bulkhead and
+
+T2590-121
+
+hose barb
+
+Socket with hose barb
+
+T2590-113
+
+(1) Refer to E&W Drawings T2583-1201 and T2583-1202-01.
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+FOR MODEL LTL-4 GRADIENT WATER HEAT EXCHANGER
+
+ENG-457
+
+PAGE
+22
+
+APPENDIX DRAWINGS
+12583-0101:
+
+INTERFACE CONTROL DRAWING, LTL-4
+
+T2583-0201-01:
+12583-1201:
+T2583-1202-01:
+
+UNIT ASSEMBLY, LTL-4
+PIPING SCHEMATIC, LTL-4
+WIRING SCHEMATIC, LTL-4
+
+ELLIS & WATTS INTERNATIONAL, INC.
+
+SIZE
+
+CAGE CODE
+
+A
+
+98437
+
+BATAVIA, OHIO 45103
+DOCUMENT NO.
+
+INSTALLATION, OPERATION AND MAINTENANCE MANUAL
+FOR MODEL LTL-4 GRADIENT WATER HEAT EXCHANGER
+
+ENG-457
+
+PAGE
+
+23
+
+e-20on.20]oeaolan-[AMog|98—10-15|MJUS|#T2583-01ECNPERA|REVISEDPVC.BRAID—REINFORCEDAREHOSESAL1.
+
+AOADFNGINEERING)APPCROOIVELD|GRBYADI(YER-NMOT-DA)}DATEPRDEOSVCARLIPETNIGOINNEERING|LTRZONEENGR[MATLONUSEDAS>Y>NEXTSTATUSREV|No.REV.S|WITHOUTTRCANHSIFLERLREERDOTRORERPREOTDUUCREDN,NODTUPELSI:CATED,
+
+98-10-05BA|98-10-05MJS
+
+HOSE1/2”HBQDBUHBTE3/4”//
+
+§>>_[}d6—<=<=HB|HBHBHBHBHB|HBBUQDHBHOSE1/2"
+
+1e18D1os9-O!oFn9-91o871s]92|lgs-5HocE-o8“—To13e8-91.7F70R4O19%MI[wCMrRU.SE]N|TO|NU9E9R\8Nu—-4N0I23t-70187scaBl}]e#12583-981-2510-HE0OC5SNRKEDSDP3E/R4”BRE}¢VRI—ESVEIDS|EDCLTL—4APLICAT7I2O5N83—H02B01—-01P/MSHEETSOF|No.SHET<HOaSE>1/2”><HOSE1/2”/+<>$_OG6WH—ICH|WIANTF—OSR.MA&$TIEO0LN9ICS-ONO~TFA<IPNESRMITSIWOANTTWSR.IT&TENLLPISRIOFR
+
+1/2”HOSEHBQDBUHBHX1/2”HOSEHBBUQD«HB1/2”HOSE
+
+P81/2”HOSE-1/2"TUBE31/2|”HOSE4MIC»3/4”TE—“DIM3ENARESINIONCNHES.|CONTRACTNBo.WR79583-1201TEeLIS&WATS1
+
+éi875431F2IL-E2:0 DTICAPORNHFOQNPWDAUESPIRATDENIUTRLAG[C/NYOIASVDTAOECIYWLZGDVE.] |GZO/NWaSIMPODAEMUCYETNIrOEFNCIMLRCFcAIY)T.FUATNROLGENIeND SFCHURIPLSTOULEMPYROLY<—<{}:o0¢->{=}—>_*
+1TU/B2E”
+
+=CENHGEICNKELRTo3P‘~L8—0RD4NSCAOWIL9TNAEG—oN+/ArmeFDARENACGITMLIAOELNSCIONCHINIATOI,
+
+PLAIRSTS
+
+/\
+
+e~<>QDFSQUICKDISCONECT
+
+HB
+
+SWLS
+
+PSCIHEPMIATNIGC
+
+HB
+
+D|REVISEDPERECN#T2590-03|99-05-25MUS]9.74oslg-oG5e/goo2n5
+
+TAOLERANECS
+
+3H/O4SE”
+
+YViLSSWITCH,LEVEL
+
+3H/O4SE”
+
+1HT/OE2SE”
+
+fGCRFAODIENLT (DIRASBWEUHTCUOITM—ATOFHNICS)
+
+VSCAHLREAVDNiERT,SETCSNUMOPSERSIPATRLU,YETHTLEIGRHI—MOEMSHPETIRATUR,EDITCSEUMOPELRIDPATLYUR,ECOTCSNEUMORPERLPCIATLEURY,E EXHBPCRLEANZXAGTERED, SFWCLOIOTLCISWAHNL,T
+
+SSWINGWDHOT TRAlINER RESEVOI PUMS/EMOMTOR HBOABSRE FCIALP V2BA—LAWVLAEY, UBNUILKOUHNEA,D
+
+LEGEND
+
+REVISIONS
+
+WPOE&INRTALEIRMNTAFSITOIENASONL.DRUEOTWPRILARNTSCDIHFAURETCOEUDET,DUDIWPSNBROHCPLEROIASTDCLEAR,HLY.E&WICNOTFLAENORRTLAMTAIONIASOLN.DTICAPORNFHNPWDESFIRTDENAGYL
+
+"DIF7
+
+OOE
+
+3OF3lsHeT es)A®
+
+8
+
+EQ? ©
+
+x@ 10
+
+[
+
+SV_EIACTE-IOWAN
+
+fh a
+
+ee|
+
+|
+|
+|
+
+L
+
+SV"E“ICGTE—IGOW”N"
+
+101
+
+@)
+
+|w1usrc/aNle4.T
+
+1
+
+98437 CAOGDE
+
+1S2585—0201-—-01] DNREWOVG.
+
+—
+
+<oe
+
+La
+
+5
+
+|
+|
+|
+|
+
+_
+
+o}
+
+9}
+
+SVCEI—TEICOWN
+
+FN9O0
+
+67
+
+|?F1258I3-02L01-0E1-R:V-S
+
+SIZE
+
+LH
+
+|O
+
+(W6HUCALRSDA/1WMAERP) —(3280fo)
+2X
+
+D
+
+be
+
+27
+
+(e2N6)
+
+5
+
+(18)4x (19)4x
+
+[OLD
+
+HRFCELMAORVIRETDY ABONRSBDES V“IE—EW”
+
+46X O O
+
+SVBEIC-TEIBOWN
+
+_!
+
+FN46
+
+66
+
+SV“EJICT—EIJOWN”
+
+WUHCALRSDA/WMAERP
+
+2X
+
+50)12)13
+
+}
+
+els(32 4)
+
+P3|79158-02e*]0N-0o
+
+C4.10
+
+1Z_~A—1"SY21]9583-02017-)0T25183]-02"01-8PO°1-REsV-S_FInLE:|e¢.STEASEMBLYUNITiSCI19Sse$a(13oe|e66,O@F@O4
+
+13.50J=a
+
+T325OF832-Is0HE2T01-01]wSr.u|ni9t814/347scape|EFARSIQDE4OXSox(15)(14)04X7.25X0|+¥——@QO
+
+A LOX
+
+(saa673574)\oan
+|
+
+—8.1}0
+
+|
+
+(134NEARXSIDE
+
+6.—10
+aa
+
+57e
+
+21THEOSES190745—-A048—-1021603—|/1#/2"xDA3/4x"1x6.03/"4",LG.PVC10131/2Fi)=|TCRLACMKP,MUONUINSTRIUNTGS614M74—1206297/8O.D.561919|Tl|TWARSAHNESRF,ORFMLEART,SSTJ5104-736E—-20511#65/230VAC/12/24VAC,43VA197
+
+422..232..)22))HTOSIHSNTESRTAARBPLELSTSEWTTRREHVAEOININRHEPORTUSEMTEOP.ONCDOISPTCHEEARRHGOTEESEANUBDSAIRSNBTGRATITWNOER.IANE22311|AWCC|EHBDHMLDAAILOOORASUNLSSCBCOHTPEEI,OWTLETN,REICECN,RHNTOEGO9OSNCP0SRLMENTRO,ETAEICGLDMKEASMTEE,GNTAPOR.TRLLRSAECITTTGER.HITCAL|TTJJJ25$$622111SS055434511-—894777003183066644E——-—55321220--34041300926975882ZD1--SZ—00110578420500=[NAs—L[//[Ce11O23//nEC”224T""IOFTLNFDDMoPERAATEsN,OxxxBPVR3M511/CAO.4874S5R.°-05E1"0L/"eGL4EG"L,AGKTLSG.ee111889010950626892045AAba3424111rt||I|TFTICCDSLAR]I|WNDBN|FHFCURTESUIAIUNEOAGHLWTTMLPSESHLI,ARE,UCHE,TIMYPLONCIO,LNGHAHSNB,T,EEOCEGPTAANXCTIROE,H,FCSKMB.NWTOLE,SHR,CSOI(,ARGEDSLPHEQWVT-LIUTBLAVIEN—AYLEMCD4,VRPLEKI)E.BRCWSAA/LCTITPRUMOIERTRTWE|||T1TTJ$$S5M62S21S2005$5469-—5939817522-8003067-9Z23--—1—2—1012L697-2010T41—391285L180,ZZ-0-S0S42103SPAN5P1E#BB11OVLRE2//L/R1aRCA0UOY142ATS,PMNS6—RSV-.,E,O32—xAAMP3DLC/0YS1PS2,GL4-,/8E0TR/21N,.0”BEM.S0PR,EP5SAH3STNW2,S6CTS.FxT>OxI1.RN11S/E162G2TP0/5E”SM4C,-,MVS2EFPTA0CP—TVT.A|]||4478566945780086328347A12428241189F|I]|PT|/VGGMIND,|HH||TW|NSIMPHRSTUVWOASCEOI|ETIACNSMHR,VUMBOEDHONNENSPRPHDTK,UEALCWTIRE/TOTRKL,ENULIME,BCR,GAOTEOLAORNTPE,TRHLFFUWDDIOBLWIREATACR/SELHTTO,UDFTRLDMELIABMSIEC,TPSAN.OHPGLDRTLRS,OAEUYNSNSDOTR]|TJT555212000554-——838171323679ZEE———-X--102161—2320011341567620423Z15S—0130—1P6|A#C3SNe#3RLA3EL0116UOSTN/AM400PUD-,T.S1RI-3HTRAG6+SO352L3II"S0TC2F/IE5RNU82XUTxG—-BEHGA1,3.EL22R5-,,030W0S1LP.TIG0ET,.8EHO0LP21TBS3HA0KS°.EF|||23|452861351662808
+
+|140|LG3.0A1.6205”0V,xP#O1L0E-,3265209—-1298X-—148723SST.|HD.,BFL.OCPKHIL|TBSIC|RTEWR,MINAL625621B/R4ASNYLPOVNC,2T92-53873-217481|PURGWERAIPRSHPOISER,ALAS—S|ETMUBILNYG,A/1R|948MPT1/2"xMPT1/2"J145761—2-10A0DEG.90SEPLRBOIWN,G61
+
+T21331o7@|2-icSsC5-02R78AP|3E1RSo-c#7eS1T0oi0rs--E2oS37T20,1oS7eBT-toO,s30272|1|‘\XxesMSAUF1|]5T"602D81—05M72!8-473|0"—--83191-921280145245M38O7UN-T0|2TT02R17L5A29O-50C9—K0951-I9—H,N-5[E—NS0X6U°7T,E0L-RCA1ETNNPI4CO#UN¥NRTEeT#R,PJEKPRsEtRE|VR1|I2E61SVEIDSED5763NsTHK]0.06C5LEAR,SEQUT1AL./,4O5R/SL1E6XTA”,N|T2L5TL8-34—10M35S015—7309E351—-238548135-0101BOT4TOMFFCLLOAAVTTERW,|AWASRSHHELERAR,Y,_J104|119075BRA5SMALEC,.2LG.,252"°xXDNPAT|1/2"SS102415-2P05N88L-3—0-801—20205C|6GUARDswPiItPcEHN|IcPHoPvOLeSRE,|11ENG7.PPEURMPCOHNTONHWSEEHCICTPHIOWSOINTNHSCIFOOHNTNROHIMRERNAICGETZTAIIDOWOENHTNDIASCL.OEPNLATPSSAHRUTICEEINTCSIE,BODEINITLT,NoOGPWPUATL4TMAH5TPSE°ST8.IC&AENLDLISOF
+
+3313A794257PE1CRGTTO/HHALCKK4L..|V].||EV00AD..1C1B00881REx02NPA0GOS5533ILS200N//4Y550E8822ES/E-2-Y-ERHH7AH11II33LYVN2266SAGL,,GESSA|NA—AS2L_EPL|0TTUEUA,PP,,MMRROV7ETTD22|T552288B5733Y90—-0-05-303TT(05Y01272-R01515--—9M29ZO—01—-70-DA60-3——-2—)1-1|3Z40061D0S6134ATEHEPAADTNO|EtRLHPKLEOE1GSCoX|DLEAKACEYRCBOSnBPVICNOOTERULeIOIESTTAPRL,,CT|TIOORRN|A/44/211R|\l27||417475|4991L7|6T3R0x0V)1Z/1O02//AN,24ExB2RVxA0AS#C#1,S20TS1H--#ET253R1.5M620OPL0A1SS.S8T5I-TTTAC8,,,502TJ—5952110-054-2-97X38106—E-A—--3-1—22182401F38241|INTETSRAPLPLOPICTIKNGLCAODSBCIEEK|NL,LSEFTUTWSOEAF|EDPSISBCWBHLIREOSETONCLRCEHRDTWKM,,EWFI,lS||88111A111989123791681ALFLUGL.GAM..4”5e.PAr7DM5IoP"ATsG.,SEx,NT1S.D/312/A#e°/8681-|P3"3rV/20C4,,"=$$104J55$T10-5$J24-0115712-04868-2473—Z0Z762—-—-—1-150115700Z115342S4DHASIWRIPVIENNLIPCHLOPOLTETSOFOLPEEFCR|—KF,LRLIBHmIAANBTOPVBRIUEISNEEBTLNGETL,,,|622711STRESSvToOnNOTHNOCSAHERO.EMEI.TDA.GKOI1SN/EG2I—OINCNOCNHNBEROCEFTNIOLNSE.TNRGADTIHNSGCAEHACRUNGTED2.2.,1)
+
+RKREVISEDPERECN#7T2590-548073-052-04|MJuASM
+
+876fs)i4PMICDIMENSIO3NSAREINMPLJIN|CHESREMS|EDRCEOVPNIETSRREFDAIECLCPNET#:ERNTO1s.Ee2Cs5-N90#a0-1T13-2o5,1-93R50E,-V3-45S6627,38-4300372--019324--103650E||LMLAu|GSFIS&-1WATT:.HS1TiK
+
+DUPLICATED,RNEOPTROVDOUSCTEDR,ESORTTRHAENSRFEESREREVDOIWRI/TTHEOEUTASSEMBLYANDS|SA1\S||R2EV|.No.[p|iscRoEnVectS,TAquTiUcSk,couptNeErXT|1A2SS5Y90-113ZsUSEDONEPR[MSAETALLS,ENBRGARS82ENG1INE|EPR/IsN|GINALEPTP,ROEVLAELCTRICAL2583-201TWST-LOCK,3POLE,154,125v|40
+
+aP2R.O3C.1E)DUIRNESTANLO.A70B8A,CKSIENCGTIOJING2B.E0TAWENDNATLHEMEFTLAALNGTEOPLASTICr11ySNIWTIEPIMTNLCOEDHM,EENLPCELITAPETEDURET221558P3NI—DLE1—N0T8IF-YB1IN5GNO.1/2M"ATNEREIXATL1/4/2S"PLEGC,IFMAILCEA,TBIROANS|UNTwr.|11FaI014N|83D/\|a2t11y|syM]CBEOLRVBAEONCRWOK,,METN9ICN0LLAEDTTEU,GR.EELECTRIC|TTJ221545978603I-—D-E220N00T3I740FZY1ISN-G03NO-.15|LESFXMOaAARNTEROTRIDAaERLeQ,U/MATLT,S2CPFlLE5.ECA59IR7F,,0I—BC0.RA20AT60ISOT2HNK!|||746'.I16N2Da8-r1yIB|Ys,ymV|ASULNCVIRTENEOW,AM,ESNBCPAELHMAILTBL,ULRAFYELCTUHDA,TESDT|J5104—7169I—DXE2—N0T3I4F4AY2INGNO.-10#2M1AW0TAE-YR3,IA2L1/X2S.NP3ET8C,IFLI2GC4A.TIVOANC||[22F-I94ND
+ATPESLUSNHBEMOBDEWPL.YRESANTERVROHIESRTE/E
+
+4|DNSREWOHVG
+
+N
+O
+T
+R
+E
+V
+E
+I
+S
+I
+O
+S
+N
+:
+E
+D
+P
+3
+1
+2
+—
+7
+.
+B
+C
+A
+T
+H
+I
+N
+2
+L
+S
+U
+O
+Y
+/
+7
+C
+E
+.
+W
+T
+H
+M
+S
+A
+V
+N
+0
+4
+R
+3
+L
+E
+P
+S
+G
+E
+)
+E
+.
+8
+P[s1|AO3UHwSPCSNW/PE&1rM9eRAHLoI-T2EF.AL0SI7TCO1ES-4DTAR.NTSIONDTICAPORNHFOQNPWDAUESPIRATDENIUTRLAG[C/NYOIASVDTAOECIYWLZGDVE.] LAIRSTS —5R|10EC#IDx6LOT4QSRC/21H5-P._UE8V3G0—L2AE7R03X5-Z1L.—NAS58T60-”3K,O0YE3"[P7U1D52]5T5 |TP5MC6H1ST20AOELN5RUM8H3L.PN4-09O-—ITK3SDHMU4-T.E36PN0—AS2TCG93,-.0~N—eTx0n.A3L0413PAMTCE:OHRNELPCG.OATDIRELNDS |3STHEFPB2XE1IRJC5NTMxL6EH9TVIS4/A05POC.GTE7N-8ZRIC3NVAE—P96H0-,2TVSER54LDGIF083R5I,EN/OTG.EREATBOSC=|ELSRHEBV5PMTf2O0$1SD7BNRIOE5L8UAYH3WM.5-NI,O0C-9RL3TXB0KH1E086A—3-UFN-3IC)TG].MN,K51TORUA1NLS23/TI1O$657A$0U54BS-HFAR90.E0T-ZWSNC7OLE—IM4R0,W3KTVSEO0UCDIE.W)RHNT 51|P0WOLFGS/1T2VAYLCJ—3PUE5SOBTACRL84W-HVOSP7I0YB—R6EMPHLI2-L”CSREOT7ND25B,GAE—3SR2 S1DQEB/2NT8HJFXS3IURA15PI49OL07T-CS61R9P1-"4.K,-L0EB1°4Z,S,2B.TPMCOL|IA1UGHKNT.OMSIR5A81VU4ENI2PC,6/-GN)LT7I3ELV—5ONMSE4,IF2TP6NTEa2.BIHRAEN1SOTENWT.RSVAEOD4LEINR)e—a23/.CLOIH4E1-UND_SI.GFENT3C.H)ounnmeslBPTORESAIEWTNRFTVOIRBNDMG.o2E.RAPSTUrOL1CB.ATMOI2PWEN)e=—2.LPMBO1UOLN.MSTIES1PN.G)a_o2HBRAPS.EUSOCTENn—1RWeSMIVEODEPNI).RNo“|2APaRSOCEeD.MUBRELS210vY:n7oawHKm1RDNTFL2ERA5B8EO3WR-.EIL0NR5SC0GE1
+
+DNSRCAOWILTNEG FDARENACGITMLIAOELNS UOSPTNEHCLEIREFWISEDE
+
+9-07-14BA|99-07-14MJS
+
+tLnyTaI2=HTX0BLENEORHTAOLIERATNECVOSA”N
+
+rUASeNEaIMlBTLY
+
+(LTL—4)9-07-13CMJ
+
+TEOTCBAP/BHNVISROEDCBST /TECAPHOXNC/ENVHPACNATUDCGIEMOTRNP
+
+CENHGEICNKER
+
+TYWRAPS,
+
+UDIPSNBROCHPELROAISTDLEAR,Y.
+
+F1|0RRSSo0|t10M7OePTo2o.|5|8m|5s—BA-,A0o1JWuSe|]|9ac8o-o4os23-e179g#i12z95n803-015146-1EE0CONNRJPPREERRRTEEVVISSEEDDC:LTL—41a7r.00!rs!ES-FASeTEfNE]R—THROTLINGCOOLFANT50°CHIALMLEBDIENCTO:NTORPOELR:ATTIENMGPEMRIANTIUMRUEEMLECTRICAL7°FTOPSFIWGHI5C6H°0ITNTFEOORMPAPETSIROIANGTCUO2RN0TEA:INPSREUITSPWULARTYTES:.CO&OUELTLAILSNEOTTF
+
+(COGTYP.)NUT,KNURLEDWITHSWITCHPOWE9R.63~oemen,Som,Sse,yeXj)PLACES)(4FITING
+
+REVITL—TB4WG--NOCODESAGE0989-1—-102BA—1|98-1JP-R10AWMNJS,DRAWINGSCALENOTDO7.5800>LG.3Y/4CX1/4-20CNIE--VIBRATIO4NCOAaTPLOIGWeIHDNTETGRREOIURNNDLFDOIINCCIKASTHFOERLSp:OPW6MeOELWTOE-UASWRL6erCSmOPEE1rRa9SEn0Tt,R4RDPLiIERASETD||C!IOT_CIU,eOTMNSAT,CEARMBBHIIPOANOETLESRH:TAE)TSCUIHIBRUNACETSURI—IBSDOTEEUFDPFLUL.AIY5UD0T”COOMOALTAIINCGT
+
+ICayoNTERLOCKLTEVMLPECROAOTLUARENTHILGOHW—LOCOPNSTRFOLOWTECMHPIELRAETRURVSE.SCUOPILPLPYOLCAORILZAENDT
+
+]2w;o8ts|-1z0aoe2On-eFo1|F8IN111|D8lWs[=OHU0ANE2ITiOgTHSIPSO|ECBaIFA&NCICNA—A9TETI|OL,wCPNrLM.|TYI/)|uSN7MITA9T9E1-R0/I52A4-L088sIc3aMlEe-N20OA.PP1S#RI1ODL2T0VE952ANI8A5LTe-8P7SI31AF-RTSY—2-O0SIVP1NUrEA0GRCNRL1AO—MPN.RSACPEIDe[AEVE|GC—RNO-QRECNFURETAATR|rLGMAIISCENTSTGYDAN“IGNLD‘EISCNOACOMRH=9CEDNS.LOETC5CANAOGLI0RLNMWAHOSEATRTIULIA53USNVFNROCTEDFEFIIWLNOSORNLAA5ESRWGTSCI.TC7oI0.EONTNSGSEYRM|eLOCOKN—=|U.SeEI||DAP+LI&CATI_>yOANSYF||NEXRTTp1P‘MO5OI6Y.c44—0NPL_CSTTr52—HAET-aEUT7JSR4OEFV-)|+RC?Nco.RSRHiEV.Zi=T|—>tF17aWCyAeIOsPRNTa)EITlVSREOU]LiP55—RA1F8iO.R10LfOCK|BTAWLIS’T12P—0ISiWNI}ATG|YER6L0VOA2TCL.PGHKV6A62oREEnL5R:aS.SlMA|CAF1U(OLE—RDCNTERATPY:ARR)A—OLOACTULCIULEMBTCISYETLT.N:ESEIUTO8MRNP6E:CEMC1SARAAW7EBMBEAX.R;IIOTI2VNGNTUM0SEHEORUITETREM:RFOSRSMTA8CPN.POLGL1AP6AT0E.77ES,1ET0RIBHCRZASrWZCIET6PTD,0VHDP|!CIERPTSOXCHLCPALSCOAEOPSHRUWS5TEAAAPMDTY0AWTIGRN,LCIOEDOESGTE,S.UT,LHX1JMEZSREHPY.E&URPM|SHDEI:ASE,6,SIE4TPVL0TRNFBA0HEFEGN1LMIAYRNSLDLU1TETNILS1IE0OCANUEIT0DVFLTOHDRNTR0NACP:HFPSAEQC0EEIEHZCIC,UDRSANN1EOPMOTLIENI.AI5OYNTCR0STRCPI0WOLIKP:ATEITMEUAFL-ORO:URRNUNFDIIOPT:CATGSRIRNWROEAOL/88LERSDTPRCLIERMQCRSTA:,TOIUTOWEEOEXINTPRNNPOLAIUVGRUWCPAMIEOYRTY.MNUPICIHOPTIMG:RTIRSS
+
+HEATEXCHANGERLILSERIES2,06.00ACCESZONE|LIRDESCRIPTIONDATE(YR-MO-DA)|BY|APPROVEDFASROVED|APSROVED
+
+|FLOWRATE:25GPWTO30GPMAT50HZ,3.0GPM1035GPMAFTE6A0THUZRESMAXIMUMOPERATINGAMBIENT:a13°F||7)|ma,|--RESERVOIREREVISEDPEREN#12590557-03-05[warCAR|KS|KDA
+
+C"ae!—_j||rm15HBL4716CcYCyHECKERENGINER(~)
+DRUEOTWPRLTAINHSCDFAUROETCEUDET,D
+
+ISOLATORS
+
+CCY>= Y>c
+
+GcLSoNEI/NaxFDATE \_2GSR.TOjU=15.N0D| PHU/B|EN-L ME|CAPHACNAENSLICAL
+
+ANDDISPLAYOF!oN7-7-p
+
+DICNROTANEWTRFIRANOCGLE
+
+5.0
+
+QUICK—:DISCONNECTaetneS41LAMEdOsREQUAL.cr\—~u—
+
+FILE:
+
+L|6I5
+
+COG 7.0
+
+6.=205
+
+|#9GLBA1FT8S9WY-C5E9LBEOLA0HIUOVY-LTGYI2E4/68D0AH%N5WLR:-GE2%9|5GLKYC4M3EWBV9gOLAOT0/oPWHAO5.LYT%-C#9DXYUEI12,N-8RPEOT5%M0.NR-IG:VCZI31EMD0S1RNED31
+
+REVISIONS
+
+1os-2OFov|1KoolsHSET|(MIS/CARMwAr.F|N|ON0E7\-u0N3I-t22sc2al0eAMOTOCRLH9,AIN-GPS0EU7T-M1FPL5OREKPVCEDEODCALNN-TRTSA2WCT5I9TS0OC-RH5,5SEE|ALKEs1GENDAPLICATION305kSiHEETSpOFri|0N8o.SHET|11(047POi6snnoTtHe@O“iT°©PN-[305p-rOz302,306L—]CGHRAOSUNIDS¢-30120-W—AT~S.<&E1L4ICSOIOHFLZ,P(ERK5M10I)S-,6I0OCNOWNRTITATCENTOPRRIOR
+
+VTINRDAINCSAFVTOO-RRCMOLEMIRGH(TT1()IL)21—1010-(CONTROLSIGNAL)11BLACK2avacA{2||1f[6\bL/CAWB1HL0IE7TETSPMIC“DIMCWEOIRNEATSRTEDIBOELNOS‘IINLGONCSHGAE.TISICOTNER[CMOINTRALCTBNOL.OCKELIS&WATTS
+
+LEESXOC.PHEAANNGD+E7R°1,F68H10EC5AO0NTSTL/RITNMO’HILTSR,OEWUTRIGE.TMHHPITNEWUSHRANEAITDRTEESMURALRFLECOCHRAMIHTLOI7ETGE2HDOD5R8,TBL3HOE-EOAS1VRSM2EDO0RASL2TNOEDAADTDRM,,TAIEWNMIAPNLEGRMASATEIOEUNTlRHtEZA,iN1V03at(A4)(T|-D)RTC(4)=101BN=o|-SIGNAL)(CONTSRTOUDLV2D—C105AY(TCn)oCeONVTDRCOL—2CE-OR8MTEMP,
+
+ISVPCCRAOOOLPNNRVTTIEEAATCCASARTTECYOO.NTRRUSIAOT((TRKKSO11H—R))ACL,,LO(MTLNVOA11T)-—TLBE22USED,DISCLO111S0E3D005,29ATm977°F(SENSOR|5*|)FiNOTE/A\COM122PRIMARY(10AVA|C)REV.No.|REVSTATUSNEXTASYUSEDONTWFRATCTEINOGNRSNZDOAETC,EIMSVFITAL:SLATSHISAWNIGLREISNALSGIWECGEINTHNSTSUGTCCIOA,HHNRT,EE,IOEMRNRFIADC,NLTIOGOCIIW2AACL,PT—OSWARRCUPOA,OVPPYIALLPLILBOECYAWSOLEOTTRLEOAMVN(PAUGTLENR,VRBIEA}T,CTSNLU)92ORWVSEI8AE,T4HDCS3SIOF/7LOINSRC'UO|SMNFP1L1TO26CIWN85OO0N8I>6N51A-ANTG—DPO1FM2"GR0E2AT—E0R1.]|A
+
+DRUEOTWPRILANTSCDHFAURETCOEUDET,D
+
+TEMPERATURE.SET—POINTTHANLESSISTEMPERATUREACTUALIFNOTEF|noTEAD4A-cOMMAIN
+
+(i128J654371-202—0-REV-A ;|GZO/NWaSIMPODAEMUCEYTNIrOEFNCILMRCFcAIY)T.FUATNROLGENIeND w=4aAEPCTDLIONESCXIERPACORcTLvDNCAEORYDLS.,N1SVT8EOAMnR5I2APZoB4L)ETPAHDStIERPONSX—ERPeALOSIUDA-RNEYT.C,O\MTDPIESMPDNTLPAOS),YIZNTKDSEIMTNPAX—ERLPOA-TIUBRNET., EXIATGSCERMHTWPEA—aNAPRUFSGOTnEAIUNRL,TET4VAPMCHWDAOEJIRTL-U.SRAWVETGiSRM1DHYT2LB1(a2VSTAOBCIA—-_2DGrUW_A1NVrnT_CE0LO)Y_.iRronTL23UPICSOeRNSGPLTOEPAIRT.UGLOiaNCRIOL\SAEG,1LR21(-2CSATOECNMON—PRLCOU.A7B1L59RADINE)LTSR—y2(v1a2c4)2(71TSACEROCUM0APNTESRL.UPADTEAL2CNR)SYTR 310DICSTEUMOPELRPIAD1TLYUR,E7CTEOTCS3VM4NOPUNEORS.PUAMLCIPT7UT2LEREOY,N(VTRA714VNCSFO1/3AR0M2E,)R584_ a1oSIrNICAW1T0CEBRT23L5SECONbHEK,TOT |JP179586543‘w-12R0]o2O-01
+
+C|pH,-—-P~/<S<0!s)|+-_310|4|19,304A181930412),12OL1MJ99-07-13_
+
+1-224|Ofpr—__
+
+<
+|
+)
+[
+_
+~
+V
+1
+A
+—
+0
+C
+4
+3
+1
+0
+,
+T
+5
++
+%
+2
+0
+1
+L
+8
+,
+l
+7
+3
+0
+1
+9
+0
+SP12ECIE o#r3A10=yW-230G19 _SV(A6EON1R7SI.RT—°5BCLF4EMv9V2ZAonCDOAT—E4ICMPSTElRPMUFALTXAURLEY.| a12STEMUPEPRAT4ULREYS. BC1OL7YS(FEVTPNOEAMLITSCNAGTLE)rT(SRDE3DLIeACMY0E),R NP1L3U—aG4/-SOW°LCI]EKSR7,ET,2aP1SUME/HTM56OPM,TOR —F12SU5L©AOS0-1EVBP,LO/M
+
+OAPERCVED‘APROVEDAPROVED|BY(YR-MO-DA)|DATEDESNC/RIOPFTIONSWITCH,|LTRSiZOINENK1125417A7B!99}9}|||
+
+D1RB0EL2DK4 ISCONEC—TED)
+SENSOR
+
+oeE—nRWSECIHREMIANTIGC
+
+W07i-1n3eENrGINyEL4RTL
+
+B9-A0—7—-13
+
+#1A0=1W-81G25
+
+X=N/ATITLE
+
+FILE:
+
+TAOLERANECS
+
+S(VECAO2NCDA4.RY
+
+REVISIONS
+
+ENGI|ANER.ING|
+
+
