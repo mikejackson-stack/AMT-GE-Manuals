@@ -11,15 +11,30 @@
   "pages": 29,
   "ge_reference": "GE Common Document Library DOC1738330 'Gradient Water Heat Exchanger Technical Manual' (https://customer-doc.cloud.gehealthcare.com/#/cdp/dashboard)",
   "public_copy": "https://www.scribd.com/document/366769606/Gradient-Water-Heat-Exchanger-Technical-Manual",
-  "obtained_from": "Mike Jackson OneDrive: Work Docs/GE/Manuals/366769606-Gradient-Water-Heat-Exchanger-Technical-Manual.pdf (byte-identical copy)"
+  "obtained_from": "Mike Jackson OneDrive: Work Docs/GE/Manuals/5440001-3_HDxt1.5T_HD16_A/.../Signa_EXCITE/media/471017-85397.pdf (same file in the other Excite/HDx sets and Work Docs/GE/Manuals/366769606-Gradient-Water-Heat-Exchanger-Technical-Manual.pdf)",
+  "original_scan": {
+   "bytes": 2752381,
+   "sha256": "894eaa96d974613d9317b8e33c2fd29bc8d17598b3ffcfabc402e7143ab2bd98",
+   "note": "scanned, no text layer"
+  }
  },
  "open_url_base": "https://raw.githack.com/mikejackson-stack/AMT-GE-Manuals/main/Ellis%20Watts%20LTL-4/",
  "files": [
   {
    "path": "Ellis Watts LTL-4/Ellis_Watts_LTL-4_Gradient_Water_Heat_Exchanger_Manual_ENG-457_Rev9.pdf",
-   "bytes": 2752381,
-   "sha256": "894eaa96d974613d9317b8e33c2fd29bc8d17598b3ffcfabc402e7143ab2bd98",
-   "git_sha1": "a14696716abba8cc06cd8e29f54a876d19b8a5a9"
+   "bytes": 2980349,
+   "sha256": "6d088fc2eff5a4f35ea9d7f3c72dfa4718cd1c6063e4c53566fc351abd9aa3ab",
+   "git_sha1": "dfed42817a6318d9d0dfaf795994518124fa5546"
+  },
+  {
+   "path": "_import/ellis-watts-ltl4/ocr.txt",
+   "bytes": 58939,
+   "sha256": "bea729c2bffda32d1a21b53840eafa23124e56b27ce0b55fd9b592b3e3c50a8c",
+   "git_sha1": "634a8b840c1115a635c6cf3f082c63e3929e2a5f"
   }
- ]
+ ],
+ "ocr": {
+  "tool": "ocrmypdf 16.7.0 + tesseract (eng), --rotate-pages --optimize 0; page images unchanged, invisible text layer added",
+  "text": "_import/ellis-watts-ltl4/ocr.txt"
+ }
 }
