@@ -1,0 +1,25 @@
+{
+ "target_repo": "mikejackson-stack/AMT-GE-Manuals",
+ "destination_roots": [
+  "Ellis Watts LTL-4/",
+  "_import/ellis-watts-ltl4/"
+ ],
+ "source": {
+  "title": "Installation, Operation and Maintenance Manual for Model LTL-4 Gradient Water Heat Exchanger",
+  "publisher": "Ellis & Watts International, Inc., Batavia, OH (CAGE 98437)",
+  "document": "ENG-457 Rev 9 (September 20, 2007)",
+  "pages": 29,
+  "ge_reference": "GE Common Document Library DOC1738330 'Gradient Water Heat Exchanger Technical Manual' (https://customer-doc.cloud.gehealthcare.com/#/cdp/dashboard)",
+  "public_copy": "https://www.scribd.com/document/366769606/Gradient-Water-Heat-Exchanger-Technical-Manual",
+  "obtained_from": "Mike Jackson OneDrive: Work Docs/GE/Manuals/366769606-Gradient-Water-Heat-Exchanger-Technical-Manual.pdf (byte-identical copy)"
+ },
+ "open_url_base": "https://raw.githack.com/mikejackson-stack/AMT-GE-Manuals/main/Ellis%20Watts%20LTL-4/",
+ "files": [
+  {
+   "path": "Ellis Watts LTL-4/Ellis_Watts_LTL-4_Gradient_Water_Heat_Exchanger_Manual_ENG-457_Rev9.pdf",
+   "bytes": 2752381,
+   "sha256": "894eaa96d974613d9317b8e33c2fd29bc8d17598b3ffcfabc402e7143ab2bd98",
+   "git_sha1": "a14696716abba8cc06cd8e29f54a876d19b8a5a9"
+  }
+ ]
+}
