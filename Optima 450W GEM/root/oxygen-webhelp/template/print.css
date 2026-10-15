@@ -1,0 +1,92 @@
+/*
+
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2020 Syncro Soft SRL, Romania.  All rights reserved.
+
+*/
+
+@media print {
+/**
+   * Show footer
+   */
+    .wh_footer {
+        display: block !important;
+    }
+
+    .wh_topic_content.body {
+        width: 1000px
+    }
+
+    /* US616: Allow users to minimize or hid the left navigation pane in Webhelp */
+    #pub_toc_button button {
+        display: none;
+    }
+
+    /* US580 WH-R - print function adds additional metadata and wrong revision*/
+    .propstatement-h {
+        font-style: italic;
+        font-weight: bold;
+    }
+
+/* DE269: Improve printing of  Webhelp topics - The phrase (and then) is added to Menucascades when printed.  */
+
+ abbr::before {
+    content: " > ";
+    font-size: 10pt;
+    font-weight: bold;
+    color: black;
+}
+
+abbr{
+    font-size: 0;
+}
+
+/* DE269: Draft mark is not behind Webhelp topics when printed*/
+
+html, body {
+        height: auto;
+        page-break-after: avoid;
+        page-break-before: avoid;
+        float: none;
+     }
+     
+#topic_body{
+  margin: 1px 0px 1px 0px; 
+  overflow: visible;
+  display: block;
+}         
+
+body:has(#DraftMark)   {
+        background-image:url('draft.png');
+        background-repeat:repeat-y;
+        background-position: center;
+        background-attachment:fixed;
+        background-size:100%;
+}
+
+#DraftMark {top:25%;
+    left:18%;}
+
+
+.table,
+.tbody, 
+.entry{
+    opacity: 0.9;
+}
+}
+
+@media screen {
+/**
+   * hide mainbooktitle
+     US580 WH-R - print function adds additional metadata and wrong revision
+*  */
+
+    .mainbooktitle-h,
+    .part-h,
+    .rev-h,
+    .propstatement-h 
+    #topic_toc_button
+    #pub_toc_button{
+        display: none !important;
+    }
+}
